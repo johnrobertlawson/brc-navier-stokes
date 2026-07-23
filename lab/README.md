@@ -39,6 +39,7 @@ not convert passing unit tests into mathematical truth.
 | **trace_temporal_modulus.py** | Natural-time positive Cesàro excess, amplitude--cutoff covariance, arbitrary backward age, and iterated signed excess | A same-trajectory alignment-conditioned modulus or decorated rigidity |
 | **terminal_alignment_excess.py** | Squared detector, pullback covariance, polar split, tensor zero-flux, and fixed-mass oscillation carrier | The secondary parabolic localisation or two-scale PDE control |
 | **terminal_carrier_microbubble.py** | Parabolic carrier localisation, cutoff covariance, detector collapse, and nested fifth-power packing | A two-scale PDE budget or rigidity for the constant parent detector decoration |
+| **microbubble_decoration.py** | Joint Young second moment, first scale strain jet, and constant-detector heat-shear obstruction | Same-trajectory evolution or flux compactness for the renormalised vanishing band |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -84,6 +85,7 @@ From the repository root:
     make trace-temporal
     make alignment-excess
     make carrier-microbubble
+    make microbubble-decoration
     make strain
     make fetch-2607
     make compile-2607

@@ -439,6 +439,15 @@ gap \(\delta_j^{-1/2}\). If no such estimate exists, the minimal ancient
 object must retain the constant positive-semidefinite decoration \(D_*\) and
 the associated tensor-oscillation Young measure.
 
+The subsequent
+[microbubble decoration theorem](microbubble-decoration-rigidity.md)
+constructs that joint Young measure and proves its projected quadratic moment
+is nonzero. It also sharpens the parent datum to the first strain jet
+\(J_j=\delta_j^{-1}\widetilde F_j\to F_*\), with \(D_*=F_*^2\), and shows
+that the microchild equation with an arbitrary constant detector admits the
+exact adverse axial heat-shear obstruction. The live input is therefore the
+same-trajectory evolution of \(J_j\), not constant-matrix rigidity.
+
 This is an exact analytic reduction and a packing no-go result. It does not
 prove suitability, ancient rigidity, regularity, blow-up, or any Clay
 alternative A--D.

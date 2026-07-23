@@ -1,6 +1,6 @@
-# Handoff: control the two-scale terminal microbubble decoration
+# Handoff: evolve the renormalised parent strain jet
 
-**Updated:** 2026-07-23T13:46:44Z
+**Updated:** 2026-07-23T13:54:51Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -324,6 +324,46 @@ The live object is therefore two-scale: a fixed-mass cutoff-tensor oscillation
 at \(r_j\), decorated by a nonzero constant detector inherited from the
 larger scale \(\ell_{n_j}\).
 
+That oscillation now has a compact positive certificate. The joint Young
+measure \(\Upsilon\) of the terminal and interior cutoff tensors
+\((A_j,B_j)\) satisfies, for every \(\theta'<\theta\),
+
+\[
+\Upsilon\{|D_*:(A-B)|\ge\theta'\}\ge c_*
+\]
+
+and hence
+
+\[
+\int|D_*:(A-B)|^2\,d\Upsilon
+\ge c_*(\theta')^2>0.
+\]
+
+This survives even when the signed tensor barycentres agree. The precise
+same-trajectory decoration is stronger than \(D_*\): if
+\(\widetilde F_j=P_{\le M\sqrt{\delta_j}}\widetilde S_j\), then
+
+\[
+J_j
+:=
+\delta_j^{-1}\widetilde F_j
+\longrightarrow F_*,
+\qquad
+D_*=F_*^2,
+\]
+
+with \(F_*\) a nonzero constant symmetric trace-free first strain jet.
+
+The microchild equation with an arbitrary constant detector is not rigid.
+For the exact axial periodic heat shear, its intrinsic squared strain
+detector still vanishes, but choosing
+\(F_*=\operatorname{diag}(-1/2,-1/2,1)\) gives
+\(F_*^2:H=h\), exactly restoring the adverse scalar trace excess. This smooth
+suitable family changes initial data and does not generate \(F_*\) from its
+own parent scale. It proves that any successful argument must retain the
+same-trajectory evolution of \(J_j\), not merely attach an arbitrary
+constant matrix to the microbubble.
+
 The boundary and scalar-renormalisation audits remain useful scope controls:
 averaged band flux is paid by \(\mathcal J_\eta\), no bounded detector can
 make radial diffusion sign-favourable at every amplitude, and exact periodic
@@ -347,19 +387,20 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/terminal-carrier-microbubble.md`;
-3. `dossier/experiments/terminal-alignment-excess.md`;
-4. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-5. `dossier/experiments/terminal-trace-excess.md`;
-6. `dossier/experiments/projective-zero-interface.md`;
-7. `dossier/experiments/trace-projective-domination.md`;
-8. `dossier/experiments/trace-boundary-renormalisation.md`;
-9. `dossier/experiments/trace-transition-band-flux.md`;
-10. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/microbubble-decoration-rigidity.md`;
+3. `dossier/experiments/terminal-carrier-microbubble.md`;
+4. `dossier/experiments/terminal-alignment-excess.md`;
+5. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+6. `dossier/experiments/terminal-trace-excess.md`;
+7. `dossier/experiments/projective-zero-interface.md`;
+8. `dossier/experiments/trace-projective-domination.md`;
+9. `dossier/experiments/trace-boundary-renormalisation.md`;
+10. `dossier/experiments/trace-transition-band-flux.md`;
+11. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-11. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+12. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-12. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+13. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1530,21 +1571,36 @@ Completed terminal alignment-excess reduction:
 > positive-semidefinite parent-scale decoration \(D_*\), not an order-one
 > microchild strain square. Geometric fifth-power shells show that physical
 > volume alone permits an infinite nested carrier tower.
+>
+> The joint terminal--interior tensor Young measure retains a positive
+> projected second moment
+> \(\int|D_*:(A-B)|^2\,d\Upsilon>0\), even if its signed barycentre cancels.
+> Moreover,
+> \(J_j=\delta_j^{-1}P_{\le M\sqrt{\delta_j}}\widetilde S_j\to F_*\)
+> locally uniformly, where \(F_*\) is constant, symmetric, trace-free,
+> nonzero, and \(D_*=F_*^2\). An arbitrary constant decoration is not rigid:
+> \(F_*=\operatorname{diag}(-1/2,-1/2,1)\) detects the exact adverse axial
+> heat shear although that shear's intrinsic squared detector is zero. The
+> family is not one trajectory, so the missing input is precisely the
+> cross-scale evolution of the first strain jet.
 
 Next deliverable:
 
-> Derive a two-scale PDE estimate for the microbubble pair
-> \((D_*,H_{\widetilde\eta_j}[\widetilde\omega_j])\). It must charge the
-> nonzero constant parent detector across the diverging scale gap
-> \(\ell_{n_j}/r_j=\delta_j^{-1/2}\) to local energy, suitability, or
-> projective-cross content; neither unweighted volume nor the collapsed
-> intrinsic microchild band can pay it. A successful estimate excludes the
+> Derive the exact evolution or flux identity for the renormalised vanishing
+> band
+> \(J_j=\delta_j^{-1}P_{\le M\sqrt{\delta_j}}\widetilde S_j\).
+> Determine which terms retain the parent natural scale, which vanish under
+> the microchild equation, and whether same-trajectory stress--vorticity
+> coupling makes \(J_j\) compact strongly enough to control
+> \(\int|J_j^2:(A_j-B_j)|^2\). Neither suitability of the undecorated
+> microchild, an arbitrary constant detector, unweighted volume, nor the
+> collapsed intrinsic band can do this. A successful estimate excludes the
 > direction-weighted concentration
 > \((\xi_n\cdot D_n\xi_n)\rho_n\). Determine whether bounded
 > projective-cross content makes this directional weight compact enough to
 > reduce it to the scalar excess after the secondary scaling. If it fails,
-> retain the nonzero constant decoration, the tensor-oscillation Young
-> measure, the weighted signed excess, the scalar excess, and only the
+> retain the nonzero first strain jet, the tensor-oscillation Young measure,
+> the weighted signed excess, the scalar excess, and only the
 > nonredundant projective-cross defect in the minimal suitable ancient system
 > and exclude it by rigidity. Use
 > \(\mu_{\mathcal J,0}\) only in an independently tight branch; raw

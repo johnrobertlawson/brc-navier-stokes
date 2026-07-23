@@ -979,6 +979,34 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-MICROBUBBLE-DECORATION-001",
+      "title": "Constant-detector Young measure and rigidity obstruction",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "The subnatural tensor-oscillation microbubble retains a compact positive object under weak limits, and the microchild Navier-Stokes equation with an arbitrary constant detector either excludes it or admits an exact smooth obstruction.",
+      "invariants": [
+        "The cutoff tensors lie in the compact convex set of positive-semidefinite matrices with trace at most one",
+        "The joint terminal-interior tensor Young measures have Lebesgue base marginal and a weak-star convergent subsequence",
+        "Fixed carrier mass and threshold force a strictly positive detector-projected second moment in the Young measure",
+        "The positive second moment can survive while terminal and interior tensor barycentres agree",
+        "An axial exact periodic heat shear is detected by an external axial constant matrix while its intrinsic squared strain detector pairs identically to zero",
+        "The decorated heat shear satisfies smooth Navier-Stokes and energy equality but changes initial data across frequency",
+        "No parent-scale coupling law, same-trajectory counterexample, suitability compactness theorem, regularity theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Extract the joint Young measure of terminal and interior cutoff tensors on the fixed microcylinder, retain its detector-projected quadratic oscillation moment, construct a symmetric cancellation example, and pair the exact adverse axial heat shear with an external constant detector.",
+      "certificate": "A written Young-measure compactness and heat-shear nonrigidity theorem plus exact Fraction tests for the positive second-moment floor, signed-barycentre cancellation, external axial detection, intrinsic squared-strain filtering, and decorated Cesaro excess.",
+      "success_criterion": "The weak microbubble limit retains a nonzero positive oscillation certificate, while any rigidity statement using only the microchild equation and an arbitrary constant detector is either proved or falsified by an exact smooth solution family.",
+      "failure_interpretation": "The carrier disappears from every joint Young measure, its positive second moment can vanish, or the external detector remains filtered on the exact axial heat shear.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/microbubble-decoration-rigidity.md",
+        "lab/navier_lab/microbubble_decoration.py",
+        "lab/tests/test_microbubble_decoration.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

@@ -421,6 +421,20 @@ and breakdown work
   strain square. Nested fifth-power shells have fixed normalised mass and
   summable physical volume, so pure volume packing and recursive natural-band
   iteration cannot close the route.
+- The microbubble cannot disappear from every weak topology. Its joint
+  terminal--interior cutoff-tensor Young measure obeys
+  \[
+  \int|D_*:(A-B)|^2\,d\Upsilon>0,
+  \]
+  even if the signed tensor barycentre cancels. The same-trajectory datum is
+  the first strain jet
+  \(J_j=\delta_j^{-1}P_{\le M\sqrt{\delta_j}}\widetilde S_j\to F_*\), with
+  \(F_*\) constant, symmetric, trace-free, nonzero, and \(D_*=F_*^2\).
+  The undecorated microchild equation is not rigid: a diagonal trace-free
+  \(F_*\) makes \(F_*^2\) detect the exact adverse axial heat shear although
+  that shear's intrinsic squared detector is zero. This cross-family model
+  does not generate \(F_*\) from a parent scale, isolating the missing
+  same-trajectory jet evolution.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -431,12 +445,12 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can the nonzero constant parent-scale detector decorating each subnatural
-> fixed-mass tensor-oscillation microbubble be charged across the scale gap
-> to suitability, local energy, or projective-cross content? If not, can the
-> two-scale decoration, direction-weighted signed density, and nonredundant
-> projective-cross defect be retained in a suitable ancient system and
-> excluded by rigidity?
+> Does the renormalised vanishing-band strain jet generating the nonzero
+> microbubble detector obey a same-trajectory evolution or flux compactness
+> law across the scale gap? If not, can this jet, the positive
+> terminal--interior tensor Young moment, the direction-weighted signed
+> density, and nonredundant projective-cross defect be retained in a suitable
+> ancient system and excluded by rigidity?
 
 The coequal breakdown question remains:
 
@@ -445,14 +459,12 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive a two-scale estimate for
-   \(D_*:H_{\widetilde\eta_j}[\widetilde\omega_j]\) that pays the constant
-   parent detector across
-   \(\ell_{n_j}/r_j=\delta_j^{-1/2}\) using suitability, local energy, or
-   projective-cross content.
-2. Determine the minimal tensor-oscillation Young measure retained by the
-   microbubble when the intrinsic strain band collapses, and identify its
-   exact evolution against the constant detector \(D_*\).
+1. Derive the exact evolution or flux identity for
+   \(J_j=\delta_j^{-1}P_{\le M\sqrt{\delta_j}}\widetilde S_j\), retaining its
+   origin in the parent natural scale.
+2. Determine whether same-trajectory stress--vorticity coupling makes \(J_j\)
+   compact strongly enough to control the positive moment
+   \(\int|J_j^2:(A_j-B_j)|^2\).
 3. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
    energy, and the same-trajectory pullbacks, or construct the exact coherent
