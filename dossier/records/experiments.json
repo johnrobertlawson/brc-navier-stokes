@@ -162,6 +162,32 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-PACKET-LIFETIME-001",
+      "title": "Componentwise viscous decay of isolated vortex packets",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3A"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "Under the repaired local commutator estimate, any number of disjoint full-vorticity packets supported in uniformly shrinking balls are diffusion-dominated without paying a packet-count entropy.",
+      "invariants": [
+        "The starting identity is the exact smooth vorticity enstrophy balance",
+        "Each packet is an H01 component of the full vorticity, not merely a high-level excess",
+        "Lorentz Holder inequality and Sobolev are applied separately on each packet",
+        "The packet count must cancel from quadratic stretching absorption",
+        "No conclusion is claimed for packets connected by a low-vorticity background"
+      ],
+      "method": "Split enstrophy and palinstrophy over disjoint zero-boundary packets, insert the centre-uniform local weak-L(3/2) commutator estimate componentwise, apply Lorentz-Sobolev and Poincare, and compare the resulting viscous and nonlinear times.",
+      "certificate": "A written decay lemma with a strain threshold and exact exponent checks for lifetime, self-strain, diffusion, and packet count.",
+      "success_criterion": "The proof gives count-free absorption, lifetime O(r^2/nu), and an order-nu lower threshold for the local weak-L(3/2) strain needed to prevent decay.",
+      "failure_interpretation": "A hidden component-count factor enters the energy sum, the local strain threshold has the wrong scale, or the zero-boundary hypothesis is insufficient for the Sobolev-Poincare steps.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/packet-lifetime.md",
+        "lab/navier_lab/packet_lifetime.py",
+        "lab/tests/test_packet_lifetime.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

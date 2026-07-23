@@ -372,6 +372,10 @@ dynamic coupling across times, quantitative spatial concentration, an analytic
 doubling bound, or another mechanism that prevents the number of remote packets from
 reaching the logarithmic threshold.
 
+The [packet-lifetime calculation](packet-lifetime.md) takes the next step: these
+particular packets are diffusion-dominated, and the repaired local commutator bound
+cannot provide the scale-invariant strain needed to sustain them.
+
 Run the exact scaling checks with:
 
     make perimeter-packing

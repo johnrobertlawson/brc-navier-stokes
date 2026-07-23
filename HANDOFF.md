@@ -1,6 +1,6 @@
-# Handoff: test dynamic packet persistence; do not re-audit
+# Handoff: test the one-log endgame threshold; do not re-audit
 
-**Updated:** 2026-07-23T05:47:36Z
+**Updated:** 2026-07-23T05:59:16Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -23,15 +23,16 @@ result is not Clay A–D.
 
 ## Default next target: ROUTE-R3A
 
-Determine whether viscous dynamics exclude logarithmic-threshold packet
-fragmentation, rather than seeking another instantaneous geometric bound.
+Determine whether the one-log vorticity-tail gain left by componentwise packet
+control already closes the sparse-analyticity endgame.
 
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3A")' dossier/records/routes.json`;
-2. `dossier/experiments/perimeter-packing.md`;
-3. the vorticity equation and the single dynamic quantity selected for the next
-   experiment.
+2. `dossier/experiments/packet-lifetime.md`;
+3. only the logarithmic-exponent dependencies in
+   `dossier/experiments/rearrangement-transfer.md` and
+   `dossier/experiments/sparse-analyticity-endgame.md`.
 
 Completed static results:
 
@@ -53,14 +54,32 @@ divergence-free velocities with
 This kills volume, energy, critical instantaneous norms, and upper perimeter as
 static bridges. It is a family of admissible initial data, not one evolution.
 
+Completed dynamic reduction:
+
+> At \(N_\lambda\asymp(\log\lambda)^{3/2}\), packet diffusion acts on
+> \((\nu\lambda\log\lambda)^{-1}\), a logarithmic factor faster than self-stretching.
+> Sustaining a packet requires local weak-\(L^{3/2}\) strain of order \(\nu\), while
+> the repaired commutator bound tends to zero.
+
+Moreover, applying Lorentz--Sobolev separately on zero-boundary high-level components
+absorbs the quadratic stretching term with no \(N_\lambda\) cost. The remaining
+linear source yields
+
+\[
+\lambda^{3/2}(\log\lambda)^{-1}
+\]
+
+at the threshold packet count.
+
 Next deliverable:
 
-> At the packet radius \(r_\lambda\), compute the viscous lifetime and the strain
-> needed to maintain level \(\lambda\). Either prove that the repaired hypotheses or
-> another PDE-controlled quantity cannot supply that strain uniformly, or construct
-> a dynamically consistent survivor.
+> Start with a general vorticity tail
+> \(\lambda^{-3/2}(\log\lambda)^{-\gamma}\). Propagate \(\gamma\) through the
+> rearrangement, velocity distribution, sparseness scale, and analytic-radius
+> comparison. State the exact minimum \(\gamma\), and decide whether
+> \(\gamma=1\) closes the endgame.
 
-Do not replace the time-coupling step with another snapshot packing.
+Do not reread unrelated proof-map or source sections.
 
 ## Alternative routes—choose one, do not mix them
 

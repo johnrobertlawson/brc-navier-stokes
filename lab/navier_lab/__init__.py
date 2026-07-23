@@ -8,6 +8,7 @@ __all__ = [
     "log_chain",
     "multicore",
     "paper_build",
+    "packet_lifetime",
     "perimeter_packing",
     "records",
     "scaling",

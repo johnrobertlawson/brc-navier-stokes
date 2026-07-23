@@ -13,6 +13,7 @@ not convert passing unit tests into mathematical truth.
 | **anisotropic.py** | Exact one-core anisotropic weak-L(3/2) tail and covering loss | PDE consistency of the scalar example |
 | **covering_entropy.py** | Exact weak-L(3/2) cover aggregation and energy-tail exponents | A PDE bound on the cover entropy |
 | **perimeter_packing.py** | Exact scaling of divergence-free packets at the entropy threshold | Realisation by one Navier-Stokes evolution |
+| **packet_lifetime.py** | Exact viscous lifetime and strain threshold for isolated packets | The background-driven linear source |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -32,6 +33,7 @@ From the repository root:
     make anisotropic
     make covering-entropy
     make perimeter-packing
+    make packet-lifetime
     make strain
     make fetch-2607
     make compile-2607

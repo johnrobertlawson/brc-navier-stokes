@@ -28,6 +28,10 @@ and breakdown work
   need not vanish even when kinetic energy, critical \(L^3\) velocity norm, and
   high-level perimeter all vanish and strong \(L^{3/2}\) vorticity stays bounded.
   These are admissible instantaneous data, not one Navier--Stokes evolution.
+- Those logarithmic-threshold packets are diffusion-dominated on the time scale
+  \((\nu\lambda\log\lambda)^{-1}\). Componentwise Lorentz--Sobolev absorption removes
+  every packet-count factor from quadratic stretching; only the truncated linear
+  source remains, with a one-log tail gain at the threshold count.
 - Smooth divergence-free vorticity need not supply a log-weighted BMO direction
   extension across its zero set.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
@@ -40,8 +44,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can viscous evolution prevent logarithmic-threshold vortex fragmentation across
-> time, and can it generate the required log-weighted direction control?
+> Does the one-log vorticity-tail gain left by componentwise linear-source control
+> already close the sparse-analyticity endgame, and can dynamics generate the
+> required log-weighted direction control?
 
 The coequal breakdown question remains:
 
@@ -50,9 +55,9 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Quantify the lifetime and required external strain of a logarithmic-threshold
-   packet packing; prove dynamic dissipation excludes it or isolate a dynamically
-   consistent survivor.
+1. Propagate a general vorticity-tail logarithmic exponent through rearrangement,
+   Biot--Savart, sparseness, and the analytic radius to identify the exact minimum
+   exponent needed by the endgame.
 2. Test whether quantitative spatial analyticity supplies a uniform doubling or
    component-count bound at the packet radius.
 3. Test whether local energy and viscosity force any terminal-time VMO modulus for

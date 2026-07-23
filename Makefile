@@ -1,7 +1,7 @@
 PYTHON ?= python
 PYTHONPATH := lab
 
-.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing strain fetch-2607 compile-2607
+.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime strain fetch-2607 compile-2607
 
 check: records links markup test
 
@@ -34,6 +34,9 @@ covering-entropy:
 
 perimeter-packing:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.perimeter_packing
+
+packet-lifetime:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.packet_lifetime
 
 strain:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.strain

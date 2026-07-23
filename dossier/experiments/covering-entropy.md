@@ -388,6 +388,12 @@ The remaining bridge must therefore use genuinely dynamic coupling across times,
 quantitative spatial concentration, or an analytic doubling mechanism rather than
 another instantaneous volume, norm, or upper-perimeter estimate.
 
+The [packet-lifetime reduction](packet-lifetime.md) then shows that component-aligned
+geometry is better than an arbitrary cover: the quadratic stretching term splits
+over zero-boundary high-level components and is absorbed without any packet-count
+factor. Only the truncated energy's linear background source retains a fragmentation
+cost.
+
 Run the exact exponent checks with:
 
     make covering-entropy
