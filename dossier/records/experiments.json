@@ -1153,6 +1153,37 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-FRESH-DETECTOR-001",
+      "title": "Fresh-band detector transfer and critical occupation",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "The positive projected tensor Young moment can disappear when the full parent detector F squared is replaced by the squared fresh annular increment G squared, because coarse-fresh matrix cross terms remain order one across the scale gap.",
+      "invariants": [
+        "The full child jet splits as F equals C plus G with coarse child-normalised ceiling epsilon equal to B times q squared",
+        "The detector difference F squared minus G squared equals C squared plus CG plus GC",
+        "Its operator norm is at most two times the full-jet ceiling times epsilon plus three epsilon squared",
+        "The terminal-interior tensor difference has nuclear norm at most two",
+        "The projected scalar detector error is therefore at most four times the full-jet ceiling times epsilon plus six epsilon squared",
+        "A sparse scale gap makes this error smaller than half the fixed carrier threshold",
+        "The same carrier set then gives a positive G-squared-projected Young moment with an explicit floor",
+        "Spatial and temporal finite-band persistence give each fresh detector a fixed strong parabolic L five halves occupation",
+        "Summing those occupations would require a strong critical spacetime or equivalent flux bound not supplied by the endpoint hypotheses",
+        "No tower exclusion, same-trajectory survivor, regularity theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Expand the full and fresh squared detectors, bound the noncommuting matrix cross terms in operator norm, contract against the compact tensor state space using its nuclear norm ceiling, transfer the carrier superlevel set, and compute the natural-cylinder persistence and critical occupation of the fresh band.",
+      "certificate": "A written detector-transfer theorem plus exact Fraction tests for the coarse ceiling, detector operator and scalar errors, sparse-gap length, transferred threshold and moment floor, and parabolic persistence factors.",
+      "success_criterion": "Either the coarse-fresh detector error remains order one at arbitrarily sparse gaps, or the positive projected moment transfers quantitatively to the squared fresh frequency increment.",
+      "failure_interpretation": "The matrix product expansion or tensor dual norm bound is incorrect, the full and fresh bands do not freeze on the same microcell, or the carrier threshold cannot be preserved after the detector replacement.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/fresh-detector-transfer.md",
+        "lab/navier_lab/fresh_detector.py",
+        "lab/tests/test_fresh_detector.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

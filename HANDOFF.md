@@ -1,6 +1,6 @@
-# Handoff: couple fresh bands to projected moments
+# Handoff: sum the fresh-detector occupations
 
-**Updated:** 2026-07-23T14:38:21Z
+**Updated:** 2026-07-23T14:47:43Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -468,25 +468,26 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/fresh-band-lorentz.md`;
-3. `dossier/experiments/tree-budget-audit.md`;
-4. `dossier/experiments/moving-band-coupling.md`;
-5. `dossier/experiments/forcing-jet-decoupling.md`;
-6. `dossier/experiments/strain-jet-freezing.md`;
-7. `dossier/experiments/microbubble-decoration-rigidity.md`;
-8. `dossier/experiments/terminal-carrier-microbubble.md`;
-9. `dossier/experiments/terminal-alignment-excess.md`;
-10. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-11. `dossier/experiments/terminal-trace-excess.md`;
-12. `dossier/experiments/projective-zero-interface.md`;
-13. `dossier/experiments/trace-projective-domination.md`;
-14. `dossier/experiments/trace-boundary-renormalisation.md`;
-15. `dossier/experiments/trace-transition-band-flux.md`;
-16. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/fresh-detector-transfer.md`;
+3. `dossier/experiments/fresh-band-lorentz.md`;
+4. `dossier/experiments/tree-budget-audit.md`;
+5. `dossier/experiments/moving-band-coupling.md`;
+6. `dossier/experiments/forcing-jet-decoupling.md`;
+7. `dossier/experiments/strain-jet-freezing.md`;
+8. `dossier/experiments/microbubble-decoration-rigidity.md`;
+9. `dossier/experiments/terminal-carrier-microbubble.md`;
+10. `dossier/experiments/terminal-alignment-excess.md`;
+11. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+12. `dossier/experiments/terminal-trace-excess.md`;
+13. `dossier/experiments/projective-zero-interface.md`;
+14. `dossier/experiments/trace-projective-domination.md`;
+15. `dossier/experiments/trace-boundary-renormalisation.md`;
+16. `dossier/experiments/trace-transition-band-flux.md`;
+17. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-17. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+18. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-18. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+19. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1725,20 +1726,34 @@ Completed terminal alignment-excess reduction:
 > global weak norm while every finite Lorentz secondary index grows with
 > logarithmic depth. The changing terminal clocks add a second supremal
 > barrier.
+>
+> The projected moment transfers to the fresh band itself. For
+> \(F=C+G\), with child-normalised coarse ceiling
+> \(\varepsilon=B_Cq^2\),
+> \[
+> |(F^2-G^2):(A-B)|
+> \le4B_F\varepsilon+6\varepsilon^2.
+> \]
+> Sparse selection makes this at most half the carrier threshold, so the
+> same fixed-mass set satisfies
+> \(|G^2:(A-B)|\ge\tau/2\). Spatial and temporal finite-band persistence
+> then give one fixed strong parabolic \(L^{5/2}\) occupation per fresh
+> frequency block. The missing input is exactly a summation of those
+> scale-zero occupations.
 
 Next deliverable:
 
-> Transfer the positive node moment from the full child jet
-> \(F=C+G\) to the fresh annular increment \(G\). Expand
-> \(F^2-G^2=CG+GC+C^2\), quantify its contraction against
-> \(A-B\), and determine whether the \(O(q^2)\) coarse error preserves a
-> uniform lower floor for the \(G^2\)-projected Young moment. Then identify
-> the weakest spatial persistence or spacetime occupation that would sum
-> those fresh-detector moments across changing clocks. Do not try to extract
-> a finite sequence norm from the endpoint vector square function alone.
+> Write the frequency-localised kinetic-energy identity for each fresh block
+> on its persistence cylinder. Determine whether the positive
+> \(G^2:(A-B)\) moment forces a sign-definite energy transfer or dissipation
+> increment that telescopes across the disjoint frequency blocks. Separate
+> the radius-weighted physical energy from the scale-zero normalisation and
+> quantify all commutator, pressure, and moving-clock boundary terms. If the
+> detector moment has no coercive relation to energy flux, close that
+> shortcut explicitly and formulate the frequency/log-scale defect measure.
 > Neither suitability of the undecorated microchild, an arbitrary constant
 > detector, unweighted volume, nor the collapsed intrinsic band can close
-> this. A successful fresh-detector or nonlocal estimate excludes the
+> this. A successful frequency-energy or nonlocal estimate excludes the
 > direction-weighted concentration
 > \((\xi_n\cdot D_n\xi_n)\rho_n\). Determine whether bounded
 > projective-cross content makes this directional weight compact enough to

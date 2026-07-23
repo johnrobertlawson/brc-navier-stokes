@@ -501,6 +501,21 @@ and breakdown work
   have bounded global weak norm through arbitrary depth, while every finite
   Lorentz secondary index grows like a positive power of the depth.
   Different terminal clocks supply a second \(L^\infty\) obstruction.
+- The positive tensor moment survives replacement of the full parent
+  detector by the squared fresh band. If \(F=C+G\) and the child-normalised
+  coarse ceiling is \(\varepsilon=B_Cq^2\), then
+  \[
+  |(F^2-G^2):(A-B)|
+  \le4B_F\varepsilon+6\varepsilon^2.
+  \]
+  Sparse scale selection makes this smaller than half the carrier threshold,
+  so the same fixed-mass set gives a uniform positive
+  \(G^2\)-projected Young moment. Uniform spatial and temporal finite-band
+  derivatives also make each fresh block persist on a natural parabolic
+  subcylinder, producing one fixed strong critical \(L^{5/2}_{t,x}\)
+  occupation per disjoint frequency block. A global strong critical
+  occupation would sum them, but it is not supplied by the weak endpoint or
+  radius-weighted energy dissipation.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -511,11 +526,11 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can the positive projected moments be transferred to the fresh annular
-> strain increments forced at every sparse tower level and then controlled
-> by a finite-index spacetime Lorentz estimate, temporal telescope, or
-> nonlocal law? If not, can the resulting frequency-and-log-scale-indexed
-> stress, positive tensor Young measure,
+> Can the uniform positive moments now detected by squared fresh annular
+> strain blocks be summed through a strong critical spacetime estimate,
+> temporal frequency-energy telescope, or nonlocal positive flux? If not,
+> can the resulting frequency-and-log-scale-indexed stress, positive tensor
+> Young measure,
 > direction-weighted signed density, and nonredundant projective-cross defect
 > be retained in a suitable ancient system and excluded by rigidity?
 
@@ -526,15 +541,15 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Expand \(F^2-G^2\) for the coarse/fresh split at each sparse tower level
-   and transfer the positive projected Young moment to the squared fresh
-   annular detector with a quantified \(O(q^2)\) error.
-2. Determine whether the fresh-band persistence balls coexist long enough
-   to yield a finite-secondary-index spatial Lorentz sum, or instead require
-   a genuinely spacetime \(L^{5/2,s}\) occupation.
-3. Test whether the local energy equation or a frequency flux identity gives
-   temporal telescoping across the changing node clocks after the projected
-   moment has been attached to the fresh band.
+1. Derive the frequency-localised kinetic-energy identity for each fresh
+   block and test whether the positive \(G^2:(A-B)\) moment forces a
+   sign-definite energy transfer or dissipation increment.
+2. Track the scale-zero normalisation against the physical radius-weighted
+   energy, including commutator, pressure, spatial cutoff, and moving-clock
+   boundary terms.
+3. If energy flux is noncoercive, define the minimal
+   frequency/log-scale-indexed positive moment measure and the PDE
+   compatibility identities it inherits.
 4. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
    energy, and the same-trajectory pullbacks, or construct the exact coherent

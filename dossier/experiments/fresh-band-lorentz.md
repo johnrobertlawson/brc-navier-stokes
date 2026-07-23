@@ -555,3 +555,12 @@ rigidity, prove regularity or blow-up, or resolve any Clay alternative A--D.
 Run the exact coarse-band, persistence, and Lorentz ledgers with:
 
     make band-increment
+
+The subsequent
+[fresh-detector transfer theorem](fresh-detector-transfer.md) expands the
+full squared detector around the new annular band and shows that its
+projected error is \(O(q^2)\). Sparse selection therefore transfers the
+fixed positive Young moment to the squared fresh band itself and gives that
+band a fixed strong parabolic \(L^{5/2}\) occupation. The remaining gate is
+to sum those occupations through a temporal frequency-energy telescope or a
+nonlocal positive flux.
