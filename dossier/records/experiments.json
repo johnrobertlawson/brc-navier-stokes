@@ -932,9 +932,9 @@
         "After angular averaging against any constant detector, the radial primitive vanishes at zero and infinity in codimensions one, two, and three",
         "Invertible anisotropic transverse linearisations have the same zero total signed tensor mass by divergence and homogeneity",
         "A nonzero non-tight alignment excess therefore requires a sequence-dependent or temporally degenerate zero profile",
-        "A lower bound a for the alignment excess forces detector oscillation above a divided by twice the test mass on normalised weighted spacetime mass at least a divided by twice the squared band bound",
+        "A lower bound a for the alignment excess forces detector oscillation above a divided by twice the test mass on terminal-slab-normalised weighted spacetime mass at least a divided by twice the squared band bound",
         "Every fixed classical Navier-Stokes trajectory on a positive-time cylinder has zero tensor alignment excess for convergent detectors by strong cutoff-tensor convergence and terminal L1 continuity of projective orientation",
-        "The oscillation carrier occupies fixed normalised spacetime mass and pulls back to physical parabolic measure with the exact length-to-the-fifth factor",
+        "The oscillation carrier occupies fixed terminal-slab-normalised mass, has true physical mass proportional to delta times length to the fifth power, and retains the exact pullback Jacobian",
         "No vanishing theorem for the alignment excess, suitability theorem, rigidity theorem, regularity theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Square the frozen terminal finite-band strain, use the squared Rayleigh inequality on the selected witness, pair the zero-safe tensor equation with this positive detector and a triangular time weight, write the exact same-trajectory pullback covariance, contract the polar tensor Hessian to separate weighted trace from anisotropic projective-cross remainder, integrate the full transverse zero-stratum tensor kernel, and extract a quantitative detector-oscillation set from nonzero excess.",
@@ -946,6 +946,35 @@
         "dossier/experiments/terminal-alignment-excess.md",
         "lab/navier_lab/terminal_alignment_excess.py",
         "lab/tests/test_terminal_alignment_excess.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-TERMINAL-CARRIER-MICROBUBBLE-001",
+      "title": "Parabolic microbubble and detector-collapse audit",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "The fixed normalised detector-oscillation mass forced by nonzero terminal alignment excess can be localised to a genuine parabolic child, and its exact scale ledger determines whether repeated carriers admit a direct packing contradiction.",
+      "invariants": [
+        "A terminal window of relative length delta has true parabolic child ratio square root of delta",
+        "The parent carrier has physical measure proportional to delta times the parent length to the fifth power",
+        "A spatial cover by order delta to the negative three halves cells leaves one parabolic child with fixed rescaled carrier measure",
+        "The fixed physical vorticity cutoff remains covariant under the secondary rescaling",
+        "The parent finite strain band loses one factor delta and its squared intrinsic detector loses delta squared on the microchild",
+        "The externally renormalised parent detector becomes a nonzero spatially constant matrix while it ceases to be the square of the microchild strain",
+        "Nested geometric parabolic cylinders can carry fixed normalised volume at infinitely many scales while their physical volumes remain summable",
+        "No suitability theorem, packing contradiction, regularity theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Diagonalise the nonzero iterated excess, cover each shrinking terminal slab by true parabolic spatial cells, select one fixed-mass microchild by pigeonhole, and compute the exact Navier-Stokes, cutoff, frequency, strain, detector, and nested-volume scaling factors.",
+      "certificate": "A written parabolic localisation and detector-collapse theorem plus exact Fraction tests for the cover count, fifth-power carrier mass, cutoff covariance, band-frequency collapse, strain and detector factors, nonzero external detector floor, and nested geometric volume.",
+      "success_criterion": "Either the carrier retains an intrinsic positive alignment detector after true parabolic localisation, enabling recursive packing, or an exact scale loss identifies the additional two-scale quantity required for any packing or rigidity argument.",
+      "failure_interpretation": "The carrier cannot be localised with fixed rescaled mass, the physical cutoff loses covariance, or the parent detector remains an intrinsic order-one microchild strain square.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/terminal-carrier-microbubble.md",
+        "lab/navier_lab/terminal_carrier_microbubble.py",
+        "lab/tests/test_terminal_carrier_microbubble.py"
       ],
       "last_run": "2026-07-23"
     },

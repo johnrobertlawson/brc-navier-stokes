@@ -1,6 +1,6 @@
-# Handoff: pack fixed-mass terminal alignment carriers
+# Handoff: control the two-scale terminal microbubble decoration
 
-**Updated:** 2026-07-23T13:34:26Z
+**Updated:** 2026-07-23T13:46:44Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -266,8 +266,9 @@ That remaining carrier is now quantitative. If
 
 Thus nonzero excess occupies a fixed amount of normalised spacetime on which
 the squared alignment detector changes by a fixed amount. The exact
-same-trajectory pullback converts this to a physical parabolic carrier of
-measure \(\ell_n^5\) times that normalised mass.
+same-trajectory pullback converts this to physical unweighted carrier measure
+at least a constant times \(\delta\ell_n^5\); the fixed lower bound uses the
+terminal-slab normalisation \(\delta^{-1}\ell_n^{-5}\).
 
 Conversely, every fixed classical Navier--Stokes trajectory on a positive-time
 cylinder with a locally uniformly convergent detector sequence has zero
@@ -278,6 +279,50 @@ tensor excess. Away from the measure-zero analytic vorticity zero set,
 zero geometry nor a fixed classical trajectory can realise the carrier. The
 live obstruction is necessarily cross-scale nonuniformity along the
 natural-child sequence.
+
+The carrier has now been localised to its true parabolic scale. Diagonalise
+the nonzero iterated excess with \(\delta_j\downarrow0\) and set
+
+\[
+\lambda_j=\sqrt{\delta_j},
+\qquad
+r_j=\ell_{n_j}\lambda_j.
+\]
+
+The unweighted parent-slab carrier mass is only \(O(\delta_j)\). Covering the
+parent ball by \(O(\lambda_j^{-3})\) spatial cells nevertheless selects one
+\(r_j\)-cylinder with fixed rescaled spacetime mass. The fixed physical
+vorticity cutoff remains exactly covariant on this microchild.
+
+But the intrinsic alignment data collapse:
+
+\[
+\widetilde F_j
+=
+P_{\le\lambda_jM}\widetilde S_j
+=
+\lambda_j^2F_j,
+\qquad
+\widetilde D_j
+=
+\widetilde F_j(0)^2
+=
+\lambda_j^4D_j
+=
+\delta_j^2D_j.
+\]
+
+After external renormalisation,
+\(E_j=\delta_j^{-2}\widetilde D_j\) converges locally uniformly to a nonzero
+constant positive-semidefinite matrix \(D_*\), but \(D_*\) is no longer the
+square of an order-one microchild strain. Thus naive recursive alignment
+packing is closed. Pure volume packing is also insufficient: geometric
+parabolic shells each occupy the fixed fraction \(1-q^5\) of their parent
+while their physical volumes form a convergent fifth-power series.
+
+The live object is therefore two-scale: a fixed-mass cutoff-tensor oscillation
+at \(r_j\), decorated by a nonzero constant detector inherited from the
+larger scale \(\ell_{n_j}\).
 
 The boundary and scalar-renormalisation audits remain useful scope controls:
 averaged band flux is paid by \(\mathcal J_\eta\), no bounded detector can
@@ -302,18 +347,19 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/terminal-alignment-excess.md`;
-3. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-4. `dossier/experiments/terminal-trace-excess.md`;
-5. `dossier/experiments/projective-zero-interface.md`;
-6. `dossier/experiments/trace-projective-domination.md`;
-7. `dossier/experiments/trace-boundary-renormalisation.md`;
-8. `dossier/experiments/trace-transition-band-flux.md`;
-9. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/terminal-carrier-microbubble.md`;
+3. `dossier/experiments/terminal-alignment-excess.md`;
+4. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+5. `dossier/experiments/terminal-trace-excess.md`;
+6. `dossier/experiments/projective-zero-interface.md`;
+7. `dossier/experiments/trace-projective-domination.md`;
+8. `dossier/experiments/trace-boundary-renormalisation.md`;
+9. `dossier/experiments/trace-transition-band-flux.md`;
+10. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-10. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+11. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-11. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+12. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1467,37 +1513,48 @@ Completed terminal alignment-excess reduction:
 > \(g_n=D_n:H_n\in[0,B^2]\) and
 > \(|\mathfrak A_{n,\delta}(\chi)|\ge a\), then the set where
 > \(|g_n(0)-g_n(t)|>a/(2\int\chi)\) has normalised weighted spacetime mass at
-> least \(a/(2B^2)\). Its physical pullback has the exact parabolic
-> \(\ell_n^5\) measure factor. Every fixed classical Navier--Stokes trajectory
+> least \(a/(2B^2)\). Its physical pullback has true unweighted mass
+> \(O(\delta\ell_n^5)\); the fixed bound uses
+> \(\delta^{-1}\ell_n^{-5}\). Every fixed classical Navier--Stokes trajectory
 > on a positive-time cylinder with a locally uniformly convergent detector
 > sequence has zero tensor excess by strong cutoff-tensor convergence and
 > terminal \(L^1\) continuity. A surviving carrier must therefore be a
 > genuinely nonuniform cross-scale object.
+>
+> On a diagonal terminal window \(\delta_j\downarrow0\), covering by
+> \(O(\delta_j^{-3/2})\) spatial cells selects a true parabolic microchild of
+> radius \(r_j=\ell_{n_j}\sqrt{\delta_j}\) with fixed rescaled oscillation
+> mass. The cutoff tensor remains covariant, but the parent strain band and
+> its squared intrinsic detector acquire factors \(\delta_j\) and
+> \(\delta_j^2\). Renormalising the detector leaves a nonzero constant
+> positive-semidefinite parent-scale decoration \(D_*\), not an order-one
+> microchild strain square. Geometric fifth-power shells show that physical
+> volume alone permits an infinite nested carrier tower.
 
 Next deliverable:
 
-> Rescale the fixed-mass detector-oscillation sets selected above and derive
-> the minimal evolution, overlap, and packing laws they inherit from one
-> physical trajectory. Use the exact pullbacks
-> \(H_{\ell_n^2}[\ell_n^2\omega]=H_1[\omega]\) and
-> \(P_{\le M}\widehat S_n=\ell_n^2P_{\le M/\ell_n}S\) to decide whether
-> repeated fixed-mass carriers can nest or overlap without violating local
-> energy, suitability, or terminal endpoint control. A successful packing or
-> cancellation estimate excludes the
+> Derive a two-scale PDE estimate for the microbubble pair
+> \((D_*,H_{\widetilde\eta_j}[\widetilde\omega_j])\). It must charge the
+> nonzero constant parent detector across the diverging scale gap
+> \(\ell_{n_j}/r_j=\delta_j^{-1/2}\) to local energy, suitability, or
+> projective-cross content; neither unweighted volume nor the collapsed
+> intrinsic microchild band can pay it. A successful estimate excludes the
 > direction-weighted concentration
 > \((\xi_n\cdot D_n\xi_n)\rho_n\). Determine whether bounded
 > projective-cross content makes this directional weight compact enough to
-> reduce it to the scalar excess. If it fails, pass the squared detector, its
-> weighted signed excess, the scalar excess, and only the nonredundant
-> projective-cross defect into the minimal suitable ancient system and
-> exclude it by rigidity. Use
+> reduce it to the scalar excess after the secondary scaling. If it fails,
+> retain the nonzero constant decoration, the tensor-oscillation Young
+> measure, the weighted signed excess, the scalar excess, and only the
+> nonredundant projective-cross defect in the minimal suitable ancient system
+> and exclude it by rigidity. Use
 > \(\mu_{\mathcal J,0}\) only in an independently tight branch; raw
 > \(\mathcal J_\eta\), \(\mathcal T_\eta\), and \(|\rho_\eta|\) are not
 > admissible universal excesses. Do not try to obtain a familywise modulus
 > from endpoint size, energy, suitability, or ancient age alone; another
 > amplitude--cutoff heat family is annihilated by the squared alignment
 > detector and cannot test the surviving input. Do not try another bounded
-> scalar renormalisation, replace signed
+> scalar renormalisation, a pure volume packing or recursive natural-band
+> argument at the microchild scale, replace signed
 > logarithmic flux by positive variation, return to the full matrix norm, use
 > unstable modes orthogonal to the terminal tensor as a detector obstruction,
 > treat finite-window affine or shear amplification as a Clay counterexample,

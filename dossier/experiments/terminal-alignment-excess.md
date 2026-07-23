@@ -954,8 +954,11 @@ next secondary rescaling.
 
 Under the physical pullback (31), the set in (69) lies in a parabolic
 cylinder of radius \(\ell_n\) and duration \(\ell_n^2\). Its physical
-spacetime measure has the exact factor \(\ell_n^5\); the lower bound becomes
-scale invariant after the natural \(\ell_n^{-5}\) normalisation.
+spacetime measure has the exact Jacobian factor \(\ell_n^5\). More precisely,
+the lower bound is fixed after the terminal-slab normalisation
+\(\delta^{-1}\ell_n^{-5}\); its true unweighted physical measure is bounded
+below by a constant times \(\delta\ell_n^5\). The subsequent microbubble
+localisation restores a standard parabolic fifth-power normalisation.
 
 ## 10. Every fixed classical Navier--Stokes trajectory has zero tensor excess
 
@@ -1061,6 +1064,15 @@ evolution. Smooth transverse zero strata are now excluded as carriers; only
 sequence-dependent terminal oscillation carriers of the fixed mass (69)
 remain. Every fixed classical Navier--Stokes trajectory on a positive-time
 cylinder, including one with degenerate zeros, has zero alignment excess.
+
+The subsequent
+[terminal carrier microbubble theorem](terminal-carrier-microbubble.md)
+localises every such diagonal carrier to a true parabolic child of radius
+\(r_j=\ell_{n_j}\sqrt{\delta_j}\). It also proves that the parent finite band
+and its squared intrinsic detector collapse there by factors \(\delta_j\)
+and \(\delta_j^2\). Only a nonzero constant externally renormalised
+parent-scale detector survives. Thus pure fifth-power volume packing and a
+recursive application of the natural-band theorem are not available.
 
 This is an exact analytic reduction. It does not prove
 \(\mathfrak A_0=0\), suitability, ancient rigidity, regularity, blow-up, or a

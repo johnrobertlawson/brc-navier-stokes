@@ -402,13 +402,25 @@ and breakdown work
   \(|\mathfrak A_{n,\delta}(\chi)|\ge a\), and
   \(V_\chi=\int\chi\), then the set where the detector changes by more than
   \(a/(2V_\chi)\) has normalised weighted spacetime mass at least
-  \(a/(2B^2)\). Under the one-trajectory pullback this is a fixed-mass set in
-  a physical parabolic cylinder, with the exact \(\ell_n^5\) measure factor.
+  \(a/(2B^2)\). Under the one-trajectory pullback its true unweighted physical
+  mass is proportional to \(\delta\ell_n^5\); the fixed lower bound uses the
+  terminal-slab normalisation \(\delta^{-1}\ell_n^{-5}\).
   Conversely, every fixed classical Navier--Stokes trajectory on a
   positive-time cylinder has zero tensor alignment excess for convergent
   detectors: \(H_{\eta_n}\to Q[\omega]\) strongly away from its measure-zero
   analytic zero set, and \(Q[\omega(t)]\to Q[\omega(0)]\) in \(L^1\). Thus
   only nonuniform natural-child sequences can realise the carrier.
+- The true parabolic carrier scale is subnatural. For a diagonal window
+  \(\delta_j\downarrow0\), a cover by
+  \(O(\delta_j^{-3/2})\) spatial cells selects a microchild of radius
+  \(r_j=\ell_{n_j}\sqrt{\delta_j}\) with fixed rescaled oscillation mass.
+  The fixed physical cutoff remains covariant, but the parent finite band
+  and squared intrinsic detector shrink by \(\delta_j\) and
+  \(\delta_j^2\). External renormalisation leaves a nonzero constant
+  positive-semidefinite parent detector \(D_*\), not an order-one microchild
+  strain square. Nested fifth-power shells have fixed normalised mass and
+  summable physical volume, so pure volume packing and recursive natural-band
+  iteration cannot close the route.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -419,11 +431,12 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can the fixed-mass detector-oscillation carriers forced by nonzero
-> \(\mathfrak A_0\) be packed, overlapped, or cancelled across the natural
-> child scales of one Navier--Stokes trajectory? If not, can the resulting
-> direction-weighted signed density and nonredundant projective-cross defect
-> be retained in a suitable ancient system and excluded by rigidity?
+> Can the nonzero constant parent-scale detector decorating each subnatural
+> fixed-mass tensor-oscillation microbubble be charged across the scale gap
+> to suitability, local energy, or projective-cross content? If not, can the
+> two-scale decoration, direction-weighted signed density, and nonredundant
+> projective-cross defect be retained in a suitable ancient system and
+> excluded by rigidity?
 
 The coequal breakdown question remains:
 
@@ -432,24 +445,24 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Use the exact physical pullbacks
-   \(H_{\ell_n^2}[\ell_n^2\omega]=H_1[\omega]\) and
-   \(P_{\le M}\widehat S_n=\ell_n^2P_{\le M/\ell_n}S\) to derive a
-   cross-scale packing or cancellation estimate for
-   \(\mathfrak A_0\).
-2. Prove that the direction-weighted trace concentration
+1. Derive a two-scale estimate for
+   \(D_*:H_{\widetilde\eta_j}[\widetilde\omega_j]\) that pays the constant
+   parent detector across
+   \(\ell_{n_j}/r_j=\delta_j^{-1/2}\) using suitability, local energy, or
+   projective-cross content.
+2. Determine the minimal tensor-oscillation Young measure retained by the
+   microbubble when the intrinsic strain band collapses, and identify its
+   exact evolution against the constant detector \(D_*\).
+3. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
    energy, and the same-trajectory pullbacks, or construct the exact coherent
    survivor.
-3. Determine whether bounded projective-cross content makes the directional
+4. Determine whether bounded projective-cross content makes the directional
    weight compact enough to reduce the weighted concentration to
    \(\mathfrak E_0\); do not replace either signed remainder by variation.
-4. Classify sequence-dependent or temporally degenerate zero profiles beyond
+5. Classify sequence-dependent or temporally degenerate zero profiles beyond
    the now-closed smooth transverse-linear class, preserving cancellation
    between weighted trace and anisotropic projective-cross terms.
-5. Rescale the fixed-mass detector-oscillation sets and derive the minimal
-   evolution law they retain; decide whether repeated carriers can be packed
-   along one physical trajectory.
 6. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.
