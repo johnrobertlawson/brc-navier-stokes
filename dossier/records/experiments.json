@@ -1982,12 +1982,13 @@
         "No terminal-layer exclusion, finite-secondary-index pressure estimate, sub-square-root theorem, profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Retain the fixed forward half-height interval from the event theorem, freeze a finite horizon large enough to absorb the terminal L1 penalty, pass the finite-horizon pressure estimate through the smooth genealogy, use exact parabolic covariance to pull packets to the base trajectory, split each event-point packet into early and late adjoint time, thin the late branch to disjoint annuli, and apply vector-valued Khintchine randomisation plus the geometric test-norm ledger.",
-      "certificate": "A written conditional finite-packet theorem and adversarial review request, with exact Fraction tests for the finite-horizon floor, packet constant, parabolic pullback, annulus separation, geometric L2 sum, and square-root randomisation ratio.",
+      "certificate": "A written conditional finite-packet theorem, standalone compilable LaTeX reviewer note, and adversarial review request, with exact Fraction tests for the finite-horizon floor, packet constant, parabolic pullback, annulus separation, geometric L2 sum, and square-root randomisation ratio.",
       "success_criterion": "The remote-history artefact is removed, every event is paid on one finite scale-matched horizon, and the unresolved pressure mechanism is reduced exactly to a terminal initial-layer cascade or a finite-secondary-index estimate improving the square-root annular bundle.",
       "failure_interpretation": "The finite lower limit loses terminal pairing, event persistence does not support a fixed horizon, covariance has the wrong horizon power, the early-late limit quantifiers are not exhaustive, annuli do not separate, pulled-back adjoints do not share a genealogy, Khintchine randomisation is inapplicable, or the combined terminal L2 ledger grows with event count.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/adjoint-pressure-packets.md",
+        "dossier/adjoint-pressure-cost-reviewer.tex",
         "dossier/review-letter-adjoint-pressure-packets-2026-07-23.md",
         "dossier/review-response-adjoint-pressure-packets-2026-07-23.md",
         "lab/navier_lab/adjoint_pressure_packets.py",

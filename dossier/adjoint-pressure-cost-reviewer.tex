@@ -1,22 +1,20 @@
 \documentclass[11pt]{article}
 
 \usepackage[T1]{fontenc}
-\usepackage{amsmath,amssymb,mathtools}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
 \usepackage[margin=1in]{geometry}
 \usepackage{microtype}
 
 \newcommand{\R}{\mathbb R}
-\newcommand{\cA}{\mathcal A}
 \newcommand{\cG}{\mathcal G}
-\newcommand{\cO}{\mathcal O}
-\newcommand{\cQ}{\mathcal Q}
-\newcommand{\cV}{\mathcal V}
+\newcommand{\cS}{\mathcal S}
 \newcommand{\ev}{\operatorname{ev}}
-\newcommand{\supp}{\operatorname{supp}}
 \newcommand{\weakLthree}{L^{3,\infty}}
 \newcommand{\LorentzDual}{L^{3/2,1}}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
 
-\title{Adjoint-pressure cost of one Besov regeneration bridge}
+\title{Finite adjoint-pressure cost of one Besov regeneration event}
 \author{}
 \date{23 July 2026}
 
@@ -24,298 +22,316 @@
 \maketitle
 
 \paragraph{Scope.}
-This note records a conditional a priori estimate on the smooth physical
-genealogy converging to the ancient weak-\(L^3\) profile.  It does not assume
-that a rough hull state has a uniquely defined endpoint Oseen adjoint, and it
-does not establish a finite sum of the costs over all regeneration bridges.
+This self-contained note gives the exact finite-window
+adjoint-pressure functional used in the argument and the proved
+a priori lower bound for one Besov regeneration event.  The statement is
+conditional on the existence of the smooth physical genealogy and the
+event sequence specified below.  It neither sums the costs over infinitely
+many events nor proves regularity or a resolution of the Clay problem.
 
-\section*{1. Smooth finite-horizon adjoint estimate}
+\section*{1. Smooth genealogy and its Oseen adjoint}
 
-Here \(\nu\) denotes the viscosity of the trajectory under discussion.
-For the normalised outer profile in Section 2, \(\nu=1\).
-
-Let \(u\) be a smooth, finite-energy, divergence-free Navier--Stokes
-solution on
-\(\R^3\times[-H,0]\), with viscosity \(\nu>0\).  Let \(M>0\) and assume
-\begin{equation}
-  \sup_{-H\le t\le0}
-  \|u(t)\|_{\weakLthree(\R^3)}
-  \le M.
-  \label{eq:weak-L3}
-\end{equation}
-Put \(b(\tau)=u(-\tau)\) and \(g=u(0)\).  Given
-\(\psi\in C^\infty_{c,\sigma}(\R^3;\R^3)\), let
-\((a,\pi^*)\) solve the solenoidal Oseen adjoint
-\begin{equation}
-  \boxed{
-  \begin{aligned}
-    \partial_\tau a-\nu\Delta a-b\cdot\nabla a+\nabla\pi^*&=0,
-      &&0<\tau<H,\\
-    \nabla\cdot a&=0,\\
-    a(0)&=\psi .
-  \end{aligned}}
-  \label{eq:adjoint}
-\end{equation}
-Equivalently,
-\[
-  \partial_\tau a-\nu\Delta a-\mathbb P(b\cdot\nabla a)=0,
-\]
-where \(\mathbb P\) is the Leray projection.  In the reversed time
-variable, the primal velocity satisfies
-\[
-  \partial_\tau b=-\nu\Delta b+\mathbb P(b\cdot\nabla b).
-\]
-The drift terms cancel after integration by parts, and therefore
-\begin{equation}
-  \boxed{\langle b(T),a(T)\rangle=\langle g,\psi\rangle}
-  \qquad(0\le T\le H).
-  \label{eq:pairing}
-\end{equation}
-The adjoint energy identity is
-\begin{equation}
-  \boxed{
-  \|a(T)\|_2^2
-+2\nu\int_0^T\|\nabla a(\tau)\|_2^2\,d\tau
-=\|\psi\|_2^2.}
-  \label{eq:energy}
-\end{equation}
-
-Set
-\[
-  B(T):=\sup_{0\le\tau\le T}\|a(\tau)\|_1.
-\]
-If \(B(T)<\infty\), Nash's inequality and \eqref{eq:energy} give
-\begin{equation}
-  \|a(T)\|_2
-  \le C_{\mathrm N}B(T)(\nu T)^{-3/4}.
-  \label{eq:nash}
-\end{equation}
-Real interpolation between \(L^1\) and \(L^2\), with interpolation
-parameter \(2/3\), then gives
-\begin{align}
-  \|a(T)\|_{\LorentzDual}
-  &\le C_{\mathrm{int}}
-     \|a(T)\|_1^{1/3}\|a(T)\|_2^{2/3} \notag\\
-  &\le C_*B(T)(\nu T)^{-1/2}.
-  \label{eq:interpolation}
-\end{align}
-On the other hand, Lorentz duality and \eqref{eq:pairing} imply
-\[
-  |\langle g,\psi\rangle|
-  \le C_{\mathrm{Lor}}M
-      \|a(T)\|_{\LorentzDual}.
-\]
-Consequently, with
-\(C_{\mathrm{adj}}:=C_{\mathrm{Lor}}C_*\),
-\begin{equation}
-  \boxed{
-  B(T)\ge
-  \frac{|\langle g,\psi\rangle|}
-       {C_{\mathrm{adj}}M}\sqrt{\nu T}.}
-  \label{eq:L1-growth}
-\end{equation}
-The assertion remains valid in the extended sense if \(B(T)=\infty\).
-
-The vector Kato inequality applied to \eqref{eq:adjoint} gives
-\[
-  \frac{d}{d\tau}\|a(\tau)\|_1
-  \le \|\nabla\pi^*(\tau)\|_1.
-\]
-If the pressure-history integral is finite, this follows rigorously by
-testing a smooth approximation of \(|a|\) against a spatial cutoff,
-letting the cutoff radius tend to infinity, and then removing the modulus
-regularisation; the smooth finite-energy drift is bounded on every finite
-horizon.  If that integral is infinite, the estimate below is automatic.
-Diffusion is \(L^1\)-contractive and the divergence-free drift integrates
-to zero.  Combining this inequality with \eqref{eq:L1-growth} proves the
-finite-horizon estimate
-\begin{equation}
-  \boxed{
-  \int_0^T
-  \|\nabla\pi^*(\tau)\|_{L^1(\R^3)}\,d\tau
-  \ge
-  \frac{|\langle g,\psi\rangle|}
-       {C_{\mathrm{adj}}M}\sqrt{\nu T}
-  -\|\psi\|_{L^1(\R^3)}.}
-  \label{eq:finite-horizon}
-\end{equation}
-
-\section*{2. Lower-relaxed cost on a physical genealogy}
-
-Let \(X\) be an ancient trajectory state with terminal trace
-\(g=\ev_0X\).  An admissible smooth physical genealogy for \(X\) is a
-sequence
+Fix viscosity \(\nu>0\).  Let \(X\) be an ancient trajectory state with
+terminal trace \(g=\ev_0X\).  An admissible smooth physical genealogy for
+\(X\) is a sequence
 \[
   \cG=\{(u_n,H_n)\}_{n\ge1}
 \]
 such that:
 \begin{enumerate}
-  \item \(u_n\) is a smooth finite-energy Navier--Stokes solution on
-        \(\R^3\times[-H_n,0]\);
+  \item \(u_n\) is a smooth, finite-energy, divergence-free
+        Navier--Stokes solution on
+        \(\R^3\times[-H_n,0]\), with viscosity \(\nu\);
   \item \(H_n\to\infty\);
-  \item
-        \[
+  \item for one \(M>0\),
+        \begin{equation}
           \sup_n\sup_{-H_n\le t\le0}
-          \|u_n(t)\|_{\weakLthree}\le M;
-        \]
+          \|u_n(t)\|_{\weakLthree(\R^3)}
+          \le M;
+          \label{eq:weak-L3}
+        \end{equation}
   \item \(u_n\to X\) strongly in local spacetime \(L^3\) on every
         compact negative-time cylinder, with the corresponding local weak
-        pressure convergence;
+        pressure convergence; and
   \item \(u_n(0)\to g\) in \(\mathcal D'(\R^3)\).
 \end{enumerate}
-For the outer profile, such a sequence is obtained from its physical
-spacetime diagonal \(V_n\) at radii \(\rho_n\to0\).  Choose a countable
-determining family
-\(\{\chi_k\}\subset C_c^\infty(\R^3;\R^3)\), dense in
-\(L^{3/2,1}\) on a compact exhaustion.  Terminal weak continuity permits
-the diagonal choice \(0<\varepsilon_n<1/n\) such that
-\[
-  \left|
-  \langle V_n(-\varepsilon_n)-V_n(0),\chi_k\rangle
-  \right|<\frac1n
-  \qquad(k\le n).
-\]
-The uniform weak-\(L^3\) ceiling and Lorentz duality extend this
-convergence to every compact smooth test, hence
-\(V_n(-\varepsilon_n)-V_n(0)\to0\) in \(\mathcal D'\).  Set
-\[
-  u_n(s):=V_n(s-\varepsilon_n),
-  \qquad
-  H_n:=\frac{\nu_{\mathrm{phys}}T^*}{2\rho_n^2}.
-\]
-The translated interval lies strictly before the first singular time,
-so \(u_n\) is smooth; \(H_n\to\infty\), critical scaling preserves the
-weak-\(L^3\) ceiling, and the vanishing translation preserves the local
-trajectory limit.  Here \(\nu_{\mathrm{phys}}\) is the original physical
-viscosity; the profiles \(u_n\) have unit viscosity.
 
-For \(T\le H_n\), denote by \(\pi^*_{n,\psi}\) the pressure in
-\eqref{eq:adjoint} driven by \(b_n(\tau)=u_n(-\tau)\).  Define
+For \(\psi\in C^\infty_{c,\sigma}(\R^3;\R^3)\), set
+\(b_n(\tau)=u_n(-\tau)\).  For \(0<T\le H_n\), let
+\((a_{n,\psi},\pi^*_{n,\psi})\) solve
 \begin{equation}
   \boxed{
-  \mathfrak q^\cG_\psi(X)
+  \begin{aligned}
+    \partial_\tau a_{n,\psi}
+      -\nu\Delta a_{n,\psi}
+      -b_n\cdot\nabla a_{n,\psi}
+      +\nabla\pi^*_{n,\psi}&=0,
+      &&0<\tau<T,\\
+    \nabla\cdot a_{n,\psi}&=0,\\
+    a_{n,\psi}(0)&=\psi .
+  \end{aligned}}
+  \label{eq:adjoint}
+\end{equation}
+Equivalently,
+\(\partial_\tau a_{n,\psi}-\nu\Delta a_{n,\psi}
+-\mathbb P(b_n\cdot\nabla a_{n,\psi})=0\), where
+\(\mathbb P\) is the Leray projection.
+
+\section*{2. Finite-horizon estimate and exact cost}
+
+\begin{proposition}[smooth finite-horizon pressure estimate]
+\label{prop:finite-horizon}
+There is a universal constant \(C_{\rm adj}>0\), depending only on the
+normalisations of Nash's inequality and Lorentz duality, such that
+\begin{equation}
+  \boxed{
+  \int_0^T
+  \|\nabla\pi^*_{n,\psi}(\tau)\|_{L^1(\R^3)}\,d\tau
+  \ge
+  \frac{|\langle u_n(0),\psi\rangle|}
+       {C_{\rm adj}M}\sqrt{\nu T}
+  -\|\psi\|_{L^1(\R^3)} .}
+  \label{eq:finite-horizon}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+In reversed time the primal equation and \eqref{eq:adjoint} have the
+conserved pairing and adjoint energy identity
+\begin{align}
+  \langle b_n(T),a_{n,\psi}(T)\rangle
+    &=\langle u_n(0),\psi\rangle,
+    \label{eq:pairing}\\
+  \|a_{n,\psi}(T)\|_2^2
+  +2\nu\int_0^T\|\nabla a_{n,\psi}(\tau)\|_2^2\,d\tau
+    &=\|\psi\|_2^2.
+    \label{eq:energy}
+\end{align}
+Put
+\[
+  B_n(T):=\sup_{0\le\tau\le T}\|a_{n,\psi}(\tau)\|_1.
+\]
+Nash's inequality, \eqref{eq:energy}, and real interpolation give
+\[
+  \|a_{n,\psi}(T)\|_{\LorentzDual}
+  \le C_* B_n(T)(\nu T)^{-1/2}.
+\]
+By \eqref{eq:weak-L3}, \eqref{eq:pairing}, and Lorentz duality,
+\[
+  |\langle u_n(0),\psi\rangle|
+  \le C_{\rm Lor}M
+      \|a_{n,\psi}(T)\|_{\LorentzDual}.
+\]
+Thus, with \(C_{\rm adj}=C_{\rm Lor}C_*\),
+\[
+  B_n(T)
+  \ge
+  \frac{|\langle u_n(0),\psi\rangle|}
+       {C_{\rm adj}M}\sqrt{\nu T}.
+\]
+Finally, the vector Kato inequality for \eqref{eq:adjoint} gives
+\[
+  \frac{d}{d\tau}\|a_{n,\psi}(\tau)\|_1
+  \le\|\nabla\pi^*_{n,\psi}(\tau)\|_1.
+\]
+Taking the running supremum and using
+\(\|a_{n,\psi}(0)\|_1=\|\psi\|_1\) proves
+\eqref{eq:finite-horizon}.  If either \(B_n(T)\) or the pressure integral
+is infinite, the corresponding inequality holds in the extended sense.
+\end{proof}
+
+\paragraph{Definition of the finite-window cost.}
+For \(T>0\), define
+\begin{equation}
+  \boxed{
+  \mathfrak p^\cG_{\psi,T}(X)
   :=
-  \liminf_{T\to\infty}
-  \ \liminf_{\substack{n\to\infty\\H_n\ge T}}
+  \liminf_{\substack{n\to\infty\\H_n\ge T}}
   \frac{1}{\sqrt{\nu T}}
   \int_0^T
-  \|\nabla\pi^*_{n,\psi}(\tau)\|_{L^1(\R^3)}
-  \,d\tau .}
+  \|\nabla\pi^*_{n,\psi}(\tau)\|_{L^1(\R^3)}\,d\tau .}
   \label{eq:cost}
 \end{equation}
-Taking first \(n\to\infty\) and then \(T\to\infty\) in
-\eqref{eq:finite-horizon} yields
+The constrained lower limit means
+\[
+  \lim_{N\to\infty}
+  \inf_{\substack{n\ge N\\H_n\ge T}}(\cdots).
+\]
+It is taken only along the smooth genealogy; no endpoint adjoint on the
+rough state \(X\) is assumed.
+
+Dividing \eqref{eq:finite-horizon} by \(\sqrt{\nu T}\), using
+\(u_n(0)\to\ev_0X\) distributionally, and taking the lower limit yields
 \begin{equation}
   \boxed{
-  \mathfrak q^\cG_\psi(X)
+  \mathfrak p^\cG_{\psi,T}(X)
   \ge
   \frac{|\langle\ev_0X,\psi\rangle|}
-       {C_{\mathrm{adj}}M}.}
+       {C_{\rm adj}M}
+  -\frac{\|\psi\|_1}{\sqrt{\nu T}} .}
   \label{eq:cost-lower}
 \end{equation}
-The lower bound is independent of the admissible genealogy.  The value of
-\(\mathfrak q^\cG_\psi(X)\) is not asserted here to be intrinsic to an
-arbitrary rough hull state.
 
-For reference, if
+\section*{3. One Besov regeneration event}
+
+From now on take \(X=X_*\), where \(X_*\) is the ancient profile, and let
+\(\cG\) be the admissible genealogy for \(X_*\) fixed in Section~1.  Let
+the Navier--Stokes dilation be
 \[
-  \psi_\lambda(x):=\lambda^{-2}\psi(x/\lambda),
+  (\cS_\lambda u)(x,t)
+  :=\lambda u(\lambda x,\lambda^2t),
+  \qquad
+  \Phi_\theta:=\cS_{e^\theta}.
 \]
-then
-\[
-  \|\psi_\lambda\|_1=\lambda\|\psi\|_1,\qquad
-  \|\psi_\lambda\|_2^2=\lambda^{-1}\|\psi\|_2^2,\qquad
-  \|\psi_\lambda\|_{\LorentzDual}
-  =\|\psi\|_{\LorentzDual}.
-\]
-Writing \(\mathcal S_\lambda\) for the Navier--Stokes dilation, the
-corresponding scaled genealogy satisfies
+For a fixed \(\lambda>0\), define the scaled genealogy, including its
+available backward horizons, by
 \begin{equation}
-  \boxed{
-  \mathfrak q^\cG_{\psi_\lambda}(X)
-  =
-  \mathfrak q^{\mathcal S_\lambda\cG}_\psi
-  (\mathcal S_\lambda X).}
-  \label{eq:scaling}
+  \cS_\lambda\cG
+  :=
+  \left\{
+    \left(\cS_\lambda u_n,\frac{H_n}{\lambda^2}\right)
+  \right\}_{n\ge1}.
+  \label{eq:scaled-genealogy}
 \end{equation}
-
-\section*{3. Cost of one Besov regeneration bridge}
-
-Let \(X_*\) be the ancient profile, let
-\(\Phi_\theta=\mathcal S_{e^\theta}\), and choose
-\(\varphi\in C^\infty_{c,\sigma}(\R^3;\R^3)\).  Put
+Choose
+\(\varphi\in C^\infty_{c,\sigma}(\R^3;\R^3)\), and define the detector
 \begin{equation}
   z(\theta)
   :=
   \left\langle
     \ev_0(\Phi_\theta X_*),\varphi
-  \right\rangle ,
-  \qquad
-  \cA\varphi:=2\varphi+x\cdot\nabla\varphi .
-  \label{eq:event-observable}
-\end{equation}
-The exact dilation derivative is
-\begin{equation}
-  z'(\theta)
-  =
-  -\left\langle
-    \ev_0(\Phi_\theta X_*),\cA\varphi
   \right\rangle .
-  \label{eq:dilation-derivative}
+  \label{eq:observable}
 \end{equation}
-Suppose that consecutive event times satisfy
+Assume there are regeneration times \(\theta_m\) and a \(c_0>0\) such
+that
 \[
-  z(\theta_m)\ge c_0,\qquad
-  z(\theta_{m+1})\ge c_0,\qquad
-  \theta_{m+1}-\theta_m\ge1,
-\]
-and put \(I_m=[\theta_m,\theta_{m+1}]\).  Define
-\[
-  \cV_m:=\int_{I_m}|z'(\theta)|\,d\theta,
+  z(\theta_m)\ge c_0,
   \qquad
-  \cO_m:=
-  \bigl|\{\theta\in I_m:z(\theta)\ge c_0/2\}\bigr|.
+  \theta_{m+1}-\theta_m\ge1.
 \]
-Let
-\(\cG_\theta:=\mathcal S_{e^\theta}\cG\).
-To avoid assuming measurability of the genealogy-relaxed functional,
-write \(\int^{\!*}\) for the lower Lebesgue integral and define
-\begin{align}
-  \cQ_m
-  :={}&
-  \int_{I_m}^{\!*}
-  \mathfrak q^{\cG_\theta}_{\cA\varphi}
-      (\Phi_\theta X_*)\,d\theta \notag\\
-  &+
-  \int_{I_m}^{\!*}
-  \mathbf 1_{\{z(\theta)\ge c_0/2\}}
-  \mathfrak q^{\cG_\theta}_{\varphi}
-      (\Phi_\theta X_*)\,d\theta .
-  \label{eq:bridge-cost}
-\end{align}
-Equations \eqref{eq:cost-lower} and
-\eqref{eq:dilation-derivative} imply
+Set
+\[
+  \mathcal A\varphi:=2\varphi+x\cdot\nabla\varphi,
+  \qquad
+  L_\varphi
+  :=C_{\rm Lor}M
+    \|\mathcal A\varphi\|_{\LorentzDual}.
+\]
+The exact dilation derivative and Lorentz duality give
+\[
+  z'(\theta)
+  =-\left\langle
+      \ev_0(\Phi_\theta X_*),\mathcal A\varphi
+    \right\rangle,
+  \qquad
+  |z'(\theta)|\le L_\varphi.
+\]
+Consequently, for
+\begin{equation}
+  \delta
+  :=
+  \begin{cases}
+    \displaystyle
+    \min\left\{\frac12,\frac{c_0}{2L_\varphi}\right\},
+      &L_\varphi>0,\\[6pt]
+    \displaystyle\frac12,&L_\varphi=0,
+  \end{cases}
+  \label{eq:delta}
+\end{equation}
+every event has the forward half-height interval
+\begin{equation}
+  z(\theta)\ge\frac{c_0}{2}
+  \qquad
+  (\theta_m\le\theta\le\theta_m+\delta).
+  \label{eq:persistence}
+\end{equation}
+
+Choose one finite horizon \(T_0\) satisfying
 \begin{equation}
   \boxed{
-  \cQ_m
+  \sqrt{\nu T_0}
   \ge
-  \frac{\cV_m+(c_0/2)\cO_m}
-       {C_{\mathrm{adj}}M}
+  \frac{4C_{\rm adj}M\|\varphi\|_1}{c_0}.}
+  \label{eq:horizon}
+\end{equation}
+For each fixed \(\theta\), use the correspondingly scaled genealogy
+\(\cG_\theta:=\cS_{e^\theta}\cG\).
+
+\begin{corollary}[single-event packet bound]
+\label{cor:single-event}
+On the active interval of the \(m\)-th regeneration event,
+\begin{equation}
+  \boxed{
+  \mathfrak p^{\cG_\theta}_{\varphi,T_0}
+    (\Phi_\theta X_*)
   \ge
-  \frac{c_0}{2C_{\mathrm{adj}}M}>0.}
+  \frac{c_0}{4C_{\rm adj}M}
+  =:\beta_0
+  \qquad
+  (\theta_m\le\theta\le\theta_m+\delta).}
+  \label{eq:pointwise-packet}
+\end{equation}
+In particular, define its finite adjoint-pressure packet by
+\begin{equation}
+  \boxed{
+  \mathcal P_m
+  :=
+  \int_{\theta_m}^{\theta_m+\delta}{}^{\!*}
+  \mathfrak p^{\cG_\theta}_{\varphi,T_0}
+    (\Phi_\theta X_*)\,d\theta,}
+  \label{eq:packet}
+\end{equation}
+where, for a nonnegative function \(F\), the lower Lebesgue integral is
+\[
+  \int_E^{\!*}F
+  :=
+  \sup\left\{
+    \int_E h:
+    h\ \text{is measurable and }0\le h\le F
+  \right\}.
+\]
+Then the a priori cost of one regeneration event obeys
+\begin{equation}
+  \boxed{
+  \mathcal P_m
+  \ge
+  \delta\beta_0
+  =
+  \frac{\delta c_0}{4C_{\rm adj}M}
+  >0.}
   \label{eq:single-event}
 \end{equation}
-Indeed, either \(z\ge c_0/2\) throughout \(I_m\), in which case
-\(\cO_m\ge1\), or \(z\) drops below \(c_0/2\) and returns to at least
-\(c_0\), in which case \(\cV_m\ge c_0\).
+\end{corollary}
 
-\paragraph{What remains open.}
-Estimate \eqref{eq:single-event} is a lower bound for one regeneration
-bridge.  The adjoint histories associated with different scales overlap,
-and no estimate proved here bounds
-\(\sum_{m=1}^N\cQ_m\) uniformly in \(N\).  Such an event-index summation,
-or a uniform \(o(\sqrt T)\) upper bound contradicting
-\eqref{eq:finite-horizon}, would be the new rigidity input needed to close
-this conditional branch.
+\begin{proof}
+For \(\theta\) in \eqref{eq:persistence}, apply
+\eqref{eq:cost-lower} with \(X=\Phi_\theta X_*\),
+\(\psi=\varphi\), and \(T=T_0\).  The first term is at least
+\(c_0/(2C_{\rm adj}M)\), while \eqref{eq:horizon} bounds the penalty by
+\(c_0/(4C_{\rm adj}M)\).  This proves
+\eqref{eq:pointwise-packet}.  The definition of the lower integral then
+gives \eqref{eq:single-event}.
+\end{proof}
+
+\paragraph{Scale check.}
+For
+\(\psi_\lambda(x)=\lambda^{-2}\psi(x/\lambda)\), the exact covariance is
+\[
+  \boxed{
+  \mathfrak p^{\cS_\lambda\cG}_{\psi,T}
+    (\cS_\lambda X)
+  =
+  \mathfrak p^\cG_{\psi_\lambda,\lambda^2T}(X).}
+\]
+Thus the packet is scale zero after division by \(\sqrt{\nu T}\), and
+the fixed scaled horizon \(T_0\) corresponds to the finite physical
+horizon \(\lambda^2T_0\).
+
+\paragraph{Open boundary.}
+Equation \eqref{eq:single-event} is a positive lower bound for one event.
+It does not bound \(\sum_m\mathcal P_m\), because the adjoint histories
+at different scales can overlap or concentrate in terminal initial
+layers.  Excluding those mechanisms requires an additional theorem.
 
 \end{document}
