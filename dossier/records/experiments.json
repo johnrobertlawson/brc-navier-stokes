@@ -1064,6 +1064,35 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-MOVING-BAND-COUPLING-001",
+      "title": "Moving-band parent-micro coupling audit",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Moving the stress output band to the microbubble frequency retains an order-one bilinear interaction between the nonzero parent strain jet and the microbubble dynamics.",
+      "invariants": [
+        "After Galilean subtraction the parent low velocity is affine to leading order on the microcell",
+        "Secondary Navier-Stokes scaling gives the parent low velocity and strain one factor delta on the microcylinder",
+        "The parent-micro stress cross term loses delta and the parent-parent term loses delta squared",
+        "Fixed moving output in micro coordinates does not restore either lost amplitude factor",
+        "The micro-micro stress remains scale critical but contains no algebraic parent-strain factor",
+        "The parent detector survives only through the external delta to the negative two renormalisation of the squared collapsed strain",
+        "No purely local moving-band paraproduct estimate can convert the critical micro self-stress into parent alignment without an additional nonlocal or trajectory-level law",
+        "No nested-tree exclusion, same-trajectory survivor, regularity theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Subtract the parent low velocity at the selected centre, Taylor-expand its fixed band on the microcell, apply the exact secondary velocity and strain scaling, decompose the moving-band stress into low-low, low-micro, and micro-micro terms, and compare their powers with the externally renormalised detector.",
+      "certificate": "A written moving-band coupling no-go theorem plus exact Fraction tests for the Galilean affine remainder, parent strain, cross-stress, low-low stress, self-stress, and detector-renormalisation powers.",
+      "success_criterion": "Either an order-one parent-micro paraproduct survives at the moving band and constrains the tensor oscillation, or exact scaling proves that only an alignment-free micro self-interaction remains.",
+      "failure_interpretation": "Galilean subtraction does not remove the constant parent velocity, the affine parent remainder is larger than delta, or the moving output multiplier restores a lost parent amplitude.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/moving-band-coupling.md",
+        "lab/navier_lab/moving_band_coupling.py",
+        "lab/tests/test_moving_band_coupling.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

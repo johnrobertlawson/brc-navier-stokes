@@ -1,6 +1,6 @@
-# Handoff: find coupling beyond fixed parent bands
+# Handoff: charge or retain the nested microbubble tower
 
-**Updated:** 2026-07-23T14:08:47Z
+**Updated:** 2026-07-23T14:16:53Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -468,22 +468,23 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/forcing-jet-decoupling.md`;
-3. `dossier/experiments/strain-jet-freezing.md`;
-4. `dossier/experiments/microbubble-decoration-rigidity.md`;
-5. `dossier/experiments/terminal-carrier-microbubble.md`;
-6. `dossier/experiments/terminal-alignment-excess.md`;
-7. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-8. `dossier/experiments/terminal-trace-excess.md`;
-9. `dossier/experiments/projective-zero-interface.md`;
-10. `dossier/experiments/trace-projective-domination.md`;
-11. `dossier/experiments/trace-boundary-renormalisation.md`;
-12. `dossier/experiments/trace-transition-band-flux.md`;
-13. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/moving-band-coupling.md`;
+3. `dossier/experiments/forcing-jet-decoupling.md`;
+4. `dossier/experiments/strain-jet-freezing.md`;
+5. `dossier/experiments/microbubble-decoration-rigidity.md`;
+6. `dossier/experiments/terminal-carrier-microbubble.md`;
+7. `dossier/experiments/terminal-alignment-excess.md`;
+8. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+9. `dossier/experiments/terminal-trace-excess.md`;
+10. `dossier/experiments/projective-zero-interface.md`;
+11. `dossier/experiments/trace-projective-domination.md`;
+12. `dossier/experiments/trace-boundary-renormalisation.md`;
+13. `dossier/experiments/trace-transition-band-flux.md`;
+14. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-14. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+15. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-15. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+16. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1690,20 +1691,30 @@ Completed terminal alignment-excess reduction:
 > \(\mathscr Z_j\to Z_*\) locally uniformly for a constant coarser-scale
 > forcing matrix. The first forcing jet therefore also decouples from the
 > microbubble.
+>
+> Moving the output band to the microfrequency also fails to recover parent
+> alignment. After Galilean subtraction and secondary scaling, the parent
+> low velocity and strain are \(O(\delta_j)\). Parent--parent stress is
+> \(O(\delta_j^2)\), parent--micro stress is \(O(\delta_j)\), and only the
+> alignment-free micro--micro stress is \(O(1)\). The detector survives
+> solely through the external observation
+> \(\delta_j^{-2}(\delta_jJ_j)^2=J_j^2\), an inverse factor absent from the
+> Navier--Stokes stress equation. Thus both one-cylinder frequency
+> shortcuts are closed.
 
 Next deliverable:
 
-> Test the scale-moving output band
-> \(P_{\sim\delta_j^{-1/2}}\widetilde S_j\) and the corresponding paraproduct
-> flux against the frozen parent jet \(F_*\). Determine whether endpoint
-> vorticity and the \(K^{-1/2}\) shell gain leave an order-one parent--micro
-> interaction, or force every such bilinear coupling to zero. In parallel,
-> formulate the exact Carleson or tree quantity that an infinite sequence of
-> constant-decorated microbubbles would consume. Do not continue a hierarchy
-> of fixed-output local jets: the first forcing level already decouples.
+> Formulate the exact Carleson or tree quantity that an infinite sequence of
+> constant-decorated microbubbles would consume. Track physical energy,
+> enstrophy, local energy flux, endpoint weak-vorticity content, and
+> projected tensor moment across one parent--child edge before summing the
+> tree. Determine whether any scale-invariant budget gives a positive charge
+> per decorated node or whether all known budgets remain summable along a
+> fifth-power tower. Do not continue one-cylinder fixed- or moving-output
+> paraproduct estimates: both local frequency routes now decouple.
 > Neither suitability of the undecorated microchild, an arbitrary constant
 > detector, unweighted volume, nor the collapsed intrinsic band can close
-> this. A successful moving-band or tree estimate excludes the
+> this. A successful tree or nonlocal estimate excludes the
 > direction-weighted concentration
 > \((\xi_n\cdot D_n\xi_n)\rho_n\). Determine whether bounded
 > projective-cross content makes this directional weight compact enough to

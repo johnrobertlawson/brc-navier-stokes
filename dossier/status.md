@@ -468,6 +468,18 @@ and breakdown work
   \(\mathscr Z_j\to Z_*\) locally uniformly for another constant matrix
   supplied by coarser parent scales. No order-one microfrequency coupling
   survives in the first fixed-output residual.
+- Moving the output band to the microfrequency does not restore parent
+  alignment. After Galilean subtraction, secondary scaling makes the parent
+  low velocity and strain \(O(\delta_j)\). The parent--micro cross stress is
+  therefore \(O(\delta_j)\), the parent--parent stress is
+  \(O(\delta_j^2)\), and only the micro--micro self-stress is \(O(1)\).
+  The nonzero detector is recovered by the external observation
+  \[
+  \delta_j^{-2}(\delta_jJ_j)^2=J_j^2\to F_*^2,
+  \]
+  not by a factor in the Navier--Stokes equation. Hence a local moving-band
+  paraproduct cannot couple the frozen parent jet to the positive
+  microbubble Young moment.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -478,10 +490,10 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can a scale-moving band, nonlocal conservation law, or nested-tower packing
-> theorem retain same-trajectory coupling after the first fixed-parent-band
-> forcing residual also decouples from the microfrequency? If not, can the
-> resulting multiscale stress, positive tensor Young measure,
+> Can a tree or Carleson packing theorem, or a nonlocal conservation law,
+> charge an infinite nested tower after both fixed-output and moving-output
+> local parent--micro couplings vanish? If not, can the resulting tree-indexed
+> stress, positive tensor Young measure,
 > direction-weighted signed density, and nonredundant projective-cross defect
 > be retained in a suitable ancient system and excluded by rigidity?
 
@@ -492,43 +504,41 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Test a scale-moving output band at frequency
-   \(\delta_j^{-1/2}\) and compute the exact parent--micro paraproduct flux
-   against the frozen jet \(F_*\).
-2. Determine whether the endpoint vorticity bound and \(K^{-1/2}\) shell gain
-   leave an order-one moving-band coupling or force every bilinear
-   parent--micro interaction to vanish.
-3. Formulate the scale-tree or Carleson quantity consumed by an infinite
+1. Formulate the scale-tree or Carleson quantity consumed by an infinite
    nested sequence of constant-decorated tensor-oscillation microbubbles.
-4. Prove that the direction-weighted trace concentration
+2. Compute the exact charge of one parent--child edge in physical energy,
+   enstrophy, local energy flux, endpoint weak-vorticity content, and
+   projected tensor moment, then determine which charges can be summed over
+   a fifth-power tower.
+3. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
    energy, and the same-trajectory pullbacks, or construct the exact coherent
    survivor.
-5. Determine whether bounded projective-cross content makes the directional
+4. Determine whether bounded projective-cross content makes the directional
    weight compact enough to reduce the weighted concentration to
    \(\mathfrak E_0\); do not replace either signed remainder by variation.
-6. Classify sequence-dependent or temporally degenerate zero profiles beyond
+5. Classify sequence-dependent or temporally degenerate zero profiles beyond
    the now-closed smooth transverse-linear class, preserving cancellation
    between weighted trace and anisotropic projective-cross terms.
-7. Formulate the minimal ancient system decorated by
+6. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.
-8. Classify the degenerate sequence-dependent zero profiles capable of
+7. Classify the degenerate sequence-dependent zero profiles capable of
    carrying both excess and terminal alignment, and decide which orientation
    information is still needed for rigidity.
-9. Classify ancient solutions of the scalar trace defect equation together with
+8. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.
-10. Upgrade the nonzero ancient distributional bubble to a suitable object using
+9. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
-11. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+10. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.
-12. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
+11. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
-13. Determine the weakest oscillation modulus whose commutator gain still outruns the
+12. Determine the weakest oscillation modulus whose commutator gain still outruns the
    analytic radius.
-14. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
+13. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
 
 ## Interpretation
 

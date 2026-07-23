@@ -323,3 +323,10 @@ alternative A--D.
 Run the exact exponent and truncation ledger with:
 
     make forcing-jet
+
+The subsequent [moving-band coupling audit](moving-band-coupling.md) shows
+that shifting the output to the microfrequency restores only the
+alignment-free micro self-stress. Every term containing the parent jet still
+loses at least one factor \(\delta_j\), so the remaining frontier is a
+tree/Carleson charge, a nonlocal cross-scale law, or a tree-indexed defect
+system.
