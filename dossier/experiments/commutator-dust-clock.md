@@ -876,7 +876,12 @@ unresolved variation is now the temporal alignment of the selected nonzero child
 not its spatial granularity. The subsequent
 [projective alignment audit](projective-alignment-defect.md) shows that
 same-strain rotation is favourable and isolates viscous diffusion divided by
-\(|\omega|\) as the exact projective defect.
+\(|\omega|\) as the exact projective defect. The
+[terminal vacuum-orientation audit](terminal-vacuum-orientation.md) then proves
+that even exact global Biot--Savart snapshot coupling cannot attach that
+orientation to nonzero limiting vorticity. The fixed-cutoff temporal machinery
+must instead propagate the zero-safe relative tensor or retain its variation
+defect.
 
 This is a clock correction, an exact persistence/variation dichotomy, and a
 structure-only counterexample. It is not a regularity theorem and not a Clay

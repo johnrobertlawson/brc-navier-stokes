@@ -1,6 +1,6 @@
-# Handoff: tie projective orientation to nonzero ancient vorticity
+# Handoff: evolve the zero-safe vacuum orientation tensor
 
-**Updated:** 2026-07-23T09:06:16Z
+**Updated:** 2026-07-23T09:23:44Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,14 +24,21 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Use global Biot--Savart coupling and one-trajectory compactness to prove that the
-terminal projective orientation measure selected by the natural-band child is
-carried by nonzero ancient vorticity. Otherwise retain its scale-invariant viscous
-diffusion measure in the limiting object. Finite-band alignment evolution is now
-exact: self-rotation is favourable, while division by \(|\omega|\) in projective
-diffusion defeats every purely local suitability shortcut. Spatial dust, arbitrary
-stress cascade, and a zero ancient distributional trace remain closed inside the
-repaired conditional chain. The regularity target remains
+Propagate the bounded cutoff-relative tensor
+\[
+Z_{\eta_n}[\widehat\omega_n]
+=
+\frac{\widehat\omega_n\otimes\widehat\omega_n}
+{(|\widehat\omega_n|+\eta_n)^2},
+\qquad
+\eta_n=\sigma_n^{-1},
+\]
+over one natural interval from the same putative blow-up trajectory, or retain its
+nonzero temporal diffusion/variation defect. Terminal graph support is false even
+for compactly supported finite-energy snapshots with exact global Biot--Savart
+coupling and strong critical vorticity convergence. Spatial dust, arbitrary stress
+cascade, and a zero ancient distributional trace remain closed inside the repaired
+conditional chain. The regularity target remains
 
 \[
 \widehat a_\lambda^+
@@ -45,12 +52,12 @@ repaired conditional chain. The regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/projective-alignment-defect.md`;
-3. section 7 of `dossier/experiments/same-solution-granularity.md` for the
-   selected nonzero finite-band trace; and
-4. only the far-tail and compactness sections of
-   `dossier/experiments/ancient-commutator-compactness.md` when proving coupling
-   to the ancient vorticity.
+2. `dossier/experiments/terminal-vacuum-orientation.md`;
+3. equations (1)--(7) of
+   `dossier/experiments/projective-alignment-defect.md` for the antecedent
+   projective evolution; and
+4. sections 1--3 of `dossier/experiments/commutator-dust-clock.md` only when the
+   fixed cutoff, moving centre, or natural-time variation is needed.
 
 Completed static results:
 
@@ -629,29 +636,84 @@ whose limit has mass at least \(q_0\) and satisfies
 \int F(z):Q\,d\Gamma(z,Q)\ge q_0.
 \]
 
-It has not been proved that \(\Gamma\) gives zero mass to
-\(\{\widehat\omega=0\}\times\mathcal P_2\).
+The next audit proves that \(\Gamma\) can give all of its mass to
+\(\{\widehat\omega=0\}\times\mathcal P_2\), even under strong terminal
+compactness and exact global Biot--Savart coupling.
+
+Completed terminal vacuum-orientation audit:
+
+> Choose a compactly supported divergence-free velocity \(U\) that equals
+> \(Ax\) on \(B_4\), where
+> \(A=\operatorname{diag}(3,-3/2,-3/2)\), and whose vorticity lies in
+> \(B_5\setminus B_4\). Add \(2\sigma_n^{-1}\) times a compact rigid-rotation
+> carrier \(V\) with core vorticity \(e_1\) and zero core strain.
+
+The natural snapshots
+
+\[
+\widehat u_n=U+2\sigma_n^{-1}V
+\]
+
+then satisfy on \(B_1\)
+
+\[
+\widehat\omega_n=2\sigma_n^{-1}e_1,
+\qquad
+\widehat\alpha_n=3,
+\]
+
+while \(\widehat\omega_n\to W=\nabla\times U\) strongly in
+\(L^{3/2}\) and \(W=0\) on \(B_1\). For one fixed finite \(M\),
+
+\[
+e_1\cdot P_{\le M}S[\widehat u_n]e_1>\frac52.
+\]
+
+Reverse natural scaling gives smooth compactly supported finite-energy data with
+\(|\omega_n|=2\), \(\alpha_n=3\sigma_n\), fixed critical witness content,
+invariant weak-\(L^{3/2}\) norm, and vanishing kinetic energy. These are
+admissible instantaneous data, not one trajectory. The generating vorticity stays
+at fixed rescaled distance, so far-tail tightness does not repair graph support.
+
+The exact surviving terminal object is
+
+\[
+\mathsf Z_n
+=
+\mathbf1_{\widehat E_n}
+\frac{\widehat\omega_n\otimes\widehat\omega_n}
+{(|\widehat\omega_n|+\eta_n)^2}.
+\]
+
+It is bounded and positive semidefinite. Every weak-* limit obeys
+
+\[
+\int_{B_1}F:\mathsf Z\,dz\ge\frac{q_0}{4},
+\]
+
+but may live entirely over zero limiting vorticity. Equivalently, the full
+two-scale polar measure records both absolute amplitude and amplitude relative to
+\(\eta_n\). In the compact snapshot family, the absolute coordinate tends to
+zero while the relative coordinate remains \(2/3\).
 
 Next deliverable:
 
-> Extract a terminal weak vorticity trace \(\omega^0\), identify its
-> finite-band strain with the already nonzero trace \(F\), and prove the coupling
-> lemma
+> On the moving natural cylinder, derive a compact distributional evolution for
 >
 > \[
-> \Gamma\bigl(
-> \{(z,Q):\omega^0(z)=0\}
-> \bigr)=0,
+> Z_{\eta_n}[\widehat\omega_n]
+> =
+> \frac{\widehat\omega_n\otimes\widehat\omega_n}
+> {(|\widehat\omega_n|+\eta_n)^2}
 > \]
 >
-> using the global Biot--Savart representation, uniformly summable far tails, and
-> the fact that \(F_n\) and \(\omega_n\) come from one trajectory. If this is
-> false at the available compactness, identify the exact nonzero coupling measure
-> that replaces it. Then derive tightness/evolution for the projective diffusion
-> content and, separately, the local energy and pressure passage needed for
-> suitability. Do not seek a pointwise direction modulus from local dissipation
-> alone, and do not return to spatial dust, generic stress cascades, or a zero
-> distributional limit.
+> at \(\eta_n=\sigma_n^{-1}\). Use the exact tensor equation and the existing
+> fixed smooth direction cutoff. Either propagate the positive terminal pairing
+> \(\int F_n:\mathsf Z_n\), prove the lower-tail carrier-tightness criterion, or
+> force a nonzero scale-invariant tensor-variation/diffusion measure. In parallel,
+> derive the local energy and pressure passage needed for suitability. Do not
+> return to the false terminal graph-support lemma, spatial dust, generic stress
+> cascades, or a zero distributional limit.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

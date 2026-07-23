@@ -129,8 +129,18 @@ and breakdown work
   equality but has an unbounded linear background, infinite global energy, and no
   global endpoint vorticity bound, so it is not Clay-admissible. This rules out
   finite-band control plus suitability as a local shortcut and retains the terminal
-  witness as a projective orientation Young measure. Global Biot--Savart coupling
-  to nonzero ancient vorticity is now the exact unresolved gate.
+  witness as a projective orientation Young measure.
+- Terminal graph support fails even after restoring global Biot--Savart coupling.
+  A smooth compactly supported finite-energy snapshot family has strong
+  \(L^{3/2}\) vorticity convergence, fixed critical positive-alignment witness
+  content, uniform finite-band strain convergence, invariant endpoint norm, and
+  vanishing kinetic energy, yet its orientation witness lies entirely where the
+  limiting vorticity is zero. The annular vorticity generating the core strain
+  stays at finite rescaled distance, so far-tail tightness does not help. These are
+  Clay-admissible instantaneous data, not one trajectory. The exact surviving
+  object is the zero-safe tensor
+  \(Z_\eta=\omega\otimes\omega/(|\omega|+\eta)^2\), whose nonzero vacuum part and
+  cutoff-scale diffusion defect must now be handled dynamically.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -141,10 +151,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can global Biot--Savart and one-trajectory compactness keep the nonzero
-> natural-band child's terminal projective orientation measure off the
-> zero-vorticity set, control or retain its scale-invariant viscous defect, and
-> then obtain suitable ancient rigidity?
+> Can one-trajectory dynamics propagate or eliminate the nonzero cutoff-relative
+> vacuum orientation tensor and its scale-invariant diffusion defect, then obtain
+> suitable ancient rigidity?
 
 The coequal breakdown question remains:
 
@@ -153,11 +162,10 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Prove that the terminal projective orientation measure is supported on nonzero
-   ancient vorticity by using the global Biot--Savart normalisation and tight
-   far-field coupling; otherwise retain its zero-vorticity part explicitly.
-2. Establish tightness and an evolution law for the scale-invariant projective
-   diffusion measure, with vanishing as the strongest outcome.
+1. Propagate the bounded tensor \(Z_{\eta_n}\) over one natural interval from the
+   same trajectory, or retain its temporal variation measure.
+2. Prove lower-tail carrier tightness on the witness, or derive a closed evolution
+   law for the nonzero vacuum tensor and its cutoff-scale projective diffusion.
 3. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.

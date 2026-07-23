@@ -615,7 +615,22 @@ A successful ROUTE-R3B theorem must instead do all of the following:
 
 A Clay-admissible trajectory realising a nonzero projective defect would kill this
 route. The exact local solution (10) does not: it proves only that the missing
-global coupling is essential.
+global or cross-time coupling is essential.
+
+The subsequent
+[terminal vacuum-orientation audit](terminal-vacuum-orientation.md) tests that
+coupling directly. A compactly supported finite-energy snapshot family restores
+the exact global Biot--Savart identity and even strong
+\(L^{3/2}\) vorticity convergence, yet its terminal orientation witness lives
+entirely where the limiting vorticity is zero. The false graph-support subroute is
+therefore closed. What survives is the zero-safe tensor
+\[
+Z_\eta[\omega]
+=
+\omega\otimes\omega/(|\omega|+\eta)^2,
+\]
+whose nonzero vacuum part must be propagated or eliminated using genuine
+one-trajectory dynamics.
 
 Run the exact algebra and scaling checks with:
 

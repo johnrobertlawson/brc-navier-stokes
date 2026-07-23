@@ -589,10 +589,13 @@ rotation-versus-diffusion split. Rotation by the same finite-band strain is
 favourable, but viscous projective diffusion divides by \(|\omega|\). A smooth
 exact local Navier--Stokes shear family shows that finite-band control and
 suitability alone do not give backward directional persistence. Because that
-family has an unbounded linear background and no global endpoint bound, the live
-gate is now to use the global Biot--Savart normalisation to tie the terminal
-projective orientation measure to nonzero ancient vorticity—or retain its
-scale-invariant diffusion defect in the rigidity class.
+family has an unbounded linear background and no global endpoint bound, it first
+left global coupling as a possible repair. The
+[terminal vacuum-orientation audit](terminal-vacuum-orientation.md) closes that
+terminal repair as false even for compactly supported finite-energy snapshots
+with strong critical convergence. The live gate is now to propagate or eliminate
+the zero-safe cutoff-relative orientation tensor using one-trajectory dynamics,
+while retaining its scale-invariant diffusion defect if necessary.
 
 Run the exact exponent checks with:
 
