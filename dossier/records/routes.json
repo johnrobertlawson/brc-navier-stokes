@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can classical fixed-projective-direction ancient rigidity be lifted through the vacuum cutoff limit, forcing adverse radial trace defect to vanish or to carry quantitatively nonzero angular projective content; failing that, can the retained signed radial measure and decorated ancient system be localised and rigidly excluded?",
+      "question": "Can one-trajectory Navier-Stokes dynamics bound basic extended projective energy, or can suitability and the closed ancient tensor system exclude the terminal atom forced if trace is lost; failing both, what exact projective-atom-decorated ancient object survives?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "A vacuum-stable ancient-history estimate either eliminates adverse radial trace flux or converts it into projective content controlled by the existing defect ledger, so the positive terminal trace propagates; alternatively, the retained signed radial measure and vacuum decoration are localised, suitability is proved, and rigidity excludes the remaining ancient object.",
-      "kill_criterion": "A Clay-admissible endpoint-bounded trajectory or nonzero suitable ancient limit with a surviving adverse radial trace measure, no compensating projective content, and a vacuum decoration outside every available rigidity class.",
+      "success": "A one-trajectory estimate bounds projective energy without a terminal atom so the positive scalar trace enters the ancient limit; alternatively, the trace-loss-forcing projective atom and vacuum decoration are localised, suitability is proved, and rigidity excludes the remaining ancient object.",
+      "kill_criterion": "A Clay-admissible endpoint-bounded trajectory or nonzero suitable ancient limit with a surviving terminal projective-energy atom and vacuum decoration outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

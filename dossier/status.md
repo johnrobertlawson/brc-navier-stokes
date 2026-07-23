@@ -222,10 +222,16 @@ and breakdown work
   \(2\nu(1-h_\eta)(\mathcal J_\eta-3\mathcal L_\eta)\). The nonnegative trace
   content
   \(\mathcal T_\eta=(1-h_\eta)(\mathcal J_\eta+3\mathcal L_\eta)\)
-  controls both that remainder and \(|\nabla h_\eta|^2\), satisfies
-  \(\mathcal T_\eta\le3\mathcal K_\eta\), and can be strictly smaller than the
-  full projective-cross content. It gives scalar trace compactness but not yet a
-  uniform propagator for the remaining critical potential.
+  controls both that remainder and \(|\nabla h_\eta|^2\). The sharp
+  radial--angular split improves this to
+  \[
+  \mathcal T_\eta\le3\mathcal J_\eta,\qquad
+  |\nabla h_\eta|^2\le\mathcal J_\eta,\qquad
+  |\rho_\eta|\le6\nu\mathcal J_\eta.
+  \]
+  Within the existing local velocity/strain framework, basic extended
+  projective energy is the only extra defect-content hypothesis needed for
+  scalar trace compactness.
 - A three-band split confines every order-one scalar reaction to
   \(\varepsilon<h<1-\varepsilon\), equivalently
   \(|\omega|\asymp\eta\) at cutoff scale. Low trace carries at most
@@ -242,8 +248,8 @@ and breakdown work
   \]
   On \(h\ge\varepsilon\), both
   \(|\rho|/h\) and \(|\nabla\log h|^2\) are controlled by explicit multiples
-  of \(\mathcal T_\eta\). Transition-boundary flux and a local occupation
-  estimate for this signed measure coefficient remain open.
+  of \(\mathcal J_\eta\). Boundary flux is paid by the same energy; a local
+  occupation estimate remains open.
 - Exact time-dependent affine Navier--Stokes cycles show that positive Kato mass
   is not necessary for scalar propagation. Repeated excursions between
   \(\varepsilon\) and \(1-\varepsilon\) keep the true signed propagator bounded
@@ -256,9 +262,9 @@ and breakdown work
   \[
   \int_{a_0}^{a_1}
   \delta_{\{h=s\}}|\nabla h|^2\,ds
-  \le\frac43\mathcal T_\eta.
+  \le\mathcal J_\eta.
   \]
-  Thus averaged boundary flux is not a new measure beyond trace content.
+  Thus averaged boundary flux is not a new measure beyond projective energy.
 - The remaining radial sign cannot be removed by a bounded scalar detector.
   For \(F_\eta(r)=g(r^2/(r^2+\eta^2))\), the renormalised radial defect is
   nonnegative exactly when \(F_\eta\) is convex. A bounded nonconstant convex
@@ -266,16 +272,27 @@ and breakdown work
   \(g(h)=\sqrt{h/(1-h)}=|\omega|/\eta\), which recovers the vorticity-magnitude
   equation but loses uniform cutoff-scale vacuum control.
 - Exact periodic heat shears realise the adverse radial defect with uniform
-  weak-\(L^{3/2}\) vorticity, velocity energy \(O(K^{-2})\), trace-content
+  weak-\(L^{3/2}\) vorticity, velocity energy \(O(K^{-2})\), projective-energy
   density \(O(K^2)\), and lifetime \(O(K^{-2})\). Endpoint and energy bounds
-  alone therefore do not give uniform short-time trace-content occupation.
+  alone therefore do not give uniform short-time projective occupation.
   Every uniformly endpoint-bounded classical ancient vorticity with one fixed
   projective direction is nevertheless zero: divergence-free Biot--Savart
   coupling reduces it to two-dimensional passive scalar advection--diffusion,
   and Nash/Poincare decay from the remote past applies. The obstruction is an
   initial-layer family, not a nonzero ancient blow-up object or a Clay
-  counterexample. Lifting this rigidity through a vacuum defect measure remains
-  open.
+  counterexample.
+- The vacuum radial branch closes algebraically. The signed interval
+  \[
+  2\nu(1-4h_\eta)\mathcal J_\eta
+  \le\rho_\eta\le
+  2\nu(1-h_\eta)\mathcal J_\eta
+  \]
+  shows that every adverse radial trace defect already carries extended
+  projective energy. If
+  \(\mathcal J_{\eta_n}\,dx\,dt\rightharpoonup^*\mu_{\mathcal J}\), then
+  \(|\rho|\le6\nu\mu_{\mathcal J}\); under the terminal balance, loss of
+  terminal trace forces a terminal \(\mu_{\mathcal J}\)-atom. No independent
+  signed radial measure remains.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -286,11 +303,10 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can fixed-projective-direction ancient rigidity be lifted through the vacuum
-> limit, forcing adverse radial trace defect either to vanish or to carry a
-> quantitatively nonzero angular/projective component? If neither follows
-> directly, can the signed radial measure be retained and the resulting
-> decorated ancient system be localised and rigidly excluded?
+> Can one-trajectory Navier--Stokes dynamics bound the basic extended
+> projective energy \(\mathcal J_\eta\), or can suitability and the closed
+> ancient tensor system exclude the terminal atom forced if trace is lost? If
+> neither follows directly, what exact atom-decorated ancient object survives?
 
 The coequal breakdown question remains:
 
@@ -299,20 +315,18 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Lift the classical fixed-direction ancient theorem to cutoff sequences:
-   prove or falsify an ancient-history estimate for the adverse radial part
-   \(q(3h-q)\mathcal I_{\rm rad}\) under the endpoint bound and suitability.
-2. Show that any nonvanishing ancient radial defect forces a quantitative
-   angular/projective component, or isolate an exact fixed-direction survivor
-   beyond the now-excluded heat-shear class.
-3. Formulate the closed ancient system with the signed radial trace measure
-   retained explicitly, rather than replacing it by total trace content.
-4. Prove scale-uniform localisation for that signed detector system and decide
-   which orientation information is still needed for rigidity.
-5. Determine whether bounded trace content
-   \(\mathcal T_\eta\), rather than full projective-cross content, can be
-   derived from the available logarithmic magnitude balance or an
-   amplitude-band flux.
+1. Derive or falsify a scale-uniform spacetime bound for
+   \(\mathcal J_\eta\) from the exact projective evolution, the logarithmic
+   magnitude balance, and one-trajectory ancient history.
+2. If \(\mathcal J_\eta\) is bounded, classify and exclude its terminal atom
+   using suitability, local energy, and the closed tensor/trace equations.
+3. Formulate the minimal ancient system decorated by
+   \(\mu_{\mathcal J,0}\), without introducing a separate radial trace measure.
+4. Prove scale-uniform localisation for that atom-decorated detector system and
+   decide which orientation information is still needed for rigidity.
+5. Determine whether the signed logarithmic and trace balances can be combined
+   to recover nonnegative \(\mathcal J_\eta\) without unbounded entropy
+   storage.
 6. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.
 7. Upgrade the nonzero ancient distributional bubble to a suitable object using

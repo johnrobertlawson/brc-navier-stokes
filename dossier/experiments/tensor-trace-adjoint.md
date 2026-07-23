@@ -37,9 +37,15 @@ Its absolute value and trace gradient are controlled by the nonnegative content
 \right).
 \]
 
-This trace content is bounded by the existing projective-cross content but can
-be strictly smaller because it discards orientation changes of a saturated
-tensor.
+The subsequent
+[projective-domination theorem](trace-projective-domination.md) sharpens this:
+\(\mathcal T_\eta\le3\mathcal J_\eta\),
+\(|\nabla h_\eta|^2\le\mathcal J_\eta\), and
+\(|\rho_\eta|\le6\nu\mathcal J_\eta\). Within the existing local
+velocity/strain framework, basic extended projective energy, rather than
+projective-cross content, is the only extra defect content needed for scalar
+trace compactness. It can still be strictly smaller than the tensor content
+because trace discards orientation changes of a saturated tensor.
 
 The reduction does not prove a uniform scalar propagator. Its potential remains
 parabolically critical. It does identify a narrower amplitude-band gate than
@@ -431,12 +437,15 @@ Then
 \boxed{
 |\rho_\eta|
 \le
-2\nu\mathcal T_\eta.
+2\nu\mathcal T_\eta
+\le
+6\nu\mathcal J_\eta.
 }
 \tag{31}
 \]
 
-This is the exact scalar defect envelope.
+The first inequality is the exact trace-content envelope. The second is the
+sharper projective-energy domination proved directly below.
 
 ## 4. Trace compactness is cheaper than tensor compactness
 
@@ -451,92 +460,102 @@ Since \(h_\eta=r^2/(r^2+\eta^2)\),
 \tag{32}
 \]
 
-Equation (30) therefore gives
+The extended radial--angular split gives
+
+\[
+\boxed{
+\mathcal L_\eta
+=
+h_\eta\mathcal I_{\rm rad},
+\qquad
+\mathcal J_\eta
+\ge
+q_\eta\mathcal I_{\rm rad}.
+}
+\tag{33}
+\]
+
+Therefore
+
+\[
+\boxed{
+q_\eta\mathcal L_\eta
+=
+h_\eta(q_\eta\mathcal I_{\rm rad})
+\le
+h_\eta\mathcal J_\eta.
+}
+\tag{34}
+\]
+
+Equations (32)--(34) imply
 
 \[
 \boxed{
 |\nabla h_\eta|^2
 \le
-\frac43\mathcal T_\eta.
-}
-\tag{33}
-\]
-
-The factor follows from \(q_\eta\le1\) and
-\(\mathcal T_\eta\ge3q_\eta\mathcal L_\eta\).
-
-The trace content is controlled by the projective-cross content. First,
-
-\[
-q_\eta\mathcal J_\eta\le\mathcal J_\eta.
-\tag{34}
-\]
-
-For the radial term,
-
-\[
-\boxed{
-q_\eta\mathcal L_\eta
+4h_\eta q_\eta\mathcal J_\eta
 \le
-\sqrt{\mathcal I_\eta\mathcal J_\eta}.
+\mathcal J_\eta.
 }
 \tag{35}
 \]
 
-To see (35), decompose into radial and angular derivatives. If
-\(\mathcal I_{\rm rad}=|\nabla r|^2/d\), then
+For trace content,
 
 \[
-\mathcal L_\eta=h_\eta\mathcal I_{\rm rad},
-\qquad
-\mathcal J_\eta
-\ge
-q_\eta\mathcal I_{\rm rad}.
+\mathcal T_\eta
+=
+q_\eta\mathcal J_\eta
++3q_\eta\mathcal L_\eta
+\le
+(q_\eta+3h_\eta)\mathcal J_\eta.
 \tag{36}
 \]
 
-Thus
-
-\[
-q_\eta\mathcal L_\eta
-=
-q_\eta h_\eta\mathcal I_{\rm rad}
-\le
-\sqrt{q_\eta}\mathcal I_{\rm rad}
-\le
-\sqrt{\mathcal I_\eta\mathcal J_\eta}.
-\tag{37}
-\]
-
-Combining (30), (34), and (35),
+Since \(q_\eta+3h_\eta=1+2h_\eta\le3\),
 
 \[
 \boxed{
 \mathcal T_\eta
 \le
-\mathcal J_\eta
-+3\sqrt{\mathcal I_\eta\mathcal J_\eta}
+3\mathcal J_\eta
 \le
 3\mathcal K_\eta.
+}
+\tag{37}
+\]
+
+The signed remainder also obeys the sharper interval
+
+\[
+\boxed{
+2\nu(1-4h_\eta)\mathcal J_\eta
+\le
+\rho_\eta
+\le
+2\nu(1-h_\eta)\mathcal J_\eta.
 }
 \tag{38}
 \]
 
-The inequality can be strict by an arbitrarily large factor. For saturated
+In particular, (38) proves the second inequality in (31). The constants in
+(35), (37), and (31) are sharp on pure radial configurations. The comparison
+with tensor content can be strict by an arbitrarily large factor. For saturated
 high-amplitude pure angular variation, \(q_\eta\to0\), so
 \(\mathcal T_\eta\to0\), while the projective part of
 \(\mathcal K_\eta\) remains visible. Trace correctly ignores a rotation that
 does not change tensor magnitude.
 
-On a fixed cylinder, bounded \(\int\mathcal T_{\eta_n}\) gives an
-\(L^2_tH^1_x\) bound for \(h_{\eta_n}\) by (33). Equations (7), (17), and (31)
+On a fixed cylinder, bounded \(\int\mathcal J_{\eta_n}\) gives an
+\(L^2_tH^1_x\) bound for \(h_{\eta_n}\) by (35). Equations (7), (17), and (31)
 give the same negative-space time-derivative bound used in the tensor
 compactness argument. Hence Aubin--Lions--Simon yields strong local spacetime
 \(L^2\) compactness of the scalar traces.
 
 This scalar compactness alone does not identify the mixed aligned strain in the
 limit. The closed limiting formula (15) additionally uses the already
-established strong tensor topology. If only trace content is assumed, the
+established strong tensor topology. If only projective energy is assumed, the
 stretching source must be retained as a separate weak field until another
 closure is proved.
 

@@ -134,6 +134,11 @@ def coarea_trace_content_constant() -> Fraction:
     return Fraction(4, 3)
 
 
+def coarea_projective_constant() -> Fraction:
+    """Return sharp C in |grad h|^2 <= C*J."""
+    return Fraction(1)
+
+
 def periodic_shear_scaling_powers() -> dict[str, Fraction]:
     """Return frequency powers for the exact heat-shear rescaling."""
     return {
@@ -178,8 +183,8 @@ def report() -> str:
             f"{symmetric_band_mass_error(epsilon)}",
             f"symmetric reaction envelope:          "
             f"{symmetric_band_reaction_envelope(epsilon)}",
-            f"coarea/content constant:              "
-            f"{coarea_trace_content_constant()}",
+            f"coarea/projective constant:           "
+            f"{coarea_projective_constant()}",
             f"shear trace-content density power:    "
             f"{powers['trace_content_density']}",
             f"shear heat-time power:                "

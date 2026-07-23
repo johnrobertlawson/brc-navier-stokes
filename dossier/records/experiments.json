@@ -705,7 +705,7 @@
         "Dividing by positive trace defines a mixed aligned strain bounded by strain magnitude",
         "The scalar trace-adjoint potential is twice one minus trace H times the mixed aligned strain",
         "The exact trace Hessian remainder is twice viscosity times one minus trace H times projective energy minus three radial-log energy",
-        "The trace remainder is controlled by a strictly narrower nonnegative trace content",
+        "The trace remainder and trace gradient are controlled sharply by basic extended projective energy",
         "The scalar carrier leaves only the trace of the projective-cross defect in terminal duality",
         "No uniform scalar propagator, defect exclusion, or Clay regularity theorem is asserted"
       ],
@@ -734,16 +734,16 @@
         "The transition band is exactly a bounded ratio interval between vorticity amplitude and polar cutoff",
         "The logarithmic trace identity splits the scalar potential into signed amplitude flux, normalised trace defect, and favourable trace-gradient dissipation",
         "Multiplying the scalar adjoint by trace eliminates the mixed-alignment potential and produces a terminal-time Fokker-Planck equation",
-        "On the transition band the transformed logarithmic drift and normalised defect are both controlled by trace content",
+        "On the transition band the transformed logarithmic drift and normalised defect are both controlled by basic extended projective energy",
         "For affine incompressible Navier-Stokes flow the vorticity amplitude obeys the exact aligned-stretching ODE",
         "The scalar trace potential is the time derivative of log trace along the affine flow",
         "Each complete amplitude cycle has unit signed propagator multiplier while its positive envelope multiplier grows by a fixed factor and the true propagator stays uniformly bounded",
         "The affine cycle is unbounded and not Clay-admissible, so it tests the estimate rather than producing breakdown",
         "No signed-flux bound for general Clay data or Clay regularity theorem is asserted"
       ],
-      "method": "Use a measurable three-band truncation of the trace potential, quantify the uncancelled source and detector mass exactly, conjugate the scalar adjoint by the trace detector, control the transformed band coefficients by trace content, construct a time-dependent affine strain-plus-rotation Navier-Stokes solution, and compare its exact signed trace propagator with the positive Kato envelope over repeated amplitude cycles.",
+      "method": "Use a measurable three-band truncation of the trace potential, quantify the uncancelled source and detector mass exactly, conjugate the scalar adjoint by the trace detector, control the transformed band coefficients by basic extended projective energy, construct a time-dependent affine strain-plus-rotation Navier-Stokes solution, and compare its exact signed trace propagator with the positive Kato envelope over repeated amplitude cycles.",
       "certificate": "A written band-reduction and detector-weighted propagation theorem with an affine-flow calculation, plus Fraction tests for amplitude ratios, residual envelopes, transformed coefficient constants, affine momentum symmetry, logistic trace evolution, and cycle multipliers.",
-      "success_criterion": "The scalar gate is reduced to the transition band, detector weighting removes its mixed-alignment potential, and positive-part Kato continuity is shown nonnecessary in exact Navier-Stokes dynamics, leaving trace-content-controlled weighted propagation as the precise next target.",
+      "success_criterion": "The scalar gate is reduced to the transition band, detector weighting removes its mixed-alignment potential, and positive-part Kato continuity is shown nonnecessary in exact Navier-Stokes dynamics, leaving projective-energy-controlled weighted propagation as the precise next target.",
       "failure_interpretation": "The outside-band source is not small, low trace can carry fixed local detector mass, the affine field does not solve Navier-Stokes, the trace potential is not a logarithmic derivative, or a full cycle amplifies the true signed scalar carrier.",
       "status": "complete",
       "artifacts": [
@@ -763,23 +763,53 @@
       "invariants": [
         "Every smooth trace renormalisation has an exact adjoint duality with a radial-angular defect split",
         "A lower positive-part trace truncation has favourable lower-boundary diffusion flux and approximates local trace mass",
-        "A two-sided band truncation has an adverse upper-boundary flux, but averaged level flux is dominated by trace content",
+        "A two-sided band truncation has an adverse upper-boundary flux, but averaged level flux is dominated by basic extended projective energy",
         "Nonnegative radial defect is equivalent to convexity of the renormalised detector as a function of vorticity amplitude",
         "No bounded nonconstant increasing trace renormalisation is globally convex in vorticity amplitude",
         "Every globally sign-favourable dimensionless detector grows at least linearly in the amplitude-to-cutoff ratio and therefore loses uniform vacuum-detector control",
-        "Exact periodic heat shears realise adverse radial flux with uniform endpoint vorticity and scale-invariant short-time trace-content occupation",
+        "Exact periodic heat shears realise adverse radial flux with uniform endpoint vorticity and scale-invariant short-time projective-energy occupation",
         "Uniformly endpoint-bounded ancient classical Navier-Stokes vorticity with one fixed projective direction is zero, so the finite-window shear is not an ancient blow-up object",
-        "No general three-dimensional trace-content bound, rigidity theorem, or Clay regularity theorem is asserted"
+        "No general three-dimensional projective-energy bound, rigidity theorem, or Clay regularity theorem is asserted"
       ],
       "method": "Renormalise the exact scalar trace equation by an arbitrary increasing function, split its Hessian defect into radial and angular polar energies, analyse sharp one- and two-sided trace truncations, classify the convexity condition, realise every concavity interval by a frequency-scaled periodic Navier-Stokes heat shear, and reduce fixed-projective-direction ancient vorticity to passive scalar advection-diffusion before applying Nash and Poincare decay.",
       "certificate": "A written renormalised-duality theorem, convexity no-go, exact shear scaling and fixed-direction ancient exclusion, plus Fraction tests for defect coefficients, power-detector sign thresholds, amplitude curvature, coarea domination, critical heat-shear powers, and ancient smoothing exponents.",
-      "success_criterion": "Boundary flux is either removed as an independent gate or isolated as a trace-content defect that cannot be signed away by any bounded scalar detector, with the precise finite-window shear obstruction and ancient-history escape identified.",
-      "failure_interpretation": "The renormalised defect formula is wrong, a bounded detector can have globally favourable radial diffusion, level-set flux is not paid by trace content, the exact shear scaling loses endpoint control, or a nonzero uniformly bounded ancient fixed-direction vorticity survives.",
+      "success_criterion": "Boundary flux is either removed as an independent gate or isolated as a projective-energy defect that cannot be signed away by any bounded scalar detector, with the precise finite-window shear obstruction and ancient-history escape identified.",
+      "failure_interpretation": "The renormalised defect formula is wrong, a bounded detector can have globally favourable radial diffusion, level-set flux is not paid by projective energy, the exact shear scaling loses endpoint control, or a nonzero uniformly bounded ancient fixed-direction vorticity survives.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/trace-boundary-renormalisation.md",
         "lab/navier_lab/trace_boundary_flux.py",
         "lab/tests/test_trace_boundary_flux.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-TRACE-PROJECTIVE-DOMINATION-001",
+      "title": "Sharp projective domination of scalar trace defect",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "The adverse radial trace measure may survive independently of the projective-energy defect when cutoff-scale vorticity amplitude collapses.",
+      "invariants": [
+        "Extended projective energy splits into cutoff-radial energy plus angular direction energy",
+        "Cutoff-weighted radial-log energy is bounded sharply by trace times projective energy",
+        "Trace content is bounded pointwise by three times projective energy",
+        "The squared trace gradient is bounded pointwise by projective energy with sharp constant one",
+        "The signed trace remainder lies between twice viscosity times one minus four trace and twice viscosity times one minus trace, each multiplied by projective energy",
+        "The absolute trace remainder is bounded sharply by six viscosity times projective energy",
+        "With the existing local velocity and strain bounds, projective energy is the only extra defect content needed for scalar trace compactness and it dominates every limiting signed trace measure",
+        "Under the terminal balance, loss of nonzero terminal scalar trace forces a terminal projective-energy atom",
+        "No projective-energy bound from arbitrary Clay data, atom rigidity theorem, or Clay regularity theorem is asserted"
+      ],
+      "method": "Use the exact radial-angular split of extended polar energy to compare every scalar trace gradient, content, and signed Hessian coefficient pointwise with projective energy, then pass the domination to compactness and terminal defect measures.",
+      "certificate": "A written sharp domination, conditional compactness, and terminal-atom theorem, plus Fraction tests for radial-angular coefficients, optimal constants, and signed remainder bounds.",
+      "success_criterion": "The proposed independent radial vacuum measure is either eliminated or rigorously separated from projective energy with an exact counterexample.",
+      "failure_interpretation": "A radial configuration violates projective domination, the constants are nonuniform at zero or saturation, scalar trace compactness still needs cross content, or the terminal balance permits a trace jump without a projective-energy atom.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/trace-projective-domination.md",
+        "lab/navier_lab/trace_projective_domination.py",
+        "lab/tests/test_trace_projective_domination.py"
       ],
       "last_run": "2026-07-23"
     },

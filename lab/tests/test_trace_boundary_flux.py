@@ -3,6 +3,7 @@ import unittest
 
 from navier_lab.trace_boundary_flux import (
     angular_defect_inner,
+    coarea_projective_constant,
     coarea_trace_content_constant,
     equality_log_derivative,
     heat_smoothing_exponent,
@@ -127,6 +128,7 @@ class TraceBoundaryFluxTests(unittest.TestCase):
             Fraction(2, 5),
         )
         self.assertEqual(coarea_trace_content_constant(), Fraction(4, 3))
+        self.assertEqual(coarea_projective_constant(), Fraction(1))
 
     def test_periodic_heat_shear_has_critical_content_occupation(self) -> None:
         powers = periodic_shear_scaling_powers()

@@ -15,9 +15,10 @@ cutoff this is exactly the thin amplitude range \(|\omega|\asymp\eta\).
 On that transition band, multiplying the scalar adjoint by the detector \(h\)
 eliminates the mixed-alignment potential completely. The resulting
 terminal-time Fokker--Planck equation has a logarithmic trace drift and the
-normalised signed trace defect as its only zero-order term. Both new
-coefficients are bounded algebraically by the trace content
-\(\mathcal T_\eta\), but no such content bound is currently derived from
+normalised signed trace defect as its only zero-order term. The subsequent
+[projective-domination theorem](trace-projective-domination.md) bounds both
+coefficients algebraically by basic extended projective energy
+\(\mathcal J_\eta\), but no such energy bound is currently derived from
 arbitrary Clay data.
 
 An exact time-dependent affine Navier--Stokes family then shows that positive
@@ -135,11 +136,11 @@ content bounds from the preceding experiment imply
 \boxed{
 \frac{|\rho_\eta|}{h_\eta}
 \le
-\frac{2\nu}{\varepsilon}\mathcal T_\eta,
+\frac{6\nu}{\varepsilon}\mathcal J_\eta,
 \qquad
 |\nabla\log h_\eta|^2
 \le
-\frac{4}{3\varepsilon^2}\mathcal T_\eta.
+\frac{1}{\varepsilon^2}\mathcal J_\eta.
 }
 \tag{9}
 \]
@@ -175,7 +176,7 @@ detector mass are formally preserved without any estimate of \(V_+\).
 This does not yet prove a limiting propagation theorem. Division by \(h\) is
 safe only on the transition band, a sharp band cutoff creates boundary flux,
 and the measure coefficient \(\rho/h\) still needs a form or occupation bound.
-Equation (9) identifies \(\mathcal T_\eta\), rather than the positive part of
+Equation (9) identifies \(\mathcal J_\eta\), rather than the positive part of
 the mixed-alignment potential, as the exact coefficient ledger for that task.
 
 Finally, there are exact unforced affine Navier--Stokes solutions for which
@@ -268,7 +269,7 @@ For (7), solve (6) for the squared amplitude ratio:
 The map \(h\mapsto h/(1-h)\) is increasing, which gives the two exact
 endpoints in (7).
 
-## 2. Logarithmic flux and trace-content coefficients
+## 2. Logarithmic flux and projective-energy coefficients
 
 For a smooth scalar \(h>0\), the parabolic chain rule is
 
@@ -285,11 +286,11 @@ Substituting (1) gives (8). At cutoff level,
 \[
 |\rho_\eta|
 \le
-2\nu\mathcal T_\eta,
+6\nu\mathcal J_\eta,
 \qquad
 |\nabla h_\eta|^2
 \le
-\frac43\mathcal T_\eta.
+\mathcal J_\eta.
 \tag{19}
 \]
 
@@ -554,19 +555,19 @@ This experiment changes the immediate propagation target:
    detector-relevant criterion;
 4. detector weighting removes the mixed-alignment potential exactly;
 5. transition-band drift and normalised defect are both paid for by
-   \(\mathcal T_\eta\); and
-6. band-boundary flux, localised trace-content occupation, compactness, and
+   \(\mathcal J_\eta\); and
+6. band-boundary flux, localised projective-energy occupation, compactness, and
    suitability remain open.
 
 The next falsifiable target is a scale-uniform local estimate for the
 terminal-time Fokker--Planck equation (11), with its
-\(\mathcal T_\eta\)-controlled drift and signed measure coefficient. A
+\(\mathcal J_\eta\)-controlled drift and signed measure coefficient. A
 negative test must be one endpoint-bounded Navier--Stokes trajectory that
 retains detector mass while defeating this weighted estimate. Repeating
 spatially homogeneous affine cycles is not such a test.
 
 This is an exact conditional reduction and a non-Clay stress test. It is not a
-bound on \(\mathcal T_\eta\), not a rigidity theorem, and not a Clay A--D
+bound on \(\mathcal J_\eta\), not a rigidity theorem, and not a Clay A--D
 resolution.
 
 Run the exact band, affine-flow, and cycle ledgers with:

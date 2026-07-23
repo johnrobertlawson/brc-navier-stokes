@@ -8,8 +8,8 @@
 
 A lower trace cutoff has a favourable diffusive boundary flux. A two-sided
 transition-band cutoff has one favourable and one adverse boundary, but the
-average of all such level fluxes is dominated by the existing trace-content
-measure. Band boundaries are therefore not a new independent measure.
+average of all such level fluxes is dominated by basic extended projective
+energy. Band boundaries are therefore not a new independent measure.
 
 The adverse radial part cannot be removed by choosing a better bounded scalar
 detector. For every increasing trace renormalisation \(g(h)\), the radial
@@ -36,10 +36,10 @@ families.
 This obstruction is an initial-layer family, not an ancient blow-up object.
 More strongly, every uniformly endpoint-bounded classical ancient
 Navier--Stokes vorticity with one fixed projective direction is zero. The
-remaining gate is a vacuum-measure question: can approximating
-three-dimensional dynamics retain adverse radial trace flux after the
-classical vorticity has vanished, or must every surviving defect carry
-quantitative projective content that enters the existing rigidity route?
+subsequent
+[projective-domination theorem](trace-projective-domination.md) resolves the
+vacuum-measure alternative algebraically: every adverse radial trace defect is
+already bounded by basic extended projective energy.
 
 ## Verdict
 
@@ -295,15 +295,14 @@ content: for every nonnegative test \(\zeta\),
 \int_{\{a_0<h<a_1\}}
 \zeta|\nabla h|^2\\
 &\le
-\frac43
 \int_{\{a_0<h<a_1\}}
-\zeta\,\mathcal T_\eta.
+\zeta\,\mathcal J_\eta.
 \end{aligned}
 }
 \tag{22}
 \]
 
-An occupation estimate for \(\mathcal T_\eta\) automatically pays averaged
+An occupation estimate for \(\mathcal J_\eta\) automatically pays averaged
 band-boundary flux. Without such an estimate, no bounded scalar
 renormalisation can make every boundary favourable.
 
@@ -635,11 +634,11 @@ exponential decay from the remote past. Thus
 \tag{50}
 \]
 
-This is a classical ancient rigidity theorem. It does not by itself eliminate
-a vacuum trace tensor or signed radial defect measure supported where the
-limiting vorticity is zero. Promoting (50) to that measure-valued setting, or
-proving a quantitative projective-content lower bound before the limit, is
-the live step.
+This is a classical ancient rigidity theorem. By itself it does not eliminate
+a vacuum trace tensor supported where limiting vorticity is zero. The
+subsequent projective-domination theorem proves the missing quantitative
+statement for scalar trace defect:
+\(|\rho_\eta|\le6\nu\mathcal J_\eta\).
 
 ## Exact consequence for ROUTE-R3B
 
@@ -651,22 +650,20 @@ This experiment closes two proposed shortcuts:
 
 It also removes band-boundary flux as a separate unidentified measure:
 equation (22) charges its averaged absolute value to
-\(\mathcal T_\eta\). Lower-boundary flux is favourable.
+\(\mathcal J_\eta\). Lower-boundary flux is favourable.
 
 The exact heat-shear obstruction and every classical fixed-direction carrier
 die under the expanding backward history of an ancient endpoint-bounded
-limit. The next target is therefore narrower:
+limit. The subsequent projective-domination theorem closes the proposed
+independent radial-measure branch:
 
-> Lift fixed-direction ancient rigidity through the vacuum limit: prove that
-> adverse radial trace defect either vanishes or forces a quantitatively
-> nonzero angular/projective component already visible to
-> \(\mathcal K_\eta\). Otherwise retain that radial defect as a signed ancient
-> measure and prove rigidity for the resulting decorated system.
+> Every adverse radial trace defect forces quantitatively nonzero
+> \(\mathcal J_\eta\). The next gate is a projective-energy bound or terminal
+> projective-atom rigidity.
 
 This is an analytic reduction, a classical fixed-direction ancient theorem,
-and an exact stress test. It is not a bound on \(\mathcal T_\eta\), not a
-measure-valued three-dimensional ancient Liouville theorem, and not a Clay
-A--D resolution.
+and an exact stress test. It is not a bound on \(\mathcal J_\eta\), not
+projective-atom rigidity, and not a Clay A--D resolution.
 
 Run the exact renormalisation, sign, boundary, scaling, and smoothing ledgers
 with:
