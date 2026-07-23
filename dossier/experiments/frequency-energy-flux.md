@@ -563,3 +563,10 @@ alternative A--D.
 Run the exact Beltrami, detector, and energy-scale ledgers with:
 
     make frequency-energy
+
+The subsequent
+[scale-indexed defect reduction](scale-indexed-defect.md) constructs the
+compact object left after this no-go. It is a shift-stationary probability on
+the discrete genealogy, not a finite physical log-scale measure. Its exact
+same-trajectory parabolic cocycle has an unresolved zero-ratio tangent
+boundary, and its positive squared moment retains a signed history source.

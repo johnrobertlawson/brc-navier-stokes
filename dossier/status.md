@@ -531,6 +531,24 @@ and breakdown work
   \(R\) counts logarithmic depth but destroys telescoping against physical
   energy. This periodic example closes universal local energy coercivity,
   not a genuinely nonlocal or same-trajectory history law.
+- An infinite decorated path nevertheless has an exact compact remnant.
+  The additive log-scale lift is only a sigma-finite counting measure: both
+  its positive moment and its total mass grow linearly with depth. Index
+  averaging yields a shift-stationary probability on discrete marked scale
+  environments with positive expected detector moment, whereas physical
+  log-depth averaging can vanish for superexponentially separated carrier
+  scales. Adjacent levels retain the exact one-trajectory cocycle
+  \[
+  u_{k+1}(y,s)
+  =
+  q_k u_k(a_k+q_ky,b_k+q_k^2s),
+  \]
+  with quadratic weights for pressure, vorticity, strain, time, and matched
+  cutoff. Its compact \(q_k=0\) boundary is a genuine tangent-of-tangent
+  defect not determined by the weak parent field. The squared
+  terminal--interior moment has positive gradient dissipation but a signed
+  terminal-profile, stretching, and tensor-remainder source, so the moment
+  process is not a closed scalar PDE object.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -541,15 +559,11 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can the uniform positive moments now detected by squared fresh annular
-> strain blocks be summed through a strong critical spacetime estimate,
-> genuinely history-dependent or non-energy scale-zero law, or
-> same-trajectory cancellation after direct local frequency-energy
-> coercivity has failed? If not,
-> can the resulting frequency-and-log-scale-indexed stress, positive tensor
-> Young measure,
-> direction-weighted signed density, and nonredundant projective-cross defect
-> be retained in a suitable ancient system and excluded by rigidity?
+> Can the positive fresh-band moments be summed by a genuinely new strong or
+> scale-zero law? If not, can the exact same-trajectory cocycle be closed at
+> its \(q=0\) tangent boundary, the shift-stationary marked scale process and
+> signed history source be upgraded to a suitable PDE process, and that
+> process be excluded by rigidity?
 
 The coequal breakdown question remains:
 
@@ -558,41 +572,44 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Define the minimal
-   frequency/log-scale-indexed positive moment measure and the PDE
-   compatibility identities it inherits.
-2. Test whether its frequency marginals obey a genuinely non-energy
-   scale-zero balance, a same-trajectory history cancellation, or only a
-   radius-weighted distributional identity.
-3. Prove that the direction-weighted trace concentration
+1. Derive a no-neck estimate or transition Young measure for the exact
+   parabolic cocycle as \(q_k\to0\); do not replace discrete depth by
+   physical log-density.
+2. Determine whether the signed history-square source has a finite
+   scale-counting split into gradient, terminal-profile, stretching, and
+   tensor-remainder measures.
+3. Test rigidity of the shift-stationary tangent process with positive
+   expected fresh-detector moment, preserving its frequency mark and
+   same-trajectory graph closure.
+4. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
    energy, and the same-trajectory pullbacks, or construct the exact coherent
    survivor.
-4. Determine whether bounded projective-cross content makes the directional
+5. Determine whether bounded projective-cross content makes the directional
    weight compact enough to reduce the weighted concentration to
    \(\mathfrak E_0\); do not replace either signed remainder by variation.
-5. Classify sequence-dependent or temporally degenerate zero profiles beyond
+6. Classify sequence-dependent or temporally degenerate zero profiles beyond
    the now-closed smooth transverse-linear class, preserving cancellation
    between weighted trace and anisotropic projective-cross terms.
-6. Formulate the minimal ancient system decorated by
+7. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.
-7. Classify the degenerate sequence-dependent zero profiles capable of
+8. Classify the degenerate sequence-dependent zero profiles capable of
    carrying both excess and terminal alignment, and decide which orientation
    information is still needed for rigidity.
-8. Classify ancient solutions of the scalar trace defect equation together with
+9. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.
-9. Upgrade the nonzero ancient distributional bubble to a suitable object using
+10. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
-10. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+11. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.
-11. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
+12. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
-12. Determine the weakest oscillation modulus whose commutator gain still outruns the
+13. Determine the weakest oscillation modulus whose commutator gain still outruns the
    analytic radius.
-13. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
+14. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
 
 ## Interpretation
 

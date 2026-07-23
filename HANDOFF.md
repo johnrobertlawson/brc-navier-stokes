@@ -1,6 +1,6 @@
-# Handoff: formulate the fresh-band scale defect
+# Handoff: close the zero-ratio tangent cocycle
 
-**Updated:** 2026-07-23T14:57:37Z
+**Updated:** 2026-07-23T15:08:32Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -468,27 +468,28 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/frequency-energy-flux.md`;
-3. `dossier/experiments/fresh-detector-transfer.md`;
-4. `dossier/experiments/fresh-band-lorentz.md`;
-5. `dossier/experiments/tree-budget-audit.md`;
-6. `dossier/experiments/moving-band-coupling.md`;
-7. `dossier/experiments/forcing-jet-decoupling.md`;
-8. `dossier/experiments/strain-jet-freezing.md`;
-9. `dossier/experiments/microbubble-decoration-rigidity.md`;
-10. `dossier/experiments/terminal-carrier-microbubble.md`;
-11. `dossier/experiments/terminal-alignment-excess.md`;
-12. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-13. `dossier/experiments/terminal-trace-excess.md`;
-14. `dossier/experiments/projective-zero-interface.md`;
-15. `dossier/experiments/trace-projective-domination.md`;
-16. `dossier/experiments/trace-boundary-renormalisation.md`;
-17. `dossier/experiments/trace-transition-band-flux.md`;
-18. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/scale-indexed-defect.md`;
+3. `dossier/experiments/frequency-energy-flux.md`;
+4. `dossier/experiments/fresh-detector-transfer.md`;
+5. `dossier/experiments/fresh-band-lorentz.md`;
+6. `dossier/experiments/tree-budget-audit.md`;
+7. `dossier/experiments/moving-band-coupling.md`;
+8. `dossier/experiments/forcing-jet-decoupling.md`;
+9. `dossier/experiments/strain-jet-freezing.md`;
+10. `dossier/experiments/microbubble-decoration-rigidity.md`;
+11. `dossier/experiments/terminal-carrier-microbubble.md`;
+12. `dossier/experiments/terminal-alignment-excess.md`;
+13. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+14. `dossier/experiments/terminal-trace-excess.md`;
+15. `dossier/experiments/projective-zero-interface.md`;
+16. `dossier/experiments/trace-projective-domination.md`;
+17. `dossier/experiments/trace-boundary-renormalisation.md`;
+18. `dossier/experiments/trace-transition-band-flux.md`;
+19. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-19. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+20. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-20. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+21. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1755,20 +1756,36 @@ Completed terminal alignment-excess reduction:
 > destroys the physical energy telescope. This closes only a universal local
 > coercive relation; genuinely history-dependent or non-energy laws remain
 > open.
+>
+> The indexed defect is now exact. The additive lift is a sigma-finite
+> counting measure whose mass grows with depth, not a finite defect.
+> Averaging by physical log-depth can erase widely separated levels. Index
+> averaging instead gives a shift-stationary probability on discrete marked
+> genealogies with positive expected detector moment. Adjacent nodes retain
+> the exact same-trajectory parabolic cocycle
+> \[
+> u_{k+1}(y,s)
+> =
+> q_k u_k(a_k+q_ky,b_k+q_k^2s).
+> \]
+> The compact \(q_k=0\) boundary is a tangent-of-tangent relation not
+> determined by the weak parent limit. The squared moment also has a signed
+> terminal-profile, stretching, and tensor-remainder history source; it is
+> not a closed positive PDE quantity.
 
 Next deliverable:
 
-> Formulate the minimal positive frequency/log-scale moment measure selected
-> by the fresh blocks and derive every distributional identity it inherits
-> from the same Navier--Stokes trajectory. Keep physical spacetime,
-> frequency, terminal clock, tensor state, and detector state separate.
-> Determine whether its frequency marginals possess a genuinely non-energy
-> scale-zero balance or same-trajectory history cancellation; if only
-> radius-weighted identities survive, retain exactly that loss in the
-> decorated suitable ancient system.
+> Close the \(q_k\to0\) parabolic transition. Derive a no-neck estimate
+> showing that a positive child fresh moment cannot be separated from its
+> parent by an arbitrarily large empty logarithmic annulus, or construct the
+> exact two-scale transition Young measure carried at \(q=0\). Use the full
+> same-trajectory velocity/strain cocycle and fresh frequency mark, not an
+> arbitrary bundle of levelwise ancient solutions. In parallel, test whether
+> the signed history-square balance admits a finite scale-counting split;
+> without that split retain only its combined distribution.
 > Neither suitability of the undecorated microchild, an arbitrary constant
 > detector, unweighted volume, nor the collapsed intrinsic band can close
-> this. A successful frequency-energy or nonlocal estimate excludes the
+> this. A successful no-neck, history-source, or nonlocal estimate excludes the
 > direction-weighted concentration
 > \((\xi_n\cdot D_n\xi_n)\rho_n\). Determine whether bounded
 > projective-cross content makes this directional weight compact enough to
