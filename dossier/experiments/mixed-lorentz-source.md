@@ -8,9 +8,10 @@
 
 **Scope warning:** the theorem below applies to disjoint, comparable-radius
 high-level components. It combines the global weak strain bound with the repaired
-local logarithmic commutator bound. It does not control arbitrary variable-radius,
-anisotropic, or low-level-connected geometry and does not establish a Clay
-alternative.
+local logarithmic commutator bound. Its
+[total-volume extension](vanishing-tail-endgame.md) removes the comparable-radius
+restriction, but still assumes uniform decay of the maximum component containing
+radius. Neither result establishes a Clay alternative.
 
 ## Verdict
 
@@ -428,12 +429,18 @@ then closes the repaired sparse-analyticity endgame.
 This is a **conditional theorem proved here**, not a theorem of the preprint and not
 a Clay resolution.
 
-The remaining ROUTE-R3A boundary is no longer component count. It is:
+For this estimate alone, the remaining ROUTE-R3A boundary is no longer component
+count. It is:
 
 - non-comparable component radii, where one scale \(r\) cannot be factored out;
 - anisotropic components not controlled by a comparable containing radius;
 - low-vorticity connections that prevent the zero-boundary component split;
 - derivation of any such component geometry from the Navier--Stokes dynamics.
+
+The [total-volume extension](vanishing-tail-endgame.md) subsequently removes the
+variable-radius scale sum and every quantitative component-volume ledger. Its exact
+remaining geometric input is uniform decay of the maximum component containing
+radius.
 
 Run the exact exponent checks with:
 

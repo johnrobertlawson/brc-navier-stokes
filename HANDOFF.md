@@ -1,6 +1,6 @@
-# Handoff: attack multiscale component radii; do not re-audit
+# Handoff: localise macroscopic components at the critical scale; do not re-audit
 
-**Updated:** 2026-07-23T06:17:34Z
+**Updated:** 2026-07-23T06:28:01Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,15 +24,16 @@ result is not Clay A–D.
 
 ## Default next target: ROUTE-R3A
 
-Extend the mixed global-local linear-source estimate from one comparable component
-radius to a genuinely multiscale radius family.
+Remove the remaining maximum-component-radius hypothesis with a smooth
+finite-overlap partition at the critical scale
+\(r_\lambda\asymp\lambda^{-1/2}\).
 
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3A")' dossier/records/routes.json`;
-2. `dossier/experiments/mixed-lorentz-source.md`;
-3. only the component ledger in
-   `dossier/experiments/log-endgame-threshold.md`.
+2. `dossier/experiments/vanishing-tail-endgame.md`;
+3. only the local weak-strain estimate in
+   `dossier/experiments/localized-commutator.md`.
 
 Completed static results:
 
@@ -95,15 +96,49 @@ At \(N_\lambda\asymp(\log\lambda)^3\), the mixed estimate yields
 \(\gamma=3/2\), so the proposed cubic endpoint is closed. The worst comparable count
 is \(N_\lambda\asymp(\log\lambda)^{3/2}\), where \(\gamma=1\).
 
+Completed multiscale reduction:
+
+> The global weak-vorticity bound gives
+> \(|D_j|\le|A_\lambda|\lesssim\lambda^{-3/2}\) for every component. Using total
+> superlevel volume as the common support cap in the mixed Lorentz lemma gives
+>
+> \[
+> \sum_j\|\alpha\mathbf1_{D_j}\|_{L^{6/5,2}}^2
+> \lesssim A_0^{3/2}a_\lambda^{1/2}|A_\lambda|^{1/3}.
+> \]
+>
+> Thus any uniform local decay \(a_\lambda\to0\) yields
+> \(\mu_\omega(\lambda)=o(\lambda^{-3/2})\). O'Neil transfer preserves critical
+> little-o, so \(\mu_u(\beta)=o(\beta^{-3})\) and the sparse radius is
+> \(o(U^{-1})\).
+
+No quantitative radius ledger or shrinkage rate remains. Under the component
+formulation, the only geometric input is that the maximum containing radius tends
+to zero uniformly.
+
 Next deliverable:
 
-> Group components by dyadic radius, track whether repeated use of the global weak
-> strain bound creates a scale-count loss, and derive the weakest radius-scale sum
-> that still leaves any positive logarithmic gain. Failure must be an exact
-> multiscale packing saturating both the global and every local distribution bound.
+> Choose a square partition \(\sum_k\eta_k^2=1\) with overlap bounded independently
+> of \(\lambda\) and \(|\nabla\eta_k|\lesssim r_\lambda^{-1}\). Prove or refute both
+>
+> \[
+> \sum_k\|\alpha\eta_k\|_{L^{6/5,2}}^2
+> \lesssim A_0^{3/2}a(r_\lambda)^{1/2}r_\lambda
+> \]
+>
+> and
+>
+> \[
+> \sum_k\|\nabla(\eta_kw_\lambda)\|_2^2
+> \lesssim\|\nabla w_\lambda\|_2^2+r_\lambda^{-2}E_\lambda.
+> \]
+>
+> Insert the cutoff terms into both quadratic and linear stretching at
+> \(r_\lambda\asymp\lambda^{-1/2}\). Success removes component geometry entirely;
+> failure must identify an exact unabsorbable IMS or linear-source term.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
-already-closed packet-count optimisation.
+already-closed packet-count or multiscale-radius optimisations.
 
 ## Alternative routes—choose one, do not mix them
 

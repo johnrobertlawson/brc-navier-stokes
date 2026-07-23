@@ -90,6 +90,26 @@ At \(\gamma=0\), the ratio is only a fixed constant and increasing \(U\) gives n
 further leverage; the argument is then constant-sensitive and does not close
 uniformly.
 
+The [critical little-o extension](vanishing-tail-endgame.md) identifies the sharper
+structural threshold. No fixed logarithmic power is required: any uniform
+
+\[
+\mu_\omega(\lambda)
+=
+o(\lambda^{-3/2})
+\]
+
+transfers to
+
+\[
+\mu_u(\beta)
+=
+o(\beta^{-3}),
+\]
+
+so the sparse-to-analytic radius ratio tends to zero. The fixed-\(\gamma\) result
+below remains the exact quantitative power-law ledger.
+
 In particular, the componentwise packet estimate
 
 \[
@@ -362,7 +382,13 @@ and no limiting choice of escape time improves this number. This does not prove 
 the endpoint fails; it proves that the distribution-versus-analytic-radius mechanism
 has no asymptotic margin there.
 
-## Hypothesis-reduced component theorem
+## Earlier local-only component ledger
+
+The following is a valid quantitative sufficient criterion, but it is no longer the
+sharp component theorem. The
+[total-volume critical little-o estimate](vanishing-tail-endgame.md) removes its
+condition on \(\mathcal R_\lambda\) whenever the maximum component containing radius
+tends to zero uniformly.
 
 The packet-lifetime argument identifies the component ledger
 
@@ -481,6 +507,16 @@ This local-only endpoint is superseded for comparable radii by the
 weak strain distribution as well as the local commutator gain retains at least
 \(\gamma=1\) for every component count and gives \(\gamma=3/2\) at \(\beta=3\).
 
+The [total-volume extension](vanishing-tail-endgame.md) is stronger again. It uses
+
+\[
+|D_j|\le|A_\lambda|\lesssim\lambda^{-3/2}
+\]
+
+as the common support cap, obtains a uniform critical little-o tail from
+\(\rho_\lambda\to0\), and removes \(\mathcal R_\lambda\), radius comparability, and
+every prescribed shrinkage rate.
+
 ## Consequence for ROUTE-R3A
 
 For comparable components at the logarithmic packet threshold, the
@@ -499,9 +535,9 @@ hypothesis persist through the terminal interval.
 
 The remaining ROUTE-R3A geometry is narrower:
 
-> variable-radius or anisotropic high-level components for which no single critical
-> scale can be extracted, or low-vorticity connections that defeat the component
-> decomposition.
+> a high-level component with macroscopic containing radius, or the cutoff errors
+> created by replacing component localisation with a smooth critical-scale
+> partition.
 
 Run the exact exponent checks with:
 

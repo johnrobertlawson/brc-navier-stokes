@@ -440,9 +440,11 @@ N_\lambda\lesssim(\log\lambda)^\beta
 \]
 
 The [mixed global-local Lorentz estimate](mixed-lorentz-source.md) removes the
-cubic-log endpoint and every other comparable-radius packet count. The surviving
-ROUTE-R3A question is genuinely multiscale, anisotropic, or low-level-connected
-component geometry.
+cubic-log endpoint and every other comparable-radius packet count. Its
+[total-volume extension](vanishing-tail-endgame.md) also removes the multiscale
+radius ledger. The surviving ROUTE-R3A question is whether the maximum containing
+radius of a high-level component must vanish, or whether smooth localisation can
+remove that diameter hypothesis.
 
 Run the exact scaling checks with:
 

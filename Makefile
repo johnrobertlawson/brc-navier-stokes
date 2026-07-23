@@ -1,7 +1,7 @@
 PYTHON ?= python
 PYTHONPATH := lab
 
-.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz strain fetch-2607 compile-2607
+.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail strain fetch-2607 compile-2607
 
 check: records links markup test
 
@@ -40,6 +40,9 @@ packet-lifetime:
 
 mixed-lorentz:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.mixed_lorentz
+
+vanishing-tail:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.vanishing_tail
 
 strain:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.strain

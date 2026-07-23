@@ -240,6 +240,33 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-VANISHING-TAIL-001",
+      "title": "Total-volume aggregation and the vanishing-tail endgame",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3A"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "A uniform o(1) local weak-L(3/2) strain bound on disjoint zero-boundary high-level components, together with global weak-L(3/2) vorticity, makes component count and radius scales irrelevant: total superlevel volume yields an o(lambda^(-3/2)) vorticity tail, and any such vanishing critical-tail improvement closes the sparse-analyticity endgame.",
+      "invariants": [
+        "The components are disjoint and their zero extensions support componentwise Sobolev estimates",
+        "Global weak-L(3/2) vorticity bounds the total superlevel volume",
+        "The local weak-L(3/2) strain norm tends to zero uniformly over components",
+        "No quantitative decay rate or comparable-radius assumption is inserted",
+        "The little-o rearrangement transfer is uniform on the terminal interval",
+        "The result remains conditional and does not establish a Clay alternative"
+      ],
+      "method": "Apply the mixed distribution square-sum with the total superlevel volume as the common support cap, close the truncated-energy inequality with the resulting vanishing factor, and prove directly through O'Neil rearrangement that weak critical little-o vorticity transfers to weak critical little-o velocity.",
+      "certificate": "A written total-volume lemma and little-o endgame proof, with exact Fraction checks for every algebraic exponent in the component-to-vorticity-to-velocity-to-radius chain.",
+      "success_criterion": "The component residual ledger is no longer needed: uniform vanishing of the maximum containing radius supplies enough local strain decay for arbitrary component counts and radius distributions.",
+      "failure_interpretation": "The total-volume support cap creates a hidden count or scale factor, the energy conversion loses the vanishing factor, or O'Neil transfer does not preserve critical little-o decay.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/vanishing-tail-endgame.md",
+        "lab/navier_lab/vanishing_tail.py",
+        "lab/tests/test_vanishing_tail.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

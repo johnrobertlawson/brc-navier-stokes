@@ -15,4 +15,5 @@ __all__ = [
     "scaling",
     "source_cache",
     "strain",
+    "vanishing_tail",
 ]

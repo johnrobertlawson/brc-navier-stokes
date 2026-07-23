@@ -14,7 +14,8 @@ not convert passing unit tests into mathematical truth.
 | **covering_entropy.py** | Exact weak-L(3/2) cover aggregation and energy-tail exponents | A PDE bound on the cover entropy |
 | **perimeter_packing.py** | Exact scaling of divergence-free packets at the entropy threshold | Realisation by one Navier-Stokes evolution |
 | **packet_lifetime.py** | Exact viscous lifetime and strain threshold for isolated packets | The background-driven linear source |
-| **mixed_lorentz.py** | Exact optimisation of global-local component source gains | Variable-radius or connected components |
+| **mixed_lorentz.py** | Exact optimisation of global-local component source gains | Smooth-partition cutoff errors |
+| **vanishing_tail.py** | Total-volume and critical little-o exponent chain | Derivation of uniform component-diameter decay |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -36,6 +37,7 @@ From the repository root:
     make perimeter-packing
     make packet-lifetime
     make mixed-lorentz
+    make vanishing-tail
     make strain
     make fetch-2607
     make compile-2607

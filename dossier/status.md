@@ -41,6 +41,12 @@ and breakdown work
   removes that count endpoint. Every number of comparable critical components
   retains at least one logarithm; the cubic-log count retains \(3/2\) logarithms.
   The worst count is instead \((\log\lambda)^{3/2}\), where one log survives.
+- Using the total weak-vorticity superlevel volume as the common component support
+  cap removes radius comparability and every multiscale ledger. Uniform decay of the
+  maximum component containing radius gives
+  \(o(\lambda^{-3/2})\) vorticity and \(o(\beta^{-3})\) velocity tails. Any such
+  critical little-o gain places the sparse radius strictly inside the analytic
+  radius; no prescribed logarithmic rate is needed.
 - Smooth divergence-free vorticity need not supply a log-weighted BMO direction
   extension across its zero set.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
@@ -53,9 +59,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can the mixed global-local component estimate survive variable radii, anisotropy,
-> and low-vorticity connections, and can dynamics generate the required
-> log-weighted direction control?
+> Can smooth critical-scale localisation remove the remaining maximum component
+> diameter hypothesis, and can dynamics generate the required log-weighted
+> direction control?
 
 The coequal breakdown question remains:
 
@@ -64,11 +70,12 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Dyadically decompose variable component radii and derive the exact scale-sum cost
-   in the mixed global-local \(L^{6/5,2}\) estimate; prove it remains logarithmically
-   absorbable or construct a multiscale saturation.
-2. Test whether quantitative spatial analyticity supplies a uniform doubling or
-   component-count bound at the packet radius.
+1. Build a finite-overlap square partition at radius
+   \(r_\lambda\asymp\lambda^{-1/2}\), combine the mixed Lorentz square-sum with the
+   IMS identity, and determine whether all cutoff errors fit inside diffusion and
+   support-sensitive damping.
+2. If smooth localisation fails, construct the exact macroscopic-diameter component
+   saturating its cutoff ledger while retaining global weak vorticity.
 3. Test whether local energy and viscosity force any terminal-time VMO modulus for
    vorticity direction.
 4. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
