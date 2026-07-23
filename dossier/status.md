@@ -700,8 +700,9 @@ and breakdown work
   \(\|u_\infty(s)\|_{L^3}\to\infty\) as \(s\to-\infty\), in the
   extended-norm sense. Uniform weak \(L^3\) does not exclude that strong
   endpoint escape.
-- A proof-level refinement now supersedes that mildness-only fork and is
-  awaiting adversarial review. At almost every negative Leray restart, the
+- A proof-level refinement now supersedes that mildness-only fork and has
+  passed independent adversarial review in its stated scope. At almost
+  every negative Leray restart, the
   finite-energy approximants are weak \(L^{3,\infty}\) solutions in the
   Barker--Seregin--Šverák heat-plus-energy class. Their peer-reviewed
   stability theorem passes this coherence to the detached profile. The
@@ -721,9 +722,10 @@ and breakdown work
   diagonal, an intermediate punctured ancestor scale
   \(R_j\ll\rho_j\ll|x_j-x_*|\) with a fixed critical velocity pairing.
   The displayed source definition suppresses the critical amplitude
-  factor which its own proof requires; that notation repair and the claim
-  that no further use of mildness is hidden are the two explicit external
-  review targets.
+  factor which its own proof requires. Independent review validated that
+  proof-level repair, found no published erratum, and found no hidden
+  further use of mildness. It remains a repair rather than a verbatim
+  source citation.
 - The surviving algebra is now explicitly conditional. For a coherent
   two-edge cell,
   \[
@@ -792,8 +794,8 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > [coherent weak-\(L^3\) ancestry reduction](experiments/terminal-besov-ancestry.md)
 > now passes the Barker--Seregin--Šverák restart structure to that profile
 > and reruns the proof of the stronger Albritton--Barker Besov Liouville
-> theorem. Subject to external confirmation of its proof-consistent source
-> notation, every good slice has a uniform positive critical blow-down
+> theorem. Independent review validated its proof-consistent source repair
+> and found no published erratum. Every good slice has a uniform positive critical blow-down
 > defect, and the terminal trace forces a punctured physical ancestor scale
 > between the satellite and its distance to the core. The next gate is to
 > evolve or sum this ancestry, couple it to the core, or prove another
@@ -811,11 +813,8 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Adversarially audit the coherent weak-\(L^3\) ancestry reduction,
-   especially the proof-consistent critical-dilation repair in
-   Albritton--Barker Theorem 4.1 and the claim that mildness is used only to
-   enter the Barker--Seregin--Šverák stability class. If retained, exclude
-   the resulting detached profile or its forced terminal ancestry. Every
+1. Exclude the independently reviewed coherent weak-\(L^3\) detached
+   profile or its forced terminal ancestry. Every
    good time slice has bounded weak \(L^3\) but a fixed positive critical
    Besov blow-down defect; the terminal trace produces
    \(R_j\ll\rho_j\ll|x_j-x_*|\) with a nonzero velocity pairing. Evolve or

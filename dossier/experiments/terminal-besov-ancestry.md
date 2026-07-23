@@ -2,8 +2,8 @@
 
 - **Experiment:** EXP-TERMINAL-BESOV-ANCESTRY-001
 - **Route:** ROUTE-R3B
-- **Status:** implemented conditional analytic reduction; external review
-  requested
+- **Status:** complete conditional analytic reduction; independently
+  reviewed in stated scope
 - **Domain:** \(\mathbb R^3\)
 - **Solution class:** one chosen global suitable Leray--Hopf continuation,
   smooth before a first singular time
@@ -17,6 +17,8 @@
   [*On Local Type I Singularities of the Navier--Stokes Equations and
   Liouville Theorems*](https://doi.org/10.1007/s00021-019-0448-z),
   Theorem 4.1 and its proof
+- **Independent review:**
+  [valid in stated scope](../review-response-terminal-besov-ancestry-2026-07-23.md)
 
 The detached terminal profile inherits more than suitability and local
 energy. At almost every negative restart time it is a weak
@@ -88,7 +90,9 @@ and requires the corresponding terminal component
 \(U^{(k)}=D_{\sqrt{|t_k|}}U\) to converge to zero. Therefore (2) is the
 proof-consistent reading actually needed by the theorem. This repository
 does not silently treat the printed formula as sufficient. Independent
-review should verify the correction against the published argument.
+review found the proof-level repair valid and found no published erratum.
+It must still be described as a repair, not as the verbatim displayed
+source definition.
 
 Every \(L^3(\mathbb R^3)\) field belongs to (2), by density and weak
 convergence of critical dilations. The inclusion
@@ -288,8 +292,8 @@ bounded. Their prefactor tends to infinity while their cylinders exhaust
 space-time, so \(u\equiv0\).
 
 No Duhamel formula, mild uniqueness, or other use of mildness occurs after
-the weak-\(L^3\) solution property has been supplied. This proof-level
-claim is one of the two principal targets for external review.
+the weak-\(L^3\) solution property has been supplied. Independent
+adversarial review found no hidden further use.
 
 ## 5. A quantitative terminal defect at almost every time
 
@@ -475,8 +479,9 @@ This reduction closes:
 
 It does not close:
 
-1. the proof-consistent source-notation issue in (2) without independent
-   confirmation;
+1. a verbatim published correction or erratum for the source-notation issue
+   in (2); independent review validated the proof-level repair but found no
+   published erratum;
 2. a frequency-annular or strain mark at the ancestor scale;
 3. evolution or suitability of a terminal blow-down limit;
 4. coupling of the ancestor to the escaped Type-I core;

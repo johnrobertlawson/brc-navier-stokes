@@ -393,7 +393,7 @@
         "SRC-BARKER-SEREGIN-SVERAK-2018"
       ],
       "depends_on": ["CLM-WEAK-L3-STABILITY-001"],
-      "audit": "Theorem 4.1 is peer reviewed, but the displayed source definition omits the critical amplitude factor that its own rescaling proof needs. This record uses the proof-consistent reading and exposes that notation repair for independent review. Extending the proof from mildness to an independently supplied coherent weak-L3 restart structure is a repository conditional theorem, not part of this imported claim.",
+      "audit": "Theorem 4.1 is peer reviewed, but the displayed source definition omits the critical amplitude factor that its own rescaling proof needs. Independent adversarial review validated the proof-consistent reading and found no published erratum, so it remains labelled a repair rather than a verbatim citation. Extending the proof from mildness to an independently supplied coherent weak-L3 restart structure is a repository conditional theorem, not part of this imported claim.",
       "last_checked": "2026-07-23"
     },
     {

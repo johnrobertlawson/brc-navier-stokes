@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T19:03:43Z
+**Updated:** 2026-07-23T19:14:02Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -171,7 +171,8 @@ ancient Type-I profile, not necessarily the same limit. Their headline
 strong-\(L^3\) Liouville theorem initially left a mildness versus backward
 strong-\(L^3\) escape fork.
 
-The latest reduction is stronger and is now packaged for external review.
+The latest reduction is stronger and has passed independent adversarial
+review in its stated scope.
 At almost every negative Leray restart, the satellite approximants are weak
 \(L^{3,\infty}\) solutions in the specific
 Barker--Seregin--Šverák heat-plus-energy sense. Their stability theorem
@@ -198,13 +199,13 @@ still inside the punctured terminal regular region. This is a genuine
 intermediate ancestor, but not a frequency shell, evolved blow-down
 solution, core coupling, or cross-satellite genealogy.
 
-The principal review risk is explicit: the displayed subspace definition
+The principal source caveat remains explicit: the displayed subspace definition
 before Albritton--Barker Theorem 4.1 suppresses the critical amplitude
 factor, while its proof uses the Navier--Stokes dilation
 \(\lambda f(\lambda\cdot)\). The new theorem uses that proof-consistent
-reading and requests independent confirmation. The other review target is
-whether mildness is used anywhere in their proof beyond weak-\(L^3\)
-coherence.
+reading. Independent review validated the repair, found no published
+erratum, and found no additional use of mildness beyond weak-\(L^3\)
+coherence. The repair is not represented as a verbatim source citation.
 
 The immediate target is now to evolve or sum the forced Besov ancestry,
 couple it to the escaped Type-I core, or find a same-trajectory flux,

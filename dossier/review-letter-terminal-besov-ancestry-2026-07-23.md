@@ -7,6 +7,12 @@
 - **Requested posture:** adversarial; identify the earliest invalid
   implication
 
+**Review completed:** the independent reviewer returned **valid in stated
+scope** for all four audited links. The accepted caveat is that the critical
+dilation is a proof-level repair rather than a verbatim citation, and no
+published erratum was found. See the
+[review response](review-response-terminal-besov-ancestry-2026-07-23.md).
+
 Dear reviewer,
 
 I am asking for a pause and an adversarial audit of one claimed advance.
