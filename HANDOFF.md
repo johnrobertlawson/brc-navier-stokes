@@ -1,6 +1,6 @@
-# Handoff: find the logarithmic scale charge
+# Handoff: couple fresh bands to projected moments
 
-**Updated:** 2026-07-23T14:28:09Z
+**Updated:** 2026-07-23T14:38:21Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -468,24 +468,25 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/tree-budget-audit.md`;
-3. `dossier/experiments/moving-band-coupling.md`;
-4. `dossier/experiments/forcing-jet-decoupling.md`;
-5. `dossier/experiments/strain-jet-freezing.md`;
-6. `dossier/experiments/microbubble-decoration-rigidity.md`;
-7. `dossier/experiments/terminal-carrier-microbubble.md`;
-8. `dossier/experiments/terminal-alignment-excess.md`;
-9. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-10. `dossier/experiments/terminal-trace-excess.md`;
-11. `dossier/experiments/projective-zero-interface.md`;
-12. `dossier/experiments/trace-projective-domination.md`;
-13. `dossier/experiments/trace-boundary-renormalisation.md`;
-14. `dossier/experiments/trace-transition-band-flux.md`;
-15. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/fresh-band-lorentz.md`;
+3. `dossier/experiments/tree-budget-audit.md`;
+4. `dossier/experiments/moving-band-coupling.md`;
+5. `dossier/experiments/forcing-jet-decoupling.md`;
+6. `dossier/experiments/strain-jet-freezing.md`;
+7. `dossier/experiments/microbubble-decoration-rigidity.md`;
+8. `dossier/experiments/terminal-carrier-microbubble.md`;
+9. `dossier/experiments/terminal-alignment-excess.md`;
+10. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+11. `dossier/experiments/terminal-trace-excess.md`;
+12. `dossier/experiments/projective-zero-interface.md`;
+13. `dossier/experiments/trace-projective-domination.md`;
+14. `dossier/experiments/trace-boundary-renormalisation.md`;
+15. `dossier/experiments/trace-transition-band-flux.md`;
+16. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-16. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+17. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-17. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+18. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1712,22 +1713,32 @@ Completed terminal alignment-excess reduction:
 > The required object is the additive logarithmic charge
 > \(\sum_vm_v\), where \(m_v\) is the positive parent-detector-projected
 > Young moment. No current estimate bounds it.
+>
+> The low bands do contain new information across the tree. If the child
+> radius is \(qR\), every band below the parent cutoff is suppressed by
+> \(q^2\) after child normalisation. A uniform nonzero child-jet floor
+> therefore forces a fresh annular strain increment of size
+> \(c-Bq^2\); a sparse subsequence gives a uniform positive floor.
+> Bernstein persistence makes each fresh increment a critical weak
+> \(L^{3/2}\) atom. But the endpoint and its vector square function provide
+> only an \(\ell^\infty\) scale ledger. Exact disjoint atoms retain a fixed
+> global weak norm while every finite Lorentz secondary index grows with
+> logarithmic depth. The changing terminal clocks add a second supremal
+> barrier.
 
 Next deliverable:
 
-> Test whether the parent low bands at successive decorated nodes admit a
-> scale-to-scale telescoping or Littlewood--Paley martingale decomposition
-> whose square function controls
-> \(\sum_vm_v\). Separate low-pass persistence from genuine band increments,
-> localise the increments to disjoint parabolic shells, and compute the exact
-> Lorentz sequence exponent available from the endpoint weak
-> \(L^{3/2}\) bound. If the endpoint supplies only an \(\ell^\infty\) scale
-> ledger, record the missing \(\ell^1\) or \(\ell^2\) input and retain the
-> log-scale-indexed moment as a defect. Do not return to positive-radius
-> energy, dissipation, flux, volume, or one-cylinder paraproduct estimates.
+> Transfer the positive node moment from the full child jet
+> \(F=C+G\) to the fresh annular increment \(G\). Expand
+> \(F^2-G^2=CG+GC+C^2\), quantify its contraction against
+> \(A-B\), and determine whether the \(O(q^2)\) coarse error preserves a
+> uniform lower floor for the \(G^2\)-projected Young moment. Then identify
+> the weakest spatial persistence or spacetime occupation that would sum
+> those fresh-detector moments across changing clocks. Do not try to extract
+> a finite sequence norm from the endpoint vector square function alone.
 > Neither suitability of the undecorated microchild, an arbitrary constant
 > detector, unweighted volume, nor the collapsed intrinsic band can close
-> this. A successful telescoping or nonlocal estimate excludes the
+> this. A successful fresh-detector or nonlocal estimate excludes the
 > direction-weighted concentration
 > \((\xi_n\cdot D_n\xi_n)\rho_n\). Determine whether bounded
 > projective-cross content makes this directional weight compact enough to

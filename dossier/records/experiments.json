@@ -1123,6 +1123,36 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-BAND-INCREMENT-001",
+      "title": "Fresh parent-band increment and Lorentz sequence audit",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Successive nonzero renormalised parent jets can be inherited from one coarser low band, or otherwise the endpoint weak L three halves bound and Littlewood-Paley square function sum the fresh annular increments strongly enough to bound logarithmic tower depth.",
+      "invariants": [
+        "At child radius ratio q every coarser physical strain band acquires the normalisation factor q squared",
+        "A uniform child-jet floor and coarse-band ceiling force a fresh annular strain increment once q squared times the ceiling is below the floor",
+        "Grouping a fixed number of levels achieves that gap on every infinite geometric path",
+        "Frequency-local Bernstein persistence converts a fresh pointwise increment into a scale-critical weak L three halves atom",
+        "Order-zero strain-vorticity shell equivalence transfers the required weak atom to the vorticity shell",
+        "The standard weak-Lorentz vector square-function norm does not control any finite sequence norm of disjoint critical atoms",
+        "An exact nested rearrangement has bounded L three halves infinity norm while every finite Lorentz secondary index grows with logarithmic depth",
+        "Changing terminal clocks creates an additional L infinity in time barrier even if a spatial finite-index improvement were available",
+        "No same-trajectory tower, summable projected moment, regularity theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Write the exact relation between successive normalised low bands, extract a fresh annular increment after grouping scale gaps, use a Bernstein persistence ball to obtain a critical weak atom, and compute exact vector-valued and Lorentz rearrangement ledgers for nested scale atoms.",
+      "certificate": "A written fresh-band and Lorentz-sequence theorem plus exact Fraction tests for coarse-band suppression, grouped-gap length, persistence radius, weak atom floor, disjoint vector-square aggregation, and finite-secondary-index growth.",
+      "success_criterion": "Either coarse-band persistence can support every child jet without fresh frequency, or fresh increments are forced and the exact endpoint sequence space is identified as summable or purely supremal.",
+      "failure_interpretation": "Coarse normalisation does not lose q squared, fresh pointwise bands fail to persist on their natural spatial scale, or the weak Lorentz vector norm unexpectedly controls a finite sequence sum for disjoint critical atoms.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/fresh-band-lorentz.md",
+        "lab/navier_lab/band_increment.py",
+        "lab/tests/test_band_increment.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

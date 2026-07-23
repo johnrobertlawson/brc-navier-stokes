@@ -489,6 +489,18 @@ and breakdown work
   masses grow linearly with depth. The missing quantity is the additive
   logarithmic-scale sum of positive parent-detector-projected Young moments,
   not an ordinary volume Carleson measure.
+- An infinite decorated path does force genuinely fresh physical
+  frequencies. At child ratio \(q\), normalisation suppresses every band
+  below the parent cutoff by \(q^2\). A uniform child-jet floor \(c\) and
+  coarse ceiling \(B\) give a fresh annular increment of size at least
+  \(c-Bq^2\); sparse scale selection makes this uniformly positive.
+  Bernstein persistence turns each increment into a critical weak
+  \(L^{3/2}\) strain and vorticity atom. However, the endpoint vector square
+  function remains a weak Lorentz norm of a pointwise \(\ell^2\) sum, not a
+  finite sequence norm of the component weak norms. Exact disjoint atoms
+  have bounded global weak norm through arbitrary depth, while every finite
+  Lorentz secondary index grows like a positive power of the depth.
+  Different terminal clocks supply a second \(L^\infty\) obstruction.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -499,11 +511,11 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can a same-trajectory telescoping, quasi-orthogonality theorem, or nonlocal
-> conservation law control the additive logarithmic-depth sum after every
-> positive-radius budget and local parent--micro coupling permits an infinite
-> path? If not, can the resulting log-scale-indexed stress, positive tensor
-> Young measure,
+> Can the positive projected moments be transferred to the fresh annular
+> strain increments forced at every sparse tower level and then controlled
+> by a finite-index spacetime Lorentz estimate, temporal telescope, or
+> nonlocal law? If not, can the resulting frequency-and-log-scale-indexed
+> stress, positive tensor Young measure,
 > direction-weighted signed density, and nonredundant projective-cross defect
 > be retained in a suitable ancient system and excluded by rigidity?
 
@@ -514,16 +526,15 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Decompose successive parent low bands into genuine scale increments and
-   determine whether any telescoping identity survives the changing centres
-   and terminal clocks.
-2. Compute the Lorentz sequence exponent for the localised band increments:
-   decide whether the endpoint weak \(L^{3/2}\) hypothesis supplies only
-   \(\ell^\infty\) scale control or any summable \(\ell^2\) or \(\ell^1\)
-   gain for the projected moments.
-3. Localise the parent-band strong critical occupation to disjoint
-   parabolic shells and identify the exact tail or nonlocal error preventing
-   it from bounding the logarithmic depth charge.
+1. Expand \(F^2-G^2\) for the coarse/fresh split at each sparse tower level
+   and transfer the positive projected Young moment to the squared fresh
+   annular detector with a quantified \(O(q^2)\) error.
+2. Determine whether the fresh-band persistence balls coexist long enough
+   to yield a finite-secondary-index spatial Lorentz sum, or instead require
+   a genuinely spacetime \(L^{5/2,s}\) occupation.
+3. Test whether the local energy equation or a frequency flux identity gives
+   temporal telescoping across the changing node clocks after the projected
+   moment has been attached to the fresh band.
 4. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
    energy, and the same-trajectory pullbacks, or construct the exact coherent

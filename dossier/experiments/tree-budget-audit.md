@@ -451,3 +451,10 @@ alternative A--D.
 Run the exact radius, shell, and tree ledgers with:
 
     make tree-budget
+
+The subsequent [fresh-band Lorentz audit](fresh-band-lorentz.md) proves that
+every sparse level of an infinite decorated path must introduce a genuinely
+new critical strain/vorticity annulus. The endpoint weak Lorentz norm and its
+vector square function still provide only a supremal scale ledger, so the
+next target is to transfer the projected moment to the squared fresh band
+and obtain spacetime or temporal summability.
