@@ -228,22 +228,30 @@
     },
     {
       "id": "CLM-GRUJIC-001",
-      "plain": "A 2026 preprint proposes exclusion of a structured critical point singularity under log-weighted vorticity-direction control.",
-      "formal": "Uniform weak-L(3/2) vorticity, critical point localization, and uniform bmo_(1/|log r|) direction control imply that T-star is not singular, according to the source theorem.",
+      "plain": "A 2026 preprint conditionally excludes a structured critical point singularity under log-weighted vorticity-direction control; the full proof chain has been independently reconstructed here with explicit repairs.",
+      "formal": "For a normalized projected mild solution, uniform weak-L(3/2) vorticity, uniform high-level fixed-centre localization, and a global unit direction extension with uniform bmo_(1/|log r|) control on one terminal interval imply that the proposed T-star is not singular.",
       "domain": "R3",
       "forcing": "zero",
-      "solution_class": "smooth_until_T",
+      "solution_class": "projected_mild_smooth_until_T",
       "assumptions": [
         "Fixed-centre uniform critical upper envelope or equivalent uniform high-level single-ball localization",
         "Uniform weak-L(3/2) vorticity",
-        "Existence of a global unit direction extension with uniform log-weighted BMO control"
+        "Existence of a global unit direction extension with uniform log-weighted BMO control",
+        "Projected mild velocity normalization or a uniformly bounded spatially constant harmonic background"
       ],
       "conclusion": "The proposed first singular time is regular.",
       "scaling": "critical_to_subcritical_log",
       "status": "conditional_preprint",
-      "source_ids": ["SRC-GRUJIC-2026", "SRC-CF-1993"],
+      "source_ids": [
+        "SRC-GRUJIC-2026",
+        "SRC-CF-1993",
+        "SRC-GRUJIC-2013",
+        "SRC-GUBEROVIC-2010",
+        "SRC-SOLYNIN-1997",
+        "SRC-RANSFORD-1995"
+      ],
       "depends_on": ["CLM-GEOM-001"],
-      "audit": "Foundation O2607-01 through O2607-04 closed with documented repairs; O2607-05 through O2607-16 remain open, so the conditional theorem is not independently verified.",
+      "audit": "O2607-01 through O2607-16 are closed by independent analytic reconstructions. The proof survives after documented repairs to profile and direction quantifiers, weak-Lorentz commutator interpolation, shell endpoints, the terminal interval, slowly varying inversions, velocity normalization, escape-time selection, slit-domain harmonic measure, and the final supremum logic.",
       "last_checked": "2026-07-23"
     },
     {

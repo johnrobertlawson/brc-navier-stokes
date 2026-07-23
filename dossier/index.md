@@ -23,6 +23,8 @@ drift apart.
 - [Route ledger](records/routes.json)
 - [Experiment ledger](records/experiments.json)
 - [arXiv:2607.08866 audit](papers/2607.08866-audit.md)
+- [arXiv:2607.08866 line-anchored proof map](papers/2607.08866-proof-map.md)
+- [2607 sparse-analyticity endgame](experiments/sparse-analyticity-endgame.md)
 - [Hou–Wang–Yang 2026 bridge note](papers/2509.25116-bridge-note.md)
 - [Glossary](glossary.md)
 

@@ -21,8 +21,8 @@ dependency-free validator is **lab/navier_lab/records.py**.
 ### Claims
 
 - **established:** supported by a primary peer-reviewed theorem.
-- **conditional_preprint:** a conditional theorem stated in a preprint and still under
-  independent audit.
+- **conditional_preprint:** a conditional theorem stated in a preprint; the record's
+  audit field says whether independent checking is pending or complete.
 - **preprint_claim:** a preprint's reported result, not yet independently reproduced here.
 - **official_status:** time-sensitive status from an official authority.
 - **definition:** controlling formulation or convention.

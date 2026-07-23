@@ -43,109 +43,109 @@
       "id": "O2607-05",
       "stage": "commutator",
       "statement": "Verify the scale-local Jones extension with global BMO seminorm proportional to phi(R).",
-      "status": "open",
+      "status": "repaired",
       "depends_on": ["O2607-03"],
-      "evidence": [],
-      "disposition": "The precise local domain, constants, and treatment of additive means must match CRW."
+      "evidence": ["EXP-COMMUTATOR-2607"],
+      "disposition": "For the cube seminorm on B_(2R), the global weighted-ball hypothesis gives C M_xi phi(2R). Jones extension on the rescaled unit ball has an R-independent constant. Subtracting and restoring the ball mean tracks additive constants, and equality on both the source support and B_R proves the near-field identity componentwise."
     },
     {
       "id": "O2607-06",
       "stage": "commutator",
       "statement": "Verify vector-valued CRW boundedness on weak Lorentz L(3/2,infinity) by a valid interpolation argument.",
-      "status": "open",
+      "status": "repaired",
       "depends_on": ["O2607-04", "O2607-05"],
-      "evidence": [],
-      "disposition": "Endpoint q=infinity must not be inferred from an inapplicable single-space theorem."
+      "evidence": ["EXP-COMMUTATOR-2607"],
+      "disposition": "The source's reflexivity wording is false for L(3/2,infinity), but the same scalar CRW commutator is strong on L(4/3) and L2. Real interpolation at theta=1/3 gives the required weak-L(3/2) bound with one BMO factor; the fixed 27-term tensor sum costs only a dimensional constant."
     },
     {
       "id": "O2607-07",
       "stage": "commutator",
       "statement": "Reproduce the near, middle dyadic, and far tail estimates with exact kernel and norm powers.",
-      "status": "open",
+      "status": "repaired",
       "depends_on": ["O2607-03", "O2607-04"],
-      "evidence": [],
-      "disposition": "The target is the localized norm C/|log R| with constants independent of time."
+      "evidence": ["EXP-COMMUTATOR-2607"],
+      "disposition": "The estimate survives for R at most 1/64. The exact kernel rearrangement is (rho^3+s/|B1|)^(-1), the final middle annulus must be truncated, the N+1 mean term retained, and the endpoint weight bounded by 3 phi(R) rather than the source's factor 2. Restriction to B_R cancels the R^(-2) pointwise scale."
     },
     {
       "id": "O2607-08",
       "stage": "energy",
       "statement": "Justify truncated testing of the scalar vorticity-magnitude inequality under the stated regularity and at vorticity zeros.",
-      "status": "open",
+      "status": "verified",
       "depends_on": ["O2607-02"],
-      "evidence": [],
-      "disposition": "A smooth approximation or Kato-type argument should make all integrations legal."
+      "evidence": ["EXP-ENERGY-2607"],
+      "disposition": "The regularisation (|omega-vector|^2+delta^2)^(1/2) gives the distributional Kato inequality with alpha times |omega| set to zero on the zero set. Positive-level truncation, spatial cutoffs, and temporal regularisation make the whole-space test legal on compact pre-terminal intervals."
     },
     {
       "id": "O2607-09",
       "stage": "energy",
       "statement": "Verify Lorentz real interpolation, Sobolev embedding, Young exponents, and coercive damping.",
-      "status": "partially_mechanized",
+      "status": "verified",
       "depends_on": ["O2607-06", "O2607-07", "O2607-08"],
-      "evidence": ["EXP-LOGCHAIN-001"],
-      "disposition": "Only downstream exponent arithmetic is mechanized; analytic inequalities remain open."
+      "evidence": ["EXP-LOGCHAIN-001", "EXP-ENERGY-2607"],
+      "disposition": "The identity (L(3/2,infinity),L(6,2))_(2/3,1)=L(3,1), Sobolev-Lorentz embedding, Young pair (3/2,3), and the support-sensitive weak-L(3/2) estimate give the stated damped ODE with exact powers."
     },
     {
       "id": "O2607-10",
       "stage": "energy",
       "statement": "Verify a single truncation threshold and all constants remain uniform on the actual pre-singular interval.",
-      "status": "open",
+      "status": "repaired",
       "depends_on": ["O2607-03", "O2607-09"],
-      "evidence": [],
-      "disposition": "The source's switch from a terminal interval to the entire interval must be reconciled."
+      "evidence": ["EXP-ENERGY-2607"],
+      "disposition": "One threshold can simultaneously enforce profile localization, R at most 1/64, logarithmic comparability, nonlinear absorption, and lambda at least ||omega(t0)||_infinity. All estimates hold uniformly on I=(T-star-epsilon,T-star); the source's claim at line 405 over all of (0,T-star) is replaced by I."
     },
     {
       "id": "O2607-11",
       "stage": "rearrangement",
       "statement": "Invert the logarithmically corrected distribution inequality with explicit cutoffs and one-sided constants.",
-      "status": "partially_mechanized",
+      "status": "repaired",
       "depends_on": ["O2607-09", "O2607-10"],
-      "evidence": ["EXP-LOGCHAIN-001"],
-      "disposition": "Formal exponents match; a rigorous slowly-varying inversion lemma is still required."
+      "evidence": ["EXP-LOGCHAIN-001", "EXP-REARRANGEMENT-2607"],
+      "disposition": "Explicit trial levels and volumes prove both inversions with uniform small-volume and high-level cutoffs. The vorticity exponents (3/2,3/2) become rearrangement exponents (2/3,1), and velocity rearrangement exponents (1/3,1) become distribution exponents (3,3), without using asymptotic equality."
     },
     {
       "id": "O2607-12",
       "stage": "rearrangement",
       "statement": "Verify the exact O'Neil convolution bound, whole-space tail, and transfer of the logarithmic exponent from vorticity to velocity.",
-      "status": "open",
+      "status": "repaired",
       "depends_on": ["O2607-11"],
-      "evidence": [],
-      "disposition": "The exponent checker assumes this analytic mapping and does not prove it."
+      "evidence": ["EXP-LOGCHAIN-001", "EXP-REARRANGEMENT-2607"],
+      "disposition": "O'Neil's maximal-rearrangement inequality, the exact |x|^(-2) rearrangement, and the global weak-L(3/2) tail preserve one logarithm for the Biot-Savart representative. For the source's absolute L-infinity velocity, one must additionally fix zero harmonic background or carry a uniformly bounded spatial constant into the high-level cutoff."
     },
     {
       "id": "O2607-13",
       "stage": "endgame",
       "statement": "Prove quantitative 3D-to-1D sparseness at a usable scale for every spatial center.",
-      "status": "open",
+      "status": "verified",
       "depends_on": ["O2607-12"],
-      "evidence": [],
-      "disposition": "Global volume control must yield an explicit chosen radius, not sparseness at every smaller radius."
+      "evidence": ["EXP-ENDGAME-2607"],
+      "disposition": "At a high peak-relative level, choose r from the uniform velocity-volume upper bound so that delta times |B_r| equals that bound. This gives 3D 3/4-sparseness around every centre at one common radius. Signed polar coordinates and the centred rearrangement of the |tau|^2 weight then give a direction with 1D density at most (3/4)^(1/3) at the same radius."
     },
     {
       "id": "O2607-14",
       "stage": "endgame",
       "statement": "Synchronize escape time, evaluation time below T-star, local lifespan, and analytic radius without circular extension.",
-      "status": "open",
+      "status": "repaired",
       "depends_on": ["O2607-03", "O2607-13"],
-      "evidence": [],
-      "disposition": "This is a theorem-critical temporal quantifier check."
+      "evidence": ["EXP-ENDGAME-2607"],
+      "disposition": "The source's undefined maximal analyticity time is replaced by half the guaranteed local lifespan tau_t=nu/(c1(M)||u(t)||_infinity^2). A first-singular-time lifespan argument forces ||u(t)||_infinity to diverge, last minima supply escape times arbitrarily near T-star, and s=t+tau_t/2 remains below T-star with analytic radius at least c nu/||u(s)||_infinity."
     },
     {
       "id": "O2607-15",
       "stage": "endgame",
       "statement": "Verify slit-domain harmonic measure, boundary hypotheses, complexified velocity bounds, and phase handling.",
-      "status": "open",
+      "status": "repaired",
       "depends_on": ["O2607-13", "O2607-14"],
-      "evidence": [],
-      "disposition": "The domain should be stated as the analytic disk with the good real set removed."
+      "evidence": ["EXP-ENDGAME-2607"],
+      "disposition": "For each centre, the correct domain is the connected slit disk D_r minus the compact good real set K. Projecting the holomorphic velocity onto its real centre direction makes the real part harmonic, positive at the centre, bounded by half the escape norm on K, and bounded by M times that norm in the disk. Solynin plus the two-constants principle yields the required pointwise bound."
     },
     {
       "id": "O2607-16",
       "stage": "presentation",
       "statement": "Repair the stray source character and restate the origin-in-void branch as a pointwise bound feeding the final supremum.",
-      "status": "open",
+      "status": "repaired",
       "depends_on": ["O2607-15"],
-      "evidence": [],
-      "disposition": "Likely presentational, but must be resolved before a clean proof reconstruction."
+      "evidence": ["EXP-ENDGAME-2607"],
+      "disposition": "Delete the stray T at source L658. The origin-in-void branch bounds one arbitrary centre and does not alone contradict escape. After both branches give |u(x0,s)| at most ||u(t)||_infinity for every x0, taking the supremum contradicts the strict escape inequality."
     }
   ]
 }

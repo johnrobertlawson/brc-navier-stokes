@@ -50,9 +50,10 @@ quantifiers.
 Exit condition: a self-contained manuscript survives independent expert review. Prize
 recognition is a later publication-and-acceptance process, not a repository action.
 
-## Active campaign A — Audit the logarithmic pump
+## Active campaign A — Remove logarithmic-pump hypotheses
 
-The first target is [arXiv:2607.08866](papers/2607.08866-audit.md). Reproduce its chain:
+The full arXiv:2607.08866v2 chain has been
+[independently reconstructed with repairs](papers/2607.08866-audit.md):
 
 1. vorticity-direction control;
 2. commutator depletion of stretching;
@@ -61,8 +62,9 @@ The first target is [arXiv:2607.08866](papers/2607.08866-audit.md). Reproduce it
 5. volume-to-sparseness conversion;
 6. analyticity and harmonic-measure contradiction.
 
-Then attack the actual bridge: derive, weaken, localize, or refute the input geometry for
-general putative singularities.
+The active bridge is now to derive, weaken, localise, or refute the input geometry for
+general putative singularities. Priority targets are a covering replacement for the
+fixed-centre ball and a PDE-derived terminal-time modulus for vorticity direction.
 
 ## Active campaign B — Certified unstable profiles
 

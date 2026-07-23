@@ -60,7 +60,7 @@
       "route_ids": ["ROUTE-R1B", "ROUTE-R3"],
       "claim_ids": ["CLM-GRUJIC-001"],
       "hypothesis": "The exact v2 source permits a bounded verdict on O2607-01 through O2607-04 without assuming any downstream commutator estimate.",
-      "invariants": ["Pinned TeX SHA-256", "Every source display and imported theorem is line-anchored", "The main conditional theorem remains unverified"],
+      "invariants": ["Pinned TeX SHA-256", "Every source display and imported theorem is line-anchored", "No downstream theorem conclusion is assumed"],
       "method": "Parse the complete TeX source, rewrite all foundation quantifiers, track constant dependencies, and independently derive the tensor cancellation.",
       "certificate": "The proof map and its linked analytic counterexamples and tensor derivation.",
       "success_criterion": "Each of O2607-01 through O2607-04 receives a verified, repaired, or unsupported verdict with exact scope.",
@@ -142,6 +142,109 @@
         "lab/navier_lab/strain.py",
         "lab/tests/test_strain.py",
         "dossier/experiments/strain-cancellation.md"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-COMMUTATOR-2607",
+      "title": "Localized 2607 commutator reconstruction",
+      "kind": "analytic_audit",
+      "route_ids": ["ROUTE-R1B", "ROUTE-R3"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "The localized logarithmic commutator estimate at source L232-371 survives exact BMO extension, weak-Lorentz interpolation, and far-field reconstruction.",
+      "invariants": [
+        "Pinned arXiv:2607.08866v2 TeX",
+        "Every operator is treated componentwise",
+        "No constant depends on radius or time",
+        "No downstream theorem conclusion is assumed"
+      ],
+      "method": "Match the Jones domain seminorm and ball geometry, interpolate one fixed CRW commutator from L(4/3) and L2, and recompute the exact kernel rearrangement and truncated dyadic shells.",
+      "certificate": "The written source-anchored reconstruction with a constant ledger and explicit repairs.",
+      "success_criterion": "O2607-05 through O2607-07 each receive an independently checkable verified, repaired, or unsupported verdict.",
+      "failure_interpretation": "The preprint's localized logarithmic smoothing theorem is not available in its stated form.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/localized-commutator.md",
+        "dossier/papers/2607.08866-proof-map.md"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-ENERGY-2607",
+      "title": "Truncated 2607 vorticity-energy reconstruction",
+      "kind": "analytic_audit",
+      "route_ids": ["ROUTE-R1B", "ROUTE-R3"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "The source's positive-level vorticity test, Lorentz interpolation, Young absorption, damping, and terminal-interval threshold yield the claimed logarithmically improved high-vorticity tail.",
+      "invariants": [
+        "Pinned arXiv:2607.08866v2 TeX",
+        "Testing is justified at vorticity zeros",
+        "One threshold is uniform on the stated terminal interval",
+        "No downstream rearrangement claim is assumed"
+      ],
+      "method": "Apply Kato regularisation, justify the positive-level test by space-time approximation, verify each Lorentz and Sobolev exponent, solve the damped scalar inequality, and retain explicit high-level cutoffs.",
+      "certificate": "The written source-anchored energy derivation and constant ledger.",
+      "success_criterion": "O2607-08 through O2607-10 each receive an independently checkable verified, repaired, or unsupported verdict.",
+      "failure_interpretation": "The claimed logarithmic vorticity distribution gain is not established from the repaired localized commutator estimate.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/truncated-energy.md",
+        "dossier/papers/2607.08866-proof-map.md"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-REARRANGEMENT-2607",
+      "title": "Logarithmic 2607 rearrangement and velocity transfer",
+      "kind": "analytic_audit",
+      "route_ids": ["ROUTE-R1B", "ROUTE-R1D", "ROUTE-R3"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "The repaired high-vorticity distribution tail can be inverted, transferred through the whole-space Biot-Savart kernel by O'Neil's theorem, and inverted again without losing its logarithmic exponent.",
+      "invariants": [
+        "Pinned arXiv:2607.08866v2 TeX",
+        "Both inversions retain explicit cutoffs and inequality directions",
+        "The O'Neil integral is controlled on the whole volume axis",
+        "Velocity is distinguished from its Biot-Savart representative"
+      ],
+      "method": "Use explicit trial level and trial volume functions, compute the exact Riesz-kernel rearrangement, bound both O'Neil terms, and isolate the harmonic-background normalisation.",
+      "certificate": "The written source-anchored inversion and convolution derivation with cutoff and normalisation ledgers.",
+      "success_criterion": "O2607-11 and O2607-12 each receive an independently checkable verified, repaired, or unsupported verdict.",
+      "failure_interpretation": "The logarithmic gain does not rigorously transfer from vorticity distribution to the absolute velocity distribution used by the endgame.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/rearrangement-transfer.md",
+        "dossier/papers/2607.08866-proof-map.md"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-ENDGAME-2607",
+      "title": "Sparse-analyticity and harmonic-measure endgame",
+      "kind": "analytic_audit",
+      "route_ids": [
+        "ROUTE-R1B",
+        "ROUTE-R1D",
+        "ROUTE-R3"
+      ],
+      "claim_ids": [
+        "CLM-GRUJIC-001"
+      ],
+      "hypothesis": "The repaired velocity distribution tail can be synchronized with local spatial analyticity and a correctly posed slit-domain harmonic-measure argument to exclude the proposed first singular time.",
+      "invariants": [
+        "Pinned arXiv:2607.08866v2 TeX",
+        "The evaluation time remains strictly below T-star",
+        "One sparse radius works around every spatial centre",
+        "Velocity harmonic background is explicitly normalized or uniformly bounded",
+        "The final contradiction occurs only after taking the spatial supremum"
+      ],
+      "method": "Choose an explicit sparse radius from the velocity tail, prove same-scale 3D-to-1D sparseness, evaluate at half a guaranteed local lifespan after an escape time, and apply the two-constants principle on the slit disk.",
+      "certificate": "The source-anchored endgame reconstruction with exact geometric, temporal, harmonic-measure, and constant ledgers.",
+      "success_criterion": "O2607-13 through O2607-16 each receive an independently checkable verified, repaired, or unsupported verdict and the exact scope of the conditional theorem is fixed.",
+      "failure_interpretation": "The preprint's final regularity conclusion does not follow from the repaired upstream estimates.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/sparse-analyticity-endgame.md",
+        "dossier/papers/2607.08866-proof-map.md"
       ],
       "last_run": "2026-07-23"
     },
