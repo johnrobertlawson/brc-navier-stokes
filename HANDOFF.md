@@ -1,6 +1,6 @@
-# Handoff: force zero terminal Cesàro trace excess
+# Handoff: exploit same-trajectory alignment against terminal trace excess
 
-**Updated:** 2026-07-23T12:42:18Z
+**Updated:** 2026-07-23T12:53:15Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -135,11 +135,23 @@ norm at most one. It vanishes for every fixed smooth zero-stratum profile.
 Transverse strata in codimensions one, two, and three all have an
 exact-derivative signed kernel with zero total mass.
 
-The next target is a uniform negative-topology temporal modulus that forces
-\(\mathfrak E_0=0\). If that fails, localise the bounded signed density inside
-a suitable ancient system and exclude it by rigidity. Projective-cross content
-remains necessary only where the full tensor Hessian and orientation, rather
-than scalar trace, must be closed.
+That generic temporal-modulus target is false, even for exact globally regular
+periodic shears. A frequency-\(K\) heat layer has a fixed positive trace excess
+on its natural interval \(cK^{-2}\). Matching amplitude and cutoff preserves
+that excess while making terminal vorticity, velocity, and energy vanish.
+Finite Fourier support and polynomial amplitude decay extend the backward
+heat-normalised domain by \(C\log K\to\infty\) with uniform endpoint control.
+Thus endpoint vorticity, energy, suitability, and expanding backward age do
+not force \(\mathfrak E_0=0\) across solution families.
+
+The obstruction changes initial data with \(K\) and has
+\(S:H_{\eta_K}=0\). It therefore does not test the two inputs actually present
+in the blow-up route: scales selected from one physical trajectory and a
+positive terminal finite-band alignment witness. The next target is to prove
+that these two inputs prevent the amplitude--cutoff adverse heat layer, or to
+retain their failure in the \(\mathfrak E_0\)-decorated suitable ancient
+system. Projective-cross content remains necessary only where the full tensor
+Hessian and orientation, rather than scalar trace, must be closed.
 
 The boundary and scalar-renormalisation audits remain useful scope controls:
 averaged band flux is paid by \(\mathcal J_\eta\), no bounded detector can
@@ -164,16 +176,17 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/terminal-trace-excess.md`;
-3. `dossier/experiments/projective-zero-interface.md`;
-4. `dossier/experiments/trace-projective-domination.md`;
-5. `dossier/experiments/trace-boundary-renormalisation.md`;
-6. `dossier/experiments/trace-transition-band-flux.md`;
-7. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+3. `dossier/experiments/terminal-trace-excess.md`;
+4. `dossier/experiments/projective-zero-interface.md`;
+5. `dossier/experiments/trace-projective-domination.md`;
+6. `dossier/experiments/trace-boundary-renormalisation.md`;
+7. `dossier/experiments/trace-transition-band-flux.md`;
+8. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-8. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+9. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-9. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+10. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1271,17 +1284,32 @@ Completed terminal signed-excess reduction:
 > trajectory has zero excess, and transverse zero strata in all three spatial
 > codimensions have exact-derivative leading kernels with zero signed mass.
 
+Completed generic temporal-modulus obstruction:
+
+> There are exact smooth periodic Navier--Stokes shears with a positive
+> terminal Cesàro trace excess independent of frequency \(K\) on the natural
+> window \(cK^{-2}\). With amplitude and cutoff both \(K^{-2}\), terminal
+> vorticity, velocity norm, and energy scale as \(K^{-2}\), \(K^{-3}\), and
+> \(K^{-6}\), while the excess stays fixed. A finite-band heat profile extends
+> backwards for heat-normalised age \(C\log K\to\infty\) with uniform endpoint
+> control. Hence endpoint vorticity, energy, suitability, and expanding age
+> cannot yield a uniform modulus across solution families. The family changes
+> initial data with \(K\) and has \(S:H=0\), so same-trajectory coherence and
+> positive terminal alignment remain untested.
+
 Next deliverable:
 
-> Derive or falsify a uniform negative-topology time modulus for
-> \(t\mapsto\int\chi h_{\eta_n}(t)\) from endpoint control, the vorticity
-> equation, and expanding backward history. Such a modulus forces
-> \(\mathfrak E_0=0\). If it fails, localise the bounded signed density in the
-> minimal ancient scalar/tensor system, prove suitability, and exclude the
-> decorated object by rigidity. Use \(\mu_{\mathcal J,0}\) only in an
-> independently tight branch; raw \(\mathcal J_\eta\),
-> \(\mathcal T_\eta\), and \(|\rho_\eta|\) are not admissible universal
-> excesses. Do not try another bounded scalar renormalisation, replace signed
+> Derive a cross-scale constraint satisfied by scales selected from one
+> physical trajectory and couple it to the positive terminal finite-band
+> pairing \(F:H^0\). Prove that this alignment-coupled constraint forces
+> \(\mathfrak E_0=0\), or pass both the alignment witness and the bounded
+> signed excess into the minimal suitable ancient scalar/tensor system and
+> exclude it by rigidity. Use \(\mu_{\mathcal J,0}\) only in an independently
+> tight branch; raw \(\mathcal J_\eta\), \(\mathcal T_\eta\), and
+> \(|\rho_\eta|\) are not admissible universal excesses. Do not try to obtain
+> a familywise modulus from endpoint size, energy, suitability, or ancient
+> age alone; another amplitude--cutoff heat family cannot test the surviving
+> inputs. Do not try another bounded scalar renormalisation, replace signed
 > logarithmic flux by positive variation, return to the full matrix norm, use
 > unstable modes orthogonal to the terminal tensor as a detector obstruction,
 > treat finite-window affine or shear amplification as a Clay counterexample,

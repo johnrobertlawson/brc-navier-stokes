@@ -326,6 +326,15 @@ and breakdown work
   zero mass. Their positive envelopes respectively have inverse-cutoff,
   logarithmic or finite, and vanishing regimes, confirming that raw positive
   mass does not classify terminal loss.
+- No uniform trace temporal modulus follows from endpoint vorticity, energy,
+  suitability, and expanding backward age across solution families. An exact
+  periodic heat shear has a fixed positive terminal Cesàro excess on time
+  \(K^{-2}\). Scaling vorticity and cutoff together leaves the trace unchanged;
+  polynomial amplitude smallness then pays for a backward heat interval of
+  length \(C\log K\to\infty\) while endpoint vorticity stays bounded and
+  velocity energy vanishes uniformly. The family changes initial data with
+  \(K\) and has \(S:H=0\), so it does not test same-trajectory coherence or
+  the selected positive terminal alignment.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -336,11 +345,11 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can the existing endpoint and one-trajectory equations force a uniform
-> negative-topology temporal modulus for the scalar trace, hence
-> \(\mathfrak E_0=0\)? If not, can the bounded signed terminal density
-> \(\mathfrak E_0\) be localised inside a suitable ancient system and excluded
-> by rigidity?
+> Can scales selected from one Navier--Stokes trajectory and carrying the
+> positive terminal finite-band alignment witness realise the
+> amplitude--cutoff covariant adverse heat layer? Equivalently, does
+> same-trajectory alignment force \(\mathfrak E_0=0\), or can its failure be
+> retained and excluded in a suitable decorated ancient system?
 
 The coequal breakdown question remains:
 
@@ -349,18 +358,19 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive or falsify a uniform negative-topology time modulus for
-   \(t\mapsto\int\chi h_{\eta_n}(t)\) from the vorticity equation, endpoint
-   bounds, and expanding backward history.
-2. Localise the triangular signed pairing defining \(\mathfrak E_0\) without
-   replacing \(\rho_\eta\) by total variation.
-3. Prove that a nonzero \(\mathfrak E_0\) is incompatible with suitability,
-   local energy, and the closed scalar/tensor equations.
+1. Derive a same-trajectory coherence constraint that prevents repeated
+   amplitude--cutoff covariant heat layers at the scales selected by the
+   terminal witness, or construct the exact coherent survivor.
+2. Couple the triangular signed pairing defining \(\mathfrak E_0\) to the
+   nonzero terminal finite-band strain pairing \(F:H^0\), rather than trace
+   alone.
+3. Prove that a nonzero alignment-coupled \(\mathfrak E_0\) is incompatible
+   with suitability, local energy, and the closed scalar/tensor equations.
 4. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.
-5. Classify degenerate or sequence-dependent zero profiles not covered by the
-   fixed smooth transverse-stratum theorem, and decide which orientation
+5. Classify the degenerate sequence-dependent zero profiles capable of
+   carrying both excess and terminal alignment, and decide which orientation
    information is still needed for rigidity.
 6. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.

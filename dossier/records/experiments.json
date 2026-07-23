@@ -875,6 +875,36 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-TRACE-TEMPORAL-MODULUS-001",
+      "title": "Positive natural-time trace excess with expanding heat age",
+      "kind": "analytic_counterexample",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Endpoint vorticity, energy, suitability, and an expanding backward domain may force the terminal Cesaro trace excess to vanish uniformly across smooth Navier-Stokes solution families.",
+      "invariants": [
+        "A mean-zero trigonometric heat profile can have strictly increasing cutoff-trace mass at its initial time",
+        "Frequency scaling shrinks the adverse layer to time frequency to the minus two while preserving its positive terminal Cesaro excess",
+        "Multiplying vorticity and cutoff by the same amplitude leaves the cutoff-relative trace and excess unchanged",
+        "The exact periodic shear has zero mixed alignment, smooth suitability, and exact energy equality",
+        "With cutoff-matched amplitude frequency to the minus two, terminal vorticity, velocity norm, and kinetic energy vanish while the excess remains fixed",
+        "Polynomial amplitude smallness pays for a backward heat interval of length proportional to log frequency while keeping vorticity uniformly endpoint-bounded",
+        "The entire expanding-age family has uniformly vanishing velocity energy and a nonzero signed terminal trace excess",
+        "The family changes initial data with frequency and has zero terminal strain-tensor pairing, so it does not test same-trajectory coherence or the selected positive alignment witness",
+        "No same-trajectory counterexample, blow-up, regularity theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Choose a periodic heat profile with adverse trace curvature, compute its positive terminal Cesaro excess, apply exact frequency and amplitude-cutoff covariance, and use finite Fourier support plus polynomial amplitude decay to pay for logarithmically expanding backward heat age.",
+      "certificate": "A written exact periodic Navier-Stokes shear theorem and scope separation, plus Fraction tests for forward Cesaro growth, frequency invariance, cutoff-matched powers, backward heat growth, and logarithmic age.",
+      "success_criterion": "Either the trace excess decays under endpoint, suitability, and expanding-age bounds, or an exact family proves that same-trajectory coherence and terminal alignment are indispensable extra inputs.",
+      "failure_interpretation": "The adverse heat profile cannot be chosen with finite Fourier support, the shear is not exact, amplitude-cutoff covariance fails, the Cesaro excess decays under frequency scaling, or backward endpoint control cannot expand.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/trace-temporal-modulus-obstruction.md",
+        "lab/navier_lab/trace_temporal_modulus.py",
+        "lab/tests/test_trace_temporal_modulus.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

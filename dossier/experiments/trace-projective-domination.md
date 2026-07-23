@@ -433,13 +433,15 @@ The preceding target is closed algebraically:
 > \(|\rho_\eta|\le6\nu\mathcal J_\eta\).
 
 Classical fixed-direction ancient rigidity is still useful for interpreting
-the zero-projective branch. After the subsequent smooth-interface obstruction
-and [terminal trace-excess theorem](terminal-trace-excess.md), the immediate
-live gate is:
+the zero-projective branch. After the subsequent smooth-interface obstruction,
+[terminal trace-excess theorem](terminal-trace-excess.md), and
+[temporal-modulus obstruction](trace-temporal-modulus-obstruction.md), the
+immediate live gate is:
 
-> Prove a negative-topology temporal modulus forcing the bounded terminal
-> Cesàro excess to vanish, or exclude the excess-decorated ancient system by
-> suitability and rigidity.
+> Prove that same-trajectory coherence and the positive terminal finite-band
+> alignment force the bounded terminal Cesàro excess to vanish, or exclude
+> the alignment-and-excess-decorated ancient system by suitability and
+> rigidity.
 
 Projective-cross content remains relevant to full tensor compactness and
 orientation rigidity. This theorem does not derive

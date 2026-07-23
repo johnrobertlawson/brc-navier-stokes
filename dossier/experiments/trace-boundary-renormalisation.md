@@ -671,8 +671,14 @@ available discriminator against a mere initial layer.
 The subsequent
 [terminal trace-excess theorem](terminal-trace-excess.md) defines that object
 as terminal trace minus its shrinking backward Cesàro average. The live step
-is now a temporal modulus forcing this bounded signed density to vanish, or
-ancient rigidity for the decorated system.
+was then a temporal modulus forcing this bounded signed density to vanish.
+The later
+[temporal-modulus obstruction](trace-temporal-modulus-obstruction.md)
+proves that endpoint vorticity, energy, suitability, and expanding backward
+age cannot supply such a modulus across solution families. Its shear family
+changes initial data with scale and has \(S:H=0\). The live step is therefore
+same-trajectory and positive-terminal-alignment control of the excess, or
+ancient rigidity for a system retaining both decorations.
 
 This is an analytic reduction, a classical fixed-direction ancient theorem,
 and an exact stress test. It is not a bound on \(\mathcal J_\eta\), not

@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can endpoint and one-trajectory dynamics force a negative-topology temporal modulus for the scalar trace and hence zero terminal Cesaro excess; failing that, can the bounded signed terminal density be localised in a suitable ancient system and excluded by rigidity?",
+      "question": "Can scales selected from one Navier-Stokes trajectory and carrying the positive terminal finite-band alignment witness realise an amplitude-cutoff covariant adverse heat layer; equivalently, does same-trajectory alignment force zero terminal Cesaro excess?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "A uniform temporal modulus forces zero terminal excess so the positive scalar trace enters the ancient limit; alternatively, the bounded signed excess is localised, suitability is proved, and rigidity excludes the decorated ancient object.",
-      "kill_criterion": "A Clay-admissible endpoint-bounded trajectory or nonzero suitable ancient limit with a surviving nonzero terminal Cesaro excess and vacuum decoration outside every available rigidity class.",
+      "success": "Same-trajectory alignment forces zero terminal excess so the positive detector enters the ancient limit; alternatively, the alignment-coupled signed excess is localised, suitability is proved, and rigidity excludes the decorated ancient object.",
+      "kill_criterion": "A Clay-admissible single trajectory or nonzero suitable ancient limit with positive terminal alignment, surviving nonzero terminal Cesaro excess, and vacuum decoration outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

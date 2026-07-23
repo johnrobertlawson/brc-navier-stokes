@@ -594,10 +594,16 @@ definition:
 > signed spatial density, exactly equal to the negative triangular time-zero
 > concentration of \(\rho_\eta\) after controlled terms vanish.
 
-The next target is a negative-topology temporal modulus forcing that excess to
-vanish, or ancient rigidity for the decorated system. Raw
-\(\mathcal J_\eta\), \(\mathcal T_\eta\), and
-\(|\rho_\eta|\) still do not preserve the required cancellation.
+The later
+[temporal-modulus obstruction](trace-temporal-modulus-obstruction.md)
+shows that endpoint vorticity, energy, suitability, and expanding backward
+age do not force that excess to vanish across solution families. The
+obstructing exact shears change initial data with scale and have \(S:H=0\).
+The surviving target is therefore a modulus using same-trajectory coherence
+and positive terminal finite-band alignment, or ancient rigidity for a
+system retaining both alignment and excess. Raw \(\mathcal J_\eta\),
+\(\mathcal T_\eta\), and \(|\rho_\eta|\) still do not preserve the required
+cancellation.
 
 This is an exact globally regular Navier--Stokes obstruction and an analytic
 frontier reduction. It proves no blow-up and no regularity theorem, and it is

@@ -525,14 +525,20 @@ If projective energy is independently tight, the earlier positive-measure atom
 theorem still dominates this excess. Without tightness, (18)--(19) replace
 that positive measure by the correct signed object.
 
-The next falsifiable target is to prove a uniform negative-topology temporal
-modulus strong enough to force \(\mathfrak E_0=0\), or to pass
-\(\mathfrak E_0\ne0\) into a localised suitable ancient system and prove a
-Liouville theorem for that decorated object.
+The subsequent
+[temporal-modulus obstruction](trace-temporal-modulus-obstruction.md)
+falsifies such a modulus from endpoint vorticity, energy, suitability, and
+expanding backward heat age alone. Exact smooth periodic shears retain a fixed
+positive excess under frequency compression and matched amplitude--cutoff
+scaling. They change initial data with scale and satisfy \(S:H=0\), so the
+next falsifiable target is a modulus conditioned on same-trajectory coherence
+and the positive terminal finite-band alignment witness, or a suitable
+ancient system retaining both alignment and
+\(\mathfrak E_0\ne0\).
 
 This is a conditional compactness reduction and exact smooth-profile
-classification. It is not such a temporal modulus, not an ancient Liouville
-theorem, and not a Clay A--D resolution.
+classification. It is not such an alignment-conditioned modulus, not an
+ancient Liouville theorem, and not a Clay A--D resolution.
 
 Run the exact codimension and Cesàro ledgers with:
 
