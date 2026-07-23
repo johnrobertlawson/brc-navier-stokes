@@ -1,4 +1,4 @@
-"""Exact ledgers for the discrete fresh-band scale defect."""
+"""Exact ledgers for the conditional two-scale fresh-band genealogy."""
 
 from __future__ import annotations
 
@@ -43,6 +43,61 @@ class ScaleTransition:
             spatial_offset,  # type: ignore[arg-type]
             time_offset,
         )
+
+
+@dataclass(frozen=True)
+class TwoScaleRatios:
+    """Ratios in one parent--carrier--next-parent genealogical cell."""
+
+    internal_ratio: Fraction
+    bridge_ratio: Fraction
+    next_internal_ratio: Fraction
+
+    def __post_init__(self) -> None:
+        for name, ratio in (
+            ("internal ratio", self.internal_ratio),
+            ("bridge ratio", self.bridge_ratio),
+            ("next internal ratio", self.next_internal_ratio),
+        ):
+            if not Fraction(0) < ratio < 1:
+                raise ValueError(f"{name} must lie in (0, 1)")
+
+    @property
+    def parent_ratio(self) -> Fraction:
+        """Return R_(k+1)/R_k = lambda_k kappa_k."""
+        return self.internal_ratio * self.bridge_ratio
+
+    @property
+    def carrier_ratio(self) -> Fraction:
+        """Return r_(k+1)/r_k = kappa_k lambda_(k+1)."""
+        return self.bridge_ratio * self.next_internal_ratio
+
+    def compatibility_identity(self) -> bool:
+        """Check rho_k lambda_k = q_k lambda_(k+1)."""
+        return (
+            self.carrier_ratio * self.internal_ratio
+            ==
+            self.parent_ratio * self.next_internal_ratio
+        )
+
+
+def detector_scaling_weights(
+    internal_ratio: Fraction,
+) -> dict[str, Fraction]:
+    """Return intrinsic collapse and external detector recovery weights."""
+    if not Fraction(0) < internal_ratio < 1:
+        raise ValueError("internal ratio must lie in (0, 1)")
+    intrinsic_strain = internal_ratio**2
+    intrinsic_detector = internal_ratio**4
+    external_renormalisation = internal_ratio**-4
+    return {
+        "intrinsic_strain": intrinsic_strain,
+        "intrinsic_detector": intrinsic_detector,
+        "external_renormalisation": external_renormalisation,
+        "recovered_detector": (
+            intrinsic_detector * external_renormalisation
+        ),
+    }
 
 
 def cocycle_weights(
@@ -253,6 +308,14 @@ def report() -> str:
         Fraction(-2, 3),
     )
     composed = parent.compose(child)
+    two_scale = TwoScaleRatios(
+        Fraction(1, 5),
+        Fraction(1, 3),
+        Fraction(1, 7),
+    )
+    detector_weights = detector_scaling_weights(
+        two_scale.internal_ratio
+    )
     levels = 8
     floor = Fraction(1, 81)
     moments = (floor,) * levels
@@ -270,8 +333,24 @@ def report() -> str:
     )
     return "\n".join(
         (
-            "Discrete fresh-band scale-defect ledger",
+            "Conditional two-scale fresh-band genealogy ledger",
             "",
+            f"internal parent-to-carrier ratio:         "
+            f"{two_scale.internal_ratio}",
+            f"carrier-to-next-parent bridge ratio:     "
+            f"{two_scale.bridge_ratio}",
+            f"parent-to-parent ratio:                  "
+            f"{two_scale.parent_ratio}",
+            f"carrier-to-carrier ratio:                "
+            f"{two_scale.carrier_ratio}",
+            f"two-scale ratio identity holds:          "
+            f"{two_scale.compatibility_identity()}",
+            f"intrinsic strain weight:                 "
+            f"{detector_weights['intrinsic_strain']}",
+            f"intrinsic squared-detector weight:       "
+            f"{detector_weights['intrinsic_detector']}",
+            f"external detector recovery:              "
+            f"{detector_weights['recovered_detector']}",
             f"composed scale ratio:                    "
             f"{composed.ratio}",
             f"composed spatial offset:                 "
@@ -299,9 +378,11 @@ def report() -> str:
             f"after adding gradient dissipation:       "
             f"{coercive_side}",
             "",
-            "Counting preserves the additive moment but has infinite total",
-            "mass. Index averaging preserves a probability and becomes",
-            "shift invariant, while physical log-scale mass can escape.",
+            "The parent and carrier scales are distinct. The detector is a",
+            "parent-scale external mark on a carrier-scale Young state.",
+            "Counting and shift averaging apply only after a single coherent",
+            "genealogical array has been selected; that selection is not",
+            "certified by these algebraic ledgers.",
             "The exact square balance retains a signed history source;",
             "the positive moment is not a closed scalar PDE quantity.",
         )

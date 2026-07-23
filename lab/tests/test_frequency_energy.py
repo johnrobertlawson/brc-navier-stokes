@@ -126,7 +126,24 @@ class FrequencyEnergyTests(unittest.TestCase):
             Fraction(1),
         )
         self.assertEqual(
-            powers["moving_cutoff_boundary_spacetime"],
+            powers["fixed_cutoff_boundary_spacetime"],
+            Fraction(1),
+        )
+        self.assertEqual(
+            powers["moving_center_radius_prefactor"],
+            Fraction(2),
+        )
+        self.assertEqual(
+            powers["natural_center_speed"],
+            Fraction(-1),
+        )
+        self.assertEqual(
+            powers["controlled_moving_center_boundary_spacetime"],
+            Fraction(1),
+        )
+        self.assertEqual(
+            powers["moving_center_radius_prefactor"]
+            + powers["natural_center_speed"],
             Fraction(1),
         )
         self.assertEqual(

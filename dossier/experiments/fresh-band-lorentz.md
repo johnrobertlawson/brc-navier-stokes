@@ -2,17 +2,18 @@
 
 - **Experiment:** EXP-BAND-INCREMENT-001
 - **Route:** ROUTE-R3B
-- **Status:** complete exact band reduction and sequence-space no-go
+- **Status:** complete conditional parent-path reduction and sequence-space no-go
 - **Clay status:** unsolved
 - **Inputs:** [tree-budget audit](tree-budget-audit.md),
   [microbubble decoration](microbubble-decoration-rigidity.md), and
   [same-solution granularity](same-solution-granularity.md)
 
-An infinite decorated tower cannot be produced by repeatedly viewing one
-coarse strain band at finer scales.
+Conditional on a single coherent sequence of decorated **parent** nodes, the
+nonzero parent-scale jets cannot be produced by repeatedly viewing one coarse
+strain band at finer parent scales.
 
-If a child radius is \(r=qR\), then child normalisation multiplies every
-strain band below the parent cutoff by
+If consecutive parent detector radii satisfy \(R'=qR\), then normalisation
+at \(R'\) multiplies every strain band below the preceding parent cutoff by
 
 \[
 \boxed{q^2.}
@@ -20,7 +21,7 @@ strain band below the parent cutoff by
 
 Suppose the normalised parent jets have a uniform lower bound \(c>0\), while
 all normalised coarse bands have upper bound \(B\). The genuinely new
-frequency increment at the child then satisfies
+frequency increment at the next parent then satisfies
 
 \[
 \boxed{
@@ -30,14 +31,15 @@ c-Bq^2.
 }
 \]
 
-After taking a sufficiently sparse subsequence of any path whose radii tend
-to zero, \(Bq^2\le c/2\). Every retained node therefore contains a fresh
-annular strain band of size at least \(c/2\). Bernstein persistence turns it
-into a scale-critical weak-\(L^{3/2}\) atom, and the order-zero
-strain--vorticity relation transfers that lower bound to the corresponding
-vorticity shell.
+After taking a sufficiently sparse subsequence of such a coherent parent
+path whose radii tend to zero, \(Bq^2\le c/2\). Every retained parent node
+therefore contains a fresh annular strain band of size at least \(c/2\).
+Bernstein persistence turns it into a scale-critical weak-\(L^{3/2}\) atom,
+and the order-zero strain--vorticity relation transfers that lower bound to
+the corresponding vorticity shell.
 
-This is genuine same-trajectory information:
+This is genuine same-trajectory information once the common genealogy has
+been selected:
 
 \[
 \boxed{
@@ -58,10 +60,25 @@ sequence-space boundary. The next input must couple the positive projected
 moments to a finite-index spatial or spacetime Lorentz occupation, a
 temporal telescope, or a nonlocal monotonicity law.
 
-## 1. Exact coarse-band suppression
+The carrier Young measure associated with parent \(R_k\) lives at the
+different radius
 
-Let \(\mathcal S\) be the physical strain and let a hypothetical nested path
-have radii
+\[
+r_k=\lambda_kR_k,
+\qquad
+0<\lambda_k<1,
+\]
+
+and its intrinsic detector has already collapsed by \(\lambda_k^4\). The
+present calculation concerns the parent radii \(R_k\), not the carrier radii
+\(r_k\); the carrier extraction itself permits \(\lambda_k\to0\). It does
+not construct a common nested array linking the parent
+sequence, the microcarriers, and their levelwise subsequences.
+
+## 1. Exact coarse-band suppression on a coherent parent path
+
+Let \(\mathcal S\) be the physical strain and let a hypothetical coherent
+nested path have **parent detector radii**
 
 \[
 R_{k+1}=q_kR_k,
@@ -88,7 +105,8 @@ P_{\le K_k}\mathcal S(x_k,t_k).
 \tag{3}
 \]
 
-The squared detector floor gives a strain floor. Indeed, if
+The externally renormalised detector floor on the corresponding
+subnatural carrier gives a parent-strain floor. Indeed, if
 
 \[
 D_k=F_k^2,
@@ -124,7 +142,7 @@ P_{\le K_k}\mathcal S(x,t)
 \tag{7}
 \]
 
-At the child point, split
+At the next parent point, split
 
 \[
 \begin{aligned}
@@ -184,9 +202,9 @@ Bq^{2m}\le\frac c2.
 \tag{11}
 \]
 
-More generally, every infinite path with \(R_k\downarrow0\) has a
-subsequence whose successive radius ratios satisfy (11). Along that
-subsequence,
+More generally, every already coherent infinite parent path with
+\(R_k\downarrow0\) has a subsequence whose successive parent-radius ratios
+satisfy (11). Along that subsequence,
 
 \[
 \boxed{
@@ -195,9 +213,12 @@ subsequence,
 \tag{12}
 \]
 
-The frequency intervals in (8) are successive annuli after harmless
-grouping. Thus the nonzero jet cannot be an unchanged coarse decoration:
-fresh physical frequency is required at every retained level.
+The frequency intervals in (8) are successive annuli after grouping. Thus,
+on the assumed common path, the nonzero parent jet cannot be an unchanged
+coarse decoration: fresh physical frequency is required at every retained
+parent level. Grouping is harmless for this algebra, but its compatibility
+with all carrier thresholds and limits is one of the quantifiers required
+in the missing coherent diagonal-selection lemma.
 
 ## 2. A fresh pointwise band has a critical weak atom
 
@@ -502,17 +523,17 @@ Endpoint size and the spatial square function alone supply none of these.
 
 The parent-band audit has a positive and a negative conclusion.
 
-First, the positive conclusion:
+First, the conditional positive conclusion:
 
 \[
 \boxed{
-\text{an infinite fixed-mass decorated tower forces infinitely many
+\text{a coherent infinite fixed-mass decorated parent path forces infinitely many
 fresh critical frequency increments}.
 }
 \tag{35}
 \]
 
-The tower cannot recycle a single coarse parent strain.
+Such a path cannot recycle a single coarse parent strain.
 
 Second, the negative conclusion:
 
@@ -548,19 +569,21 @@ flux. If this cannot be done, the minimal ancient defect must retain the
 fresh frequency index and logarithmic scale variable together with the
 projected tensor Young measure.
 
-This is an exact algebraic and functional reduction. It does not construct a
-same-trajectory tower, prove summability of (37), establish suitability or
-rigidity, prove regularity or blow-up, or resolve any Clay alternative A--D.
+This is an exact algebraic and functional reduction conditional on a coherent
+parent path. It does not derive that path from the independently extracted
+microcarriers, construct a same-trajectory tower, prove summability of (37),
+establish suitability or rigidity, prove regularity or blow-up, or resolve
+any Clay alternative A--D.
 
 Run the exact coarse-band, persistence, and Lorentz ledgers with:
 
     make band-increment
 
-The subsequent
+Conditional on the same coherent parent-to-carrier array, the subsequent
 [fresh-detector transfer theorem](fresh-detector-transfer.md) expands the
 full squared detector around the new annular band and shows that its
-projected error is \(O(q^2)\). Sparse selection therefore transfers the
-fixed positive Young moment to the squared fresh band itself and gives that
-band a fixed strong parabolic \(L^{5/2}\) occupation. The remaining gate is
-to sum those occupations through a temporal frequency-energy telescope or a
-nonlocal positive flux.
+projected error is \(O(q^2)\). Common sparse selection therefore transfers
+the fixed positive Young moment to the squared fresh band itself and gives
+that band a fixed strong parabolic \(L^{5/2}\) occupation. The remaining
+gates are the coherent diagonal lemma and then summation through a temporal
+frequency-energy telescope or a nonlocal positive flux.

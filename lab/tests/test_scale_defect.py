@@ -3,8 +3,10 @@ import unittest
 
 from navier_lab.scale_defect import (
     ScaleTransition,
+    TwoScaleRatios,
     cocycle_weights,
     counting_moment,
+    detector_scaling_weights,
     empirical_mass_below_depth,
     empirical_moment,
     history_difference_source,
@@ -19,6 +21,43 @@ from navier_lab.scale_defect import (
 
 
 class ScaleDefectTests(unittest.TestCase):
+    def test_two_scale_genealogy_has_distinct_ratio_identities(
+        self,
+    ) -> None:
+        ratios = TwoScaleRatios(
+            internal_ratio=Fraction(1, 5),
+            bridge_ratio=Fraction(1, 3),
+            next_internal_ratio=Fraction(1, 7),
+        )
+        self.assertEqual(ratios.parent_ratio, Fraction(1, 15))
+        self.assertEqual(ratios.carrier_ratio, Fraction(1, 21))
+        self.assertTrue(ratios.compatibility_identity())
+        self.assertEqual(
+            ratios.carrier_ratio * ratios.internal_ratio,
+            ratios.parent_ratio * ratios.next_internal_ratio,
+        )
+
+    def test_micro_detector_collapses_and_external_mark_recovers(
+        self,
+    ) -> None:
+        weights = detector_scaling_weights(Fraction(1, 5))
+        self.assertEqual(
+            weights["intrinsic_strain"],
+            Fraction(1, 25),
+        )
+        self.assertEqual(
+            weights["intrinsic_detector"],
+            Fraction(1, 625),
+        )
+        self.assertEqual(
+            weights["external_renormalisation"],
+            Fraction(625),
+        )
+        self.assertEqual(
+            weights["recovered_detector"],
+            Fraction(1),
+        )
+
     def test_parabolic_cocycle_composes_exactly(self) -> None:
         parent = ScaleTransition(
             Fraction(1, 3),
@@ -144,6 +183,20 @@ class ScaleDefectTests(unittest.TestCase):
                 (Fraction(0), Fraction(0), Fraction(0)),
                 Fraction(0),
             )
+        with self.assertRaises(ValueError):
+            TwoScaleRatios(
+                Fraction(0),
+                Fraction(1, 2),
+                Fraction(1, 2),
+            )
+        with self.assertRaises(ValueError):
+            TwoScaleRatios(
+                Fraction(1, 2),
+                Fraction(1),
+                Fraction(1, 2),
+            )
+        with self.assertRaises(ValueError):
+            detector_scaling_weights(Fraction(1))
         with self.assertRaises(ValueError):
             counting_moment(())
         with self.assertRaises(ValueError):

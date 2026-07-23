@@ -1,18 +1,25 @@
-# Handoff: external review checkpoint
+# Handoff: two-scale genealogy repair
 
-**Updated:** 2026-07-23T15:16:54Z
+**Updated:** 2026-07-23T15:36:26Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
 ## State in one minute
 
-Before extending the proof tree, send
-`dossier/review-letter-2026-07-23.md` and review target `39a6736` to an
-independent analyst or mathematical AI. The requested audit is adversarial:
-attack the simultaneous sparse-subsequence quantifiers, parent/microchild
-normalisations, Beltrami scope, discrete shift compactification, \(q=0\)
-tangent provenance, and signed history-square balance. Development is
-deliberately paused at this review boundary.
+The adversarial review requested in
+`dossier/review-letter-2026-07-23.md` is complete. The independent
+mathematical AI found a fatal two-scale and common-diagonal gap in the
+downstream compact-process claim. The accepted disposition is
+`dossier/review-response-2026-07-23.md`.
+
+The carrier Young measure lives at
+\(r_k=\lambda_kR_k\), below the parent detector radius \(R_k\). Its
+order-one detector is an externally renormalised parent-scale mark; the
+intrinsic carrier detector collapses by \(\lambda_k^4\). Independent
+levelwise subsequences do not yet form one same-trajectory genealogy.
+The one-radius shift-stationary PDE-process claim is withdrawn. The next
+target is a coherent two-scale genealogical diagonal-selection lemma, not a
+\(q=0\) no-neck theorem.
 
 The arXiv:2607.08866v2 proof chain has been independently reconstructed. It survives
 only as a repaired conditional theorem for a projected-mild solution with:
@@ -1726,11 +1733,13 @@ Completed terminal alignment-excess reduction:
 > \(\sum_vm_v\), where \(m_v\) is the positive parent-detector-projected
 > Young moment. No current estimate bounds it.
 >
-> The low bands do contain new information across the tree. If the child
-> radius is \(qR\), every band below the parent cutoff is suppressed by
-> \(q^2\) after child normalisation. A uniform nonzero child-jet floor
-> therefore forces a fresh annular strain increment of size
-> \(c-Bq^2\); a sparse subsequence gives a uniform positive floor.
+> Conditional on one coherent path of parent detector radii, the low bands
+> contain new information across the tree. If consecutive parent radii have
+> ratio \(q\), every band below the preceding parent cutoff is suppressed by
+> \(q^2\) after normalisation at the next parent. A uniform nonzero
+> parent-jet floor therefore forces a fresh annular strain increment of size
+> \(c-Bq^2\); one common sparse subsequence would give a uniform positive
+> floor.
 > Bernstein persistence makes each fresh increment a critical weak
 > \(L^{3/2}\) atom. But the endpoint and its vector square function provide
 > only an \(\ell^\infty\) scale ledger. Exact disjoint atoms retain a fixed
@@ -1738,14 +1747,15 @@ Completed terminal alignment-excess reduction:
 > logarithmic depth. The changing terminal clocks add a second supremal
 > barrier.
 >
-> The projected moment transfers to the fresh band itself. For
-> \(F=C+G\), with child-normalised coarse ceiling
+> On that same coherent parent-to-carrier array, the projected moment
+> transfers to the fresh band itself. For
+> \(F=C+G\), with current-parent-normalised coarse ceiling
 > \(\varepsilon=B_Cq^2\),
 > \[
 > |(F^2-G^2):(A-B)|
 > \le4B_F\varepsilon+6\varepsilon^2.
 > \]
-> Sparse selection makes this at most half the carrier threshold, so the
+> Common sparse selection makes this at most half the carrier threshold, so the
 > same fixed-mass set satisfies
 > \(|G^2:(A-B)|\ge\tau/2\). Spatial and temporal finite-band persistence
 > then give one fixed strong parabolic \(L^{5/2}\) occupation per fresh
@@ -1760,37 +1770,51 @@ Completed terminal alignment-excess reduction:
 > transfer, but its intrinsic squared strain detects an explicit nonzero
 > terminal--interior cutoff-tensor increment whose square is \(1/81\).
 > Kinetic energy, dissipation, local nonlinear transfer, pressure or
-> projection commutators, and moving-cutoff boundary terms all charge a
-> critical node by \(R\). Normalising by \(R^{-1}\) counts levels but
+> projection commutators, fixed cutoffs, and parabolically controlled moving
+> cutoffs charge a critical node by \(R\); arbitrary centre motion contributes
+> \(R^2|\dot x_c|\). Normalising by \(R^{-1}\) counts levels but
 > destroys the physical energy telescope. This closes only a universal local
 > coercive relation; genuinely history-dependent or non-energy laws remain
 > open.
 >
-> The indexed defect is now exact. The additive lift is a sigma-finite
-> counting measure whose mass grows with depth, not a finite defect.
-> Averaging by physical log-depth can erase widely separated levels. Index
-> averaging instead gives a shift-stationary probability on discrete marked
-> genealogies with positive expected detector moment. Adjacent nodes retain
-> the exact same-trajectory parabolic cocycle
+> Adversarial review rejected the one-radius indexed-process interpretation.
+> At event \(k\), the tensor Young measure lives at the carrier radius
+> \(r_k=\lambda_kR_k\), while its order-one fresh detector is inherited from
+> the larger parent radius \(R_k\). Intrinsically on the carrier, the strain
+> and detector have weights \(\lambda_k^2\) and \(\lambda_k^4\). A further
+> bridge ratio
+> \(\kappa_k=R_{k+1}/r_k\) is needed to reach the next parent, giving
 > \[
-> u_{k+1}(y,s)
-> =
-> q_k u_k(a_k+q_ky,b_k+q_k^2s).
+> q_k=\lambda_k\kappa_k,
+> \qquad
+> \rho_k=\kappa_k\lambda_{k+1},
+> \qquad
+> \rho_k\lambda_k=q_k\lambda_{k+1}.
 > \]
-> The compact \(q_k=0\) boundary is a tangent-of-tangent relation not
-> determined by the weak parent limit. The squared moment also has a signed
-> terminal-profile, stretching, and tensor-remainder history source; it is
-> not a closed positive PDE quantity.
+> The internal \(\lambda=0\) and bridge \(\kappa=0\) boundaries are
+> distinct. Generic cocycle and cutoff-covariance algebra remains exact for
+> actual nodes. Counting and index-shift compactification remain correct only
+> conditional on a single coherent marked array with compact offsets.
+> Independent levelwise subsequences do not provide that array.
+>
+> The carrier history square still has a signed terminal-profile,
+> stretching, and tensor-remainder source. At prelimit, spatially nonconstant
+> detectors also contribute \((LD):(A-B)\) and
+> \(-2\nu\sum_j\partial_jD:\partial_j(A-B)\); those terms must be retained or
+> controlled across scale.
 
 Next deliverable:
 
-> Close the \(q_k\to0\) parabolic transition. Derive a no-neck estimate
-> showing that a positive child fresh moment cannot be separated from its
-> parent by an arbitrarily large empty logarithmic annulus, or construct the
-> exact two-scale transition Young measure carried at \(q=0\). Use the full
-> same-trajectory velocity/strain cocycle and fresh frequency mark, not an
-> arbitrary bundle of levelwise ancient solutions. In parallel, test whether
-> the signed history-square balance admits a finite scale-counting split;
+> Prove a coherent two-scale genealogical diagonal-selection lemma. On one
+> physical trajectory and one common extraction, retain every
+> \(P_k=(x_k^P,t_k^P,R_k)\), carrier
+> \(C_k=(x_k^C,t_k^C,r_k)\), both offset pairs, parent jet, carrier Young
+> measure, uniform threshold and coarse ceiling, disjoint fresh annulus,
+> matched cutoff, local-energy data, and detector-freezing error on every
+> finite window. Only then derive separate no-neck or transition-measure
+> statements for \(\lambda_k\to0\) and \(\kappa_k\to0\).
+> In parallel, test whether the complete signed history-square balance,
+> including detector commutators, admits a finite scale-counting split;
 > without that split retain only its combined distribution.
 > Neither suitability of the undecorated microchild, an arbitrary constant
 > detector, unweighted volume, nor the collapsed intrinsic band can close

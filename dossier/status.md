@@ -489,11 +489,12 @@ and breakdown work
   masses grow linearly with depth. The missing quantity is the additive
   logarithmic-scale sum of positive parent-detector-projected Young moments,
   not an ordinary volume Carleson measure.
-- An infinite decorated path does force genuinely fresh physical
-  frequencies. At child ratio \(q\), normalisation suppresses every band
-  below the parent cutoff by \(q^2\). A uniform child-jet floor \(c\) and
-  coarse ceiling \(B\) give a fresh annular increment of size at least
-  \(c-Bq^2\); sparse scale selection makes this uniformly positive.
+- Conditional on one coherent path of parent detector radii, the path forces
+  genuinely fresh physical frequencies. At consecutive parent ratio \(q\),
+  normalisation suppresses every band below the preceding parent cutoff by
+  \(q^2\). A uniform parent-jet floor \(c\) and coarse ceiling \(B\) give a
+  fresh annular increment of size at least \(c-Bq^2\); common sparse scale
+  selection makes this uniformly positive.
   Bernstein persistence turns each increment into a critical weak
   \(L^{3/2}\) strain and vorticity atom. However, the endpoint vector square
   function remains a weak Lorentz norm of a pointwise \(\ell^2\) sum, not a
@@ -501,14 +502,15 @@ and breakdown work
   have bounded global weak norm through arbitrary depth, while every finite
   Lorentz secondary index grows like a positive power of the depth.
   Different terminal clocks supply a second \(L^\infty\) obstruction.
-- The positive tensor moment survives replacement of the full parent
-  detector by the squared fresh band. If \(F=C+G\) and the child-normalised
+- Conditional on the same parent-to-carrier extraction, the positive tensor
+  moment survives replacement of the full parent detector by the squared
+  fresh band. If \(F=C+G\) and the current-parent-normalised
   coarse ceiling is \(\varepsilon=B_Cq^2\), then
   \[
   |(F^2-G^2):(A-B)|
   \le4B_F\varepsilon+6\varepsilon^2.
   \]
-  Sparse scale selection makes this smaller than half the carrier threshold,
+  Common sparse selection makes this smaller than half the carrier threshold,
   so the same fixed-mass set gives a uniform positive
   \(G^2\)-projected Young moment. Uniform spatial and temporal finite-band
   derivatives also make each fresh block persist on a natural parabolic
@@ -526,29 +528,45 @@ and breakdown work
   strain detects a terminal--interior cutoff-tensor increment of
   \(-1/9\) at an explicit point, hence squared moment \(1/81\).
   Localisation cannot repair the scale mismatch: kinetic energy,
-  dissipation, nonlinear transfer, pressure or projection commutators, and
-  moving-cutoff terms all charge a critical node by \(R\). Dividing by
-  \(R\) counts logarithmic depth but destroys telescoping against physical
-  energy. This periodic example closes universal local energy coercivity,
-  not a genuinely nonlocal or same-trajectory history law.
-- An infinite decorated path nevertheless has an exact compact remnant.
-  The additive log-scale lift is only a sigma-finite counting measure: both
-  its positive moment and its total mass grow linearly with depth. Index
-  averaging yields a shift-stationary probability on discrete marked scale
-  environments with positive expected detector moment, whereas physical
-  log-depth averaging can vanish for superexponentially separated carrier
-  scales. Adjacent levels retain the exact one-trajectory cocycle
+  dissipation, nonlinear transfer, pressure or projection commutators, fixed
+  cutoffs, and parabolically controlled moving cutoffs charge a critical node
+  by \(R\). Arbitrary centre motion instead costs
+  \(R^2|\dot x_c|\). Dividing by \(R\) counts logarithmic depth but destroys
+  telescoping against physical energy. This periodic example closes
+  universal local energy coercivity, not a genuinely nonlocal or
+  same-trajectory history law.
+- Independent adversarial review found that the first scale-process
+  formulation collapsed the parent detector radius \(R_k\) and the
+  subnatural tensor-carrier radius \(r_k=\lambda_kR_k\). The carrier Young
+  measure lives at \(r_k\), while its order-one detector is an externally
+  renormalised parent-scale mark; its intrinsic carrier detector vanishes as
+  \(\lambda_k^4\). The review also found that independent levelwise
+  subsequences do not supply one common nested physical genealogy.
+  Consequently the claimed unconditional one-radius, shift-stationary PDE
+  process is withdrawn.
+- The surviving algebra is now explicitly conditional. For a coherent
+  two-edge cell,
   \[
-  u_{k+1}(y,s)
-  =
-  q_k u_k(a_k+q_ky,b_k+q_k^2s),
+  \lambda_k=\frac{r_k}{R_k},
+  \qquad
+  \kappa_k=\frac{R_{k+1}}{r_k},
+  \qquad
+  q_k=\lambda_k\kappa_k,
+  \qquad
+  \rho_k=\kappa_k\lambda_{k+1}.
   \]
-  with quadratic weights for pressure, vorticity, strain, time, and matched
-  cutoff. Its compact \(q_k=0\) boundary is a genuine tangent-of-tangent
-  defect not determined by the weak parent field. The squared
-  terminal--interior moment has positive gradient dissipation but a signed
-  terminal-profile, stretching, and tensor-remainder source, so the moment
-  process is not a closed scalar PDE object.
+  Generic parabolic cocycles and matched-cutoff covariance are exact for
+  actual nodes. Conditional on a common compact marked array, additive
+  counting is sigma-finite, physical parent or carrier log-depth averaging
+  may erase sparse levels, and index averaging is shift invariant. There are
+  distinct internal \(\lambda=0\) and bridge \(\kappa=0\) boundaries, not one
+  resolved \(q=0\) transition.
+- The carrier history-square identity remains exact and signed. Before its
+  external detector freezes, it also contains
+  \((LD):(A-B)\) and
+  \(-2\nu\sum_j\partial_jD:\partial_j(A-B)\). A full process must retain or
+  control those commutators; levelwise vanishing is not an additive
+  scale-counting estimate.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -559,17 +577,19 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> **Review pause:** the fresh-band tower reduction is frozen at commit
-> `39a6736` for independent adversarial review. The review letter is
-> `dossier/review-letter-2026-07-23.md`. No further branch should be built
-> until the nested-subsequence quantifiers, scale normalisations, \(q=0\)
-> cocycle, and history-source closure have been challenged independently.
+> **Review completed; major correction accepted.** The packet at
+> `dossier/review-letter-2026-07-23.md` was challenged by an independent
+> adversarial mathematical AI. The disposition is
+> `dossier/review-response-2026-07-23.md`. The earliest invalid implication
+> was the one-radius genealogy, not the detector-transfer matrix estimate or
+> the Beltrami no-go.
 
-> Can the positive fresh-band moments be summed by a genuinely new strong or
-> scale-zero law? If not, can the exact same-trajectory cocycle be closed at
-> its \(q=0\) tangent boundary, the shift-stationary marked scale process and
-> signed history source be upgraded to a suitable PDE process, and that
-> process be excluded by rigidity?
+> Can one first construct one coherent two-scale genealogical diagonal array
+> linking each parent detector node to its subnatural carrier and then to the
+> next parent, while retaining all thresholds, fresh annuli, offsets,
+> matched cutoffs, and detector-freezing errors? Only conditional on that
+> array can a two-edge no-neck theorem, history-source bound, or stationary
+> suitable-process rigidity be posed.
 
 The coequal breakdown question remains:
 
@@ -578,44 +598,49 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive a no-neck estimate or transition Young measure for the exact
-   parabolic cocycle as \(q_k\to0\); do not replace discrete depth by
-   physical log-density.
-2. Determine whether the signed history-square source has a finite
-   scale-counting split into gradient, terminal-profile, stretching, and
-   tensor-remainder measures.
-3. Test rigidity of the shift-stationary tangent process with positive
-   expected fresh-detector moment, preserving its frequency mark and
-   same-trajectory graph closure.
-4. Prove that the direction-weighted trace concentration
+1. Prove a coherent two-scale genealogical diagonal-selection lemma retaining
+   \((R_k,r_k)\), both transition edges and offset pairs, parent jets,
+   carrier Young measures, uniform thresholds and ceilings, disjoint fresh
+   annuli, matched cutoffs, and detector-freezing errors on every finite
+   window.
+2. Conditional on that array, derive separate no-neck estimates or transition
+   Young measures for the internal \(\lambda_k\to0\) and bridge
+   \(\kappa_k\to0\) boundaries; do not replace discrete depth by physical
+   log-density.
+3. Determine whether the signed history-square source, including the
+   prelimit detector commutators, has a finite scale-counting split.
+4. Only then test rigidity of a shift-stationary suitable two-scale process
+   with positive expected fresh-detector moment and complete same-trajectory
+   graph closure.
+5. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
    energy, and the same-trajectory pullbacks, or construct the exact coherent
    survivor.
-5. Determine whether bounded projective-cross content makes the directional
+6. Determine whether bounded projective-cross content makes the directional
    weight compact enough to reduce the weighted concentration to
    \(\mathfrak E_0\); do not replace either signed remainder by variation.
-6. Classify sequence-dependent or temporally degenerate zero profiles beyond
+7. Classify sequence-dependent or temporally degenerate zero profiles beyond
    the now-closed smooth transverse-linear class, preserving cancellation
    between weighted trace and anisotropic projective-cross terms.
-7. Formulate the minimal ancient system decorated by
+8. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.
-8. Classify the degenerate sequence-dependent zero profiles capable of
+9. Classify the degenerate sequence-dependent zero profiles capable of
    carrying both excess and terminal alignment, and decide which orientation
    information is still needed for rigidity.
-9. Classify ancient solutions of the scalar trace defect equation together with
+10. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.
-10. Upgrade the nonzero ancient distributional bubble to a suitable object using
+11. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
-11. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+12. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.
-12. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
+13. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
-13. Determine the weakest oscillation modulus whose commutator gain still outruns the
+14. Determine the weakest oscillation modulus whose commutator gain still outruns the
    analytic radius.
-14. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
+15. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
 
 ## Interpretation
 

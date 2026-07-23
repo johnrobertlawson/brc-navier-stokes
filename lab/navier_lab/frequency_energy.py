@@ -240,13 +240,20 @@ def matched_cutoff_detector_increment(
 
 
 def energy_term_radius_powers() -> dict[str, Fraction]:
-    """Return physical powers on a scale-critical parabolic node."""
+    """Return physical powers on a scale-critical parabolic node.
+
+    The moving-centre entry assumes the natural speed power
+    |x_dot|~R^-1.  Without that hypothesis its charge is R^2|x_dot|.
+    """
     return {
         "kinetic_energy_slice": Fraction(1),
         "viscous_dissipation_spacetime": Fraction(1),
         "nonlinear_frequency_transfer_spacetime": Fraction(1),
         "pressure_cutoff_flux_spacetime": Fraction(1),
-        "moving_cutoff_boundary_spacetime": Fraction(1),
+        "fixed_cutoff_boundary_spacetime": Fraction(1),
+        "moving_center_radius_prefactor": Fraction(2),
+        "natural_center_speed": Fraction(-1),
+        "controlled_moving_center_boundary_spacetime": Fraction(1),
         "radius_normalized_node_charge": Fraction(0),
         "fresh_detector_moment": Fraction(0),
     }
@@ -318,6 +325,12 @@ def report() -> str:
             f"squared detector increment:             {increment**2}",
             f"physical dissipation radius power:      "
             f"{powers['viscous_dissipation_spacetime']}",
+            f"moving-centre radius prefactor:         "
+            f"{powers['moving_center_radius_prefactor']}",
+            f"natural centre-speed radius power:      "
+            f"{powers['natural_center_speed']}",
+            f"controlled moving-centre total power:   "
+            f"{powers['controlled_moving_center_boundary_spacetime']}",
             f"normalised node-charge radius power:    "
             f"{powers['radius_normalized_node_charge']}",
             f"infinite half-scale physical charge:    "
@@ -328,7 +341,8 @@ def report() -> str:
             "The explicit Beltrami heat mode has a nonzero intrinsic",
             "fresh-detector tensor increment but identically zero projected",
             "nonlinear energy transfer. Viscosity charges physical radius;",
-            "dividing by radius counts nodes but destroys energy telescoping.",
+            "a moving centre does too only at parabolically controlled speed.",
+            "Dividing by radius counts nodes but destroys energy telescoping.",
         )
     )
 

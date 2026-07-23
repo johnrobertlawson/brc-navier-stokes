@@ -8,6 +8,12 @@
 - **Requested posture:** adversarial; please try to break the chain before
   suggesting extensions
 
+**Review completed:** the independent adversarial review found a fatal
+two-scale genealogy and common-diagonal gap in the compact-process claim.
+The accepted disposition is recorded in the
+[review response](review-response-2026-07-23.md). The review target remains
+unchanged for reproducibility.
+
 Dear reviewer,
 
 I am asking you to audit a conditional reduction, not a proposed solution of

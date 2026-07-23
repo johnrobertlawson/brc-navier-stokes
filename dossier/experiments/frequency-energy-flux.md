@@ -88,8 +88,11 @@ while the projected nonlinear transfer is exactly zero.
 
 Viscosity still dissipates the mode, but its physical charge on a natural
 parabolic node of radius \(R\) is \(O(R)\), as are kinetic energy, nonlinear
-transfer, pressure-cutoff flux, commutator terms, and moving-clock boundary
-terms. A geometric path has finite total physical charge. Dividing each
+transfer, pressure-cutoff flux, commutator terms, fixed-cutoff terms, and
+moving-clock terms. A moving spatial centre contributes instead
+\(O(R^2|\dot x|)\), which is \(O(R)\) only under the parabolic-speed bound
+\(|\dot x|\lesssim R^{-1}\). A geometric path with that control has finite
+total physical charge. Dividing each
 identity by \(R\) produces a scale-zero node count but destroys telescoping
 against the globally bounded physical energy.
 
@@ -388,7 +391,7 @@ Equations (14) and (23) prove:
 The mechanism is viscous radial change of the cutoff tensor, not nonlinear
 energy cascade.
 
-## 4. Localisation and moving clocks do not change the radius power
+## 4. Localisation and controlled moving centres retain the radius power
 
 For a smooth spacetime cutoff \(\phi\), multiplying (2) by
 \(\phi w_I\) gives
@@ -434,8 +437,26 @@ On a scale-critical node of radius \(R\),
 \tag{26}
 \]
 
+Here the \(\partial_t\phi\) estimate includes a fixed centre and the explicit
+parabolic clock. If
+
+\[
+\phi_R(x,t)
+=
+\Phi\left(\frac{x-x_c(t)}R,\frac{t-t_c}{R^2}\right),
+\]
+
+then the centre-motion part instead obeys
+
+\[
+|\partial_t\phi_R|_{\rm centre}
+\lesssim
+\frac{|\dot x_c|}{R}.
+\tag{27}
+\]
+
 After integration over \(Q_R\), every term in (25) has the same physical
-radius power:
+radius power, except that the last line retains the centre-speed factor:
 
 \[
 \boxed{
@@ -448,12 +469,19 @@ radius power:
 &\sim R,\\
 \text{pressure or projection-commutator flux}
 &\sim R,\\
-\text{fixed or moving cutoff boundary term}
-&\sim R.
+\text{fixed cutoff or moving-clock term}
+&\sim R,\\
+\text{moving-centre term}
+&\sim R^2|\dot x_c|.
 \end{aligned}
 }
-\tag{27}
+\tag{28}
 \]
+
+Thus a centre moving at the natural parabolic speed
+\(|\dot x_c|\lesssim R^{-1}\) also costs \(O(R)\). No such conclusion is
+available for an arbitrary selected centre path; uniform control of its
+normalised velocity is part of any coherent genealogical selection lemma.
 
 The local terms have no universal sign, and the global Beltrami example
 already makes the nonlinear transfer zero.
@@ -466,7 +494,7 @@ For a geometric path
 R_k=R_0q^k,
 \qquad
 0<q<1,
-\tag{28}
+\tag{29}
 \]
 
 the total physical energy-scale charge is compatible with infinite depth:
@@ -476,7 +504,7 @@ the total physical energy-scale charge is compatible with infinite depth:
 =
 \frac{R_0}{1-q}
 <\infty.
-\tag{29}
+\tag{30}
 \]
 
 Dividing (3) or (25) by \(R_k\) makes each fresh node scale invariant, but
@@ -484,7 +512,7 @@ then the boundary energies become
 
 \[
 \frac{\|w_{I_k}\|_2^2}{R_k}.
-\tag{30}
+\tag{31}
 \]
 
 Frequency orthogonality controls
@@ -493,18 +521,18 @@ Frequency orthogonality controls
 \sum_k\|w_{I_k}\|_2^2
 \le
 \|u\|_2^2,
-\tag{31}
-\]
-
-not the radius-weighted inverse sum in (30). A critical packet with
-
-\[
-\|w_{I_k}\|_2^2\asymp R_k
 \tag{32}
 \]
 
+not the radius-weighted inverse sum in (31). A critical packet with
+
+\[
+\|w_{I_k}\|_2^2\asymp R_k
+\tag{33}
+\]
+
 has finite physical energy sum but contributes order one to every term in
-(30). Thus the desired node count is exactly what the physical energy
+(31). Thus the desired node count is exactly what the physical energy
 telescope does not control.
 
 The same mismatch holds for dissipation:
@@ -513,7 +541,7 @@ The same mismatch holds for dissipation:
 \sum_k
 \int|\nabla w_{I_k}|^2
 <\infty
-\tag{33}
+\tag{34}
 \]
 
 is compatible with an order-\(R_k\) contribution from every block, while
@@ -521,7 +549,7 @@ is compatible with an order-\(R_k\) contribution from every block, while
 \sum_k
 \frac1{R_k}
 \int|\nabla w_{I_k}|^2
-\tag{34}
+\tag{35}
 \]
 
 may count infinitely many nodes.
@@ -533,8 +561,10 @@ The direct energy route now has an exact verdict:
 1. the squared fresh detector and positive tensor moment are real;
 2. they do not force nonlinear frequency transfer, even for an exact smooth
    Navier--Stokes solution;
-3. viscosity, kinetic energy, pressure, commutators, and moving boundaries
-   all carry the summable physical radius weight;
+3. viscosity, kinetic energy, pressure, commutators, fixed boundaries, and
+   parabolically controlled moving boundaries carry the summable physical
+   radius weight; arbitrary centre motion contributes
+   \(R_k^2|\dot x_k|\) and is not covered;
 4. removing that weight creates the desired scale-zero charge but loses the
    global energy telescope; and
 5. no local sign emerges from the detector moment alone.
@@ -565,8 +595,10 @@ Run the exact Beltrami, detector, and energy-scale ledgers with:
     make frequency-energy
 
 The subsequent
-[scale-indexed defect reduction](scale-indexed-defect.md) constructs the
-compact object left after this no-go. It is a shift-stationary probability on
-the discrete genealogy, not a finite physical log-scale measure. Its exact
-same-trajectory parabolic cocycle has an unresolved zero-ratio tangent
-boundary, and its positive squared moment retains a signed history source.
+[scale-indexed defect audit](scale-indexed-defect.md) shows that the
+previously proposed one-radius compact process was premature. The carrier
+Young measure lives below the parent detector scale, and no common
+genealogical diagonal array has yet been selected. Conditional on such an
+array, the abstract shift law and counting-versus-log-depth conclusions
+survive, but two distinct zero-ratio edges and the signed history source must
+be retained.

@@ -2,24 +2,26 @@
 
 - **Experiment:** EXP-FRESH-DETECTOR-001
 - **Route:** ROUTE-R3B
-- **Status:** complete exact detector transfer and occupation reduction
+- **Status:** complete conditional matrix transfer and occupation reduction
 - **Clay status:** unsolved
 - **Inputs:** [fresh-band Lorentz audit](fresh-band-lorentz.md),
   [microbubble decoration](microbubble-decoration-rigidity.md), and
   [strain-jet freezing](strain-jet-freezing.md)
 
-The positive tensor-oscillation moment is not merely accompanied by a fresh
-frequency increment. After sparse scale selection, it is detected by the
-square of that fresh increment itself.
+Conditional on a coherent parent-to-carrier genealogy, the positive
+tensor-oscillation moment is not merely accompanied by a fresh frequency
+increment. After one common sparse selection, it is detected by the square of
+that fresh parent-scale increment itself.
 
-Write the normalised child jet as
+Write the current parent-normalised jet as
 
 \[
 F=C+G,
 \]
 
 where \(C\) contains every band below the preceding parent cutoff and \(G\)
-is the new annular band. If the child-to-parent radius ratio is \(q\), then
+is the new annular band. If the ratio between consecutive **parent detector
+radii** is \(q\), then
 
 \[
 \|C\|\le\varepsilon,
@@ -72,9 +74,11 @@ On the same set,
 }
 \]
 
-This closes the detector-transfer gate. Every retained tower level now
-contains a fresh, frequency-disjoint annular band whose own squared matrix
-detects a fixed positive tensor Young moment.
+This closes the finite-dimensional detector-transfer gate. On any coherent
+array satisfying the common-selection hypotheses, every retained parent
+level contains a fresh, frequency-disjoint annular band whose squared matrix,
+viewed as an external mark on its subnatural carrier, detects a fixed positive
+tensor Young moment.
 
 Finite-band space and time derivatives also make that fresh band persist on
 one natural parabolic subcylinder. It carries a fixed strong critical
@@ -82,8 +86,9 @@ one natural parabolic subcylinder. It carries a fixed strong critical
 would therefore exclude infinite depth by Littlewood--Paley summation, but
 the current weak spatial endpoint and energy inequality do not provide it.
 
-The remaining obstruction is no longer the external nature of the
-detector. It is summability over frequency and terminal clock.
+The remaining obstruction includes both the construction of that coherent
+two-scale array and summability over frequency and terminal clock. The
+detector remains external to the carrier-scale Navier--Stokes equation.
 
 ## 1. Exact noncommutative detector error
 
@@ -181,10 +186,11 @@ where \(\|\cdot\|_*\) is the nuclear norm. Operator--nuclear duality turns
 This bound does not assume simultaneous diagonalisation, a sign for the
 cross terms, or alignment of \(C\) and \(G\).
 
-## 2. Sparse scale selection makes the error vanish
+## 2. Sparse parent-scale selection makes the error vanish
 
-Let \(R\) be the preceding parent radius and \(r=qR\) the child radius. The
-coarse-band suppression theorem gives
+Let \(R_-\) be the preceding parent radius and \(R=qR_-\) the current parent
+detector radius. Separately, let \(r=\lambda R\) be the subnatural carrier
+radius. The coarse-band suppression theorem gives
 
 \[
 \varepsilon
@@ -223,9 +229,11 @@ e(q_0^m)\le\frac{\tau}{2}.
 \tag{12}
 \]
 
-For a general infinite path with radii tending to zero, choose a sparse
-subsequence with the same property. The selected frequency intervals remain
-successive disjoint blocks.
+For a general already coherent parent path with radii tending to zero, choose
+a sparse subsequence with the same property. The selected frequency intervals
+remain successive disjoint blocks. This step does not prove that the same
+subsequence also preserves every microcarrier threshold, freezing estimate,
+offset bound, and parent-to-carrier relation.
 
 ## 3. The carrier set transfers without relocalisation
 
@@ -293,16 +301,19 @@ No new pigeonhole step is needed, so the positive moment does not lose
 additional mass.
 
 The bands \(F\), \(C\), and \(G\) all have parent-scale frequency. On the
-subnatural microchild their frequencies acquire the vanishing micro ratio,
-and the established finite-band derivative bounds make each of them freeze
-locally uniformly. Hence \(G\) supplies a legitimate constant fresh-band
-detector in the same limiting Young measure used in (16).
+subnatural microchild their frequencies acquire the vanishing internal ratio
+\(\lambda=r/R\), and the established finite-band derivative bounds make each
+of them freeze locally uniformly. Hence, **provided the Young-measure and
+fresh-band limits are taken on one common subsequence**, \(G\) supplies a
+legitimate constant fresh-band detector in the limiting carrier Young measure
+used in (16). Independent levelwise subsequences do not establish this
+identification.
 
 This proves:
 
-> Along a sparse fixed-mass decorated path, the full parent detector can be
-> replaced by the squared genuinely new annular parent band while preserving
-> a uniform positive projected tensor moment.
+> Along a coherently selected sparse fixed-mass parent-to-carrier path, the
+> full parent detector can be replaced by the squared genuinely new annular
+> parent band while preserving a uniform positive projected tensor moment.
 
 ## 4. Every fresh detector has a strong critical occupation
 
@@ -455,14 +466,14 @@ needed to exploit it remains genuinely new.
 
 ## Exact consequence for ROUTE-R3B
 
-The surviving tower has now been sharpened to the following necessary
-structure:
+Conditional on a coherent genealogical array, the surviving tower has the
+following necessary structure:
 
 1. a sparse sequence of disjoint parent frequency blocks
    \(\mathcal G_k\);
 2. one fixed weak-\(L^{3/2}\) atom and one fixed strong parabolic
    \(L^{5/2}\) occupation per block;
-3. a constant fresh detector \(G_k^2\) on the subnatural child;
+3. a constant external fresh detector \(G_k^2\) on the subnatural carrier;
 4. a fixed-mass tensor Young measure satisfying
    \[
    \int|G_k^2:(A-B)|^2\,d\Upsilon_k\ge m_0>0;
@@ -471,7 +482,9 @@ structure:
 6. no finite sequence summability from the current endpoint or energy
    bounds.
 
-The next gate is no longer to identify the correct detector. It is to derive
+The first next gate is a coherent two-scale genealogical diagonal-selection
+lemma linking the parent radii, carrier radii, common subsequences, and
+frequency blocks. Conditional on that lemma, the remaining gate is to derive
 one of:
 
 1. a finite strong or finite-secondary-index spacetime critical occupation
@@ -482,9 +495,10 @@ one of:
 4. a frequency-and-log-scale-indexed suitable ancient defect system and a
    rigidity theorem for it.
 
-This is an exact detector-transfer and critical-occupation reduction. It
-does not prove the strong bound (25), exclude the tower, construct a
-same-trajectory survivor, establish suitability or rigidity, prove
+This is an exact matrix detector-transfer and critical-occupation reduction
+conditional on common selection. It does not prove the genealogical
+diagonal-selection lemma, the strong bound (25), exclude the tower, construct
+a same-trajectory survivor, establish suitability or rigidity, prove
 regularity or blow-up, or resolve any Clay alternative A--D.
 
 Run the exact detector error, transfer, and persistence ledgers with:
