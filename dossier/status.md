@@ -32,6 +32,11 @@ and breakdown work
   \((\nu\lambda\log\lambda)^{-1}\). Componentwise Lorentz--Sobolev absorption removes
   every packet-count factor from quadratic stretching; only the truncated linear
   source remains, with a one-log tail gain at the threshold count.
+- A vorticity distribution gain \((\log\lambda)^{-\gamma}\) produces a velocity-tail
+  gain \((\log\beta)^{-2\gamma}\). Every \(\gamma>0\) places the sparse radius inside
+  the analytic radius; \(\gamma=0\) is constant-sensitive. The resulting component
+  criterion excludes comparable packet counts \((\log\lambda)^\beta\) for all
+  \(\beta<3\).
 - Smooth divergence-free vorticity need not supply a log-weighted BMO direction
   extension across its zero set.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
@@ -44,9 +49,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Does the one-log vorticity-tail gain left by componentwise linear-source control
-> already close the sparse-analyticity endgame, and can dynamics generate the
-> required log-weighted direction control?
+> Can viscous dynamics or a sharper two-level component estimate force a positive
+> linear-ledger gain at the cubic-log fragmentation endpoint, and can dynamics
+> generate the required log-weighted direction control?
 
 The coequal breakdown question remains:
 
@@ -55,9 +60,9 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Propagate a general vorticity-tail logarithmic exponent through rearrangement,
-   Biot--Savart, sparseness, and the analytic radius to identify the exact minimum
-   exponent needed by the endgame.
+1. Apply a two-level component or De Giorgi estimate at the cubic-log endpoint
+   \(N_\lambda\asymp(\log\lambda)^3\); recover any positive logarithmic gain or
+   produce an exact saturating survivor.
 2. Test whether quantitative spatial analyticity supplies a uniform doubling or
    component-count bound at the packet radius.
 3. Test whether local energy and viscosity force any terminal-time VMO modulus for

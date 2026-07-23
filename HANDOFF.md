@@ -1,6 +1,6 @@
-# Handoff: test the one-log endgame threshold; do not re-audit
+# Handoff: attack the cubic-log component endpoint; do not re-audit
 
-**Updated:** 2026-07-23T05:59:16Z
+**Updated:** 2026-07-23T06:07:04Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -10,8 +10,9 @@ The arXiv:2607.08866v2 proof chain has been independently reconstructed. It surv
 only as a repaired conditional theorem for a projected-mild solution with:
 
 - uniform weak-\(L^{3/2}\) vorticity on one terminal interval;
-- uniform \(O(1/\log\lambda)\) logarithmic cover content of high-vorticity sets
-  (the older fixed-centre profile is one sufficient special case);
+- either uniform \(O(1/\log\lambda)\) logarithmic cover content, or the weaker
+  component residual condition in
+  `dossier/experiments/log-endgame-threshold.md`;
 - one global vorticity-direction extension with uniform
   \(\mathrm{bmo}_{1/|\log r|}\) control;
 - a fixed or uniformly bounded spatially constant velocity background.
@@ -23,16 +24,15 @@ result is not Clay A–D.
 
 ## Default next target: ROUTE-R3A
 
-Determine whether the one-log vorticity-tail gain left by componentwise packet
-control already closes the sparse-analyticity endgame.
+Push the componentwise linear-source estimate through the cubic-log endpoint
+\(N_\lambda\asymp(\log\lambda)^3\).
 
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3A")' dossier/records/routes.json`;
-2. `dossier/experiments/packet-lifetime.md`;
-3. only the logarithmic-exponent dependencies in
-   `dossier/experiments/rearrangement-transfer.md` and
-   `dossier/experiments/sparse-analyticity-endgame.md`.
+2. `dossier/experiments/log-endgame-threshold.md`;
+3. the “remaining linear source” section of
+   `dossier/experiments/packet-lifetime.md`.
 
 Completed static results:
 
@@ -71,15 +71,32 @@ linear source yields
 
 at the threshold packet count.
 
+Completed exponent threshold:
+
+> A vorticity tail
+> \(\lambda^{-3/2}(\log\lambda)^{-\gamma}\) produces a velocity tail with exponent
+> \(2\gamma\) and a sparse-to-analytic radius ratio
+> \(O((\log U)^{-2\gamma/3})\). Every \(\gamma>0\) closes the endgame;
+> \(\gamma=0\) has no asymptotic margin.
+
+For comparable critical components with
+\(N_\lambda\lesssim(\log\lambda)^\beta\), the component residual has
+
+\[
+\gamma=2-\frac{2\beta}{3}.
+\]
+
+Thus the repaired conditional chain now covers every \(\beta<3\), even though the
+arbitrary-cover entropy ledger stopped at \(\beta<3/2\).
+
 Next deliverable:
 
-> Start with a general vorticity tail
-> \(\lambda^{-3/2}(\log\lambda)^{-\gamma}\). Propagate \(\gamma\) through the
-> rearrangement, velocity distribution, sparseness scale, and analytic-radius
-> comparison. State the exact minimum \(\gamma\), and decide whether
-> \(\gamma=1\) closes the endgame.
+> At \(\beta=3\), use a two-level truncation, component nondegeneracy, or De Giorgi
+> iteration to recover any \(\gamma>0\). Failure must be an exact component geometry
+> saturating the linear-source ledger while remaining dynamically consistent.
 
-Do not reread unrelated proof-map or source sections.
+Do not reread unrelated proof-map or source sections, and do not return to the
+already-closed global cover aggregation.
 
 ## Alternative routes—choose one, do not mix them
 

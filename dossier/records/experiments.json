@@ -188,6 +188,32 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-LOG-THRESHOLD-001",
+      "title": "Exact logarithmic threshold for the sparse-analyticity endgame",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3A"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "Every positive logarithmic improvement in the critical vorticity distribution produces a sparse velocity scale strictly below the analytic radius, while the zero-log endpoint remains constant-sensitive.",
+      "invariants": [
+        "The vorticity distribution exponent is fixed at the critical value 3/2",
+        "The logarithmic exponent gamma is propagated symbolically",
+        "O'Neil transfer preserves the rearrangement logarithmic exponent",
+        "The bounded velocity-background repair remains an input",
+        "No claim is made that arbitrary Clay data generate a positive gamma"
+      ],
+      "method": "Invert the general vorticity tail, transfer it through the order-one Riesz potential, invert the velocity rearrangement, derive the uniform sparse radius, and compare it with the restarted analytic radius.",
+      "certificate": "A written cutoff-aware exponent proof and exact Fraction tests for general gamma, including gamma equal to zero and one.",
+      "success_criterion": "The proof states the exact gamma threshold and decides whether the one-log tail from componentwise packet control closes the downstream endgame.",
+      "failure_interpretation": "A logarithmic exponent changes incorrectly under inversion or O'Neil transfer, or the sparse radius fails to fit inside the analytic radius at the claimed threshold.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/log-endgame-threshold.md",
+        "lab/navier_lab/log_chain.py",
+        "lab/tests/test_log_chain.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

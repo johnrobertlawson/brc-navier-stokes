@@ -76,6 +76,11 @@ The obligation verdicts are:
 | O2607-11 | **repaired** | Both slowly-varying inversions are valid after replacing asymptotic equalities by one-sided trial functions and fixed high-level/small-volume cutoffs. |
 | O2607-12 | **repaired** | The exact O'Neil inequality and whole-space tail preserve one logarithm. The conclusion is initially for the Biot–Savart representative; the source's \(L^\infty\) velocity requires a zero or uniformly bounded harmonic background. |
 
+The displayed result is the preprint's \(\gamma=3/2\) case. The
+[general logarithmic-threshold reduction](log-endgame-threshold.md) proves with the
+same cutoff-aware argument that a vorticity distribution log exponent \(\gamma\ge0\)
+becomes a velocity distribution log exponent \(2\gamma\).
+
 ## O2607-11A: distribution to rearrangement
 
 The following argument keeps all inequality directions explicit.

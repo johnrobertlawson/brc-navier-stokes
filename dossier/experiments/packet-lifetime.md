@@ -429,11 +429,18 @@ and finally
 
 So componentwise absorption proves that isolated packets cannot maintain
 themselves, while a background can still create high-level excess through the
-linear source. The surviving ROUTE-R3A question is no longer generic packet
-entropy:
+linear source. The [general logarithmic endgame calculation](log-endgame-threshold.md)
+shows that every positive tail exponent closes the downstream analytic-radius
+comparison. Consequently, the componentwise route excludes comparable critical
+packet counts
 
-> Does the resulting one-log vorticity-tail gain already close the
-> sparse-analyticity endgame, or can the linear source be estimated more sharply?
+\[
+N_\lambda\lesssim(\log\lambda)^\beta
+\qquad\hbox{for every }\beta<3.
+\]
+
+The surviving ROUTE-R3A question is the cubic-log endpoint and worse component
+geometry, where the linear ledger has no positive logarithmic gain.
 
 Run the exact scaling checks with:
 

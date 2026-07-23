@@ -49,6 +49,7 @@ class PacketLifetimeTests(unittest.TestCase):
         self.assertEqual(linear_residual_log_decay(Fraction(0)), Fraction(2))
         self.assertEqual(linear_residual_log_decay(Fraction(1)), Fraction(4, 3))
         self.assertEqual(linear_residual_log_decay(Fraction(3, 2)), Fraction(1))
+        self.assertEqual(linear_residual_log_decay(Fraction(3)), Fraction(0))
 
     def test_threshold_sequence_is_exact(self) -> None:
         self.assertEqual(

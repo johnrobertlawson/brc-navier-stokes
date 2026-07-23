@@ -22,6 +22,11 @@ theorem**. This is not a Navier–Stokes regularity theorem without the source's
 critical-profile and direction hypotheses, and it is not a resolution of any Clay
 alternative.
 
+The source uses a velocity-tail logarithmic exponent \(3\). The
+[general logarithmic-threshold reduction](log-endgame-threshold.md) shows that the
+radius comparison and all later steps require only a strictly positive exponent;
+the zero-log endpoint remains constant-sensitive.
+
 ## Dependency boundary
 
 This reconstruction takes the preceding audited output as input. On the terminal interval
