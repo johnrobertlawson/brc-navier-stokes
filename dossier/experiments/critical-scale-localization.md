@@ -827,6 +827,12 @@ The principal regularity frontier moves to ROUTE-R3B in its exact reduced form:
 > zero-set-safe directional quantity or directly from arbitrary Clay-admissible
 > dynamics.
 
+The [zero-set-safe truncated-direction reduction](truncated-direction-defect.md)
+subsequently makes the low-vorticity remainder arbitrarily small and isolates one
+scale-critical commutator. A smooth positive-time Navier--Stokes scaling family
+keeps that commutator nonzero, so any further reduction must use cross-time structure
+of one putative blow-up rather than another scale-invariant snapshot bound.
+
 The uniform weak-\(L^{3/2}\) vorticity and velocity-background hypotheses also
 remain to be derived or removed.
 

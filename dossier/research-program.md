@@ -79,6 +79,14 @@ velocity-background hypotheses. A global logarithmic direction extension is one
 sufficient mechanism for the displayed decay, but the zero-set-safe PDE-derived
 condition is the sharper target.
 
+The [truncated-direction reduction](experiments/truncated-direction-defect.md)
+removes the zero set and low-amplitude vorticity with a tunably vanishing error. It
+isolates one scale-critical commutator, then gives an exact smooth Navier--Stokes
+scaling family on which that commutator remains nonzero. The campaign must therefore
+use cross-time information from one putative blow-up—most naturally a normalized
+ancient-limit compactness and rigidity argument—rather than seek another universal
+snapshot inequality.
+
 ## Active campaign B — Certified unstable profiles
 
 Reproduce the Hou–Wang–Yang computer-assisted result independently before extending it.

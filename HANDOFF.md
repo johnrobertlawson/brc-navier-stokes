@@ -1,6 +1,6 @@
-# Handoff: derive critical-ball high-level strain decay; do not re-audit
+# Handoff: rescale persistent commutator concentration; do not re-audit
 
-**Updated:** 2026-07-23T06:40:30Z
+**Updated:** 2026-07-23T06:59:36Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,7 +24,8 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Derive, or sharply obstruct, the exact high-level local strain condition
+Turn failure of the exact high-level local strain condition into a normalized
+ancient-profile compactness obligation. The target remains
 
 \[
 \widehat a_\lambda
@@ -38,11 +39,9 @@ Derive, or sharply obstruct, the exact high-level local strain condition
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. the exact frontier in
-   `dossier/experiments/critical-scale-localization.md`;
-3. `dossier/experiments/zero-set-direction.md`;
-4. only the fixed componentwise identity in
-   `dossier/experiments/localized-commutator.md`.
+2. `dossier/experiments/truncated-direction-defect.md`;
+3. only the exact frontier in
+   `dossier/experiments/critical-scale-localization.md`.
 
 Completed static results:
 
@@ -155,30 +154,69 @@ logarithmic direction hypothesis gives
 localization theorem does not require that particular mechanism. ROUTE-R3A is
 closed inside the conditional chain.
 
+Completed zero-set-safe reduction:
+
+> For \(0<\delta<1/4\), an amplitude-adapted direction
+>
+> \[
+> b_{\lambda,\delta}
+> =
+> q_\delta(|\omega|/\lambda)\frac{\omega}{|\omega|}
+> \]
+>
+> is zero below \(\delta\lambda\), equals the true direction above \(\lambda\), and
+> gives the exact high-level identity
+>
+> \[
+> \alpha
+> =
+> \sum\xi_i\xi_\ell[T_{i\ell j},b_{\lambda,\delta,j}]|\omega|
+> +
+> \sum\xi_i\xi_\ell T_{i\ell j}h_{\lambda,\delta,j}.
+> \]
+>
+> The low-vorticity remainder satisfies
+>
+> \[
+> \sup_{x_0}
+> \|Th_{\lambda,\delta}\|_{L^{3/2,\infty}
+> (B_{\kappa\lambda^{-1/2}}(x_0))}
+> \lesssim
+> \delta\left(1+\log_+\frac{C}{\delta}\right).
+> \]
+
+Thus \(\delta=\delta_\lambda\to0\) leaves one truncated-direction commutator
+\(\mathcal C_{\lambda,\delta_\lambda}\). An explicit compactly supported
+divergence-free velocity with constant core vorticity and nonzero aligned strain,
+followed by exact Navier--Stokes scaling, gives positive-time smooth snapshots with
+uniform weak-\(L^{3/2}\) vorticity, vanishing kinetic energy, and
+
+\[
+\liminf\mathcal C_{\lambda_L,\delta_L}>0.
+\]
+
+This is a family of solutions, not one blow-up trajectory. It proves that another
+scale-invariant snapshot bound cannot close ROUTE-R3B.
+
 Next deliverable:
 
-> Use a level-dependent, zero-set-safe direction
+> Assume one putative blow-up solution has
+> \(\mathcal C_{\lambda_n,\delta_n}\ge\varepsilon_0\) at
+> \((x_n,t_n)\), with \(\lambda_n\to\infty\), and set
 >
 > \[
-> b_\lambda
-> =
-> \chi(|\omega|/\lambda)\frac{\omega}{|\omega|},
+> r_n=\lambda_n^{-1/2},
 > \qquad
-> \chi=0\ \hbox{below }1/2,\quad
-> \chi=1\ \hbox{above }1,
+> u_n(y,s)
+> =
+> r_n u(x_n+r_ny,t_n+r_n^2s).
 > \]
 >
-> which equals the true direction on \(A_\lambda\) and vanishes near the zero set.
-> Rewrite the stretching scalar on \(A_\lambda\) using \(b_\lambda\), the exact
-> commutator identity, and the remainder
->
-> \[
-> T\!\left((1-\chi(|\omega|/\lambda))\omega\right).
-> \]
->
-> Prove that the commutator plus transition-layer remainder makes
-> \(\widehat a_\lambda\to0\), or identify the exact PDE-consistent defect preventing
-> it. Do not assume an arbitrary direction value at vorticity zeros.
+> Prove the normalized commutator survives in a nontrivial ancient limit, specifying
+> the exact local topology needed to pass the Calderón--Zygmund commutator. If
+> uniform weak-\(L^{3/2}\) vorticity and local energy do not give that compactness,
+> isolate the precise concentration or defect measure. Do not call a rescaled
+> subsequence an ancient solution without this certificate.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

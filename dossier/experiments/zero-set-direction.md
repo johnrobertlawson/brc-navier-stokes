@@ -110,3 +110,10 @@ bounded instantaneous field, so its sufficiently high superlevel sets are empty.
 The live ROUTE-R3B question is whether a zero-set-safe, level-dependent direction or
 the PDE itself forces this critical-ball strain decay along a putative blow-up
 sequence.
+
+The [truncated-direction reduction](truncated-direction-defect.md) answers the first
+part exactly. It sets the direction to zero below \(\delta\lambda\), makes the
+discarded low-vorticity strain
+\(O(\delta(1+\log(1/\delta)))\), and leaves one truncated commutator. A critical
+Navier--Stokes scaling family shows that commutator need not vanish across smooth
+snapshots, so the surviving question is genuinely cross-time.

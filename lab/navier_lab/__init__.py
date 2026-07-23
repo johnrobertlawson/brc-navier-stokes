@@ -16,5 +16,6 @@ __all__ = [
     "scaling",
     "source_cache",
     "strain",
+    "truncated_direction",
     "vanishing_tail",
 ]

@@ -295,6 +295,33 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-TRUNCATED-DIRECTION-001",
+      "title": "Zero-set-safe truncated direction and critical commutator defect",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "A level-dependent direction that vanishes below delta times lambda and equals the true direction above lambda splits high-level stretching into one truncated-direction commutator and a low-vorticity singular-integral remainder; the remainder is uniformly O(delta times one plus log one over delta) on critical balls, while an exact Navier-Stokes scaling family tests whether the commutator can vanish without cross-scale dynamics.",
+      "invariants": [
+        "The truncated direction is defined as zero at every vorticity zero",
+        "The identity is exact on the high-vorticity superlevel set",
+        "The low-vorticity remainder amplitude is at most a fixed multiple of delta times lambda",
+        "Near-field and every far annulus are retained in the remainder estimate",
+        "The critical scaling family has uniform weak-L(3/2) vorticity and solves unforced Navier-Stokes locally",
+        "The scaling family is not one blow-up trajectory and does not establish a Clay alternative"
+      ],
+      "method": "Construct an amplitude-adapted cutoff, expand the strain Calderon-Zygmund identity using commutators, estimate the low remainder by L2 near-field control and weak-L(3/2) annular mass bounds, then scale an explicit compactly supported divergence-free velocity with constant core vorticity and nonzero aligned strain.",
+      "certificate": "A written exact identity, optimized annular estimate, and smooth PDE-consistent saturation family, with exact Fraction tests for critical scaling and the delta remainder ledger.",
+      "success_criterion": "Either the truncated commutator is proved to vanish and ROUTE-R3B advances to regularity, or all automatic zero-set and low-level effects are removed and a nonvanishing scale-critical commutator is isolated by an exact PDE-consistent family.",
+      "failure_interpretation": "The cutoff identity has an omitted term, the far-field remainder fails to vanish with delta, or the proposed scaling field is not divergence-free, does not have nonzero aligned strain, or loses critical weak-vorticity control.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/truncated-direction-defect.md",
+        "lab/navier_lab/truncated_direction.py",
+        "lab/tests/test_truncated_direction.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

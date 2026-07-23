@@ -58,6 +58,13 @@ and breakdown work
   sufficient route to that exact input.
 - Smooth divergence-free vorticity need not supply a log-weighted BMO direction
   extension across its zero set.
+- A level-dependent direction that vanishes below \(\delta\lambda\) removes the
+  zero-set ambiguity. Its discarded low-vorticity strain is
+  \(O(\delta(1+\log(1/\delta)))\) on critical balls, leaving one exact truncated
+  commutator. A smooth positive-time Navier--Stokes scaling family retains a
+  nonzero normalized commutator with uniform weak-\(L^{3/2}\) vorticity and
+  vanishing kinetic energy. Snapshot estimates therefore cannot close ROUTE-R3B;
+  one-solution time history is essential.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -68,9 +75,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can the critical-ball high-level local strain norm be forced to vanish using a
-> level-dependent direction that is zero-set safe, and ultimately from the
-> vorticity dynamics?
+> Can a nonvanishing truncated commutator along one putative blow-up be rescaled to
+> an ancient critical solution and then excluded by spacetime compactness or
+> rigidity?
 
 The coequal breakdown question remains:
 
@@ -79,19 +86,22 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Replace the unit direction by
-   \(b_\lambda=\chi(|\omega|/\lambda)\omega/|\omega|\), derive its exact commutator
-   identity on \(\{|\omega|>\lambda\}\), and retain the low-vorticity remainder.
-2. Test whether local energy, viscosity, and the direction equation control those
-   defects or force a terminal-time VMO modulus on intense-vorticity regions.
-3. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+1. Assume a nonvanishing truncated-commutator sequence
+   \((x_n,t_n,\lambda_n)\), rescale by \(r_n=\lambda_n^{-1/2}\), and state the exact
+   normalized ancient-profile compactness obligation.
+2. Determine whether uniform weak-\(L^{3/2}\) vorticity plus the local energy
+   inequality gives enough strong local compactness to preserve the commutator, or
+   identify the missing spacetime norm.
+3. If a nontrivial ancient limit exists, test backward uniqueness, local energy
+   dissipation, and direction transport for a rigidity contradiction.
+4. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.
-4. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
+5. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
-5. Determine the weakest oscillation modulus whose commutator gain still outruns the
+6. Determine the weakest oscillation modulus whose commutator gain still outruns the
    analytic radius.
-6. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
+7. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
 
 ## Interpretation
 

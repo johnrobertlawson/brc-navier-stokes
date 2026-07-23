@@ -1,7 +1,7 @@
 PYTHON ?= python
 PYTHONPATH := lab
 
-.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization strain fetch-2607 compile-2607
+.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction strain fetch-2607 compile-2607
 
 check: records links markup test
 
@@ -46,6 +46,9 @@ vanishing-tail:
 
 critical-localization:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.critical_localization
+
+truncated-direction:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.truncated_direction
 
 strain:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.strain
