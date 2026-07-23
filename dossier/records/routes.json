@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can scales selected from one Navier-Stokes trajectory and carrying the positive terminal finite-band alignment witness realise an amplitude-cutoff covariant adverse heat layer; equivalently, does same-trajectory alignment force zero terminal Cesaro excess?",
+      "question": "Does exact same-trajectory pullback coherence force the squared finite-band alignment excess to vanish; failing that, can the alignment-weighted signed terminal density be retained in a suitable ancient system and excluded by rigidity?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "Same-trajectory alignment forces zero terminal excess so the positive detector enters the ancient limit; alternatively, the alignment-coupled signed excess is localised, suitability is proved, and rigidity excludes the decorated ancient object.",
-      "kill_criterion": "A Clay-admissible single trajectory or nonzero suitable ancient limit with positive terminal alignment, surviving nonzero terminal Cesaro excess, and vacuum decoration outside every available rigidity class.",
+      "success": "Same-trajectory coherence forces zero squared-detector excess so a quantitatively nonzero tensor enters the ancient limit; alternatively, the alignment-weighted signed excess is localised, suitability is proved, and rigidity excludes the decorated ancient object.",
+      "kill_criterion": "A Clay-admissible single trajectory or nonzero suitable ancient limit with positive terminal alignment, surviving nonzero squared-detector terminal excess, and tensor decoration outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

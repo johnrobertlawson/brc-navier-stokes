@@ -329,12 +329,33 @@ and breakdown work
 - No uniform trace temporal modulus follows from endpoint vorticity, energy,
   suitability, and expanding backward age across solution families. An exact
   periodic heat shear has a fixed positive terminal Cesàro excess on time
-  \(K^{-2}\). Scaling vorticity and cutoff together leaves the trace unchanged;
-  polynomial amplitude smallness then pays for a backward heat interval of
-  length \(C\log K\to\infty\) while endpoint vorticity stays bounded and
-  velocity energy vanishes uniformly. The family changes initial data with
-  \(K\) and has \(S:H=0\), so it does not test same-trajectory coherence or
-  the selected positive terminal alignment.
+  \(K^{-2}\). Scaling vorticity and cutoff together leaves the trace unchanged.
+  Exponentially small matched amplitude and cutoff pay for any prescribed
+  physical backward-domain length while endpoint vorticity stays bounded and
+  velocity energy vanishes uniformly. The remote-past trace is cutoff-saturated,
+  so the exact terminal-then-Cesàro iterated limit also has a nonzero negative
+  signed excess. The family changes initial data with \(K\) and has \(S:H=0\),
+  so it does not test same-trajectory coherence or the selected positive
+  terminal alignment.
+- The terminal alignment witness now has a positive smooth carrier. If
+  \(F_n=P_{\le M}S_n\), then \(D_n=F_n(0)^2\) is positive semidefinite and,
+  on the selected set,
+  \[
+  D_n:H_n
+  =
+  h_n|F_n\xi_n|^2
+  \ge h_n(F_n:Q_n)^2
+  >
+  \frac12.
+  \]
+  Freezing \(D_n\) and applying the triangular identity gives a bounded signed
+  alignment excess \(\mathfrak A_0\). All transport, spatial diffusion, and
+  stretching terms are \(O(\delta)\); only the tensor Hessian remainder can
+  concentrate at terminal time. Zero \(\mathfrak A_0\) carries a quantitatively
+  nonzero tensor into the ancient interior. Natural scaling also gives the
+  exact same-trajectory identity
+  \(H_{\ell_n^2}[\ell_n^2\omega]=H_1[\omega]\). The axial heat-shear
+  obstruction has \(F_ne_3=0\) and is filtered out identically.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -345,11 +366,10 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can scales selected from one Navier--Stokes trajectory and carrying the
-> positive terminal finite-band alignment witness realise the
-> amplitude--cutoff covariant adverse heat layer? Equivalently, does
-> same-trajectory alignment force \(\mathfrak E_0=0\), or can its failure be
-> retained and excluded in a suitable decorated ancient system?
+> Does the exact pullback coherence of one Navier--Stokes trajectory force the
+> squared finite-band alignment excess \(\mathfrak A_0\) to vanish? If not,
+> can that alignment-weighted signed terminal density be retained in a
+> suitable ancient system and excluded by rigidity?
 
 The coequal breakdown question remains:
 
@@ -358,14 +378,17 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive a same-trajectory coherence constraint that prevents repeated
-   amplitude--cutoff covariant heat layers at the scales selected by the
-   terminal witness, or construct the exact coherent survivor.
-2. Couple the triangular signed pairing defining \(\mathfrak E_0\) to the
-   nonzero terminal finite-band strain pairing \(F:H^0\), rather than trace
-   alone.
-3. Prove that a nonzero alignment-coupled \(\mathfrak E_0\) is incompatible
-   with suitability, local energy, and the closed scalar/tensor equations.
+1. Use the exact physical pullbacks
+   \(H_{\ell_n^2}[\ell_n^2\omega]=H_1[\omega]\) and
+   \(P_{\le M}\widehat S_n=\ell_n^2P_{\le M/\ell_n}S\) to derive a
+   cross-scale packing or cancellation estimate for
+   \(\mathfrak A_0\).
+2. Prove that a nonzero squared-detector alignment excess is incompatible
+   with suitability, local energy, and the closed scalar/tensor equations, or
+   construct the exact same-trajectory survivor.
+3. Compare \(\mathfrak A_0\) with the scalar excess
+   \(\mathfrak E_0\) and the projective-cross terminal defect; remove any
+   redundant decoration without replacing signed remainders by variation.
 4. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.

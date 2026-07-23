@@ -318,6 +318,15 @@ If yes, the terminal witness reaches the ancient interval unless
 \(\mathcal R_0\ne0\). If no, the failure of the adjoint propagator is a new
 critical-potential defect that must be retained explicitly.
 
+The subsequent
+[terminal alignment-excess theorem](terminal-alignment-excess.md) gives a
+short-time alternative that does not require solving (7). The frozen
+positive detector \(D_n=F_n(0)^2\) is quantitatively nonzero on the selected
+terminal witness. Pairing it directly with the tensor equation and the
+triangular time weight leaves only an \(O(\delta)\) carrier plus
+\(D_n:\mathcal R_n\). This does not solve the fixed-interval adjoint problem;
+it isolates its terminal alignment loss as a bounded signed density.
+
 ## 4. The positive cone does not propagate
 
 The adjoint cannot be controlled by a naive positive-matrix maximum principle.

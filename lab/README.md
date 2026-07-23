@@ -36,7 +36,8 @@ not convert passing unit tests into mathematical truth.
 | **trace_projective_domination.py** | Sharp projective bounds for trace content, gradient, signed remainder, and pure-radial constants | Tight-branch atom rigidity or a signed excess for non-tight interfaces |
 | **projective_zero_interface.py** | Trace--log dependence and exact smooth simple-zero interface kernels | A terminal excess or signed topology that removes benign interface mass |
 | **terminal_trace_excess.py** | Codimension-one to -three zero-stratum kernels and the triangular terminal Cesàro identity | Same-trajectory alignment control or rigidity for the signed terminal density |
-| **trace_temporal_modulus.py** | Natural-time positive Cesàro excess, amplitude--cutoff covariance, and logarithmic backward age | A same-trajectory alignment-conditioned modulus or decorated rigidity |
+| **trace_temporal_modulus.py** | Natural-time positive Cesàro excess, amplitude--cutoff covariance, arbitrary backward age, and iterated signed excess | A same-trajectory alignment-conditioned modulus or decorated rigidity |
+| **terminal_alignment_excess.py** | Squared finite-band Rayleigh detector, natural pullback covariance, and triangular tensor excess | Exclusion or rigidity for the alignment-weighted signed terminal defect |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -80,6 +81,7 @@ From the repository root:
     make projective-interface
     make trace-excess
     make trace-temporal
+    make alignment-excess
     make strain
     make fetch-2607
     make compile-2607

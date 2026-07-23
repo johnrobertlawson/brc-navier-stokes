@@ -99,6 +99,48 @@ def expanding_backward_age_log_coefficient(
     )
 
 
+def backward_heat_age(
+    frequency: int,
+    physical_backward_age: Fraction,
+) -> Fraction:
+    """Return the heat-normalised age K^2*L on a physical interval L."""
+    if frequency <= 0:
+        raise ValueError("frequency must be positive")
+    if physical_backward_age <= 0:
+        raise ValueError("physical backward age must be positive")
+    return frequency**2 * physical_backward_age
+
+
+def balancing_log_amplitude(
+    viscosity: Fraction,
+    maximum_wavenumber: int,
+    frequency: int,
+    physical_backward_age: Fraction,
+) -> Fraction:
+    """Return log(a_K) that pays for backward heat growth on [-L,0]."""
+    return -backward_heat_log_growth_rate(
+        viscosity,
+        maximum_wavenumber,
+    ) * backward_heat_age(
+        frequency,
+        physical_backward_age,
+    )
+
+
+def saturated_iterated_excess(
+    terminal_trace_mass: Fraction,
+    saturated_trace_mass: Fraction,
+) -> Fraction:
+    """Return terminal mass minus the remote-past saturated trace mass."""
+    if saturated_trace_mass <= 0:
+        raise ValueError("saturated trace mass must be positive")
+    if not Fraction(0) <= terminal_trace_mass < saturated_trace_mass:
+        raise ValueError(
+            "terminal trace mass must lie below saturated trace mass"
+        )
+    return terminal_trace_mass - saturated_trace_mass
+
+
 def report() -> str:
     coefficients = (
         Fraction(5, 7),
@@ -124,6 +166,17 @@ def report() -> str:
         physical_window,
     )
     powers = natural_layer_scaling_powers()
+    physical_backward_age = Fraction(5, 2)
+    heat_age = backward_heat_age(
+        frequency,
+        physical_backward_age,
+    )
+    log_amplitude = balancing_log_amplitude(
+        Fraction(2, 5),
+        3,
+        frequency,
+        physical_backward_age,
+    )
     return "\n".join(
         (
             "Trace temporal-modulus obstruction ledger",
@@ -151,12 +204,21 @@ def report() -> str:
             f"{backward_heat_log_growth_rate(Fraction(2, 5), 3)}",
             f"expanding-age log coefficient, p=2:   "
             f"{expanding_backward_age_log_coefficient(Fraction(2), Fraction(2, 5), 3)}",
+            f"physical backward age:                "
+            f"{physical_backward_age}",
+            f"heat-normalised backward age:         "
+            f"{heat_age}",
+            f"balancing log amplitude:              "
+            f"{log_amplitude}",
+            f"sample saturated iterated excess:     "
+            f"{saturated_iterated_excess(Fraction(4, 5), Fraction(1))}",
             "",
             "Positive trace growth produces a positive terminal Cesaro excess.",
             "Natural frequency scaling shrinks its time window but not its size.",
-            "Matching cutoff and amplitude preserves the excess. Polynomial",
-            "smallness can pay for logarithmically expanding backward heat age,",
-            "so ancient age alone does not remove the cross-solution family.",
+            "Matching cutoff and amplitude preserves the excess. Exponential",
+            "smallness can pay for arbitrarily expanding physical backward age.",
+            "The remote-past trace saturates, leaving a nonzero iterated excess;",
+            "ancient age alone does not remove the cross-solution family.",
         )
     )
 

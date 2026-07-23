@@ -1,4 +1,4 @@
-# Positive natural-time trace excess with expanding heat age
+# Positive natural-time trace excess on arbitrarily long backward domains
 
 - **Experiment:** EXP-TRACE-TEMPORAL-MODULUS-001
 - **Route:** ROUTE-R3B
@@ -8,21 +8,22 @@
   [trace boundary renormalisation](trace-boundary-renormalisation.md)
 
 A uniform temporal modulus for the cutoff trace does not follow from endpoint
-vorticity, energy, suitability, or even logarithmically expanding backward
-heat age **across solution families**. There are exact globally regular
+vorticity, energy, suitability, or even arbitrarily expanding backward
+domains **across solution families**. There are exact globally regular
 periodic Navier--Stokes shears with:
 
 - uniformly bounded critical vorticity on their whole backward domains;
 - vanishing velocity energy;
 - cutoff \(\eta_K\downarrow0\);
-- backward heat-normalised domains whose length tends to infinity; and
-- a fixed strictly positive terminal Cesàro trace excess.
+- actual backward domains whose length can tend to infinity arbitrarily fast;
+- a fixed strictly positive natural-window terminal Cesàro trace excess; and
+- a nonzero negative excess in the exact terminal-then-Cesàro iterated limit.
 
 The construction uses two exact covariance mechanisms. Frequency \(K\) shrinks
 one adverse heat layer to time \(K^{-2}\) without changing its Cesàro excess.
 Multiplying both vorticity and cutoff by the same small amplitude leaves the
-trace unchanged; that smallness pays for exponentially growing backward heat
-modes over \(C\log K\) normalised time.
+trace unchanged. Polynomial smallness pays for \(C\log K\) normalised heat
+time; exponential smallness pays for any prescribed physical backward age.
 
 This kills any excess estimate using only the listed uniform bounds. It does
 not kill the remaining ROUTE-R3B target because the family changes initial
@@ -38,9 +39,9 @@ It carries no positive terminal alignment witness and is not a sequence of
 scales selected from one physical Navier--Stokes trajectory. The surviving
 discriminator is therefore exact:
 
-> same-trajectory coherence together with the selected terminal
-> finite-band alignment, not endpoint size, suitability, or ancient age by
-> themselves.
+> same-trajectory coherence together with the selected terminal finite-band
+> alignment, not endpoint size, suitability, an expanding domain, or even
+> the bare existence of a signed terminal excess by themselves.
 
 ## Verdict
 
@@ -451,14 +452,160 @@ Thus the family has:
 Expanding ancient age alone does not force the excess to vanish across
 solution families.
 
-## 5. Exact scope boundary
+## 5. Exponential matching pays for arbitrary actual backward age
+
+The logarithmic construction is not the limit of the covariance. Let
+
+\[
+L_K\longrightarrow\infty
+\tag{34}
+\]
+
+be any prescribed physical backward ages. On
+\([-L_K,0]\), choose
+
+\[
+\boxed{
+a_K
+=
+\exp\left(-\nu N^2K^2L_K\right),
+\qquad
+\eta_K=a_K\eta_*.
+}
+\tag{35}
+\]
+
+Since the earliest heat time is \(c-K^2L_K\), equations (28)--(29) give
+
+\[
+\boxed{
+\sup_{-L_K\le t\le0}
+a_K
+\|W(K^2t+c)\|_{L^{3/2,\infty}}
+\le C_c.
+}
+\tag{36}
+\]
+
+The primitive obeys the same bound. Therefore
+
+\[
+\boxed{
+\sup_{-L_K\le t\le0}
+\|\omega_K(t)\|_{L^{3/2,\infty}}
+\le C_c,
+\qquad
+\sup_t\|u_K(t)\|_2
+\lesssim K^{-1},
+\qquad
+\sup_t\|u_K(t)\|_2^2
+\lesssim K^{-2}.
+}
+\tag{37}
+\]
+
+At terminal time, vorticity, velocity, energy, and cutoff all vanish
+exponentially except for the additional powers of \(K\), while the
+natural-window excess (20) is unchanged. Thus the counterfamily has uniform
+endpoint control on genuinely expanding domains of arbitrary prescribed
+length, not only on a logarithmically expanding heat clock.
+
+## 6. The exact iterated terminal excess is nonzero
+
+Let
+
+\[
+\Phi_N(s)
+=
+\sum_{|j|=N}c_je^{ijs}
+\tag{38}
+\]
+
+be the nonzero top Fourier component of \(W_0\). As
+\(\tau\to-\infty\),
+
+\[
+e^{-\nu N^2|\tau|}W(s,\tau)
+\longrightarrow
+\Phi_N(s).
+\tag{39}
+\]
+
+A nonzero trigonometric polynomial has a measure-zero zero set. Dominated
+convergence therefore gives
+
+\[
+\boxed{
+G(\tau)\longrightarrow|\mathbb T|
+\quad\hbox{as }\tau\to-\infty.
+}
+\tag{40}
+\]
+
+At terminal heat time \(c\), the cutoff is strictly positive and \(W(c)\) is
+finite, so
+
+\[
+G(c)<|\mathbb T|.
+\tag{41}
+\]
+
+For every fixed physical \(\delta>0\), integer periodicity and the change of
+variables \(\tau=K^2t+c\) give
+
+\[
+\begin{aligned}
+\lim_{K\to\infty}
+\mathfrak E_{K,\delta}(1)
+&=
+C_{\mathbb T^2}
+\lim_{K\to\infty}
+\left[
+G(c)
+-
+\frac1{\delta K^2}
+\int_{c-\delta K^2}^{c}G(\tau)\,d\tau
+\right]\\
+&=
+C_{\mathbb T^2}
+\left[G(c)-|\mathbb T|\right]
+<0.
+\end{aligned}
+\tag{42}
+\]
+
+Spatial oscillatory averaging identifies the terminal weak trace and the
+interior Cesàro trace as
+
+\[
+\boxed{
+h^0
+=
+\frac{G(c)}{|\mathbb T|},
+\qquad
+\bar h^-=1,
+\qquad
+\mathfrak E_0
+=
+\frac{G(c)}{|\mathbb T|}-1<0.
+}
+\tag{43}
+\]
+
+Thus the family does not merely defeat a diagonal modulus. It realises the
+nonzero signed density from the terminal-excess theorem in its stated
+iterated topology. The positive excess on the last \(cK^{-2}\) layer and the
+negative full-history excess are compatible because \(G\) is nonmonotone:
+the remote backward heat profile is cutoff-saturated.
+
+## 7. Exact scope boundary
 
 This family does not carry the terminal witness that initiated ROUTE-R3B. Its
 strain satisfies
 
 \[
 S:H_{\eta_K}=0.
-\tag{34}
+\tag{44}
 \]
 
 More importantly, each \(K\) uses a different initial datum. The construction
@@ -476,7 +623,7 @@ one fixed Clay solution. It therefore proves:
 \text{do not imply a trace temporal modulus across solution families.}
 \end{gathered}
 }
-\tag{35}
+\tag{45}
 \]
 
 It does **not** prove:
@@ -485,7 +632,7 @@ It does **not** prove:
 \boxed{
 \text{failure of a trace modulus for scales selected from one trajectory}
 }
-\tag{36}
+\tag{46}
 \]
 
 and it does not reproduce positive terminal finite-band alignment.
@@ -501,10 +648,17 @@ The temporal-modulus target must include both surviving structural inputs:
 > coherence and alignment, or retain their failure in the
 > \(\mathfrak E_0\)-decorated ancient system.
 
-Another family of globally regular heat layers, even with longer backward
-domains, cannot decide this remaining question. A negative result must embed
-the layers coherently into one Clay-admissible trajectory and retain the
-selected alignment witness.
+Another family of globally regular heat layers, even with arbitrarily long
+backward domains and a nonzero iterated excess, cannot decide this remaining
+question. A negative result must embed the layers coherently into one
+Clay-admissible trajectory and retain the selected alignment witness.
+
+The subsequent
+[terminal alignment-excess theorem](terminal-alignment-excess.md) supplies
+the exact filter. Squaring the frozen finite-band strain gives a nonnegative
+detector that is quantitatively positive on the terminal alignment witness
+but vanishes identically on this axial shear family. Its terminal loss is a
+separate bounded signed density paired with the tensor remainder.
 
 This is an exact globally regular Navier--Stokes obstruction and a sharp
 hypothesis-separation theorem. It is not a same-trajectory counterexample, not

@@ -528,13 +528,15 @@ that positive measure by the correct signed object.
 The subsequent
 [temporal-modulus obstruction](trace-temporal-modulus-obstruction.md)
 falsifies such a modulus from endpoint vorticity, energy, suitability, and
-expanding backward heat age alone. Exact smooth periodic shears retain a fixed
-positive excess under frequency compression and matched amplitude--cutoff
-scaling. They change initial data with scale and satisfy \(S:H=0\), so the
-next falsifiable target is a modulus conditioned on same-trajectory coherence
-and the positive terminal finite-band alignment witness, or a suitable
-ancient system retaining both alignment and
-\(\mathfrak E_0\ne0\).
+arbitrarily expanding physical backward domains alone. Exact smooth periodic
+shears retain a fixed positive natural-window excess and a nonzero iterated
+excess under frequency compression and matched amplitude--cutoff scaling.
+They change initial data with scale and satisfy \(S:H=0\). The later
+[terminal alignment-excess theorem](terminal-alignment-excess.md) filters
+them out with the positive detector \(F_n(0)^2\): its pairing with \(H_n\)
+vanishes on the axial shears but is greater than one half on the selected
+finite-band alignment witness. Its own signed terminal excess is now the
+falsifiable one-trajectory target.
 
 This is a conditional compactness reduction and exact smooth-profile
 classification. It is not such an alignment-conditioned modulus, not an

@@ -3,11 +3,14 @@ import unittest
 
 from navier_lab.trace_temporal_modulus import (
     backward_heat_log_growth_rate,
+    backward_heat_age,
+    balancing_log_amplitude,
     expanding_backward_age_log_coefficient,
     forward_terminal_cesaro_excess,
     natural_layer_scaling_powers,
     natural_terminal_window,
     rescaled_polynomial_coefficients,
+    saturated_iterated_excess,
 )
 
 
@@ -106,6 +109,48 @@ class TraceTemporalModulusTests(unittest.TestCase):
             Fraction(14, 75),
         )
 
+    def test_exponential_amplitude_pays_arbitrary_physical_age(self) -> None:
+        viscosity = Fraction(3, 7)
+        maximum_wavenumber = 5
+        frequency = 11
+        physical_age = Fraction(13, 4)
+        heat_age = backward_heat_age(
+            frequency,
+            physical_age,
+        )
+        log_growth = (
+            backward_heat_log_growth_rate(
+                viscosity,
+                maximum_wavenumber,
+            )
+            * heat_age
+        )
+        self.assertEqual(
+            balancing_log_amplitude(
+                viscosity,
+                maximum_wavenumber,
+                frequency,
+                physical_age,
+            )
+            + log_growth,
+            Fraction(0),
+        )
+        self.assertEqual(
+            heat_age,
+            Fraction(1573, 4),
+        )
+
+    def test_remote_past_saturation_leaves_negative_iterated_excess(
+        self,
+    ) -> None:
+        self.assertEqual(
+            saturated_iterated_excess(
+                Fraction(7, 9),
+                Fraction(1),
+            ),
+            Fraction(-2, 9),
+        )
+
     def test_invalid_inputs_are_rejected(self) -> None:
         with self.assertRaises(ValueError):
             forward_terminal_cesaro_excess((), Fraction(1))
@@ -128,6 +173,15 @@ class TraceTemporalModulusTests(unittest.TestCase):
                 Fraction(0),
                 Fraction(1),
                 1,
+            )
+        with self.assertRaises(ValueError):
+            backward_heat_age(0, Fraction(1))
+        with self.assertRaises(ValueError):
+            backward_heat_age(1, Fraction(0))
+        with self.assertRaises(ValueError):
+            saturated_iterated_excess(
+                Fraction(1),
+                Fraction(1),
             )
 
 

@@ -876,7 +876,7 @@
     },
     {
       "id": "EXP-TRACE-TEMPORAL-MODULUS-001",
-      "title": "Positive natural-time trace excess with expanding heat age",
+      "title": "Positive natural-time trace excess on arbitrarily long backward domains",
       "kind": "analytic_counterexample",
       "route_ids": ["ROUTE-R3B"],
       "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
@@ -888,12 +888,14 @@
         "The exact periodic shear has zero mixed alignment, smooth suitability, and exact energy equality",
         "With cutoff-matched amplitude frequency to the minus two, terminal vorticity, velocity norm, and kinetic energy vanish while the excess remains fixed",
         "Polynomial amplitude smallness pays for a backward heat interval of length proportional to log frequency while keeping vorticity uniformly endpoint-bounded",
-        "The entire expanding-age family has uniformly vanishing velocity energy and a nonzero signed terminal trace excess",
+        "Exponential amplitude-cutoff matching pays for any prescribed expanding physical backward age while vorticity stays uniformly endpoint-bounded and energy vanishes",
+        "The terminal weak trace is strictly below the cutoff-saturated interior Cesaro trace, giving a nonzero negative excess in the exact iterated topology",
+        "The entire expanding-domain family has uniformly vanishing velocity energy and both a fixed positive natural-window excess and a nonzero iterated signed terminal excess",
         "The family changes initial data with frequency and has zero terminal strain-tensor pairing, so it does not test same-trajectory coherence or the selected positive alignment witness",
         "No same-trajectory counterexample, blow-up, regularity theorem, or Clay A-D resolution is asserted"
       ],
-      "method": "Choose a periodic heat profile with adverse trace curvature, compute its positive terminal Cesaro excess, apply exact frequency and amplitude-cutoff covariance, and use finite Fourier support plus polynomial amplitude decay to pay for logarithmically expanding backward heat age.",
-      "certificate": "A written exact periodic Navier-Stokes shear theorem and scope separation, plus Fraction tests for forward Cesaro growth, frequency invariance, cutoff-matched powers, backward heat growth, and logarithmic age.",
+      "method": "Choose a periodic heat profile with adverse trace curvature, compute its positive natural-window Cesaro excess, apply exact frequency and amplitude-cutoff covariance, use exponential amplitude decay to pay for arbitrary physical backward age, and identify the cutoff-saturated remote-past trace.",
+      "certificate": "A written exact periodic Navier-Stokes shear theorem and scope separation, plus Fraction tests for forward Cesaro growth, frequency invariance, cutoff-matched powers, backward heat growth, arbitrary physical age, exponential balance, and saturated iterated excess.",
       "success_criterion": "Either the trace excess decays under endpoint, suitability, and expanding-age bounds, or an exact family proves that same-trajectory coherence and terminal alignment are indispensable extra inputs.",
       "failure_interpretation": "The adverse heat profile cannot be chosen with finite Fourier support, the shear is not exact, amplitude-cutoff covariance fails, the Cesaro excess decays under frequency scaling, or backward endpoint control cannot expand.",
       "status": "complete",
@@ -901,6 +903,37 @@
         "dossier/experiments/trace-temporal-modulus-obstruction.md",
         "lab/navier_lab/trace_temporal_modulus.py",
         "lab/tests/test_trace_temporal_modulus.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-TERMINAL-ALIGNMENT-EXCESS-001",
+      "title": "Squared finite-band detector and terminal alignment excess",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "The positive terminal finite-band alignment witness may be coupled to a smooth nonnegative detector whose loss is represented by one bounded signed terminal object.",
+      "invariants": [
+        "The square of the frozen symmetric finite-band strain is a smooth positive-semidefinite detector",
+        "On the selected set with trace above one half and Rayleigh alignment above one, the squared detector pairs with the cutoff tensor above one half",
+        "Nonnegative squared-detector pairing prevents off-witness cancellation on the selected natural ball",
+        "The triangular Cesaro identity expresses detector loss as controlled transport-diffusion-stretching terms minus the tensor Hessian remainder",
+        "Every nonremainder term vanishes linearly with the terminal window under the same-solution finite-band and endpoint bounds",
+        "The limiting alignment excess is a bounded signed spatial density without projective-energy or projective-cross tightness",
+        "Zero alignment excess carries a quantitatively nonzero tensor into the ancient interior Cesaro limit",
+        "Natural rescaling makes every cutoff-relative tensor an exact pullback of one fixed physical-cutoff tensor from the same trajectory",
+        "Axial heat-shear temporal obstructions pair identically to zero with the squared finite-band detector",
+        "No vanishing theorem for the alignment excess, suitability theorem, rigidity theorem, regularity theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Square the frozen terminal finite-band strain, use the squared Rayleigh inequality on the selected witness, pair the zero-safe tensor equation with this positive detector and a triangular time weight, and write the exact same-trajectory pullback covariance.",
+      "certificate": "A written terminal survival-or-defect theorem, plus exact Fraction tests for squared Rayleigh domination, witness mass, axial-shear filtering, natural pullback covariance, triangular control, and the L1-dual bound.",
+      "success_criterion": "The positive alignment witness either enters the ancient interior as a nonzero tensor or is represented by an alignment-weighted bounded signed terminal defect tied to one-trajectory pullbacks.",
+      "failure_interpretation": "The squared detector can cancel off the witness, the controlled carrier is not uniformly integrable, natural pullback covariance fails, or zero detector excess does not imply a nonzero interior tensor.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/terminal-alignment-excess.md",
+        "lab/navier_lab/terminal_alignment_excess.py",
+        "lab/tests/test_terminal_alignment_excess.py"
       ],
       "last_run": "2026-07-23"
     },
