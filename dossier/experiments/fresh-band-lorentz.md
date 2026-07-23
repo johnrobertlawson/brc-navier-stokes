@@ -2,15 +2,19 @@
 
 - **Experiment:** EXP-BAND-INCREMENT-001
 - **Route:** ROUTE-R3B
-- **Status:** complete conditional parent-path reduction and sequence-space no-go
+- **Status:** complete parent-sequence reduction and sequence-space no-go
 - **Clay status:** unsolved
 - **Inputs:** [tree-budget audit](tree-budget-audit.md),
   [microbubble decoration](microbubble-decoration-rigidity.md), and
   [same-solution granularity](same-solution-granularity.md)
 
-Conditional on a single coherent sequence of decorated **parent** nodes, the
-nonzero parent-scale jets cannot be produced by repeatedly viewing one coarse
-strain band at finer parent scales.
+The local calculation below requires one coherent sequence of decorated
+**parent** events. The subsequent
+[single-diagonal synchronization theorem](two-scale-synchronization.md)
+proves that the terminal carrier construction supplies such a sequence after
+one sparse thinning, without constructing a nested carrier-to-next-parent
+genealogy. On that sequence, the nonzero parent-scale jets cannot be produced
+by repeatedly viewing one coarse strain band at finer parent scales.
 
 If consecutive parent detector radii satisfy \(R'=qR\), then normalisation
 at \(R'\) multiplies every strain band below the preceding parent cutoff by
@@ -38,12 +42,12 @@ Bernstein persistence turns it into a scale-critical weak-\(L^{3/2}\) atom,
 and the order-zero strain--vorticity relation transfers that lower bound to
 the corresponding vorticity shell.
 
-This is genuine same-trajectory information once the common genealogy has
-been selected:
+This is genuine same-trajectory information on the synchronized terminal
+carrier diagonal:
 
 \[
 \boxed{
-\text{infinite decorated depth}
+\text{nonzero terminal alignment excess}
 \Longrightarrow
 \text{infinitely many fresh critical frequency increments}.
 }
@@ -72,13 +76,15 @@ r_k=\lambda_kR_k,
 and its intrinsic detector has already collapsed by \(\lambda_k^4\). The
 present calculation concerns the parent radii \(R_k\), not the carrier radii
 \(r_k\); the carrier extraction itself permits \(\lambda_k\to0\). It does
-not construct a common nested array linking the parent
-sequence, the microcarriers, and their levelwise subsequences.
+not construct a nested array linking one microcarrier to the next parent.
+That stronger array is unnecessary for attaching the frequency block to the
+carrier at the same event.
 
 ## 1. Exact coarse-band suppression on a coherent parent path
 
-Let \(\mathcal S\) be the physical strain and let a hypothetical coherent
-nested path have **parent detector radii**
+Let \(\mathcal S\) be the physical strain and let a coherent parent-event
+sequence, whose centres and clocks may change without nesting, have
+**parent detector radii**
 
 \[
 R_{k+1}=q_kR_k,
@@ -213,12 +219,13 @@ satisfy (11). Along that subsequence,
 \tag{12}
 \]
 
-The frequency intervals in (8) are successive annuli after grouping. Thus,
-on the assumed common path, the nonzero parent jet cannot be an unchanged
-coarse decoration: fresh physical frequency is required at every retained
-parent level. Grouping is harmless for this algebra, but its compatibility
-with all carrier thresholds and limits is one of the quantifiers required
-in the missing coherent diagonal-selection lemma.
+The frequency intervals in (8) are successive nominal annuli after grouping,
+with uniformly bounded overlap for smooth low-pass multipliers. Thus the
+nonzero parent jet cannot be an unchanged coarse decoration: fresh physical
+frequency is required at every retained parent level. The
+[synchronization theorem](two-scale-synchronization.md) proves directly that
+the grouping can preserve all carrier thresholds and the compactness data
+used by this frequency argument.
 
 ## 2. A fresh pointwise band has a critical weak atom
 
@@ -523,17 +530,17 @@ Endpoint size and the spatial square function alone supply none of these.
 
 The parent-band audit has a positive and a negative conclusion.
 
-First, the conditional positive conclusion:
+First, combining this calculation with the synchronization theorem gives:
 
 \[
 \boxed{
-\text{a coherent infinite fixed-mass decorated parent path forces infinitely many
-fresh critical frequency increments}.
+\text{nonzero terminal alignment excess forces infinitely many
+fresh critical frequency increments on one trajectory}.
 }
 \tag{35}
 \]
 
-Such a path cannot recycle a single coarse parent strain.
+Such a sequence cannot recycle a single coarse parent strain.
 
 Second, the negative conclusion:
 
@@ -550,7 +557,8 @@ The standard vector square function does not upgrade (36) to any finite
 sequence exponent, and changing terminal clocks prevents a purely spatial
 sum.
 
-The next gate is to couple the node moment
+The detector-transfer and synchronization theorems now couple the node
+moment
 
 \[
 m_k
@@ -563,15 +571,17 @@ F_k^2:(A-B)
 \tag{37}
 \]
 
-to the fresh annular increment \(G_k\), then derive a finite-secondary-index
-spatial or spacetime estimate, a temporal telescope, or a nonlocal positive
-flux. If this cannot be done, the minimal ancient defect must retain the
-fresh frequency index and logarithmic scale variable together with the
-projected tensor Young measure.
+to the fresh annular increment \(G_k\) on the same prelimit carrier sequence.
+The next gate is to derive a finite-secondary-index spatial or spacetime
+estimate, a temporal telescope, or a nonlocal positive flux controlling the
+resulting divergent block occupation. If this cannot be done, the minimal
+ancient defect must retain the fresh frequency index and logarithmic scale
+variable together with the projected tensor Young measure.
 
-This is an exact algebraic and functional reduction conditional on a coherent
-parent path. It does not derive that path from the independently extracted
-microcarriers, construct a same-trajectory tower, prove summability of (37),
+This is an exact algebraic and functional reduction, instantiated on the
+terminal carrier diagonal by the subsequent synchronization theorem. It does
+not construct a nested same-trajectory tower, prove a bound for the
+associated scale-zero block sum,
 establish suitability or rigidity, prove regularity or blow-up, or resolve
 any Clay alternative A--D.
 
@@ -579,11 +589,12 @@ Run the exact coarse-band, persistence, and Lorentz ledgers with:
 
     make band-increment
 
-Conditional on the same coherent parent-to-carrier array, the subsequent
+On the synchronized parent-to-carrier event sequence, the subsequent
 [fresh-detector transfer theorem](fresh-detector-transfer.md) expands the
 full squared detector around the new annular band and shows that its
 projected error is \(O(q^2)\). Common sparse selection therefore transfers
 the fixed positive Young moment to the squared fresh band itself and gives
 that band a fixed strong parabolic \(L^{5/2}\) occupation. The remaining
-gates are the coherent diagonal lemma and then summation through a temporal
-frequency-energy telescope or a nonlocal positive flux.
+gate is to control or exploit the resulting divergent strong critical block
+occupation through a temporal frequency-energy telescope, a nonlocal positive
+flux, or another scale-zero law.

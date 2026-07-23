@@ -2,16 +2,19 @@
 
 - **Experiment:** EXP-FRESH-DETECTOR-001
 - **Route:** ROUTE-R3B
-- **Status:** complete conditional matrix transfer and occupation reduction
+- **Status:** complete matrix transfer and occupation reduction
 - **Clay status:** unsolved
 - **Inputs:** [fresh-band Lorentz audit](fresh-band-lorentz.md),
   [microbubble decoration](microbubble-decoration-rigidity.md), and
   [strain-jet freezing](strain-jet-freezing.md)
 
-Conditional on a coherent parent-to-carrier genealogy, the positive
-tensor-oscillation moment is not merely accompanied by a fresh frequency
-increment. After one common sparse selection, it is detected by the square of
-that fresh parent-scale increment itself.
+The local matrix calculation below requires a common parent-to-carrier event
+sequence. The subsequent
+[single-diagonal synchronization theorem](two-scale-synchronization.md)
+constructs that sequence from the terminal carrier diagonal without assuming
+a carrier-to-next-parent genealogy. After one sparse selection, the positive
+tensor-oscillation moment is detected by the square of the fresh parent-scale
+increment itself.
 
 Write the current parent-normalised jet as
 
@@ -74,11 +77,11 @@ On the same set,
 }
 \]
 
-This closes the finite-dimensional detector-transfer gate. On any coherent
-array satisfying the common-selection hypotheses, every retained parent
-level contains a fresh, frequency-disjoint annular band whose squared matrix,
-viewed as an external mark on its subnatural carrier, detects a fixed positive
-tensor Young moment.
+This closes the finite-dimensional detector-transfer gate. On the
+synchronized terminal event sequence, every retained parent level contains a
+fresh, frequency-separated annular band whose squared matrix, viewed as an
+external mark on its subnatural carrier, detects a fixed positive tensor
+Young moment.
 
 Finite-band space and time derivatives also make that fresh band persist on
 one natural parabolic subcylinder. It carries a fixed strong critical
@@ -86,9 +89,10 @@ one natural parabolic subcylinder. It carries a fixed strong critical
 would therefore exclude infinite depth by Littlewood--Paley summation, but
 the current weak spatial endpoint and energy inequality do not provide it.
 
-The remaining obstruction includes both the construction of that coherent
-two-scale array and summability over frequency and terminal clock. The
-detector remains external to the carrier-scale Navier--Stokes equation.
+The remaining obstruction is to control or exploit the resulting divergent
+occupation over frequency and terminal clock. The detector remains external
+to the carrier-scale Navier--Stokes equation, and no inter-event genealogy is
+constructed.
 
 ## 1. Exact noncommutative detector error
 
@@ -229,11 +233,14 @@ e(q_0^m)\le\frac{\tau}{2}.
 \tag{12}
 \]
 
-For a general already coherent parent path with radii tending to zero, choose
-a sparse subsequence with the same property. The selected frequency intervals
-remain successive disjoint blocks. This step does not prove that the same
-subsequence also preserves every microcarrier threshold, freezing estimate,
-offset bound, and parent-to-carrier relation.
+For a general parent event sequence with radii tending to zero, choose a
+sparse subsequence with the same property. The selected nominal frequency
+intervals have disjoint interiors and the corresponding smooth blocks have
+uniformly bounded Fourier overlap. The
+[synchronization theorem](two-scale-synchronization.md) proves that this
+subsequence can simultaneously preserve every microcarrier threshold and
+freezing limit used here. It makes no claim about inter-event offsets or
+carrier-to-next-parent nesting.
 
 ## 3. The carrier set transfers without relocalisation
 
@@ -303,15 +310,14 @@ additional mass.
 The bands \(F\), \(C\), and \(G\) all have parent-scale frequency. On the
 subnatural microchild their frequencies acquire the vanishing internal ratio
 \(\lambda=r/R\), and the established finite-band derivative bounds make each
-of them freeze locally uniformly. Hence, **provided the Young-measure and
-fresh-band limits are taken on one common subsequence**, \(G\) supplies a
-legitimate constant fresh-band detector in the limiting carrier Young measure
-used in (16). Independent levelwise subsequences do not establish this
-identification.
+of them freeze locally uniformly. The synchronization theorem takes the
+Young-measure and fresh-band limits on one common subsequence, so \(G\)
+supplies a legitimate constant fresh-band detector in the limiting carrier
+Young measure used in (16).
 
 This proves:
 
-> Along a coherently selected sparse fixed-mass parent-to-carrier path, the
+> Along the sparsely synchronized fixed-mass parent-to-carrier event sequence, the
 > full parent detector can be replaced by the squared genuinely new annular
 > parent band while preserving a uniform positive projected tensor moment.
 
@@ -466,10 +472,11 @@ needed to exploit it remains genuinely new.
 
 ## Exact consequence for ROUTE-R3B
 
-Conditional on a coherent genealogical array, the surviving tower has the
-following necessary structure:
+Combining the terminal carrier theorem with the synchronization result gives
+the following necessary structure on one actual event sequence:
 
-1. a sparse sequence of disjoint parent frequency blocks
+1. a sparse sequence of successive, uniformly bounded-overlap parent
+   frequency blocks
    \(\mathcal G_k\);
 2. one fixed weak-\(L^{3/2}\) atom and one fixed strong parabolic
    \(L^{5/2}\) occupation per block;
@@ -482,10 +489,7 @@ following necessary structure:
 6. no finite sequence summability from the current endpoint or energy
    bounds.
 
-The first next gate is a coherent two-scale genealogical diagonal-selection
-lemma linking the parent radii, carrier radii, common subsequences, and
-frequency blocks. Conditional on that lemma, the remaining gate is to derive
-one of:
+The remaining gate is to derive one of:
 
 1. a finite strong or finite-secondary-index spacetime critical occupation
    for the fresh blocks;
@@ -496,10 +500,10 @@ one of:
    rigidity theorem for it.
 
 This is an exact matrix detector-transfer and critical-occupation reduction
-conditional on common selection. It does not prove the genealogical
-diagonal-selection lemma, the strong bound (25), exclude the tower, construct
-a same-trajectory survivor, establish suitability or rigidity, prove
-regularity or blow-up, or resolve any Clay alternative A--D.
+on the synchronized terminal event sequence. It does not prove the strong
+bound (25), construct a carrier-to-next-parent genealogy, exclude the event
+sequence, establish suitability or rigidity, prove regularity or blow-up, or
+resolve any Clay alternative A--D.
 
 Run the exact detector error, transfer, and persistence ledgers with:
 

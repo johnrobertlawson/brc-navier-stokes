@@ -1,6 +1,6 @@
-# Handoff: two-scale genealogy repair
+# Handoff: synchronized fresh-band frontier
 
-**Updated:** 2026-07-23T15:36:26Z
+**Updated:** 2026-07-23T16:05:15Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -15,11 +15,27 @@ downstream compact-process claim. The accepted disposition is
 The carrier Young measure lives at
 \(r_k=\lambda_kR_k\), below the parent detector radius \(R_k\). Its
 order-one detector is an externally renormalised parent-scale mark; the
-intrinsic carrier detector collapses by \(\lambda_k^4\). Independent
-levelwise subsequences do not yet form one same-trajectory genealogy.
-The one-radius shift-stationary PDE-process claim is withdrawn. The next
-target is a coherent two-scale genealogical diagonal-selection lemma, not a
-\(q=0\) no-neck theorem.
+intrinsic carrier detector collapses by \(\lambda_k^4\). The one-radius
+shift-stationary PDE-process claim remains withdrawn.
+
+A subsequent refinement separates the review's stronger genealogy objection
+from the weaker common subsequence needed by the frequency argument.
+Nonzero terminal alignment excess already gives one physical carrier
+diagonal. One recursive thinning synchronizes its parent radii, carrier
+thresholds, compactness errors, and fresh frequency bands. The fresh
+detector transfers on the same prelimit carrier set; the resulting smooth
+blocks have bounded Fourier overlap and a fixed strong parabolic
+\(L^{5/2}\) occupation each. Their block sum diverges. No
+carrier-to-next-parent nesting or scale process is inferred.
+The same adversarial reviewer checked this narrower theorem and found no
+fatal flaw in its stated non-genealogical scope; the fixed smooth-symbol
+overlap condition and persistence citation requested in that second pass are
+now explicit.
+
+The immediate target is therefore a law that controls or exploits this
+actual divergent block occupation. A coherent two-scale genealogical
+diagonal remains a separate prerequisite for any two-edge no-neck or
+stationary-process route.
 
 The arXiv:2607.08866v2 proof chain has been independently reconstructed. It survives
 only as a repaired conditional theorem for a projected-mild solution with:
@@ -482,30 +498,32 @@ closed branches. The original regularity target remains
 
 Start with only:
 
-1. `dossier/review-letter-2026-07-23.md`;
-2. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-3. `dossier/experiments/scale-indexed-defect.md`;
-4. `dossier/experiments/frequency-energy-flux.md`;
-5. `dossier/experiments/fresh-detector-transfer.md`;
-6. `dossier/experiments/fresh-band-lorentz.md`;
-7. `dossier/experiments/tree-budget-audit.md`;
-8. `dossier/experiments/moving-band-coupling.md`;
-9. `dossier/experiments/forcing-jet-decoupling.md`;
-10. `dossier/experiments/strain-jet-freezing.md`;
-11. `dossier/experiments/microbubble-decoration-rigidity.md`;
-12. `dossier/experiments/terminal-carrier-microbubble.md`;
-13. `dossier/experiments/terminal-alignment-excess.md`;
-14. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-15. `dossier/experiments/terminal-trace-excess.md`;
-16. `dossier/experiments/projective-zero-interface.md`;
-17. `dossier/experiments/trace-projective-domination.md`;
-18. `dossier/experiments/trace-boundary-renormalisation.md`;
-19. `dossier/experiments/trace-transition-band-flux.md`;
-20. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+1. `dossier/experiments/two-scale-synchronization.md`;
+2. `dossier/review-response-2026-07-23.md`;
+3. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
+4. `dossier/experiments/fresh-detector-transfer.md`;
+5. `dossier/experiments/fresh-band-lorentz.md`;
+6. `dossier/experiments/scale-indexed-defect.md` only for the stronger
+   genealogy/process branch;
+7. `dossier/experiments/frequency-energy-flux.md`;
+8. `dossier/experiments/tree-budget-audit.md`;
+9. `dossier/experiments/moving-band-coupling.md`;
+10. `dossier/experiments/forcing-jet-decoupling.md`;
+11. `dossier/experiments/strain-jet-freezing.md`;
+12. `dossier/experiments/microbubble-decoration-rigidity.md`;
+13. `dossier/experiments/terminal-carrier-microbubble.md`;
+14. `dossier/experiments/terminal-alignment-excess.md`;
+15. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+16. `dossier/experiments/terminal-trace-excess.md`;
+17. `dossier/experiments/projective-zero-interface.md`;
+18. `dossier/experiments/trace-projective-domination.md`;
+19. `dossier/experiments/trace-boundary-renormalisation.md`;
+20. `dossier/experiments/trace-transition-band-flux.md`;
+21. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-21. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+22. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-22. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+23. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1802,20 +1820,41 @@ Completed terminal alignment-excess reduction:
 > detectors also contribute \((LD):(A-B)\) and
 > \(-2\nu\sum_j\partial_jD:\partial_j(A-B)\); those terms must be retained or
 > controlled across scale.
+>
+> The review's common-diagonal objection is now separated by scope. Nonzero
+> terminal alignment excess already supplies one physical sequence
+> \((n_j,\delta_j,z_j)\) containing each parent \(R_j\), carrier
+> \(r_j=\sqrt{\delta_j}R_j\), fixed carrier threshold, and parent detector.
+> Recursively thinning that sequence makes consecutive parent ratios and all
+> compactness errors small at once. Defining the fresh block between retained
+> parent cutoffs transfers the \(G_j^2\)-projected moment directly on the
+> same carrier set. The nominal annuli are successive and their smooth
+> Fourier supports have bounded overlap. Each block has one fixed strong
+> parabolic \(L^{5/2}\) occupation, so the block sum diverges and the
+> nonzero-excess branch forces
+> \(\mathcal S\notin L^{5/2}(\Omega\times\mathfrak T)\) on the full
+> spatial terminal slab. No spatially local version is asserted. This
+> closes the weaker carrier/fresh-band synchronization, not the
+> carrier-to-next-parent genealogy.
 
 Next deliverable:
 
-> Prove a coherent two-scale genealogical diagonal-selection lemma. On one
-> physical trajectory and one common extraction, retain every
-> \(P_k=(x_k^P,t_k^P,R_k)\), carrier
+> First test the synchronized event sequence itself: determine whether
+> one-trajectory clock geometry, a finite-secondary-index estimate, a
+> nonlocal positive law, or the complete signed history-square balance can
+> bound or contradict its linearly divergent strong critical block
+> occupation. No spatial nesting may be assumed in that test.
+>
+> Separately, for the shift-process route, prove a coherent two-scale
+> genealogical diagonal-selection lemma. On one physical trajectory and one
+> common extraction, retain every \(P_k=(x_k^P,t_k^P,R_k)\), carrier
 > \(C_k=(x_k^C,t_k^C,r_k)\), both offset pairs, parent jet, carrier Young
-> measure, uniform threshold and coarse ceiling, disjoint fresh annulus,
-> matched cutoff, local-energy data, and detector-freezing error on every
-> finite window. Only then derive separate no-neck or transition-measure
-> statements for \(\lambda_k\to0\) and \(\kappa_k\to0\).
-> In parallel, test whether the complete signed history-square balance,
-> including detector commutators, admits a finite scale-counting split;
-> without that split retain only its combined distribution.
+> measure, matched cutoff, local-energy data, and detector-freezing error on
+> every finite window. Only then derive separate no-neck or
+> transition-measure statements for \(\lambda_k\to0\) and
+> \(\kappa_k\to0\). If the complete signed history-square balance, including
+> detector commutators, has no finite scale-counting split, retain only its
+> combined distribution.
 > Neither suitability of the undecorated microchild, an arbitrary constant
 > detector, unweighted volume, nor the collapsed intrinsic band can close
 > this. A successful no-neck, history-source, or nonlocal estimate excludes the

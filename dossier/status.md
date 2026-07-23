@@ -489,8 +489,9 @@ and breakdown work
   masses grow linearly with depth. The missing quantity is the additive
   logarithmic-scale sum of positive parent-detector-projected Young moments,
   not an ordinary volume Carleson measure.
-- Conditional on one coherent path of parent detector radii, the path forces
-  genuinely fresh physical frequencies. At consecutive parent ratio \(q\),
+- The local parent-band algebra forces genuinely fresh physical frequencies
+  on any coherent sequence of parent detector radii. At consecutive parent
+  ratio \(q\),
   normalisation suppresses every band below the preceding parent cutoff by
   \(q^2\). A uniform parent-jet floor \(c\) and coarse ceiling \(B\) give a
   fresh annular increment of size at least \(c-Bq^2\); common sparse scale
@@ -501,8 +502,10 @@ and breakdown work
   finite sequence norm of the component weak norms. Exact disjoint atoms
   have bounded global weak norm through arbitrary depth, while every finite
   Lorentz secondary index grows like a positive power of the depth.
-  Different terminal clocks supply a second \(L^\infty\) obstruction.
-- Conditional on the same parent-to-carrier extraction, the positive tensor
+  Different terminal clocks supply a second \(L^\infty\) obstruction. The
+  later single-diagonal theorem supplies the needed parent event sequence
+  from the actual terminal carriers.
+- On that synchronized parent-to-carrier extraction, the positive tensor
   moment survives replacement of the full parent detector by the squared
   fresh band. If \(F=C+G\) and the current-parent-normalised
   coarse ceiling is \(\varepsilon=B_Cq^2\), then
@@ -544,6 +547,28 @@ and breakdown work
   subsequences do not supply one common nested physical genealogy.
   Consequently the claimed unconditional one-radius, shift-stationary PDE
   process is withdrawn.
+- A subsequent single-diagonal theorem closes the weaker synchronization
+  actually needed by the frequency argument. Nonzero terminal alignment
+  excess already supplies one sequence
+  \((n_j,\delta_j,z_j)\) from one trajectory, with parent radii
+  \(R_j\to0\), internal ratios
+  \(\lambda_j=\sqrt{\delta_j}\to0\), fixed carrier mass, and a uniform
+  parent-detector threshold. One recursive thinning makes the successive
+  parent ratios and every carrier compactness error small simultaneously.
+  Defining each fresh band between the retained parent cutoffs transfers the
+  \(G_j^2\)-projected moment directly on the same prelimit carrier set.
+  The resulting nominal annuli are successive, their smooth Fourier supports
+  have uniformly bounded overlap, and each carries a fixed strong parabolic
+  \(L^{5/2}\) occupation. Hence the block occupation diverges linearly and
+  the nonzero-excess branch forces
+  \(\mathcal S\notin L^{5/2}(\Omega\times\mathfrak T)\) on the full
+  spatial terminal slab. A spatially local version is not asserted because
+  the projectors are nonlocal.
+  This does not provide carrier-to-next-parent nesting, compact inter-event
+  offsets, or a scale cocycle. The same adversarial reviewer performed a
+  second pass and found no fatal flaw in this narrower scope after requiring
+  the fixed smooth-symbol overlap condition and an explicit persistence
+  citation.
 - The surviving algebra is now explicitly conditional. For a coherent
   two-edge cell,
   \[
@@ -584,12 +609,14 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > was the one-radius genealogy, not the detector-transfer matrix estimate or
 > the Beltrami no-go.
 
-> Can one first construct one coherent two-scale genealogical diagonal array
-> linking each parent detector node to its subnatural carrier and then to the
-> next parent, while retaining all thresholds, fresh annuli, offsets,
-> matched cutoffs, and detector-freezing errors? Only conditional on that
-> array can a two-edge no-neck theorem, history-source bound, or stationary
-> suitable-process rigidity be posed.
+> **The first post-review quantifier gate is now closed in its necessary
+> scope.** The existing terminal carrier diagonal can be sparsely
+> synchronized with the fresh frequency blocks on one trajectory, and their
+> strong critical block occupation diverges. The immediate question is
+> whether one-trajectory clock geometry, a scale-zero non-energy law, or a
+> rigidity theorem can control or exploit that divergence. A full
+> carrier-to-next-parent genealogy remains a separate prerequisite only for
+> a two-edge no-neck or stationary-process argument.
 
 The coequal breakdown question remains:
 
@@ -598,49 +625,56 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Prove a coherent two-scale genealogical diagonal-selection lemma retaining
-   \((R_k,r_k)\), both transition edges and offset pairs, parent jets,
-   carrier Young measures, uniform thresholds and ceilings, disjoint fresh
-   annuli, matched cutoffs, and detector-freezing errors on every finite
-   window.
-2. Conditional on that array, derive separate no-neck estimates or transition
-   Young measures for the internal \(\lambda_k\to0\) and bridge
+1. Determine whether the synchronized fresh blocks' linearly divergent
+   \(L^{5/2}_{t,x}\) occupation can be bounded or converted into a
+   contradiction by one-trajectory clock geometry, a finite-secondary-index
+   estimate, a nonlocal positive law, or another genuinely scale-zero input.
+2. Test whether the positive fresh-detector carrier moments admit a direct
+   history or flux identity that sums the actual event sequence without
+   assuming spatial nesting.
+3. Separately, for the scale-process route, prove a coherent two-scale
+   genealogical diagonal-selection lemma retaining \((R_k,r_k)\), both
+   transition edges and offset pairs, parent jets, carrier Young measures,
+   matched cutoffs, local-energy data, and detector-freezing errors on every
+   finite window.
+4. Conditional on that nested array, derive separate no-neck estimates or
+   transition Young measures for the internal \(\lambda_k\to0\) and bridge
    \(\kappa_k\to0\) boundaries; do not replace discrete depth by physical
    log-density.
-3. Determine whether the signed history-square source, including the
+5. Determine whether the signed history-square source, including the
    prelimit detector commutators, has a finite scale-counting split.
-4. Only then test rigidity of a shift-stationary suitable two-scale process
+6. Only then test rigidity of a shift-stationary suitable two-scale process
    with positive expected fresh-detector moment and complete same-trajectory
    graph closure.
-5. Prove that the direction-weighted trace concentration
+7. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
    energy, and the same-trajectory pullbacks, or construct the exact coherent
    survivor.
-6. Determine whether bounded projective-cross content makes the directional
+8. Determine whether bounded projective-cross content makes the directional
    weight compact enough to reduce the weighted concentration to
    \(\mathfrak E_0\); do not replace either signed remainder by variation.
-7. Classify sequence-dependent or temporally degenerate zero profiles beyond
+9. Classify sequence-dependent or temporally degenerate zero profiles beyond
    the now-closed smooth transverse-linear class, preserving cancellation
    between weighted trace and anisotropic projective-cross terms.
-8. Formulate the minimal ancient system decorated by
+10. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.
-9. Classify the degenerate sequence-dependent zero profiles capable of
+11. Classify the degenerate sequence-dependent zero profiles capable of
    carrying both excess and terminal alignment, and decide which orientation
    information is still needed for rigidity.
-10. Classify ancient solutions of the scalar trace defect equation together with
+12. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.
-11. Upgrade the nonzero ancient distributional bubble to a suitable object using
+13. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
-12. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+14. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.
-13. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
+15. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
-14. Determine the weakest oscillation modulus whose commutator gain still outruns the
+16. Determine the weakest oscillation modulus whose commutator gain still outruns the
    analytic radius.
-15. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
+17. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
 
 ## Interpretation
 

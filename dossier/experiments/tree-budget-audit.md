@@ -452,10 +452,12 @@ Run the exact radius, shell, and tree ledgers with:
 
     make tree-budget
 
-Conditional on a coherent path of parent detector radii, the subsequent
+On a coherent path of parent detector radii, the subsequent
 [fresh-band Lorentz audit](fresh-band-lorentz.md) proves that every sparse
 parent level must introduce a genuinely new critical strain/vorticity
 annulus. The endpoint weak Lorentz norm and its vector square function still
-provide only a supremal scale ledger. A separate common-diagonal lemma is
-required to attach those bands to all subnatural carrier Young measures
-before any spacetime or temporal summability argument.
+provide only a supremal scale ledger. The later
+[single-diagonal synchronization theorem](two-scale-synchronization.md)
+attaches those bands to the actual subnatural carrier sequence and proves
+linear divergence of their strong critical block occupation. It does not
+bound that occupation or construct inter-event nesting.

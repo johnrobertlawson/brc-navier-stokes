@@ -48,6 +48,7 @@ not convert passing unit tests into mathematical truth.
 | **fresh_detector.py** | Noncommuting squared-detector error, carrier-set transfer, sparse-gap threshold, and parabolic critical occupation | A strong critical spacetime sum, temporal frequency-energy telescope, or nonlocal positive flux |
 | **frequency_energy.py** | Exact Beltrami heat mode, intrinsic detector increment, zero nonlinear transfer, and physical-versus-normalised energy charges | A strong critical bound, non-energy scale-zero law, same-trajectory history cancellation, or indexed defect rigidity |
 | **scale_defect.py** | Parent/carrier ratio identities, intrinsic detector collapse, generic parabolic cocycle, conditional count/shift compactification, and signed history balance | A coherent two-scale genealogical diagonal-selection lemma before any no-neck or stationary-process rigidity |
+| **two_scale_synchronization.py** | One-diagonal sparse selection, fresh-band attachment, disjoint cutoff retention, detector moment transfer, and critical block-count growth | A bound or rigidity mechanism for the resulting divergent strong critical occupation; no inter-event genealogy is checked |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -102,6 +103,7 @@ From the repository root:
     make fresh-detector
     make frequency-energy
     make scale-defect
+    make two-scale-sync
     make strain
     make fetch-2607
     make compile-2607

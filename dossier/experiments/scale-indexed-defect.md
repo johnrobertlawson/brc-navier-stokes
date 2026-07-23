@@ -65,9 +65,15 @@ The corrected status is:
 4. the current analysis does not construct that common array. Independent
    levelwise subsequences do not supply it.
 
-The first live theorem is therefore a coherent two-scale genealogical
-diagonal-selection lemma. A no-neck theorem or stationary-process rigidity
-can be posed only after that lemma.
+The subsequent
+[single-diagonal synchronization theorem](two-scale-synchronization.md)
+closes a weaker but useful quantifier: the actual terminal carrier events,
+their parent detectors, and fresh frequency blocks can all be retained on
+one sparse same-trajectory sequence. It does not supply the bridge from one
+carrier to the next parent. Thus a coherent two-scale genealogical
+diagonal-selection lemma remains the first live theorem **for the
+shift-process route**. A two-edge no-neck theorem or stationary-process
+rigidity can be posed only after that stronger lemma.
 
 ## 1. What one carrier level actually supplies
 
@@ -144,10 +150,11 @@ M_*
 \]
 
 for uniform constants after the detector-transfer thresholds have been fixed.
-The matrix estimate underlying that transfer is valid. What is not yet
-proved is that the carrier Young measure, the fresh parent band, all
-thresholds, and every adjacent genealogical relation can be retained on one
-common nested subsequence for all levels.
+The matrix estimate underlying that transfer is valid. The synchronization
+theorem now retains the carrier Young measure, fresh parent band, and all
+thresholds used in that calculation on one common event subsequence. What is
+not proved is that every adjacent carrier-to-next-parent genealogical
+relation can also be retained on one common nested array for all levels.
 
 In particular, a family of levelwise statements of the form
 
@@ -259,7 +266,8 @@ on every finite level window:
 
 1. the nested nodes \(P_k,C_k,P_{k+1}\) and both exact transition edges;
 2. uniform carrier mass and projected-moment floors;
-3. the coarse-band ceilings and a single sequence of disjoint fresh annuli;
+3. the coarse-band ceilings and a single sequence of successive nominal
+   fresh annuli with uniformly bounded Fourier overlap;
 4. the parent-jet and fresh-detector freezing limits on the carrier;
 5. compact normalised centre and clock offsets, or an enlarged state
    describing their escape;
@@ -623,17 +631,22 @@ The external review leaves the following results intact:
 It withdraws the stronger interpretation that the existing tower alternative
 already supplies a one-radius, same-trajectory, shift-stationary PDE process.
 The tensor Young state is carried at \(r_k\), whereas its detector and fresh
-frequency block are inherited from \(R_k\). The bridge to \(R_{k+1}\) and a
-single common diagonal extraction are unproved.
+frequency block are inherited from \(R_k\). A single common event extraction
+for those same-event objects is now proved by the synchronization theorem.
+The bridge to \(R_{k+1}\), compact inter-event offsets, and a common nested
+genealogical extraction remain unproved.
 
 The next proof obligations, in order, are:
 
-1. prove the coherent two-scale genealogical diagonal-selection lemma from
-   Section 2, or show that failure of such selection already excludes the
-   tower;
-2. conditional on that array, test a strong critical or finite-index
-   occupation bound, a two-edge no-neck estimate, or a bounded-gap theorem;
-3. retain the full signed history source, including detector commutators,
+1. control or exploit the divergent strong critical occupation on the
+   synchronized event sequence through a finite-index estimate, scale-zero
+   history law, or other rigidity mechanism;
+2. separately, if pursuing a shift-process argument, prove the coherent
+   two-scale genealogical diagonal-selection lemma from Section 2, or show
+   that failure of such selection excludes that branch;
+3. conditional on that nested array, test a two-edge no-neck estimate or a
+   bounded-gap theorem, and retain the full signed history source, including
+   detector commutators,
    unless an independently finite scale-counting split is proved; and
 4. only then formulate and test rigidity for a shift-stationary suitable
    two-scale PDE process.
