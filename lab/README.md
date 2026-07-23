@@ -32,6 +32,7 @@ not convert passing unit tests into mathematical truth.
 | **shear_adjoint.py** | Exact planar-shear matrix modes, heat/Brownian occupation, and endpoint dimensional powers | A transversely localised endpoint trajectory or general three-dimensional Kato gain |
 | **trace_adjoint.py** | Scalar trace source, mixed alignment, trace remainder, and sharper trace-content ledgers | Uniform propagation of the amplitude-band trace potential or rigidity for its signed defect |
 | **trace_band_flux.py** | Three-band trace reduction, detector-weighted coefficients, exact affine cycles, and signed versus positive propagator factors | A trace-content bound, transition-boundary flux control, or an endpoint-bounded countertrajectory |
+| **trace_boundary_flux.py** | General trace renormalisation, sharp boundary signs, radial convexity no-go, periodic heat-shear powers, and ancient decay | A nonlinear ancient-history estimate or rigidity for the surviving signed radial defect |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -70,6 +71,7 @@ From the repository root:
     make shear-adjoint
     make trace-adjoint
     make trace-band-flux
+    make trace-boundary-flux
     make strain
     make fetch-2607
     make compile-2607

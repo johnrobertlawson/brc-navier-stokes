@@ -754,6 +754,36 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-TRACE-BOUNDARY-FLUX-001",
+      "title": "Trace renormalisation and boundary-flux obstruction",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "A nonlinear renormalisation of trace may give favourable transition-boundary flux and eliminate the signed radial trace defect without losing the cutoff-scale terminal detector.",
+      "invariants": [
+        "Every smooth trace renormalisation has an exact adjoint duality with a radial-angular defect split",
+        "A lower positive-part trace truncation has favourable lower-boundary diffusion flux and approximates local trace mass",
+        "A two-sided band truncation has an adverse upper-boundary flux, but averaged level flux is dominated by trace content",
+        "Nonnegative radial defect is equivalent to convexity of the renormalised detector as a function of vorticity amplitude",
+        "No bounded nonconstant increasing trace renormalisation is globally convex in vorticity amplitude",
+        "Every globally sign-favourable dimensionless detector grows at least linearly in the amplitude-to-cutoff ratio and therefore loses uniform vacuum-detector control",
+        "Exact periodic heat shears realise adverse radial flux with uniform endpoint vorticity and scale-invariant short-time trace-content occupation",
+        "Uniformly endpoint-bounded ancient classical Navier-Stokes vorticity with one fixed projective direction is zero, so the finite-window shear is not an ancient blow-up object",
+        "No general three-dimensional trace-content bound, rigidity theorem, or Clay regularity theorem is asserted"
+      ],
+      "method": "Renormalise the exact scalar trace equation by an arbitrary increasing function, split its Hessian defect into radial and angular polar energies, analyse sharp one- and two-sided trace truncations, classify the convexity condition, realise every concavity interval by a frequency-scaled periodic Navier-Stokes heat shear, and reduce fixed-projective-direction ancient vorticity to passive scalar advection-diffusion before applying Nash and Poincare decay.",
+      "certificate": "A written renormalised-duality theorem, convexity no-go, exact shear scaling and fixed-direction ancient exclusion, plus Fraction tests for defect coefficients, power-detector sign thresholds, amplitude curvature, coarea domination, critical heat-shear powers, and ancient smoothing exponents.",
+      "success_criterion": "Boundary flux is either removed as an independent gate or isolated as a trace-content defect that cannot be signed away by any bounded scalar detector, with the precise finite-window shear obstruction and ancient-history escape identified.",
+      "failure_interpretation": "The renormalised defect formula is wrong, a bounded detector can have globally favourable radial diffusion, level-set flux is not paid by trace content, the exact shear scaling loses endpoint control, or a nonzero uniformly bounded ancient fixed-direction vorticity survives.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/trace-boundary-renormalisation.md",
+        "lab/navier_lab/trace_boundary_flux.py",
+        "lab/tests/test_trace_boundary_flux.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

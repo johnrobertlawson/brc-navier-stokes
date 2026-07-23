@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can the detector-weighted scalar carrier be propagated and localised uniformly across the cutoff-scale trace transition band using its trace-content-controlled logarithmic drift and normalised signed defect, or can an endpoint-bounded trajectory defeat that weighted estimate; failing propagation, can the retained trace defect and decorated ancient system be rigidly excluded with suitability?",
+      "question": "Can classical fixed-projective-direction ancient rigidity be lifted through the vacuum cutoff limit, forcing adverse radial trace defect to vanish or to carry quantitatively nonzero angular projective content; failing that, can the retained signed radial measure and decorated ancient system be localised and rigidly excluded?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "Uniform propagation and localisation for the detector-weighted transition-band equation carries the positive terminal trace while avoiding unstable orthogonal matrix modes and unnecessary positive Kato mass; alternatively, its normalised signed trace defect and vacuum decoration are rigidly excluded, scale-local energy and pressure prove suitability, and rigidity excludes the remaining decorated ancient object.",
-      "kill_criterion": "A Clay-admissible endpoint-bounded trajectory or nonzero suitable ancient limit whose transition-band trace content defeats detector-weighted propagation and whose nonzero signed trace defect and vacuum decoration survive outside every available rigidity class.",
+      "success": "A vacuum-stable ancient-history estimate either eliminates adverse radial trace flux or converts it into projective content controlled by the existing defect ledger, so the positive terminal trace propagates; alternatively, the retained signed radial measure and vacuum decoration are localised, suitability is proved, and rigidity excludes the remaining ancient object.",
+      "kill_criterion": "A Clay-admissible endpoint-bounded trajectory or nonzero suitable ancient limit with a surviving adverse radial trace measure, no compensating projective content, and a vacuum decoration outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

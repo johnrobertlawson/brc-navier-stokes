@@ -1,6 +1,6 @@
-# Handoff: control detector-weighted transition-band flux
+# Handoff: exclude adverse radial trace flux by ancient history
 
-**Updated:** 2026-07-23T11:31:24Z
+**Updated:** 2026-07-23T11:55:04Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,58 +24,67 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-The terminal detector has already reduced from a six-component tensor to the
-positive scalar trace. With
-\(h=\operatorname{tr}H\) and
-\(\alpha_H=(S:H)/h\), the scalar potential is
-\[
-V_H=2(1-h)\alpha_H,
-\qquad
-|\alpha_H|\le|S|.
-\]
-Its duality retains only \(\rho=\operatorname{tr}\mathcal R\).
+The terminal detector has reduced to the scalar trace
+\(h=\operatorname{tr}H\). Detector weighting removes its mixed-alignment
+potential and leaves only the signed trace defect. A three-band split confines
+order-one reaction to \(\varepsilon<h<1-\varepsilon\).
 
-A three-band split now confines order-one reaction to
-\[
-\varepsilon<h<1-\varepsilon,
-\]
-equivalently \(|\omega|\asymp\eta\) at polar cutoff \(\eta\). Low trace carries
-at most \(\varepsilon\) times local detector volume. On both exterior bands the
-uncancelled forward source is bounded by \(2\varepsilon|S|\).
+The exact boundary ledger is now closed. For every increasing
+renormalisation \(g\),
 
-The exact detector-weighted variable
 \[
-\psi=h\varphi
+\mathcal Lg(h)
+=
+Vh g'(h)-\mathcal D_g,
 \]
-removes the mixed-alignment potential:
+
 \[
 \boxed{
-\partial_t\psi+
-\nabla\cdot[(u-2\nu\nabla\log h)\psi]
-+\nu\Delta\psi
+\mathcal D_g
 =
--(\rho/h)\psi.
+2\nu(1-h)
+\left\{
+g'(h)\mathcal A
++
+\left[
+(1-4h)g'(h)
++2h(1-h)g''(h)
+\right]\mathcal I_{\rm rad}
+\right\}.
 }
 \]
-On the transition band,
-\[
-\frac{|\rho_\eta|}{h_\eta}
-\le\frac{2\nu}{\varepsilon}\mathcal T_\eta,
-\qquad
-|\nabla\log h_\eta|^2
-\le\frac{4}{3\varepsilon^2}\mathcal T_\eta.
-\]
-The next target is a scale-uniform local occupation or form estimate for this
-terminal-time Fokker--Planck equation, including flux through both band
-boundaries. A negative test must be an endpoint-bounded Navier--Stokes
-trajectory that defeats this detector-weighted estimate.
 
-Positive-part Kato continuity is no longer the proposed necessary target.
-Exact spatially affine Navier--Stokes cycles keep the true scalar propagator
-uniformly bounded while their positive-envelope factor grows exponentially
-with the number of amplitude cycles. Those fields have infinite energy and
-fail the global endpoint hypotheses, so they are an estimate stress test, not
-a Clay countertrajectory.
+\(\mathcal A\) here is \(h|\nabla\xi|^2\), and
+\(\mathcal I_{\rm rad}=|\nabla|\omega||^2/(|\omega|^2+\eta^2)\).
+A lower positive-part cutoff has favourable boundary diffusion. Coarea charges
+the averaged absolute flux of every level boundary to
+\(\mathcal T_\eta\), so boundary flux is not an independent measure.
+
+No bounded nonconstant scalar detector makes the radial coefficient
+nonnegative at every amplitude. The condition is exactly convexity of
+
+\[
+r\longmapsto
+g\left(\frac{r^2}{r^2+\eta^2}\right).
+\]
+
+The equality detector is
+\(\sqrt{h/(1-h)}=|\omega|/\eta\): it recovers the vorticity-magnitude equation
+but loses uniform cutoff-scale vacuum control.
+
+Exact periodic heat shears realise adverse radial flux with uniform
+weak-\(L^{3/2}\) vorticity, vanishing velocity energy, and one fixed
+trace-content occupation on time \(K^{-2}\). Endpoint and energy bounds alone
+therefore cannot close the gate. Every uniformly endpoint-bounded classical
+ancient vorticity with one fixed projective direction is zero: it reduces to
+two-dimensional passive scalar advection--diffusion. The shear is an
+initial-layer family rather than a nonzero ancient blow-up object.
+
+The next target is to lift that ancient-history exclusion through the vacuum
+cutoff limit, or prove that any surviving adverse radial measure forces a
+quantitatively nonzero angular/projective component. If neither estimate
+closes, retain the signed radial measure in the ancient system and attack its
+rigidity directly.
 
 Localisation, trace-content occupation, compactness, suitability, and rigidity
 remain separate gates. Spatial dust, scalar entropy, terminal graph support,
@@ -94,12 +103,13 @@ regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/trace-transition-band-flux.md`;
-3. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/trace-boundary-renormalisation.md`;
+3. `dossier/experiments/trace-transition-band-flux.md`;
+4. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-4. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+5. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-5. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+6. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1093,20 +1103,42 @@ the true scalar propagator stays uniformly bounded. The fields are unbounded,
 infinite-energy, and outside the endpoint class; they refute a necessary
 estimate, not Clay regularity.
 
+Completed boundary-flux and renormalisation audit:
+
+> For any \(g(h)\), the exact renormalised defect splits into a favourable
+> angular term and the radial coefficient
+> \[
+> (1-4h)g'(h)+2h(1-h)g''(h).
+> \]
+> A lower trace cutoff has favourable boundary flux, and averaged level flux is
+> bounded by \(\tfrac43\mathcal T_\eta\). The radial coefficient is
+> nonnegative at every amplitude exactly when
+> \(g(r^2/(r^2+\eta^2))\) is convex in \(r\). No bounded nonconstant detector
+> has that property.
+
+The equality detector is \(|\omega|/\eta\), so sign-definite scalar
+renormalisation collapses back to vorticity magnitude and loses the vacuum
+signal after endpoint normalisation. Exact periodic heat shears realise the
+adverse defect with uniform endpoint vorticity and one critical occupation per
+natural heat time. Their energy vanishes, but they are a family of initial
+layers. Uniformly endpoint-bounded classical ancient fixed-direction
+vorticities are identically zero by passive-scalar smoothing.
+
 Next deliverable:
 
-> Prove or defeat a scale-uniform local occupation/form estimate for the
-> detector-weighted transition-band equation. Account explicitly for flux
-> through \(h=\varepsilon\) and \(h=1-\varepsilon\), and for the signed measure
-> coefficient \(\rho/h\). A negative example must be one endpoint-bounded
-> Navier--Stokes trajectory, not another spatially affine cycle. Then prove
-> scalar localisation. Do not replace signed logarithmic flux by positive
-> variation, return to the full matrix norm, use unstable modes orthogonal to
-> the terminal tensor as a detector obstruction, treat nonuniform affine or
-> shear amplification as a Clay counterexample, or return to instantaneous
-> Biot--Savart coercivity, adjoint positivity, an unidentified stretching
-> correlation, a single scalar entropy, full polar Fisher as if sharp, or the
-> raw \(\Delta\omega/|\omega|\) equation.
+> Lift fixed-direction ancient rigidity through the vacuum cutoff limit. Show
+> that a nonzero suitable ancient survivor either has zero radial defect,
+> carries a quantitatively nonzero angular/projective component, or produces a
+> signed radial measure that can be retained in a closed rigid system. A
+> negative example must have expanding backward history; another fresh
+> frequency-scaled heat initial layer does not qualify. Then prove scalar
+> localisation. Do not try another bounded scalar renormalisation, replace
+> signed logarithmic flux by positive variation, return to the full matrix
+> norm, use unstable modes orthogonal to the terminal tensor as a detector
+> obstruction, treat finite-window affine or shear amplification as a Clay
+> counterexample, or return to instantaneous Biot--Savart coercivity, adjoint
+> positivity, an unidentified stretching correlation, full polar Fisher as if
+> sharp, or the raw \(\Delta\omega/|\omega|\) equation.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

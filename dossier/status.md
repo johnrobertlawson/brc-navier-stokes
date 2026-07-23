@@ -251,6 +251,31 @@ and breakdown work
   like \(((1-\varepsilon)/\varepsilon)^N\). These spatially affine fields have
   infinite energy and fail the endpoint hypotheses; they are an exact estimate
   stress test, not a Clay trajectory.
+- General trace renormalisation resolves the band-boundary ledger. A lower
+  positive-part cutoff has favourable diffusive flux, and coarea gives
+  \[
+  \int_{a_0}^{a_1}
+  \delta_{\{h=s\}}|\nabla h|^2\,ds
+  \le\frac43\mathcal T_\eta.
+  \]
+  Thus averaged boundary flux is not a new measure beyond trace content.
+- The remaining radial sign cannot be removed by a bounded scalar detector.
+  For \(F_\eta(r)=g(r^2/(r^2+\eta^2))\), the renormalised radial defect is
+  nonnegative exactly when \(F_\eta\) is convex. A bounded nonconstant convex
+  detector does not exist. The equality detector is
+  \(g(h)=\sqrt{h/(1-h)}=|\omega|/\eta\), which recovers the vorticity-magnitude
+  equation but loses uniform cutoff-scale vacuum control.
+- Exact periodic heat shears realise the adverse radial defect with uniform
+  weak-\(L^{3/2}\) vorticity, velocity energy \(O(K^{-2})\), trace-content
+  density \(O(K^2)\), and lifetime \(O(K^{-2})\). Endpoint and energy bounds
+  alone therefore do not give uniform short-time trace-content occupation.
+  Every uniformly endpoint-bounded classical ancient vorticity with one fixed
+  projective direction is nevertheless zero: divergence-free Biot--Savart
+  coupling reduces it to two-dimensional passive scalar advection--diffusion,
+  and Nash/Poincare decay from the remote past applies. The obstruction is an
+  initial-layer family, not a nonzero ancient blow-up object or a Clay
+  counterexample. Lifting this rigidity through a vacuum defect measure remains
+  open.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -261,13 +286,11 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can joint Navier--Stokes dynamics uniformly propagate and localise the
-> detector-weighted scalar carrier across
-> \(\varepsilon<h<1-\varepsilon\), using its
-> \(\mathcal T_\eta\)-controlled logarithmic drift and normalised signed trace
-> defect? Can an endpoint-bounded trajectory defeat that estimate? If
-> propagation fails, can the retained trace defect and remaining decorated
-> ancient system be rigidly excluded with suitability?
+> Can fixed-projective-direction ancient rigidity be lifted through the vacuum
+> limit, forcing adverse radial trace defect either to vanish or to carry a
+> quantitatively nonzero angular/projective component? If neither follows
+> directly, can the signed radial measure be retained and the resulting
+> decorated ancient system be localised and rigidly excluded?
 
 The coequal breakdown question remains:
 
@@ -276,18 +299,16 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive a scale-uniform local occupation or form estimate for the
-   terminal-time detector-weighted equation, with reverse drift
-   \(2\nu\nabla\log h\) and signed coefficient \(\rho/h\) on
-   \(\varepsilon<h<1-\varepsilon\).
-2. Control flux through the two transition-band boundaries without replacing
-   signed logarithmic amplitude flux by its positive variation.
-3. Test whether an endpoint-bounded one-trajectory cell can concentrate the
-   transformed trace-content coefficients; spatially affine cycles, axial
-   shear, and modes orthogonal to \(H\) do not meet that target.
-4. Prove scale-uniform scalar localisation once detector-weighted occupation is
-   controlled, then decide which orientation information is still needed for
-   rigidity.
+1. Lift the classical fixed-direction ancient theorem to cutoff sequences:
+   prove or falsify an ancient-history estimate for the adverse radial part
+   \(q(3h-q)\mathcal I_{\rm rad}\) under the endpoint bound and suitability.
+2. Show that any nonvanishing ancient radial defect forces a quantitative
+   angular/projective component, or isolate an exact fixed-direction survivor
+   beyond the now-excluded heat-shear class.
+3. Formulate the closed ancient system with the signed radial trace measure
+   retained explicitly, rather than replacing it by total trace content.
+4. Prove scale-uniform localisation for that signed detector system and decide
+   which orientation information is still needed for rigidity.
 5. Determine whether bounded trace content
    \(\mathcal T_\eta\), rather than full projective-cross content, can be
    derived from the available logarithmic magnitude balance or an
