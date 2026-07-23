@@ -1,6 +1,6 @@
-# Handoff: terminal-satellite continuation frontier
+# Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T17:54:31Z
+**Updated:** 2026-07-23T18:38:52Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -153,9 +153,30 @@ costs are \(R/d\) and \((R/d)^2\). A geometric divergence-free endpoint
 tower realizes bounded energy and both weak critical endpoints while these
 outer costs vanish. This is not an NSE construction, but it closes generic
 endpoint, finite-singular-set, and coarse local-energy no-neck arguments.
-The immediate target is now a genuinely dynamical same-trajectory flux,
-ancestry, or multiscale rigidity law for the terminal satellite tower.
-Bounded-centering tensor/frequency transfer remains the parallel branch.
+The tower now has a genuinely dynamical compactification. After
+unit-viscosity normalization, the weak-\(L^3\) bound gives a uniform
+unit-ball \(L^2\) ceiling for every satellite rescaling.
+Barker--Prange Proposition A.3 supplies a fixed local-energy, dissipation,
+and pressure window. Starting half a window before \(T^*\) carries those
+bounds a fixed rescaled distance beyond \(T^*\). Suitable compactness
+therefore produces a nonzero ancient suitable local-energy solution on
+\((-\infty,\delta_*)\), with the former terminal shell as an interior mark.
+The physical Type-I core and every terminal singular point escape to
+spatial infinity in these coordinates. The immediate target is now a
+Liouville, same-trajectory flux, ancestry, or multiscale rigidity theorem
+for this detached marked profile. Bounded-centering tensor/frequency
+transfer remains the parallel branch.
+
+Published ancient-solution theory sharpens that target. If the marked point
+of the detached profile is singular, its weak-\(L^3\) control makes it
+Type I and Albritton--Barker produce a nontrivial mild bounded ancient
+Type-I profile, not necessarily the same limit. If the detached profile is
+itself mild, their strong-\(L^3\) Liouville theorem says its nonzero shell
+forces
+\(\|u_\infty(s)\|_{L^3}\to\infty\) as \(s\to-\infty\), in the
+extended-norm sense. Thus the surviving endpoint is now exact: prove
+mildness and one bounded strong-\(L^3\) backward sequence, or confront a
+genuinely nonmild/backward-escaping ancient profile.
 
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent
 two-scale genealogical diagonal remains a separate prerequisite for any
@@ -622,7 +643,8 @@ closed branches. The original regularity target remains
 
 Start with only:
 
-Immediate terminal-satellite reduction:
+Immediate detached-satellite reduction:
+`dossier/experiments/terminal-satellite-compactness.md` →
 `dossier/experiments/terminal-satellite-tower.md` →
 `dossier/experiments/singular-clock-centering.md`.
 

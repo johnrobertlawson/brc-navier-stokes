@@ -314,6 +314,64 @@
       "last_checked": "2026-07-23"
     },
     {
+      "id": "CLM-LOCAL-ENERGY-RESTART-001",
+      "plain": "A local-energy solution with uniformly bounded unit-ball L2 initial data has a quantitative uniform local-energy and pressure window.",
+      "formal": "For a unit-viscosity R3 local-energy solution whose initial datum has supremum over unit balls of the L2 norm squared at most M squared, Barker-Prange Proposition A.3 gives a time k1 min(M^-4,1), a uniform unit-ball kinetic-energy and dissipation bound K1 M squared, and a local/nonlocal pressure decomposition with quantitative spacetime bounds.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "local_energy",
+      "assumptions": [
+        "Unit viscosity after normalization",
+        "Initial data in local L2 with vanishing unit-ball L2 mass at spatial infinity",
+        "A uniform supremum of the initial unit-ball L2 norm"
+      ],
+      "conclusion": "Local kinetic energy, dissipation, and normalized pressure are uniformly controlled for a positive time depending only on the unit-ball initial bound.",
+      "scaling": "local_energy_restart",
+      "status": "established",
+      "source_ids": ["SRC-BARKER-PRANGE-2021"],
+      "depends_on": ["CLM-WEAK-001"],
+      "audit": "The proposition supplies compactness and suitability, not regularity. For rescaled finite-energy data the decay-at-infinity hypothesis holds at each index, while weak-L3 gives the uniform unit-ball L2 ceiling.",
+      "last_checked": "2026-07-23"
+    },
+    {
+      "id": "CLM-TYPE-I-ANCIENT-EQUIVALENCE-001",
+      "plain": "Existence of a suitable Type-I singular point is equivalent to existence of a nontrivial mild bounded ancient solution with finite scale-invariant Type-I quantity.",
+      "formal": "Albritton-Barker Theorem 1.1 states that there exists a suitable weak solution with a Type-I singular point if and only if there exists a nontrivial mild bounded ancient R3 solution with finite source quantity I.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "suitable_weak_or_mild_bounded_ancient",
+      "assumptions": [
+        "The source definition of a suitable weak solution and Type-I singularity",
+        "The source definition of a mild bounded ancient solution and scale-invariant quantity I"
+      ],
+      "conclusion": "The two existence statements are equivalent.",
+      "scaling": "critical",
+      "status": "established",
+      "source_ids": ["SRC-ALBRITTON-BARKER-2019"],
+      "depends_on": [],
+      "audit": "The forward implication produces an ancient profile from a Type-I singularity, but it does not assert that an independently obtained suitable compactification is itself mild or that the two profiles coincide.",
+      "last_checked": "2026-07-23"
+    },
+    {
+      "id": "CLM-ANCIENT-L3-LIOUVILLE-001",
+      "plain": "A mild ancient solution whose strong L3 norm stays bounded along one sequence of times tending to minus infinity is zero.",
+      "formal": "If u is a mild ancient R3 solution and t_k decreases to minus infinity with supremum over k of ||u(t_k)||_L3 finite, then u is identically zero.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "mild_ancient",
+      "assumptions": [
+        "Mild ancient solution on R3",
+        "A backward sequence t_k tending to minus infinity with uniformly bounded strong L3 norm"
+      ],
+      "conclusion": "The ancient solution vanishes identically.",
+      "scaling": "critical",
+      "status": "established",
+      "source_ids": ["SRC-ALBRITTON-BARKER-2019"],
+      "depends_on": [],
+      "audit": "Uniform weak L3 is not uniform strong L3, and the theorem cannot be applied to a suitable local-energy profile until mildness and one bounded strong-L3 backward sequence are proved.",
+      "last_checked": "2026-07-23"
+    },
+    {
       "id": "CLM-OPEN-001",
       "plain": "It is open whether every smooth three-dimensional unforced initial state remains smooth globally.",
       "formal": "Neither Clay alternative A nor B has an accepted proof.",

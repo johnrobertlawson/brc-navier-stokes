@@ -1476,6 +1476,48 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-TERMINAL-SATELLITE-COMPACTNESS-001",
+      "title": "Suitable compactification of one escaped terminal satellite",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-LOCAL-ENERGY-RESTART-001",
+        "CLM-TYPE-I-CORE-001",
+        "CLM-TYPE-I-SINGULAR-SET-001",
+        "CLM-TYPE-I-ANCIENT-EQUIVALENCE-001",
+        "CLM-ANCIENT-L3-LIOUVILLE-001",
+        "CLM-WEAK-001"
+      ],
+      "hypothesis": "The endpoint-persistent satellite tower remains only a boundary-level distributional defect because rescaling destroys the global finite-energy bound and suitability cannot be retained.",
+      "invariants": [
+        "The theorem is restricted to R three and one chosen global suitable finite-energy continuation that is smooth before its first singular time",
+        "Viscosity is normalized before applying the published local-energy restart",
+        "The weak-L3 velocity ceiling gives a scale-uniform unit-ball L2 ceiling for every satellite rescaling at every nonpositive rescaled time",
+        "Each rescaled datum remains globally finite energy at fixed index and therefore satisfies the source decay-at-infinity hypothesis",
+        "Barker-Prange Proposition A.3 gives a uniform local-energy, dissipation, and pressure window depending only on the weak endpoint and viscosity",
+        "Starting half a uniform window before the terminal time carries the compactness estimates through a fixed positive rescaled time",
+        "Tiling backward windows gives local-energy bounds on every fixed ancient cylinder",
+        "Local-energy compactness passes the equation and local energy inequality to a suitable local-energy limit",
+        "The fixed annular terminal strain mark passes through weak terminal traces by a Schwartz-kernel tail argument",
+        "The physical Type-I singular core and every physical terminal singular point escape every compact set in satellite coordinates",
+        "The approximating terminal satellite regions are regular, but no uniform regularity radius is asserted and the suitable limit may be singular",
+        "If the marked point of the suitable limit is singular, uniform weak L3 makes it Type I and the published equivalence produces some nontrivial mild bounded ancient profile with finite Type-I quantity; it need not be the same profile",
+        "If the detached profile is itself mild, the published strong-L3 Liouville theorem and its nonzero shell mark force its strong L3 norm to escape every finite bound as time tends to minus infinity",
+        "No mildness of the compactified profile, unconditional Liouville conclusion, bounded centering, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Normalize viscosity, rescale the chosen global suitable continuation about each escaped terminal packet at the terminal time, convert the global weak-L3 bound to a uniform local-L2 datum bound, apply the published local-energy restart on tiled negative windows and one window crossing the terminal time, use standard suitable-solution compactness, pass the fixed shell mark by local weak L2 convergence plus Lorentz-Schwartz tails, track the singular core to spatial infinity, and apply the published Type-I and strong-L3 ancient-solution theorems to separate the singular, mild, and nonmild survivor branches.",
+      "certificate": "A written source-scoped suitable-compactification theorem plus exact Fraction tests for viscosity-time normalization, weak-L3 to local-L2 radius power, the published M^-4 restart window, positive normalized forward horizon, shell-mark normalization, and centering escape.",
+      "success_criterion": "Centering escape is compactified as a nonzero ancient suitable local-energy solution on a fixed positive forward horizon with the former terminal shell as an interior mark and the original Type-I singular core at spatial infinity; published ancient-solution results identify the exact remaining fork between a Type-I singular branch, a nonmild branch, and backward strong-L3 escape.",
+      "failure_interpretation": "The weak endpoint does not give the required local datum bound, the local-energy restart cannot be applied uniformly across the terminal time, suitable compactness fails, the shell mark vanishes in the terminal trace, or the singular core does not escape in satellite coordinates.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/terminal-satellite-compactness.md",
+        "lab/navier_lab/terminal_satellite_compactness.py",
+        "lab/tests/test_terminal_satellite_compactness.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

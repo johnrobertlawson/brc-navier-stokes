@@ -680,6 +680,26 @@ and breakdown work
   reproduce exact compact annular Fourier support. It closes endpoint,
   finite-singular-set, and coarse local-energy counting as generic no-neck
   mechanisms.
+- The escaped tower now compactifies to a suitable, not merely
+  distributional, object. In unit-viscosity satellite variables, weak
+  \(L^3\) gives a uniform unit-ball \(L^2\) datum bound.
+  Barker--Prange Proposition A.3 supplies a fixed local-energy,
+  dissipation, and pressure window. Starting that window before \(T^*\)
+  crosses the former terminal boundary, so a subsequence converges strongly
+  in local \(L^3\) to a nonzero ancient suitable local-energy solution on
+  \((-\infty,\delta_*)\). The terminal shell is an interior fixed-frequency
+  mark. The logarithmically divergent Type-I core and every physical
+  terminal singular point escape to spatial infinity. The limit may be
+  regular or singular at the marked time; no uniform approximating
+  regularity radius is yet available.
+- Published ancient-solution theory makes the remaining fork exact. If the
+  marked point is singular, weak-\(L^3\) suitability makes it Type I and
+  Albritton--Barker Theorem 1.1 produces a nontrivial mild bounded ancient
+  Type-I profile, not necessarily the same compactification. If the
+  detached profile is itself mild, Theorem 1.2 and its nonzero shell imply
+  \(\|u_\infty(s)\|_{L^3}\to\infty\) as \(s\to-\infty\), in the
+  extended-norm sense. Uniform weak \(L^3\) does not exclude that strong
+  endpoint escape.
 - The surviving algebra is now explicitly conditional. For a coherent
   two-edge cell,
   \[
@@ -739,10 +759,18 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > shows that failure produces both a logarithmically divergent parent-radius
 > core and an endpoint-persistent frequency-separated satellite tower in
 > the punctured regular set. Weak endpoints, finite energy, terminal
-> singular-set finiteness, and coarse CKN costs permit that tower. The next
-> gate is a genuinely dynamical same-trajectory flux, ancestry, or
-> multiscale rigidity law; bounded-centering tensor transfer remains the
-> parallel branch.
+> singular-set finiteness, and coarse CKN costs permit that tower. The
+> [suitable compactification theorem](experiments/terminal-satellite-compactness.md)
+> uses the published local-energy restart to turn one escaped satellite
+> into a nonzero ancient suitable local-energy profile with a positive
+> forward horizon and an interior shell mark, while the singular core runs
+> to spatial infinity. Published ancient-solution rigidity now says that
+> mildness plus one bounded strong-\(L^3\) backward sequence would kill the
+> profile; absent that upgrade, the survivor is genuinely nonmild or loses
+> every strong-\(L^3\) bound backwards. The next gate is this precise
+> Liouville upgrade, or a same-trajectory flux, ancestry,
+> terminal-regularity, or multiscale rigidity law for the detached profile;
+> bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
 > genealogy is still required only for the two-edge stationary-process
@@ -755,11 +783,14 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Exclude or compactify the endpoint-persistent terminal satellite tower
-   forced by centering escape. The required input must be a same-trajectory
-   frequency-flux, ancestry, or multiscale rigidity law; endpoint, energy,
-   finite-singular-set, and coarse CKN ledgers are now known to permit the
-   tower.
+1. Exclude the detached nonzero ancient suitable local-energy profile forced
+   by centering escape. It has bounded weak critical endpoints for
+   nonpositive time, a fixed positive forward horizon, and an interior
+   fixed-shell mark, while its physical Type-I core is lost at spatial
+   infinity. First test the exact published Liouville gate: prove mildness
+   and one bounded strong-\(L^3\) backward sequence. Otherwise the required
+   input is a same-trajectory frequency-flux, ancestry,
+   terminal-regularity compactness, or multiscale rigidity law.
 2. In parallel, prove or refute the exact no-neck estimate
    \[
    \sup_j\frac{|x_j-x_*|}{R_j}<\infty.

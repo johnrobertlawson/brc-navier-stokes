@@ -835,3 +835,10 @@ Run the exact terminal-margin, Type-I logarithm, critical packet cost,
 geometric tower, weak-tail, and radial-separation ledgers with:
 
     make terminal-satellite-tower
+
+The subsequent
+[suitable compactification theorem](terminal-satellite-compactness.md)
+uses the published local-energy restart to rescale one escaped satellite
+through the terminal time. It produces a nonzero ancient suitable
+local-energy profile with a fixed positive forward horizon and the shell as
+an interior mark, while the Type-I core escapes to spatial infinity.

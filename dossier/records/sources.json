@@ -351,7 +351,20 @@
       "primary": true,
       "status": "peer_reviewed",
       "last_checked": "2026-07-23",
-      "notes": "Published Theorem A, equations (9)-(10), gives a logarithmic lower bound for the strong local L3 mass at every radius between the Type-I parabolic scale and a fixed upper radius. Corollary 4.3 gives a finite quantitative bound for the number of terminal singular points under the global weak-L3 Type-I bound."
+      "notes": "Published Theorem A, equations (9)-(10), gives a logarithmic lower bound for the strong local L3 mass at every radius between the Type-I parabolic scale and a fixed upper radius. Corollary 4.3 gives a finite quantitative bound for the number of terminal singular points under the global weak-L3 Type-I bound. Proposition A.3 gives a quantitative local-energy and pressure window from a uniform unit-ball L2 initial bound."
+    },
+    {
+      "id": "SRC-ALBRITTON-BARKER-2019",
+      "title": "On Local Type I Singularities of the Navier-Stokes Equations and Liouville Theorems",
+      "authors": ["Dallas Albritton", "Tobias Barker"],
+      "year": 2019,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1007/s00021-019-0448-z",
+      "version": "J. Math. Fluid Mech. 21, article 43; matching arXiv:1811.00502v2",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-23",
+      "notes": "Published Theorem 1.1 characterizes existence of a suitable Type-I singular point by existence of a nontrivial mild bounded ancient solution with finite scale-invariant Type-I quantity. Theorem 1.2 proves that a mild ancient solution with uniformly bounded strong L3 norm along one sequence of times tending to minus infinity is identically zero. Lemma 2.5 converts weak Serrin control, including uniform weak L3, into the source Type-I bounds for suitable solutions."
     },
     {
       "id": "SRC-GRUJIC-2026",
