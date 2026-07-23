@@ -110,6 +110,7 @@ From the repository root:
     make fixed-shell-clock
     make continuation-clock
     make fixed-shell-local
+    make singular-clock-centering
     make strain
     make fetch-2607
     make compile-2607

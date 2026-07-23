@@ -174,6 +174,14 @@ first-singular-time \(L^\infty\) clock is driven by a finer concentration
 escaping from it in parent coordinates. Weak endpoint norms and physical
 energy do not add the costs of those two centres.
 
+The downstream
+[singular clock-centering theorem](singular-clock-centering.md)
+sharpens this statement in the finite-energy Leray--Hopf class. Published
+Type-I concentration places a strong critical packet at the actual
+terminal singular point at every carrier time. Bounded carrier-to-singular
+centering proves the local restart inequality; the only remaining failure
+is centering escape in parent coordinates.
+
 This is a genuine spatial sharpening, not a regularity theorem and not any
 Clay alternative A--D.
 
@@ -782,14 +790,12 @@ It does not close:
    \(r_j=\lambda_jR_j\);
 2. transfer of alignment, orientation, or the squared detector to the
    continuation profile;
-3. exclusion of two spatially separated singular profiles at one terminal
-   time;
-4. a finite-index or local-energy cost for the two-centre branch;
+3. bounded centering of the carrier relative to its terminal singular point;
+4. a no-neck or local-energy cost for the centering-escape branch;
 5. suitability and rigidity of the marked limiting profiles; or
 6. regularity, blow-up, or any Clay alternative A--D.
 
-The independent review identifies a sharper first target: prove or refute a
-local restart estimate
+The independent review identified the local restart estimate
 
 \[
 (T^*-t_j)
@@ -800,9 +806,15 @@ v(t_j)
 \tag{59}
 \]
 
-for fixed \(L,c>0\), with pressure and far-field errors controlled. Such an
-estimate would exclude a clock paid only by the remote profile. It is an
-open proof obligation, not a consequence of the local atom.
+for fixed \(L,c>0\), with pressure and far-field errors controlled. The
+downstream singular clock-centering theorem proves (59) whenever
+\(|x_j-x_*|/R_j\) is bounded. If that ratio diverges, a published
+pressure-aware theorem puts the clock packet outside every fixed parent
+dilation. The open obligation is therefore the exact no-neck estimate
+\[
+\sup_j\frac{|x_j-x_*|}{R_j}<\infty,
+\]
+not an unspecified local pressure bound.
 
 After that gate, the remaining alternatives are:
 
@@ -810,8 +822,8 @@ After that gate, the remaining alternatives are:
 \boxed{
 \begin{gathered}
 \text{a parent-local but tensor-unmarked continuation concentration,}\\
-\text{or two spatially split terminal profiles sharing only the global
-clock.}
+\text{or a marked carrier approaching its singular point through a}\\
+\text{diverging parent-coordinate neck.}
 \end{gathered}
 }
 \tag{60}

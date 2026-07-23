@@ -328,6 +328,19 @@
       "notes": "Harmonic-measure majorisation principle used on the slit domain in O2607-15."
     },
     {
+      "id": "SRC-BARKER-PRANGE-2020",
+      "title": "Localized Smoothing for the Navier-Stokes Equations and Concentration of Critical Norms Near Singularities",
+      "authors": ["Tobias Barker", "Christophe Prange"],
+      "year": 2020,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1007/s00205-020-01495-6",
+      "version": "Arch. Ration. Mech. Anal. 236(3), 1487-1541",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-23",
+      "notes": "Published Theorem 2 and equations (14)-(15), matching arXiv:1812.09115v2 pp. 4-5, give every-late-time critical L3 concentration in a parabolic ball centred at each singular point of a first Leray-Hopf blow-up under a scale-critical Morrey Type-I bound."
+    },
+    {
       "id": "SRC-GRUJIC-2026",
       "title": "Logarithmic Depletion of Vortex Stretching and Singularity Evasion in the 3D Navier-Stokes Equations",
       "authors": ["Zoran Grujic"],

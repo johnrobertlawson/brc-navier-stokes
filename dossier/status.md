@@ -643,7 +643,12 @@ and breakdown work
   energy summation. Independent adversarial review found no fatal analytic
   flaw after restricting the result to \(\mathbb R^3\), using one velocity
   frame, shrinking the safe restart constant, and interpreting all
-  \(L^\infty\) norms as essential suprema.
+  \(L^\infty\) norms as essential suprema. The later Barker--Prange
+  reduction anchors a strong Type-I packet at the actual singular point at
+  every carrier time. It proves the local restart bound when
+  \(|x_j-x_*|/R_j\) is bounded and replaces the unspecified second profile
+  by the exact centering-escape branch
+  \(|x_j-x_*|/R_j\to\infty\).
 - The surviving algebra is now explicitly conditional. For a coherent
   two-edge cell,
   \[
@@ -691,10 +696,15 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > neighbourhood. A zero-clock continuation concentration is either
 > parent-local or escapes to a second spatial profile.
 > [Independent review](review-response-local-continuation-2026-07-23.md)
-> retained this theorem after scope and frame repairs. The immediate
-> question is whether a pressure-aware local restart inequality forces the
-> first-singular-time clock to be paid in the marked parent neighbourhood.
-> Tensor/frequency transfer or split-profile exclusion follows that gate.
+> retained this theorem after scope and frame repairs. The
+> [singular clock-centering theorem](experiments/singular-clock-centering.md)
+> now imports peer-reviewed Barker--Prange concentration. The inherited
+> weak-\(L^3\) endpoint supplies its Type-I Morrey hypothesis, so the actual
+> terminal singular point carries a Type-I packet at every carrier time.
+> Bounded carrier centering proves the reviewed local restart inequality;
+> the only remaining spatial loss is centering escape
+> \(|x_j-x_*|/R_j\to\infty\). A no-neck estimate and then tensor/frequency
+> transfer follow that gate.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
 > genealogy is still required only for the two-edge stationary-process
@@ -707,22 +717,21 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Prove or refute a pressure- and far-field-controlled local restart
-   inequality
+1. Prove or refute the exact no-neck estimate
    \[
-   (T^*-t_j)
-   \|v(t_j)\|_{L^\infty(B_{LR_j}(x_j))}^2
-   \ge c
+   \sup_j\frac{|x_j-x_*|}{R_j}<\infty.
    \]
-   for fixed \(L,c>0\). This is not supplied by the local atom.
-2. In the parent-local terminal-layer branch, compare the finer
-   inverse-amplitude scale with the subnatural tensor radius
+   The fixed-centre upper envelope controls the coarser critical core but
+   does not yet compare the selected natural carrier's offset with its
+   smaller parent radius.
+2. In the bounded-centering branch, compare the Barker--Prange packet,
+   inverse-amplitude scale, and subnatural tensor radius
    \(r_j=\lambda_jR_j\), and transfer or separate the cutoff-tensor
-   oscillation and fixed-shell detector at that new scale.
-3. In the spatially split branch, test profile decoupling, local
-   continuation across \(T^*\), finite-index Lorentz cost, or singular-set
-   constraints. Weak endpoint and energy norms alone do not add the two
-   critical centres.
+   oscillation and fixed-shell detector.
+3. In the centering-escape branch, test no-neck compactness, local
+   continuation across \(T^*\), finite-singular-point machinery, or a
+   scale-indexed Lorentz cost. The carrier and terminal packet are disjoint
+   in every fixed parent dilation but converge to the same physical point.
 4. Upgrade the fixed-top-shell marked parent candidates to the exact
    suitable or mild class needed for rigidity, then exclude the
    finite-forward-horizon and eternal regimes separately.

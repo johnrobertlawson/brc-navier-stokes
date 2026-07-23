@@ -1376,7 +1376,7 @@
         "The parent-local branch retains a nonzero inverse-amplitude clock but proves no local mild lifespan or Fourier scale, does not place the point inside the subnatural tensor carrier, and does not transfer its detector",
         "The spatially split branch leaves two terminal profiles whose critical endpoint and energy costs do not add under current bounds",
         "Independent adversarial review found no fatal analytic flaw after the R three scope, common-frame, safe-lifespan, essential-supremum, and inverse-amplitude wording repairs",
-        "A pressure- and far-field-controlled local restart inequality at the marked carrier is the next proposed obligation, not an established consequence",
+        "The subsequent singular clock-centering theorem proves the reviewed local restart inequality under bounded carrier-to-singular-point centering and reduces every remaining failure to centering escape",
         "No carrier-to-continuation tensor bridge, split-profile exclusion, suitability theorem, rigidity theorem, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
       ],
       "method": "On R three and in one normalized velocity frame, split the fixed-shell Schwartz convolutions into near and far parts, use critical Lorentz Holder estimates to absorb the far tails, infer local weak strain and velocity atoms, localize the separated block occupation with one fixed cutoff around a carrier cluster point, and diagonalize the ratio of carrier-neighborhood to global essential velocity suprema.",
@@ -1390,6 +1390,44 @@
         "dossier/review-response-local-continuation-2026-07-23.md",
         "lab/navier_lab/fixed_shell_localization.py",
         "lab/tests/test_fixed_shell_localization.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-SINGULAR-CLOCK-CENTERING-001",
+      "title": "Singular-point clock concentration and carrier centering",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-LOCAL-CONCENTRATION-001",
+        "CLM-GEOM-001",
+        "CLM-GRUJIC-001"
+      ],
+      "hypothesis": "The inherited weak-L three endpoint and a clustered zero-clock carrier still leave an uncontrolled pressure or far-field loss before the terminal singularity can pay a clock in a fixed parent neighbourhood.",
+      "invariants": [
+        "The theorem is restricted to R three finite-energy Leray-Hopf solutions smooth before a first singular time",
+        "The terminal weak-L three velocity bound implies the scale-critical local L two Morrey Type-I bound by finite-measure Lorentz embedding",
+        "The viscosity-normalized Type-I constant is proportional to the weak velocity endpoint divided by viscosity",
+        "Every carrier cluster point is a terminal singular point by the preceding local weak-L three atom",
+        "Barker-Prange Theorem 2 is peer-reviewed and supplies fixed strong L three mass around that singular point at every sufficiently late time, not merely on a limsup sequence",
+        "The published packet can therefore be evaluated at the prescribed carrier times",
+        "After restoring viscosity, the singular packet radius is proportional to the square root of viscosity times the terminal gap",
+        "Strong L three concentration gives a positive terminal gap times local essential velocity supremum squared",
+        "In the zero parent-clock branch the singular packet radius divided by the parent radius tends to zero",
+        "If the carrier-to-singular-point distance is bounded in parent units, one fixed parent dilation contains the packet and satisfies the reviewed local restart inequality",
+        "If the centering defect diverges, the singular-point packet and carrier atom are disjoint in every fixed parent dilation at the same prescribed time",
+        "The escape branch approaches one terminal singular point physically while remaining infinitely many parent radii away and is not a proved second singular point",
+        "No no-neck estimate, tensor transfer, finite-horizon rigidity, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Convert the inherited weak-L three endpoint to Barker-Prange's scale-critical Morrey Type-I hypothesis, apply their every-late-time singular-point concentration theorem at each carrier time, restore viscosity, convert strong L three mass to a local velocity-clock floor, and compare the parabolic packet radius and carrier offset with the marked parent radius.",
+      "certificate": "A written source-scoped centering theorem plus exact Fraction tests for viscosity normalization, weak-L three to Morrey scaling, singular-packet radius, local velocity-clock floor, bounded-centering containment, and centering-escape separation.",
+      "success_criterion": "The reviewed local restart inequality is proved in the bounded-centering branch and every remaining failure is reduced to an exact carrier-to-terminal-singularity centering escape rather than an unspecified pressure or far-field maximum.",
+      "failure_interpretation": "The weak endpoint does not imply the source's Type-I Morrey hypothesis, the published theorem is not valid at every sufficiently late carrier time, viscosity changes the stated packet or clock powers, or bounded centering does not contain the singular packet in one fixed parent dilation.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/singular-clock-centering.md",
+        "lab/navier_lab/singular_clock_centering.py",
+        "lab/tests/test_singular_clock_centering.py"
       ],
       "last_run": "2026-07-23"
     },

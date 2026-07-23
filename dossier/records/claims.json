@@ -255,6 +255,26 @@
       "last_checked": "2026-07-23"
     },
     {
+      "id": "CLM-LOCAL-CONCENTRATION-001",
+      "plain": "Under a scale-critical Morrey Type-I bound, every terminal singular point carries fixed critical L3 mass in a parabolic ball at every sufficiently late time.",
+      "formal": "For a finite-energy Leray-Hopf solution on R3 whose first blow-up time is T-star, if the scale-critical local L2 Morrey quantity is uniformly bounded and (x-star,T-star) is singular, then fixed gamma>0 and K<infinity give ||u(t)||_L3(B_{K sqrt(T-star-t)}(x-star))>gamma for every sufficiently late t<T-star.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "finite_energy_Leray_Hopf",
+      "assumptions": [
+        "First blow-up time",
+        "A terminal singular point",
+        "The source's scale-critical Morrey Type-I bound"
+      ],
+      "conclusion": "Critical L3 concentration is centred at the singular point at every sufficiently late time.",
+      "scaling": "critical",
+      "status": "established",
+      "source_ids": ["SRC-BARKER-PRANGE-2020"],
+      "depends_on": ["CLM-WEAK-001"],
+      "audit": "The theorem is every-late-time rather than merely limsup, but it requires the Type-I Morrey bound and does not place an independently selected carrier near the singular centre.",
+      "last_checked": "2026-07-23"
+    },
+    {
       "id": "CLM-OPEN-001",
       "plain": "It is open whether every smooth three-dimensional unforced initial state remains smooth globally.",
       "formal": "Neither Clay alternative A nor B has an accepted proof.",

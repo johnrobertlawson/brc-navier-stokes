@@ -641,6 +641,13 @@ weak-critical strain and velocity atoms, and carrier clusters force local
 strong \(L^{5/2}\) strain divergence. It also resolves the continuation
 concentration into parent-local and spatially split branches. Tensor
 transfer inside the first branch and exclusion of the second remain open.
+The later
+[singular clock-centering theorem](singular-clock-centering.md)
+uses the inherited weak-\(L^3\) endpoint and Barker--Prange concentration to
+place a Type-I packet at the actual terminal singular point at every
+carrier time. Bounded carrier centering proves the local restart bound;
+the remaining spatial branch is the precise no-neck condition
+\(|x_j-x_*|/R_j\to\infty\).
 
 Run the exact clock-product, high-pass floor, continuation-scale, and global
 scaling ledgers with:

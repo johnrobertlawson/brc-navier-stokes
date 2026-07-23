@@ -82,6 +82,21 @@ This is now a proposed proof obligation, not an established theorem. It
 may fail precisely because pressure and advection are nonlocal; a valid
 counterexample or no-go ledger would also close the obligation.
 
+### Subsequent reduction
+
+The later
+[singular clock-centering theorem](experiments/singular-clock-centering.md)
+uses the inherited weak-\(L^3\) endpoint to meet the Type-I Morrey
+hypothesis of the peer-reviewed Barker--Prange concentration theorem. It
+proves the displayed local restart inequality whenever the carrier-to-
+terminal-singularity distance is \(O(R_j)\). The only remaining failure is
+the exact no-neck branch
+\[
+\frac{|x_j-x_*|}{R_j}\longrightarrow\infty.
+\]
+This does not retroactively change the review verdict; it records the next
+obligation closed up to its sharp geometric alternative.
+
 ### Disposition verification
 
 The reviewer checked the incorporated corrections. The only remaining

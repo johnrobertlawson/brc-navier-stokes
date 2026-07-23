@@ -1,6 +1,6 @@
 # Handoff: local-restart continuation frontier
 
-**Updated:** 2026-07-23T17:10:28Z
+**Updated:** 2026-07-23T17:33:40Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -66,7 +66,7 @@ Therefore a terminal-layer parent clock
 \(\Theta_j\to0\) forces
 \(R_j\|v(t_j)\|_\infty\to\infty\). The endpoint vorticity bound keeps every
 fixed parent-normalised velocity low pass bounded, so this divergence lies
-above every fixed multiple of the parent frequency. At the inverse-velocity
+above every fixed multiple of the parent frequency. At the
 inverse-amplitude radius \(d_j=\|v(t_j)\|_\infty^{-1}\),
 \(d_j/R_j\to0\) while
 \((T^*-t_j)/d_j^2\ge c_\nu\). The zero parent clock has descended to a
@@ -100,22 +100,38 @@ branches. Either a fixed parent neighbourhood carries a positive fraction
 of the global continuation amplitude, producing a local finer
 inverse-amplitude scale with a nonzero normalised clock, or approximate
 essential-supremum maximisers escape to infinity in parent coordinates.
-The first branch still lacks a local mild-lifespan theorem, frequency
-localisation, and transfer into the subnatural tensor carrier; the second
-is a two-centre terminal profile whose weak endpoint and energy costs do
-not add.
+This local-versus-global ratio is now superseded by a singular-point
+version in the finite-energy Leray--Hopf class.
 
 Independent adversarial review found no fatal analytic flaw after
 restricting the kernel theorem to \(\mathbb R^3\), using the same normalised
 velocity in the restart and localisation arguments, shrinking the safe
 lifespan constant, and making the essential-supremum convention explicit.
-The immediate target is now to prove or refute a pressure- and
-far-field-controlled local restart inequality at the marked parent event.
-Tensor/frequency transfer inside the parent-local branch or exclusion of
-spatially split terminal profiles follows that gate.
+
+The inherited weak-\(L^3\) velocity endpoint implies the scale-critical
+Morrey Type-I hypothesis in the peer-reviewed Barker--Prange concentration
+theorem. Every clustered carrier limit \(x_*\) is singular, so at every
+sufficiently late carrier time \(t_j\) there is fixed strong \(L^3\) mass
+inside
+\[
+B_{K(A_u/\nu)\sqrt{\nu(T^*-t_j)}}(x_*).
+\]
+This packet pays a positive local \(L^\infty\) clock. In the zero-parent-clock
+branch its radius is \(o(R_j)\). Hence, with
+\[
+\Gamma_j=\frac{|x_j-x_*|}{R_j},
+\]
+bounded \(\Gamma_j\) proves the reviewed local restart inequality in one
+fixed parent dilation. The only remaining failure is
+\(\Gamma_j\to\infty\): the carrier approaches its terminal singular point
+physically while remaining infinitely many parent radii away. Pressure and
+an unspecified far-field maximum are no longer the first obstruction. The
+immediate target is a no-neck estimate excluding this centering escape,
+followed by tensor/frequency transfer into the singular-point packet.
+
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent
 two-scale genealogical diagonal remains a separate prerequisite for any
-two-edge no-neck or stationary-process route.
+two-edge stationary-process route.
 
 The arXiv:2607.08866v2 proof chain has been independently reconstructed. It survives
 only as a repaired conditional theorem for a projected-mild solution with:
@@ -577,6 +593,9 @@ closed branches. The original regularity target remains
 \]
 
 Start with only:
+
+Immediate no-neck reduction:
+`dossier/experiments/singular-clock-centering.md`.
 
 Latest adversarial disposition:
 `dossier/review-response-local-continuation-2026-07-23.md`.
