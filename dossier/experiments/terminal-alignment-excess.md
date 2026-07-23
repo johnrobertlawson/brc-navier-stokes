@@ -494,6 +494,232 @@ negative iterated scalar excess both disappear under the alignment detector.
 This proves that \(\mathfrak A_0\) is not another name for generic vacuum
 trace mass.
 
+## 7. Exact polar split of the alignment-weighted remainder
+
+The remaining contraction in (29) is not an independent opaque tensor
+quantity. Fix a symmetric detector \(D\). At a point where
+\(\omega=r\xi\ne0\), decompose one spatial derivative as
+
+\[
+b=\partial_k\omega=p\xi+v,
+\qquad
+v\perp\xi.
+\tag{37}
+\]
+
+Put
+
+\[
+d_D=\xi\cdot D\xi,
+\qquad
+c_D=v\cdot D\xi,
+\qquad
+e_D=v\cdot Dv,
+\qquad
+d_\eta=r^2+\eta^2.
+\tag{38}
+\]
+
+Contracting the exact tensor Hessian with \(D\) gives
+
+\[
+\begin{aligned}
+D:D^2\mathcal H_\eta(\omega)[b,b]
+={}&
+\frac{2d_D\eta^2(\eta^2-3r^2)}{d_\eta^3}p^2\\
+&+
+\frac{4(\eta^2-r^2)}{d_\eta^2}pc_D\\
+&+
+\frac{2e_D}{d_\eta}
+-
+\frac{2r^2d_D}{d_\eta^2}|v|^2.
+\end{aligned}
+\tag{39}
+\]
+
+The scalar trace Hessian is
+
+\[
+D^2h_\eta(\omega)[b,b]
+=
+\frac{2\eta^2(\eta^2-3r^2)}{d_\eta^3}p^2
++
+\frac{2\eta^2}{d_\eta^2}|v|^2.
+\tag{40}
+\]
+
+Subtracting \(d_D\) times (40) from (39) cancels the entire pure radial
+piece:
+
+\[
+\boxed{
+\begin{aligned}
+D:D^2\mathcal H_\eta[b,b]
+-d_DD^2h_\eta[b,b]
+={}&
+\frac{4(\eta^2-r^2)}{d_\eta^2}pc_D\\
+&+
+\frac{2}{d_\eta}
+\left(e_D-d_D|v|^2\right).
+\end{aligned}
+}
+\tag{41}
+\]
+
+After summing over spatial derivatives, define
+
+\[
+\boxed{
+D:\mathcal R_\eta
+=
+d_D\rho_\eta+\Theta_{\eta,D}.
+}
+\tag{42}
+\]
+
+Thus the detector remainder is exactly a direction-weighted scalar trace
+remainder plus a purely anisotropic radial--projective correction.
+
+This correction has the sharp structural bound needed by the existing
+compactness ledger. Let
+
+\[
+\operatorname{osc}(D)
+=
+\lambda_{\max}(D)-\lambda_{\min}(D).
+\tag{43}
+\]
+
+Because \(v\perp\xi\), subtracting the spectral midpoint times the identity
+gives
+
+\[
+|c_D|
+\le
+\frac12\operatorname{osc}(D)|v|,
+\qquad
+|e_D-d_D|v|^2|
+\le
+\operatorname{osc}(D)|v|^2.
+\tag{44}
+\]
+
+Using \(|\eta^2-r^2|\le d_\eta\), summing (41), and applying
+Cauchy--Schwarz exactly as in the projective-cross theorem yields
+
+\[
+\boxed{
+|\Theta_{\eta,D}|
+\le
+2\nu\operatorname{osc}(D)
+\left[
+\sum_k\frac{|p_k||v_k|}{d_\eta}
++
+\sum_k\frac{|v_k|^2}{d_\eta}
+\right]
+\le
+2\nu\operatorname{osc}(D)\mathcal K_\eta.
+}
+\tag{45}
+\]
+
+The formula extends almost everywhere through \(\omega=0\): for a smooth
+vector field, \(\nabla\omega=0\) almost everywhere on its zero set, while the
+coordinate-free Hessian identity remains smooth.
+
+For the squared detector \(D_n=F_n(0)^2\),
+
+\[
+\operatorname{osc}(D_n)
+\le
+\|F_n(0)\|_{\mathrm{op}}^2
+\le B^2.
+\tag{46}
+\]
+
+The sharp scalar trace domination gives
+
+\[
+|\rho_{\eta_n}|
+\le
+6\nu\mathcal J_{\eta_n}
+\le
+6\nu\mathcal K_{\eta_n}.
+\tag{47}
+\]
+
+Equations (42), (45)--(47) imply the direct tight-branch envelope
+
+\[
+\boxed{
+|D_n:\mathcal R_{\eta_n}|
+\le
+8\nu B^2\mathcal K_{\eta_n}.
+}
+\tag{48}
+\]
+
+Combining (29), (42), and (45) gives the refined signed terminal ledger
+
+\[
+\boxed{
+\begin{aligned}
+\langle\mathfrak A_0,\chi\rangle
+={}&
+-
+\lim_{\delta\downarrow0}\lim_n
+\int_{-\delta}^{0}w_\delta
+\int\chi d_{D_n}\rho_n\\
+&-
+\lim_{\delta\downarrow0}\lim_n
+\int_{-\delta}^{0}w_\delta
+\int\chi\Theta_{\eta_n,D_n}.
+\end{aligned}
+}
+\tag{49}
+\]
+
+The second line is quantitatively paid by projective-cross content. If
+\(\mathcal K_{\eta_n}\) has no terminal concentration, it vanishes. If
+\(D\) is isotropic, it vanishes pointwise. Conversely, for pure radial
+variation \(v=0\), (41) vanishes and
+
+\[
+D:\mathcal R_\eta=d_D\rho_\eta.
+\tag{50}
+\]
+
+The radial curvature in (40) still changes sign at
+\(r=\eta/\sqrt3\). Hence the squared detector does not create a hidden
+positive diffusion law.
+
+This split removes one possible redundancy:
+
+> Beyond the scalar signed remainder, the only tensorial contribution to the
+> alignment excess is anisotropy interacting with projective-cross content.
+
+What remains genuinely unresolved is the direction-weighted signed trace
+concentration in the first line of (49). Controlling unweighted
+\(\mathfrak E_0\) alone does not control that correlation unless orientation
+is compact; bounded projective-cross content supplies exactly the missing
+compactness branch.
+
+In particular, if
+\(\mathcal K_{\eta_n}\,dx\,dt\rightharpoonup^*\mu_{\mathcal K}\), then (48)
+shows that a nonzero \(\mathfrak A_0\) forces
+
+\[
+\boxed{
+\mu_{\mathcal K}(\{t=0\})>0.
+}
+\tag{51}
+\]
+
+Hence \(\mathfrak A_0\) is not an additional measure in the tight
+projective-cross branch. Its genuinely new role is confined to the non-tight
+branch, where (14) remains a bounded signed density even though
+\(\mathcal K_{\eta_n}\) has no finite measure limit.
+
 ## Exact consequence for ROUTE-R3B
 
 The terminal finite-band witness now has an exact compact dichotomy:
@@ -505,9 +731,12 @@ The terminal finite-band witness now has an exact compact dichotomy:
 
 The immediate target is to use the pullback identities (33)--(34),
 suitability, and the fact that all scales come from one physical trajectory
-to exclude \(\mathfrak A_0\ne0\). If it cannot be excluded, the ancient
-system must retain \(\mathfrak A_0\) together with the scalar trace excess and
-any projective-cross defect needed for tensor evolution.
+to exclude the direction-weighted trace concentration in (49). The
+anisotropic correction is already dominated by the projective-cross defect
+and is not a fourth independent decoration. If the weighted trace
+concentration cannot be excluded, the ancient system must retain it together
+with the scalar trace excess and any projective-cross atom needed for tensor
+evolution.
 
 This is an exact analytic reduction. It does not prove
 \(\mathfrak A_0=0\), suitability, ancient rigidity, regularity, blow-up, or a

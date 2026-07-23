@@ -1,6 +1,6 @@
 # Handoff: exploit same-trajectory alignment against terminal trace excess
 
-**Updated:** 2026-07-23T13:11:02Z
+**Updated:** 2026-07-23T13:22:06Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -195,6 +195,38 @@ P_{\le M}\widehat S_n
 The live gate is to use these pullbacks and suitability to force
 \(\mathfrak A_0=0\), or to retain the alignment-weighted signed density in
 the suitable ancient rigidity system.
+
+The remaining tensor contraction has now split exactly. For every symmetric
+detector \(D\),
+
+\[
+D:\mathcal R_\eta
+=
+(\xi\cdot D\xi)\rho_\eta+\Theta_{\eta,D},
+\qquad
+|\Theta_{\eta,D}|
+\le
+2\nu\operatorname{osc}(D)\mathcal K_\eta.
+\]
+
+Thus the anisotropic part of the alignment excess is already paid by the
+projective-cross defect; it is not an independent decoration. The correction
+vanishes for isotropic \(D\) and for pure radial variation. The latter still
+retains the signed radial curvature change, so the squared detector does not
+create coercivity. The precise live gate is the direction-weighted signed
+trace concentration
+\((\xi_n\cdot D_n\xi_n)\rho_n\) under the exact one-trajectory pullbacks.
+Moreover,
+
+\[
+|D_n:\mathcal R_{\eta_n}|
+\le
+8\nu\|F_n(0)\|_{\mathrm{op}}^2\mathcal K_{\eta_n}.
+\]
+
+Thus nonzero \(\mathfrak A_0\) forces a terminal projective-cross atom whenever
+\(\mathcal K_{\eta_n}\) is tight. The signed alignment excess is genuinely
+new only in the non-tight branch.
 
 The boundary and scalar-renormalisation audits remain useful scope controls:
 averaged band flux is paid by \(\mathcal J_\eta\), no bounded detector can
@@ -1357,16 +1389,36 @@ Completed terminal alignment-excess reduction:
 > identifies \(H_n\) with pullbacks of the single physical tensor
 > \(H_1[\omega]\). The axial heat-shear counterfamily pairs identically to
 > zero with \(D_n\).
+>
+> Moreover,
+> \[
+> D_n:\mathcal R_{\eta_n}
+> =
+> (\xi_n\cdot D_n\xi_n)\rho_n+\Theta_n,
+> \qquad
+> |\Theta_n|
+> \le2\nu\operatorname{osc}(D_n)\mathcal K_{\eta_n}.
+> \]
+> Hence the anisotropic correction is already part of the projective-cross
+> branch. Only the direction-weighted signed trace concentration remains as a
+> genuinely new terminal object. In the tight branch even that excess is
+> dominated by
+> \(8\nu\|F_n(0)\|_{\mathrm{op}}^2\mathcal K_{\eta_n}\), so nonzero excess
+> forces a terminal projective-cross atom.
 
 Next deliverable:
 
 > Use the exact one-trajectory pullbacks
 > \(H_{\ell_n^2}[\ell_n^2\omega]=H_1[\omega]\) and
 > \(P_{\le M}\widehat S_n=\ell_n^2P_{\le M/\ell_n}S\) to derive a cross-scale
-> packing, cancellation, or suitability estimate forcing
-> \(\mathfrak A_0=0\). If it fails, pass the squared detector, its bounded
-> signed excess, the scalar excess, and only the nonredundant tensor defect
-> into the minimal suitable ancient system and exclude it by rigidity. Use
+> packing, cancellation, or suitability estimate excluding the
+> direction-weighted concentration
+> \((\xi_n\cdot D_n\xi_n)\rho_n\). Determine whether bounded
+> projective-cross content makes this directional weight compact enough to
+> reduce it to the scalar excess. If it fails, pass the squared detector, its
+> weighted signed excess, the scalar excess, and only the nonredundant
+> projective-cross defect into the minimal suitable ancient system and
+> exclude it by rigidity. Use
 > \(\mu_{\mathcal J,0}\) only in an independently tight branch; raw
 > \(\mathcal J_\eta\), \(\mathcal T_\eta\), and \(|\rho_\eta|\) are not
 > admissible universal excesses. Do not try to obtain a familywise modulus

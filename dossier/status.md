@@ -356,6 +356,30 @@ and breakdown work
   exact same-trajectory identity
   \(H_{\ell_n^2}[\ell_n^2\omega]=H_1[\omega]\). The axial heat-shear
   obstruction has \(F_ne_3=0\) and is filtered out identically.
+- The alignment-weighted tensor remainder is not a wholly new defect. For a
+  symmetric detector \(D\), polar decomposition gives
+  \[
+  D:\mathcal R_\eta
+  =
+  (\xi\cdot D\xi)\rho_\eta+\Theta_{\eta,D},
+  \qquad
+  |\Theta_{\eta,D}|
+  \le
+  2\nu\operatorname{osc}(D)\mathcal K_\eta.
+  \]
+  The anisotropic correction vanishes for isotropic \(D\) and for pure radial
+  variation; it is already charged to the projective-cross defect. The only
+  genuinely new part of \(\mathfrak A_0\) is therefore the direction-weighted
+  signed trace concentration. The radial sign change persists, so squaring
+  the detector does not create hidden coercivity. Quantitatively,
+  \[
+  |F_n(0)^2:\mathcal R_{\eta_n}|
+  \le
+  8\nu\|F_n(0)\|_{\mathrm{op}}^2\mathcal K_{\eta_n}.
+  \]
+  Hence in the projective-cross-tight branch, nonzero
+  \(\mathfrak A_0\) already forces a terminal \(\mu_{\mathcal K}\)-atom; the
+  bounded signed alignment excess is new only in the non-tight branch.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -366,10 +390,11 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Does the exact pullback coherence of one Navier--Stokes trajectory force the
-> squared finite-band alignment excess \(\mathfrak A_0\) to vanish? If not,
-> can that alignment-weighted signed terminal density be retained in a
-> suitable ancient system and excluded by rigidity?
+> Does the exact pullback coherence of one Navier--Stokes trajectory exclude
+> the direction-weighted signed trace concentration inside
+> \(\mathfrak A_0\)? If not, can that density and the nonredundant
+> projective-cross defect be retained in a suitable ancient system and
+> excluded by rigidity?
 
 The coequal breakdown question remains:
 
@@ -383,12 +408,13 @@ The coequal breakdown question remains:
    \(P_{\le M}\widehat S_n=\ell_n^2P_{\le M/\ell_n}S\) to derive a
    cross-scale packing or cancellation estimate for
    \(\mathfrak A_0\).
-2. Prove that a nonzero squared-detector alignment excess is incompatible
-   with suitability, local energy, and the closed scalar/tensor equations, or
-   construct the exact same-trajectory survivor.
-3. Compare \(\mathfrak A_0\) with the scalar excess
-   \(\mathfrak E_0\) and the projective-cross terminal defect; remove any
-   redundant decoration without replacing signed remainders by variation.
+2. Prove that the direction-weighted trace concentration
+   \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
+   energy, and the same-trajectory pullbacks, or construct the exact coherent
+   survivor.
+3. Determine whether bounded projective-cross content makes the directional
+   weight compact enough to reduce the weighted concentration to
+   \(\mathfrak E_0\); do not replace either signed remainder by variation.
 4. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.

@@ -50,6 +50,146 @@ def squared_detector_pairing(
     return trace * dot(image, image)
 
 
+def validate_tangent_vector(direction: Vector, tangent: Vector) -> None:
+    validate_unit_vector(direction)
+    if dot(direction, tangent) != 0:
+        raise ValueError("tangent vector must be orthogonal to direction")
+
+
+def contracted_tensor_hessian(
+    detector: Matrix,
+    direction: Vector,
+    tangent: Vector,
+    radial_derivative: Fraction,
+    magnitude: Fraction,
+    cutoff: Fraction,
+) -> Fraction:
+    """Return D:D^2 H_eta(r*xi)[b,b] for b=p*xi+v."""
+    validate_tangent_vector(direction, tangent)
+    if magnitude <= 0:
+        raise ValueError("magnitude must be positive in polar coordinates")
+    if cutoff <= 0:
+        raise ValueError("cutoff must be positive")
+
+    magnitude_squared = magnitude**2
+    cutoff_squared = cutoff**2
+    denominator = magnitude_squared + cutoff_squared
+    detector_direction = matrix_vector(detector, direction)
+    directional_value = dot(direction, detector_direction)
+    mixed_value = dot(tangent, detector_direction)
+    tangent_value = dot(
+        tangent,
+        matrix_vector(detector, tangent),
+    )
+    tangent_squared = dot(tangent, tangent)
+
+    return (
+        2
+        * directional_value
+        * cutoff_squared
+        * (cutoff_squared - 3 * magnitude_squared)
+        * radial_derivative**2
+        / denominator**3
+        + 4
+        * (cutoff_squared - magnitude_squared)
+        * radial_derivative
+        * mixed_value
+        / denominator**2
+        + 2 * tangent_value / denominator
+        - 2
+        * magnitude_squared
+        * directional_value
+        * tangent_squared
+        / denominator**2
+    )
+
+
+def weighted_trace_hessian(
+    detector: Matrix,
+    direction: Vector,
+    tangent: Vector,
+    radial_derivative: Fraction,
+    magnitude: Fraction,
+    cutoff: Fraction,
+) -> Fraction:
+    """Return (xi.D.xi)*D^2 tr(H_eta)[b,b]."""
+    validate_tangent_vector(direction, tangent)
+    if magnitude <= 0:
+        raise ValueError("magnitude must be positive in polar coordinates")
+    if cutoff <= 0:
+        raise ValueError("cutoff must be positive")
+
+    magnitude_squared = magnitude**2
+    cutoff_squared = cutoff**2
+    denominator = magnitude_squared + cutoff_squared
+    directional_value = rayleigh_alignment(detector, direction)
+    tangent_squared = dot(tangent, tangent)
+    return directional_value * (
+        2
+        * cutoff_squared
+        * (cutoff_squared - 3 * magnitude_squared)
+        * radial_derivative**2
+        / denominator**3
+        + 2
+        * cutoff_squared
+        * tangent_squared
+        / denominator**2
+    )
+
+
+def anisotropic_hessian_correction(
+    detector: Matrix,
+    direction: Vector,
+    tangent: Vector,
+    radial_derivative: Fraction,
+    magnitude: Fraction,
+    cutoff: Fraction,
+) -> Fraction:
+    """Return D:D^2H-(xi.D.xi)D^2tr(H), the orientation correction."""
+    return contracted_tensor_hessian(
+        detector,
+        direction,
+        tangent,
+        radial_derivative,
+        magnitude,
+        cutoff,
+    ) - weighted_trace_hessian(
+        detector,
+        direction,
+        tangent,
+        radial_derivative,
+        magnitude,
+        cutoff,
+    )
+
+
+def anisotropy_projective_cross_bound(
+    spectral_diameter: Fraction,
+    radial_angular_cross: Fraction,
+    angular_projective_energy: Fraction,
+) -> Fraction:
+    """Return 2*osc(D)*(cross+angular) for the polar correction."""
+    if spectral_diameter < 0:
+        raise ValueError("spectral diameter must be nonnegative")
+    if radial_angular_cross < 0 or angular_projective_energy < 0:
+        raise ValueError("projective contents must be nonnegative")
+    return (
+        2
+        * spectral_diameter
+        * (radial_angular_cross + angular_projective_energy)
+    )
+
+
+def squared_detector_projective_cross_constant() -> Fraction:
+    """Return 8 in |F^2:R| <= 8*nu*||F||^2*K."""
+    trace_remainder_constant = Fraction(6)
+    anisotropic_correction_constant = Fraction(2)
+    return (
+        trace_remainder_constant
+        + anisotropic_correction_constant
+    )
+
+
 def rayleigh_square_lower_bound(
     trace_lower_bound: Fraction,
     alignment_lower_bound: Fraction,
@@ -141,6 +281,19 @@ def report() -> str:
         Fraction(4, 7),
     )
     window = Fraction(2, 9)
+    tangent: Vector = (
+        Fraction(-4, 5),
+        Fraction(3, 5),
+        Fraction(0),
+    )
+    correction = anisotropic_hessian_correction(
+        matrix,
+        direction,
+        tangent,
+        Fraction(5, 7),
+        Fraction(4, 3),
+        Fraction(2, 5),
+    )
     return "\n".join(
         (
             "Terminal alignment-excess ledger",
@@ -161,11 +314,19 @@ def report() -> str:
             f"{alignment_excess_l1_dual_constant(Fraction(5))}",
             f"natural pullback trace:                "
             f"{natural_pullback_trace(Fraction(4), Fraction(1), Fraction(1, 7))}",
+            f"sample anisotropic Hessian correction: "
+            f"{correction}",
+            f"sample projective-cross envelope:      "
+            f"{anisotropy_projective_cross_bound(Fraction(5), Fraction(2, 3), Fraction(4, 7))}",
+            f"squared-detector K-envelope constant:  "
+            f"{squared_detector_projective_cross_constant()}",
             "",
             "The squared finite-band detector is positive semidefinite.",
             "Positive terminal Rayleigh alignment gives at least one half.",
             "Its triangular excess is paid only by controlled terms and the",
             "tensor diffusion remainder; axial heat shears pair to zero.",
+            "The remainder is a direction-weighted trace defect plus an",
+            "anisotropic correction controlled by projective-cross content.",
         )
     )
 
