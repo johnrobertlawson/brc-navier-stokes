@@ -29,9 +29,13 @@ limiting signed trace defect is dominated by the projective-energy measure.
 Under the terminal balance, loss of nonzero terminal trace forces a terminal
 projective-energy atom.
 
-This collapses the separate radial-measure branch introduced by the preceding
-renormalisation audit. It does not derive a projective-energy bound from Clay
-data and does not control the full tensor Hessian remainder, whose mixed
+This collapses the separate finite radial-measure branch whenever projective
+energy is locally tight. The subsequent
+[smooth zero-interface barrier](projective-zero-interface.md) proves that raw
+projective tightness is not universal: it fails at simple zeros of a globally
+regular periodic heat shear even though the trace converges strongly and the
+signed remainder cancels distributionally. The theorem here does not control
+that non-tight signed branch or the full tensor Hessian remainder, whose mixed
 radial--angular term still needs projective-cross content.
 
 ## Verdict
@@ -409,15 +413,16 @@ of a nonzero positive terminal trace forces a projective-energy atom. If
 \(\mu_{\mathcal J}\) has no terminal atom, the scalar detector enters the
 ancient limit.
 
-The scalar alternatives are now exact:
+Within the locally tight branch, the scalar alternatives are exact:
 
-1. \(\mathcal J_{\eta_n}\) is unbounded: projective-energy concentration;
-2. it is bounded with a terminal atom forced by trace loss:
+1. it is bounded with a terminal atom forced by trace loss:
    projective-energy atom rigidity;
-3. it is bounded without a terminal atom: strong scalar trace compactness
+2. it is bounded without a terminal atom: strong scalar trace compactness
    carries the nonzero detector into the ancient limit.
 
-No fourth branch containing an independent adverse radial measure remains.
+If \(\mathcal J_{\eta_n}\) is not locally tight, the pointwise inequality still
+holds but does not supply a limiting positive measure. Signed interface
+cancellation must then be retained separately.
 
 ## Exact consequence for ROUTE-R3B
 
@@ -428,18 +433,18 @@ The preceding target is closed algebraically:
 > \(|\rho_\eta|\le6\nu\mathcal J_\eta\).
 
 Classical fixed-direction ancient rigidity is still useful for interpreting
-the zero-projective branch, but no measure-valued extension is needed merely
-to dominate scalar trace loss. The immediate live gate is now:
+the zero-projective branch. After the subsequent smooth-interface obstruction,
+the immediate live gate is:
 
-> Derive a scale-uniform bound for \(\mathcal J_\eta\) from one-trajectory
-> Navier--Stokes dynamics, or prove that a terminal
-> \(\mu_{\mathcal J}\)-atom is incompatible with suitability and the closed
-> ancient tensor system.
+> Define a terminal excess or signed-defect topology that removes the
+> time-continuous simple-zero profile, detects trace loss, and is incompatible
+> with suitability and the closed ancient tensor system.
 
 Projective-cross content remains relevant to full tensor compactness and
 orientation rigidity. This theorem does not derive
-\(\mathcal J_\eta\) from arbitrary Clay data, does not exclude its terminal
-atom, and is not a Clay A--D resolution.
+\(\mathcal J_\eta\) from arbitrary Clay data, does not classify the non-tight
+signed branch, does not exclude a tight-branch terminal atom, and is not a
+Clay A--D resolution.
 
 Run the exact split, sharp constants, and domination ledgers with:
 

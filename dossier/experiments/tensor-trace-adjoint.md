@@ -47,6 +47,13 @@ projective-cross content, is the only extra defect content needed for scalar
 trace compactness. It can still be strictly smaller than the tensor content
 because trace discards orientation changes of a saturated tensor.
 
+The later
+[smooth zero-interface barrier](projective-zero-interface.md) shows that this
+is a sufficient compactness theorem, not a necessary criterion. Raw
+\(\mathcal J_\eta\) diverges like \(\eta^{-1}\) at the simple zeros of one
+globally regular periodic shear, while \(h_\eta\) converges strongly and
+\(\rho_\eta\) cancels distributionally.
+
 The reduction does not prove a uniform scalar propagator. Its potential remains
 parabolically critical. It does identify a narrower amplitude-band gate than
 the full matrix logarithmic norm, and the previous axial-shear Kato obstruction

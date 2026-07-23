@@ -743,7 +743,7 @@
       ],
       "method": "Use a measurable three-band truncation of the trace potential, quantify the uncancelled source and detector mass exactly, conjugate the scalar adjoint by the trace detector, control the transformed band coefficients by basic extended projective energy, construct a time-dependent affine strain-plus-rotation Navier-Stokes solution, and compare its exact signed trace propagator with the positive Kato envelope over repeated amplitude cycles.",
       "certificate": "A written band-reduction and detector-weighted propagation theorem with an affine-flow calculation, plus Fraction tests for amplitude ratios, residual envelopes, transformed coefficient constants, affine momentum symmetry, logistic trace evolution, and cycle multipliers.",
-      "success_criterion": "The scalar gate is reduced to the transition band, detector weighting removes its mixed-alignment potential, and positive-part Kato continuity is shown nonnecessary in exact Navier-Stokes dynamics, leaving projective-energy-controlled weighted propagation as the precise next target.",
+      "success_criterion": "The scalar gate is reduced to the transition band, detector weighting removes its mixed-alignment potential, and positive-part Kato continuity is shown nonnecessary in exact Navier-Stokes dynamics, leaving projective-energy-controlled propagation in the tight branch and a signed excess problem in the non-tight branch.",
       "failure_interpretation": "The outside-band source is not small, low trace can carry fixed local detector mass, the affine field does not solve Navier-Stokes, the trace potential is not a logarithmic derivative, or a full cycle amplifies the true signed scalar carrier.",
       "status": "complete",
       "artifacts": [
@@ -799,6 +799,7 @@
         "The absolute trace remainder is bounded sharply by six viscosity times projective energy",
         "With the existing local velocity and strain bounds, projective energy is the only extra defect content needed for scalar trace compactness and it dominates every limiting signed trace measure",
         "Under the terminal balance, loss of nonzero terminal scalar trace forces a terminal projective-energy atom",
+        "A limiting positive projective-energy measure requires independent local tightness; no raw bound from arbitrary Clay data is asserted",
         "No projective-energy bound from arbitrary Clay data, atom rigidity theorem, or Clay regularity theorem is asserted"
       ],
       "method": "Use the exact radial-angular split of extended polar energy to compare every scalar trace gradient, content, and signed Hessian coefficient pointwise with projective energy, then pass the domination to compactness and terminal defect measures.",
@@ -810,6 +811,36 @@
         "dossier/experiments/trace-projective-domination.md",
         "lab/navier_lab/trace_projective_domination.py",
         "lab/tests/test_trace_projective_domination.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-PROJECTIVE-ZERO-INTERFACE-001",
+      "title": "Smooth zero-interface barrier for raw projective energy",
+      "kind": "analytic_counterexample",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Raw projective-energy tightness may follow from the logarithmic and trace balances for every smooth endpoint-bounded Navier-Stokes trajectory, so its failure would be singularity-specific.",
+      "invariants": [
+        "The scalar trace balance is exactly the parabolic chain-rule image of the logarithmic-magnitude balance",
+        "A finite-energy periodic heat shear is an exact globally regular unforced Navier-Stokes trajectory with fixed projective vorticity direction",
+        "Every persistent simple vorticity zero contributes projective, trace-content, trace-gradient, and absolute-remainder mass of order inverse cutoff",
+        "The signed simple-zero remainder kernel is an exact derivative with zero leading mass",
+        "For the exact sine shear the raw projective spacetime mass diverges like inverse cutoff while the trace deficit and signed integrated remainder vanish linearly",
+        "The cutoff traces converge strongly in every finite spacetime Lebesgue exponent and the signed remainders converge to zero distributionally",
+        "Projective-energy tightness is sufficient but not necessary for scalar trace compactness",
+        "The forward heat shear is not uniformly endpoint-bounded in the remote past, so it does not rule out an ancient-history excess estimate",
+        "No singularity, regularity theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Derive the trace equation directly from the logarithmic equation by the parabolic chain rule, compute the exact cutoff energies of a decaying periodic sine shear, blow up each simple zero to its universal rational kernel, and compare signed distributional convergence with divergent total variation.",
+      "certificate": "A written exact Navier-Stokes shear theorem, spatial and spacetime integral formulas, simple-zero asymptotics, and Fraction tests for the chain-rule identity, kernel constants, radical-free squared integrals, cutoff powers, and heat-amplitude limits.",
+      "success_criterion": "Either raw projective energy is uniformly controlled on the exact regular trajectory, or the precise benign zero-interface divergence and its signed cancellation are certified so the route can be reformulated in terms of terminal excess.",
+      "failure_interpretation": "The trace and logarithmic equations are independent, the shear is not an exact Navier-Stokes solution, the projective mass stays bounded, the signed kernel has nonzero leading mass, or strong trace convergence fails.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/projective-zero-interface.md",
+        "lab/navier_lab/projective_zero_interface.py",
+        "lab/tests/test_projective_zero_interface.py"
       ],
       "last_run": "2026-07-23"
     },

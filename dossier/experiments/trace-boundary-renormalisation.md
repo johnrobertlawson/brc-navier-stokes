@@ -655,11 +655,18 @@ equation (22) charges its averaged absolute value to
 The exact heat-shear obstruction and every classical fixed-direction carrier
 die under the expanding backward history of an ancient endpoint-bounded
 limit. The subsequent projective-domination theorem closes the proposed
-independent radial-measure branch:
+independent finite radial-measure branch whenever projective energy is tight:
 
 > Every adverse radial trace defect forces quantitatively nonzero
-> \(\mathcal J_\eta\). The next gate is a projective-energy bound or terminal
+> \(\mathcal J_\eta\). Within the tight branch, the next gate is terminal
 > projective-atom rigidity.
+
+The later
+[smooth zero-interface barrier](projective-zero-interface.md) shows that raw
+projective tightness is false even on one globally regular forward shear.
+Thus the non-tight branch requires a signed terminal excess that preserves
+interface cancellation; the fixed-direction ancient theorem remains the
+available discriminator against a mere initial layer.
 
 This is an analytic reduction, a classical fixed-direction ancient theorem,
 and an exact stress test. It is not a bound on \(\mathcal J_\eta\), not

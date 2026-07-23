@@ -292,7 +292,22 @@ and breakdown work
   \(\mathcal J_{\eta_n}\,dx\,dt\rightharpoonup^*\mu_{\mathcal J}\), then
   \(|\rho|\le6\nu\mu_{\mathcal J}\); under the terminal balance, loss of
   terminal trace forces a terminal \(\mu_{\mathcal J}\)-atom. No independent
-  signed radial measure remains.
+  finite signed radial measure remains in this tight branch.
+- Raw projective-energy tightness is false even for one globally regular
+  periodic Clay trajectory. For
+  \(u=A_0e^{-\nu t}\cos y\,e_1\), every simple zero of
+  \(\omega=A_0e^{-\nu t}\sin y\,e_3\) contributes
+  \(O(\eta^{-1})\) projective energy, trace content, squared trace gradient,
+  and absolute trace remainder. Nevertheless \(h_\eta\to1\) strongly and
+  \(\rho_\eta\to0\) distributionally. The leading signed remainder kernel is
+  an exact derivative, so its positive and negative lobes cancel while its
+  total variation diverges. Thus projective-energy tightness is sufficient but
+  not necessary for scalar compactness, and its failure is not
+  singularity-specific.
+- The logarithmic and trace balances cannot repair this loss: because
+  \(h_\eta=1-e^{-2\Lambda_\eta}\), the trace equation is exactly the
+  parabolic chain-rule image of the logarithmic equation. Combining them
+  supplies no second coercive identity for \(\mathcal J_\eta\).
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -303,10 +318,10 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can one-trajectory Navier--Stokes dynamics bound the basic extended
-> projective energy \(\mathcal J_\eta\), or can suitability and the closed
-> ancient tensor system exclude the terminal atom forced if trace is lost? If
-> neither follows directly, what exact atom-decorated ancient object survives?
+> Can one define a terminal projective excess, or a signed trace-defect
+> topology, that cancels every time-continuous smooth zero-interface layer but
+> still detects loss of terminal trace? Can ancient history and suitability
+> then exclude a nonzero terminal excess?
 
 The coequal breakdown question remains:
 
@@ -315,18 +330,19 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive or falsify a scale-uniform spacetime bound for
-   \(\mathcal J_\eta\) from the exact projective evolution, the logarithmic
-   magnitude balance, and one-trajectory ancient history.
-2. If \(\mathcal J_\eta\) is bounded, classify and exclude its terminal atom
-   using suitability, local energy, and the closed tensor/trace equations.
-3. Formulate the minimal ancient system decorated by
-   \(\mu_{\mathcal J,0}\), without introducing a separate radial trace measure.
-4. Prove scale-uniform localisation for that atom-decorated detector system and
-   decide which orientation information is still needed for rigidity.
-5. Determine whether the signed logarithmic and trace balances can be combined
-   to recover nonnegative \(\mathcal J_\eta\) without unbounded entropy
-   storage.
+1. Classify the cutoff profiles of moving and higher-codimension vorticity
+   zero sets, separating universal smooth interface mass from a
+   terminal-time excess.
+2. Define a signed topology for \(\rho_{\eta_n}\), or a renormalised
+   projective excess, that is stable under the available ancient compactness,
+   vanishes on those smooth profiles, and detects terminal trace loss.
+3. Prove that the resulting terminal excess is incompatible with expanding
+   backward history, suitability, and the closed scalar/tensor equations.
+4. Formulate the minimal ancient system decorated by that excess. Use
+   \(\mu_{\mathcal J,0}\) only in the independently tight branch.
+5. Prove scale-uniform localisation for the signed detector system without
+   replacing \(\rho_\eta\) by its total variation, and decide which orientation
+   information is still needed for rigidity.
 6. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.
 7. Upgrade the nonzero ancient distributional bubble to a suitable object using

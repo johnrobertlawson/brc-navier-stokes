@@ -21,6 +21,14 @@ coefficients algebraically by basic extended projective energy
 \(\mathcal J_\eta\), but no such energy bound is currently derived from
 arbitrary Clay data.
 
+The later
+[smooth zero-interface barrier](projective-zero-interface.md) proves that raw
+\(\mathcal J_\eta\)-tightness is not even necessary for scalar compactness:
+it fails on a globally regular periodic heat shear while the signed trace
+defect cancels distributionally. Any limiting weighted propagation theorem
+must therefore preserve signed cancellation or use a renormalised terminal
+excess.
+
 An exact time-dependent affine Navier--Stokes family then shows that positive
 Kato mass is not a necessary scalar propagation quantity. The true signed
 propagator stays uniformly bounded while arbitrarily many complete amplitude
@@ -559,12 +567,13 @@ This experiment changes the immediate propagation target:
 6. band-boundary flux, localised projective-energy occupation, compactness, and
    suitability remain open.
 
-The next falsifiable target is a scale-uniform local estimate for the
-terminal-time Fokker--Planck equation (11), with its
-\(\mathcal J_\eta\)-controlled drift and signed measure coefficient. A
-negative test must be one endpoint-bounded Navier--Stokes trajectory that
-retains detector mass while defeating this weighted estimate. Repeating
-spatially homogeneous affine cycles is not such a test.
+After the smooth zero-interface obstruction, the next falsifiable target is a
+scale-uniform local estimate for the terminal-time Fokker--Planck equation
+(11) in a signed topology that removes time-continuous interface profiles. A
+negative test must be one endpoint-bounded ancient Navier--Stokes trajectory
+that retains detector mass while defeating this weighted estimate. Repeating
+spatially homogeneous affine cycles or forward heat layers is not such a
+test.
 
 This is an exact conditional reduction and a non-Clay stress test. It is not a
 bound on \(\mathcal J_\eta\), not a rigidity theorem, and not a Clay A--D

@@ -1,6 +1,6 @@
-# Handoff: bound projective energy or exclude its terminal atom
+# Handoff: separate terminal excess from smooth zero interfaces
 
-**Updated:** 2026-07-23T12:12:59Z
+**Updated:** 2026-07-23T12:30:49Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -27,7 +27,8 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 The terminal detector has reduced to the scalar trace
 \(h=\operatorname{tr}H\). Detector weighting removes its mixed-alignment
 potential and leaves only the signed trace defect. The proposed independent
-adverse radial measure is now closed as impossible.
+adverse radial measure is quantitatively controlled whenever basic projective
+energy is locally tight.
 
 With
 
@@ -68,7 +69,41 @@ compactness. If
 \]
 
 Under the terminal balance, loss of nonzero terminal trace therefore forces a
-terminal \(\mu_{\mathcal J}\)-atom. No separate radial trace measure survives.
+terminal \(\mu_{\mathcal J}\)-atom. No separate finite radial trace measure
+survives in this tight branch.
+
+Raw \(\mathcal J_\eta\)-tightness is not universal. The exact globally regular
+periodic shear
+
+\[
+u=A_0e^{-\nu t}\cos y\,e_1,
+\qquad
+\omega=A_0e^{-\nu t}\sin y\,e_3
+\]
+
+has two persistent simple vorticity zeros. As \(\eta\downarrow0\),
+
+\[
+\int\mathcal J_\eta
+\asymp
+\int\mathcal T_\eta
+\asymp
+\int|\nabla h_\eta|^2
+\asymp
+\int|\rho_\eta|
+\asymp
+\eta^{-1},
+\]
+
+yet \(h_\eta\to1\) strongly and
+\(\rho_\eta\to0\) distributionally. The leading signed remainder kernel is an
+exact derivative; total-variation domination destroys its cancellation.
+Projective-energy blow-up is therefore not itself singularity-specific.
+
+The logarithmic and trace balances are also not independent:
+\(h_\eta=1-e^{-2\Lambda_\eta}\), and the trace equation is exactly the
+parabolic chain-rule image of the logarithmic equation. Their combination
+cannot recover a new positive \(\mathcal J_\eta\) estimate.
 
 The boundary and scalar-renormalisation audits remain useful scope controls:
 averaged band flux is paid by \(\mathcal J_\eta\), no bounded detector can
@@ -76,16 +111,16 @@ make radial diffusion sign-favourable at every amplitude, and exact periodic
 heat shears show that endpoint vorticity plus energy do not bound short-time
 projective occupation across solution families.
 
-The next target is a one-trajectory spacetime bound for
-\(\mathcal J_\eta\), or suitability/rigidity that excludes the terminal atom
-forced if trace is lost. Projective-cross content remains necessary only where
-the full tensor Hessian and orientation, rather than scalar trace, must be
-closed.
+The next target is a terminal projective excess, or a signed-defect topology,
+that quotients out every time-continuous smooth zero-interface layer but still
+detects terminal trace loss. Ancient history and suitability must then exclude
+a nonzero excess. Projective-cross content remains necessary only where the
+full tensor Hessian and orientation, rather than scalar trace, must be closed.
 
-Localisation, trace-content occupation, compactness, suitability, and rigidity
-remain separate gates. Spatial dust, scalar entropy, terminal graph support,
-and an unidentified stretching correlation are closed branches. The original
-regularity target remains
+Signed localisation, excess compactness, suitability, and rigidity remain
+separate gates. Spatial dust, scalar entropy, terminal graph support, raw
+projective-energy tightness, and an unidentified stretching correlation are
+closed branches. The original regularity target remains
 
 \[
 \widehat a_\lambda^+
@@ -99,14 +134,15 @@ regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/trace-projective-domination.md`;
-3. `dossier/experiments/trace-boundary-renormalisation.md`;
-4. `dossier/experiments/trace-transition-band-flux.md`;
-5. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/projective-zero-interface.md`;
+3. `dossier/experiments/trace-projective-domination.md`;
+4. `dossier/experiments/trace-boundary-renormalisation.md`;
+5. `dossier/experiments/trace-transition-band-flux.md`;
+6. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-6. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+7. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-7. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+8. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1153,25 +1189,47 @@ Completed sharp projective domination:
 > \]
 > In particular \(|\rho_\eta|\le6\nu\mathcal J_\eta\), with sharp
 > constants. Under the terminal balance, trace loss forces a terminal
-> projective-energy atom.
+> projective-energy atom whenever \(\mathcal J_\eta\) is locally tight.
+
+Completed smooth zero-interface obstruction:
+
+> For the globally regular periodic heat shear
+> \(u=A_0e^{-\nu t}\cos y\,e_1\),
+> \[
+> \int_0^{2\pi}\mathcal J_\eta\,dy
+> =
+> \frac{\pi A(t)^2}
+> {\eta\sqrt{A(t)^2+\eta^2}}.
+> \]
+> Thus raw projective mass diverges like \(\eta^{-1}\) at its two simple
+> vorticity zeros. Nevertheless \(h_\eta\to1\) strongly and
+> \(\rho_\eta\to0\) distributionally. The leading signed kernel
+> \[
+> \frac{1-3z^2}{(1+z^2)^3}
+> =
+> \frac{d}{dz}\frac{z}{(1+z^2)^2}
+> \]
+> has zero mass while its absolute mass is nonzero. The trace balance is also
+> exactly the chain-rule image of the logarithmic balance, so those two scalar
+> identities cannot recover a positive projective estimate.
 
 Next deliverable:
 
-> Derive or falsify a scale-uniform one-trajectory bound for
-> \(\mathcal J_\eta\) from the exact projective evolution, signed logarithmic
-> magnitude balance, and ancient history. If bounded content can still form a
-> terminal atom, retain \(\mu_{\mathcal J,0}\) in the minimal ancient system
-> and test suitability and rigidity. Do not reintroduce a separate radial
-> trace measure: the sharp domination has closed that branch. A negative
-> example must have expanding backward history; another fresh
-> frequency-scaled heat initial layer does not qualify. Then prove scalar
-> localisation. Do not try another bounded scalar renormalisation, replace
-> signed logarithmic flux by positive variation, return to the full matrix
-> norm, use unstable modes orthogonal to the terminal tensor as a detector
-> obstruction, treat finite-window affine or shear amplification as a Clay
-> counterexample, or return to instantaneous Biot--Savart coercivity, adjoint
-> positivity, an unidentified stretching correlation, full polar Fisher as if
-> sharp, or the raw \(\Delta\omega/|\omega|\) equation.
+> Classify moving and higher-codimension zero-set profiles, then define a
+> terminal projective excess or signed topology for \(\rho_\eta\) that
+> vanishes on every time-continuous smooth profile but detects terminal trace
+> loss. Prove that it survives the available ancient compactness and is
+> excluded by expanding backward history plus suitability. Use
+> \(\mu_{\mathcal J,0}\) only in an independently tight branch; raw
+> \(\mathcal J_\eta\), \(\mathcal T_\eta\), and \(|\rho_\eta|\) are not
+> admissible universal excesses. Then prove signed scalar localisation. Do not
+> try another bounded scalar renormalisation, replace signed logarithmic flux
+> by positive variation, return to the full matrix norm, use unstable modes
+> orthogonal to the terminal tensor as a detector obstruction, treat
+> finite-window affine or shear amplification as a Clay counterexample, or
+> return to instantaneous Biot--Savart coercivity, adjoint positivity, an
+> unidentified stretching correlation, full polar Fisher as if sharp, or the
+> raw \(\Delta\omega/|\omega|\) equation.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.
