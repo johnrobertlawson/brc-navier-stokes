@@ -1184,6 +1184,37 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-FREQUENCY-ENERGY-001",
+      "title": "Fresh-detector moment versus frequency-energy flux",
+      "kind": "analytic_counterexample",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "A positive tensor Young moment detected by the square of a fresh strain block forces a sign-definite nonlinear frequency-energy transfer or a nonsummable physical dissipation charge.",
+      "invariants": [
+        "The global frequency-block kinetic-energy identity has viscosity on the left and the projected nonlinear transfer on the right",
+        "A two-direction periodic Beltrami eigenfield is divergence free, has curl equal to itself, and has Laplacian equal to minus itself",
+        "Its projected nonlinearity vanishes identically because the advective term is a gradient",
+        "Its strain square has a strictly positive contraction with its vorticity tensor at an explicit point",
+        "Heat-amplitude decay with a matched cutoff gives a nonzero terminal-interior fresh-detector tensor difference",
+        "The example therefore has positive detector moment but zero nonlinear interfrequency energy transfer",
+        "Viscous dissipation, kinetic energy, nonlinear transfer scale, and every local or moving-cutoff boundary term carry one positive power of physical radius",
+        "Dividing by radius creates a scale-zero node ledger but destroys telescoping against the globally bounded physical energy",
+        "The periodic model is an algebraic and local flux obstruction, not a finite-energy Clay trajectory or an infinite tower",
+        "No tower exclusion, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Derive the frequency-block energy balance, construct an explicit two-wavevector Beltrami eigenfield, compute its strain and detector contraction exactly at one point, evolve it by the heat semigroup with matched cutoff, and compare its zero nonlinear transfer with the radius powers of global and local energy terms.",
+      "certificate": "A written frequency-energy no-go theorem plus exact Fraction tests for the Beltrami curl, divergence, Laplacian and strain matrices, detector contractions, zero projected nonlinearity, energy-term radius powers, and geometric physical-versus-normalised dissipation sums.",
+      "success_criterion": "Either the positive fresh-detector moment yields a universal sign-definite frequency-energy charge, or an exact Navier-Stokes solution separates the moment from nonlinear transfer and scaling proves that viscosity remains only radius weighted.",
+      "failure_interpretation": "The proposed Beltrami field is not an exact projected Navier-Stokes heat solution, its intrinsic squared strain fails to detect the tensor change, or a scale-zero positive energy charge telescopes without dividing the physical energy by radius.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/frequency-energy-flux.md",
+        "lab/navier_lab/frequency_energy.py",
+        "lab/tests/test_frequency_energy.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

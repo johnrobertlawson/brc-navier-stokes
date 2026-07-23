@@ -490,3 +490,10 @@ regularity or blow-up, or resolve any Clay alternative A--D.
 Run the exact detector error, transfer, and persistence ledgers with:
 
     make fresh-detector
+
+The subsequent
+[frequency-energy audit](frequency-energy-flux.md) proves that this positive
+moment does not coerce nonlinear frequency transfer. An exact Beltrami heat
+solution has a nonzero intrinsic detector increment and identically zero
+projected nonlinearity; every ordinary local energy term remains weighted by
+one physical power of the node radius.

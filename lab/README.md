@@ -46,6 +46,7 @@ not convert passing unit tests into mathematical truth.
 | **tree_budget.py** | Node radius powers, geometric tree sums, nested weak-endpoint shells, and logarithmic depth charge | A same-trajectory telescoping or quasi-orthogonality bound for the scale-zero projected moments |
 | **band_increment.py** | Coarse-band suppression, fresh-annulus extraction, Bernstein persistence, and finite-index Lorentz depth growth | A coupling from the projected Young moments to fresh bands plus spacetime summability or temporal telescoping |
 | **fresh_detector.py** | Noncommuting squared-detector error, carrier-set transfer, sparse-gap threshold, and parabolic critical occupation | A strong critical spacetime sum, temporal frequency-energy telescope, or nonlocal positive flux |
+| **frequency_energy.py** | Exact Beltrami heat mode, intrinsic detector increment, zero nonlinear transfer, and physical-versus-normalised energy charges | A strong critical bound, non-energy scale-zero law, same-trajectory history cancellation, or indexed defect rigidity |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -98,6 +99,7 @@ From the repository root:
     make tree-budget
     make band-increment
     make fresh-detector
+    make frequency-energy
     make strain
     make fetch-2607
     make compile-2607

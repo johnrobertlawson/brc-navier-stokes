@@ -1,6 +1,6 @@
-# Handoff: sum the fresh-detector occupations
+# Handoff: formulate the fresh-band scale defect
 
-**Updated:** 2026-07-23T14:47:43Z
+**Updated:** 2026-07-23T14:57:37Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -468,26 +468,27 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/fresh-detector-transfer.md`;
-3. `dossier/experiments/fresh-band-lorentz.md`;
-4. `dossier/experiments/tree-budget-audit.md`;
-5. `dossier/experiments/moving-band-coupling.md`;
-6. `dossier/experiments/forcing-jet-decoupling.md`;
-7. `dossier/experiments/strain-jet-freezing.md`;
-8. `dossier/experiments/microbubble-decoration-rigidity.md`;
-9. `dossier/experiments/terminal-carrier-microbubble.md`;
-10. `dossier/experiments/terminal-alignment-excess.md`;
-11. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-12. `dossier/experiments/terminal-trace-excess.md`;
-13. `dossier/experiments/projective-zero-interface.md`;
-14. `dossier/experiments/trace-projective-domination.md`;
-15. `dossier/experiments/trace-boundary-renormalisation.md`;
-16. `dossier/experiments/trace-transition-band-flux.md`;
-17. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/frequency-energy-flux.md`;
+3. `dossier/experiments/fresh-detector-transfer.md`;
+4. `dossier/experiments/fresh-band-lorentz.md`;
+5. `dossier/experiments/tree-budget-audit.md`;
+6. `dossier/experiments/moving-band-coupling.md`;
+7. `dossier/experiments/forcing-jet-decoupling.md`;
+8. `dossier/experiments/strain-jet-freezing.md`;
+9. `dossier/experiments/microbubble-decoration-rigidity.md`;
+10. `dossier/experiments/terminal-carrier-microbubble.md`;
+11. `dossier/experiments/terminal-alignment-excess.md`;
+12. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+13. `dossier/experiments/terminal-trace-excess.md`;
+14. `dossier/experiments/projective-zero-interface.md`;
+15. `dossier/experiments/trace-projective-domination.md`;
+16. `dossier/experiments/trace-boundary-renormalisation.md`;
+17. `dossier/experiments/trace-transition-band-flux.md`;
+18. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-18. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+19. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-19. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+20. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1740,17 +1741,31 @@ Completed terminal alignment-excess reduction:
 > then give one fixed strong parabolic \(L^{5/2}\) occupation per fresh
 > frequency block. The missing input is exactly a summation of those
 > scale-zero occupations.
+>
+> Direct frequency-energy coercivity is false. The exact Beltrami heat mode
+> \[
+> u=a(t)(-\sin y,\cos x,-\sin x+\cos y),\qquad a'=-\nu a,
+> \]
+> has zero Leray-projected nonlinearity and zero nonlinear frequency
+> transfer, but its intrinsic squared strain detects an explicit nonzero
+> terminal--interior cutoff-tensor increment whose square is \(1/81\).
+> Kinetic energy, dissipation, local nonlinear transfer, pressure or
+> projection commutators, and moving-cutoff boundary terms all charge a
+> critical node by \(R\). Normalising by \(R^{-1}\) counts levels but
+> destroys the physical energy telescope. This closes only a universal local
+> coercive relation; genuinely history-dependent or non-energy laws remain
+> open.
 
 Next deliverable:
 
-> Write the frequency-localised kinetic-energy identity for each fresh block
-> on its persistence cylinder. Determine whether the positive
-> \(G^2:(A-B)\) moment forces a sign-definite energy transfer or dissipation
-> increment that telescopes across the disjoint frequency blocks. Separate
-> the radius-weighted physical energy from the scale-zero normalisation and
-> quantify all commutator, pressure, and moving-clock boundary terms. If the
-> detector moment has no coercive relation to energy flux, close that
-> shortcut explicitly and formulate the frequency/log-scale defect measure.
+> Formulate the minimal positive frequency/log-scale moment measure selected
+> by the fresh blocks and derive every distributional identity it inherits
+> from the same Navier--Stokes trajectory. Keep physical spacetime,
+> frequency, terminal clock, tensor state, and detector state separate.
+> Determine whether its frequency marginals possess a genuinely non-energy
+> scale-zero balance or same-trajectory history cancellation; if only
+> radius-weighted identities survive, retain exactly that loss in the
+> decorated suitable ancient system.
 > Neither suitability of the undecorated microchild, an arbitrary constant
 > detector, unweighted volume, nor the collapsed intrinsic band can close
 > this. A successful frequency-energy or nonlocal estimate excludes the

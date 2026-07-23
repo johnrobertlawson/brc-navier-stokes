@@ -516,6 +516,21 @@ and breakdown work
   occupation per disjoint frequency block. A global strong critical
   occupation would sum them, but it is not supplied by the weak endpoint or
   radius-weighted energy dissipation.
+- That positive fresh-detector moment does not coerce nonlinear
+  frequency-energy transfer. The exact periodic Beltrami heat solution
+  \[
+  u=a(t)(-\sin y,\cos x,-\sin x+\cos y),
+  \qquad a'=-\nu a,
+  \]
+  has identically zero Leray-projected nonlinearity, yet its own squared
+  strain detects a terminal--interior cutoff-tensor increment of
+  \(-1/9\) at an explicit point, hence squared moment \(1/81\).
+  Localisation cannot repair the scale mismatch: kinetic energy,
+  dissipation, nonlinear transfer, pressure or projection commutators, and
+  moving-cutoff terms all charge a critical node by \(R\). Dividing by
+  \(R\) counts logarithmic depth but destroys telescoping against physical
+  energy. This periodic example closes universal local energy coercivity,
+  not a genuinely nonlocal or same-trajectory history law.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -528,7 +543,9 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 
 > Can the uniform positive moments now detected by squared fresh annular
 > strain blocks be summed through a strong critical spacetime estimate,
-> temporal frequency-energy telescope, or nonlocal positive flux? If not,
+> genuinely history-dependent or non-energy scale-zero law, or
+> same-trajectory cancellation after direct local frequency-energy
+> coercivity has failed? If not,
 > can the resulting frequency-and-log-scale-indexed stress, positive tensor
 > Young measure,
 > direction-weighted signed density, and nonredundant projective-cross defect
@@ -541,44 +558,41 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive the frequency-localised kinetic-energy identity for each fresh
-   block and test whether the positive \(G^2:(A-B)\) moment forces a
-   sign-definite energy transfer or dissipation increment.
-2. Track the scale-zero normalisation against the physical radius-weighted
-   energy, including commutator, pressure, spatial cutoff, and moving-clock
-   boundary terms.
-3. If energy flux is noncoercive, define the minimal
+1. Define the minimal
    frequency/log-scale-indexed positive moment measure and the PDE
    compatibility identities it inherits.
-4. Prove that the direction-weighted trace concentration
+2. Test whether its frequency marginals obey a genuinely non-energy
+   scale-zero balance, a same-trajectory history cancellation, or only a
+   radius-weighted distributional identity.
+3. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
    energy, and the same-trajectory pullbacks, or construct the exact coherent
    survivor.
-5. Determine whether bounded projective-cross content makes the directional
+4. Determine whether bounded projective-cross content makes the directional
    weight compact enough to reduce the weighted concentration to
    \(\mathfrak E_0\); do not replace either signed remainder by variation.
-6. Classify sequence-dependent or temporally degenerate zero profiles beyond
+5. Classify sequence-dependent or temporally degenerate zero profiles beyond
    the now-closed smooth transverse-linear class, preserving cancellation
    between weighted trace and anisotropic projective-cross terms.
-7. Formulate the minimal ancient system decorated by
+6. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.
-8. Classify the degenerate sequence-dependent zero profiles capable of
+7. Classify the degenerate sequence-dependent zero profiles capable of
    carrying both excess and terminal alignment, and decide which orientation
    information is still needed for rigidity.
-9. Classify ancient solutions of the scalar trace defect equation together with
+8. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.
-10. Upgrade the nonzero ancient distributional bubble to a suitable object using
+9. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
-11. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+10. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.
-12. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
+11. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
-13. Determine the weakest oscillation modulus whose commutator gain still outruns the
+12. Determine the weakest oscillation modulus whose commutator gain still outruns the
    analytic radius.
-14. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
+13. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
 
 ## Interpretation
 
