@@ -735,6 +735,12 @@ The zero set and the low-amplitude part of vorticity are no longer the logical
 bottleneck. They can be cut away with a tunably vanishing, fully quantified error.
 The exact survivor is a scale-critical truncated-direction commutator.
 
+For a failure subsequence with a fixed lower bound \(\varepsilon_0\), one may choose
+a single \(\delta_* >0\) whose remainder is below \(\varepsilon_0/8\). Sending
+\(\delta_n\to0\) is unnecessary for the dynamic reduction and would introduce an
+artificially diverging derivative of the amplitude cutoff. The
+[natural-clock audit](commutator-dust-clock.md) uses this fixed truncation.
+
 The geometry-free truncated-enstrophy argument actually needs only
 \(\alpha_+=\max(\alpha,0)\), since both source weights are nonnegative. Therefore,
 if the exact positive aligned-strain target fails, the weak-small remainder can be

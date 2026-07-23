@@ -1,6 +1,6 @@
-# Handoff: prove parabolic persistence or exclude commutator bubble dust
+# Handoff: frequency-split the moving natural-clock variation
 
-**Updated:** 2026-07-23T07:41:38Z
+**Updated:** 2026-07-23T08:02:44Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,9 +24,9 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Use one solution's time history to eliminate or propagate the normalized commutator
-concentration measure through its canonical secondary scale. The regularity target
-remains
+Use the joint Navier--Stokes origin of vorticity and truncated direction to control
+the moving natural-clock commutator variation. Abstract commutator structure alone
+cannot exclude dust. The regularity target remains
 
 \[
 \widehat a_\lambda^+
@@ -40,8 +40,8 @@ remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/commutator-bubble-rescaling.md`;
-3. its input `dossier/experiments/ancient-commutator-compactness.md` only when an
+2. `dossier/experiments/commutator-dust-clock.md`;
+3. its input `dossier/experiments/commutator-bubble-rescaling.md` only when an
    antecedent definition is needed.
 
 Completed static results:
@@ -300,7 +300,8 @@ Unbounded \(\theta_n\) either yields a unit-level child bubble at
 \(\ell_n=\sigma_n^{-1/2}\), or a dust cloud requiring at least
 \(q/\gamma_n\to\infty\) natural-scale cells.
 
-The exact persistence certificate is now explicit. If
+The fixed-atomic-scale persistence certificate is sufficient in the coherent branch.
+If
 
 \[
 d_n(s)
@@ -321,26 +322,112 @@ d_n(s)^{3/2}
 \]
 
 then a fixed positive half-level defect persists throughout
-\(\tau\in[-\tau_0,0]\). Current endpoint control gives only a negative-Sobolev
-velocity modulus and does not imply this.
+\(\tau\in[-\tau_0,0]\). It is not the correct universal clock when
+\(\theta_n\to\infty\).
+
+Completed natural-clock and dust audit:
+
+> Once the failure size \(\varepsilon_0\) is fixed, choose one
+> \(\delta_*>0\) whose low-vorticity remainder is below
+> \(\varepsilon_0/8\). No \(\delta_n\to0\) derivative loss is needed.
+>
+> A height-\(\sigma_n\) witness has natural length and time
+>
+> \[
+> \ell_n=\sigma_n^{-1/2},
+> \qquad
+> t_n^\natural=\sigma_n^{-1}.
+> \]
+>
+> Relative to the fixed-mass atomic clock,
+>
+> \[
+> \frac{t_n^\natural}{\rho_n^2}
+> =
+> \theta_n^{-1}.
+> \]
+>
+> Thus \(\rho_n^2\)-persistence overcharges the unbounded-\(\theta_n\) branch.
+
+A smooth threshold-safe commutator proxy \(\mathscr K_n\), pulled back along an
+absolutely continuous centre path \(a_n(s)\), has the scale-invariant variation
+
+\[
+\mathfrak V_n
+=
+\int_{-\tau_0/\sigma_n}^0
+\left\|
+\left(
+\partial_s+\dot a_n\cdot\nabla
+\right)
+\mathscr K_n
+\right\|_{L^{3/2,\infty}}^\#
+\,ds.
+\]
+
+Small \(\mathfrak V_n\) preserves a positive half-level witness in the moving ball.
+If every moving ball loses the witness, then
+
+\[
+\inf_{a_n(0)=y_n}\mathfrak V_n
+\ge
+cq^{2/3};
+\]
+
+the disappearing trace becomes a nonzero temporal-variation defect.
+
+The exact moving vorticity derivative is
+
+\[
+\left(
+\partial_s+c\cdot\nabla
+\right)\Omega
+=
+\nu_{\mathrm{visc}}\Delta\Omega
++
+\nabla\cdot
+\left(
+(v-c)\otimes\Omega-\Omega\otimes(v-c)
+\right).
+\]
+
+Differentiating \(\mathscr K\) retains threshold crossing, both direction
+variations, amplitude variation, viscous variation, and the nonlinear flux.
+
+The abstract no-dust shortcut is closed. An explicit \(N=m^3\) Riesz-commutator
+lattice has
+
+\[
+\|b_N\|_{\mathrm{BMO}}=O(1),
+\qquad
+\|f_N\|_{L^{3/2}}=O(1),
+\]
+
+cell radius \(N^{-5/6}\), natural radius \(N^{-1/2}\), cloud radius
+\(N^{-1/6}\), and witness height \(N\). Its witness measures converge to one atom,
+but every natural-scale ball has mass \(O(N^{-1})\). The dimensionless atomic level
+is \(N^{2/3}\), and cross interactions are only
+\(O((\log N)/N)\) relative to each self-commutator. Any no-dust theorem must use
+Navier--Stokes coupling, not bounded BMO or even strong critical source control.
 
 Next deliverable:
 
-> Work on the scale-local cylinder
+> Work on the natural cylinder
 >
 > \[
-> B_{C\rho_n}(y_n)\times[-\tau_0\rho_n^2,0].
+> B_{C\sigma_n^{-1/2}}(a_n(s))
+> \times[-\tau_0/\sigma_n,0].
 > \]
 >
-> Use the localized vorticity/stretching equation and the exact
-> truncated-direction identity to prove either the half-level persistence bound
-> above or a weaker positive spacetime witness-mass bound. Inventory cutoff
-> diffusion, local dissipation, transport, and threshold-crossing terms at the
-> \(\rho_n^2\) clock. In parallel, test whether the singular-integral commutator
-> structure forces a lower bound on the natural-scale granularity \(\gamma_n\).
-> If neither closes, isolate the exact missing scale-local dissipation or temporal
-> equiintegrability norm. Do not merely perform another spatial rescaling, and do
-> not treat the ancient distributional velocity limit as suitable.
+> Frequency-split the displayed moving vorticity derivative at
+> \(\sigma_n^{1/2}\). Test whether viscosity controls the high frequencies through
+> a scale-local dissipation quantity and whether the nonlinear endpoint flux
+> \(L^{3,\infty}\cdot L^{3/2,\infty}\subset L^{1,\infty}\) produces a logarithmic
+> time loss at low frequencies. Success gives
+> \(\mathfrak V_n=o(q^{2/3})\) and moving natural-time persistence. Failure must
+> retain a nonzero temporal-variation/dissipation measure with its exact scaling.
+> Do not seek a no-dust theorem from abstract CRW bounds, and do not treat the
+> ancient distributional velocity limit as suitable.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

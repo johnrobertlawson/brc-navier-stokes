@@ -83,9 +83,20 @@ and breakdown work
   secondary rescaling: its defect mass and critical norms persist, its normalized
   vorticity threshold falls to zero, and it yields either a bounded-density
   positive commutator profile, a unit-level child bubble, or a dust cloud requiring
-  infinitely many natural-scale cells. The exact remaining dynamic input is a
-  scale-adapted temporal commutator modulus or equivalent parabolic persistence
-  bound, together with suitability or measure-valued rigidity.
+  infinitely many natural-scale cells.
+- For a witness of height \(\sigma\), the exact length and time are
+  \(\ell=\sigma^{-1/2}\) and \(\sigma^{-1}\). The latter is shorter than the
+  fixed-mass atomic clock \(\rho^2\) by the factor
+  \(\theta^{-1}=(\rho^2\sigma)^{-1}\), and persistence must allow the centre to
+  move. Loss of half-level mass forces a nonzero scale-invariant material
+  commutator-variation defect. Fixing the low-vorticity truncation once at the
+  failure tolerance prevents an artificial divergent cutoff derivative.
+- An explicit \(N\)-cell Riesz-commutator construction has uniformly bounded BMO
+  multiplier and uniformly bounded strong \(L^{3/2}\) source, yet its witness
+  measures converge to one atom while every natural-scale ball carries
+  \(O(N^{-1})\) mass. Thus abstract commutator structure cannot exclude dust;
+  any no-dust theorem must use the joint Navier--Stokes origin of direction and
+  vorticity. Suitability and measure-decorated rigidity remain separate gates.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -96,9 +107,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can one-solution time history propagate or eliminate the nonzero commutator
-> measure, exclude natural-scale bubble dust, and upgrade its ancient distributional
-> velocity limit to a suitable object that rigidity can exclude?
+> Can Navier--Stokes coupling control the moving natural-clock commutator variation,
+> exclude PDE-coupled dust, and upgrade its ancient distributional velocity limit to
+> a suitable object that rigidity can exclude?
 
 The coequal breakdown question remains:
 
@@ -107,12 +118,15 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive the scale-adapted half-level persistence estimate from the localized
-   vorticity equation, or identify the exact scale-local dissipation term that can
-   destroy it on a \(\rho^2\) interval.
-2. Prove a no-dust lower bound for natural-scale commutator granularity, or retain
-   the dust as a spacetime measure through the secondary parabolic limit.
-3. Upgrade the ancient distributional bubble to a suitable object using a uniform
+1. Frequency-split the exact moving vorticity derivative on
+   \(B_{C\sigma^{-1/2}}\times[-c/\sigma,0]\). Determine whether viscosity controls
+   the high frequencies and whether the endpoint
+   \(L^{3,\infty}\cdot L^{3/2,\infty}\subset L^{1,\infty}\) flux incurs an
+   unavoidable logarithmic time loss.
+2. If the natural-clock variation cannot be made small, retain it as a spacetime
+   defect measure and test whether the fact that both commutator inputs come from
+   the same vorticity excludes the abstract Riesz dust.
+3. Upgrade any surviving ancient distributional bubble to a suitable object using a uniform
    scale-local dissipation/pressure estimate, then test backward uniqueness and
    local-energy rigidity without discarding its defect decoration.
 4. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be

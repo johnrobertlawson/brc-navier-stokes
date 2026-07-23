@@ -96,11 +96,15 @@ critical commutator mass into a nonzero Radon measure. The
 this: subcritical Aubin--Lions compactness does produce an ancient distributional
 Navier--Stokes velocity, while every atomic defect has an exact fixed-mass secondary
 rescaling. That rescaling either yields a bounded-density positive commutator
-profile, a unit-level child bubble, or natural-scale dust, but no current estimate
-propagates
-the defect through a fixed secondary parabolic interval. The next bridge is
-therefore scale-adapted temporal persistence, a no-dust estimate, and suitable or
-measure-decorated ancient rigidity—not weak compactness alone.
+profile, a unit-level child bubble, or natural-scale dust. The
+[natural-clock dust audit](experiments/commutator-dust-clock.md) corrects the
+dynamic clock:
+a height-\(\sigma\) witness evolves on \(\sigma^{-1}\), and loss in a moving ball
+creates a scale-invariant material-variation defect. It also constructs bounded-BMO,
+strong-\(L^{3/2}\) Riesz-commutator dust, proving that abstract commutator structure
+cannot yield no-dust granularity. The next bridge must use the joint Navier--Stokes
+vorticity equation to control that natural-clock variation or retain it in a
+measure-decorated suitable ancient rigidity theorem.
 
 ## Active campaign B — Certified unstable profiles
 

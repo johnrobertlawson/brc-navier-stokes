@@ -305,6 +305,7 @@
         "The truncated direction is defined as zero at every vorticity zero",
         "The identity is exact on the high-vorticity superlevel set",
         "Only the positive aligned-strain part is an obstruction in the truncated-enstrophy inequality",
+        "A fixed failure size permits one fixed truncation parameter for all dynamic rescalings",
         "The low-vorticity remainder amplitude is at most a fixed multiple of delta times lambda",
         "Near-field and every far annulus are retained in the remainder estimate",
         "The critical scaling family has uniform weak-L(3/2) vorticity and solves unforced Navier-Stokes locally",
@@ -376,6 +377,36 @@
         "dossier/experiments/commutator-bubble-rescaling.md",
         "lab/navier_lab/commutator_bubbles.py",
         "lab/tests/test_commutator_bubbles.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-COMMUTATOR-DUST-001",
+      "title": "Natural commutator clock and atomic dust obstruction",
+      "kind": "analytic_counterexample",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "A positive witness of height sigma has natural length sigma^(-1/2) and natural time sigma^(-1), so moving-centre persistence is governed by a scale-invariant material commutator variation; bare order-zero commutator structure may still admit a fixed-mass atom composed of vanishing natural-scale dust.",
+      "invariants": [
+        "One fixed low-vorticity truncation suffices after the failure size is fixed",
+        "The natural time divided by the atomic parabolic time is exactly theta^(-1)",
+        "The persistence certificate permits translation of the concentration centre",
+        "The time-integrated weak-L(3/2) material commutator variation is scale invariant",
+        "The differentiated proxy retains diffusion, nonlinear flux, threshold crossing, direction variation, and amplitude variation",
+        "The dust multiplier has uniformly bounded BMO norm",
+        "The dust source has uniformly bounded strong L(3/2) norm",
+        "The witness measures converge to an atom while every natural-scale ball has vanishing mass",
+        "The dust construction is not asserted to arise from Navier-Stokes vorticity"
+      ],
+      "method": "Fix the truncation at the failure tolerance, normalize time by the witness height, pull a smooth threshold-safe commutator proxy back along moving centre paths, differentiate it through the vorticity equation, and construct a separated lattice of scaled Riesz-commutator cells whose self-interactions dominate their logarithmic cross-interactions.",
+      "certificate": "A written moving-centre persistence-or-variation theorem and explicit Riesz dust construction, with Fraction tests for cell, natural, cloud, amplitude, witness-mass, clock, interaction, and spacetime-variation powers.",
+      "success_criterion": "The correct natural clock and exact PDE variation terms are fixed, and either abstract commutator structure yields a no-dust lower bound or a bounded-BMO strong-critical counterexample proves that any no-dust theorem must use Navier-Stokes coupling.",
+      "failure_interpretation": "The natural-time normalization is not scale invariant, the moving-centre level-set argument loses witness mass without variation, cross interactions overwhelm the copied self-commutators, or a natural-scale ball retains fixed positive dust mass.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/commutator-dust-clock.md",
+        "lab/navier_lab/commutator_dust.py",
+        "lab/tests/test_commutator_dust.py"
       ],
       "last_run": "2026-07-23"
     },

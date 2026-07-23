@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can one solution's time history propagate or eliminate the normalized commutator defect, exclude natural-scale dust, and upgrade the ancient distributional bubble to a rigid suitable object?",
+      "question": "Can Navier-Stokes coupling control the moving natural-clock commutator variation, exclude PDE-coupled dust, and upgrade the ancient distributional bubble to a rigid suitable object?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "A scale-adapted persistence or no-dust estimate turns every defect into a nontrivial suitable ancient object that is excluded by rigidity, or the defect measure vanishes directly.",
-      "kill_criterion": "A Clay-admissible trajectory or measure-decorated ancient suitable limit retaining a nonzero persistent commutator defect.",
+      "success": "A natural-clock material-variation estimate propagates or eliminates every positive defect, while PDE coupling rules out abstract commutator dust and suitability plus rigidity excludes the surviving ancient object.",
+      "kill_criterion": "A Clay-admissible trajectory or measure-decorated ancient suitable limit retaining a nonzero natural-clock temporal-variation defect or PDE-coupled dust.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

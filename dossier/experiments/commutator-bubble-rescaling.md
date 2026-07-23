@@ -297,15 +297,20 @@ and write the exact high-level identity as
 \mathcal K_n+\mathcal R_n,
 \]
 
-where the low-vorticity remainder satisfies
+where the low-vorticity remainder obeys
 
 \[
-\|\mathcal R_n\|_{L^{p,\infty}(B_\kappa)}
-\longrightarrow0.
+\|\mathcal R_{\delta}\|_{L^{p,\infty}(B_\kappa)}
+\le
+C\delta
+\left(
+1+\log\frac{C}{\delta}
+\right).
 \]
 
-After fixing a lower bound \(\varepsilon_0>0\), choose \(\delta_n\downarrow0\) so
-that
+After fixing a lower bound \(\varepsilon_0>0\), choose one
+\(\delta_*\in(0,1/4)\) so that
+\(\mathcal K_n=\mathcal K_{\delta_*}[\Omega_n]\) and its remainder satisfy
 
 \[
 \|\mathcal R_n\|_{L^{p,\infty}(B_\kappa)}
@@ -715,7 +720,7 @@ Thus the cutoff direction becomes
 \[
 \widetilde\beta_n
 =
-q_{\delta_n}
+q_{\delta_*}
 \left(
 \frac{|\widetilde\Omega_n|}{\rho_n^2}
 \right)
@@ -1057,6 +1062,12 @@ first-scale spacetime mass is \(O(L^{-2})\). Rescaling space by \(L^{-1}\) and t
 by \(L^{-2}\) restores an order-one spacetime profile. A time-zero atom therefore
 cannot be propagated by a fixed-scale time average.
 
+The [natural-clock dust audit](commutator-dust-clock.md) subsequently sharpens this
+certificate. The \(\rho_n^2\) interval is scale-correct only while
+\(\theta_n=\rho_n^2\sigma_n\) stays bounded. In general the witness clock is
+\(\sigma_n^{-1}\), and persistence must allow a moving centre. That audit also
+proves that bare order-zero commutator structure cannot exclude natural-scale dust.
+
 ## Remaining frontier
 
 The ancient equation and the defect now have separate, exact fates:
@@ -1080,6 +1091,10 @@ ROUTE-R3B is therefore reduced to two dynamics-sensitive estimates:
 
 This is a stronger failure-to-minimal-object reduction, not a regularity theorem and
 not a Clay resolution.
+
+The follow-up audit replaces the fixed atomic-time target in the
+unbounded-\(\theta_n\) branch by a scale-invariant moving-centre temporal variation
+and supplies an abstract Riesz-commutator dust counterexample.
 
 Run the exact compactness, rescaling, and parabolic-clock ledger with:
 

@@ -4,6 +4,7 @@ __all__ = [
     "anisotropic",
     "ancient_compactness",
     "commutator_bubbles",
+    "commutator_dust",
     "covering_entropy",
     "critical_localization",
     "intervals",
