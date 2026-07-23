@@ -2,6 +2,7 @@
 
 __all__ = [
     "anisotropic",
+    "covering_entropy",
     "intervals",
     "links",
     "log_chain",

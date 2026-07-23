@@ -110,6 +110,31 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-COVER-ENTROPY-001",
+      "title": "Logarithmic covering entropy in the truncated-energy step",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3A"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "A countable high-vorticity cover replaces single-ball localization whenever its aggregated local weak-L(3/2) gain vanishes uniformly, and the resulting ell-(3/2) ledger is sharp from the local bounds alone.",
+      "invariants": [
+        "The localized commutator constant is uniform in centre, radius, and time",
+        "Weak-L(3/2) distribution functions aggregate with exponent 3/2",
+        "A measurable disjoint refinement removes overlap multiplicity",
+        "No covering geometry is claimed to follow from Navier-Stokes dynamics"
+      ],
+      "method": "Define the logarithmic Hausdorff-content ledger of a ball cover, aggregate the local commutator bounds by distribution functions, and propagate the resulting coefficient through quadratic absorption, interpolation, Young, damping, and the vorticity-tail estimate.",
+      "certificate": "A written covering lemma with a sharpness example and exact exponent checks for equal-radius and polynomial-radius covers.",
+      "success_criterion": "The proof identifies the exact cover cost, the weakest uniform vanishing condition for absorption, and the critical equal-radius core-count threshold.",
+      "failure_interpretation": "The proposed entropy does not control the restricted weak-L(3/2) norm or its energy-step exponent bookkeeping is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/covering-entropy.md",
+        "lab/navier_lab/covering_entropy.py",
+        "lab/tests/test_covering_entropy.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

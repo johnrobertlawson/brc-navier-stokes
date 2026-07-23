@@ -167,7 +167,7 @@
       "entry_assumptions": ["A local critical distribution estimate", "Geometry beyond bare weak-L(3/2) volume control"],
       "success": "A covering theorem whose entropy cost remains absorbable.",
       "kill_criterion": "A packing geometry whose necessary covering loss consumes the entire subcritical gain.",
-      "status": "open",
+      "status": "partial",
       "children": [],
       "evidence_claim_ids": ["CLM-GRUJIC-001"]
     },

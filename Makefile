@@ -1,7 +1,7 @@
 PYTHON ?= python
 PYTHONPATH := lab
 
-.PHONY: check records links markup test scaling log-chain multicore anisotropic strain fetch-2607 compile-2607
+.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy strain fetch-2607 compile-2607
 
 check: records links markup test
 
@@ -28,6 +28,9 @@ multicore:
 
 anisotropic:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.anisotropic
+
+covering-entropy:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.covering_entropy
 
 strain:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.strain

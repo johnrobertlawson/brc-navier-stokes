@@ -1,6 +1,6 @@
-# Handoff: remove assumptions; do not re-audit by default
+# Handoff: derive cover entropy from dynamics; do not re-audit
 
-**Updated:** 2026-07-23T05:23:13Z
+**Updated:** 2026-07-23T05:34:21Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -10,36 +10,40 @@ The arXiv:2607.08866v2 proof chain has been independently reconstructed. It surv
 only as a repaired conditional theorem for a projected-mild solution with:
 
 - uniform weak-\(L^{3/2}\) vorticity on one terminal interval;
-- uniform fixed-centre high-level localisation;
+- uniform \(O(1/\log\lambda)\) logarithmic cover content of high-vorticity sets
+  (the older fixed-centre profile is one sufficient special case);
 - one global vorticity-direction extension with uniform
   \(\mathrm{bmo}_{1/|\log r|}\) control;
 - a fixed or uniformly bounded spatially constant velocity background.
 
-No source-proof obligation remains open. The bottleneck is deriving or weakening the
-two geometric hypotheses, not rechecking the completed chain. This result is not Clay
-A–D.
+The cover replacement is a conditional theorem proved in this repository, not a
+claim of arXiv:2607.08866v2. No source-proof obligation remains open. The bottleneck
+is deriving the two geometric hypotheses, not rechecking the completed chain. This
+result is not Clay A–D.
 
 ## Default next target: ROUTE-R3A
 
-Replace the single fixed ball by moving, multiple, or anisotropic covers without
-spending the logarithmic gain.
+Derive the new logarithmic cover-content condition from a quantity controlled by
+viscous Navier--Stokes dynamics, or isolate an exact PDE-consistent obstruction.
 
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3A")' dossier/records/routes.json`;
-2. `dossier/experiments/multicore-localization.md`;
-3. `dossier/experiments/anisotropic-localization.md`.
+2. `dossier/experiments/covering-entropy.md`;
+3. the single geometric quantity selected for the next experiment.
 
-First deliverable:
+Completed accounting result:
 
-> Derive the exact covering/overlap cost when the local
-> \(L^{3/2,\infty}\) commutator estimate is inserted into the truncated-energy step.
-> State the weakest quantitative covering condition under which that cost times
-> \(1/\log\lambda\) still vanishes.
+> A cover by balls \(B_{r_j}\) costs exactly
+> \(\left(\sum_j\log(1/r_j)^{-3/2}\right)^{2/3}\). A measurable disjoint
+> refinement removes overlap multiplicity. Vanishing uniform content is absorbable;
+> \(O(1/\log\lambda)\) content retains the full conditional chain.
 
-Success is an absorbable entropy ledger or covering lemma. Failure is an exact packing
-showing that every plausible cover consumes the full logarithmic gain. Do not begin
-with a broad PDE construction before this cost is known.
+For comparable polynomially shrinking cores, the count threshold is
+\(N_\lambda=o((\log\lambda)^{3/2})\). Finite moving cores and the recorded anisotropic
+core retain the full gain. The next deliverable must connect this content to an actual
+PDE-controlled packing, perimeter, concentration, or analyticity estimate; do not
+replace that step with another scalar profile.
 
 ## Alternative routes—choose one, do not mix them
 

@@ -20,6 +20,10 @@ and breakdown work
   escape-time selection, the slit harmonic-measure domain, and final supremum logic.
 - Exact multi-core and one-core anisotropic examples prove that weak-\(L^{3/2}\)
   control alone does not imply the paper's single-ball critical-point localisation.
+- The single-ball hypothesis can be replaced by the exact logarithmic cover content
+  \(\left(\sum_j\log(1/r_j)^{-3/2}\right)^{2/3}\). Overlap multiplicity is removable;
+  vanishing content is absorbable, while \(O(1/\log\lambda)\) content retains the
+  complete conditional logarithmic chain.
 - Smooth divergence-free vorticity need not supply a log-weighted BMO direction
   extension across its zero set.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
@@ -30,10 +34,10 @@ regularity theorem.
 
 ## Current mathematical focus
 
-The 2607 audit has moved the frontier upstream:
+The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can the fixed-centre high-level localisation and log-weighted direction control be
-> derived, weakened, or replaced using quantities actually controlled by viscous
+> Can uniform vanishing logarithmic cover content and log-weighted direction control
+> be derived or refuted using quantities actually controlled by viscous
 > Navier–Stokes dynamics?
 
 The coequal breakdown question remains:
@@ -43,8 +47,9 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Develop a scale-efficient covering replacement for single-ball localisation and
-   quantify the entropy cost of multiple, moving, or anisotropic cores.
+1. Derive the logarithmic cover-content decay from a PDE-controlled packing,
+   perimeter, concentration, or analyticity quantity, or construct a PDE-consistent
+   non-vanishing packing.
 2. Lift the scalar localisation counterexamples toward divergence-free,
    Biot–Savart-consistent vorticity geometry.
 3. Test whether local energy and viscosity force any terminal-time VMO modulus for
