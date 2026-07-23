@@ -651,6 +651,15 @@ trajectory or exclude the fixed-top-shell marked distributional candidate
 in each surviving clock regime after proving the exact suitability needed
 by the rigidity argument.
 
+The subsequent
+[continuation-clock reduction](continuation-clock-descent.md) derives the
+first such relation from the restarted \(L^\infty\) lifespan. A terminal
+layer at the marked parent scale forces unbounded parent-normalised velocity
+and escape beyond every fixed parent frequency. At the finer inverse-velocity
+scale, the forward clock is bounded away from zero. No spatial or tensor
+bridge from that continuation concentration back to the carrier is yet
+proved.
+
 Run the exact shell-transfer, support-separation, clock-regime, carrier-action,
 and persistence-time ledgers with:
 

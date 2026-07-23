@@ -549,6 +549,13 @@ The theorem is a conditional exclusion of one highly structured singularity clas
 does not derive the profile, localisation, or direction hypotheses from arbitrary
 smooth finite-energy data.
 
+The later
+[continuation-clock reduction](continuation-clock-descent.md) reuses the
+restarted lifespan (14)--(17) on the fixed-shell event sequence. It turns a
+zero parent forward clock into a strictly finer inverse-velocity
+continuation scale with nonzero clock, without importing the geometric
+hypotheses used by the analyticity contradiction here.
+
 ## Source repairs
 
 | Source locus | Source wording | Required repair |

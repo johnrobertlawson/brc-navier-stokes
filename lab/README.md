@@ -50,6 +50,7 @@ not convert passing unit tests into mathematical truth.
 | **scale_defect.py** | Parent/carrier ratio identities, intrinsic detector collapse, generic parabolic cocycle, conditional count/shift compactification, and signed history balance | A coherent two-scale genealogical diagonal-selection lemma before any no-neck or stationary-process rigidity |
 | **two_scale_synchronization.py** | One-diagonal sparse selection, fresh-band attachment, disjoint cutoff retention, detector moment transfer, and critical block-count growth | A bound or rigidity mechanism for the resulting divergent strong critical occupation; no inter-event genealogy is checked |
 | **fixed_shell_clock.py** | Fixed top-shell detector transfer, smooth-support separation, forward-clock trichotomy, carrier-action powers, and persistence-time summability | A PDE clock-scale law or rigidity theorem for the marked terminal-layer, finite-horizon, and eternal parent candidates |
+| **continuation_clock.py** | First-singular-time clock product, fixed-cutoff high-pass escape, inverse-velocity scale descent, and global scaling-family horizon obstruction | A spatial and tensor bridge between the marked carrier and the finer continuation concentration, or a parent-normalised velocity ceiling |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -106,6 +107,7 @@ From the repository root:
     make scale-defect
     make two-scale-sync
     make fixed-shell-clock
+    make continuation-clock
     make strain
     make fetch-2607
     make compile-2607

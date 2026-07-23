@@ -589,6 +589,29 @@ and breakdown work
   mark; retaining it needs negative renormalisation or another cross-scale
   input. Sparse persistence intervals have summable lengths, and scale
   convergence alone selects none of the three clock regimes.
+- Restarted \(L^\infty\) mild theory supplies the first exact forward-clock
+  law. With \(U_j=\|u(t_j)\|_\infty\),
+  \(V_j=R_jU_j\), and
+  \(\Theta_j=(T^*-t_j)/R_j^2\), first-singular-time maximality gives
+  \[
+  \Theta_jV_j^2
+  =
+  (T^*-t_j)U_j^2
+  \ge c_\nu>0.
+  \]
+  Hence a terminal-layer parent clock forces \(V_j\to\infty\). Biot--Savart
+  and Lorentz--Bernstein keep every fixed parent-normalised velocity low
+  pass bounded under the endpoint vorticity hypothesis, so the excess
+  velocity lies above every fixed multiple of \(R_j^{-1}\). At the
+  continuation radius \(d_j=U_j^{-1}\),
+  \(d_j/R_j\to0\) while
+  \((T^*-t_j)/d_j^2\ge c_\nu\). The terminal layer is therefore a quantified
+  finer-scale velocity escape, not a featureless zero-clock trace. Current
+  data neither place that continuation concentration near the tensor
+  carrier nor transfer the detector mark to it. Exact scalings of global
+  smooth small-data solutions show separately that endpoint size, energy,
+  suitability, and a fixed shell cannot upper-bound the forward horizon
+  without first-singular-time or ancient-history input.
 - The surviving algebra is now explicitly conditional. For a coherent
   two-edge cell,
   \[
@@ -629,16 +652,16 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > was the one-radius genealogy, not the detector-transfer matrix estimate or
 > the Beltrami no-go.
 
-> **The surviving event has a fixed shell and three possible parent
-> clocks.** Every retained carrier can be marked by the same relative top
-> annulus, independent of its predecessor. The parent limits are exhausted
-> by terminal-layer, finite-forward-horizon, and eternal candidates. Pure
-> clock packing and unrenormalised local carrier-shell action do not control
-> the divergent shell occupation. The immediate question is whether the PDE forces a
-> relation between \(T^*-t_j\) and \(R_j^2\), or whether all three marked
-> parent candidates can be excluded after the needed suitability upgrade.
-> A full carrier-to-next-parent genealogy remains a separate prerequisite
-> only for a two-edge no-neck or stationary-process argument.
+> **The terminal-layer clock now has a finer continuation scale.** A zero
+> parent horizon forces unbounded \(R_j\|u(t_j)\|_\infty\) and velocity escape
+> beyond every fixed parent frequency. Rescaling at
+> \(d_j=\|u(t_j)\|_\infty^{-1}\) restores a forward horizon bounded away from
+> zero. The immediate question is whether this continuation concentration is
+> spatially and tensorially coupled to the fixed-shell carrier, or whether a
+> parent-normalised velocity ceiling excludes it. Finite-horizon and eternal
+> parent rigidity remain separate gates. A full carrier-to-next-parent
+> genealogy is still required only for the two-edge stationary-process
+> branch.
 
 The coequal breakdown question remains:
 
@@ -647,63 +670,72 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive a one-trajectory PDE relation between the terminal gap
-   \(T^*-t_j\) and parent event scale \(R_j^2\), or prove that no such
-   relation follows from the current endpoint and local-energy inputs.
-2. Upgrade the fixed-top-shell marked parent candidates to the exact
+1. Prove a same-time bridge between the fixed-shell tensor carrier at
+   \(R_j\) and the finer continuation concentration at
+   \(d_j=\|u(t_j)\|_\infty^{-1}\), or derive a uniform
+   \(R_j\|u(t_j)\|_\infty\) ceiling which eliminates the terminal-layer
+   branch.
+2. Determine whether the high-pass escape forced by a zero parent clock
+   carries a finite-index Lorentz cost, local energy cost, or positive
+   alignment mark; do not infer spatial proximity from the global velocity
+   supremum.
+3. Upgrade the fixed-top-shell marked parent candidates to the exact
    suitable or mild class needed for rigidity, then exclude the
-   terminal-layer, finite-forward-horizon, and eternal regimes separately.
-3. Test whether a parent-clock, nonlocal, or signed history identity can sum
+   finite-forward-horizon and eternal regimes separately.
+4. Test whether first-singular-time nonextendibility or ancient history can
+   upper-bound the parent forward horizon. Instantaneous endpoint, energy,
+   suitability, and the fixed-shell mark alone cannot do so.
+5. Test whether a parent-clock, nonlocal, or signed history identity can sum
    the fixed-shell moments. A charge built only from the unrenormalised local
    carrier-clock shell loses its intrinsic detector and cumulative action by
    \(\lambda_j^4\) and \(\lambda_j^2\).
-4. Determine whether the linearly divergent
+6. Determine whether the linearly divergent
    \(L^{5/2}_{t,x}\) shell occupation can be bounded by a finite-secondary-index
    estimate or another genuinely scale-zero input not present in the current
    weak endpoint and energy ledgers.
-5. Separately, for the scale-process route, prove a coherent two-scale
+7. Separately, for the scale-process route, prove a coherent two-scale
    genealogical diagonal-selection lemma retaining \((R_k,r_k)\), both
    transition edges and offset pairs, parent jets, carrier Young measures,
    matched cutoffs, local-energy data, and detector-freezing errors on every
    finite window.
-6. Conditional on that nested array, derive separate no-neck estimates or
+8. Conditional on that nested array, derive separate no-neck estimates or
    transition Young measures for the internal \(\lambda_k\to0\) and bridge
    \(\kappa_k\to0\) boundaries; do not replace discrete depth by physical
    log-density.
-7. Determine whether the signed history-square source, including the
+9. Determine whether the signed history-square source, including the
    prelimit detector commutators, has a finite scale-counting split.
-8. Only then test rigidity of a shift-stationary suitable two-scale process
+10. Only then test rigidity of a shift-stationary suitable two-scale process
    with positive expected fresh-detector moment and complete same-trajectory
    graph closure.
-9. Prove that the direction-weighted trace concentration
+11. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
    energy, and the same-trajectory pullbacks, or construct the exact coherent
    survivor.
-10. Determine whether bounded projective-cross content makes the directional
+12. Determine whether bounded projective-cross content makes the directional
    weight compact enough to reduce the weighted concentration to
    \(\mathfrak E_0\); do not replace either signed remainder by variation.
-11. Classify sequence-dependent or temporally degenerate zero profiles beyond
+13. Classify sequence-dependent or temporally degenerate zero profiles beyond
    the now-closed smooth transverse-linear class, preserving cancellation
    between weighted trace and anisotropic projective-cross terms.
-12. Formulate the minimal ancient system decorated by
+14. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.
-13. Classify the degenerate sequence-dependent zero profiles capable of
+15. Classify the degenerate sequence-dependent zero profiles capable of
    carrying both excess and terminal alignment, and decide which orientation
    information is still needed for rigidity.
-14. Classify ancient solutions of the scalar trace defect equation together with
+16. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.
-15. Upgrade the nonzero ancient distributional bubble to a suitable object using
+17. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
-16. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+18. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.
-17. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
+19. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
-18. Determine the weakest oscillation modulus whose commutator gain still outruns the
+20. Determine the weakest oscillation modulus whose commutator gain still outruns the
    analytic radius.
-19. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
+21. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
 
 ## Interpretation
 

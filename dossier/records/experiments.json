@@ -1300,10 +1300,11 @@
         "Each parent rescaling has an ancient backward domain and a compactified forward horizon Theta equal to the terminal gap divided by the squared parent radius",
         "The exhaustive forward-clock limits are a terminal layer, a finite positive forward horizon, and an eternal horizon",
         "Current compactness yields only a nonzero fixed-top-shell marked distributional candidate on compact subsets inside the limiting parent domain, not suitability or mildness",
+        "The subsequent continuation-clock theorem refines a zero parent horizon into high-frequency velocity escape at a strictly finer nonzero-clock scale without providing a spatial or tensor bridge",
         "On the subnatural carrier clock, spatial and temporal shell variation scale as lambda and lambda squared, intrinsic strain and detector scale as lambda squared and lambda fourth, and cumulative strain impulse and viscous phase vanish",
         "The order-one carrier detector remains an externally renormalized parent mark rather than an unrenormalized local carrier-scale dynamical charge",
         "Sparse persistence intervals have summable physical lengths, and scale and time convergence alone do not select a forward-clock regime",
-        "No parent-clock rigidity, clock-scale law, genealogy, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
+        "No upper clock law, carrier-continuation bridge, parent-clock rigidity, genealogy, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Apply endpoint Lorentz-Bernstein directly at a fixed fraction of every parent cutoff, transfer the squared detector to the resulting top annulus on the original carrier set, sparsely separate those fixed-shape symbols, compactify the forward event horizon by the ratio of terminal gap to parent radius squared, and audit the exact shell powers on the subnatural carrier clock and the persistence-time packing sum.",
       "certificate": "A written fixed-shell and clock trichotomy reduction plus exact Fraction tests for top-shell detector transfer, enlarged-support separation, all three gap-power clock regimes, parent-domain endpoints, carrier-clock action powers, and geometric persistence-time summability.",
@@ -1314,6 +1315,40 @@
         "dossier/experiments/fixed-shell-clock-compactification.md",
         "lab/navier_lab/fixed_shell_clock.py",
         "lab/tests/test_fixed_shell_clock.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-CONTINUATION-CLOCK-001",
+      "title": "Terminal-layer descent to the velocity continuation scale",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "The zero parent-clock regime can persist with bounded parent-normalized velocity, or the instantaneous endpoint, energy, suitability, and fixed-shell mark alone can impose an upper bound on the parent forward horizon.",
+      "invariants": [
+        "First-singular-time local mild existence gives terminal gap times velocity supremum squared bounded below by a positive viscosity-dependent constant",
+        "The exact clock product is parent horizon times parent-normalized velocity squared",
+        "The fixed top-shell strain mark gives a positive lower floor for parent-normalized velocity but no upper ceiling",
+        "A zero parent horizon forces parent-normalized velocity to diverge",
+        "The weak-L three halves vorticity endpoint bounds every fixed parent-normalized velocity low pass through Biot-Savart and Lorentz-Bernstein",
+        "A zero parent horizon therefore forces the normalized velocity tail above every fixed dilation of the parent cutoff to diverge",
+        "The inverse velocity continuation radius is asymptotically smaller than the marked parent radius in the terminal-layer branch",
+        "The continuation-radius forward horizon is bounded away from zero by the restarted lifespan theorem",
+        "A uniform parent-normalized velocity ceiling excludes the terminal-layer branch",
+        "No current estimate places the continuation maximum near the marked carrier or transfers its tensor detector to the finer scale",
+        "Exact scaling of a nonzero global smooth small-data solution preserves the critical endpoint and normalized shell mark while permitting arbitrary chosen forward observation horizons",
+        "The global scaling family has no first singular time and excludes only upper-clock laws that omit nonextendibility, ancient history, and same-trajectory inputs",
+        "No bridge theorem, suitability theorem for the parent limit, rigidity theorem, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Combine the restarted L-infinity lifespan at a first singular time with the exact parent clock identity, use Biot-Savart and Lorentz-Bernstein to separate bounded parent low passes from any escaping velocity tail, descend to the inverse-supremum continuation radius, and test upper-clock claims with exact Navier-Stokes scalings of a global smooth small-data solution.",
+      "certificate": "A written continuation-clock reduction and exact Fraction tests for the clock product, lifespan compatibility, terminal-layer velocity escape, low-pass and high-pass ledgers, continuation-scale ratio and horizon, and the invariant endpoint, shell mark, and energy scaling of a global family.",
+      "success_criterion": "The terminal-layer parent clock is either excluded by a parent-normalized velocity ceiling or converted into a quantified finer continuation-scale concentration, while any upper-clock shortcut based only on local inherited data is given its exact counter-scope.",
+      "failure_interpretation": "The restarted lifespan does not give the stated first-singular-time product, a fixed parent low pass can carry the diverging normalized velocity under the endpoint bound, the continuation scale retains a zero forward horizon, or the global scaling family changes a claimed invariant.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/continuation-clock-descent.md",
+        "lab/navier_lab/continuation_clock.py",
+        "lab/tests/test_continuation_clock.py"
       ],
       "last_run": "2026-07-23"
     },
