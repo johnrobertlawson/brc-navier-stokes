@@ -1,6 +1,6 @@
-# Handoff: rescale persistent commutator concentration; do not re-audit
+# Handoff: propagate or rescale the commutator defect measure; do not re-audit
 
-**Updated:** 2026-07-23T06:59:36Z
+**Updated:** 2026-07-23T07:12:52Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,8 +24,8 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Turn failure of the exact high-level local strain condition into a normalized
-ancient-profile compactness obligation. The target remains
+Use one solution's time history to eliminate, propagate, or rescale the normalized
+commutator concentration measure. The regularity target remains
 
 \[
 \widehat a_\lambda
@@ -39,9 +39,9 @@ ancient-profile compactness obligation. The target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/truncated-direction-defect.md`;
-3. only the exact frontier in
-   `dossier/experiments/critical-scale-localization.md`.
+2. `dossier/experiments/ancient-commutator-compactness.md`;
+3. only the scaling family in
+   `dossier/experiments/truncated-direction-defect.md`.
 
 Completed static results:
 
@@ -198,25 +198,61 @@ uniform weak-\(L^{3/2}\) vorticity, vanishing kinetic energy, and
 This is a family of solutions, not one blow-up trajectory. It proves that another
 scale-invariant snapshot bound cannot close ROUTE-R3B.
 
-Next deliverable:
+Completed ancient compactness audit:
 
-> Assume one putative blow-up solution has
-> \(\mathcal C_{\lambda_n,\delta_n}\ge\varepsilon_0\) at
-> \((x_n,t_n)\), with \(\lambda_n\to\infty\), and set
+> A failure sequence with \(r_n=\lambda_n^{-1/2}\) produces exact rescalings
 >
 > \[
-> r_n=\lambda_n^{-1/2},
-> \qquad
 > u_n(y,s)
 > =
 > r_n u(x_n+r_ny,t_n+r_n^2s).
 > \]
 >
-> Prove the normalized commutator survives in a nontrivial ancient limit, specifying
-> the exact local topology needed to pass the Calderón--Zygmund commutator. If
-> uniform weak-\(L^{3/2}\) vorticity and local energy do not give that compactness,
-> isolate the precise concentration or defect measure. Do not call a rescaled
-> subsequence an ancient solution without this certificate.
+> Their backward domains exhaust \((-\infty,0]\), critical weak norms are invariant,
+> and Calderón--Zygmund far tails are uniformly \(O(L^{-2})\) on compact sets.
+> Strong local \(L^{3/2}\) vorticity convergence plus threshold stability would
+> preserve a nontrivial commutator trace.
+
+The endpoint assumptions do not supply that topology. Selecting a distribution
+witness gives bounded measures
+
+\[
+d\nu_n
+=
+\sigma_n^{3/2}
+\mathbf1_{B_\kappa\cap\{|\mathcal K_n|>\sigma_n\}}\,dy
+\rightharpoonup^*d\nu,
+\]
+
+with
+
+\[
+\nu(\overline{B_\kappa})\ge c\varepsilon_0^{3/2}>0.
+\]
+
+The model \(L^2\mathbf1_{B_{1/L}}\) converges to zero in distributions and every
+\(L^q\), \(q<3/2\), while its witness measure converges to a nonzero atom. Therefore
+an ordinary weak ancient limit can be zero even though the commutator defect
+survives. Weak-\(L^3\) velocity also fails to control the cubic local-energy flux, so
+suitable-solution compactness is a separate gate.
+
+Next deliverable:
+
+> Split \(\nu\) into diffuse and atomic alternatives. For a fixed positive mass,
+> either prove backward persistence on \(s\in[-\tau_0,0]\) with \(\tau_0>0\)
+> independent of the sequence, or choose the atomic witness radius \(\rho_n\) and
+> perform the secondary parabolic rescaling
+>
+> \[
+> \widetilde u_n(z,\tau)
+> =
+> \rho_n u_n(y_n+\rho_nz,\rho_n^2\tau).
+> \]
+>
+> Track the normalized vorticity threshold, time domain, weak norms, and defect
+> measure exactly. Success yields a nontrivial function profile or a certified
+> bubble tree; failure must identify the missing temporal modulus or dissipation
+> bound. Do not discard an atomic \(\nu\) by passing only to the weak velocity limit.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

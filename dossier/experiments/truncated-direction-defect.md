@@ -752,6 +752,13 @@ its admissible next step is narrower:
 > quantity, or an ancient-limit rigidity theorem to rule out the persistent
 > truncated commutator concentration exhibited by the scaling family.
 
+The [ancient compactness audit](ancient-commutator-compactness.md) carries out the
+first rescaling. Backward time domains expand and nonlocal tails are tight, but the
+endpoint bounds do not preserve the commutator as a function: a nonzero Radon
+concentration measure can remain while every subcritical function limit is zero.
+Any rigidity argument must eliminate that measure or prove strong critical
+compactness before using an ancient profile.
+
 Run the exact scaling and remainder checks with:
 
     make truncated-direction

@@ -65,6 +65,13 @@ and breakdown work
   nonzero normalized commutator with uniform weak-\(L^{3/2}\) vorticity and
   vanishing kinetic energy. Snapshot estimates therefore cannot close ROUTE-R3B;
   one-solution time history is essential.
+- Rescaling a persistent commutator produces backward time domains exhausting
+  \((-\infty,0]\), with invariant critical norms and uniformly tight
+  Calderón--Zygmund far tails. However, the endpoint bounds do not certify an
+  ancient commutator profile: the function sequence can converge to zero in every
+  subcritical topology while a nonzero Radon witness measure remains. Strong
+  critical trace compactness and suitable-solution spacetime compactness are
+  separate missing gates.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -75,9 +82,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can a nonvanishing truncated commutator along one putative blow-up be rescaled to
-> an ancient critical solution and then excluded by spacetime compactness or
-> rigidity?
+> Can one-solution time history eliminate the nonzero commutator concentration
+> measure, or force it into a genuine ancient critical profile that rigidity can
+> exclude?
 
 The coequal breakdown question remains:
 
@@ -86,14 +93,14 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Assume a nonvanishing truncated-commutator sequence
-   \((x_n,t_n,\lambda_n)\), rescale by \(r_n=\lambda_n^{-1/2}\), and state the exact
-   normalized ancient-profile compactness obligation.
-2. Determine whether uniform weak-\(L^{3/2}\) vorticity plus the local energy
-   inequality gives enough strong local compactness to preserve the commutator, or
-   identify the missing spacetime norm.
-3. If a nontrivial ancient limit exists, test backward uniqueness, local energy
-   dissipation, and direction transport for a rigidity contradiction.
+1. Split the normalized witness measure into diffuse and atomic alternatives. Prove
+   a backward persistence estimate on a fixed parabolic interval, or extract the
+   smaller spatial and temporal scale of each atom.
+2. Quantify the exact local dissipation or critical equiintegrability needed to
+   upgrade weak-\(L^{3/2}\) vorticity to a preserved time-zero commutator trace.
+3. Build the resulting bubble-tree or measure-valued ancient object without
+   discarding derivative concentration, then test backward uniqueness and local
+   energy rigidity.
 4. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.

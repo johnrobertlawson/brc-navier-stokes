@@ -322,6 +322,33 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-ANCIENT-COMPACTNESS-001",
+      "title": "Ancient rescaling and the commutator concentration defect",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "A nonvanishing truncated commutator along one putative blow-up rescales to backward-ancient time domains with invariant critical bounds, but the endpoint hypotheses may yield only a nonzero concentration measure rather than a nontrivial ancient function unless critical strong compactness is proved.",
+      "invariants": [
+        "The parabolic rescaling normalizes the vorticity level and critical ball simultaneously",
+        "The backward rescaled time interval tends to minus infinity",
+        "Weak-L(3/2) vorticity and weak-L3 velocity norms are scale invariant",
+        "Calderon-Zygmund far-field tails vanish uniformly on compact sets",
+        "A selected distribution witness produces a bounded nonzero Radon measure",
+        "No ancient solution or preserved commutator is claimed from weak or subcritical convergence alone"
+      ],
+      "method": "Rescale a failure sequence, inventory all invariant bounds and time domains, derive uniform singular-integral tail tightness, state a strong critical convergence certificate for passing the high-level commutator, and construct a witness-threshold concentration measure when that certificate fails.",
+      "certificate": "A written compactness-gate theorem and defect-measure construction, with exact Fraction tests for Navier-Stokes scaling, time expansion, weak-norm invariance, witness mass, and subcritical loss.",
+      "success_criterion": "The precise assumptions needed for a nontrivial ancient commutator profile are separated from what the current endpoint hypotheses actually provide, and any missing critical mass is represented by a nonzero normalized defect measure rather than silently discarded.",
+      "failure_interpretation": "The rescaled time interval is not ancient, nonlocal tails are not tight, the witness measure is unbounded or can vanish, or the stated strong topology does not pass the thresholded commutator.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/ancient-commutator-compactness.md",
+        "lab/navier_lab/ancient_compactness.py",
+        "lab/tests/test_ancient_compactness.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

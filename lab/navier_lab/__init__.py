@@ -2,6 +2,7 @@
 
 __all__ = [
     "anisotropic",
+    "ancient_compactness",
     "covering_entropy",
     "critical_localization",
     "intervals",

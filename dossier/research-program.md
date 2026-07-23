@@ -87,6 +87,13 @@ use cross-time information from one putative blow-up—most naturally a normaliz
 ancient-limit compactness and rigidity argument—rather than seek another universal
 snapshot inequality.
 
+The [ancient compactness audit](experiments/ancient-commutator-compactness.md)
+shows why this step needs its own certificate. The rescaled domains are backward
+ancient and singular-integral tails are tight, but endpoint convergence can lose all
+critical commutator mass into a nonzero Radon measure. The next bridge is therefore
+critical trace equiintegrability, backward persistence of that measure, or a
+measure-valued ancient rigidity theorem—not weak compactness alone.
+
 ## Active campaign B — Certified unstable profiles
 
 Reproduce the Hou–Wang–Yang computer-assisted result independently before extending it.

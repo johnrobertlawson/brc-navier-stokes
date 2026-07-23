@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can the time history of one putative blow-up force the zero-set-safe truncated-direction commutator to vanish despite scale-critical snapshot saturation?",
+      "question": "Can one solution's time history eliminate the normalized commutator concentration measure or supply strong critical compactness for a nontrivial ancient profile?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "Uniform decay of the truncated commutator, hence critical-ball high-level strain decay, derived from one solution's dynamics.",
-      "kill_criterion": "A Clay-admissible trajectory or ancient blow-up limit retaining a nonzero normalized truncated commutator.",
+      "success": "The commutator defect measure vanishes or is represented by a nontrivial ancient profile that is excluded by rigidity.",
+      "kill_criterion": "A Clay-admissible trajectory or measure-valued ancient limit retaining a nonzero normalized commutator defect.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]
