@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T23:22:09Z
+**Updated:** 2026-07-23T23:42:39Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -431,6 +431,27 @@ adjoint signs, Nash and Lorentz exponents, Kato cutoff, physical
 genealogy, double lower limit, scaling covariance, bridge transfer, and
 Hardy-space interpolation. It validates no additive budget or Clay
 conclusion.
+
+The next candidate removes the remote-horizon artefact from that payment.
+The fixed forward half-height interval at every Besov event lets one
+choose one finite scaled horizon \(T_0\) and the original compact
+solenoidal detector alone. Every event then carries a fixed positive
+finite adjoint-pressure packet.
+
+On the one unscaled physical genealogy these packets obey an exhaustive
+alternative. Either their pressure remains concentrated in arbitrarily
+thin terminal adjoint layers in scaled variables, or an infinite
+subsequence pays on pairwise disjoint physical adjoint-time annuli matched
+to the event scales. A Rademacher bundle combines the annular family into
+one compact solenoidal terminal test with uniformly bounded \(L^2\), but
+its forced pressure history is only of order \(\sqrt T\). This explains
+why temporal disjointness and adjoint energy still do not close the
+Liouville gate.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-packets-2026-07-23.md)
+found the repaired reduction valid in scope after recomputing the
+constants, covariance, early/late limit quantifiers, annulus thinning,
+common-genealogy pullback, Khintchine randomisation, and square-root
+ledger. It validates neither surviving rigidity step.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 
@@ -2257,15 +2278,15 @@ Next deliverable:
 > its recursive Navier--Stokes event limits force a finite-mean roof. Such
 > a law suspends to an invariant scaling probability distinct from
 > \(\delta_0\). In the complementary infinite-mean branch, the
-> solenoidal-adjoint construction already forces a fixed positive
-> lower-relaxed pressure-history cost on every bridge. Prove either a
-> uniform sub-square-root upper law for that history or an event-index
-> upper bound summing the overlapping bridge costs. Do not assume an
+> solenoidal-adjoint construction already forces a fixed positive packet
+> on one finite scale-matched horizon at every event. Exclude its
+> scale-critical terminal initial-layer cascade, or prove a
+> finite-secondary-index/vector-valued estimate for the alternative
+> pairwise disjoint physical adjoint-time annuli. Rademacher bundling has
+> uniformly bounded terminal \(L^2\) but still saturates \(\sqrt T\), so
+> adjoint energy alone cannot give the needed gain. Do not assume an
 > intrinsic endpoint adjoint on the rough hull, use the unavailable global
 > \(L^3\) identity, or replace event index by physical log density.
-> Adjoint \(L^2\) energy, the physical pressure Poisson algebra, and the
-> known small \(L^{2+\delta}\) gradient gain do not control the required
-> \(L^1_x\) adjoint-pressure source.
 >
 > First test the synchronized event sequence itself: determine whether
 > one-trajectory clock geometry, a finite-secondary-index estimate, a

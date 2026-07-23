@@ -1,7 +1,7 @@
 PYTHON ?= python
 PYTHONPATH := lab
 
-.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity projective-alignment vacuum-orientation polar-tensor polar-entropy tensor-adjoint adjoint-kato shear-adjoint trace-adjoint trace-band-flux trace-boundary-flux trace-projective projective-interface trace-excess trace-temporal alignment-excess carrier-microbubble microbubble-decoration strain-jet forcing-jet moving-band tree-budget band-increment fresh-detector frequency-energy scale-defect two-scale-sync fixed-shell-clock continuation-clock fixed-shell-local singular-clock-centering terminal-satellite-tower terminal-satellite-compactness terminal-besov-ancestry terminal-outer-profile terminal-distance-profile terminal-satellite-packing terminal-cluster-packing terminal-logscale-survivor scale-hull-balance parabolic-scale-hull defect-event-suspension adjoint-pressure-history defect-event-hull strain fetch-2607 compile-2607
+.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity projective-alignment vacuum-orientation polar-tensor polar-entropy tensor-adjoint adjoint-kato shear-adjoint trace-adjoint trace-band-flux trace-boundary-flux trace-projective projective-interface trace-excess trace-temporal alignment-excess carrier-microbubble microbubble-decoration strain-jet forcing-jet moving-band tree-budget band-increment fresh-detector frequency-energy scale-defect two-scale-sync fixed-shell-clock continuation-clock fixed-shell-local singular-clock-centering terminal-satellite-tower terminal-satellite-compactness terminal-besov-ancestry terminal-outer-profile terminal-distance-profile terminal-satellite-packing terminal-cluster-packing terminal-logscale-survivor scale-hull-balance parabolic-scale-hull defect-event-suspension adjoint-pressure-history adjoint-pressure-packets defect-event-hull strain fetch-2607 compile-2607
 
 check: records links markup test
 
@@ -190,6 +190,9 @@ defect-event-suspension:
 
 adjoint-pressure-history:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_history
+
+adjoint-pressure-packets:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.adjoint_pressure_packets
 
 defect-event-hull: defect-event-suspension
 

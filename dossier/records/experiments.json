@@ -1957,6 +1957,45 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-PACKETS-001",
+      "title": "Finite adjoint-pressure packets at Besov events",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-STABILITY-001"
+      ],
+      "hypothesis": "The fixed forward half-height interval at every Besov event turns the genealogical adjoint-pressure lower bound into a finite scale-matched packet, whose only remaining overlap mechanisms are a critical terminal initial layer or disjoint physical adjoint-time annuli.",
+      "invariants": [
+        "The finite-window lower-relaxed pressure cost is bounded below by the terminal pairing divided by the weak-L3 ceiling minus the terminal-test L1 norm divided by square-root horizon",
+        "One fixed finite horizon absorbs the terminal-test L1 penalty on every half-height event state",
+        "Every event has a fixed positive finite-window pressure packet using only the original compact solenoidal detector and its forward persistence interval",
+        "The dilation-generator detector, total event variation, and an infinite adjoint horizon are unnecessary for the finite packet",
+        "Finite-window covariance converts every scaled packet into a base-genealogy terminal test at scale lambda and a horizon of order lambda squared",
+        "Either all sufficiently late event scales retain fixed pressure cost in every collapsing scaled terminal layer or an infinite subsequence retains fixed cost away from the terminal layer",
+        "In the latter branch the pulled-back base adjoint-time annuli can be thinned to be pairwise disjoint",
+        "All pulled-back adjoints are driven by one common smooth physical genealogy and only their terminal tests differ",
+        "Rademacher randomisation combines any finite annular family into one compact solenoidal adjoint while preserving a lower square-function pressure cost",
+        "Geometrically separated terminal tests have uniformly bounded combined L2 norm because their L2 norms have scale power minus one half",
+        "The randomised pressure lower bound is proportional to the largest scale and hence only to the square root of the largest horizon",
+        "Adjoint L2 energy, disjoint physical adjoint times, and randomisation therefore saturate rather than beat the square-root exponent",
+        "No terminal-layer exclusion, finite-secondary-index pressure estimate, sub-square-root theorem, profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Retain the fixed forward half-height interval from the event theorem, freeze a finite horizon large enough to absorb the terminal L1 penalty, pass the finite-horizon pressure estimate through the smooth genealogy, use exact parabolic covariance to pull packets to the base trajectory, split each event-point packet into early and late adjoint time, thin the late branch to disjoint annuli, and apply vector-valued Khintchine randomisation plus the geometric test-norm ledger.",
+      "certificate": "A written conditional finite-packet theorem and adversarial review request, with exact Fraction tests for the finite-horizon floor, packet constant, parabolic pullback, annulus separation, geometric L2 sum, and square-root randomisation ratio.",
+      "success_criterion": "The remote-history artefact is removed, every event is paid on one finite scale-matched horizon, and the unresolved pressure mechanism is reduced exactly to a terminal initial-layer cascade or a finite-secondary-index estimate improving the square-root annular bundle.",
+      "failure_interpretation": "The finite lower limit loses terminal pairing, event persistence does not support a fixed horizon, covariance has the wrong horizon power, the early-late limit quantifiers are not exhaustive, annuli do not separate, pulled-back adjoints do not share a genealogy, Khintchine randomisation is inapplicable, or the combined terminal L2 ledger grows with event count.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-packets.md",
+        "dossier/review-letter-adjoint-pressure-packets-2026-07-23.md",
+        "dossier/review-response-adjoint-pressure-packets-2026-07-23.md",
+        "lab/navier_lab/adjoint_pressure_packets.py",
+        "lab/tests/test_adjoint_pressure_packets.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

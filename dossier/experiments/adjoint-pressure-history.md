@@ -726,3 +726,10 @@ observable:
 The Nash, interpolation, scaling, and bridge-floor ledgers are implemented
 in `lab/navier_lab/adjoint_pressure_history.py` and checked in
 `lab/tests/test_adjoint_pressure_history.py`.
+
+The subsequent
+[finite adjoint-pressure packet reduction](adjoint-pressure-packets.md)
+uses the already proved forward half-height interval to remove both the
+remote adjoint horizon and the dilation-generator test from the event
+payment. It reduces the next obstruction to a terminal initial-layer
+cascade or disjoint scale-matched pressure annuli.

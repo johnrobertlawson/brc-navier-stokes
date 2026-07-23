@@ -942,6 +942,21 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > found the repaired conditional theorem valid in scope after checking the
 > signs, exponents, physical genealogy, double lower limit, scaling, Kato
 > cutoff, bridge transfer, and Lorentz div--curl interpolation;
+> the
+> [finite adjoint-pressure packet reduction](experiments/adjoint-pressure-packets.md)
+> removes the remote-horizon artefact. The fixed forward half-height
+> interval at every event is paid by one compact solenoidal test on one
+> fixed finite scaled horizon. Pullback to the physical genealogy gives an
+> exhaustive alternative: either a fixed pressure cost survives in
+> arbitrarily thin scaled terminal layers, or an infinite subsequence pays
+> on pairwise disjoint scale-matched physical adjoint-time annuli.
+> Rademacher bundling makes the latter family one adjoint with uniformly
+> bounded terminal \(L^2\), but its forced pressure history remains exactly
+> square-root order.
+> [Independent review](review-response-adjoint-pressure-packets-2026-07-23.md)
+> found the repaired conditional reduction valid in scope after checking
+> the constants, covariance, limit quantifiers, annulus thinning,
+> common-genealogy pullback, Khintchine step, and \(L^2/\sqrt T\) ledger;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -959,15 +974,14 @@ The coequal breakdown question remains:
    mean roof. Its suspension then gives the compact Navier--Stokes
    parabolic hull an invariant probability distinct from \(\delta_0\).
    Do not replace this by bare event count or assume bounded gaps.
-2. In the complementary infinite-mean branch, prove either a uniform
-   sub-square-root upper law for the lower-relaxed solenoidal-adjoint
-   pressure history or an event-index upper bound summing its bridge
-   costs. Each nonzero terminal pairing already forces square-root growth
-   and each bridge already has a fixed positive cost; the exact missing
-   step is controlling the overlap of histories at different scale
-   points. Adjoint \(L^2\) energy does not control the required
-   \(L^1_x\) pressure gradient or \(L^{3/2,1}_x\) adjoint gradient. Use
-   such a law either to bound the depth of the uniformly finite-branching
+2. In the complementary infinite-mean branch, exclude the terminal
+   initial-layer cascade for the finite adjoint-pressure packets, or prove
+   a finite-secondary-index/vector-valued estimate for their disjoint
+   scale-matched annular alternative. The remote horizon and raw temporal
+   overlap are no longer essential obstructions. Rademacher bundling with
+   uniformly bounded terminal \(L^2\) still produces square-root pressure
+   growth, so adjoint energy alone cannot supply the missing gain. Use
+   the new law either to bound the depth of the uniformly finite-branching
    hierarchy or to couple the distance profile to the Besov outer profile at
    \(R_j\ll\rho_j\ll|x_j-x_*|\).
 3. In parallel, prove or refute the exact no-neck estimate
