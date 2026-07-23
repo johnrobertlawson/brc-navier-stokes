@@ -41,6 +41,7 @@ not convert passing unit tests into mathematical truth.
 | **terminal_carrier_microbubble.py** | Parabolic carrier localisation, cutoff covariance, detector collapse, and nested fifth-power packing | A two-scale PDE budget or rigidity for the constant parent detector decoration |
 | **microbubble_decoration.py** | Joint Young second moment, first scale strain jet, and constant-detector heat-shear obstruction | Same-trajectory evolution or flux compactness for the renormalised vanishing band |
 | **strain_jet_freezing.py** | First-jet chain rule, spacetime freezing, vanishing leading residual, and restored parent forcing scale | Compactness, sign, or coupling of the next forcing jet to tensor oscillation |
+| **forcing_jet_decoupling.py** | Fixed-output nine-halves cost, high-input half-power gain, quarter-window decay, and forcing-jet freezing | A moving-band or nonlocal cross-scale law that still sees the microbubble |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -88,6 +89,7 @@ From the repository root:
     make carrier-microbubble
     make microbubble-decoration
     make strain-jet
+    make forcing-jet
     make strain
     make fetch-2607
     make compile-2607

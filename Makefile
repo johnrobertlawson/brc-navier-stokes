@@ -1,7 +1,7 @@
 PYTHON ?= python
 PYTHONPATH := lab
 
-.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity projective-alignment vacuum-orientation polar-tensor polar-entropy tensor-adjoint adjoint-kato shear-adjoint trace-adjoint trace-band-flux trace-boundary-flux trace-projective projective-interface trace-excess trace-temporal alignment-excess carrier-microbubble microbubble-decoration strain-jet strain fetch-2607 compile-2607
+.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity projective-alignment vacuum-orientation polar-tensor polar-entropy tensor-adjoint adjoint-kato shear-adjoint trace-adjoint trace-band-flux trace-boundary-flux trace-projective projective-interface trace-excess trace-temporal alignment-excess carrier-microbubble microbubble-decoration strain-jet forcing-jet strain fetch-2607 compile-2607
 
 check: records links markup test
 
@@ -118,6 +118,9 @@ microbubble-decoration:
 
 strain-jet:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.strain_jet_freezing
+
+forcing-jet:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.forcing_jet_decoupling
 
 strain:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.strain

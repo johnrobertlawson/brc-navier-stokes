@@ -1,6 +1,6 @@
-# Handoff: control the parent forcing residual jet
+# Handoff: find coupling beyond fixed parent bands
 
-**Updated:** 2026-07-23T14:01:48Z
+**Updated:** 2026-07-23T14:08:47Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -408,6 +408,43 @@ the pulled-back parent fixed-band stress forcing. It is locally bounded, but
 no current estimate gives the temporal compactness, sign, or coupling to the
 positive tensor Young moment needed for rigidity.
 
+The forcing residual has now been decomposed, and the microfrequency
+contribution vanishes. Since
+
+\[
+\mathscr Z_j
+=
+P_{\le M}\mathcal B(D)(u_{n_j}\otimes u_{n_j})
+\]
+
+has fixed output frequency, the same-solution high-input stress gain and
+Lorentz--Bernstein give
+
+\[
+\|\mathscr Z_j^{\mathrm{inputs}\ge L_*}\|_\infty
+\le
+C_{A,M}L_*^{-1/2}.
+\]
+
+At the micro gap \(L_*=\delta_j^{-1/2}\), this is
+\(O(\delta_j^{1/4})\). Every fixed finite-input truncation freezes on the
+shrinking cylinder, while the remaining tail is uniformly
+\(O(K^{-1/2})\). Therefore, after a subsequence,
+
+\[
+\mathscr Z_j\longrightarrow Z_*
+\]
+
+locally uniformly for another constant matrix supplied by coarser parent
+scales. Both \(F_*\) and \(Z_*\) are static decorations; neither sees the
+microbubble modes at leading order. The fixed-parent-band jet route is closed
+through the first forcing level.
+
+The live options are now qualitatively different: move the output band with
+the microfrequency, find a genuinely nonlocal cross-scale conservation law,
+exclude an infinite constant-decorated tower by packing, or retain an
+explicit multiscale stress/Young measure in the suitable ancient system.
+
 The boundary and scalar-renormalisation audits remain useful scope controls:
 averaged band flux is paid by \(\mathcal J_\eta\), no bounded detector can
 make radial diffusion sign-favourable at every amplitude, and exact periodic
@@ -431,21 +468,22 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/strain-jet-freezing.md`;
-3. `dossier/experiments/microbubble-decoration-rigidity.md`;
-4. `dossier/experiments/terminal-carrier-microbubble.md`;
-5. `dossier/experiments/terminal-alignment-excess.md`;
-6. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-7. `dossier/experiments/terminal-trace-excess.md`;
-8. `dossier/experiments/projective-zero-interface.md`;
-9. `dossier/experiments/trace-projective-domination.md`;
-10. `dossier/experiments/trace-boundary-renormalisation.md`;
-11. `dossier/experiments/trace-transition-band-flux.md`;
-12. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/forcing-jet-decoupling.md`;
+3. `dossier/experiments/strain-jet-freezing.md`;
+4. `dossier/experiments/microbubble-decoration-rigidity.md`;
+5. `dossier/experiments/terminal-carrier-microbubble.md`;
+6. `dossier/experiments/terminal-alignment-excess.md`;
+7. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+8. `dossier/experiments/terminal-trace-excess.md`;
+9. `dossier/experiments/projective-zero-interface.md`;
+10. `dossier/experiments/trace-projective-domination.md`;
+11. `dossier/experiments/trace-boundary-renormalisation.md`;
+12. `dossier/experiments/trace-transition-band-flux.md`;
+13. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-13. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+14. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-14. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+15. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1642,22 +1680,30 @@ Completed terminal alignment-excess reduction:
 > [(\partial_\tau-\nu\Delta)F_{n_j}]
 > (z_j+\sqrt{\delta_j}y,\delta_js).
 > \]
-> No compactness, sign, or coupling for \(\mathscr Z_j\) is yet proved.
+> Fixed low output and the same-solution high-input tail imply
+> \[
+> \|\mathscr Z_j^{\mathrm{micro+}}\|_\infty
+> \le C_{A,M}\delta_j^{1/4}\to0.
+> \]
+> A fixed-input truncation freezes, and its complementary tail is uniformly
+> \(O(K^{-1/2})\). Taking the micro limit and then \(K\to\infty\) gives
+> \(\mathscr Z_j\to Z_*\) locally uniformly for a constant coarser-scale
+> forcing matrix. The first forcing jet therefore also decouples from the
+> microbubble.
 
 Next deliverable:
 
-> Expand
-> \(\mathscr Z_j=(\partial_\tau-\nu\Delta)F_{n_j}\) through the projected
-> parent vorticity/stress equation. Separate low--low, low--micro, and
-> micro--micro interactions at the frequency gap
-> \(\delta_j^{-1/2}\). Use the existing same-solution
-> \(K^{-1/2}\) stress-shell gain to decide whether all micro-frequency
-> contributions vanish from \(\mathscr Z_j\), leaving an independent
-> parent-scale forcing, or whether one critical cross-scale term survives and
-> controls \(\int|J_j^2:(A_j-B_j)|^2\). Neither the frozen first jet,
-> suitability of the undecorated microchild, an arbitrary constant detector,
-> unweighted volume, nor the collapsed intrinsic band can do this. A
-> successful estimate excludes the
+> Test the scale-moving output band
+> \(P_{\sim\delta_j^{-1/2}}\widetilde S_j\) and the corresponding paraproduct
+> flux against the frozen parent jet \(F_*\). Determine whether endpoint
+> vorticity and the \(K^{-1/2}\) shell gain leave an order-one parent--micro
+> interaction, or force every such bilinear coupling to zero. In parallel,
+> formulate the exact Carleson or tree quantity that an infinite sequence of
+> constant-decorated microbubbles would consume. Do not continue a hierarchy
+> of fixed-output local jets: the first forcing level already decouples.
+> Neither suitability of the undecorated microchild, an arbitrary constant
+> detector, unweighted volume, nor the collapsed intrinsic band can close
+> this. A successful moving-band or tree estimate excludes the
 > direction-weighted concentration
 > \((\xi_n\cdot D_n\xi_n)\rho_n\). Determine whether bounded
 > projective-cross content makes this directional weight compact enough to

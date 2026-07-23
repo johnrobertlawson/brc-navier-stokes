@@ -328,9 +328,16 @@ for \(\mathscr Z_j\), and then test whether it constrains the positive
 the suitable ancient system must retain the hierarchy as a genuine
 two-scale jet rather than as an ordinary solution variable.
 
-This is an exact scale reduction. It does not prove compactness or rigidity
-for \(\mathscr Z_j\), suitability, regularity, blow-up, or any Clay
-alternative A--D.
+The subsequent
+[forcing-jet decoupling theorem](forcing-jet-decoupling.md) proves that
+\(\mathscr Z_j\) also freezes to a coarser-scale constant. Direct inputs at
+the microfrequency contribute only \(O(\delta_j^{1/4})\), by the
+same-solution high-input stress gain.
+
+The frozen-jet calculation is an exact scale reduction. By itself it does
+not prove compactness or rigidity for \(\mathscr Z_j\); the subsequent
+theorem supplies compactness but not coupling or rigidity. Neither result
+proves suitability, regularity, blow-up, or any Clay alternative A--D.
 
 Run the exact chain-rule ledger with:
 
