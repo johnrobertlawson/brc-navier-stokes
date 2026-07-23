@@ -722,6 +722,38 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-TRACE-BAND-FLUX-001",
+      "title": "Trace transition-band flux and detector-weighted carrier",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Splitting the scalar trace potential by saturation isolates one transition band, while exact affine Navier-Stokes cycles decide whether positive Kato mass or signed amplitude flux is the correct propagation quantity.",
+      "invariants": [
+        "Outside the transition band the uncancelled trace-stretch source is bounded by twice epsilon times strain magnitude",
+        "The low-trace band carries at most epsilon times local volume of terminal detector mass",
+        "The transition band is exactly a bounded ratio interval between vorticity amplitude and polar cutoff",
+        "The logarithmic trace identity splits the scalar potential into signed amplitude flux, normalised trace defect, and favourable trace-gradient dissipation",
+        "Multiplying the scalar adjoint by trace eliminates the mixed-alignment potential and produces a terminal-time Fokker-Planck equation",
+        "On the transition band the transformed logarithmic drift and normalised defect are both controlled by trace content",
+        "For affine incompressible Navier-Stokes flow the vorticity amplitude obeys the exact aligned-stretching ODE",
+        "The scalar trace potential is the time derivative of log trace along the affine flow",
+        "Each complete amplitude cycle has unit signed propagator multiplier while its positive envelope multiplier grows by a fixed factor and the true propagator stays uniformly bounded",
+        "The affine cycle is unbounded and not Clay-admissible, so it tests the estimate rather than producing breakdown",
+        "No signed-flux bound for general Clay data or Clay regularity theorem is asserted"
+      ],
+      "method": "Use a measurable three-band truncation of the trace potential, quantify the uncancelled source and detector mass exactly, conjugate the scalar adjoint by the trace detector, control the transformed band coefficients by trace content, construct a time-dependent affine strain-plus-rotation Navier-Stokes solution, and compare its exact signed trace propagator with the positive Kato envelope over repeated amplitude cycles.",
+      "certificate": "A written band-reduction and detector-weighted propagation theorem with an affine-flow calculation, plus Fraction tests for amplitude ratios, residual envelopes, transformed coefficient constants, affine momentum symmetry, logistic trace evolution, and cycle multipliers.",
+      "success_criterion": "The scalar gate is reduced to the transition band, detector weighting removes its mixed-alignment potential, and positive-part Kato continuity is shown nonnecessary in exact Navier-Stokes dynamics, leaving trace-content-controlled weighted propagation as the precise next target.",
+      "failure_interpretation": "The outside-band source is not small, low trace can carry fixed local detector mass, the affine field does not solve Navier-Stokes, the trace potential is not a logarithmic derivative, or a full cycle amplifies the true signed scalar carrier.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/trace-transition-band-flux.md",
+        "lab/navier_lab/trace_band_flux.py",
+        "lab/tests/test_trace_band_flux.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

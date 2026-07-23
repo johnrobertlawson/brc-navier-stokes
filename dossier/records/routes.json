@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can the amplitude-band mixed-alignment potential in the exact scalar trace adjoint be propagated and localised uniformly from joint Navier-Stokes dynamics, or can an endpoint-bounded trajectory realise detector-relevant trace concentration; failing scalar propagation, can its signed trace defect and the remaining decorated ancient system be rigidly excluded with suitability?",
+      "question": "Can the detector-weighted scalar carrier be propagated and localised uniformly across the cutoff-scale trace transition band using its trace-content-controlled logarithmic drift and normalised signed defect, or can an endpoint-bounded trajectory defeat that weighted estimate; failing propagation, can the retained trace defect and decorated ancient system be rigidly excluded with suitability?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "Uniform propagation and localisation for the scalar trace potential carries the positive terminal trace while avoiding unstable orthogonal matrix modes; alternatively, its detector-relevant propagator defect and signed trace of the projective-cross atom are rigidly excluded, scale-local energy and pressure prove suitability, and rigidity excludes the remaining decorated ancient object.",
-      "kill_criterion": "A Clay-admissible trajectory or nonzero suitable ancient limit whose endpoint-bounded amplitude-band mixed alignment defeats the scalar trace carrier and whose nonzero trace defect and vacuum decoration survive outside every available rigidity class.",
+      "success": "Uniform propagation and localisation for the detector-weighted transition-band equation carries the positive terminal trace while avoiding unstable orthogonal matrix modes and unnecessary positive Kato mass; alternatively, its normalised signed trace defect and vacuum decoration are rigidly excluded, scale-local energy and pressure prove suitability, and rigidity excludes the remaining decorated ancient object.",
+      "kill_criterion": "A Clay-admissible endpoint-bounded trajectory or nonzero suitable ancient limit whose transition-band trace content defeats detector-weighted propagation and whose nonzero signed trace defect and vacuum decoration survive outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

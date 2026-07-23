@@ -1,6 +1,6 @@
-# Handoff: test the scalar terminal-trace carrier
+# Handoff: control detector-weighted transition-band flux
 
-**Updated:** 2026-07-23T11:13:38Z
+**Updated:** 2026-07-23T11:31:24Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,53 +24,8 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Test whether one-trajectory dynamics force a uniform local propagator for the
-backward tensor equation
-\[
-\boxed{
--\partial_tF-u\cdot\nabla F-\nu\Delta F
-=
-SF+FS-2(F:H)S,
-}
-\]
-with terminal data detecting the nonzero vacuum tensor. Strong tensor compactness
-now closes the ancient equation exactly:
-
-\[
-\partial_tH+\nabla\cdot(uH)-\nu\Delta H
-=
-SH+HS-2(S:H)H-\mathcal R.
-\]
-
-The Frobenius adjoint cancels transport, diffusion, and stretching, leaving only
-\(-\int F:d\mathcal R\) in the terminal pairing. Its exact scalar logarithmic
-norm is
-
-\[
-\gamma(S,H)
-=
-\sup_{\substack{F=F^\mathsf T\\|F|=1}}
-F:\bigl(SF+FS-2(F:H)S\bigr).
-\]
-
-Uniform short-time drifted Kato smallness of \(\gamma_+\) gives the adjoint
-\(L^\infty\) bound by Khasminskii iteration. Endpoint weak-\(L^{3/2}\), positive
-aligned strain, and instantaneous Biot--Savart coupling do not imply that
-sufficient condition for arbitrary coefficient families.
-
-Exact time-dependent planar Navier--Stokes shears decide the first
-one-trajectory test. Two fixed rank-one tensors are true adjoint modes with
-potentials \(\pm U_y\), and a natural Fourier stack genuinely amplifies the
-full matrix-propagator norm. There is no universal operator-wide cancellation.
-Those unstable modes are orthogonal to the axial terminal tensor. The identity
-detects that tensor and has an \(O(\eta)\) shear reaction at polar cutoff
-\(\eta\), becoming exactly neutral in the saturated limit. That stack loses
-uniform energy and endpoint bounds. With the endpoint bound imposed, every exact
-planar shear instead has
-\(\kappa_{\gamma_+}(\delta)\lesssim M(\delta^{2/3}+\delta)\) by
-one-dimensional heat smoothing.
-
-The trace reduction is now exact. With
+The terminal detector has already reduced from a six-component tensor to the
+positive scalar trace. With
 \(h=\operatorname{tr}H\) and
 \(\alpha_H=(S:H)/h\), the scalar potential is
 \[
@@ -78,14 +33,54 @@ V_H=2(1-h)\alpha_H,
 \qquad
 |\alpha_H|\le|S|.
 \]
-Its duality retains only \(\operatorname{tr}\mathcal R\). The live gate is
-uniform propagation of this amplitude-band scalar potential, or an
-endpoint-bounded trajectory realising detector-relevant trace concentration.
-Localisation and compactness follow as separate gates.
-Amplitude-band flux, terminal-atom rigidity, and closed ancient-system rigidity
-remain alternatives. Spatial dust, scalar entropy, terminal graph support, and
-an unidentified stretching correlation are closed branches. The regularity
-target remains
+Its duality retains only \(\rho=\operatorname{tr}\mathcal R\).
+
+A three-band split now confines order-one reaction to
+\[
+\varepsilon<h<1-\varepsilon,
+\]
+equivalently \(|\omega|\asymp\eta\) at polar cutoff \(\eta\). Low trace carries
+at most \(\varepsilon\) times local detector volume. On both exterior bands the
+uncancelled forward source is bounded by \(2\varepsilon|S|\).
+
+The exact detector-weighted variable
+\[
+\psi=h\varphi
+\]
+removes the mixed-alignment potential:
+\[
+\boxed{
+\partial_t\psi+
+\nabla\cdot[(u-2\nu\nabla\log h)\psi]
++\nu\Delta\psi
+=
+-(\rho/h)\psi.
+}
+\]
+On the transition band,
+\[
+\frac{|\rho_\eta|}{h_\eta}
+\le\frac{2\nu}{\varepsilon}\mathcal T_\eta,
+\qquad
+|\nabla\log h_\eta|^2
+\le\frac{4}{3\varepsilon^2}\mathcal T_\eta.
+\]
+The next target is a scale-uniform local occupation or form estimate for this
+terminal-time Fokker--Planck equation, including flux through both band
+boundaries. A negative test must be an endpoint-bounded Navier--Stokes
+trajectory that defeats this detector-weighted estimate.
+
+Positive-part Kato continuity is no longer the proposed necessary target.
+Exact spatially affine Navier--Stokes cycles keep the true scalar propagator
+uniformly bounded while their positive-envelope factor grows exponentially
+with the number of amplitude cycles. Those fields have infinite energy and
+fail the global endpoint hypotheses, so they are an estimate stress test, not
+a Clay countertrajectory.
+
+Localisation, trace-content occupation, compactness, suitability, and rigidity
+remain separate gates. Spatial dust, scalar entropy, terminal graph support,
+and an unidentified stretching correlation are closed branches. The original
+regularity target remains
 
 \[
 \widehat a_\lambda^+
@@ -99,16 +94,13 @@ target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/tensor-trace-adjoint.md`;
-3. `dossier/experiments/dynamic-shear-adjoint.md`;
-4. `dossier/experiments/adjoint-kato-defect.md`;
-5. sections 3--8 of `dossier/experiments/tensor-adjoint-closure.md`;
-6. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` for the
-   antecedent projective-cross content;
-7. section 7 of `dossier/experiments/terminal-vacuum-orientation.md` for the
-   terminal tensor and its antecedent equation; and
-8. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when the
-   existing strong velocity compactness is needed.
+2. `dossier/experiments/trace-transition-band-flux.md`;
+3. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+   antecedent trace equation and content;
+4. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+   full projective-cross content is needed; and
+5. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+   the existing strong velocity compactness is needed.
 
 Completed static results:
 
@@ -1066,25 +1058,55 @@ full projective-cross content. Bounded trace content gives strong scalar trace
 compactness. It does not by itself identify the mixed aligned strain without
 the existing strong tensor topology.
 
+Completed transition-band flux reduction:
+
+> For \(0<\varepsilon<1/2\), exact cancellation is needed only on
+> \(\varepsilon<h<1-\varepsilon\). The exterior source obeys
+> \[
+> |2h(1-h)\alpha_H|
+> \le2\varepsilon|S|,
+> \]
+> and the low band carries at most \(\varepsilon\) times local detector volume.
+> At cutoff level the transition band is exactly
+> \[
+> \frac{\varepsilon}{1-\varepsilon}
+> <
+> \frac{|\omega|^2}{\eta^2}
+> <
+> \frac{1-\varepsilon}{\varepsilon}.
+> \]
+
+On that band, \(\psi=h\varphi\) satisfies the detector-weighted equation
+
+\[
+\partial_t\psi+
+\nabla\cdot[(u-2\nu\nabla\log h)\psi]
++\nu\Delta\psi
+=
+-(\rho/h)\psi.
+\]
+
+The mixed-alignment potential has disappeared. Trace content controls both the
+logarithmic drift energy and the normalised signed defect. Exact affine
+Navier--Stokes cycles prove that the positive Kato envelope can diverge while
+the true scalar propagator stays uniformly bounded. The fields are unbounded,
+infinite-energy, and outside the endpoint class; they refute a necessary
+estimate, not Clay regularity.
+
 Next deliverable:
 
-> Propagate the scalar trace detector. Split the amplitude factor into saturated,
-> transition, and low-trace bands before bounding
-> \[
-> [2(1-h)\alpha_H]_+.
-> \]
-> The saturated band has a small coefficient; the low-trace band has little
-> detector mass; the transition band \(|\omega|\asymp\eta\) is the exact
-> obstruction. Determine whether one-trajectory amplitude flux or the
-> logarithmic magnitude balance gives uniform Kato continuity on that band, or
-> construct an endpoint-bounded positive-alignment trajectory that defeats it.
-> Then prove scalar localisation. Do not return to the full matrix norm unless
-> the scalar carrier is genuinely defeated. Do not use unstable modes
-> orthogonal to the terminal tensor as a detector obstruction, do not treat
-> nonuniform shear amplification as a Clay counterexample, and do not return to
-> instantaneous Biot--Savart coercivity, adjoint positivity, an unidentified
-> stretching correlation, a single scalar entropy, full polar Fisher as if
-> sharp, or the raw \(\Delta\omega/|\omega|\) equation.
+> Prove or defeat a scale-uniform local occupation/form estimate for the
+> detector-weighted transition-band equation. Account explicitly for flux
+> through \(h=\varepsilon\) and \(h=1-\varepsilon\), and for the signed measure
+> coefficient \(\rho/h\). A negative example must be one endpoint-bounded
+> Navier--Stokes trajectory, not another spatially affine cycle. Then prove
+> scalar localisation. Do not replace signed logarithmic flux by positive
+> variation, return to the full matrix norm, use unstable modes orthogonal to
+> the terminal tensor as a detector obstruction, treat nonuniform affine or
+> shear amplification as a Clay counterexample, or return to instantaneous
+> Biot--Savart coercivity, adjoint positivity, an unidentified stretching
+> correlation, a single scalar entropy, full polar Fisher as if sharp, or the
+> raw \(\Delta\omega/|\omega|\) equation.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

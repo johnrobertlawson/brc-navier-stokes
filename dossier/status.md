@@ -226,6 +226,31 @@ and breakdown work
   \(\mathcal T_\eta\le3\mathcal K_\eta\), and can be strictly smaller than the
   full projective-cross content. It gives scalar trace compactness but not yet a
   uniform propagator for the remaining critical potential.
+- A three-band split confines every order-one scalar reaction to
+  \(\varepsilon<h<1-\varepsilon\), equivalently
+  \(|\omega|\asymp\eta\) at cutoff scale. Low trace carries at most
+  \(\varepsilon\) times local detector volume, while the uncancelled source on
+  both exterior bands is bounded by \(2\varepsilon|S|\).
+- Detector weighting sharpens the transition-band equation. For
+  \(\psi=h\varphi\), the mixed-alignment potential cancels and
+  \[
+  \partial_t\psi+
+  \nabla\cdot[(u-2\nu\nabla\log h)\psi]
+  +\nu\Delta\psi
+  =
+  -(\rho/h)\psi.
+  \]
+  On \(h\ge\varepsilon\), both
+  \(|\rho|/h\) and \(|\nabla\log h|^2\) are controlled by explicit multiples
+  of \(\mathcal T_\eta\). Transition-boundary flux and a local occupation
+  estimate for this signed measure coefficient remain open.
+- Exact time-dependent affine Navier--Stokes cycles show that positive Kato mass
+  is not necessary for scalar propagation. Repeated excursions between
+  \(\varepsilon\) and \(1-\varepsilon\) keep the true signed propagator bounded
+  by \((1-\varepsilon)/\varepsilon\), while the positive-envelope factor grows
+  like \(((1-\varepsilon)/\varepsilon)^N\). These spatially affine fields have
+  infinite energy and fail the endpoint hypotheses; they are an exact estimate
+  stress test, not a Clay trajectory.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -236,12 +261,13 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can joint Navier--Stokes dynamics uniformly propagate and localise the scalar
-> trace adjoint with amplitude-band potential
-> \(2(1-h)(S:H)/h\), or can an endpoint-bounded trajectory realise
-> detector-relevant trace concentration? If propagation fails, can the signed
-> trace defect and remaining decorated ancient system be rigidly excluded with
-> suitability?
+> Can joint Navier--Stokes dynamics uniformly propagate and localise the
+> detector-weighted scalar carrier across
+> \(\varepsilon<h<1-\varepsilon\), using its
+> \(\mathcal T_\eta\)-controlled logarithmic drift and normalised signed trace
+> defect? Can an endpoint-bounded trajectory defeat that estimate? If
+> propagation fails, can the retained trace defect and remaining decorated
+> ancient system be rigidly excluded with suitability?
 
 The coequal breakdown question remains:
 
@@ -250,22 +276,24 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive uniform Kato continuity or another scalar maximum estimate for
-   \(2(1-h)(S:H)/h\), retaining the amplitude-band factor before using
-   \(|S|\).
-2. Test whether an endpoint-bounded one-trajectory cell can concentrate that
-   mixed aligned potential; axial shear and modes orthogonal to \(H\) are no
-   longer relevant counterexamples.
-3. Prove scale-uniform scalar localisation once its norm is controlled, then
-   decide which orientation information is still needed for rigidity.
-4. Determine whether bounded trace content
+1. Derive a scale-uniform local occupation or form estimate for the
+   terminal-time detector-weighted equation, with reverse drift
+   \(2\nu\nabla\log h\) and signed coefficient \(\rho/h\) on
+   \(\varepsilon<h<1-\varepsilon\).
+2. Control flux through the two transition-band boundaries without replacing
+   signed logarithmic amplitude flux by its positive variation.
+3. Test whether an endpoint-bounded one-trajectory cell can concentrate the
+   transformed trace-content coefficients; spatially affine cycles, axial
+   shear, and modes orthogonal to \(H\) do not meet that target.
+4. Prove scale-uniform scalar localisation once detector-weighted occupation is
+   controlled, then decide which orientation information is still needed for
+   rigidity.
+5. Determine whether bounded trace content
    \(\mathcal T_\eta\), rather than full projective-cross content, can be
    derived from the available logarithmic magnitude balance or an
    amplitude-band flux.
-5. Classify ancient solutions of the scalar trace defect equation together with
+6. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.
-6. If the adjoint cannot be controlled, test a summable amplitude-band
-   transition flux as the remaining route to bounded projective-cross content.
 7. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
