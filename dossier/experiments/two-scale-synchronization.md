@@ -552,6 +552,12 @@ parent forward clock into terminal-layer, finite-horizon, and eternal
 candidates, and proves that unrenormalised carrier-clock shell action and
 pure persistence packing do not control the scale-zero block count.
 
+For the fixed-shape refinement, the later
+[spatial-localization theorem](fixed-shell-spatial-localization.md) uses
+Schwartz tails and one fixed cutoff around a carrier cluster point to prove
+the spatially local strong \(L^{5/2}\) divergence that is deliberately not
+claimed for the predecessor-dependent broad blocks in Section 5.
+
 Run the exact recursive-selection, cutoff-interval, detector-transfer, and
 occupation ledgers with:
 

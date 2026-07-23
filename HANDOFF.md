@@ -1,6 +1,6 @@
-# Handoff: continuation-scale bridge frontier
+# Handoff: local-restart continuation frontier
 
-**Updated:** 2026-07-23T16:38:24Z
+**Updated:** 2026-07-23T17:10:28Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -50,23 +50,24 @@ charge; retaining it requires negative renormalisation or another
 cross-scale input. Sparse persistence intervals also have summable total
 length.
 
-The first exact clock--scale relation is now available. Restarted
-\(L^\infty\) mild theory at a first singular time gives
+The first exact clock--scale relation is now available. In one
+zero-background or Galilean-normalised frame, restarted \(L^\infty\) mild
+theory at a first singular time gives
 
 \[
-(T^*-t_j)\|u(t_j)\|_\infty^2
+(T^*-t_j)\|v(t_j)\|_\infty^2
 =
 \Theta_j
-\left(R_j\|u(t_j)\|_\infty\right)^2
+\left(R_j\|v(t_j)\|_\infty\right)^2
 \ge c_\nu.
 \]
 
 Therefore a terminal-layer parent clock
 \(\Theta_j\to0\) forces
-\(R_j\|u(t_j)\|_\infty\to\infty\). The endpoint vorticity bound keeps every
+\(R_j\|v(t_j)\|_\infty\to\infty\). The endpoint vorticity bound keeps every
 fixed parent-normalised velocity low pass bounded, so this divergence lies
 above every fixed multiple of the parent frequency. At the inverse-velocity
-continuation radius \(d_j=\|u(t_j)\|_\infty^{-1}\),
+inverse-amplitude radius \(d_j=\|v(t_j)\|_\infty^{-1}\),
 \(d_j/R_j\to0\) while
 \((T^*-t_j)/d_j^2\ge c_\nu\). The zero parent clock has descended to a
 strictly finer nonzero-clock velocity concentration.
@@ -77,12 +78,44 @@ small-data solutions also show that endpoint size, energy, suitability, and
 a fixed shell cannot cap the forward horizon without using
 first-singular-time nonextendibility or ancient history.
 
-The immediate target is therefore a same-time bridge between the marked
-carrier and the finer continuation concentration, or a uniform
-parent-normalised velocity ceiling which eliminates the terminal-layer
-branch. Finite-horizon and eternal marked-parent rigidity remain open. A
-coherent two-scale genealogical diagonal remains a separate prerequisite for
-any two-edge no-neck or stationary-process route.
+On \(\mathbb R^3\), the spatial half of that bridge is now exact.
+Schwartz-kernel tails and the weak endpoints turn every fixed-shell mark
+into genuine local
+weak-\(L^{3/2}\) strain and weak-\(L^3\) velocity atoms in one fixed
+parent-ball dilation. Actual strain and velocity reach
+\(cR_j^{-2}\) and \(cR_j^{-1}\) there. If carrier centres cluster at
+\(x_*\), the separated fixed-shape shells give
+
+\[
+\mathcal S
+\notin
+L^{5/2}
+\left(B_\epsilon(x_*)\times\mathfrak T\right)
+\quad
+\text{for every }\epsilon>0.
+\]
+
+For a terminal-layer clock, a diagonal ratio now gives two exhaustive
+branches. Either a fixed parent neighbourhood carries a positive fraction
+of the global continuation amplitude, producing a local finer
+inverse-amplitude scale with a nonzero normalised clock, or approximate
+essential-supremum maximisers escape to infinity in parent coordinates.
+The first branch still lacks a local mild-lifespan theorem, frequency
+localisation, and transfer into the subnatural tensor carrier; the second
+is a two-centre terminal profile whose weak endpoint and energy costs do
+not add.
+
+Independent adversarial review found no fatal analytic flaw after
+restricting the kernel theorem to \(\mathbb R^3\), using the same normalised
+velocity in the restart and localisation arguments, shrinking the safe
+lifespan constant, and making the essential-supremum convention explicit.
+The immediate target is now to prove or refute a pressure- and
+far-field-controlled local restart inequality at the marked parent event.
+Tensor/frequency transfer inside the parent-local branch or exclusion of
+spatially split terminal profiles follows that gate.
+Finite-horizon and eternal marked-parent rigidity remain open. A coherent
+two-scale genealogical diagonal remains a separate prerequisite for any
+two-edge no-neck or stationary-process route.
 
 The arXiv:2607.08866v2 proof chain has been independently reconstructed. It survives
 only as a repaired conditional theorem for a projected-mild solution with:
@@ -545,34 +578,38 @@ closed branches. The original regularity target remains
 
 Start with only:
 
-1. `dossier/experiments/continuation-clock-descent.md`;
-2. `dossier/experiments/fixed-shell-clock-compactification.md`;
-3. `dossier/experiments/two-scale-synchronization.md`;
-4. `dossier/review-response-2026-07-23.md`;
-5. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-6. `dossier/experiments/fresh-detector-transfer.md`;
-7. `dossier/experiments/fresh-band-lorentz.md`;
-8. `dossier/experiments/scale-indexed-defect.md` only for the stronger
+Latest adversarial disposition:
+`dossier/review-response-local-continuation-2026-07-23.md`.
+
+1. `dossier/experiments/fixed-shell-spatial-localization.md`;
+2. `dossier/experiments/continuation-clock-descent.md`;
+3. `dossier/experiments/fixed-shell-clock-compactification.md`;
+4. `dossier/experiments/two-scale-synchronization.md`;
+5. `dossier/review-response-2026-07-23.md`;
+6. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
+7. `dossier/experiments/fresh-detector-transfer.md`;
+8. `dossier/experiments/fresh-band-lorentz.md`;
+9. `dossier/experiments/scale-indexed-defect.md` only for the stronger
    genealogy/process branch;
-9. `dossier/experiments/frequency-energy-flux.md`;
-10. `dossier/experiments/tree-budget-audit.md`;
-11. `dossier/experiments/moving-band-coupling.md`;
-12. `dossier/experiments/forcing-jet-decoupling.md`;
-13. `dossier/experiments/strain-jet-freezing.md`;
-14. `dossier/experiments/microbubble-decoration-rigidity.md`;
-15. `dossier/experiments/terminal-carrier-microbubble.md`;
-16. `dossier/experiments/terminal-alignment-excess.md`;
-17. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-18. `dossier/experiments/terminal-trace-excess.md`;
-19. `dossier/experiments/projective-zero-interface.md`;
-20. `dossier/experiments/trace-projective-domination.md`;
-21. `dossier/experiments/trace-boundary-renormalisation.md`;
-22. `dossier/experiments/trace-transition-band-flux.md`;
-23. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+10. `dossier/experiments/frequency-energy-flux.md`;
+11. `dossier/experiments/tree-budget-audit.md`;
+12. `dossier/experiments/moving-band-coupling.md`;
+13. `dossier/experiments/forcing-jet-decoupling.md`;
+14. `dossier/experiments/strain-jet-freezing.md`;
+15. `dossier/experiments/microbubble-decoration-rigidity.md`;
+16. `dossier/experiments/terminal-carrier-microbubble.md`;
+17. `dossier/experiments/terminal-alignment-excess.md`;
+18. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+19. `dossier/experiments/terminal-trace-excess.md`;
+20. `dossier/experiments/projective-zero-interface.md`;
+21. `dossier/experiments/trace-projective-domination.md`;
+22. `dossier/experiments/trace-boundary-renormalisation.md`;
+23. `dossier/experiments/trace-transition-band-flux.md`;
+24. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-24. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+25. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-25. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+26. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:

@@ -51,6 +51,7 @@ not convert passing unit tests into mathematical truth.
 | **two_scale_synchronization.py** | One-diagonal sparse selection, fresh-band attachment, disjoint cutoff retention, detector moment transfer, and critical block-count growth | A bound or rigidity mechanism for the resulting divergent strong critical occupation; no inter-event genealogy is checked |
 | **fixed_shell_clock.py** | Fixed top-shell detector transfer, smooth-support separation, forward-clock trichotomy, carrier-action powers, and persistence-time summability | A PDE clock-scale law or rigidity theorem for the marked terminal-layer, finite-horizon, and eternal parent candidates |
 | **continuation_clock.py** | First-singular-time clock product, fixed-cutoff high-pass escape, inverse-velocity scale descent, and global scaling-family horizon obstruction | A spatial and tensor bridge between the marked carrier and the finer continuation concentration, or a parent-normalised velocity ceiling |
+| **fixed_shell_localization.py** | \(\mathbb R^3\) critical Schwartz-kernel tails, local strain and velocity atoms, derivative persistence, and the parent-local versus spatially split inverse-amplitude ledger | A pressure-aware local restart inequality, then tensor transfer or split-profile exclusion |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -108,6 +109,7 @@ From the repository root:
     make two-scale-sync
     make fixed-shell-clock
     make continuation-clock
+    make fixed-shell-local
     make strain
     make fetch-2607
     make compile-2607

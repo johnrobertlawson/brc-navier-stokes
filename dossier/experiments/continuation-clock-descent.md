@@ -7,8 +7,13 @@
 - **Inputs:** [fixed-shell clock compactification](fixed-shell-clock-compactification.md),
   [sparse analyticity endgame](sparse-analyticity-endgame.md), and
   [ancient compactness](ancient-commutator-compactness.md)
+- **Independent review:**
+  [common-frame and safe-lifespan repairs accepted](../review-response-local-continuation-2026-07-23.md)
 
-The first-singular-time local lifespan supplies a genuine relation between
+Fix one zero-background or Galilean-normalised frame and write \(v\) for
+the resulting velocity. For finite-energy Clay data on \(\mathbb R^3\),
+\(v\) is the physical velocity. The first-singular-time local lifespan is
+invariant under this normalisation and supplies a genuine relation between
 the terminal gap and every marked parent event. Let
 
 \[
@@ -16,7 +21,7 @@ the terminal gap and every marked parent event. Let
 \qquad
 \Theta_j=\frac{\Delta_j}{R_j^2},
 \qquad
-U_j=\|u(t_j)\|_\infty,
+U_j=\|v(t_j)\|_\infty,
 \qquad
 V_j=R_jU_j.
 \tag{1}
@@ -54,7 +59,7 @@ velocity low pass. For each fixed \(M<\infty\),
 \[
 R_j
 \left\|
-P_{\le M/R_j}u(t_j)
+P_{\le M/R_j}v(t_j)
 \right\|_\infty
 \le
 C_M.
@@ -67,7 +72,7 @@ Consequently (3) is necessarily a finer-frequency escape:
 \boxed{
 R_j
 \left\|
-P_{>M/R_j}u(t_j)
+P_{>M/R_j}v(t_j)
 \right\|_\infty
 \longrightarrow\infty
 \qquad
@@ -146,31 +151,34 @@ alternative A--D.
 ## 1. The restarted lifespan gives the clock product
 
 Work on a smooth projected-mild solution on \([T_0,T^*)\), with \(T^*\) a
-putative first singular time. The repaired analyticity endgame records the
-standard restarted \(L^\infty\) theorem in the form
+putative first singular time. All \(L^\infty\) norms are essential
+suprema. The repaired analyticity endgame records the standard restarted
+\(L^\infty\) theorem with a guaranteed lifespan at least
 
 \[
-\tau_{\rm loc}(t)
+\tau_{\rm full}(t)
 =
 \frac{\nu}{c_1U(t)^2},
 \qquad
-U(t)=\|u(t)\|_\infty.
+U(t)=\|v(t)\|_\infty.
 \tag{9}
 \]
 
-Here \(c_1\) is fixed by the local mild construction and \(\nu>0\). If
+Here \(c_1\) is fixed by the local mild construction and \(\nu>0\). Use the
+strictly smaller safe lifespan
+\(\tau_{\rm safe}(t)=\tau_{\rm full}(t)/2\). If
 
 \[
-t+\tau_{\rm loc}(t)\ge T^*,
+t+\tau_{\rm safe}(t)\ge T^*,
 \tag{10}
 \]
 
-local uniqueness glues the restarted solution to the original solution and
-extends it through \(T^*\). This contradicts first-singular-time
-maximality. Hence
+then the full guaranteed interval extends strictly beyond \(T^*\). Local
+uniqueness glues the restarted solution to the original solution and
+contradicts first-singular-time maximality. Hence
 
 \[
-t+\tau_{\rm loc}(t)<T^*
+t+\tau_{\rm safe}(t)<T^*
 \tag{11}
 \]
 
@@ -180,7 +188,7 @@ and therefore
 \boxed{
 (T^*-t)U(t)^2
 >
-\frac{\nu}{c_1}
+\frac{\nu}{2c_1}
 =:
 c_{\rm life}.
 }
@@ -200,11 +208,14 @@ At the \(j\)-th parent event, the elementary identity
 turns (12) into (2).
 
 For \(\mathbb R^3\) finite-energy Clay data, the spatially constant velocity
-background is zero. In the projected-mild conditional theorem, subtract the
-allowed bounded spatially constant background and absorb its transport by
-the same Galilean normalisation used in the repaired chain. Restoring a
-background of size at most \(B_0\) changes \(V_j\) by at most \(R_jB_0\),
-which tends to zero and does not alter any escape conclusion.
+background is zero. In the projected-mild conditional theorem, remove the
+allowed bounded spatially constant background and absorb its transport once
+by the same Galilean normalisation used in the repaired chain. Thus the
+restart product and the kernel localisation both use \(v\), not different
+representatives. If one retains rather than removes a background of size at
+most \(B_0\), the safe statement is
+\((T^*-t)(\|v(t)\|_\infty+B_0)^2\ge c_{\rm life}\); the later escape
+conclusions change only by eventual constants.
 
 ## 2. The fixed top shell already gives a velocity floor
 
@@ -240,7 +251,7 @@ Let the corresponding velocity block be
 P_{\le M_0/R_j}
 -
 P_{\le\vartheta M_0/R_j}
-\right)u.
+\right)v.
 \tag{16}
 \]
 
@@ -259,7 +270,7 @@ The annular multiplier is bounded on \(L^\infty\), so
 \[
 \|\mathcal U_j^\vartheta\|_\infty
 \le
-C_{\phi}\|u(t_j)\|_\infty.
+C_{\phi}\|v(t_j)\|_\infty.
 \tag{18}
 \]
 
@@ -301,7 +312,7 @@ Biot--Savart and the endpoint Riesz-potential estimate give, after the
 background normalisation,
 
 \[
-\|u(t)\|_{L^{3,\infty}}
+\|v(t)\|_{L^{3,\infty}}
 \le
 C_{\rm BS}A.
 \tag{22}
@@ -310,10 +321,10 @@ C_{\rm BS}A.
 For a fixed smooth low-pass symbol, Lorentz--Bernstein gives
 
 \[
-\|P_{\le K}u(t)\|_\infty
+\|P_{\le K}v(t)\|_\infty
 \le
 C_\phi K
-\|u(t)\|_{L^{3,\infty}}.
+\|v(t)\|_{L^{3,\infty}}.
 \tag{23}
 \]
 
@@ -322,7 +333,7 @@ Set \(K=M/R_j\). Equations (22)--(23) yield
 \[
 \boxed{
 R_j
-\|P_{\le M/R_j}u(t_j)\|_\infty
+\|P_{\le M/R_j}v(t_j)\|_\infty
 \le
 C_\phi C_{\rm BS}AM
 }
@@ -344,11 +355,11 @@ V_j
 Since
 
 \[
-u
+v
 =
-P_{\le M/R_j}u
+P_{\le M/R_j}v
 +
-P_{>M/R_j}u,
+P_{>M/R_j}v,
 \tag{26}
 \]
 
@@ -357,12 +368,12 @@ the reverse triangle inequality and (24) give
 \[
 \begin{aligned}
 R_j
-\|P_{>M/R_j}u(t_j)\|_\infty
+\|P_{>M/R_j}v(t_j)\|_\infty
 &\ge
 V_j
 -
 R_j
-\|P_{\le M/R_j}u(t_j)\|_\infty\\
+\|P_{\le M/R_j}v(t_j)\|_\infty\\
 &\ge
 \sqrt{\frac{c_{\rm life}}{\Theta_j}}
 -
@@ -376,10 +387,10 @@ R_jB_0.
 This proves (5). The conclusion holds for every fixed parent-normalised
 cutoff \(M\), not merely above the marked top shell \(M_0\).
 
-One can make the escaping frequency quantitative. Let
+One can make the aggregate high-pass escape quantitative. Let
 
 \[
-K_j^{\rm cont}
+K_j^{\rm hp}
 =
 \frac{U_j}{2C_\phi C_{\rm BS}A}
 \tag{28}
@@ -388,7 +399,7 @@ K_j^{\rm cont}
 when \(A>0\). Then (23) gives
 
 \[
-\|P_{\le K_j^{\rm cont}}u(t_j)\|_\infty
+\|P_{\le K_j^{\rm hp}}v(t_j)\|_\infty
 \le
 \frac{U_j}{2}
 \tag{29}
@@ -397,7 +408,7 @@ when \(A>0\). Then (23) gives
 by the definition (28). Hence
 
 \[
-\|P_{>K_j^{\rm cont}}u(t_j)\|_\infty
+\|P_{>K_j^{\rm hp}}v(t_j)\|_\infty
 \ge
 \frac{U_j}{2}.
 \tag{30}
@@ -406,15 +417,16 @@ by the definition (28). Hence
 Moreover,
 
 \[
-K_j^{\rm cont}R_j
+K_j^{\rm hp}R_j
 =
 \frac{V_j}{2C_\phi C_{\rm BS}A}
 \longrightarrow\infty.
 \tag{31}
 \]
 
-The velocity continuation frequency therefore lies strictly above every
-fixed dilation of the marked parent band.
+The quantitative high-pass threshold therefore lies strictly above every
+fixed dilation of the marked parent band. No single active Fourier
+frequency is selected.
 
 Equations (6)--(7) express the same separation in physical length. The
 new scale \(d_j\) is selected by the global instantaneous velocity, not by
@@ -610,7 +622,7 @@ The immediate new gate is a same-time bridge theorem:
 \[
 \boxed{
 \begin{gathered}
-\text{either }R_j\|u(t_j)\|_\infty\text{ is uniformly bounded,}\\
+\text{either }R_j\|v(t_j)\|_\infty\text{ is uniformly bounded,}\\
 \text{or the finer continuation concentration forced by (27) must be}\\
 \text{coupled to, or separated from, the fixed-shell tensor carrier.}
 \end{gathered}
@@ -621,6 +633,14 @@ The immediate new gate is a same-time bridge theorem:
 The first alternative eliminates the terminal layer by (34). The second
 turns it into a precise two-scale concentration problem rather than an
 unstructured endpoint trace.
+
+The subsequent
+[fixed-shell spatial-localization theorem](fixed-shell-spatial-localization.md)
+proves that the marked parent event itself is local: it contains fixed
+weak-critical strain and velocity atoms, and carrier clusters force local
+strong \(L^{5/2}\) strain divergence. It also resolves the continuation
+concentration into parent-local and spatially split branches. Tensor
+transfer inside the first branch and exclusion of the second remain open.
 
 Run the exact clock-product, high-pass floor, continuation-scale, and global
 scaling ledgers with:

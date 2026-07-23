@@ -381,9 +381,13 @@ L^{5/2}(\Omega\times\mathfrak T)
 \]
 
 on the full spatial terminal slab in the nonzero-alignment-excess branch.
-The projectors are nonlocal, so no spatially local conclusion is asserted.
-The improvement here is structural: each marked block is now a dilation of
-one fixed annular symbol and depends only on its own parent scale.
+At this stage the projectors are nonlocal, so no spatially local conclusion
+is asserted. The later
+[fixed-shell spatial-localisation theorem](fixed-shell-spatial-localization.md)
+uses the fixed symbol's Schwartz tails to supply that conclusion on
+\(\mathbb R^3\). The improvement here is structural: each marked block is
+now a dilation of one fixed annular symbol and depends only on its own
+parent scale.
 
 ## 3. Compactify the parent event clock
 
@@ -659,6 +663,14 @@ and escape beyond every fixed parent frequency. At the finer inverse-velocity
 scale, the forward clock is bounded away from zero. No spatial or tensor
 bridge from that continuation concentration back to the carrier is yet
 proved.
+
+The later
+[fixed-shell spatial-localization theorem](fixed-shell-spatial-localization.md)
+removes the eventwise spatial nonlocality left here. Every shell mark
+produces local critical strain and velocity atoms. If carrier centres
+cluster, the separated fixed shells force strong \(L^{5/2}\) strain
+divergence in every neighbourhood of the cluster point. This does not
+transfer the tensor detector to the finer continuation scale.
 
 Run the exact shell-transfer, support-separation, clock-regime, carrier-action,
 and persistence-time ledgers with:
