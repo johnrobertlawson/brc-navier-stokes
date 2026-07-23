@@ -1,6 +1,7 @@
 """Small, dependency-free verification tools for the Navier–Stokes dossier."""
 
 __all__ = [
+    "anisotropic",
     "intervals",
     "links",
     "log_chain",
@@ -9,4 +10,5 @@ __all__ = [
     "records",
     "scaling",
     "source_cache",
+    "strain",
 ]

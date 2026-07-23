@@ -2,7 +2,7 @@
 
 **Snapshot:** 2026-07-23
 **Clay status:** unsolved
-**Repository phase:** baseline dossier and proof-lab initialization
+**Repository phase:** source-level audit of the 2607.08866 conditional proof
 
 ## Established here
 
@@ -16,6 +16,14 @@
   no unresolved references, with archive and TeX hashes recorded in the audit.
 - An exact two-core example now proves that weak-\(L^{3/2}\) control alone does not imply
   the paper's single-ball critical-point localization.
+- A second exact example proves that even one connected anisotropic critical core can
+  have the weak-\(L^{3/2}\) tail while requiring a covering constant growing as
+  \(\lambda^{1/4}\).
+- O2607-01 through O2607-04 now have source-anchored verdicts: the profile and zero-set
+  direction hypotheses are repaired, their terminal-interval uniformity is explicit,
+  and the exact Biot–Savart Rayleigh cancellation is independently derived.
+- The unidirectional strain tensor need not vanish; only its double contraction along
+  the fixed direction does.
 
 These are infrastructure claims, not new Navier–Stokes theorems.
 
@@ -34,14 +42,19 @@ The coequal breakdown question is:
 
 ## Next proof-lab actions
 
-1. Structurally parse the exact 2607.08866v2 proof into lemma-level dependencies.
-2. Resolve obligations O2607-01 through O2607-04 before trusting downstream exponents.
-3. Prove the slowly-varying inversion lemma behind the mechanized log-exponent chain.
-4. Fetch and inventory the Hou–Wang–Yang public code and its numerical certificates.
-5. Lift the scalar two-core localization counterexample toward divergence-free,
+1. Resolve O2607-05 by matching the local-ball BMO norm to the exact Jones extension
+   hypotheses and tracking additive constants.
+2. Resolve O2607-06 by proving the vector/tensor commutator bound on
+   \(L^{3/2,\infty}\) from valid strong-type endpoints.
+3. Resolve O2607-07 by recomputing the near, middle, and far fields with exact kernel
+   powers and norm domains.
+4. Prove the slowly-varying inversion lemma behind the mechanized log-exponent chain.
+5. Fetch and inventory the Hou–Wang–Yang public code and its numerical certificates.
+6. Lift the scalar localization counterexamples toward divergence-free,
    Biot–Savart-consistent vorticity geometry.
 
 ## Interpretation
 
-The project has a map and instruments, not a solution. Its first meaningful progress
-gate is a defensible verdict on one proof arrow or the removal of one genuine assumption.
+The project has a map and instruments, not a solution. The foundation of the active
+preprint is now explicit. The next meaningful gate is whether its localized commutator
+estimate survives O2607-05 through O2607-07.

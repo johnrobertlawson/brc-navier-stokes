@@ -54,6 +54,22 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-FOUNDATION-2607",
+      "title": "Source-anchored audit of 2607 foundation obligations",
+      "kind": "analytic_audit",
+      "route_ids": ["ROUTE-R1B", "ROUTE-R3"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "The exact v2 source permits a bounded verdict on O2607-01 through O2607-04 without assuming any downstream commutator estimate.",
+      "invariants": ["Pinned TeX SHA-256", "Every source display and imported theorem is line-anchored", "The main conditional theorem remains unverified"],
+      "method": "Parse the complete TeX source, rewrite all foundation quantifiers, track constant dependencies, and independently derive the tensor cancellation.",
+      "certificate": "The proof map and its linked analytic counterexamples and tensor derivation.",
+      "success_criterion": "Each of O2607-01 through O2607-04 receives a verified, repaired, or unsupported verdict with exact scope.",
+      "failure_interpretation": "At least one foundation quantifier, dependency, or tensor identity remains unresolved.",
+      "status": "complete",
+      "artifacts": ["dossier/papers/2607.08866-proof-map.md"],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-MULTICORE-001",
       "title": "Weak-L(3/2) multi-core localization counterexample",
       "kind": "analytic_counterexample",
@@ -70,6 +86,62 @@
         "lab/navier_lab/multicore.py",
         "lab/tests/test_multicore.py",
         "dossier/experiments/multicore-localization.md"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-ANISOTROPIC-001",
+      "title": "Weak-L(3/2) one-core anisotropic localization counterexample",
+      "kind": "analytic_counterexample",
+      "route_ids": ["ROUTE-R3A"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "A uniform weak-L(3/2) bound does not force even one connected point-centered high-level set into a ball of radius proportional to lambda^(-1/2).",
+      "invariants": ["The distribution exponent remains exactly 3/2", "The example is scalar and makes no PDE-consistency claim"],
+      "method": "Use anisotropic boxes with half-width powers 1/4, 5/8, and 5/8.",
+      "certificate": "A written proof and exact rational/integer exponent checks.",
+      "success_criterion": "The scaled distribution tail is constant while the necessary critical-radius covering constant grows as lambda^(1/4).",
+      "failure_interpretation": "The anisotropic volume or diameter exponents were calculated incorrectly.",
+      "status": "complete",
+      "artifacts": [
+        "lab/navier_lab/anisotropic.py",
+        "lab/tests/test_anisotropic.py",
+        "dossier/experiments/anisotropic-localization.md"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-ZERO-DIRECTION-001",
+      "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
+      "kind": "analytic_counterexample",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "Smooth divergence-free vorticity need not admit a normalized direction with the bmo_(1/|log r|) modulus across its zero set.",
+      "invariants": ["The vorticity is smooth, compactly supported, and divergence-free", "Changing values on the measure-zero zero axis cannot change mean oscillation"],
+      "method": "Take the curl of a compactly supported vector potential that yields (x1,-x2,0) near the origin and compute its scale-invariant directional oscillation.",
+      "certificate": "The symmetry calculation gives mean zero and mean oscillation exactly one on every centered small ball.",
+      "success_criterion": "The weighted-BMO seminorm diverges for every assignment on the zero axis.",
+      "failure_interpretation": "The local direction average or divergence-free construction is incorrect.",
+      "status": "complete",
+      "artifacts": ["dossier/experiments/zero-set-direction.md"],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-STRAIN-001",
+      "title": "Exact Biot-Savart unidirectional strain contraction",
+      "kind": "symbolic",
+      "route_ids": ["ROUTE-R1B"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "The unidirectional Biot-Savart contribution has zero Rayleigh contraction along the fixed vorticity direction, although its strain tensor need not vanish.",
+      "invariants": ["Levi-Civita convention epsilon_123 equals 1", "The human index derivation is the proof and the finite grid is only a check"],
+      "method": "Differentiate Biot-Savart in indices, symmetrize, contract, and check the finite-dimensional tensor identity with exact integers.",
+      "certificate": "A written principal-value derivation, a nonzero-tensor counterexample, and exact unit tests.",
+      "success_criterion": "The Rayleigh numerator equals the scalar triple-product form and vanishes for every unidirectional source tested.",
+      "failure_interpretation": "The tensor signs, index contractions, or stated cancellation are wrong.",
+      "status": "complete",
+      "artifacts": [
+        "lab/navier_lab/strain.py",
+        "lab/tests/test_strain.py",
+        "dossier/experiments/strain-cancellation.md"
       ],
       "last_run": "2026-07-23"
     },

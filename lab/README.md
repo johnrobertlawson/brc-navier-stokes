@@ -10,6 +10,8 @@ not convert passing unit tests into mathematical truth.
 | **scaling.py** | Exact rational scaling exponents | Existence or regularity estimates |
 | **log_chain.py** | Distribution/rearrangement exponent bookkeeping used in the 2607 audit | O'Neil's theorem or its hypotheses |
 | **multicore.py** | Exact two-core weak-L(3/2) tail and covering geometry | PDE consistency of the scalar example |
+| **anisotropic.py** | Exact one-core anisotropic weak-L(3/2) tail and covering loss | PDE consistency of the scalar example |
+| **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
 | **math_markup.py** | Balanced, unnested Markdown/LaTeX math delimiters | Whether the mathematics inside them is correct |
@@ -25,6 +27,8 @@ From the repository root:
     make scaling
     make log-chain
     make multicore
+    make anisotropic
+    make strain
     make fetch-2607
     make compile-2607
 

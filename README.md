@@ -45,6 +45,7 @@ that survives the viscosity.
 - [The proof-or-breakdown possibility tree](dossier/possibility-tree.md)
 - [Current research program](dossier/research-program.md)
 - [Audit of arXiv:2607.08866](dossier/papers/2607.08866-audit.md)
+- [Line-anchored proof map of arXiv:2607.08866v2](dossier/papers/2607.08866-proof-map.md)
 - [Current status](dossier/status.md)
 
 The full [dossier index](dossier/index.md) offers reading paths at three levels.

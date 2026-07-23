@@ -7,37 +7,37 @@
       "id": "O2607-01",
       "stage": "foundation",
       "statement": "Rewrite the critical-point singularity definition as exact uniform inequalities and separate assumptions from examples and asserted consequences.",
-      "status": "partially_mechanized",
+      "status": "repaired",
       "depends_on": [],
-      "evidence": ["EXP-MULTICORE-001"],
-      "disposition": "The two-core construction proves that a bare weak-L(3/2) bound is not enough for single-ball superlevel containment; the remaining task is a full exact rewrite of the source definition."
+      "evidence": ["EXP-FOUNDATION-2607", "EXP-MULTICORE-001", "EXP-ANISOTROPIC-001"],
+      "disposition": "The exact rewrite is in the proof map. A globally bounded fixed-centre factor Phi implies localization and weak-L(3/2); bare weak-L(3/2) controls neither separated cores nor anisotropic diameter. The proof-minimal repair states uniform high-level localization directly."
     },
     {
       "id": "O2607-02",
       "stage": "foundation",
       "statement": "Define vorticity direction on the zero-vorticity set and preserve the required weighted-BMO bound.",
-      "status": "open",
+      "status": "repaired",
       "depends_on": [],
-      "evidence": [],
-      "disposition": "No extension convention is yet verified."
+      "evidence": ["EXP-FOUNDATION-2607", "EXP-ZERO-DIRECTION-001"],
+      "disposition": "The theorem must assume one measurable global unit extension satisfying omega-vector=|omega| xi and the uniform weighted-BMO bound. Smooth divergence-free vorticity does not imply such a modulus, and a zero-set choice made after the estimates is not automatic."
     },
     {
       "id": "O2607-03",
       "stage": "foundation",
       "statement": "Verify uniform-in-time profile, Lorentz, and weighted-BMO constants on the exact terminal interval.",
-      "status": "open",
+      "status": "verified",
       "depends_on": ["O2607-01", "O2607-02"],
-      "evidence": [],
-      "disposition": "Needed before selecting a time-independent truncation level."
+      "evidence": ["EXP-FOUNDATION-2607"],
+      "disposition": "The repaired hypotheses provide fixed profile, Lorentz, localization, and direction constants on I=(T-star-epsilon,T-star). This is assumed conditional uniformity, not a PDE consequence. The source's later phrase 'entire interval' must be read as I; the downstream threshold check remains O2607-10."
     },
     {
       "id": "O2607-04",
       "stage": "commutator",
       "statement": "Check the full tensor Biot-Savart formula and exact unidirectional cancellation for the stretching eigenvalue.",
-      "status": "open",
+      "status": "repaired",
       "depends_on": ["O2607-02"],
-      "evidence": [],
-      "disposition": "The source currently gives a schematic kernel argument."
+      "evidence": ["EXP-FOUNDATION-2607", "EXP-STRAIN-001"],
+      "disposition": "The indexed principal-value derivation verifies the componentwise commutator and the zero Rayleigh contraction e^T T(|omega|e)e. The source overstates this at line 218: the full unidirectional strain tensor need not vanish."
     },
     {
       "id": "O2607-05",

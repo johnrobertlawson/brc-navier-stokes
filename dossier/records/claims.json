@@ -234,16 +234,16 @@
       "forcing": "zero",
       "solution_class": "smooth_until_T",
       "assumptions": [
-        "Critical point singularity package",
+        "Fixed-centre uniform critical upper envelope or equivalent uniform high-level single-ball localization",
         "Uniform weak-L(3/2) vorticity",
-        "Uniform log-weighted BMO vorticity direction"
+        "Existence of a global unit direction extension with uniform log-weighted BMO control"
       ],
       "conclusion": "The proposed first singular time is regular.",
       "scaling": "critical_to_subcritical_log",
       "status": "conditional_preprint",
       "source_ids": ["SRC-GRUJIC-2026", "SRC-CF-1993"],
       "depends_on": ["CLM-GEOM-001"],
-      "audit": "Open obligations O2607-01 through O2607-16; not independently verified.",
+      "audit": "Foundation O2607-01 through O2607-04 closed with documented repairs; O2607-05 through O2607-16 remain open, so the conditional theorem is not independently verified.",
       "last_checked": "2026-07-23"
     },
     {
