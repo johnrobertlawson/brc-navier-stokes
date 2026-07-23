@@ -588,6 +588,17 @@ ancient suitable flow that is non-self-similar in the continuous Leray
 sense and can shed every compact mark while retaining a recursive
 terminal Besov defect.
 
+The subsequent
+[log-scale survivor](terminal-logscale-survivor.md) makes the static
+boundary exact. Replacing \(a\) in (40) by a strictly positive
+two-frequency quasiperiodic modulation in \(\log|x|\) preserves both weak
+endpoints and creates a compact nonzero dilation hull with no exact scale
+period and a uniform positive Albritton--Barker quotient defect. A
+two-centre sum has exactly two spatial non-locally-bounded points. This
+field is not a
+Navier--Stokes solution; it shows that none of these terminal-trace marks
+alone excludes the remaining outer profile.
+
 ## 8. Scope and next gate
 
 This reduction closes:
@@ -617,12 +628,12 @@ The next exact gate is
 \[
 \boxed{
 \begin{gathered}
-\text{force enough scale recurrence of the nonzero outer ancient profile
-to enter a}\\
-\text{published self-similar or discretely self-similar rigidity class,
-or prove that a}\\
-\text{scale-aperiodic recursive Besov ancestry has a forbidden
-same-trajectory flux;}\\
+\text{prove a dynamical scale-hull Liouville theorem for the nonzero
+outer ancient profile,}\\
+\text{or show that its scale-aperiodic recursive Besov ancestry has a
+forbidden}\\
+\text{same-trajectory signed flux, Lyapunov change, or backward-uniqueness
+trace;}\\
 \text{alternatively, recover the Type-I core that remains at spatial
 infinity.}
 \end{gathered}

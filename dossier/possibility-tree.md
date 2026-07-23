@@ -91,8 +91,18 @@ by arbitrarily severe gaps. Inter-satellite compactification and the
 quantitative local singular count now bound every microscopic tangent
 cloud by one uniform branching number; overcrowding instead forces a
 packet-to-cluster no-neck ratio. The remaining cell is an infinite-depth,
-uniformly finite-branching hierarchy. The next closure test is a
-same-trajectory depth charge or scale ancestry law.
+uniformly finite-branching hierarchy. An exact divergence-free
+log-quasiperiodic terminal trace shows that both weak critical endpoints,
+two locally finite non-locally-bounded spatial points, absence of exact
+DSS, compact
+aperiodic scale recurrence, and a uniform positive Besov quotient defect
+can coexist without any additive log-depth bound. This is not a
+Navier--Stokes solution, but it closes the depth-charge shortcut based
+only on that retained package of marks. The next closure test is a
+genuinely dynamical
+scale-hull Liouville theorem, same-trajectory signed flux, Lyapunov
+quantity, or backward-uniqueness law for the coherent ancient suitable
+profile.
 
 ### Singular-to-smooth construction bridge
 

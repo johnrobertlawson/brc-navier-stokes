@@ -437,14 +437,21 @@ and proves no Clay alternative A--D. In particular, it does not prove:
 
 Finite branching does not imply finite depth. A one-child superlacunary
 chain, or an infinite tree with at most \(\mathfrak N_*\) children per
-node, remains compatible with the static endpoint budgets.
+node, remains compatible with the static endpoint budgets. The subsequent
+[log-scale survivor](terminal-logscale-survivor.md) sharpens this warning:
+even two weak critical endpoints, locally finite singular geometry,
+absence of exact DSS, compact aperiodic scale recurrence, and a uniform
+positive Besov quotient defect coexist in one exact divergence-free
+terminal trace.
 
-The next closure gate is therefore no longer spatial cardinality. It is a
-same-trajectory **depth charge**: a signed flux, ancestry relation, or
-critical occupation that pays a fixed amount at each successive cluster
-level. Finite total energy or dissipation would then bound the depth and
-close centering escape. Without such a charge, the finite-branching
-hierarchy is the exact remaining spatial survivor.
+The next closure gate is therefore neither spatial cardinality nor the
+listed norms of the terminal trace. It is a dynamical same-trajectory
+**depth charge**:
+a signed flux, Lyapunov quantity, backward-uniqueness law, or scale-hull
+Liouville theorem that distinguishes the actual coherent ancient suitable
+profile from the kinematic log-quasiperiodic survivor. Without such an
+input, the finite-branching hierarchy is the exact remaining spatial
+survivor.
 
 Run the inter-satellite scale, Seregin count, separation, and cluster
 alternative ledgers with:

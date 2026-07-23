@@ -836,8 +836,23 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > branches. Any later cluster with more branches forces a fixed
 > packet-to-cluster no-neck ratio. Spatial cardinality is therefore
 > reduced to an infinite-depth, uniformly finite-branching hierarchy.
-> The next gate is a same-trajectory depth charge joining successive
-> levels, or a bridge joining the distance and Besov outer profiles;
+> The
+> [log-scale survivor](experiments/terminal-logscale-survivor.md)
+> now closes the terminal-trace depth-charge shortcut. An exact
+> divergence-free two-frequency modulation of the degree-minus-one swirl
+> has both weak critical endpoints, a compact nonzero aperiodic dilation
+> hull, no exact DSS factor, and a uniform positive Albritton--Barker
+> quotient defect. Adding one translate gives exactly two singular
+> spatial non-locally-bounded points and retains that defect. This is a
+> kinematic field, not a
+> Navier--Stokes solution. It proves that the current terminal marks do
+> not add across log-scale depth. The next gate is consequently a
+> dynamical scale-hull Liouville theorem, same-trajectory signed flux,
+> Lyapunov quantity, or backward-uniqueness law for the coherent ancient
+> suitable weak-\(L^3\) profile;
+> [independent review](review-response-terminal-logscale-survivor-2026-07-23.md)
+> found this kinematic theorem valid in scope after the homogeneous-Besov
+> test and logical boundary were tightened;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -851,15 +866,18 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Construct or rule out a same-trajectory depth charge on the uniformly
-   finite-branching terminal cluster hierarchy. It must retain a fixed
-   amount at each nested level and be controlled by a finite physical
-   budget; static energy, weak endpoints, and local singular cardinality
-   have already been exhausted.
-2. Relate the distance profile to the nonzero coherent weak-\(L^3\) Besov
-   outer profile realised at
-   \(R_j\ll\rho_j\ll|x_j-x_*|\), or prove a same-trajectory flux that
-   forbids their remaining scale-aperiodic compatibility.
+1. Prove or refute a scale-hull Liouville principle: a nonzero coherent
+   ancient suitable weak-\(L^3\) solution cannot have a compact aperiodic
+   critical-dilation hull with a uniform positive Albritton--Barker
+   quotient defect. The exact kinematic survivor shows that the proof
+   needs an input beyond the listed terminal marks; the current target
+   uses the time equation.
+2. Seek a same-trajectory signed flux, Lyapunov quantity, or
+   backward-uniqueness observable that changes along log-scale
+   translation and either bounds the depth of the uniformly
+   finite-branching hierarchy or couples the distance profile to the
+   Besov outer profile at
+   \(R_j\ll\rho_j\ll|x_j-x_*|\).
 3. In parallel, prove or refute the exact no-neck estimate
    \[
    \sup_j\frac{|x_j-x_*|}{R_j}<\infty.

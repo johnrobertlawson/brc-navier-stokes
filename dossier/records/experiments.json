@@ -1726,6 +1726,45 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-TERMINAL-LOGSCALE-SURVIVOR-001",
+      "title": "Log-quasiperiodic terminal-trace survivor and static depth-charge no-go",
+      "kind": "analytic_counterexample",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-SELFSIM-001"
+      ],
+      "hypothesis": "The terminal weak-L3 and weak-gradient endpoints, locally finite singular geometry, absence of exact self-similarity, and a uniform positive Albritton-Barker Besov quotient defect force an additive charge that bounds the depth of a finite-branching scale hierarchy.",
+      "invariants": [
+        "The carrier A(x)=(-x2,x1,0)/|x|^2 is distributionally divergence free, tangent to spheres, and homogeneous of degree minus one",
+        "The amplitude 2 plus one-half sin(s) plus one-quarter sin(sqrt(2)s) stays uniformly positive and has bounded derivative",
+        "The resulting field lies globally in weak L3, its gradient lies globally in weak L(3/2), and its local L2 mass is bounded by a constant times radius uniformly over ball centres",
+        "Critical dilation translates two phases on a compact log-scale torus",
+        "Every distributional dilation limit is nonzero because the amplitude has a fixed positive floor",
+        "The frequencies one and sqrt(2) have no nonzero common period by the integer equation n squared equals two m squared",
+        "A compact annular spatial test has a uniformly positive pairing with every dilation",
+        "The compact annular spatial test has zero mean by horizontal oddness and therefore lies in homogeneous B-one-one-one",
+        "The zero-mean test is a continuous functional on homogeneous B-minus-one-infinity-infinity, is admissible for distributional blow-down convergence, and gives a positive distance from the critical-blow-down-vanishing subspace",
+        "The equivalent heat-semigroup Besov norm makes critical dilation an isometry, so the quotient defect stays uniform along the complete dilation orbit",
+        "The two-centre sum has exactly two spatial non-locally-bounded points, retains both weak endpoints, has no nontrivial DSS centre, and retains a positive quotient defect under large-scale coalescence",
+        "Energy, dissipation, and ordinary local flux have positive radius power, whereas the weak and Besov-infinity endpoints are scale-zero but supremal rather than additive",
+        "Neither field is claimed to solve Navier-Stokes, satisfy suitability, arise from the terminal tower, have finite global energy, or resolve any Clay alternative A-D"
+      ],
+      "method": "Modulate an exact divergence-free degree-minus-one swirl by a strictly positive two-frequency quasiperiodic function of log radius, compute both critical weak endpoints and the dilation action, use irrational frequency windings to exclude scale periods, separate the field from the Albritton-Barker blow-down subspace by one compact zero-mean spatial-annulus Besov functional, and add a translated copy to realize two locally finite non-locally-bounded points.",
+      "certificate": "A written exact kinematic theorem and adversarial cover letter plus exact Fraction tests for critical radius powers, amplitude and derivative bounds, irrational winding obstruction, positive pairing, and abstract quotient-distance floor.",
+      "success_criterion": "One exact divergence-free terminal trace simultaneously realizes the static endpoint, recurrence, aperiodicity, local singular-geometry, and positive Besov-defect marks with no additive log-depth control, isolating a genuinely dynamical scale-hull Liouville or same-trajectory flux as the next gate.",
+      "failure_interpretation": "The field fails a stated endpoint or divergence condition, its log-scale orbit has a nonzero period, the compact zero-mean test does not define a continuous homogeneous-Besov functional, the quotient-distance lower bound fails, the two-centre field admits a nontrivial DSS centre, or the conclusion is stated beyond its kinematic non-PDE scope.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/terminal-logscale-survivor.md",
+        "dossier/review-letter-terminal-logscale-survivor-2026-07-23.md",
+        "dossier/review-response-terminal-logscale-survivor-2026-07-23.md",
+        "lab/navier_lab/terminal_logscale_survivor.py",
+        "lab/tests/test_terminal_logscale_survivor.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

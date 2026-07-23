@@ -516,6 +516,15 @@ the same intermediate radii. The remaining survivor is not continuously
 backward self-similar, but it may still be discrete, asymptotically
 recurrent, or scale-aperiodic, with the Type-I core at spatial infinity.
 
+The later
+[log-scale survivor](terminal-logscale-survivor.md) closes the
+terminal-trace-only interpretation of (30). A divergence-free
+log-quasiperiodic field has a uniform positive quotient defect along a
+compact aperiodic dilation hull while both weak critical endpoint norms
+stay fixed. It is not a Navier--Stokes solution, so the remaining version
+of (30) must use the coherent ancient time evolution rather than the
+Besov distance alone.
+
 Run the exact critical-dilation and three-scale diagonal ledgers with:
 
     make terminal-besov-ancestry

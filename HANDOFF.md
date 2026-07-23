@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T19:59:39Z
+**Updated:** 2026-07-23T20:46:17Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -277,15 +277,38 @@ Barker--Prange energy/pressure window. At any inter-satellite scale, a
 microscopic tangent cloud has at most one fixed number
 \(\mathfrak N_*\) of separated branches. Any later cluster exceeding that
 number contains a packet comparable to the cluster diameter. This closes
-unbounded spatial branching but not unbounded depth. The immediate target
-is now a same-trajectory depth charge or ancestry law that pays a fixed
-summable cost at every successive finite-branching level. A
+unbounded spatial branching but not unbounded depth. A
 [Four-link independent adversarial review](dossier/review-response-terminal-satellite-packing-2026-07-23.md)
 found the diagonal, moving-shell persistence, compact packing, and
-threshold-crossing arguments valid in their stated conditional scope. A
-same-trajectory flux or a bridge between the recursive Besov outer
-profile and the two-point distance profile remains the parallel
-scale-aperiodic route.
+threshold-crossing arguments valid in their stated conditional scope.
+
+The subsequent
+[log-scale survivor](dossier/experiments/terminal-logscale-survivor.md)
+closes the most obvious terminal-trace depth-charge shortcut. The exact
+divergence-free field
+\[
+h(\log|x|)\frac{(-x_2,x_1,0)}{|x|^2},
+\qquad
+h(s)=2+\tfrac12\sin s+\tfrac14\sin(\sqrt2s),
+\]
+has both weak critical endpoints, a compact nonzero aperiodic dilation
+hull, no exact DSS factor, and a uniform positive Albritton--Barker
+quotient defect. Adding a translate gives exactly two spatial
+non-locally-bounded points and retains the defect; these are not
+Navier--Stokes spacetime singularities. The field is not a Navier--Stokes
+solution. It proves
+that the terminal endpoints, locally finite singular geometry, absence of
+exact DSS, and recursive Besov defect are compatible with infinite
+log-scale recurrence and therefore cannot themselves count hierarchy
+depth. The exact remaining scale-aperiodic gate is dynamical: exclude the
+analogous coherent ancient suitable weak-\(L^3\) profile by a scale-hull
+Liouville theorem, same-trajectory signed flux, Lyapunov quantity, or
+backward uniqueness.
+[Independent adversarial review](dossier/review-response-terminal-logscale-survivor-2026-07-23.md)
+found the theorem valid in that kinematic scope after the Besov test was
+placed in the canonical heat-semigroup realisation, the two-centre lower
+bound was displayed, and the possibility of a stronger future static
+hypothesis was restored.
 Bounded-centering tensor/frequency transfer remains the other branch.
 
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent
