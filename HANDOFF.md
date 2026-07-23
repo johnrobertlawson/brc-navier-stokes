@@ -1,6 +1,6 @@
-# Handoff: evolve the zero-safe vacuum orientation tensor
+# Handoff: control or rigidify the polar-Fisher defect
 
-**Updated:** 2026-07-23T09:23:44Z
+**Updated:** 2026-07-23T09:41:39Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,21 +24,22 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Propagate the bounded cutoff-relative tensor
+Control the scale-invariant polar-Fisher content
 \[
-Z_{\eta_n}[\widehat\omega_n]
+\mathfrak I_n(C,\tau_0)
 =
-\frac{\widehat\omega_n\otimes\widehat\omega_n}
-{(|\widehat\omega_n|+\eta_n)^2},
-\qquad
-\eta_n=\sigma_n^{-1},
+\int_{-\tau_0}^0\int_{B_C}
+\frac{|\nabla\widehat\omega_n|^2}
+{|\widehat\omega_n|^2+\eta_n^2}\,dz\,d\tau,
+\qquad \eta_n=\sigma_n^{-1},
 \]
-over one natural interval from the same putative blow-up trajectory, or retain its
-nonzero temporal diffusion/variation defect. Terminal graph support is false even
-for compactly supported finite-energy snapshots with exact global Biot--Savart
-coupling and strong critical vorticity convergence. Spatial dust, arbitrary stress
-cascade, and a zero ancient distributional trace remain closed inside the repaired
-conditional chain. The regularity target remains
+from the same putative blow-up trajectory, or rigidly exclude its divergent and
+terminal-atomic branches. The smooth cutoff-relative tensor has a
+divergence-form parabolic equation: bounded \(\mathfrak I_n\) gives strong
+spacetime tensor compactness, while loss of its nonzero terminal trace forces a
+polar-Fisher atom. Spatial dust, arbitrary stress cascade, terminal graph support,
+and a zero ancient distributional trace are closed branches. The regularity target
+remains
 
 \[
 \widehat a_\lambda^+
@@ -52,12 +53,11 @@ conditional chain. The regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/terminal-vacuum-orientation.md`;
-3. equations (1)--(7) of
-   `dossier/experiments/projective-alignment-defect.md` for the antecedent
-   projective evolution; and
-4. sections 1--3 of `dossier/experiments/commutator-dust-clock.md` only when the
-   fixed cutoff, moving centre, or natural-time variation is needed.
+2. `dossier/experiments/polar-tensor-compactness.md`;
+3. sections 7--9 of `dossier/experiments/terminal-vacuum-orientation.md` for the
+   terminal tensor and its antecedent equation; and
+4. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when the
+   existing strong velocity compactness is needed.
 
 Completed static results:
 
@@ -682,13 +682,13 @@ The exact surviving terminal object is
 =
 \mathbf1_{\widehat E_n}
 \frac{\widehat\omega_n\otimes\widehat\omega_n}
-{(|\widehat\omega_n|+\eta_n)^2}.
+{|\widehat\omega_n|^2+\eta_n^2}.
 \]
 
 It is bounded and positive semidefinite. Every weak-* limit obeys
 
 \[
-\int_{B_1}F:\mathsf Z\,dz\ge\frac{q_0}{4},
+\int_{B_1}F:\mathsf Z\,dz\ge\frac{q_0}{2},
 \]
 
 but may live entirely over zero limiting vorticity. Equivalently, the full
@@ -696,24 +696,69 @@ two-scale polar measure records both absolute amplitude and amplitude relative t
 \(\eta_n\). In the compact snapshot family, the absolute coordinate tends to
 zero while the relative coordinate remains \(2/3\).
 
-Next deliverable:
+Completed polar-tensor compactness theorem:
 
-> On the moving natural cylinder, derive a compact distributional evolution for
+> For
 >
 > \[
-> Z_{\eta_n}[\widehat\omega_n]
+> H_\eta
 > =
-> \frac{\widehat\omega_n\otimes\widehat\omega_n}
-> {(|\widehat\omega_n|+\eta_n)^2}
+> \frac{\omega\otimes\omega}{|\omega|^2+\eta^2},
+> \qquad
+> \mathcal I_\eta
+> =
+> \frac{|\nabla\omega|^2}{|\omega|^2+\eta^2},
 > \]
 >
-> at \(\eta_n=\sigma_n^{-1}\). Use the exact tensor equation and the existing
-> fixed smooth direction cutoff. Either propagate the positive terminal pairing
-> \(\int F_n:\mathsf Z_n\), prove the lower-tail carrier-tightness criterion, or
-> force a nonzero scale-invariant tensor-variation/diffusion measure. In parallel,
-> derive the local energy and pressure passage needed for suitability. Do not
-> return to the false terminal graph-support lemma, spatial dust, generic stress
-> cascades, or a zero distributional limit.
+> the exact parabolic chain rule gives
+>
+> \[
+> \partial_tH_\eta+\nabla\cdot(uH_\eta)-\nu\Delta H_\eta
+> =
+> D\mathcal H_\eta(\omega)[S\omega]
+> -
+> \nu\sum_kD^2\mathcal H_\eta(\omega)
+> [\partial_k\omega,\partial_k\omega].
+> \]
+
+The stretching source is bounded by \(C|S|\), with no inverse-cutoff loss. The
+quadratic remainder is bounded by \(C\nu\mathcal I_\eta\), and
+
+\[
+|\nabla H_\eta|^2\le2\mathcal I_\eta.
+\]
+
+The natural-cylinder content \(\mathfrak I_n\) is exactly scale invariant. If it
+is locally bounded, Aubin--Lions--Simon gives
+
+\[
+H_{\eta_n}[\widehat\omega_n]\longrightarrow H
+\quad\hbox{strongly in local spacetime }L^2,
+\]
+
+and the limit obeys a distributional tensor equation with a finite
+matrix-valued polar-Fisher defect \(\mathcal R\). If \(H^0\) is the nonzero
+terminal tensor and \(H(0^-)\) the ancient left trace, then
+
+\[
+H^0-H(0^-)=-\mathcal R_0.
+\]
+
+Hence a disappearing terminal tensor forces a nonzero terminal polar-Fisher
+atom. If \(\mathfrak I_n\) is unbounded, its divergence is already a
+scale-invariant obstruction. Suitability remains separate because it controls
+\(\nabla u\), not \(\nabla\omega\).
+
+Next deliverable:
+
+> Derive a one-trajectory bound for \(\mathfrak I_n(C,\tau_0)\), most likely from
+> a renormalised vorticity-magnitude identity localised to the moving natural
+> cylinder, or prove a rigidity theorem that excludes each of its three outcomes:
+> divergence, a terminal atom, and a compact nonzero vacuum tensor. Track radial
+> log-amplitude and angular energy separately; ordinary local energy does not
+> control either. In parallel, establish the pressure/dissipation passage needed
+> for suitability. Do not return to the raw \(\Delta\omega/|\omega|\) equation,
+> terminal graph support, spatial dust, or generic stress cascades.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

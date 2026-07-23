@@ -111,6 +111,18 @@ def compactified_amplitudes(
     return physical, relative
 
 
+def quadratic_tensor_weight(
+    amplitude: Fraction,
+    normalized_cutoff: Fraction,
+) -> Fraction:
+    """Weight in omega tensor omega/(|omega|^2+cutoff^2)."""
+    if amplitude < 0 or normalized_cutoff <= 0:
+        raise ValueError("amplitude is nonnegative and cutoff is positive")
+    return amplitude * amplitude / (
+        amplitude * amplitude + normalized_cutoff * normalized_cutoff
+    )
+
+
 def finite_band_alignment_floor(
     exact_alignment: Fraction,
     background_projection_error: Fraction,
@@ -146,6 +158,10 @@ def report() -> str:
         Fraction(1, 5),
         Fraction(1, 10),
     )
+    tensor_weight = quadratic_tensor_weight(
+        Fraction(1, 5),
+        Fraction(1, 10),
+    )
     return "\n".join(
         (
             "Terminal vacuum-orientation ledger",
@@ -173,6 +189,7 @@ def report() -> str:
             f"{NORMALIZED_CARRIER.value}",
             f"sample compactified physical amplitude:  {physical}",
             f"sample cutoff-relative amplitude:        {relative}",
+            f"sample quadratic tensor weight:         {tensor_weight}",
             "",
             "Global Biot-Savart coupling does not imply terminal graph support.",
             "The cutoff-relative polar carrier survives when physical amplitude vanishes.",

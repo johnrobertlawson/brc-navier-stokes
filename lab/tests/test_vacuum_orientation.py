@@ -15,6 +15,7 @@ from navier_lab.vacuum_orientation import (
     linear_curl,
     linear_strain,
     matrix_trace,
+    quadratic_tensor_weight,
     rayleigh_value,
     vector_potential_coefficient,
 )
@@ -73,6 +74,10 @@ class VacuumOrientationTests(unittest.TestCase):
         )
         self.assertEqual(physical, Fraction(1, 6))
         self.assertEqual(relative, Fraction(2, 3))
+        self.assertEqual(
+            quadratic_tensor_weight(Fraction(1, 5), Fraction(1, 10)),
+            Fraction(4, 5),
+        )
 
     def test_invalid_inputs_are_rejected(self) -> None:
         with self.assertRaises(ValueError):
@@ -81,6 +86,8 @@ class VacuumOrientationTests(unittest.TestCase):
             compactified_amplitudes(Fraction(-1), Fraction(1))
         with self.assertRaises(ValueError):
             compactified_amplitudes(Fraction(1), Fraction(0))
+        with self.assertRaises(ValueError):
+            quadratic_tensor_weight(Fraction(1), Fraction(0))
         with self.assertRaises(ValueError):
             finite_band_alignment_floor(
                 Fraction(3),

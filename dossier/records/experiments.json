@@ -521,7 +521,7 @@
         "The global weak-L(3/2) vorticity norm is invariant and the kinetic energies vanish",
         "The family consists of admissible instantaneous data, not rescalings of one trajectory",
         "The graph-support counterexample does not construct blow-up and does not kill ROUTE-R3B",
-        "The cutoff-relative tensor retains at least one quarter of the projective alignment witness",
+        "The cutoff-relative tensor retains at least one half of the projective alignment witness",
         "Suitability and dynamic rigidity remain unproved"
       ],
       "method": "Cut off vector potentials for a trace-free linear strain and a rigid rotation so that annular vorticity generates an irrotational core strain; add a carrier of size twice the collapsing natural cutoff; reverse the natural scaling; and extract a two-scale polar Young measure and its bounded tensor moment.",
@@ -533,6 +533,39 @@
         "dossier/experiments/terminal-vacuum-orientation.md",
         "lab/navier_lab/vacuum_orientation.py",
         "lab/tests/test_vacuum_orientation.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-POLAR-TENSOR-COMPACTNESS-001",
+      "title": "Polar-Fisher compactness for the vacuum orientation tensor",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Applying the parabolic chain rule to the smooth cutoff-relative tensor removes Delta omega divided by vorticity magnitude; a scale-invariant polar-Fisher bound then gives strong spacetime tensor compactness, while loss of its nonzero terminal trace forces a terminal defect atom.",
+      "invariants": [
+        "The tensor map omega tensor omega divided by squared magnitude plus squared cutoff is smooth through zero vorticity",
+        "The tensor retains at least one half of the terminal projective alignment witness",
+        "The stretching source is bounded by the strain with no inverse-cutoff loss",
+        "The Hessian remainder is bounded by polar-Fisher density",
+        "The tensor spatial gradient squared is at most twice the polar-Fisher density",
+        "The polar-Fisher cylinder content is invariant under three-dimensional Navier-Stokes scaling",
+        "Bounded polar-Fisher content gives strong local spacetime L2 tensor compactness",
+        "Strong velocity and tensor convergence close the transport product",
+        "The limit equation retains both a weak stretching source and a finite matrix-valued diffusion defect",
+        "Loss of the nonzero terminal tensor forces a nonzero terminal polar-Fisher atom",
+        "Suitability does not control the vorticity-gradient quantity and remains a separate gate",
+        "No polar-Fisher bound is asserted for arbitrary Clay data"
+      ],
+      "method": "Differentiate the smooth quadratic polar tensor by the parabolic chain rule, prove cutoff-uniform stretching cancellation and exact gradient estimates, identify the invariant polar-Fisher content, apply Aubin-Lions-Simon under its boundedness, and integrate the defect equation through the terminal layer.",
+      "certificate": "A written chain-rule derivation, derivative estimates, exact radial and angular gradient ratios, scaling identity, conditional compactness proof, terminal trace-versus-atom dichotomy, and Fraction tests for tensor weights, derivatives, coefficient maxima, and powers.",
+      "success_criterion": "The second-derivative projective quotient is eliminated, compact tensor evolution is proved under one explicit invariant scalar content, and every failure is classified as divergent polar-Fisher content, a terminal atom, or a nonzero decorated ancient tensor.",
+      "failure_interpretation": "The tensor map is not zero-set smooth, the chain-rule sign is wrong, stretching loses an inverse cutoff, the Fisher content is not invariant, the compactness topology does not close transport, or a terminal tensor can disappear without a defect atom.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/polar-tensor-compactness.md",
+        "lab/navier_lab/polar_tensor_evolution.py",
+        "lab/tests/test_polar_tensor_evolution.py"
       ],
       "last_run": "2026-07-23"
     },

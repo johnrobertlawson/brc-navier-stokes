@@ -25,6 +25,7 @@ not convert passing unit tests into mathematical truth.
 | **same_solution_granularity.py** | Same-solution stress-shell gain, high-tail decay, and natural-band cover exponents | Temporal persistence of the aligned direction or suitability of the ancient limit |
 | **alignment_defect.py** | Positive self-rotation, exact shear-model alignment flip, and projective-defect scaling | Exclusion of the defect by global Biot-Savart structure or ancient rigidity |
 | **vacuum_orientation.py** | Compact Biot-Savart core algebra, critical snapshot scaling, and two-scale polar amplitude | Exclusion or rigidity of the vacuum tensor by one-trajectory dynamics |
+| **polar_tensor_evolution.py** | Smooth tensor weight, parabolic chain-rule powers, and polar-Fisher gradient constants | A trajectory bound on polar-Fisher content or rigidity for its defect measure |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -56,6 +57,7 @@ From the repository root:
     make same-solution-granularity
     make projective-alignment
     make vacuum-orientation
+    make polar-tensor
     make strain
     make fetch-2607
     make compile-2607

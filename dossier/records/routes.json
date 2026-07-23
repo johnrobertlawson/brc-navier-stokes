@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can one-trajectory dynamics propagate or eliminate the nonzero cutoff-relative vacuum orientation tensor and its scale-invariant diffusion defect, then obtain suitable ancient rigidity?",
+      "question": "Can one-trajectory dynamics bound or rigidly exclude the polar-Fisher content, its terminal atom, and the resulting compact vacuum tensor while also producing suitability?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "The cutoff-relative orientation tensor is propagated and either its vacuum part vanishes or it obeys a closed defect evolution law; scale-local energy and pressure prove suitability, and rigidity excludes the decorated nonzero ancient object.",
-      "kill_criterion": "A Clay-admissible trajectory or nonzero vacuum-orientation-decorated ancient suitable limit retaining a cutoff-scale projective diffusion defect outside every available rigidity class.",
+      "success": "Polar-Fisher content is bounded with no terminal atom or its defect is rigidly excluded; the nonzero tensor evolution is propagated, scale-local energy and pressure prove suitability, and rigidity excludes the decorated ancient object.",
+      "kill_criterion": "A Clay-admissible trajectory or nonzero suitable ancient limit retaining a vacuum tensor and polar-Fisher defect outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

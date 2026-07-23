@@ -595,7 +595,9 @@ left global coupling as a possible repair. The
 terminal repair as false even for compactly supported finite-energy snapshots
 with strong critical convergence. The live gate is now to propagate or eliminate
 the zero-safe cutoff-relative orientation tensor using one-trajectory dynamics,
-while retaining its scale-invariant diffusion defect if necessary.
+while retaining its scale-invariant diffusion defect if necessary. The
+[polar-tensor compactness theorem](polar-tensor-compactness.md) reduces that
+evolution to one invariant polar-Fisher content and its possible terminal atom.
 
 Run the exact exponent checks with:
 

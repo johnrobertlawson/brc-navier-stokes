@@ -76,9 +76,9 @@ The exact zero-safe replacement is
 \boxed{
 Z_{\eta}[\omega]
 =
-\frac{\omega\otimes\omega}{(|\omega|+\eta)^2}
+\frac{\omega\otimes\omega}{|\omega|^2+\eta^2}
 =
-\left(\frac{|\omega|}{|\omega|+\eta}\right)^2
+\frac{|\omega|^2}{|\omega|^2+\eta^2}
 \xi\otimes\xi .
 }
 \tag{1}
@@ -88,7 +88,7 @@ It obeys \(0\le Z_\eta\le I\). On the selected set
 \(|\widehat\omega_n|>\eta_n\) and \(F_n:Q_n>1\),
 
 \[
-F_n:Z_{\eta_n}[\widehat\omega_n]>\frac14.
+F_n:Z_{\eta_n}[\widehat\omega_n]>\frac12.
 \tag{2}
 \]
 
@@ -98,7 +98,7 @@ nonzero positive-semidefinite **vacuum orientation tensor**
 
 \[
 \boxed{
-\int_{B_1}F:\mathsf Z\,dz\ge\frac{q_0}{4}.
+\int_{B_1}F:\mathsf Z\,dz\ge\frac{q_0}{2}.
 }
 \tag{3}
 \]
@@ -499,11 +499,19 @@ on \(B_1\). Hence all witness mass converges to
 ## 7. Minimal tensor certificate
 
 The complete measure (27) records more information than is needed to preserve the
-positive pairing. Its bounded second polar moment is exactly (1):
+positive pairing. Put
+
+\[
+k_n
+=
+\frac{r_n}{\sqrt{r_n^2+\eta_n^2}}.
+\]
+
+Its bounded quadratic polar moment is exactly (1):
 
 \[
 Z_{\eta_n}[\widehat\omega_n]
-=h_n^2Q_n.
+=k_n^2Q_n.
 \]
 
 Restrict it to the witness:
@@ -518,14 +526,14 @@ Z_{\eta_n}[\widehat\omega_n].
 
 The matrices \(\mathsf Z_n\) are positive semidefinite and uniformly bounded in
 \(L^\infty(B_1)\). A weak-* subsequence converges to a positive-semidefinite
-tensor \(\mathsf Z\). Since \(h_n^2>1/4\), (30) of the projective audit gives
+tensor \(\mathsf Z\). Since \(k_n^2>1/2\), (30) of the projective audit gives
 
 \[
 \int_{B_1}F_n:\mathsf Z_n\,dz
 >
-\frac14|\widehat E_n|
+\frac12|\widehat E_n|
 \ge
-\frac{q_0}{4}.
+\frac{q_0}{2}.
 \]
 
 Uniform convergence of \(F_n\) proves (3). For the explicit snapshot family,
@@ -533,7 +541,7 @@ Uniform convergence of \(F_n\) proves (3). For the explicit snapshot family,
 \[
 \mathsf Z_n
 =
-\frac49e\otimes e
+\frac45e\otimes e
 \quad\hbox{on }B_1,
 \]
 
@@ -590,7 +598,7 @@ On \(\{r>0\}\), put
 \[
 \phi_\eta(r)
 =
-\left(\frac{r}{r+\eta}\right)^2.
+\frac{r^2}{r^2+\eta^2}.
 \]
 
 The magnitude and projective equations give
@@ -607,10 +615,10 @@ D_tr
 \begin{aligned}
 D_tZ_\eta
 ={}&
-\frac{2\eta r}{(r+\eta)^3}(D_tr)Q\\
+\frac{2\eta^2r}{(r^2+\eta^2)^2}(D_tr)Q\\
 &+\phi_\eta(r)
 \bigl[(I-Q)SQ+QS(I-Q)\bigr]\\
-&+\nu\frac{r}{(r+\eta)^2}
+&+\nu\frac{r}{r^2+\eta^2}
 \left[
 (I-Q)\Delta\omega\otimes\xi
 +\xi\otimes(I-Q)\Delta\omega
@@ -623,15 +631,17 @@ D_tZ_\eta
 The bare \(1/r\) has been replaced by
 
 \[
-\frac{r}{(r+\eta)^2}\le\frac1{4\eta}.
+\frac{r}{r^2+\eta^2}\le\frac1{2\eta}.
 \tag{35}
 \]
 
 Because \(\eta\) scales like vorticity, (34) is exactly invariant under
 Navier--Stokes scaling. It is still critical as \(\eta_n\to0\); the tensor
 regularisation identifies the correct defect rather than estimating it away.
-At zeros, (34) must be interpreted through a smooth zero-set regularisation or
-with the existing fixed truncated direction.
+Unlike the projective equation, the map
+\(\omega\mapsto Z_\eta[\omega]\) is smooth at \(\omega=0\). Its parabolic chain
+rule therefore gives a stronger divergence-form evolution without any
+\(\Delta\omega/|\omega|\) term.
 
 ## 10. Exact consequence for ROUTE-R3B
 
@@ -654,6 +664,13 @@ The live route is now purely dynamic:
 The static family does not kill ROUTE-R3B because it is not one trajectory. It
 does prove that no further terminal-time compactness refinement can supply the
 missing carrier theorem.
+
+The subsequent
+[polar-tensor compactness theorem](polar-tensor-compactness.md) uses the smooth
+quadratic denominator in (1) to apply the parabolic chain rule. This removes
+\(\Delta\omega/|\omega|\) completely. A bound on the resulting scale-invariant
+polar-Fisher content gives strong spacetime compactness; otherwise its divergence
+or terminal atom is the exact retained defect.
 
 Run the exact matrix, scaling, and polar-coordinate checks with:
 

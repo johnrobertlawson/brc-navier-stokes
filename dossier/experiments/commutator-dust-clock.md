@@ -881,7 +881,10 @@ same-strain rotation is favourable and isolates viscous diffusion divided by
 that even exact global Biot--Savart snapshot coupling cannot attach that
 orientation to nonzero limiting vorticity. The fixed-cutoff temporal machinery
 must instead propagate the zero-safe relative tensor or retain its variation
-defect.
+defect. The
+[polar-tensor compactness theorem](polar-tensor-compactness.md) now gives that
+tensor a strong spacetime limit whenever its invariant polar-Fisher content is
+bounded and turns terminal loss into a defect atom.
 
 This is a clock correction, an exact persistence/variation dichotomy, and a
 structure-only counterexample. It is not a regularity theorem and not a Clay

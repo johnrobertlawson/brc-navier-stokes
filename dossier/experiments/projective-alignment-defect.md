@@ -627,10 +627,13 @@ therefore closed. What survives is the zero-safe tensor
 \[
 Z_\eta[\omega]
 =
-\omega\otimes\omega/(|\omega|+\eta)^2,
+\omega\otimes\omega/(|\omega|^2+\eta^2),
 \]
 whose nonzero vacuum part must be propagated or eliminated using genuine
-one-trajectory dynamics.
+one-trajectory dynamics. The
+[polar-tensor compactness theorem](polar-tensor-compactness.md) performs the
+parabolic chain-rule rewrite: it removes the raw second-derivative quotient and
+isolates scale-invariant polar-Fisher content as the exact compactness defect.
 
 Run the exact algebra and scaling checks with:
 

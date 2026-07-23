@@ -139,8 +139,17 @@ and breakdown work
   stays at finite rescaled distance, so far-tail tightness does not help. These are
   Clay-admissible instantaneous data, not one trajectory. The exact surviving
   object is the zero-safe tensor
-  \(Z_\eta=\omega\otimes\omega/(|\omega|+\eta)^2\), whose nonzero vacuum part and
+  \(Z_\eta=\omega\otimes\omega/(|\omega|^2+\eta^2)\), whose nonzero vacuum part and
   cutoff-scale diffusion defect must now be handled dynamically.
+- The parabolic chain rule gives that tensor a compact divergence-form PDE with no
+  \(\Delta\omega/|\omega|\) quotient. Its stretching source is bounded directly
+  by \(|S|\); the only nonlinear remainder is controlled by the scale-invariant
+  polar-Fisher density
+  \(|\nabla\omega|^2/(|\omega|^2+\eta^2)\). Bounded polar-Fisher content gives
+  strong local spacetime \(L^2\) tensor compactness and a finite matrix-valued
+  defect equation. The nonzero terminal tensor either enters the ancient limit or
+  forces a nonzero terminal polar-Fisher atom. No such content bound is currently
+  derived from Clay data or suitability.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -151,9 +160,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can one-trajectory dynamics propagate or eliminate the nonzero cutoff-relative
-> vacuum orientation tensor and its scale-invariant diffusion defect, then obtain
-> suitable ancient rigidity?
+> Can one-trajectory dynamics bound or rigidly exclude the polar-Fisher content,
+> its terminal atom, and the resulting compact vacuum tensor while also producing
+> suitability?
 
 The coequal breakdown question remains:
 
@@ -162,10 +171,10 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Propagate the bounded tensor \(Z_{\eta_n}\) over one natural interval from the
-   same trajectory, or retain its temporal variation measure.
-2. Prove lower-tail carrier tightness on the witness, or derive a closed evolution
-   law for the nonzero vacuum tensor and its cutoff-scale projective diffusion.
+1. Derive a local bound for the scale-invariant polar-Fisher content from one
+   trajectory, or prove that its divergent/atomic branches are rigidly impossible.
+2. Classify ancient solutions of the compact tensor defect equation, including a
+   nonzero vacuum tensor and matrix-valued polar-Fisher measure.
 3. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
