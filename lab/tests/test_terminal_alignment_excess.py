@@ -8,6 +8,7 @@ from navier_lab.terminal_alignment_excess import (
     anisotropy_projective_cross_bound,
     contracted_tensor_hessian,
     controlled_alignment_window_bound,
+    cutoff_tensor_deficit,
     natural_pullback_trace,
     physical_cutoff_trace,
     rayleigh_alignment,
@@ -16,6 +17,8 @@ from navier_lab.terminal_alignment_excess import (
     squared_detector_pairing,
     tensor_zero_flux_infinity_power,
     tensor_zero_flux_primitive_derivative,
+    terminal_oscillation_measure_lower_bound,
+    terminal_oscillation_threshold,
     isotropic_tensor_zero_kernel,
     weighted_trace_hessian,
 )
@@ -409,6 +412,36 @@ class TerminalAlignmentExcessTests(unittest.TestCase):
                 0,
             )
 
+    def test_nonzero_excess_forces_fixed_detector_oscillation_mass(
+        self,
+    ) -> None:
+        excess = Fraction(3, 5)
+        test_mass = Fraction(7, 2)
+        band_bound = Fraction(4)
+        self.assertEqual(
+            terminal_oscillation_threshold(
+                excess,
+                test_mass,
+            ),
+            Fraction(3, 35),
+        )
+        self.assertEqual(
+            terminal_oscillation_measure_lower_bound(
+                excess,
+                band_bound,
+            ),
+            Fraction(3, 160),
+        )
+
+    def test_cutoff_tensor_converges_away_from_zero(self) -> None:
+        self.assertEqual(
+            cutoff_tensor_deficit(
+                Fraction(9, 4),
+                Fraction(1, 100),
+            ),
+            Fraction(1, 226),
+        )
+
     def test_invalid_inputs_are_rejected(self) -> None:
         matrix = (
             (Fraction(1), Fraction(0), Fraction(0)),
@@ -464,6 +497,16 @@ class TerminalAlignmentExcessTests(unittest.TestCase):
             )
         with self.assertRaises(ValueError):
             tensor_zero_flux_infinity_power(4)
+        with self.assertRaises(ValueError):
+            terminal_oscillation_threshold(
+                Fraction(0),
+                Fraction(1),
+            )
+        with self.assertRaises(ValueError):
+            cutoff_tensor_deficit(
+                Fraction(0),
+                Fraction(1),
+            )
 
 
 if __name__ == "__main__":

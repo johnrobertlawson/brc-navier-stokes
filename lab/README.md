@@ -37,7 +37,7 @@ not convert passing unit tests into mathematical truth.
 | **projective_zero_interface.py** | Trace--log dependence and exact smooth simple-zero interface kernels | A terminal excess or signed topology that removes benign interface mass |
 | **terminal_trace_excess.py** | Codimension-one to -three zero-stratum kernels and the triangular terminal Cesàro identity | Same-trajectory alignment control or rigidity for the signed terminal density |
 | **trace_temporal_modulus.py** | Natural-time positive Cesàro excess, amplitude--cutoff covariance, arbitrary backward age, and iterated signed excess | A same-trajectory alignment-conditioned modulus or decorated rigidity |
-| **terminal_alignment_excess.py** | Squared finite-band detector, pullback covariance, weighted-trace/projective split, and tensor zero-stratum flux | Degenerate zero profiles or rigidity for the signed alignment defect |
+| **terminal_alignment_excess.py** | Squared detector, pullback covariance, polar split, tensor zero-flux, and fixed-mass oscillation carrier | Pack or exclude nonuniform terminal carriers from one trajectory |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |

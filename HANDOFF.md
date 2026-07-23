@@ -1,6 +1,6 @@
-# Handoff: exploit same-trajectory alignment against terminal trace excess
+# Handoff: pack fixed-mass terminal alignment carriers
 
-**Updated:** 2026-07-23T13:29:47Z
+**Updated:** 2026-07-23T13:34:26Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -250,6 +250,34 @@ anisotropic transverse linearisations have the same zero total signed tensor
 mass by divergence and homogeneity. A nonzero non-tight
 \(\mathfrak A_0\) must therefore use a sequence-dependent or temporally
 degenerate zero profile.
+
+That remaining carrier is now quantitative. If
+\(g_n=D_n:H_n\in[0,B^2]\),
+\(|\mathfrak A_{n,\delta}(\chi)|\ge a\), and
+\(V_\chi=\int\chi\), then
+
+\[
+\frac1\delta
+\int_{\{|g_n(0)-g_n(t)|>a/(2V_\chi)\}}
+\chi\,dz\,dt
+\ge
+\frac{a}{2B^2}.
+\]
+
+Thus nonzero excess occupies a fixed amount of normalised spacetime on which
+the squared alignment detector changes by a fixed amount. The exact
+same-trajectory pullback converts this to a physical parabolic carrier of
+measure \(\ell_n^5\) times that normalised mass.
+
+Conversely, every fixed classical Navier--Stokes trajectory on a positive-time
+cylinder with a locally uniformly convergent detector sequence has zero
+tensor excess. Away from the measure-zero analytic vorticity zero set,
+\(H_{\eta_n}[\omega]\to Q[\omega]\) strongly in every finite local
+\(L^p\), while terminal continuity gives
+\(Q[\omega(t)]\to Q[\omega(0)]\) in \(L^1\). Hence neither a fixed smooth
+zero geometry nor a fixed classical trajectory can realise the carrier. The
+live obstruction is necessarily cross-scale nonuniformity along the
+natural-child sequence.
 
 The boundary and scalar-renormalisation audits remain useful scope controls:
 averaged band flux is paid by \(\mathcal J_\eta\), no bounded detector can
@@ -1434,13 +1462,28 @@ Completed terminal alignment-excess reduction:
 > \(2(\operatorname{tr}D_N/m)\varepsilon^2r^m/(r^2+\varepsilon^2)^2\),
 > whose endpoint powers vanish in codimensions one through three. Only
 > sequence-dependent or temporally degenerate zero profiles remain.
+>
+> More precisely, if
+> \(g_n=D_n:H_n\in[0,B^2]\) and
+> \(|\mathfrak A_{n,\delta}(\chi)|\ge a\), then the set where
+> \(|g_n(0)-g_n(t)|>a/(2\int\chi)\) has normalised weighted spacetime mass at
+> least \(a/(2B^2)\). Its physical pullback has the exact parabolic
+> \(\ell_n^5\) measure factor. Every fixed classical Navier--Stokes trajectory
+> on a positive-time cylinder with a locally uniformly convergent detector
+> sequence has zero tensor excess by strong cutoff-tensor convergence and
+> terminal \(L^1\) continuity. A surviving carrier must therefore be a
+> genuinely nonuniform cross-scale object.
 
 Next deliverable:
 
-> Use the exact one-trajectory pullbacks
+> Rescale the fixed-mass detector-oscillation sets selected above and derive
+> the minimal evolution, overlap, and packing laws they inherit from one
+> physical trajectory. Use the exact pullbacks
 > \(H_{\ell_n^2}[\ell_n^2\omega]=H_1[\omega]\) and
-> \(P_{\le M}\widehat S_n=\ell_n^2P_{\le M/\ell_n}S\) to derive a cross-scale
-> packing, cancellation, or suitability estimate excluding the
+> \(P_{\le M}\widehat S_n=\ell_n^2P_{\le M/\ell_n}S\) to decide whether
+> repeated fixed-mass carriers can nest or overlap without violating local
+> energy, suitability, or terminal endpoint control. A successful packing or
+> cancellation estimate excludes the
 > direction-weighted concentration
 > \((\xi_n\cdot D_n\xi_n)\rho_n\). Determine whether bounded
 > projective-cross content makes this directional weight compact enough to

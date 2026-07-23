@@ -853,6 +853,194 @@ This is also a warning against separating the two lines of (49) in the
 non-tight branch. Their individual leading profiles need not cancel, while
 their combined tensor boundary flux does.
 
+## 9. Nonzero excess forces a fixed-mass oscillation carrier
+
+The remaining sequence dependence can be made quantitative without any
+gradient bound. Put
+
+\[
+g_n(z,t)=D_n:H_n(z,t).
+\tag{61}
+\]
+
+Under (26),
+
+\[
+0\le g_n\le B^2.
+\tag{62}
+\]
+
+Take \(0\le\chi\le1\), let
+
+\[
+V_\chi=\int\chi>0,
+\tag{63}
+\]
+
+and suppose that for some \(a>0\),
+
+\[
+|\mathfrak A_{n,\delta}(\chi)|\ge a.
+\tag{64}
+\]
+
+The definition (14) and the triangle inequality give
+
+\[
+a
+\le
+\frac1\delta
+\int_{-\delta}^{0}
+\int\chi
+|g_n(z,0)-g_n(z,t)|\,dz\,dt.
+\tag{65}
+\]
+
+Choose the fixed threshold
+
+\[
+\theta=\frac{a}{2V_\chi}
+\tag{66}
+\]
+
+and define
+
+\[
+\mathcal O_{n,\delta}
+=
+\left\{
+(z,t):
+|g_n(z,0)-g_n(z,t)|>\theta
+\right\}.
+\tag{67}
+\]
+
+Splitting (65) at this threshold and using (62) yields
+
+\[
+\begin{aligned}
+a
+&\le
+\theta V_\chi
++
+\frac{B^2}{\delta}
+\int_{\mathcal O_{n,\delta}}\chi\\
+&=
+\frac a2
++
+\frac{B^2}{\delta}
+\int_{\mathcal O_{n,\delta}}\chi.
+\end{aligned}
+\tag{68}
+\]
+
+Therefore
+
+\[
+\boxed{
+\frac1\delta
+\int_{\mathcal O_{n,\delta}}\chi\,dz\,dt
+\ge
+\frac{a}{2B^2}.
+}
+\tag{69}
+\]
+
+A nonzero limiting \(\mathfrak A_0\) consequently selects terminal windows
+containing an order-one normalised spacetime set on which the squared
+alignment detector changes by an order-one amount. This is stronger than an
+unlocated signed distribution: it supplies the fixed-mass carrier for the
+next secondary rescaling.
+
+Under the physical pullback (31), the set in (69) lies in a parabolic
+cylinder of radius \(\ell_n\) and duration \(\ell_n^2\). Its physical
+spacetime measure has the exact factor \(\ell_n^5\); the lower bound becomes
+scale invariant after the natural \(\ell_n^{-5}\) normalisation.
+
+## 10. Every fixed classical Navier--Stokes trajectory has zero tensor excess
+
+The carrier in (69) cannot occur for one fixed classical Navier--Stokes
+trajectory on a positive-time cylinder, no matter how degenerate its
+vorticity zeros are. More generally, let \(\omega\) be smooth on a compact
+terminal cylinder and suppose either \(\omega\equiv0\), or its spacetime zero
+set and terminal-slice zero set have measure zero. For \(\omega\ne0\), put
+
+\[
+Q[\omega]
+=
+\frac{\omega\otimes\omega}{|\omega|^2}.
+\tag{70}
+\]
+
+Pointwise away from the zero set,
+
+\[
+\left|
+H_{\eta_n}[\omega]-Q[\omega]
+\right|
+=
+\frac{\eta_n^2}{|\omega|^2+\eta_n^2}
+\longrightarrow0.
+\tag{71}
+\]
+
+The tensors are uniformly bounded. Dominated convergence therefore gives
+
+\[
+H_{\eta_n}[\omega]
+\longrightarrow
+Q[\omega]
+\quad\hbox{strongly in every finite local spacetime }L^p
+\tag{72}
+\]
+
+and strongly on the terminal slice.
+
+Let \(D_n\to D\) locally uniformly. Smoothness gives
+\(\omega(\cdot,t)\to\omega(\cdot,0)\) uniformly. At every terminal point
+where \(\omega(\cdot,0)\ne0\),
+
+\[
+Q[\omega(\cdot,t)]
+\longrightarrow
+Q[\omega(\cdot,0)].
+\tag{73}
+\]
+
+Another dominated-convergence argument gives
+
+\[
+\int\chi D:Q[\omega(t)]
+\longrightarrow
+\int\chi D:Q[\omega(0)]
+\quad\hbox{as }t\uparrow0.
+\tag{74}
+\]
+
+Taking first \(n\to\infty\) at fixed \(\delta\), then
+\(\delta\downarrow0\), proves
+
+\[
+\boxed{
+\mathfrak A_0=0
+}
+\tag{75}
+\]
+
+under this zero-set hypothesis and for every uniformly convergent frozen
+detector sequence. If \(\omega\equiv0\), the conclusion is immediate because
+\(H_{\eta_n}\equiv0\).
+
+Positive-time spatial analyticity makes the zero-set assumption automatic
+for a nontrivial classical Navier--Stokes trajectory: the common zero set of
+the analytic vorticity components has measure zero unless all components
+vanish identically.
+
+Thus zero order, tangency, and topology at any fixed smooth scale are not the
+issue. A nonzero \(\mathfrak A_0\) requires lack of uniformity across the
+natural-child sequence, quantitatively realised by the oscillation sets
+(67)--(69).
+
 ## Exact consequence for ROUTE-R3B
 
 The terminal finite-band witness now has an exact compact dichotomy:
@@ -870,7 +1058,9 @@ and is not a fourth independent decoration. If the weighted trace
 concentration cannot be excluded, the ancient system must retain it together
 with the scalar trace excess and any projective-cross atom needed for tensor
 evolution. Smooth transverse zero strata are now excluded as carriers; only
-sequence-dependent or temporally degenerate zeros remain.
+sequence-dependent terminal oscillation carriers of the fixed mass (69)
+remain. Every fixed classical Navier--Stokes trajectory on a positive-time
+cylinder, including one with degenerate zeros, has zero alignment excess.
 
 This is an exact analytic reduction. It does not prove
 \(\mathfrak A_0=0\), suitability, ancient rigidity, regularity, blow-up, or a

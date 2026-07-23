@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Does exact same-trajectory pullback coherence exclude the direction-weighted signed trace concentration in the squared finite-band alignment excess; failing that, can this density and the existing projective-cross defect be retained in a suitable ancient system and excluded by rigidity?",
+      "question": "Can the fixed-mass detector-oscillation carriers forced by nonzero squared-detector terminal excess be packed or cancelled across natural child scales of one physical trajectory; failing that, can the resulting direction-weighted signed density and existing projective-cross defect be retained in a suitable ancient system and excluded by rigidity?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "Same-trajectory coherence forces zero direction-weighted trace concentration so a quantitatively nonzero tensor enters the ancient limit; alternatively, the weighted signed density and nonredundant projective-cross defect are localised, suitability is proved, and rigidity excludes the decorated ancient object.",
-      "kill_criterion": "A Clay-admissible single trajectory or nonzero suitable ancient limit with positive terminal alignment, surviving nonzero squared-detector terminal excess, and tensor decoration outside every available rigidity class.",
+      "success": "A one-trajectory packing, overlap, or cancellation law excludes repeated fixed-mass detector oscillation and forces zero direction-weighted trace concentration, so a quantitatively nonzero tensor enters the ancient limit; alternatively, the carrier, weighted signed density, and nonredundant projective-cross defect are localised, suitability is proved, and rigidity excludes the decorated ancient object.",
+      "kill_criterion": "A Clay-admissible single trajectory or nonzero suitable ancient limit with positive terminal alignment, repeated fixed-mass detector-oscillation carriers, surviving nonzero squared-detector terminal excess, and tensor decoration outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

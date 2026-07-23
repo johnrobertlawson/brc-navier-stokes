@@ -397,6 +397,18 @@ and breakdown work
   for invertible anisotropic linearisations by divergence and homogeneity.
   Only sequence-dependent or temporally degenerate zero profiles can carry
   nonzero \(\mathfrak A_0\).
+- Nonzero alignment excess now selects a quantitative carrier. If
+  \(0\le D_n:H_n\le B^2\),
+  \(|\mathfrak A_{n,\delta}(\chi)|\ge a\), and
+  \(V_\chi=\int\chi\), then the set where the detector changes by more than
+  \(a/(2V_\chi)\) has normalised weighted spacetime mass at least
+  \(a/(2B^2)\). Under the one-trajectory pullback this is a fixed-mass set in
+  a physical parabolic cylinder, with the exact \(\ell_n^5\) measure factor.
+  Conversely, every fixed classical Navier--Stokes trajectory on a
+  positive-time cylinder has zero tensor alignment excess for convergent
+  detectors: \(H_{\eta_n}\to Q[\omega]\) strongly away from its measure-zero
+  analytic zero set, and \(Q[\omega(t)]\to Q[\omega(0)]\) in \(L^1\). Thus
+  only nonuniform natural-child sequences can realise the carrier.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -407,11 +419,11 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Does the exact pullback coherence of one Navier--Stokes trajectory exclude
-> the direction-weighted signed trace concentration inside
-> \(\mathfrak A_0\)? If not, can that density and the nonredundant
-> projective-cross defect be retained in a suitable ancient system and
-> excluded by rigidity?
+> Can the fixed-mass detector-oscillation carriers forced by nonzero
+> \(\mathfrak A_0\) be packed, overlapped, or cancelled across the natural
+> child scales of one Navier--Stokes trajectory? If not, can the resulting
+> direction-weighted signed density and nonredundant projective-cross defect
+> be retained in a suitable ancient system and excluded by rigidity?
 
 The coequal breakdown question remains:
 
@@ -435,25 +447,28 @@ The coequal breakdown question remains:
 4. Classify sequence-dependent or temporally degenerate zero profiles beyond
    the now-closed smooth transverse-linear class, preserving cancellation
    between weighted trace and anisotropic projective-cross terms.
-4. Formulate the minimal ancient system decorated by
+5. Rescale the fixed-mass detector-oscillation sets and derive the minimal
+   evolution law they retain; decide whether repeated carriers can be packed
+   along one physical trajectory.
+6. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.
-5. Classify the degenerate sequence-dependent zero profiles capable of
+7. Classify the degenerate sequence-dependent zero profiles capable of
    carrying both excess and terminal alignment, and decide which orientation
    information is still needed for rigidity.
-6. Classify ancient solutions of the scalar trace defect equation together with
+8. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.
-7. Upgrade the nonzero ancient distributional bubble to a suitable object using
+9. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
-8. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+10. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.
-9. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
+11. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
-10. Determine the weakest oscillation modulus whose commutator gain still outruns the
+12. Determine the weakest oscillation modulus whose commutator gain still outruns the
    analytic radius.
-11. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
+13. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
 
 ## Interpretation
 

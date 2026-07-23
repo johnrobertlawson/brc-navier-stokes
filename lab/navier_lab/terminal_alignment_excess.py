@@ -282,6 +282,45 @@ def tensor_zero_flux_infinity_power(codimension: int) -> Fraction:
     return Fraction(codimension - 4)
 
 
+def terminal_oscillation_threshold(
+    excess_lower_bound: Fraction,
+    spatial_test_mass: Fraction,
+) -> Fraction:
+    """Return a/(2V) for the detector oscillation superlevel."""
+    if excess_lower_bound <= 0:
+        raise ValueError("excess lower bound must be positive")
+    if spatial_test_mass <= 0:
+        raise ValueError("spatial test mass must be positive")
+    return excess_lower_bound / (2 * spatial_test_mass)
+
+
+def terminal_oscillation_measure_lower_bound(
+    excess_lower_bound: Fraction,
+    finite_band_operator_bound: Fraction,
+) -> Fraction:
+    """Return a/(2B^2) for normalised weighted spacetime measure."""
+    if excess_lower_bound <= 0:
+        raise ValueError("excess lower bound must be positive")
+    if finite_band_operator_bound <= 0:
+        raise ValueError("finite-band bound must be positive")
+    return (
+        excess_lower_bound
+        / (2 * finite_band_operator_bound**2)
+    )
+
+
+def cutoff_tensor_deficit(
+    magnitude_squared: Fraction,
+    cutoff_squared: Fraction,
+) -> Fraction:
+    """Return ||Q-H_eta|| for nonzero omega, namely eta^2/(r^2+eta^2)."""
+    if magnitude_squared <= 0:
+        raise ValueError("magnitude squared must be positive")
+    if cutoff_squared <= 0:
+        raise ValueError("cutoff squared must be positive")
+    return cutoff_squared / (magnitude_squared + cutoff_squared)
+
+
 def rayleigh_square_lower_bound(
     trace_lower_bound: Fraction,
     alignment_lower_bound: Fraction,
@@ -414,6 +453,10 @@ def report() -> str:
             f"{squared_detector_projective_cross_constant()}",
             f"codim-3 tensor zero-flux infinity power: "
             f"{tensor_zero_flux_infinity_power(3)}",
+            f"sample detector oscillation threshold: "
+            f"{terminal_oscillation_threshold(Fraction(3, 5), Fraction(7, 2))}",
+            f"sample oscillation measure lower bound: "
+            f"{terminal_oscillation_measure_lower_bound(Fraction(3, 5), Fraction(4))}",
             "",
             "The squared finite-band detector is positive semidefinite.",
             "Positive terminal Rayleigh alignment gives at least one half.",
