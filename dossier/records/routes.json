@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can the now nonzero natural-band child propagate positive vorticity-strain alignment over one natural time, acquire a suitable local-energy trace, and enter a rigidity class?",
+      "question": "Can global Biot-Savart and one-trajectory compactness keep the terminal projective orientation measure off the zero-vorticity set, control or retain its scale-invariant viscous defect, and then obtain suitable ancient rigidity?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "A finite-natural-band direction estimate propagates positive alignment, a scale-local energy and pressure estimate proves suitability, and rigidity excludes the resulting nonzero ancient object.",
-      "kill_criterion": "A Clay-admissible trajectory or nonzero measure-decorated ancient suitable limit retaining a positive directional diffusion or rotation defect outside every available rigidity class.",
+      "success": "The terminal orientation measure is coupled to nonzero ancient vorticity, its projective defect vanishes or obeys a closed evolution law, scale-local energy and pressure prove suitability, and rigidity excludes the decorated nonzero ancient object.",
+      "kill_criterion": "A Clay-admissible trajectory or nonzero orientation-decorated ancient suitable limit retaining a projective diffusion defect outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

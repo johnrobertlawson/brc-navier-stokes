@@ -1,6 +1,6 @@
-# Handoff: propagate alignment on the nonzero natural-band child
+# Handoff: tie projective orientation to nonzero ancient vorticity
 
-**Updated:** 2026-07-23T08:43:35Z
+**Updated:** 2026-07-23T09:06:16Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,11 +24,14 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Use the finite natural band selected by same-solution coupling to propagate
-positive vorticity--strain alignment over one natural time, while establishing the
-scale-local energy and pressure control needed for suitability. Spatial dust,
-arbitrary stress cascade, and a zero ancient distributional trace are now closed
-inside the repaired conditional chain. The regularity target remains
+Use global Biot--Savart coupling and one-trajectory compactness to prove that the
+terminal projective orientation measure selected by the natural-band child is
+carried by nonzero ancient vorticity. Otherwise retain its scale-invariant viscous
+diffusion measure in the limiting object. Finite-band alignment evolution is now
+exact: self-rotation is favourable, while division by \(|\omega|\) in projective
+diffusion defeats every purely local suitability shortcut. Spatial dust, arbitrary
+stress cascade, and a zero ancient distributional trace remain closed inside the
+repaired conditional chain. The regularity target remains
 
 \[
 \widehat a_\lambda^+
@@ -42,9 +45,12 @@ inside the repaired conditional chain. The regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/same-solution-granularity.md`;
-3. `dossier/experiments/commutator-dust-clock.md` only when the antecedent
-   moving proxy or material-variation definition is needed.
+2. `dossier/experiments/projective-alignment-defect.md`;
+3. section 7 of `dossier/experiments/same-solution-granularity.md` for the
+   selected nonzero finite-band trace; and
+4. only the far-tail and compactness sections of
+   `dossier/experiments/ancient-commutator-compactness.md` when proving coupling
+   to the ancient vorticity.
 
 Completed static results:
 
@@ -556,23 +562,96 @@ It therefore has a nonzero terminal trace in the ancient distributional limit.
 This closes the zero-limit branch. It does not propagate the aligned direction
 and does not establish suitability.
 
-Next deliverable:
+Completed projective alignment audit:
 
-> Work on the natural cylinder
+> For \(F=P_{\le M}S\), \(G=S-F\), \(Q=\xi\otimes\xi\), and
+> \(\beta=F:Q\),
 >
 > \[
-> B_{C\sigma_n^{-1/2}}(a_n(s))
-> \times[-\tau_0/\sigma_n,0].
+> \begin{aligned}
+> D_t\beta
+> ={}&(D_tF):Q
+> +2(|F\xi|^2-\beta^2)
+> +2((I-Q)G\xi)\cdot F\xi\\
+> &+\frac{2\nu}{|\omega|}
+> ((I-Q)\Delta\omega)\cdot F\xi .
+> \end{aligned}
+> \]
+
+The self-rotation term is twice a nonnegative Rayleigh variance. The only
+intrinsically singular term is the projective diffusion rate
+
+\[
+\mathcal P[\omega]
+=
+\nu\mathbf1_{\{|\omega|>0\}}
+\frac{|(I-Q)\Delta\omega|}{|\omega|}.
+\]
+
+Its natural-child content
+
+\[
+\sigma_n^{3/2}
+\int_{-\tau_0/\sigma_n}^0
+\int_{B_{C/\sqrt{\sigma_n}}(a_n(t))}
+\mathcal P[\omega_n]\,dx\,dt
+\]
+
+is scale invariant.
+
+An exact smooth local Navier--Stokes solution
+
+\[
+u_K=(\nu x_1+f_K(x_3,t),-\nu x_2+g_K(x_3),0)
+\]
+
+with one fast decaying shear changes alignment on the same fixed-volume material
+set from at most \(-7\nu/25\) to at least \(7\nu/25\) in an
+\(O(K^{-2})\) fraction of one natural time. Its extra scale-invariant
+dissipation is \(O(K^{-2})\), and it satisfies local energy equality. The model
+has an unbounded linear background, infinite global energy, and no global
+weak-\(L^{3/2}\) vorticity bound. It is not Clay-admissible and is excluded from
+the repaired conditional chain by the global normalisation; it proves that local
+finite-band estimates plus suitability are insufficient.
+
+The terminal information that survives is the projective Young measure
+
+\[
+d\Gamma_n(z,Q)
+=
+\mathbf1_{\widehat E_n}(z)
+\delta_{\xi_n(z)\otimes\xi_n(z)}(dQ)\,dz,
+\]
+
+whose limit has mass at least \(q_0\) and satisfies
+
+\[
+\int F(z):Q\,d\Gamma(z,Q)\ge q_0.
+\]
+
+It has not been proved that \(\Gamma\) gives zero mass to
+\(\{\widehat\omega=0\}\times\mathcal P_2\).
+
+Next deliverable:
+
+> Extract a terminal weak vorticity trace \(\omega^0\), identify its
+> finite-band strain with the already nonzero trace \(F\), and prove the coupling
+> lemma
+>
+> \[
+> \Gamma\bigl(
+> \{(z,Q):\omega^0(z)=0\}
+> \bigr)=0,
 > \]
 >
-> Derive the evolution of positive alignment after projecting the strain to the
-> selected finite natural band. Separate material rotation from the viscous
-> directional term, whose division by \(|\omega|\) remains dangerous as the
-> rescaled vorticity cutoff tends to zero. Either prove a fixed normalized-time
-> modulus for the positive witness or retain a scale-invariant directional defect.
-> In parallel, obtain the local dissipation and pressure tightness needed to pass
-> the local energy inequality. Do not return to spatial dust, generic stress
-> cascades, or a zero distributional limit.
+> using the global Biot--Savart representation, uniformly summable far tails, and
+> the fact that \(F_n\) and \(\omega_n\) come from one trajectory. If this is
+> false at the available compactness, identify the exact nonzero coupling measure
+> that replaces it. Then derive tightness/evolution for the projective diffusion
+> content and, separately, the local energy and pressure passage needed for
+> suitability. Do not seek a pointwise direction modulus from local dissipation
+> alone, and do not return to spatial dust, generic stress cascades, or a zero
+> distributional limit.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

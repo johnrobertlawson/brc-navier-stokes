@@ -583,6 +583,17 @@ The finite-band strain itself has a uniform time modulus. The unresolved part is
 the alignment with the full vorticity direction and the local-energy passage, not
 the stress trace.
 
+The subsequent
+[projective alignment audit](projective-alignment-defect.md) resolves the
+rotation-versus-diffusion split. Rotation by the same finite-band strain is
+favourable, but viscous projective diffusion divides by \(|\omega|\). A smooth
+exact local Navier--Stokes shear family shows that finite-band control and
+suitability alone do not give backward directional persistence. Because that
+family has an unbounded linear background and no global endpoint bound, the live
+gate is now to use the global Biot--Savart normalisation to tie the terminal
+projective orientation measure to nonzero ancient vorticity—or retain its
+scale-invariant diffusion defect in the rigidity class.
+
 Run the exact exponent checks with:
 
     make same-solution-granularity

@@ -873,7 +873,10 @@ has a \(K^{-1/2}\) shell gain, terminal high-frequency witness content vanishes,
 and the remaining natural band has a finite cover. Thus the abstract Riesz dust
 cannot be realised by the same endpoint-controlled Navier--Stokes velocity. The
 unresolved variation is now the temporal alignment of the selected nonzero child,
-not its spatial granularity.
+not its spatial granularity. The subsequent
+[projective alignment audit](projective-alignment-defect.md) shows that
+same-strain rotation is favourable and isolates viscous diffusion divided by
+\(|\omega|\) as the exact projective defect.
 
 This is a clock correction, an exact persistence/variation dichotomy, and a
 structure-only counterexample. It is not a regularity theorem and not a Clay

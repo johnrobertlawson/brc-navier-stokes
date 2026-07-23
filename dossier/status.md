@@ -119,6 +119,18 @@ and breakdown work
   terminal trace. Spatial dispersion, arbitrary stress cascade, and a zero ancient
   distributional limit are closed inside the conditional chain. Temporal
   alignment and suitability are not.
+- The exact finite-band alignment equation shows that rotation by the same strain
+  contributes twice a nonnegative Rayleigh variance. The singular term is instead
+  viscous projective diffusion
+  \(\nu(I-\xi\otimes\xi)\Delta\omega/|\omega|\). A smooth exact local
+  Navier--Stokes linear-strain shear family flips alignment from negative to positive
+  on one fixed-volume material set in an \(O(K^{-2})\) fraction of a natural time,
+  while its extra scale-invariant dissipation vanishes. It satisfies local energy
+  equality but has an unbounded linear background, infinite global energy, and no
+  global endpoint vorticity bound, so it is not Clay-admissible. This rules out
+  finite-band control plus suitability as a local shortcut and retains the terminal
+  witness as a projective orientation Young measure. Global Biot--Savart coupling
+  to nonzero ancient vorticity is now the exact unresolved gate.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -129,9 +141,10 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can the nonzero finite-natural-band child propagate positive vorticity--strain
-> alignment over one natural time, acquire a suitable local-energy trace, and
-> enter a rigidity class?
+> Can global Biot--Savart and one-trajectory compactness keep the nonzero
+> natural-band child's terminal projective orientation measure off the
+> zero-vorticity set, control or retain its scale-invariant viscous defect, and
+> then obtain suitable ancient rigidity?
 
 The coequal breakdown question remains:
 
@@ -140,13 +153,14 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive the finite-band evolution of the aligned direction on the selected
-   natural child. Separate material rotation from viscous directional diffusion,
-   and either prove a fixed-time modulus or retain the exact defect.
-2. Upgrade the now nonzero ancient distributional bubble to a suitable object
-   using a uniform scale-local dissipation and pressure estimate.
-3. Test backward uniqueness and local-energy rigidity without discarding the
-   directional or measure decoration.
+1. Prove that the terminal projective orientation measure is supported on nonzero
+   ancient vorticity by using the global Biot--Savart normalisation and tight
+   far-field coupling; otherwise retain its zero-vorticity part explicitly.
+2. Establish tightness and an evolution law for the scale-invariant projective
+   diffusion measure, with vanishing as the strongest outcome.
+3. Upgrade the nonzero ancient distributional bubble to a suitable object using
+   uniform scale-local energy and pressure estimates, then test rigidity without
+   discarding either decoration.
 4. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.

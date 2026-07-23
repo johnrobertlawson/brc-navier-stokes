@@ -120,7 +120,19 @@ selects one natural ball with fixed mass before any atomless/atomic split and
 produces a nonzero bounded-frequency ancient trace. The next bridge is no longer a stress-cascade estimate: it must propagate
 positive alignment through directional rotation and diffusion, establish
 suitability by scale-local energy and pressure control, or retain those defects in
-a rigidity theorem that accepts the decoration.
+a rigidity theorem that accepts the decoration. The
+[projective alignment audit](experiments/projective-alignment-defect.md) now
+identifies the exact directional term. Rotation by the same finite-band strain is
+twice a nonnegative Rayleigh variance; only viscous projective diffusion divides
+by \(|\omega|\). A smooth exact local Navier--Stokes linear-strain shear solution
+changes alignment by order one in a vanishing fraction of one natural time while
+its extra scale-invariant dissipation tends to zero and local energy equality
+holds. Its unbounded background, infinite global energy, and missing global
+endpoint bound make it non-Clay and exclude it from the repaired chain. The
+remaining theorem must therefore use global Biot--Savart coupling to prevent the
+terminal projective orientation Young measure from living on zero limiting
+vorticity, or transport that measure and its scale-invariant diffusion defect into
+the suitable ancient rigidity step.
 
 ## Active campaign B — Certified unstable profiles
 
