@@ -1447,6 +1447,7 @@
       "invariants": [
         "The theorem is restricted to R three and a global suitable finite-energy continuation that is smooth before a first singular time",
         "The global weak-L three endpoint is normalized by viscosity before importing the peer-reviewed Type-I results",
+        "Barker-Prange Theorem A is applied after restarting at a fixed positive smooth time and identifying the suitable solution with its mild restriction by weak-strong uniqueness",
         "Barker-Prange Theorem A supplies a logarithmic strong L three lower bound at every admissible radius between the parabolic packet and a fixed upper radius",
         "A zero parent clock makes the marked parent radius admissible and turns the source logarithm into log of the inverse parent horizon up to fixed constants",
         "Barker-Prange Corollary 4.3 makes the carrier cluster point isolated from every other terminal singular point",
@@ -1457,7 +1458,7 @@
         "Centering escape can be sparsely thinned so those balls occupy pairwise disjoint punctured radial annuli consisting of terminal regular points",
         "Separated parent Fourier supports and Littlewood-Paley imply local terminal strong L three velocity and strong L three-halves strain divergence from the satellites alone",
         "A critical packet has only parent-radius kinetic-energy and lifetime-dissipation cost; its outer normalized energy and CKN cubic charges vanish as the carrier-to-core scale ratio vanishes",
-        "A geometric divergence-free endpoint packet tower realizes the weak-norm and energy scaling but is not asserted to be a Navier-Stokes trajectory",
+        "A geometric divergence-free endpoint packet tower realizes the weak-norm and energy scaling but is not asserted to be a Navier-Stokes trajectory or to have exact compact annular Fourier support",
         "No no-neck theorem, dynamical ancestry law, tensor transfer, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
       ],
       "method": "Import the published Type-I logarithmic core and finite-singular-set theorems, restore viscosity, estimate the fixed shell time derivative directly from the projected Navier-Stokes equation and Lorentz-Bernstein, pass the shell to the weak terminal trace, sparsely separate the escaped terminal packets in physical space and frequency, apply localized Littlewood-Paley estimates, and audit the exact outer-scale energy and CKN costs of a critical packet tower.",
@@ -1467,6 +1468,8 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/terminal-satellite-tower.md",
+        "dossier/review-letter-terminal-satellite-tower-2026-07-23.md",
+        "dossier/review-response-terminal-satellite-tower-2026-07-23.md",
         "lab/navier_lab/terminal_satellite_tower.py",
         "lab/tests/test_terminal_satellite_tower.py"
       ],

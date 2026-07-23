@@ -16,6 +16,8 @@
   (2021), 717--792
 - **Source anchors:** published equations (9)--(10) and Corollary 4.3;
   matching arXiv:2003.06717
+- **Independent review:**
+  [qualified pass with bounded repairs](../review-response-terminal-satellite-tower-2026-07-23.md)
 
 The centering-escape branch has a stronger exact consequence than two
 disjoint fixed-mass packets. The parent shell has essentially no time to
@@ -109,8 +111,8 @@ large enough for the published unit-viscosity theorem,
 
 The right-hand side tends to infinity. Thus the core does not merely carry
 the fixed Barker--Prange packet of radius \(O(\sqrt{\nu\Delta_j})\).
-It carries a logarithmically growing scale stack inside the full parent
-ball.
+It carries logarithmically divergent integrated strong \(L^3\) mass inside
+the full parent ball. No explicit annular scale stack is asserted.
 
 Third, the shell survives to the terminal trace:
 
@@ -198,7 +200,16 @@ alternative A--D.
 
 ## 1. Published Type-I geometry makes the core isolated
 
-Use the viscosity normalization
+Fix \(t_0\in(0,T^*)\). The solution is smooth at \(t_0\), so its restriction
+to \([t_0,T^*)\) is the mild solution launched by \(v(t_0)\); weak--strong
+uniqueness identifies it with the suitable finite-energy solution on this
+interval. Translate \(x_*\) to the origin and \(t_0\) to the initial time.
+Every sufficiently late \(t_j\) lies in the second half of the translated
+interval. This supplies the mild-solution hypothesis in Barker--Prange
+Theorem A rather than applying that theorem directly to a merely suitable
+solution.
+
+Now use the viscosity normalization
 
 \[
 w(x,\tau)
@@ -548,6 +559,18 @@ c_uR_j^{-1}
 \tag{38}
 \]
 
+Here the passage from one point to the full ball uses the additional
+fixed-band ceiling
+
+\[
+\|\nabla\mathcal U_j\|_\infty
+\le
+C A_uR_j^{-2},
+\tag{38a}
+\]
+
+which follows from the terminal weak-\(L^3\) bound.
+
 Thus each terminal parent shell pays
 
 \[
@@ -758,6 +781,11 @@ and does not construct a singularity. Its role is exact and limited: it
 proves that the inherited function spaces, finite energy, isolated terminal
 singular geometry, and scale counting are compatible with a centering-
 escape tower.
+
+Compactly supported physical packets also do not have exact compact
+annular Fourier support. The construction therefore does not model the full
+frequency-separated dynamical tower. It is only a static function-space
+and budget compatibility witness.
 
 ## 7. What closed, and what remains
 

@@ -666,16 +666,20 @@ and breakdown work
   survives to the Leray terminal trace. Sparse centering escape then gives
   disjoint frequency-separated critical velocity and strain packets in the
   punctured terminal regular set. Those satellites alone force local
-  terminal strong \(L^3\) and \(L^{3/2}\) divergence.
+  terminal strong \(L^3\) and \(L^{3/2}\) divergence. Independent
+  adversarial review found no fatal flaw after inserting the positive-time
+  mild restart required by Theorem A, stating the velocity-gradient ceiling
+  used for packet persistence, and tightening two scope descriptions.
 - The terminal tower is invisible to the previously available coarse
   budgets. A radius-\(R\) critical packet has \(O(R)\) kinetic-energy and
   lifetime-dissipation cost; at outer distance \(d\), its normalized energy
   and CKN cubic charges are \(R/d\) and \((R/d)^2\). A geometric
   divergence-free endpoint tower realizes bounded energy, weak-\(L^3\)
   velocity, and weak-\(L^{3/2}\) vorticity with \(R_j/d_j\to0\). This is a
-  kinematic scope countermodel, not an NSE trajectory. It closes endpoint,
-  finite-singular-set, and coarse local-energy counting as generic
-  no-neck mechanisms.
+  kinematic scope countermodel, not an NSE trajectory, and it does not
+  reproduce exact compact annular Fourier support. It closes endpoint,
+  finite-singular-set, and coarse local-energy counting as generic no-neck
+  mechanisms.
 - The surviving algebra is now explicitly conditional. For a coherent
   two-edge cell,
   \[

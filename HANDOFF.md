@@ -627,6 +627,7 @@ Immediate terminal-satellite reduction:
 `dossier/experiments/singular-clock-centering.md`.
 
 Latest adversarial disposition:
+`dossier/review-response-terminal-satellite-tower-2026-07-23.md` →
 `dossier/review-response-local-continuation-2026-07-23.md`.
 
 1. `dossier/experiments/fixed-shell-spatial-localization.md`;
