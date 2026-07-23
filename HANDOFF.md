@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T21:56:36Z
+**Updated:** 2026-07-23T22:25:05Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -375,6 +375,37 @@ in scope after the invariant-probability terminology and empirical-measure
 scope were tightened. It separately checked the rational diagonal,
 near-identity transfer, pressure gauge, group action, quotient separation,
 midpoint escape, and \(O(\sqrt T)\) occupation estimate.
+
+The marked discrete alternative is now closed on the actual scaling
+orbit. Positive terminal Besov distance gives one fixed test with
+same-sign events at scales \(\theta_m\to\infty\). The critical dilation
+pairing has exact generator
+\(-\langle D_{e^\theta}g,2\varphi+x\cdot\nabla\varphi\rangle\), so the
+weak-\(L^3\) ceiling gives every event one fixed half-height width.
+Event-count limits are nonzero, and consecutive event states with their
+compactified gaps have shift-invariant path laws. Every finite limiting
+gap retains the exact parabolic scaling graph. Any finite-mean roof law
+suspends to a scaling-invariant probability with positive mass away from
+zero.
+
+If the mean roof is infinite, each bridge still has a fixed positive
+charge: either the detector remains above half height for the whole gap or
+it falls and returns, paying fixed total variation. This charge survives
+event-index averaging even when scale-time averaging gives \(\delta_0\).
+Every nonzero Navier--Stokes event limit also remains coherent and hence
+recovers the uniform Albritton--Barker defect pointwise. The quadratic
+shell model realises the infinite-roof boundary, but its single-shell
+event limit lies in the blow-down-vanishing subspace and is not a PDE
+state. The next exact gate is therefore finite mean for one recursive
+event law or an event-normalised pressure-flux, signed-history, Lyapunov,
+or backward-uniqueness estimate paying the bridge charge.
+[Independent adversarial review](dossier/review-response-defect-event-suspension-2026-07-23.md)
+found this conditional theorem and reduction valid in scope. It checked
+the fixed-test extraction, Lorentz persistence width, recursive defect,
+finite-edge graph, natural-extension suspension, truncated-roof argument,
+bridge charge, telescope, and sparse infinite-roof boundary. Review
+repairs distinguish infinite mean from an actual \(r=\infty\) edge and
+make the canonical experiment target explicit.
 Bounded-centering tensor/frequency transfer remains the other branch.
 
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent
@@ -2195,21 +2226,18 @@ Completed terminal alignment-excess reduction:
 
 Next deliverable:
 
-> The unmarked full-parabolic-hull lift is now proved. First determine
-> whether Navier--Stokes dynamics force an invariant probability distinct
-> from \(\delta_0\), or a positive logarithmic density of one fixed local
-> observable. If not,
-> construct a compact marked hull retaining the scale that realises the
-> Albritton--Barker defect together with its complete parabolic graph.
-> The sparse quadratic log-shell model shows that the unmarked quotient
-> distance can remain positive at every finite scale while its displayed
-> forward empirical probabilities collapse to \(\delta_0\). Apply the
-> local pressure-work balance
-> only after this nontrivial-measure gate is closed. Do not use the global
-> \(L^3\) identity: the retained profile is outside strong \(L^3\).
-> Ordinary recurrence, the \(L^2\) similarity balance, instantaneous
-> pressure Poisson algebra, and the known small \(L^{2+\delta}\) gradient
-> gain have already been audited and do not supply this conclusion.
+> The escaping Besov scale is now retained as a nonzero shift-invariant
+> event process on one actual parabolic scaling orbit. First test whether
+> its recursive Navier--Stokes event limits force a finite-mean roof. Such
+> a law suspends to an invariant scaling probability distinct from
+> \(\delta_0\). In the complementary infinite-mean branch, derive an
+> event-normalised same-trajectory pressure-flux, signed-history,
+> Lyapunov, or backward-uniqueness estimate that pays the fixed positive
+> variation-or-occupation bridge charge by a bounded telescope. Do not
+> use the unavailable global \(L^3\) identity or replace event index by
+> physical log density. The \(L^2\) similarity balance, instantaneous
+> pressure Poisson algebra, and known small \(L^{2+\delta}\) gradient gain
+> have already been audited and do not supply this estimate.
 >
 > First test the synchronized event sequence itself: determine whether
 > one-trajectory clock geometry, a finite-secondary-index estimate, a

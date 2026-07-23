@@ -655,3 +655,11 @@ The exact group, rational-restart, quadratic-gap, zero-density, and critical
 radius-power ledgers are implemented in
 `lab/navier_lab/parabolic_scale_hull.py` and checked in
 `lab/tests/test_parabolic_scale_hull.py`.
+
+The subsequent
+[defect-event suspension theorem](defect-event-suspension.md) closes the
+marked discrete alternative. A fixed terminal witness produces one
+nonzero shift-invariant event process on the actual parabolic scaling
+orbit. Finite mean roof yields an invariant scaling probability distinct
+from \(\delta_0\); at infinite mean, every event bridge retains a fixed
+positive variation-or-occupation charge.

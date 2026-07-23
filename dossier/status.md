@@ -904,6 +904,27 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > language. It checked the rational diagonal, arbitrary-scale transfer,
 > pressure normalisation, compact group action, quotient separation,
 > midpoint escape, and \(O(\sqrt T)\) detector occupation;
+> the subsequent
+> [defect-event suspension theorem](experiments/defect-event-suspension.md)
+> closes the marked discrete alternative on the actual parabolic orbit.
+> Positive Besov distance supplies one fixed same-sign terminal test at
+> infinitely many log scales. Uniform weak \(L^3\) gives those events a
+> fixed half-height width. Event-count and path-shift limits remain
+> nonzero, every finite roof retains the exact scaling graph, and any
+> finite-mean roof law suspends to an invariant scaling probability
+> distinct from \(\delta_0\). At infinite mean, each bridge retains a
+> fixed positive variation-or-occupation charge: the detector either
+> stays active or falls and returns. Every nonzero PDE event limit is
+> coherently restartable and therefore recovers the uniform
+> Albritton--Barker defect pointwise. The quadratic shell model realises
+> the infinite-roof boundary but its single-shell limit is
+> blow-down-vanishing and non-PDE. The next gate is finite mean for one
+> recursive event law or an event-normalised same-trajectory estimate
+> paying the bridge charge;
+> [independent review](review-response-defect-event-suspension-2026-07-23.md)
+> found this conditional theorem and reduction valid in scope after
+> making the natural extension explicit and distinguishing infinite mean
+> from an actual \(r=\infty\) edge;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -917,24 +938,19 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Prove that the compact Navier--Stokes parabolic scaling hull carries an
-   invariant probability distinct from \(\delta_0\), or a positive
-   logarithmic density of one fixed local observable. If ordinary local
-   topology cannot retain it,
-   construct a compact marked hull carrying the escaping
-   Albritton--Barker scale together with its complete parabolic graph.
-   The unmarked hull and invariant measures now exist, but the sparse
-   quadratic log-shell model shows that the quotient defect alone can
-   average entirely into \(\delta_0\).
-2. On that nontrivial or marked hull, derive a localised,
-   same-trajectory, critical pressure-work or signed
-   flux law whose invariant average strictly absorbs its positive
-   dissipation in weak \(L^3\), or replace it by a backward-uniqueness
-   observable. The global \(L^3\) identity is unavailable, its formal
-   average leaves pressure work, and the \(L^2\) identity is anti-coercive.
-   Use such a law either to bound the depth of the uniformly
-   finite-branching hierarchy or to couple the distance profile to the
-   Besov outer profile at
+1. Prove that one shift-invariant recursive defect-event law has finite
+   mean roof. Its suspension then gives the compact Navier--Stokes
+   parabolic hull an invariant probability distinct from \(\delta_0\).
+   Do not replace this by bare event count or assume bounded gaps.
+2. In the complementary infinite-mean branch, derive an
+   event-normalised, same-trajectory critical pressure-work,
+   signed-history, Lyapunov, or backward-uniqueness law that pays the
+   fixed positive variation-or-occupation bridge charge by a bounded
+   telescope or finite critical budget. The global \(L^3\) identity is
+   unavailable, its formal average leaves pressure work, and the \(L^2\)
+   identity is anti-coercive. Use such a law either to bound the depth of
+   the uniformly finite-branching hierarchy or to couple the distance
+   profile to the Besov outer profile at
    \(R_j\ll\rho_j\ll|x_j-x_*|\).
 3. In parallel, prove or refute the exact no-neck estimate
    \[

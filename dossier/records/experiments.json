@@ -1863,6 +1863,54 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-DEFECT-EVENT-SUSPENSION-001",
+      "title": "Defect-event shift, finite-mean suspension, and infinite-mean charge",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-STABILITY-001"
+      ],
+      "hypothesis": "Even if logarithmic scale-time averages of the compact parabolic orbit collapse to delta-zero, the terminal Besov defect supplies a nonzero event-count and shift-invariant same-orbit process with positive event-normalised bridge charge; finite mean is needed only to suspend an event law to a continuous scaling-invariant probability distinct from delta-zero.",
+      "invariants": [
+        "The input is the previously constructed compact parabolic scaling hull of one coherent ancient suitable weak-L3 outer profile",
+        "Positive distance from the Albritton-Barker blow-down-vanishing subspace implies failure of distributional blow-down convergence",
+        "Failure of distributional convergence supplies one fixed compact terminal test, one sign, one positive threshold, and event times tending to infinity",
+        "The event times may be thinned to have logarithmic gaps at least one without changing their fixed terminal witness",
+        "Differentiating the critical terminal pairing gives the exact adjoint dilation generator minus two phi minus x dot grad phi",
+        "The uniform terminal weak-L3 ceiling and Lorentz duality give one hull-uniform Lipschitz constant for the event observable",
+        "Every event therefore persists above half height for one fixed positive logarithmic width",
+        "Event-count probabilities have nonzero compact limits supported on the closed fixed-test event set",
+        "Every nonzero PDE event limit remains ancient, suitable, weak-endpoint bounded, coherently restartable, and has the uniform recursive Albritton-Barker quotient defect",
+        "Consecutive event states and their one-point-compactified gaps define one actual same-orbit path with no carrier-to-next-parent genealogy selection",
+        "Empirical shifts of that path have shift-invariant probability limits",
+        "Every finite limiting roof retains the exact scaling relation between consecutive complete trajectory states",
+        "Any shift-invariant event law with finite mean roof has a standard suspension whose pushforward is a scaling-invariant probability on the parabolic hull",
+        "The suspended probability gives at least persistence width divided by mean roof mass to the half-height event set and is distinct from delta-zero",
+        "Positive lower event density or a bounded-average-roof subsequence is sufficient for the finite-mean branch",
+        "On every inter-event bridge either the detector stays above half height for the full gap or it falls and returns, paying total variation at least the event threshold",
+        "The capped variation-plus-occupation charge has one fixed positive floor at every event index",
+        "Augmented empirical shift laws retain positive expected bridge charge even when the roof compactifies to infinity",
+        "A bounded telescoping functional that pays the bridge charge up to empirically vanishing errors would contradict the infinite event sequence",
+        "Quadratic log-shell events have mean roof tending to infinity while their event-rooted states converge to one nonzero single-shell state",
+        "The quadratic shell field is kinematic and its single-shell event limit belongs to the Albritton-Barker blow-down-vanishing subspace, unlike every nonzero PDE event limit",
+        "No finite-mean theorem, pressure-flux absorption, backward-uniqueness theorem, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Extract a fixed terminal test and same-sign event scales from failure of distributional blow-down vanishing, differentiate the critical dilation pairing in the Lorentz predual, compactify event states with consecutive log gaps in a one-sided path hull, suspend every finite-mean shift law to the continuous scaling flow, and in the infinite-mean branch attach the exact positive capped total-variation-or-active-occupation charge to every same-orbit bridge.",
+      "certificate": "A written conditional event-suspension theorem and exact infinite-mean reduction plus Fraction tests for the adjoint dilation coefficient, persistence width, event gaps, mean roof, event density, suspension event mass, and bridge-charge floor.",
+      "success_criterion": "The escaping Besov scale is retained on one actual parabolic orbit as a nonzero shift-invariant event process; finite mean is proved sufficient for a scaling-invariant probability distinct from delta-zero, and the complementary infinite-mean branch is reduced to one positive event-normalised same-trajectory charge.",
+      "failure_interpretation": "Positive Besov distance does not supply a fixed distributional witness sequence, the scale observable lacks a uniform logarithmic modulus, event path shifts are not compact or invariant, finite roofs do not retain the exact parabolic graph, suspension mass can concentrate at zero, the variation-or-occupation dichotomy has no fixed floor, or the sparse quadratic model does not realise the infinite-roof boundary.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/defect-event-suspension.md",
+        "dossier/review-letter-defect-event-suspension-2026-07-23.md",
+        "dossier/review-response-defect-event-suspension-2026-07-23.md",
+        "lab/navier_lab/defect_event_suspension.py",
+        "lab/tests/test_defect_event_suspension.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",
