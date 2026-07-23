@@ -672,7 +672,9 @@ quadratic denominator in (1) to apply the parabolic chain rule. This removes
 compactness condition. The
 [polar-entropy barrier](polar-entropy-barrier.md) sharpens it to the strictly
 weaker projective-cross content; terminal loss then forces a projective-cross
-atom, while a single pointwise scalar entropy is structurally insufficient.
+atom, while a single pointwise scalar entropy is structurally insufficient. The
+[tensor-adjoint closure](tensor-adjoint-closure.md) gives the limiting tensor an
+exact closed stretching law and identifies its critical backward carrier.
 
 Run the exact matrix, scaling, and polar-coordinate checks with:
 

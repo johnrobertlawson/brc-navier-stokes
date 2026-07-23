@@ -739,6 +739,14 @@ does not rule out cancellation using the nonlocal relation
 representation, an amplitude-band scheme with separately controlled transition
 flux, or rigidity of an ancient limit.
 
+The subsequent
+[tensor-adjoint closure](tensor-adjoint-closure.md) resolves two of these
+questions in exact scope. Strong tensor convergence identifies the stretching
+source as \(SH+HS-2(S:H)H\), and its Frobenius adjoint gives the exact backward
+carrier equation. Compact Biot--Savart shear cores show that global coupling
+alone neither controls \(\mathcal K_\eta\) instantaneously nor prevents spatial
+cancellation of \(\mathcal J_\eta-\mathcal L_\eta\).
+
 ## 8. Exact consequence for ROUTE-R3B
 
 The live content is no longer full polar Fisher. It is the strictly narrower
@@ -751,18 +759,16 @@ projective-cross quantity (9). ROUTE-R3B has the refined alternatives:
    tensor enters the ancient limit.
 
 A single renormalised vorticity magnitude cannot close the first alternative by
-a pointwise coercive chain-rule estimate alone. The next proof must do at least
-one of the following:
+a pointwise coercive chain-rule estimate alone, and instantaneous Biot--Savart
+coercivity is also false. The next proof must do at least one of the following:
 
-1. use the nonlocal Biot--Savart coupling to prevent cancellation between
-   \(\mathcal J_\eta\) and \(\mathcal L_\eta\);
-2. derive a tensorial or adjoint estimate directly for
-   \(\mathcal K_\eta\);
+1. prove a uniform local propagator for the critical backward tensor adjoint;
+2. identify and retain failure of that propagator as a new defect;
 3. construct an amplitude-band entropy scheme with a summable, independently
    controlled transition flux;
 4. prove that a terminal projective-cross atom is incompatible with a
    one-trajectory suitable ancient limit; or
-5. prove rigidity for the nonzero tensor-decorated ancient equation.
+5. prove rigidity for the now-closed tensor-decorated ancient equation.
 
 Suitability remains a separate gate. This experiment is an analytic reduction
 and a no-go theorem, not a regularity theorem and not a Clay A--D resolution.

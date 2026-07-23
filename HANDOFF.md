@@ -1,6 +1,6 @@
-# Handoff: control the projective-cross tensor defect
+# Handoff: propagate the critical tensor adjoint
 
-**Updated:** 2026-07-23T10:05:13Z
+**Updated:** 2026-07-23T10:22:59Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,42 +24,32 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Control the scale-invariant projective-cross content
+Construct a uniform local propagator for the backward tensor equation
 \[
-\mathfrak K_n(C,\tau_0)
+\boxed{
+-\partial_tF-u\cdot\nabla F-\nu\Delta F
 =
-\int_{-\tau_0}^0\int_{B_C}
-\left(
-\mathcal J_{\eta_n}
-+
-\sqrt{\mathcal I_{\eta_n}\mathcal J_{\eta_n}}
-\right)\,dz\,d\tau,
-\qquad \eta_n=\sigma_n^{-1},
+SF+FS-2(F:H)S,
+}
 \]
-where
+with terminal data detecting the nonzero vacuum tensor. Strong tensor compactness
+now closes the ancient equation exactly:
 
 \[
-\mathcal I_\eta
+\partial_tH+\nabla\cdot(uH)-\nu\Delta H
 =
-\frac{|\nabla\omega|^2}{|\omega|^2+\eta^2},
-\qquad
-\mathcal J_\eta
-=
-\mathcal I_\eta
--
-\frac{\sum_k(\omega\cdot\partial_k\omega)^2}
-{(|\omega|^2+\eta^2)^2}.
+SH+HS-2(S:H)H-\mathcal R.
 \]
 
-The content is strictly weaker than full polar Fisher and is sufficient for the
-compact tensor equation. Loss of the nonzero terminal trace forces a
-projective-cross atom. A general no-go theorem now excludes any proof based on
-one pointwise scalar renormalisation with a cutoff-uniform algebraic stretching
-bound. The live mechanisms are tensorial or nonlocal Biot--Savart estimates,
-adjoint propagation, an amplitude-band scheme with controlled transition flux,
-or ancient rigidity. Spatial dust, arbitrary stress cascade, terminal graph
-support, and a zero ancient distributional trace are closed branches. The
-regularity target remains
+The Frobenius adjoint cancels transport, diffusion, and stretching, leaving only
+\(-\int F:d\mathcal R\) in the terminal pairing. The live gate is a uniform norm,
+localisation, and compactness estimate for this adjoint at the critical matrix
+potential \(S\in L^\infty_tL^{3/2,\infty}_x\), or an exact retained propagator
+defect. Positive-semidefinite propagation is false, and compact Biot--Savart
+shear cores rule out instantaneous nonlocal coercivity. Amplitude-band flux,
+terminal-atom rigidity, and closed ancient-system rigidity remain alternatives.
+Spatial dust, scalar entropy, terminal graph support, and an unidentified
+stretching correlation are closed branches. The regularity target remains
 
 \[
 \widehat a_\lambda^+
@@ -73,10 +63,10 @@ regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/polar-entropy-barrier.md`;
-3. sections 4--9 of `dossier/experiments/polar-tensor-compactness.md` for the
-   antecedent compactness theorem;
-4. sections 7--9 of `dossier/experiments/terminal-vacuum-orientation.md` for the
+2. `dossier/experiments/tensor-adjoint-closure.md`;
+3. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` for the
+   antecedent projective-cross content;
+4. section 7 of `dossier/experiments/terminal-vacuum-orientation.md` for the
    terminal tensor and its antecedent equation; and
 5. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when the
    existing strong velocity compactness is needed.
@@ -828,21 +818,66 @@ This closes the single renormalised-magnitude route in its exact pointwise
 scope. Suitability remains separate because it controls \(\nabla u\), not these
 vorticity-gradient contents.
 
+Completed tensor-source closure and backward adjoint:
+
+> The chain-rule source is the exact closed polynomial
+>
+> \[
+> D\mathcal H_\eta(\omega)[S\omega]
+> =
+> SH_\eta+H_\eta S-2(S:H_\eta)H_\eta.
+> \]
+
+Strong \(H_n\) and weak \(S_n\) convergence identify this polynomial in the
+limit. There is no stretching Young measure. Its Frobenius adjoint is
+
+\[
+\mathscr G^*_{S,H}(F)
+=
+SF+FS-2(F:H)S.
+\]
+
+A backward solution yields the exact duality
+
+\[
+\int F(0):H^0-\int F(-\tau):H(-\tau)
+=
+-
+\int_{(-\tau,0]}F:d\mathcal R.
+\]
+
+The adjoint obeys
+
+\[
+|\mathscr G^*_{S,H}(F)|\le4|S||F|,
+\]
+
+so its potential is parabolically critical. Its positive-semidefinite cone is
+not invariant: for
+\(S=\operatorname{diag}(-1,1,0)\) and
+\(H=F=e_1\otimes e_1\), the kernel-direction derivative along \(e_2\) is
+\(-2\).
+
+Compact vector-potential shear cores have exact whole-space Biot--Savart
+coupling, uniform endpoint norms, kinetic energy \(O(K^{-2})\), bounded
+stretching source, and projective-cross density \(O(K^2)\). A two-core variant
+cancels \(\mathcal J_\eta-\mathcal L_\eta\) while retaining positive
+\(\mathcal K_\eta\). This closes instantaneous Biot--Savart coercivity, not a
+time-dependent whole-space estimate.
+
 Next deliverable:
 
-> Derive a tensorial or nonlocal one-trajectory estimate for
-> \(\mathfrak K_n(C,\tau_0)\). First test whether the Biot--Savart relation
-> \(S=\mathcal R(\omega)\) prevents cancellation between
-> \(\mathcal J_\eta\) and \(\mathcal L_\eta\) in the logarithmic balance, or
-> construct an adjoint tensor pairing that bypasses the scalar Hessian no-go.
-> An amplitude-band entropy is admissible only with an independently summable
-> transition-flux estimate. Otherwise prove that a terminal projective-cross atom
-> or the resulting nonzero decorated ancient tensor is rigidly impossible. In
-> parallel, establish the
-> pressure/dissipation passage needed for suitability. Do not return to a single
-> scalar entropy, full polar Fisher as if it were sharp, the raw
-> \(\Delta\omega/|\omega|\) equation, terminal graph support, spatial dust, or
-> generic stress cascades.
+> Derive a uniform local propagator estimate for the critical backward adjoint.
+> Start from its Duhamel heat-potential map and exploit the special
+> projective reaction before taking absolute values; a scalar
+> \(4|S|\)-potential estimate is too crude at large weak-\(L^{3/2}\) norm.
+> Either preserve the terminal pairing on one natural interval or isolate an
+> adjoint-propagator concentration measure. If this fails, test a summable
+> amplitude-band transition flux or rigidity of the closed decorated ancient
+> equation. In parallel, establish the pressure/dissipation passage needed for
+> suitability. Do not return to instantaneous Biot--Savart coercivity, adjoint
+> positivity, an unidentified stretching correlation, a single scalar entropy,
+> full polar Fisher as if sharp, or the raw \(\Delta\omega/|\omega|\) equation.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

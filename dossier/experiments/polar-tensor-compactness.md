@@ -514,6 +514,27 @@ The source bound gives, after a subsequence,
 \tag{28}
 \]
 
+The subsequent
+[tensor-adjoint closure](tensor-adjoint-closure.md) identifies this source
+exactly. Algebraically,
+
+\[
+\mathcal A_{\eta_n}
+=
+S_nH_n+H_nS_n-2(S_n:H_n)H_n.
+\]
+
+The uniform tensor bound upgrades strong \(L^2\) convergence to strong
+\(L^{q'}\) convergence for the dual exponent \(q'<6\). Hence the weak strain
+and strong tensor products close:
+
+\[
+\mathcal A
+=
+SH+HS-2(S:H)H.
+\tag{28a}
+\]
+
 The defect bound gives a finite matrix-valued Radon measure
 
 \[
@@ -558,14 +579,15 @@ Passing (3) to the limit yields the retained defect-measure equation
 +\nabla\cdot(uH)
 -\nu\Delta H
 =
-\mathcal A-\mathcal R.
+\mathcal A-\mathcal R
+=
+SH+HS-2(S:H)H-\mathcal R.
 }
 \tag{32}
 \]
 
-The stretch source \(\mathcal A\) may still contain a Young-measure correlation
-between strain and polar orientation. Equation (32) retains it honestly rather
-than identifying it with an unjustified pointwise direction.
+There is no stretching Young-measure correlation. The only retained
+matrix-valued measure in (32) is the diffusion defect \(\mathcal R\).
 
 ## 7. Terminal trace or terminal defect atom
 

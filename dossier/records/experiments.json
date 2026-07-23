@@ -552,7 +552,7 @@
         "The polar-Fisher cylinder content is invariant under three-dimensional Navier-Stokes scaling",
         "Bounded polar-Fisher content gives strong local spacetime L2 tensor compactness",
         "Strong velocity and tensor convergence close the transport product",
-        "The limit equation retains both a weak stretching source and a finite matrix-valued diffusion defect",
+        "The limit equation retains a finite matrix-valued diffusion defect",
         "Loss of the nonzero terminal tensor forces a nonzero terminal polar-Fisher atom",
         "Suitability does not control the vorticity-gradient quantity and remains a separate gate",
         "No polar-Fisher bound is asserted for arbitrary Clay data",
@@ -599,6 +599,39 @@
         "dossier/experiments/polar-entropy-barrier.md",
         "lab/navier_lab/polar_entropy_barrier.py",
         "lab/tests/test_polar_entropy_barrier.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-TENSOR-ADJOINT-CLOSURE-001",
+      "title": "Closed tensor stretching and critical backward adjoint",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Strong compactness of the cutoff-relative tensor identifies its stretching source as an exact polynomial in strain and tensor; the Frobenius adjoint cancels that source, while compact Biot-Savart shear cores test the remaining critical propagator and instantaneous coercivity gates.",
+      "invariants": [
+        "The chain-rule stretching source is exactly S H plus H S minus twice the Frobenius contraction S colon H times H",
+        "Strong tensor convergence and weak local strain convergence identify the stretching source with no Young-measure correlation",
+        "The exact Frobenius adjoint is S F plus F S minus twice F colon H times S",
+        "A backward adjoint solution cancels transport, diffusion, and stretching in the terminal tensor pairing",
+        "The only right-hand side left in the exact dual pairing is the projective-cross defect measure",
+        "The adjoint reaction is bounded by four times strain magnitude times test-tensor magnitude",
+        "The endpoint strain is a parabolically critical matrix potential for the backward adjoint",
+        "The positive-semidefinite cone is not invariant under backward adjoint propagation",
+        "Compactly supported divergence-free shear cores have exact whole-space Biot-Savart coupling, bounded endpoint norms, vanishing kinetic energy, bounded stretching source, and projective-cross density of order frequency squared",
+        "Two disjoint shear cores realise cancellation of projective minus radial-log energy while projective-cross content remains positive",
+        "The compact shear family is an instantaneous family and does not disprove a time-dependent whole-space finite-energy estimate",
+        "No uniform critical adjoint propagator or Clay regularity theorem is asserted"
+      ],
+      "method": "Rewrite the tensor chain-rule source as a closed projective polynomial, pass it through the strong tensor topology, compute its Frobenius adjoint and terminal duality identity, test cone invariance by an exact diagonal matrix, and construct compact vector-potential shear cores with exact Biot-Savart reconstruction and a two-sign entropy cancellation.",
+      "certificate": "A written closure and limit proof, exact adjoint pairing, cone-escape matrix, compact shear construction, two-core cancellation and frequency ledger, plus Fraction tests for the source identity, duality residual, shear cancellation, cone derivative, and scaling powers.",
+      "success_criterion": "The stretching Young-measure defect is removed, the exact backward carrier equation is identified, and instantaneous Biot-Savart coercivity and adjoint positivity receive exact negative verdicts without overclaiming against time-dependent whole-space propagation.",
+      "failure_interpretation": "The chain-rule source does not close in H and S, the strong-weak product topology is insufficient, the proposed adjoint is not Frobenius dual, the cone example has the wrong sign, or the compact shear is not exactly divergence free and Biot-Savart coupled.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/tensor-adjoint-closure.md",
+        "lab/navier_lab/tensor_adjoint_closure.py",
+        "lab/tests/test_tensor_adjoint_closure.py"
       ],
       "last_run": "2026-07-23"
     },

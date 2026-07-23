@@ -27,6 +27,7 @@ not convert passing unit tests into mathematical truth.
 | **vacuum_orientation.py** | Compact Biot-Savart core algebra, critical snapshot scaling, and two-scale polar amplitude | Exclusion or rigidity of the vacuum tensor by one-trajectory dynamics |
 | **polar_tensor_evolution.py** | Smooth tensor weight, parabolic chain-rule powers, and sufficient polar-Fisher constants | The sharper projective-cross content and rigidity for its defect measure |
 | **polar_entropy_barrier.py** | Extended-projective split, sharper tensor content, and scalar-entropy no-go constants | A tensorial/nonlocal bound or rigidity for the projective-cross atom |
+| **tensor_adjoint_closure.py** | Closed stretching polynomial, exact Frobenius adjoint, cone failure, and shear-frequency ledger | A uniform propagator for the critical matrix adjoint or rigidity for its defect |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -60,6 +61,7 @@ From the repository root:
     make vacuum-orientation
     make polar-tensor
     make polar-entropy
+    make tensor-adjoint
     make strain
     make fetch-2607
     make compile-2607

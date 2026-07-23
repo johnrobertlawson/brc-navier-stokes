@@ -159,6 +159,17 @@ and breakdown work
   No projective-cross bound is currently derived from Clay data or suitability;
   tensorial, nonlocal, adjoint, controlled amplitude-band flux, or
   ancient-rigidity structure is required.
+- Strong tensor compactness identifies the stretching source exactly as
+  \(SH+HS-2(S:H)H\); there is no stretching Young-measure defect. Its backward
+  Frobenius adjoint cancels transport, diffusion, and stretching in the terminal
+  pairing, leaving only the projective-cross measure. The adjoint has a critical
+  \(L^\infty_tL^{3/2,\infty}_x\) matrix potential, does not preserve positive
+  semidefiniteness, and has no uniform propagator theorem yet.
+- Compact vector-potential shear cores are globally Biot--Savart coupled and have
+  bounded endpoint norms and stretching source but \(O(K^2)\)
+  projective-cross density; two cores cancel the signed logarithmic dissipation.
+  Thus instantaneous nonlocal coercivity is false. These are snapshots, not one
+  trajectory, so time-dependent adjoint propagation remains open.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -169,9 +180,10 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can one-trajectory tensorial or nonlocal dynamics bound or rigidly exclude the
-> projective-cross content, its terminal atom, and the resulting compact vacuum
-> tensor while also producing suitability?
+> Can the critical backward tensor adjoint be propagated uniformly, or can its
+> propagator defect, the projective-cross atom, and the resulting closed
+> tensor-decorated ancient system be rigidly excluded while also producing
+> suitability?
 
 The coequal breakdown question remains:
 
@@ -180,22 +192,23 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Test whether the Biot--Savart relation prevents cancellation between
-   projective and radial-log energies, or derive an adjoint tensor estimate for
-   the scale-invariant projective-cross content.
-2. Classify ancient solutions of the compact tensor defect equation, including a
+1. Derive a uniform local propagator for the critical backward tensor adjoint, or
+   isolate its failure as a scale-invariant propagator defect.
+2. Classify ancient solutions of the closed tensor defect equation, including a
    nonzero vacuum tensor and matrix-valued projective-cross measure.
-3. Upgrade the nonzero ancient distributional bubble to a suitable object using
+3. If the adjoint cannot be controlled, test a summable amplitude-band
+   transition flux as the remaining route to bounded projective-cross content.
+4. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
-4. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+5. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.
-5. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
+6. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
-6. Determine the weakest oscillation modulus whose commutator gain still outruns the
+7. Determine the weakest oscillation modulus whose commutator gain still outruns the
    analytic radius.
-7. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
+8. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
 
 ## Interpretation
 

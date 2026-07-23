@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can one-trajectory tensorial or nonlocal dynamics bound or rigidly exclude the projective-cross content, its terminal atom, and the resulting compact vacuum tensor while also producing suitability?",
+      "question": "Can the critical backward tensor adjoint be propagated uniformly, or can its propagator defect, the projective-cross atom, and the resulting closed tensor-decorated ancient system be rigidly excluded while also producing suitability?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "Projective-cross content is bounded with no terminal atom or its defect is rigidly excluded by a tensorial or nonlocal estimate; the nonzero tensor evolution is propagated, scale-local energy and pressure prove suitability, and rigidity excludes the decorated ancient object.",
-      "kill_criterion": "A Clay-admissible trajectory or nonzero suitable ancient limit retaining a vacuum tensor and projective-cross defect outside every available rigidity class.",
+      "success": "The critical backward adjoint has a uniform local propagator carrying the terminal tensor, or its failure and the projective-cross atom are rigidly excluded; scale-local energy and pressure prove suitability, and rigidity excludes the closed decorated ancient object.",
+      "kill_criterion": "A Clay-admissible trajectory or nonzero suitable ancient limit for which the backward tensor propagator fails and a vacuum tensor with projective-cross defect survives outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

@@ -600,7 +600,9 @@ while retaining its scale-invariant diffusion defect if necessary. The
 evolution to an invariant compactness content and its possible terminal atom.
 The [polar-entropy barrier](polar-entropy-barrier.md) sharpens the content to the
 projective-cross envelope and proves that a single pointwise scalar
-renormalisation cannot control it.
+renormalisation cannot control it. The
+[tensor-adjoint closure](tensor-adjoint-closure.md) closes the stretching source
+and makes the critical backward propagator the live temporal gate.
 
 Run the exact exponent checks with:
 

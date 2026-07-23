@@ -635,7 +635,9 @@ one-trajectory dynamics. The
 parabolic chain-rule rewrite: it removes the raw second-derivative quotient and
 gives a sufficient polar-Fisher compactness condition. The
 [polar-entropy barrier](polar-entropy-barrier.md) sharpens this to the
-projective-cross content and closes the single scalar-entropy route.
+projective-cross content and closes the single scalar-entropy route. The
+[tensor-adjoint closure](tensor-adjoint-closure.md) then removes the stretching
+correlation and isolates the critical backward propagator.
 
 Run the exact algebra and scaling checks with:
 

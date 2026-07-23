@@ -887,7 +887,10 @@ tensor a strong spacetime limit under a sufficient invariant content and turns
 terminal loss into a defect atom. The
 [polar-entropy barrier](polar-entropy-barrier.md) sharpens that content to the
 projective-cross envelope and rules out a single pointwise scalar entropy as the
-missing estimate.
+missing estimate. The
+[tensor-adjoint closure](tensor-adjoint-closure.md) identifies the exact closed
+stretching source and backward carrier, while compact shear cores rule out
+instantaneous Biot--Savart coercivity.
 
 This is a clock correction, an exact persistence/variation dichotomy, and a
 structure-only counterexample. It is not a regularity theorem and not a Clay

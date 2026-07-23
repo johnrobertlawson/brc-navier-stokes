@@ -155,6 +155,17 @@ one-trajectory dynamics, an adjoint propagation, a controlled amplitude-band
 flux, or rigidity of the atom and decorated ancient tensor. Suitable ancient
 compactness remains separate.
 
+The
+[tensor-adjoint closure](experiments/tensor-adjoint-closure.md) identifies the
+stretching source exactly as \(SH+HS-2(S:H)H\), so no stretching correlation
+survives compactness. Its backward Frobenius adjoint cancels that source in the
+terminal pairing. The remaining propagator has a critical weak-\(L^{3/2}\)
+matrix potential and does not preserve the positive-semidefinite cone. Compact
+whole-space Biot--Savart shear cores also rule out instantaneous nonlocal
+coercivity and preserve signed entropy cancellation. The current theorem target
+is therefore a genuinely time-dependent local adjoint estimate, a retained
+propagator defect, or rigidity of the closed decorated ancient system.
+
 ## Active campaign B — Certified unstable profiles
 
 Reproduce the Hou–Wang–Yang computer-assisted result independently before extending it.
