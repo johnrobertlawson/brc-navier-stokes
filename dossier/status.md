@@ -813,9 +813,22 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > divergence and hence a second persistent singular point. Seregin local
 > weak-\(L^3\) singular-set finiteness then excludes exact backward DSS
 > about every centre and factor. Independent review found all five links
-> valid in the theorem's stated conditional scope. The next gate is a
-> many-satellite packing/lacunarity theorem or
-> a same-trajectory flux joining the distance and Besov outer profiles;
+> valid in the theorem's stated conditional scope. The
+> [terminal satellite-packing reduction](experiments/terminal-satellite-packing.md)
+> now puts countably many bounded radial levels into one common distance
+> profile. Each positive level persists as a singular point, while
+> distinct levels are distinct by their distance from the retained core.
+> Seregin local finiteness therefore permits only finitely many positive
+> limiting radial levels. A fixed-threshold crossing diagonal upgrades
+> this to the exact law
+> \(\liminf_j d_{j+1}/d_j=0\) for every radially ordered infinite
+> satellite family. Thus the surviving tower has arbitrarily severe
+> radial gaps, possibly separating finite or radially collapsed clusters.
+> [Independent review](review-response-terminal-satellite-packing-2026-07-23.md)
+> found all four links valid in the theorem's stated conditional scope
+> and requested only two wording clarifications.
+> The next gate is an inter-satellite normalization inside those clusters,
+> or a same-trajectory flux joining the distance and Besov outer profiles;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -829,11 +842,15 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Exploit the independently reviewed two-singularity distance profile. Its core
-   and satellite lie at unit separation and exact continuous or discrete
-   backward self-similarity is excluded. Try to retain several satellites
-   at one distance scale; either exceed Seregin's local terminal
-   singular-count bound or derive quantitative radial/angular lacunarity.
+1. Exploit the terminal satellite-packing law
+   \[
+   \liminf_{j\to\infty}\frac{|x_{j+1}-x_*|}{|x_j-x_*|}=0.
+   \]
+   Normalize two satellites inside one surviving finite or radially
+   collapsed cluster by their mutual separation. If both packets are
+   smaller than that separation, retain multiple singularities and bound
+   cluster complexity; otherwise extract a quantitative
+   packet-to-separation no-neck relation.
 2. Relate the distance profile to the nonzero coherent weak-\(L^3\) Besov
    outer profile realised at
    \(R_j\ll\rho_j\ll|x_j-x_*|\), or prove a same-trajectory flux that

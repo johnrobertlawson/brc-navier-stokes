@@ -261,12 +261,25 @@ reading. Independent review validated the repair, found no published
 erratum, and found no additional use of mildness beyond weak-\(L^3\)
 coherence. The repair is not represented as a verbatim source citation.
 
-The immediate target is now a many-satellite packing/lacunarity theorem at
-the distance scale. Retaining too many separated satellites would violate
-local terminal singular-set finiteness; failure must impose quantitative
-radial or angular lacunarity on the physical tower. A same-trajectory flux
-or a bridge between the recursive Besov outer profile and the two-point
-distance profile remains the parallel scale-aperiodic route.
+The subsequent
+[terminal satellite-packing theorem](dossier/experiments/terminal-satellite-packing.md)
+takes one common distance profile through a countable triangular
+satellite array. Every
+positive limiting radial level persists as a terminal singular point, and
+distinct levels are distinct by their distance from the retained core.
+Local finiteness rules out infinitely many levels. A fixed-threshold
+crossing diagonal then forces
+\(\liminf_j |x_{j+1}-x_*|/|x_j-x_*|=0\) for every radially ordered
+infinite satellite family. The immediate target is now an
+inter-satellite normalization inside the surviving finite or radially
+collapsed clusters. It should either bound cluster complexity or turn
+failure of packet-to-separation smallness into a no-neck relation. A
+[Four-link independent adversarial review](dossier/review-response-terminal-satellite-packing-2026-07-23.md)
+found the diagonal, moving-shell persistence, compact packing, and
+threshold-crossing arguments valid in their stated conditional scope. A
+same-trajectory flux or a bridge between the recursive Besov outer
+profile and the two-point distance profile remains the parallel
+scale-aperiodic route.
 Bounded-centering tensor/frequency transfer remains the other branch.
 
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent

@@ -1643,6 +1643,49 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-TERMINAL-SATELLITE-PACKING-001",
+      "title": "Countable terminal satellite packing and forced radial lacunarity",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-LOCAL-ENERGY-RESTART-001",
+        "CLM-SINGULARITY-PERSISTENCE-001",
+        "CLM-LOCAL-WEAK-L3-SINGULAR-FINITENESS-001",
+        "CLM-WEAK-001"
+      ],
+      "hypothesis": "A centering-escape terminal satellite tower can remain radially nonlacunary while every distance-scale compactification retains only finitely many singular points.",
+      "invariants": [
+        "The theorem is conditional on the terminal satellite tower for one chosen global suitable Leray-Hopf continuation",
+        "One row of satellites is scaled only once, around a base satellite at its distance from the Type-I core",
+        "Every satellite whose core-distance ratio has a finite limit remains in one fixed compact profile ball",
+        "A nested spatial diagonal is taken only after suitable PDE compactness and preserves the same ancient weak-L3 limit",
+        "The packet radius in base-profile units factors as its intrinsic packet-to-core ratio times its satellite-to-base radial level",
+        "For each fixed satellite column that factored packet radius tends to zero",
+        "The normalized moving micro-shell mark remains exactly the physical R-squared strain mark divided by viscosity",
+        "The reviewed local/far Schwartz-kernel split forces prelimit local L-infinity divergence at every positive limiting radial level",
+        "Albritton-Barker persistence is applied separately to every fixed column without a further subsequence",
+        "Distinct limiting distances from the retained core force distinct profile points by the reverse triangle inequality",
+        "Seregin local weak-L3 terminal singular-set finiteness forbids infinitely many such points in one compact ball without global finite energy",
+        "If late adjacent ordered-distance ratios had a positive lower bound, first crossings of a fixed threshold would have ratios in one compact subinterval of (0,1)",
+        "A shift diagonal through those crossing ratios produces infinitely many distinct positive product levels in one common distance profile",
+        "Every radially ordered infinite satellite family therefore has liminf of adjacent distance ratios equal to zero",
+        "No ratio limit, finite cluster bound, angular separation, inter-satellite packet separation, no-neck theorem, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Compactify one triangular row at its base core distance, diagonalize all bounded satellite positions, rerun the micro-shell kernel and persistence argument at every fixed limiting position, contradict Seregin local finiteness when the positive radial limit set is infinite, then apply a fixed-threshold crossing selection and a shift diagonal to turn any positive adjacent-ratio liminf into forbidden infinitely many product levels.",
+      "certificate": "A written source-scoped conditional theorem and adversarial cover letter plus exact Fraction tests for packet-scale factorization, bounded profile geometry, geometric radial levels, radial separation, fixed-threshold crossing bounds, and adjacent-ratio classification.",
+      "success_criterion": "One common distance profile cannot retain infinitely many distinct positive satellite radial levels, and every radially ordered infinite terminal satellite family is forced to have adjacent core-distance ratio liminf zero.",
+      "failure_interpretation": "The countable spatial diagonal cannot be synchronized with suitable compactness, a moving micro-shell does not force persistence at its limiting centre, local terminal singular-set finiteness does not cover the common profile, distinct radial levels need not give distinct points, or the threshold-crossing shift diagonal does not produce positive distinct product levels.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/terminal-satellite-packing.md",
+        "dossier/review-letter-terminal-satellite-packing-2026-07-23.md",
+        "dossier/review-response-terminal-satellite-packing-2026-07-23.md",
+        "lab/navier_lab/terminal_satellite_packing.py",
+        "lab/tests/test_terminal_satellite_packing.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

@@ -122,6 +122,7 @@ From the repository root:
     make terminal-besov-ancestry
     make terminal-outer-profile
     make terminal-distance-profile
+    make terminal-satellite-packing
     make strain
     make fetch-2607
     make compile-2607

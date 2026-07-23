@@ -82,8 +82,13 @@ The current ROUTE-R3B distance normalization gives a conditional
 two-singularity suitable weak-\(L^3\) ancient profile. Local terminal
 singular-set finiteness excludes exact continuous and discrete
 self-similarity, so the surviving cell is B1b with genuinely
-scale-aperiodic physical-space concentration. The next closure test is
-many-point packing versus quantitative radial/angular lacunarity.
+scale-aperiodic physical-space concentration. The subsequent countable
+packing theorem permits only finitely many distinct positive limiting
+satellite radii in one distance profile and forces every radially ordered
+infinite tower to have adjacent-distance ratio liminf zero. The surviving
+cell therefore consists of finite or radially collapsed clusters separated
+by arbitrarily severe gaps. The next closure test is an inter-satellite
+normalization versus packet-to-separation no-neck.
 
 ### Singular-to-smooth construction bridge
 
