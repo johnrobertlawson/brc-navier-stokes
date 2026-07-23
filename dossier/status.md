@@ -170,6 +170,20 @@ and breakdown work
   projective-cross density; two cores cancel the signed logarithmic dissipation.
   Thus instantaneous nonlocal coercivity is false. These are snapshots, not one
   trajectory, so time-dependent adjoint propagation remains open.
+- The exact scalar logarithmic norm of the adjoint reaction is
+  \(\gamma(S,H)=\sup_{|F|=1}F:\mathscr G^*_{S,H}(F)\). Uniform short-time
+  drifted Kato smallness of \(\gamma_+\) gives the adjoint \(L^\infty\) bound by
+  Khasminskii iteration. Failure selects a scale-invariant Kato concentration
+  witness. Axial shear has zero aligned strain but effective growth at least the
+  absolute shear rate, so the repaired aligned-strain input does not control this
+  adjoint gate.
+- Geometric inverse-square heat shells, and smooth compact vector-potential
+  versions with exact instantaneous Biot--Savart coupling, have uniform
+  weak-\(L^{3/2}\) strain and vorticity but lose uniform Kato continuity across
+  arbitrarily short scales. The compact stacks are coefficient families, not
+  Navier--Stokes trajectories, and the scalar-envelope defect is not a proof of
+  matrix-propagator failure. One-trajectory matrix cancellation, localisation,
+  and compactness remain open.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -180,10 +194,12 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can the critical backward tensor adjoint be propagated uniformly, or can its
-> propagator defect, the projective-cross atom, and the resulting closed
-> tensor-decorated ancient system be rigidly excluded while also producing
-> suitability?
+> Can one-trajectory dynamics force uniform drifted Kato continuity of the
+> effective tensor-adjoint growth, or provide a matrix cancellation that
+> bypasses the scalar envelope, and then supply localisation and compactness?
+> If not, can the actual propagator defect, projective-cross atom, and resulting
+> closed tensor-decorated ancient system be rigidly excluded while also
+> producing suitability?
 
 The coequal breakdown question remains:
 
@@ -192,23 +208,26 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive a uniform local propagator for the critical backward tensor adjoint, or
-   isolate its failure as a scale-invariant propagator defect.
-2. Classify ancient solutions of the closed tensor defect equation, including a
+1. Derive uniform drifted Kato continuity of the effective adjoint growth from
+   one-trajectory dynamics, or construct a matrix cancellation that propagates
+   the terminal detector despite failure of that sufficient scalar criterion.
+2. Prove scale-uniform localisation and compactness once the adjoint norm is
+   controlled; do not conflate this with the completed Khasminskii norm ledger.
+3. Classify ancient solutions of the closed tensor defect equation, including a
    nonzero vacuum tensor and matrix-valued projective-cross measure.
-3. If the adjoint cannot be controlled, test a summable amplitude-band
+4. If the adjoint cannot be controlled, test a summable amplitude-band
    transition flux as the remaining route to bounded projective-cross content.
-4. Upgrade the nonzero ancient distributional bubble to a suitable object using
+5. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
-5. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+6. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.
-6. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
+7. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
-7. Determine the weakest oscillation modulus whose commutator gain still outruns the
+8. Determine the weakest oscillation modulus whose commutator gain still outruns the
    analytic radius.
-8. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
+9. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
 
 ## Interpretation
 

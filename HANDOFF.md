@@ -1,6 +1,6 @@
-# Handoff: propagate the critical tensor adjoint
+# Handoff: test one-trajectory adjoint Kato continuity
 
-**Updated:** 2026-07-23T10:22:59Z
+**Updated:** 2026-07-23T10:46:07Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,7 +24,8 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Construct a uniform local propagator for the backward tensor equation
+Test whether one-trajectory dynamics force a uniform local propagator for the
+backward tensor equation
 \[
 \boxed{
 -\partial_tF-u\cdot\nabla F-\nu\Delta F
@@ -42,14 +43,29 @@ SH+HS-2(S:H)H-\mathcal R.
 \]
 
 The Frobenius adjoint cancels transport, diffusion, and stretching, leaving only
-\(-\int F:d\mathcal R\) in the terminal pairing. The live gate is a uniform norm,
-localisation, and compactness estimate for this adjoint at the critical matrix
-potential \(S\in L^\infty_tL^{3/2,\infty}_x\), or an exact retained propagator
-defect. Positive-semidefinite propagation is false, and compact Biot--Savart
-shear cores rule out instantaneous nonlocal coercivity. Amplitude-band flux,
-terminal-atom rigidity, and closed ancient-system rigidity remain alternatives.
-Spatial dust, scalar entropy, terminal graph support, and an unidentified
-stretching correlation are closed branches. The regularity target remains
+\(-\int F:d\mathcal R\) in the terminal pairing. Its exact scalar logarithmic
+norm is
+
+\[
+\gamma(S,H)
+=
+\sup_{\substack{F=F^\mathsf T\\|F|=1}}
+F:\bigl(SF+FS-2(F:H)S\bigr).
+\]
+
+Uniform short-time drifted Kato smallness of \(\gamma_+\) gives the adjoint
+\(L^\infty\) bound by Khasminskii iteration. Endpoint weak-\(L^{3/2}\), positive
+aligned strain, and instantaneous Biot--Savart coupling do not imply that
+sufficient condition: compact coefficient stacks retain a Kato concentration
+defect. They are not Navier--Stokes trajectories, and the scalar defect does not
+prove matrix-propagator failure.
+
+The live gate is therefore one-trajectory Kato continuity or a genuinely
+matrix-valued cancellation that bypasses it, followed separately by
+localisation and compactness. Amplitude-band flux, terminal-atom rigidity, and
+closed ancient-system rigidity remain alternatives. Spatial dust, scalar
+entropy, terminal graph support, and an unidentified stretching correlation are
+closed branches. The regularity target remains
 
 \[
 \widehat a_\lambda^+
@@ -63,12 +79,13 @@ stretching correlation are closed branches. The regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/tensor-adjoint-closure.md`;
-3. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` for the
+2. `dossier/experiments/adjoint-kato-defect.md`;
+3. sections 3--8 of `dossier/experiments/tensor-adjoint-closure.md`;
+4. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` for the
    antecedent projective-cross content;
-4. section 7 of `dossier/experiments/terminal-vacuum-orientation.md` for the
+5. section 7 of `dossier/experiments/terminal-vacuum-orientation.md` for the
    terminal tensor and its antecedent equation; and
-5. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when the
+6. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when the
    existing strong velocity compactness is needed.
 
 Completed static results:
@@ -865,19 +882,64 @@ cancels \(\mathcal J_\eta-\mathcal L_\eta\) while retaining positive
 \(\mathcal K_\eta\). This closes instantaneous Biot--Savart coercivity, not a
 time-dependent whole-space estimate.
 
+Completed effective-growth and Kato reduction:
+
+> On symmetric matrices, the exact logarithmic norm is
+>
+> \[
+> \gamma(S,H)
+> =
+> 2\sup_{|F|=1}
+> \{S:F^2-(F:H)(S:F)\}.
+> \]
+>
+> Every smooth reverse-time adjoint obeys
+> \[
+> (\partial_s-b\cdot\nabla-\nu\Delta)|F|
+> \le\gamma_+|F|.
+> \]
+> If the drifted Kato mass
+> \[
+> \kappa_{\gamma_+}(\delta)
+> =
+> \sup_{a,x}
+> \mathbb E_{a,x}
+> \int_a^{a+\delta}\gamma_+(r,X_r)\,dr
+> \]
+> is at most \(\kappa_0<1\), Khasminskii gives the exact one-interval factor
+> \((1-\kappa_0)^{-1}\). Uniform Kato continuity therefore closes the norm
+> component on every fixed rescaled interval.
+
+Failure of uniform Kato continuity selects a scale-invariant concentration
+witness. For axial \(H=\theta e_3\otimes e_3\) and shear derivative \(a\),
+\(S:H=0\) while a rank-one detector has Rayleigh growth \(|a|\). Thus the
+repaired positive aligned-strain hypothesis does not control the adjoint.
+
+Geometric inverse-square heat shells have uniform weak-\(L^{3/2}\) norm but
+add one fixed Kato mass per scale. Smooth compact vector-potential stacks realise
+the same ledger with bounded velocity, uniform weak-\(L^{3/2}\) strain and
+vorticity, vanishing shifted-stack energy, and exact instantaneous
+Biot--Savart coupling. These are time-independent coefficient families, not one
+Navier--Stokes trajectory. Because the maximising matrix direction can rotate,
+their scalar Kato concentration is not a matrix-propagator lower bound.
+Localisation and compactness also remain unproved even if the norm is bounded.
+
 Next deliverable:
 
-> Derive a uniform local propagator estimate for the critical backward adjoint.
-> Start from its Duhamel heat-potential map and exploit the special
-> projective reaction before taking absolute values; a scalar
-> \(4|S|\)-potential estimate is too crude at large weak-\(L^{3/2}\) norm.
-> Either preserve the terminal pairing on one natural interval or isolate an
-> adjoint-propagator concentration measure. If this fails, test a summable
-> amplitude-band transition flux or rigidity of the closed decorated ancient
-> equation. In parallel, establish the pressure/dissipation passage needed for
-> suitability. Do not return to instantaneous Biot--Savart coercivity, adjoint
-> positivity, an unidentified stretching correlation, a single scalar entropy,
-> full polar Fisher as if sharp, or the raw \(\Delta\omega/|\omega|\) equation.
+> Test the scalar-versus-matrix gap on an exact time-dependent Navier--Stokes
+> shear, where the nonlinear term vanishes and the shear follows the heat
+> equation. Compute the matrix propagator, the effective Kato mass, and their
+> scale-stack behaviour before attempting a compact finite-energy transfer.
+> A separation would identify a genuine matrix cancellation; no separation
+> would isolate the dynamic Kato estimate one-trajectory structure must prove.
+> Then address localisation and compactness as a separate theorem. If both
+> routes fail, retain an actual propagator defect or test amplitude-band flux
+> and decorated ancient rigidity. In parallel, establish the
+> pressure/dissipation passage needed for suitability. Do not treat the
+> coefficient Kato defect as propagator failure, and do not return to
+> instantaneous Biot--Savart coercivity, adjoint positivity, an unidentified
+> stretching correlation, a single scalar entropy, full polar Fisher as if
+> sharp, or the raw \(\Delta\omega/|\omega|\) equation.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

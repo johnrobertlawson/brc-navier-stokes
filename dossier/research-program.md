@@ -166,6 +166,20 @@ coercivity and preserve signed entropy cancellation. The current theorem target
 is therefore a genuinely time-dependent local adjoint estimate, a retained
 propagator defect, or rigidity of the closed decorated ancient system.
 
+The subsequent
+[adjoint Kato audit](experiments/adjoint-kato-defect.md) identifies the exact
+scalar logarithmic norm
+\(\gamma(S,H)=\sup_{|F|=1}F:\mathscr G^*_{S,H}(F)\). Uniform short-time drifted
+Kato smallness of \(\gamma_+\) is sufficient for the \(L^\infty\) part of the
+adjoint propagator by Khasminskii iteration, and failure has a scale-invariant
+concentration witness. This criterion is not implied by the endpoint bounds:
+axial shear separates adjoint growth from aligned strain, while geometric
+compact Biot--Savart coefficient stacks retain uniform weak-\(L^{3/2}\) bounds
+and lose uniform Kato continuity. The stacks are not Navier--Stokes
+trajectories, and scalar-envelope concentration is not matrix-propagator
+failure. One-trajectory cancellation, localisation, compactness, and
+suitability are the remaining gates.
+
 ## Active campaign B — Certified unstable profiles
 
 Reproduce the Hou–Wang–Yang computer-assisted result independently before extending it.

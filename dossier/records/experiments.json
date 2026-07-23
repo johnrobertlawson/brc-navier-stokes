@@ -636,6 +636,33 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-ADJOINT-KATO-DEFECT-001",
+      "title": "Effective adjoint growth and Kato concentration defect",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "The critical tensor adjoint has a scalar logarithmic-norm envelope controlled by a drifted parabolic Kato mass; endpoint weak-L(3/2) strain and instantaneous Biot-Savart coupling do not force uniform Kato continuity.",
+      "invariants": [
+        "The effective growth is the symmetric-matrix logarithmic norm of the exact Frobenius adjoint",
+        "Uniform local Kato smallness is sufficient only for the adjoint norm component of the propagator gate",
+        "The Kato mass is invariant under three-dimensional Navier-Stokes scaling",
+        "Axial shear has zero positive aligned strain but strictly positive effective adjoint growth",
+        "A coefficient-level obstruction is not an actual Navier-Stokes trajectory or proof of matrix-propagator blow-up",
+        "No Clay regularity theorem is asserted"
+      ],
+      "method": "Apply the matrix Kato inequality before taking the crude absolute-value bound, prove the Khasminskii estimate by ordered moments, identify failure of uniform Kato continuity as a scale-invariant concentration defect, and test the endpoint implication with geometric inverse-square heat shells and compact bounded-drift vector-potential shear stacks.",
+      "certificate": "A written logarithmic-norm and Khasminskii derivation, exact shear-growth witness, scale-stack construction with explicit scope, and Fraction tests for matrix growth, critical powers, geometric sums, and iteration factors.",
+      "success_criterion": "The uniform-norm part of the adjoint gate is reduced to an explicit sufficient Kato criterion, failure has an exact concentration witness, and endpoint weak-L(3/2) plus instantaneous Biot-Savart algebra are shown insufficient to provide that criterion without overclaiming against one-trajectory structure.",
+      "failure_interpretation": "The logarithmic norm has the wrong reaction, the scalar comparison or Khasminskii argument fails, the proposed defect is not scale invariant, the shear does not separate aligned strain from adjoint growth, or the scale stack loses its endpoint bounds.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-kato-defect.md",
+        "lab/navier_lab/adjoint_kato.py",
+        "lab/tests/test_adjoint_kato.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

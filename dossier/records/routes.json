@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can the critical backward tensor adjoint be propagated uniformly, or can its propagator defect, the projective-cross atom, and the resulting closed tensor-decorated ancient system be rigidly excluded while also producing suitability?",
+      "question": "Can one-trajectory dynamics force uniform drifted Kato continuity of the effective tensor-adjoint growth, or supply a genuinely matrix-valued cancellation that bypasses that scalar envelope, and then provide localisation and compactness; failing that, can the actual propagator defect, projective-cross atom, and closed tensor-decorated ancient system be rigidly excluded while also producing suitability?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "The critical backward adjoint has a uniform local propagator carrying the terminal tensor, or its failure and the projective-cross atom are rigidly excluded; scale-local energy and pressure prove suitability, and rigidity excludes the closed decorated ancient object.",
-      "kill_criterion": "A Clay-admissible trajectory or nonzero suitable ancient limit for which the backward tensor propagator fails and a vacuum tensor with projective-cross defect survives outside every available rigidity class.",
+      "success": "Uniform drifted Kato continuity or a genuine matrix cancellation supplies the adjoint norm, localisation, and compactness needed to carry the terminal tensor; alternatively, an actual propagator defect and the projective-cross atom are rigidly excluded, scale-local energy and pressure prove suitability, and rigidity excludes the closed decorated ancient object.",
+      "kill_criterion": "A Clay-admissible trajectory or nonzero suitable ancient limit whose Kato concentration is realised as failure of every usable backward tensor propagator and whose vacuum tensor with projective-cross defect survives outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]
