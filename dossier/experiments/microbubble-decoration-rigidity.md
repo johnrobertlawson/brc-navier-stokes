@@ -387,6 +387,13 @@ that still remembers the parent natural scale. If no compact identity
 survives, the suitable ancient system must retain the joint Young measure
 and this two-scale jet as independent decorations.
 
+The subsequent [strain-jet freezing theorem](strain-jet-freezing.md) proves
+that the leading first-jet identity degenerates:
+\((\partial_s-\nu\Delta)J_j=O(\delta_j)\). It isolates the next residual
+\(\mathscr Z_j=\delta_j^{-1}(\partial_s-\nu\Delta)J_j\), exactly the
+pulled-back parent fixed-band stress forcing, as the first possible dynamic
+coupling.
+
 This is an exact compactness reduction and an exact cross-family rigidity
 obstruction. It does not prove a same-trajectory survivor, suitability
 compactness, regularity, blow-up, or any Clay alternative A--D.

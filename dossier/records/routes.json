@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Does the renormalised vanishing-band strain jet that generates the nonzero constant microbubble detector obey a same-trajectory evolution or flux compactness law across the scale gap; failing that, can this jet, the positive terminal-interior tensor Young moment, and the projective-cross defect be retained in a suitable ancient system and excluded by rigidity?",
+      "question": "Does the delta-renormalised parabolic residual of the frozen first strain jet retain a compact same-trajectory stress identity that constrains the positive terminal-interior tensor Young moment; failing that, can the forcing-jet hierarchy and projective-cross defect be retained in a suitable ancient system and excluded by rigidity?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "A same-trajectory two-scale law couples the first strain jet to the microbubble strongly enough to exclude its positive projected Young moment and force zero direction-weighted trace concentration; alternatively, the jet, joint tensor Young measure, weighted signed density, and nonredundant projective-cross defect are localised, suitability is proved, and rigidity excludes the decorated ancient object.",
-      "kill_criterion": "A Clay-admissible single trajectory or nonzero suitable ancient limit with positive terminal alignment, an infinite nested tower of fixed-mass subnatural tensor-oscillation microbubbles, nonzero first strain jets satisfying the parent coupling, a surviving positive projected Young moment, and tensor defect outside every available rigidity class.",
+      "success": "A compact parent-forcing residual couples the frozen first strain jet to the microbubble strongly enough to exclude its positive projected Young moment and force zero direction-weighted trace concentration; alternatively, the forcing jet, joint tensor Young measure, weighted signed density, and nonredundant projective-cross defect are localised, suitability is proved, and rigidity excludes the decorated ancient object.",
+      "kill_criterion": "A Clay-admissible single trajectory or nonzero suitable ancient limit with positive terminal alignment, an infinite nested tower of fixed-mass subnatural tensor-oscillation microbubbles, nonzero frozen first strain jets, surviving parent-forcing residual jets and positive projected Young moments, and tensor defect outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

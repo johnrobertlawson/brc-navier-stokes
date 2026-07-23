@@ -1,6 +1,6 @@
-# Handoff: evolve the renormalised parent strain jet
+# Handoff: control the parent forcing residual jet
 
-**Updated:** 2026-07-23T13:54:51Z
+**Updated:** 2026-07-23T14:01:48Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -364,6 +364,50 @@ own parent scale. It proves that any successful argument must retain the
 same-trajectory evolution of \(J_j\), not merely attach an arbitrary
 constant matrix to the microbubble.
 
+That leading evolution is now closed: it vanishes. The exact identity
+
+\[
+J_j(y,s)
+=
+F_{n_j}(z_j+\sqrt{\delta_j}\,y,\delta_js)
+\]
+
+and the uniform parent fixed-band derivative bounds give
+
+\[
+\nabla J_j=O(\sqrt{\delta_j}),
+\qquad
+\partial_sJ_j=O(\delta_j),
+\qquad
+\Delta J_j=O(\delta_j).
+\]
+
+Hence \(J_j\to F_*\) locally uniformly in the whole microcylinder and
+
+\[
+(\partial_s-\nu\Delta)J_j
+=
+\delta_j\mathscr Z_j
+\longrightarrow0.
+\]
+
+The first strain jet is a frozen nonzero detector, not an order-one dynamic
+coupling. The next possible parent datum is
+
+\[
+\mathscr Z_j
+:=
+\delta_j^{-1}
+(\partial_s-\nu\Delta)J_j
+=
+\bigl[(\partial_\tau-\nu\Delta)F_{n_j}\bigr]
+(z_j+\sqrt{\delta_j}\,y,\delta_js),
+\]
+
+the pulled-back parent fixed-band stress forcing. It is locally bounded, but
+no current estimate gives the temporal compactness, sign, or coupling to the
+positive tensor Young moment needed for rigidity.
+
 The boundary and scalar-renormalisation audits remain useful scope controls:
 averaged band flux is paid by \(\mathcal J_\eta\), no bounded detector can
 make radial diffusion sign-favourable at every amplitude, and exact periodic
@@ -387,20 +431,21 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/microbubble-decoration-rigidity.md`;
-3. `dossier/experiments/terminal-carrier-microbubble.md`;
-4. `dossier/experiments/terminal-alignment-excess.md`;
-5. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-6. `dossier/experiments/terminal-trace-excess.md`;
-7. `dossier/experiments/projective-zero-interface.md`;
-8. `dossier/experiments/trace-projective-domination.md`;
-9. `dossier/experiments/trace-boundary-renormalisation.md`;
-10. `dossier/experiments/trace-transition-band-flux.md`;
-11. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/strain-jet-freezing.md`;
+3. `dossier/experiments/microbubble-decoration-rigidity.md`;
+4. `dossier/experiments/terminal-carrier-microbubble.md`;
+5. `dossier/experiments/terminal-alignment-excess.md`;
+6. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+7. `dossier/experiments/terminal-trace-excess.md`;
+8. `dossier/experiments/projective-zero-interface.md`;
+9. `dossier/experiments/trace-projective-domination.md`;
+10. `dossier/experiments/trace-boundary-renormalisation.md`;
+11. `dossier/experiments/trace-transition-band-flux.md`;
+12. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-12. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+13. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-13. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+14. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1583,18 +1628,36 @@ Completed terminal alignment-excess reduction:
 > heat shear although that shear's intrinsic squared detector is zero. The
 > family is not one trajectory, so the missing input is precisely the
 > cross-scale evolution of the first strain jet.
+>
+> The first jet actually freezes on the microbubble clock:
+> \(\nabla J_j=O(\sqrt{\delta_j})\) and
+> \(\partial_sJ_j,\Delta J_j=O(\delta_j)\). Consequently
+> \((\partial_s-\nu\Delta)J_j=\delta_j\mathscr Z_j\to0\). The first
+> potentially nontrivial dynamic decoration is the locally bounded residual
+> \[
+> \mathscr Z_j
+> =
+> \delta_j^{-1}(\partial_s-\nu\Delta)J_j
+> =
+> [(\partial_\tau-\nu\Delta)F_{n_j}]
+> (z_j+\sqrt{\delta_j}y,\delta_js).
+> \]
+> No compactness, sign, or coupling for \(\mathscr Z_j\) is yet proved.
 
 Next deliverable:
 
-> Derive the exact evolution or flux identity for the renormalised vanishing
-> band
-> \(J_j=\delta_j^{-1}P_{\le M\sqrt{\delta_j}}\widetilde S_j\).
-> Determine which terms retain the parent natural scale, which vanish under
-> the microchild equation, and whether same-trajectory stress--vorticity
-> coupling makes \(J_j\) compact strongly enough to control
-> \(\int|J_j^2:(A_j-B_j)|^2\). Neither suitability of the undecorated
-> microchild, an arbitrary constant detector, unweighted volume, nor the
-> collapsed intrinsic band can do this. A successful estimate excludes the
+> Expand
+> \(\mathscr Z_j=(\partial_\tau-\nu\Delta)F_{n_j}\) through the projected
+> parent vorticity/stress equation. Separate low--low, low--micro, and
+> micro--micro interactions at the frequency gap
+> \(\delta_j^{-1/2}\). Use the existing same-solution
+> \(K^{-1/2}\) stress-shell gain to decide whether all micro-frequency
+> contributions vanish from \(\mathscr Z_j\), leaving an independent
+> parent-scale forcing, or whether one critical cross-scale term survives and
+> controls \(\int|J_j^2:(A_j-B_j)|^2\). Neither the frozen first jet,
+> suitability of the undecorated microchild, an arbitrary constant detector,
+> unweighted volume, nor the collapsed intrinsic band can do this. A
+> successful estimate excludes the
 > direction-weighted concentration
 > \((\xi_n\cdot D_n\xi_n)\rho_n\). Determine whether bounded
 > projective-cross content makes this directional weight compact enough to

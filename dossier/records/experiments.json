@@ -1007,6 +1007,34 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-STRAIN-JET-FREEZING-001",
+      "title": "Frozen first strain jet and next residual scale",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "The renormalised vanishing-band strain jet retains an order-one evolution or flux on the subnatural microbubble clock that can couple the parent detector to the tensor oscillation.",
+      "invariants": [
+        "The first strain jet is exactly the parent fixed band evaluated on a spatial ratio square root of delta and time ratio delta",
+        "Uniform parent fixed-band spatial and temporal derivative bounds force the first jet to converge locally uniformly to a spacetime constant",
+        "The first jet spatial gradient loses square root of delta while its time derivative and Laplacian lose delta",
+        "The leading parabolic evolution residual of the first jet vanishes with delta",
+        "Dividing that residual by delta restores the parent fixed-band forcing as the first potentially nontrivial dynamic decoration",
+        "The frozen first jet still generates the nonzero constant squared detector and positive tensor Young moment",
+        "No compactness or rigidity theorem for the next residual, regularity theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Apply the exact secondary chain rule to the parent finite strain band, use its uniform Bernstein and projected-vorticity time bounds, compute every micro-scale derivative and parabolic residual factor, and isolate the delta-renormalised parent forcing jet.",
+      "certificate": "A written frozen-jet theorem plus exact Fraction tests for spatial, temporal, Laplacian, detector, residual, and next-jet scale factors.",
+      "success_criterion": "Either an order-one leading jet evolution survives and couples to the tensor oscillation, or its exact vanishing identifies the next renormalised residual required by the two-scale ancient system.",
+      "failure_interpretation": "The parent fixed band lacks the stated derivative bounds, the chain-rule powers are wrong, or the leading first-jet residual remains order one.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/strain-jet-freezing.md",
+        "lab/navier_lab/strain_jet_freezing.py",
+        "lab/tests/test_strain_jet_freezing.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

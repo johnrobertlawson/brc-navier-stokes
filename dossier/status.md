@@ -435,6 +435,26 @@ and breakdown work
   that shear's intrinsic squared detector is zero. This cross-family model
   does not generate \(F_*\) from a parent scale, isolating the missing
   same-trajectory jet evolution.
+- The first strain jet has no order-one dynamics on the microbubble clock.
+  Exact chain rules and uniform parent fixed-band bounds give
+  \[
+  \nabla J_j=O(\sqrt{\delta_j}),
+  \qquad
+  \partial_sJ_j,\Delta J_j=O(\delta_j),
+  \qquad
+  (\partial_s-\nu\Delta)J_j=\delta_j\mathscr Z_j.
+  \]
+  Hence \(J_j\to F_*\) throughout spacetime and the leading jet residual
+  vanishes. The next possible dynamic decoration is the locally bounded
+  parent forcing jet
+  \[
+  \mathscr Z_j
+  =
+  [(\partial_\tau-\nu\Delta)F_{n_j}]
+  (z_j+\sqrt{\delta_j}y,\delta_js).
+  \]
+  Its compactness, sign, and coupling to the positive tensor Young moment
+  are open.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -445,12 +465,12 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Does the renormalised vanishing-band strain jet generating the nonzero
-> microbubble detector obey a same-trajectory evolution or flux compactness
-> law across the scale gap? If not, can this jet, the positive
-> terminal--interior tensor Young moment, the direction-weighted signed
-> density, and nonredundant projective-cross defect be retained in a suitable
-> ancient system and excluded by rigidity?
+> Does the delta-renormalised parabolic residual of the frozen first strain
+> jet retain a compact same-trajectory stress identity that constrains the
+> positive terminal--interior tensor Young moment? If not, can the
+> forcing-jet hierarchy, direction-weighted signed density, and nonredundant
+> projective-cross defect be retained in a suitable ancient system and
+> excluded by rigidity?
 
 The coequal breakdown question remains:
 
@@ -459,11 +479,14 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive the exact evolution or flux identity for
-   \(J_j=\delta_j^{-1}P_{\le M\sqrt{\delta_j}}\widetilde S_j\), retaining its
-   origin in the parent natural scale.
-2. Determine whether same-trajectory stress--vorticity coupling makes \(J_j\)
-   compact strongly enough to control the positive moment
+1. Expand
+   \(\mathscr Z_j=(\partial_\tau-\nu\Delta)F_{n_j}\) through the projected
+   parent stress equation and separate low--low, low--micro, and
+   micro--micro frequency interactions.
+2. Apply the same-solution \(K^{-1/2}\) stress-shell gain at the gap
+   \(\delta_j^{-1/2}\) to determine whether every micro-frequency
+   contribution to \(\mathscr Z_j\) vanishes or one critical coupling
+   survives and controls
    \(\int|J_j^2:(A_j-B_j)|^2\).
 3. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
