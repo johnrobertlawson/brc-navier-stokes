@@ -1,6 +1,6 @@
-# Handoff: separate terminal excess from smooth zero interfaces
+# Handoff: force zero terminal Cesàro trace excess
 
-**Updated:** 2026-07-23T12:30:49Z
+**Updated:** 2026-07-23T12:42:18Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -105,17 +105,47 @@ The logarithmic and trace balances are also not independent:
 parabolic chain-rule image of the logarithmic equation. Their combination
 cannot recover a new positive \(\mathcal J_\eta\) estimate.
 
+The non-tight terminal object is now explicit. For a spatial test \(\chi\),
+let
+
+\[
+\mathfrak E_{n,\delta}(\chi)
+=
+\int\chi h_n(0)
+-
+\frac1\delta
+\int_{-\delta}^{0}\int\chi h_n(t)\,dt.
+\]
+
+Pairing the trace equation with
+\(w_\delta(t)=(t+\delta)/\delta\) gives
+
+\[
+\mathfrak E_{n,\delta}(\chi)
+=
+O_\chi(\delta)
+-
+\int_{-\delta}^{0}
+w_\delta(t)\langle\rho_n(t),\chi\rangle\,dt.
+\]
+
+After subsequence extraction,
+\(\mathfrak E_0=h^0-\bar h^-\) is an \(L^\infty\) signed spatial density of
+norm at most one. It vanishes for every fixed smooth zero-stratum profile.
+Transverse strata in codimensions one, two, and three all have an
+exact-derivative signed kernel with zero total mass.
+
+The next target is a uniform negative-topology temporal modulus that forces
+\(\mathfrak E_0=0\). If that fails, localise the bounded signed density inside
+a suitable ancient system and exclude it by rigidity. Projective-cross content
+remains necessary only where the full tensor Hessian and orientation, rather
+than scalar trace, must be closed.
+
 The boundary and scalar-renormalisation audits remain useful scope controls:
 averaged band flux is paid by \(\mathcal J_\eta\), no bounded detector can
 make radial diffusion sign-favourable at every amplitude, and exact periodic
 heat shears show that endpoint vorticity plus energy do not bound short-time
 projective occupation across solution families.
-
-The next target is a terminal projective excess, or a signed-defect topology,
-that quotients out every time-continuous smooth zero-interface layer but still
-detects terminal trace loss. Ancient history and suitability must then exclude
-a nonzero excess. Projective-cross content remains necessary only where the
-full tensor Hessian and orientation, rather than scalar trace, must be closed.
 
 Signed localisation, excess compactness, suitability, and rigidity remain
 separate gates. Spatial dust, scalar entropy, terminal graph support, raw
@@ -134,15 +164,16 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/projective-zero-interface.md`;
-3. `dossier/experiments/trace-projective-domination.md`;
-4. `dossier/experiments/trace-boundary-renormalisation.md`;
-5. `dossier/experiments/trace-transition-band-flux.md`;
-6. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/terminal-trace-excess.md`;
+3. `dossier/experiments/projective-zero-interface.md`;
+4. `dossier/experiments/trace-projective-domination.md`;
+5. `dossier/experiments/trace-boundary-renormalisation.md`;
+6. `dossier/experiments/trace-transition-band-flux.md`;
+7. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-7. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+8. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-8. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+9. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1213,21 +1244,48 @@ Completed smooth zero-interface obstruction:
 > exactly the chain-rule image of the logarithmic balance, so those two scalar
 > identities cannot recover a positive projective estimate.
 
+Completed terminal signed-excess reduction:
+
+> For
+> \[
+> \mathfrak E_{n,\delta}(\chi)
+> =
+> \int\chi h_n(0)
+> -
+> \frac1\delta
+> \int_{-\delta}^{0}\int\chi h_n(t)\,dt,
+> \]
+> the triangular identity gives
+> \[
+> \mathfrak E_{n,\delta}(\chi)
+> =
+> O_\chi(\delta)
+> -
+> \int_{-\delta}^{0}
+> \frac{t+\delta}{\delta}
+> \langle\rho_n(t),\chi\rangle\,dt.
+> \]
+> Hence \(\mathfrak E_0=h^0-\bar h^-\) is a bounded signed spatial density,
+> defined without projective-energy tightness. Zero excess carries the
+> terminal detector into the interior Cesàro limit. Every fixed smooth
+> trajectory has zero excess, and transverse zero strata in all three spatial
+> codimensions have exact-derivative leading kernels with zero signed mass.
+
 Next deliverable:
 
-> Classify moving and higher-codimension zero-set profiles, then define a
-> terminal projective excess or signed topology for \(\rho_\eta\) that
-> vanishes on every time-continuous smooth profile but detects terminal trace
-> loss. Prove that it survives the available ancient compactness and is
-> excluded by expanding backward history plus suitability. Use
-> \(\mu_{\mathcal J,0}\) only in an independently tight branch; raw
-> \(\mathcal J_\eta\), \(\mathcal T_\eta\), and \(|\rho_\eta|\) are not
-> admissible universal excesses. Then prove signed scalar localisation. Do not
-> try another bounded scalar renormalisation, replace signed logarithmic flux
-> by positive variation, return to the full matrix norm, use unstable modes
-> orthogonal to the terminal tensor as a detector obstruction, treat
-> finite-window affine or shear amplification as a Clay counterexample, or
-> return to instantaneous Biot--Savart coercivity, adjoint positivity, an
+> Derive or falsify a uniform negative-topology time modulus for
+> \(t\mapsto\int\chi h_{\eta_n}(t)\) from endpoint control, the vorticity
+> equation, and expanding backward history. Such a modulus forces
+> \(\mathfrak E_0=0\). If it fails, localise the bounded signed density in the
+> minimal ancient scalar/tensor system, prove suitability, and exclude the
+> decorated object by rigidity. Use \(\mu_{\mathcal J,0}\) only in an
+> independently tight branch; raw \(\mathcal J_\eta\),
+> \(\mathcal T_\eta\), and \(|\rho_\eta|\) are not admissible universal
+> excesses. Do not try another bounded scalar renormalisation, replace signed
+> logarithmic flux by positive variation, return to the full matrix norm, use
+> unstable modes orthogonal to the terminal tensor as a detector obstruction,
+> treat finite-window affine or shear amplification as a Clay counterexample,
+> or return to instantaneous Biot--Savart coercivity, adjoint positivity, an
 > unidentified stretching correlation, full polar Fisher as if sharp, or the
 > raw \(\Delta\omega/|\omega|\) equation.
 

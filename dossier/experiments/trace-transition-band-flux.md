@@ -567,13 +567,15 @@ This experiment changes the immediate propagation target:
 6. band-boundary flux, localised projective-energy occupation, compactness, and
    suitability remain open.
 
-After the smooth zero-interface obstruction, the next falsifiable target is a
-scale-uniform local estimate for the terminal-time Fokker--Planck equation
-(11) in a signed topology that removes time-continuous interface profiles. A
-negative test must be one endpoint-bounded ancient Navier--Stokes trajectory
-that retains detector mass while defeating this weighted estimate. Repeating
-spatially homogeneous affine cycles or forward heat layers is not such a
-test.
+The subsequent
+[terminal trace-excess theorem](terminal-trace-excess.md) supplies the signed
+topology that removes time-continuous interface profiles. The next falsifiable
+target is a negative-topology temporal modulus forcing that excess to vanish,
+or a local estimate for the terminal-time Fokker--Planck equation (11) in the
+excess-decorated system. A negative test must be one endpoint-bounded ancient
+Navier--Stokes trajectory that retains detector mass while defeating this
+weighted estimate. Repeating spatially homogeneous affine cycles or forward
+heat layers is not such a test.
 
 This is an exact conditional reduction and a non-Clay stress test. It is not a
 bound on \(\mathcal J_\eta\), not a rigidity theorem, and not a Clay A--D

@@ -668,6 +668,12 @@ Thus the non-tight branch requires a signed terminal excess that preserves
 interface cancellation; the fixed-direction ancient theorem remains the
 available discriminator against a mere initial layer.
 
+The subsequent
+[terminal trace-excess theorem](terminal-trace-excess.md) defines that object
+as terminal trace minus its shrinking backward Cesàro average. The live step
+is now a temporal modulus forcing this bounded signed density to vanish, or
+ancient rigidity for the decorated system.
+
 This is an analytic reduction, a classical fixed-direction ancient theorem,
 and an exact stress test. It is not a bound on \(\mathcal J_\eta\), not
 projective-atom rigidity, and not a Clay A--D resolution.

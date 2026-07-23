@@ -308,6 +308,24 @@ and breakdown work
   \(h_\eta=1-e^{-2\Lambda_\eta}\), the trace equation is exactly the
   parabolic chain-rule image of the logarithmic equation. Combining them
   supplies no second coercive identity for \(\mathcal J_\eta\).
+- The non-tight terminal object is nevertheless canonical. For a spatial test
+  \(\chi\), terminal trace minus its average over
+  \([-\delta,0]\) equals the trace equation paired with the triangular weight
+  \((t+\delta)/\delta\). Transport, spatial diffusion, and stretching are
+  \(O(\delta)\), so the limit
+  \[
+  \mathfrak E_0=h^0-\bar h^-
+  \]
+  is exactly the negative signed time-zero concentration of \(\rho_\eta\).
+  It is an \(L^\infty\) spatial density of norm at most one and requires no
+  projective-energy tightness. Zero excess carries terminal trace into the
+  interior Cesàro limit.
+- Every fixed smooth trajectory has zero excess when its vorticity zero set
+  has spacetime measure zero. Transverse zero strata in codimensions one,
+  two, and three all have an exact-derivative signed remainder kernel with
+  zero mass. Their positive envelopes respectively have inverse-cutoff,
+  logarithmic or finite, and vanishing regimes, confirming that raw positive
+  mass does not classify terminal loss.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -318,10 +336,11 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can one define a terminal projective excess, or a signed trace-defect
-> topology, that cancels every time-continuous smooth zero-interface layer but
-> still detects loss of terminal trace? Can ancient history and suitability
-> then exclude a nonzero terminal excess?
+> Can the existing endpoint and one-trajectory equations force a uniform
+> negative-topology temporal modulus for the scalar trace, hence
+> \(\mathfrak E_0=0\)? If not, can the bounded signed terminal density
+> \(\mathfrak E_0\) be localised inside a suitable ancient system and excluded
+> by rigidity?
 
 The coequal breakdown question remains:
 
@@ -330,18 +349,18 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Classify the cutoff profiles of moving and higher-codimension vorticity
-   zero sets, separating universal smooth interface mass from a
-   terminal-time excess.
-2. Define a signed topology for \(\rho_{\eta_n}\), or a renormalised
-   projective excess, that is stable under the available ancient compactness,
-   vanishes on those smooth profiles, and detects terminal trace loss.
-3. Prove that the resulting terminal excess is incompatible with expanding
-   backward history, suitability, and the closed scalar/tensor equations.
-4. Formulate the minimal ancient system decorated by that excess. Use
+1. Derive or falsify a uniform negative-topology time modulus for
+   \(t\mapsto\int\chi h_{\eta_n}(t)\) from the vorticity equation, endpoint
+   bounds, and expanding backward history.
+2. Localise the triangular signed pairing defining \(\mathfrak E_0\) without
+   replacing \(\rho_\eta\) by total variation.
+3. Prove that a nonzero \(\mathfrak E_0\) is incompatible with suitability,
+   local energy, and the closed scalar/tensor equations.
+4. Formulate the minimal ancient system decorated by
+   \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.
-5. Prove scale-uniform localisation for the signed detector system without
-   replacing \(\rho_\eta\) by its total variation, and decide which orientation
+5. Classify degenerate or sequence-dependent zero profiles not covered by the
+   fixed smooth transverse-stratum theorem, and decide which orientation
    information is still needed for rigidity.
 6. Classify ancient solutions of the scalar trace defect equation together with
    any orientation decoration still required for rigidity.

@@ -35,6 +35,7 @@ not convert passing unit tests into mathematical truth.
 | **trace_boundary_flux.py** | General trace renormalisation, sharp boundary signs, radial convexity no-go, periodic heat-shear powers, and ancient decay | A nonlinear ancient-history estimate or rigidity for the surviving signed radial defect |
 | **trace_projective_domination.py** | Sharp projective bounds for trace content, gradient, signed remainder, and pure-radial constants | Tight-branch atom rigidity or a signed excess for non-tight interfaces |
 | **projective_zero_interface.py** | Trace--log dependence and exact smooth simple-zero interface kernels | A terminal excess or signed topology that removes benign interface mass |
+| **terminal_trace_excess.py** | Codimension-one to -three zero-stratum kernels and the triangular terminal Cesàro identity | A negative-topology time modulus or rigidity for the signed terminal density |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -76,6 +77,7 @@ From the repository root:
     make trace-boundary-flux
     make trace-projective
     make projective-interface
+    make trace-excess
     make strain
     make fetch-2607
     make compile-2607

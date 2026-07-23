@@ -586,17 +586,18 @@ backward amplitude grows exponentially and violates uniform ancient endpoint
 control. Ancient history is therefore an essential possible discriminator,
 not an optional refinement.
 
-The next falsifiable target is:
+The subsequent
+[terminal trace-excess theorem](terminal-trace-excess.md) completes this
+definition:
 
-> Define a terminal projective **excess** or a signed-defect topology that
-> vanishes on the universal time-continuous simple-zero interface profile,
-> detects loss of terminal trace, and is stable under the available ancient
-> compactness. Then prove that expanding backward history and suitability
-> exclude a nonzero terminal excess.
+> Terminal trace minus its shrinking backward Cesàro average is a bounded
+> signed spatial density, exactly equal to the negative triangular time-zero
+> concentration of \(\rho_\eta\) after controlled terms vanish.
 
-A successful quantity must preserve the cancellation in (28). Raw
+The next target is a negative-topology temporal modulus forcing that excess to
+vanish, or ancient rigidity for the decorated system. Raw
 \(\mathcal J_\eta\), \(\mathcal T_\eta\), and
-\(|\rho_\eta|\) do not.
+\(|\rho_\eta|\) still do not preserve the required cancellation.
 
 This is an exact globally regular Navier--Stokes obstruction and an analytic
 frontier reduction. It proves no blow-up and no regularity theorem, and it is

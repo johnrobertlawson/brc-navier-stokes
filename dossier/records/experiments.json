@@ -845,6 +845,36 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-TERMINAL-TRACE-EXCESS-001",
+      "title": "Terminal Cesaro trace excess and smooth zero-stratum cancellation",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "The non-tight signed trace object may be undefined without a finite projective-energy measure, and divergent smooth zero-stratum profiles may be indistinguishable from terminal detector loss.",
+      "invariants": [
+        "Terminal trace minus its shrinking backward Cesaro average is uniformly bounded as an L1-dual spatial functional",
+        "A triangular time weight identifies the Cesaro excess exactly with controlled transport-diffusion-stretch terms minus the signed trace remainder",
+        "The controlled terms vanish linearly with the terminal window under the existing local endpoint framework",
+        "The limiting excess is a bounded signed spatial density and requires no projective-energy or absolute-remainder tightness",
+        "Zero excess carries every nonzero terminal trace pairing into the interior Cesaro limit",
+        "Every fixed nontrivial smooth trajectory with a measure-zero vorticity zero set has strong cutoff-trace convergence and zero distributional trace remainder",
+        "Transverse zero strata in codimensions one, two, and three have signed radial kernels that are exact derivatives with zero total mass",
+        "Positive zero-stratum envelopes have inverse-cutoff, logarithmic or finite, and vanishing regimes that do not determine the signed excess",
+        "No temporal modulus, ancient rigidity theorem, suitability theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Compare the terminal trace with its shrinking backward average, integrate its time derivative against the exact triangular weight, estimate all nondefect terms by local Lorentz bounds, prove distributional cancellation for fixed smooth trajectories, and classify isotropic transverse zero kernels in every spatial codimension.",
+      "certificate": "A written signed-excess theorem and zero-stratum classification, plus Fraction tests for the triangular identity, controlled-window power, codimension kernels, radial primitive, cutoff thresholds, integrated constants, and L1-dual bound.",
+      "success_criterion": "The non-tight branch is represented by a bounded signed terminal density that vanishes on every smooth transverse zero profile and either carries terminal trace inward or supplies the exact decoration for ancient rigidity.",
+      "failure_interpretation": "The Cesaro difference is not order zero, controlled terms can create a time atom, the triangular identity has the wrong sign, a transverse smooth zero has nonzero leading signed mass, or terminal trace can disappear with zero excess.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/terminal-trace-excess.md",
+        "lab/navier_lab/terminal_trace_excess.py",
+        "lab/tests/test_terminal_trace_excess.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

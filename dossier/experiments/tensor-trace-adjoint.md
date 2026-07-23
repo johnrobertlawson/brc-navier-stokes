@@ -54,6 +54,12 @@ is a sufficient compactness theorem, not a necessary criterion. Raw
 globally regular periodic shear, while \(h_\eta\) converges strongly and
 \(\rho_\eta\) cancels distributionally.
 
+The subsequent
+[terminal trace-excess theorem](terminal-trace-excess.md) replaces raw
+tightness in the non-tight branch: terminal trace minus its backward Cesàro
+average is a bounded signed spatial density and equals the triangular
+time-zero concentration of \(\rho_\eta\).
+
 The reduction does not prove a uniform scalar propagator. Its potential remains
 parabolically critical. It does identify a narrower amplitude-band gate than
 the full matrix logarithmic norm, and the previous axial-shear Kato obstruction

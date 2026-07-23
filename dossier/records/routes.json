@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can a terminal projective excess or signed trace-defect topology cancel every time-continuous smooth zero-interface layer while still detecting terminal trace loss, and can ancient history plus suitability exclude a nonzero terminal excess?",
+      "question": "Can endpoint and one-trajectory dynamics force a negative-topology temporal modulus for the scalar trace and hence zero terminal Cesaro excess; failing that, can the bounded signed terminal density be localised in a suitable ancient system and excluded by rigidity?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "A signed or renormalised excess discards the exact smooth zero-interface profiles, is compact enough for terminal duality, and either carries the positive scalar trace into the ancient limit or yields a terminal decoration excluded by suitability and rigidity.",
-      "kill_criterion": "A Clay-admissible endpoint-bounded trajectory or nonzero suitable ancient limit with terminal trace loss encoded by a surviving signed excess or vacuum decoration outside every available rigidity class.",
+      "success": "A uniform temporal modulus forces zero terminal excess so the positive scalar trace enters the ancient limit; alternatively, the bounded signed excess is localised, suitability is proved, and rigidity excludes the decorated ancient object.",
+      "kill_criterion": "A Clay-admissible endpoint-bounded trajectory or nonzero suitable ancient limit with a surviving nonzero terminal Cesaro excess and vacuum decoration outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]
