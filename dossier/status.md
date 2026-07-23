@@ -805,9 +805,17 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > it at those intermediate radii. Its terminal trace has the recursive
 > Besov defect; its positive horizon collapses, its Type-I core remains at
 > spatial infinity, and Guevara--Phuc excludes continuous backward
-> self-similarity. The next gate is to force stronger scale recurrence,
-> forbid scale-aperiodic recursive ancestry by a same-trajectory flux, or
-> recover the escaped core;
+> self-similarity. Independent review found no fatal implication after
+> making the inherited global restart continuations explicit. The
+> [distance-profile reduction](experiments/terminal-distance-profile.md)
+> now rescales by \(|x_j-x_*|\). The core remains at unit distance, while
+> the shrinking satellite shell forces prelimit local \(L^\infty\)
+> divergence and hence a second persistent singular point. Seregin local
+> weak-\(L^3\) singular-set finiteness then excludes exact backward DSS
+> about every centre and factor. Independent review found all five links
+> valid in the theorem's stated conditional scope. The next gate is a
+> many-satellite packing/lacunarity theorem or
+> a same-trajectory flux joining the distance and Besov outer profiles;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -821,14 +829,16 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Exclude the nonzero coherent weak-\(L^3\) outer profile. Its terminal
-   trace has a recursive positive critical Besov blow-down defect, and a
-   same-trajectory physical spacetime diagonal realizes it at
-   \(R_j\ll\rho_j\ll|x_j-x_*|\). Continuous backward self-similarity is
-   excluded. Force discrete/asymptotic scale recurrence, prove a
-   same-trajectory flux that forbids scale-aperiodic recursive ancestry, or
-   recover the Type-I core still lost at spatial infinity.
-2. In parallel, prove or refute the exact no-neck estimate
+1. Exploit the independently reviewed two-singularity distance profile. Its core
+   and satellite lie at unit separation and exact continuous or discrete
+   backward self-similarity is excluded. Try to retain several satellites
+   at one distance scale; either exceed Seregin's local terminal
+   singular-count bound or derive quantitative radial/angular lacunarity.
+2. Relate the distance profile to the nonzero coherent weak-\(L^3\) Besov
+   outer profile realised at
+   \(R_j\ll\rho_j\ll|x_j-x_*|\), or prove a same-trajectory flux that
+   forbids their remaining scale-aperiodic compatibility.
+3. In parallel, prove or refute the exact no-neck estimate
    \[
    \sup_j\frac{|x_j-x_*|}{R_j}<\infty.
    \]
@@ -836,43 +846,43 @@ The coequal breakdown question remains:
    does not yet compare the selected natural carrier's offset with its
    smaller parent radius. A proof must use more than the static budgets
    disposed of by the terminal-tower model.
-3. In the bounded-centering branch, compare the Barker--Prange packet,
+4. In the bounded-centering branch, compare the Barker--Prange packet,
    inverse-amplitude scale, and subnatural tensor radius
    \(r_j=\lambda_jR_j\), and transfer or separate the cutoff-tensor
    oscillation and fixed-shell detector.
-4. Upgrade the fixed-top-shell marked parent candidates to the exact
+5. Upgrade the fixed-top-shell marked parent candidates to the exact
    suitable or mild class needed for rigidity, then exclude the
    finite-forward-horizon and eternal regimes separately.
-5. Test whether first-singular-time nonextendibility or ancient history can
+6. Test whether first-singular-time nonextendibility or ancient history can
    upper-bound the parent forward horizon. Instantaneous endpoint, energy,
    suitability, and the fixed-shell mark alone cannot do so.
-6. Test whether a parent-clock, nonlocal, or signed history identity can sum
+7. Test whether a parent-clock, nonlocal, or signed history identity can sum
    the fixed-shell moments. A charge built only from the unrenormalised local
    carrier-clock shell loses its intrinsic detector and cumulative action by
    \(\lambda_j^4\) and \(\lambda_j^2\).
-7. Determine whether the linearly divergent
+8. Determine whether the linearly divergent
    \(L^{5/2}_{t,x}\) shell occupation can be bounded by a finite-secondary-index
    estimate or another genuinely scale-zero input not present in the current
    weak endpoint and energy ledgers.
-8. Separately, for the scale-process route, prove a coherent two-scale
+9. Separately, for the scale-process route, prove a coherent two-scale
    genealogical diagonal-selection lemma retaining \((R_k,r_k)\), both
    transition edges and offset pairs, parent jets, carrier Young measures,
    matched cutoffs, local-energy data, and detector-freezing errors on every
    finite window.
-9. Conditional on that nested array, derive separate no-neck estimates or
+10. Conditional on that nested array, derive separate no-neck estimates or
    transition Young measures for the internal \(\lambda_k\to0\) and bridge
    \(\kappa_k\to0\) boundaries; do not replace discrete depth by physical
    log-density.
-10. Determine whether the signed history-square source, including the
+11. Determine whether the signed history-square source, including the
    prelimit detector commutators, has a finite scale-counting split.
-11. Only then test rigidity of a shift-stationary suitable two-scale process
+12. Only then test rigidity of a shift-stationary suitable two-scale process
    with positive expected fresh-detector moment and complete same-trajectory
    graph closure.
-12. Prove that the direction-weighted trace concentration
+13. Prove that the direction-weighted trace concentration
    \((\xi_n\cdot D_n\xi_n)\rho_n\) is incompatible with suitability, local
    energy, and the same-trajectory pullbacks, or construct the exact coherent
    survivor.
-13. Determine whether bounded projective-cross content makes the directional
+14. Determine whether bounded projective-cross content makes the directional
    weight compact enough to reduce the weighted concentration to
    \(\mathfrak E_0\); do not replace either signed remainder by variation.
 14. Classify sequence-dependent or temporally degenerate zero profiles beyond

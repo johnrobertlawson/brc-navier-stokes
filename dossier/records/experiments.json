@@ -1572,6 +1572,7 @@
       "hypothesis": "The nonvanishing terminal Besov blow-down is necessarily only a static trace and need not produce an evolved same-trajectory Navier-Stokes ancestor.",
       "invariants": [
         "The theorem is conditional on the independently reviewed detached satellite and coherent terminal Besov ancestry reductions",
+        "Every selected good restart is inherited from a global finite-energy suitable approximant and supplies a global weak-L3 continuation, rather than only a bare local restriction",
         "The critical terminal pairing is continuous in the dilation factor through L(3/2,1) test-function continuity",
         "A full-measure set of factors simultaneously maps every negative rational output time to a good Barker-Seregin-Sverak restart",
         "Critical parabolic scaling preserves the heat-plus-energy correction structure and its initial weak-L3 ceiling",
@@ -1592,8 +1593,52 @@
       "status": "complete",
       "artifacts": [
         "dossier/experiments/terminal-outer-profile.md",
+        "dossier/review-response-terminal-outer-profile-2026-07-23.md",
         "lab/navier_lab/terminal_outer_profile.py",
         "lab/tests/test_terminal_outer_profile.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-TERMINAL-DISTANCE-PROFILE-001",
+      "title": "Two-singularity terminal distance profile and exact DSS exclusion",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-LOCAL-ENERGY-RESTART-001",
+        "CLM-SINGULARITY-PERSISTENCE-001",
+        "CLM-LOCAL-WEAK-L3-SINGULAR-FINITENESS-001",
+        "CLM-WEAK-001"
+      ],
+      "hypothesis": "Every compactification of the centering-escape satellite tower must lose either the shrinking satellite or the Type-I core, so no one ancient profile can couple them or exclude arbitrary exact discrete self-similarity.",
+      "invariants": [
+        "The theorem is conditional on the terminal centering-escape satellite sequence for one chosen global suitable Leray-Hopf continuation",
+        "The satellite-to-core distance d is the profile scale and sends the core to a unit vector after a directional subsequence",
+        "The parent packet becomes a micro-scale epsilon equal to R divided by d and epsilon tends to zero",
+        "The weak-L3 endpoint gives a uniform unit-ball L2 ceiling at the distance scale",
+        "Barker-Prange Proposition A.3 supplies a fixed local-energy and pressure window crossing the terminal time",
+        "Suitable compactness gives an ancient local-energy profile with a positive horizon but no claimed global finite-energy bound",
+        "The physical core remains singular at a moving unit vector and passes to the limit by Albritton-Barker persistence of singularities",
+        "The normalized micro-shell mark is exactly the physical R-squared strain mark divided by viscosity",
+        "A local bounded-velocity contribution to the normalized derivative kernel has one positive power of epsilon",
+        "The far kernel contribution vanishes by weak-L3 Lorentz duality and the Schwartz tail",
+        "The resulting prelimit local L-infinity divergence makes the satellite point singular in the suitable limit by the same persistence theorem",
+        "Seregin Theorem 1.2 applies locally and makes the terminal singular set locally finite without a global finite-energy assumption",
+        "Any noncentral singular point of an exact DSS profile has an infinite inward dilation orbit in one compact ball",
+        "Two distinct terminal singular points therefore exclude exact backward DSS about every centre and factor, with continuous self-similarity excluded as a special case",
+        "No asymptotic recurrence exclusion, many-satellite retention, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Rescale the physical continuation by the satellite-to-core distance, apply the published local-energy restart and suitable compactness, retain the core by persistence of singularities, convert the shrinking terminal strain shell into prelimit L-infinity divergence using a local/far Schwartz-kernel split and the weak-L3 endpoint, retain the satellite by the same persistence theorem, then combine Seregin local terminal singular-set finiteness with the inward orbit of an exact discrete dilation.",
+      "certificate": "A written source-scoped conditional theorem and adversarial cover letter plus exact Fraction tests for distance normalization, micro-shell invariance, the positive micro power in the local kernel bound, the inverse-micro velocity floor, and the inward discrete-dilation orbit.",
+      "success_criterion": "One same-trajectory ancient suitable weak-L3 profile retains the physical Type-I core and the terminal satellite as two distinct singular points, thereby excluding every exact continuous or discrete backward self-similar realization.",
+      "failure_interpretation": "The distance-scale local-energy restart cannot cross the terminal time, one of the two singularities does not persist under the suitable limit, the normalized shell is compatible with bounded prelimit velocity because the kernel tail does not vanish, Seregin local finiteness does not cover the limit class, or exact DSS does not preserve the terminal singular set.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/terminal-distance-profile.md",
+        "dossier/review-letter-terminal-distance-profile-2026-07-23.md",
+        "dossier/review-response-terminal-distance-profile-2026-07-23.md",
+        "lab/navier_lab/terminal_distance_profile.py",
+        "lab/tests/test_terminal_distance_profile.py"
       ],
       "last_run": "2026-07-23"
     },

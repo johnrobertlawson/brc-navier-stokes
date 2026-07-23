@@ -78,6 +78,13 @@ Assume failure, rescale around the most economical concentration, extract a comp
 ancient solution, then show energy, pressure, and unique continuation force it to vanish.
 The hard step is gaining enough compactness at a supercritical energy level.
 
+The current ROUTE-R3B distance normalization gives a conditional
+two-singularity suitable weak-\(L^3\) ancient profile. Local terminal
+singular-set finiteness excludes exact continuous and discrete
+self-similarity, so the surviving cell is B1b with genuinely
+scale-aperiodic physical-space concentration. The next closure test is
+many-point packing versus quantitative radial/angular lacunarity.
+
 ### Singular-to-smooth construction bridge
 
 Certified forward self-similar solutions from singular data provide exact unstable

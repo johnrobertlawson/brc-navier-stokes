@@ -2,13 +2,14 @@
 
 - **Experiment:** EXP-TERMINAL-OUTER-PROFILE-001
 - **Route:** ROUTE-R3B
-- **Status:** complete conditional analytic reduction; not independently
-  reviewed
+- **Status:** complete conditional analytic reduction; independently
+  reviewed as valid in stated scope
 - **Domain:** \(\mathbb R^3\)
 - **Solution class:** one chosen global suitable Leray--Hopf continuation,
   smooth before a first singular time
 - **Clay status:** unsolved
 - **Input:** [coherent terminal Besov ancestry](terminal-besov-ancestry.md)
+- **Review:** [independent response](../review-response-terminal-outer-profile-2026-07-23.md)
 - **Imported stability theorem:** Barker, Seregin, and Šverák,
   [*On Stability of Weak Navier--Stokes Solutions with Large
   \(L^{3,\infty}\) Initial Data*](https://doi.org/10.1080/03605302.2018.1449219),
@@ -95,7 +96,11 @@ There is a full-measure set
 
 such that the restriction launched at every \(\sigma\in\mathcal G\) is a
 weak \(L^{3,\infty}\) solution in the Barker--Seregin--Šverák sense, with
-initial norm at most \(M\).
+initial norm at most \(M\). This input is inherited from global
+finite-energy suitable approximants: every selected restart supplies a
+global weak-\(L^3\) continuation that agrees with the detached profile on
+their common interval. A bare full-measure family of local restrictions
+would not be enough for the construction below.
 
 The reviewed terminal Besov result supplies
 

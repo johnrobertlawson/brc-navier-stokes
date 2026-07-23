@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T19:33:00Z
+**Updated:** 2026-07-23T19:59:39Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -197,8 +197,9 @@ R_j\ll\rho_j\ll|x_j-x_*|
 and a fixed critical velocity pairing at the coarser radius \(\rho_j\),
 still inside the punctured terminal regular region.
 
-The subsequent, not-yet-independently-reviewed reduction evolves that
-ancestor. The blow-down factors can be perturbed inside a full-measure set
+The subsequent reduction evolves that ancestor and has now passed
+independent adversarial review in its stated conditional scope. The
+blow-down factors can be perturbed inside a full-measure set
 so that every negative rational output time comes from a good
 Barker--Seregin--Šverák restart. Compactness on the resulting expanding
 backward intervals produces a nonzero coherent ancient suitable outer
@@ -214,6 +215,44 @@ the blow-down factor, and the Type-I core remains at spatial infinity.
 Guevara--Phuc's weak-\(L^3\) Leray-profile theorem excludes continuous
 backward self-similarity of the nonzero outer profile.
 
+The reviewer found no fatal implication in the common rational-restart
+set, compatible ancient diagonal, terminal pairing, physical spacetime
+diagonal, or continuous self-similar exclusion. The accepted clarification
+is that the construction uses the global weak-\(L^3\) continuations
+inherited from the finite-energy approximants, not merely a bare
+full-measure family of local restrictions.
+
+A new distance-scale reduction now recovers the core that both preceding
+profiles lost. Set
+\[
+d_j=|x_j-x_*|,
+\qquad
+\varepsilon_j=\frac{R_j}{d_j}\to0,
+\]
+and rescale the same suitable continuation by \(d_j\) about \(x_j\).
+The weak-\(L^3\) endpoint and Barker--Prange's local-energy restart give a
+positive-horizon ancient suitable limit. The physical core stays at a unit
+vector \(e\). The terminal satellite shell becomes a micro-shell, but its
+exact normalized mark forces the prelimit local \(L^\infty\) norms to
+diverge: the local derivative-kernel contribution is
+\(O(\varepsilon_j)\), while its nonlocal part vanishes by Lorentz duality
+and the Schwartz tail. Albritton--Barker persistence of singularities
+therefore retains both \((0,0)\) and \((e,0)\).
+
+Seregin's local weak-\(L^3\) theorem makes the terminal singular set of
+that limit locally finite without requiring global finite energy. An exact
+backward DSS profile with a noncentral singular point would have an
+infinite inward dilation orbit accumulating in one compact set. The two
+retained points therefore exclude exact backward discrete self-similarity
+about every centre and factor, with continuous self-similarity excluded as
+a special case. Independent adversarial review found all five links valid
+in stated conditional scope. It confirmed in particular that
+Albritton--Barker requires prelimit local \(L^\infty\) divergence rather
+than prelimit satellite singularities, and that Seregin's theorem needs no
+global energy bound. The accepted simplification uses weak \(L^2\)
+continuity, rather than positive-horizon regularity, to transfer a
+hypothetical cylinder bound to the terminal trace.
+
 The principal source caveat remains explicit: the displayed subspace definition
 before Albritton--Barker Theorem 4.1 suppresses the critical amplitude
 factor, while its proof uses the Navier--Stokes dilation
@@ -222,11 +261,13 @@ reading. Independent review validated the repair, found no published
 erratum, and found no additional use of mildness beyond weak-\(L^3\)
 coherence. The repair is not represented as a verbatim source citation.
 
-The immediate target is now to force scale recurrence into a published
-self-similar or discretely self-similar rigidity class, forbid a
-scale-aperiodic recursive ancestry by a same-trajectory flux, or recover
-the escaped Type-I core. Bounded-centering tensor/frequency transfer
-remains the parallel branch.
+The immediate target is now a many-satellite packing/lacunarity theorem at
+the distance scale. Retaining too many separated satellites would violate
+local terminal singular-set finiteness; failure must impose quantitative
+radial or angular lacunarity on the physical tower. A same-trajectory flux
+or a bridge between the recursive Besov outer profile and the two-point
+distance profile remains the parallel scale-aperiodic route.
+Bounded-centering tensor/frequency transfer remains the other branch.
 
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent
 two-scale genealogical diagonal remains a separate prerequisite for any

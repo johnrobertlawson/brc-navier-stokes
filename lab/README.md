@@ -57,6 +57,7 @@ not convert passing unit tests into mathematical truth.
 | **terminal_satellite_compactness.py** | Unit-viscosity time conversion, weak-\(L^3\) local-\(L^2\) radius power, quantitative local-energy restart, positive rescaled forward horizon, terminal-mark scaling, and escaped-core coordinates | Mildness plus one bounded strong-\(L^3\) backward sequence, a direct rigidity theorem for the detached ancient profile, or a Clay resolution |
 | **terminal_besov_ancestry.py** | Critical terminal dilation, packet--ancestor--core ratios, physical amplitude, and pairing-error transfer | The weak-\(L^3\) stability theorem, proof-level Besov Liouville extension, evolved ancestry, core coupling, or a Clay resolution |
 | **terminal_outer_profile.py** | Parabolic terminal blow-down, rational restart clock, collapsing horizon, physical outer-profile diagonal, and self-similar dissipation weight | Analytic compactness, scale recurrence, core coupling, endpoint rigidity beyond exact self-similarity, or a Clay resolution |
+| **terminal_distance_profile.py** | Satellite-to-core distance scaling, micro-shell normalization, local/far kernel split, inverse-micro velocity floor, and inward discrete-dilation orbit | Suitable compactness, persistence of both terminal singular points, local weak-\(L^3\) singular-set finiteness, or a Clay resolution |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -120,6 +121,7 @@ From the repository root:
     make terminal-satellite-compactness
     make terminal-besov-ancestry
     make terminal-outer-profile
+    make terminal-distance-profile
     make strain
     make fetch-2607
     make compile-2607

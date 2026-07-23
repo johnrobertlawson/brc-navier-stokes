@@ -354,6 +354,46 @@
       "last_checked": "2026-07-23"
     },
     {
+      "id": "CLM-SINGULARITY-PERSISTENCE-001",
+      "plain": "A locally compact sequence of suitable solutions whose local essential suprema blow up at every radius has a singular suitable limit.",
+      "formal": "Albritton-Barker Proposition 2.3 states the interior persistence-of-singularities principle for suitable weak solutions: under the proposition's uniform local velocity and pressure bounds and compact convergence, divergence of the approximating local L-infinity norms on every cylinder forces the limit point to be singular.",
+      "domain": "R3_local_cylinder",
+      "forcing": "zero",
+      "solution_class": "suitable_weak_sequence",
+      "assumptions": [
+        "Uniform local suitable-solution velocity and pressure bounds from the source proposition",
+        "The source compact convergence",
+        "Approximating local essential suprema are unbounded on every cylinder"
+      ],
+      "conclusion": "The corresponding point of the suitable weak limit is singular.",
+      "scaling": "critical_local_compactness",
+      "status": "established",
+      "source_ids": ["SRC-ALBRITTON-BARKER-2019"],
+      "depends_on": [],
+      "audit": "The proposition transfers singularity; it does not infer the required prelimit L-infinity divergence. For a moving singular point one must first translate the sequence and pass the centres to a limit.",
+      "last_checked": "2026-07-23"
+    },
+    {
+      "id": "CLM-LOCAL-WEAK-L3-SINGULAR-FINITENESS-001",
+      "plain": "A suitable solution with a locally uniform weak-L3 endpoint has a locally finite singular set at each selected time.",
+      "formal": "Seregin Theorem 1.2 states that if a suitable weak solution on a space-time cylinder is locally in L-infinity-in-time L3-infinity-in-space, then the singular points at the terminal time are finite in every compactly contained spatial subdomain.",
+      "domain": "local_cylinder",
+      "forcing": "zero",
+      "solution_class": "suitable_weak",
+      "assumptions": [
+        "Suitability on the source cylinder",
+        "A locally uniform-in-time weak-L3 bound",
+        "A compactly contained spatial subdomain"
+      ],
+      "conclusion": "Only finitely many terminal singular points lie in that subdomain.",
+      "scaling": "critical_local",
+      "status": "established",
+      "source_ids": ["SRC-SEREGIN-2021-LOCAL-WEAK-L3"],
+      "depends_on": [],
+      "audit": "The theorem gives local rather than global finiteness. Local finiteness is sufficient to forbid the inward dilation orbit of any noncentral singular point in an exactly discretely self-similar terminal profile.",
+      "last_checked": "2026-07-23"
+    },
+    {
       "id": "CLM-TYPE-I-ANCIENT-EQUIVALENCE-001",
       "plain": "Existence of a suitable Type-I singular point is equivalent to existence of a nontrivial mild bounded ancient solution with finite scale-invariant Type-I quantity.",
       "formal": "Albritton-Barker Theorem 1.1 states that there exists a suitable weak solution with a Type-I singular point if and only if there exists a nontrivial mild bounded ancient R3 solution with finite source quantity I.",
