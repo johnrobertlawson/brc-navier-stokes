@@ -1490,7 +1490,7 @@
       ],
       "hypothesis": "The endpoint-persistent satellite tower remains only a boundary-level distributional defect because rescaling destroys the global finite-energy bound and suitability cannot be retained.",
       "invariants": [
-        "The theorem is restricted to R three and one chosen global suitable finite-energy continuation that is smooth before its first singular time",
+        "The theorem is restricted to R three and one chosen global suitable Leray-Hopf continuation that is smooth before its first singular time",
         "Viscosity is normalized before applying the published local-energy restart",
         "The weak-L3 velocity ceiling gives a scale-uniform unit-ball L2 ceiling for every satellite rescaling at every nonpositive rescaled time",
         "Each rescaled datum remains globally finite energy at fixed index and therefore satisfies the source decay-at-infinity hypothesis",
@@ -1514,6 +1514,46 @@
         "dossier/experiments/terminal-satellite-compactness.md",
         "lab/navier_lab/terminal_satellite_compactness.py",
         "lab/tests/test_terminal_satellite_compactness.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-TERMINAL-BESOV-ANCESTRY-001",
+      "title": "Coherent weak-L3 inheritance and terminal Besov ancestry",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-WEAK-L3-STABILITY-001",
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-LOCAL-ENERGY-RESTART-001",
+        "CLM-WEAK-001"
+      ],
+      "hypothesis": "The detached terminal suitable profile can evade every published blow-down Liouville conclusion merely because mildness has not been proved, leaving nonmildness versus backward strong-L3 escape as the exact fork.",
+      "invariants": [
+        "The theorem is conditional on the escaped terminal satellite sequence and one chosen global suitable Leray-Hopf continuation",
+        "At a common full-measure set of negative times every approximant has both the weak-L3 representative and strong Leray-Hopf restart inequality",
+        "Subtracting the heat evolution from a finite-energy restart gives the Barker-Seregin-Sverak energy correction and its exact correction energy inequality",
+        "The source weak-L3 stability estimate depends only on the common initial weak-L3 bound and elapsed time rather than the diverging rescaled global energy",
+        "Strong local spacetime and almost-every-time slice convergence identify every stability limit with the already selected detached profile",
+        "The Albritton-Barker Theorem 4.1 proof uses mildness to supply weak-L3 solution structure on each zoomed interval; the repository extension replaces only that use by inherited coherence",
+        "The displayed source definition of the Besov blow-down subspace suppresses the critical amplitude factor, while the proof requires the Navier-Stokes critical dilation; this proof-consistent repair is explicit and independently reviewable",
+        "The nonzero terminal shell contradicts the zero conclusion and forces a uniform positive terminal Besov distance",
+        "At every good restart time, a zero trace would force zero future evolution through the weak-L3 correction energy inequality, so the same Besov defect persists",
+        "Strong L3 belongs to the critical-blow-down-vanishing subspace, hence every coherent time slice has infinite strong L3 norm",
+        "Failure of terminal critical blow-down convergence gives one fixed compact test and a nonzero blow-down sequence",
+        "A diagonal through the physical terminal traces produces radii R much smaller than rho much smaller than the satellite-to-core distance with a fixed critical velocity pairing",
+        "No frequency shell, strain detector, evolved blow-down solution, core coupling, cross-satellite genealogy, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Restart every finite-energy satellite approximant at common good negative times, verify the Barker-Seregin-Sverak heat-plus-energy solution structure, pass it to the detached profile by their weak-star stability theorem and the existing strong local compactness, rerun the proof of Albritton-Barker Theorem 4.1 with coherence replacing its sole mildness invocation, take the contrapositive using the nonzero terminal shell, and diagonalize the resulting nonvanishing critical blow-down through the physical terminal traces.",
+      "certificate": "A written source-scoped conditional theorem and adversarial review letter plus exact Fraction tests for critical dilation weights, the packet-ancestor-core scale ratios, physical terminal amplitude, and pairing-error transfer.",
+      "success_criterion": "The detached profile is shown to have a fixed positive Besov blow-down defect at its terminal and all good restart times, and the terminal defect transfers to a genuine punctured intermediate physical ancestor scale.",
+      "failure_interpretation": "A finite-energy good restart does not enter the source weak-L3 class, its structure is not stable under the satellite limit, mildness is used elsewhere in the published Liouville proof, the proof-consistent correction to the source blow-down subspace is invalid, or distributional terminal convergence cannot support the three-scale diagonal.",
+      "status": "implemented",
+      "artifacts": [
+        "dossier/experiments/terminal-besov-ancestry.md",
+        "dossier/review-letter-terminal-besov-ancestry-2026-07-23.md",
+        "lab/navier_lab/terminal_besov_ancestry.py",
+        "lab/tests/test_terminal_besov_ancestry.py"
       ],
       "last_run": "2026-07-23"
     },

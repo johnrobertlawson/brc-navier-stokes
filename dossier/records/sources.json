@@ -354,6 +354,19 @@
       "notes": "Published Theorem A, equations (9)-(10), gives a logarithmic lower bound for the strong local L3 mass at every radius between the Type-I parabolic scale and a fixed upper radius. Corollary 4.3 gives a finite quantitative bound for the number of terminal singular points under the global weak-L3 Type-I bound. Proposition A.3 gives a quantitative local-energy and pressure window from a uniform unit-ball L2 initial bound."
     },
     {
+      "id": "SRC-BARKER-SEREGIN-SVERAK-2018",
+      "title": "On Stability of Weak Navier-Stokes Solutions with Large L3-Infinity Initial Data",
+      "authors": ["Tobias Barker", "Gregory Seregin", "Vladimir Sverak"],
+      "year": 2018,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1080/03605302.2018.1449219",
+      "version": "Commun. Partial Differential Equations 43(4), 628-651; matching arXiv:1603.03211",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-23",
+      "notes": "Definition 1.1 specifies weak L3-infinity solutions as heat evolution of the initial datum plus an energy-class correction satisfying weak L2 continuity, a correction energy inequality, and the local energy inequality. Theorem 1.3 gives weak-star initial-data stability. The scale-invariant correction estimate depends only on the weak L3 datum bound and elapsed time."
+    },
+    {
       "id": "SRC-ALBRITTON-BARKER-2019",
       "title": "On Local Type I Singularities of the Navier-Stokes Equations and Liouville Theorems",
       "authors": ["Dallas Albritton", "Tobias Barker"],
@@ -364,7 +377,7 @@
       "primary": true,
       "status": "peer_reviewed",
       "last_checked": "2026-07-23",
-      "notes": "Published Theorem 1.1 characterizes existence of a suitable Type-I singular point by existence of a nontrivial mild bounded ancient solution with finite scale-invariant Type-I quantity. Theorem 1.2 proves that a mild ancient solution with uniformly bounded strong L3 norm along one sequence of times tending to minus infinity is identically zero. Lemma 2.5 converts weak Serrin control, including uniform weak L3, into the source Type-I bounds for suitable solutions."
+      "notes": "Published Theorem 1.1 characterizes existence of a suitable Type-I singular point by existence of a nontrivial mild bounded ancient solution with finite scale-invariant Type-I quantity. Theorem 1.2 proves that a mild ancient solution with uniformly bounded strong L3 norm along one sequence of times tending to minus infinity is identically zero. The stronger Theorem 4.1 uses weak-L3 stability to give a quantitative terminal Besov-distance Liouville criterion. Its displayed blow-down-subspace definition suppresses the critical amplitude factor, while the proof's Navier-Stokes rescaling requires lambda f(lambda dot); repository use is explicitly proof-consistent and review-gated. Lemma 2.5 converts weak Serrin control, including uniform weak L3, into the source Type-I bounds for suitable solutions."
     },
     {
       "id": "SRC-GRUJIC-2026",

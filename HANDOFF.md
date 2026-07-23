@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T18:38:52Z
+**Updated:** 2026-07-23T19:03:43Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -162,21 +162,55 @@ bounds a fixed rescaled distance beyond \(T^*\). Suitable compactness
 therefore produces a nonzero ancient suitable local-energy solution on
 \((-\infty,\delta_*)\), with the former terminal shell as an interior mark.
 The physical Type-I core and every terminal singular point escape to
-spatial infinity in these coordinates. The immediate target is now a
-Liouville, same-trajectory flux, ancestry, or multiscale rigidity theorem
-for this detached marked profile. Bounded-centering tensor/frequency
-transfer remains the parallel branch.
+spatial infinity in these coordinates.
 
-Published ancient-solution theory sharpens that target. If the marked point
-of the detached profile is singular, its weak-\(L^3\) control makes it
-Type I and Albritton--Barker produce a nontrivial mild bounded ancient
-Type-I profile, not necessarily the same limit. If the detached profile is
-itself mild, their strong-\(L^3\) Liouville theorem says its nonzero shell
-forces
-\(\|u_\infty(s)\|_{L^3}\to\infty\) as \(s\to-\infty\), in the
-extended-norm sense. Thus the surviving endpoint is now exact: prove
-mildness and one bounded strong-\(L^3\) backward sequence, or confront a
-genuinely nonmild/backward-escaping ancient profile.
+Published ancient-solution theory first sharpened that target. If the
+marked point of the detached profile is singular, its weak-\(L^3\) control
+makes it Type I and Albritton--Barker produce a nontrivial mild bounded
+ancient Type-I profile, not necessarily the same limit. Their headline
+strong-\(L^3\) Liouville theorem initially left a mildness versus backward
+strong-\(L^3\) escape fork.
+
+The latest reduction is stronger and is now packaged for external review.
+At almost every negative Leray restart, the satellite approximants are weak
+\(L^{3,\infty}\) solutions in the specific
+Barker--Seregin--Šverák heat-plus-energy sense. Their stability theorem
+passes this coherence to the detached profile. In the proof of the stronger
+Albritton--Barker Theorem 4.1, mildness is used to supply exactly that
+weak-\(L^3\) solution structure on each zoomed interval. Re-running the
+remaining published argument gives
+\[
+\operatorname{dist}_{\dot B^{-1}_{\infty,\infty}}
+\left(u_\infty(\tau),\mathbb B_{\rm AB}^{\rm crit}\right)
+>
+\epsilon_{\rm AB}(A_u/\nu)
+\]
+at the terminal trace and every good restart time. Hence none of those
+slices is in strong \(L^3\).
+
+At \(s=0\), the defect forces a nonvanishing critical blow-down. A diagonal
+through the physical terminal traces yields
+\[
+R_j\ll\rho_j\ll|x_j-x_*|
+\]
+and a fixed critical velocity pairing at the coarser radius \(\rho_j\),
+still inside the punctured terminal regular region. This is a genuine
+intermediate ancestor, but not a frequency shell, evolved blow-down
+solution, core coupling, or cross-satellite genealogy.
+
+The principal review risk is explicit: the displayed subspace definition
+before Albritton--Barker Theorem 4.1 suppresses the critical amplitude
+factor, while its proof uses the Navier--Stokes dilation
+\(\lambda f(\lambda\cdot)\). The new theorem uses that proof-consistent
+reading and requests independent confirmation. The other review target is
+whether mildness is used anywhere in their proof beyond weak-\(L^3\)
+coherence.
+
+The immediate target is now to evolve or sum the forced Besov ancestry,
+couple it to the escaped Type-I core, or find a same-trajectory flux,
+terminal-regularity, or multiscale rigidity theorem for the coherent
+detached profile. Bounded-centering tensor/frequency transfer remains the
+parallel branch.
 
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent
 two-scale genealogical diagonal remains a separate prerequisite for any

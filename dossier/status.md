@@ -700,6 +700,30 @@ and breakdown work
   \(\|u_\infty(s)\|_{L^3}\to\infty\) as \(s\to-\infty\), in the
   extended-norm sense. Uniform weak \(L^3\) does not exclude that strong
   endpoint escape.
+- A proof-level refinement now supersedes that mildness-only fork and is
+  awaiting adversarial review. At almost every negative Leray restart, the
+  finite-energy approximants are weak \(L^{3,\infty}\) solutions in the
+  Barker--Seregin--Šverák heat-plus-energy class. Their peer-reviewed
+  stability theorem passes this coherence to the detached profile. The
+  proof of Albritton--Barker Theorem 4.1 uses mildness to obtain precisely
+  this weak-\(L^3\) structure on its zoomed intervals; the rest of the
+  argument is stability, small-terminal-Besov regularity, and persistence
+  of singularities. On the proof-consistent critical-dilation reading of
+  their blow-down subspace,
+  \[
+  \operatorname{dist}_{\dot B^{-1}_{\infty,\infty}}
+  \left(u_\infty(\tau),\mathbb B_{\rm AB}^{\rm crit}\right)
+  >
+  \epsilon_{\rm AB}(A_u/\nu)
+  \]
+  at the terminal trace and every good restart time. Thus those slices are
+  never in strong \(L^3\). The terminal defect also forces, along a physical
+  diagonal, an intermediate punctured ancestor scale
+  \(R_j\ll\rho_j\ll|x_j-x_*|\) with a fixed critical velocity pairing.
+  The displayed source definition suppresses the critical amplitude
+  factor which its own proof requires; that notation repair and the claim
+  that no further use of mildness is hidden are the two explicit external
+  review targets.
 - The surviving algebra is now explicitly conditional. For a coherent
   two-edge cell,
   \[
@@ -764,12 +788,16 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > uses the published local-energy restart to turn one escaped satellite
 > into a nonzero ancient suitable local-energy profile with a positive
 > forward horizon and an interior shell mark, while the singular core runs
-> to spatial infinity. Published ancient-solution rigidity now says that
-> mildness plus one bounded strong-\(L^3\) backward sequence would kill the
-> profile; absent that upgrade, the survivor is genuinely nonmild or loses
-> every strong-\(L^3\) bound backwards. The next gate is this precise
-> Liouville upgrade, or a same-trajectory flux, ancestry,
-> terminal-regularity, or multiscale rigidity law for the detached profile;
+> to spatial infinity. The
+> [coherent weak-\(L^3\) ancestry reduction](experiments/terminal-besov-ancestry.md)
+> now passes the Barker--Seregin--Šverák restart structure to that profile
+> and reruns the proof of the stronger Albritton--Barker Besov Liouville
+> theorem. Subject to external confirmation of its proof-consistent source
+> notation, every good slice has a uniform positive critical blow-down
+> defect, and the terminal trace forces a punctured physical ancestor scale
+> between the satellite and its distance to the core. The next gate is to
+> evolve or sum this ancestry, couple it to the core, or prove another
+> same-trajectory flux, terminal-regularity, or multiscale rigidity law;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -783,14 +811,17 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Exclude the detached nonzero ancient suitable local-energy profile forced
-   by centering escape. It has bounded weak critical endpoints for
-   nonpositive time, a fixed positive forward horizon, and an interior
-   fixed-shell mark, while its physical Type-I core is lost at spatial
-   infinity. First test the exact published Liouville gate: prove mildness
-   and one bounded strong-\(L^3\) backward sequence. Otherwise the required
-   input is a same-trajectory frequency-flux, ancestry,
-   terminal-regularity compactness, or multiscale rigidity law.
+1. Adversarially audit the coherent weak-\(L^3\) ancestry reduction,
+   especially the proof-consistent critical-dilation repair in
+   Albritton--Barker Theorem 4.1 and the claim that mildness is used only to
+   enter the Barker--Seregin--Šverák stability class. If retained, exclude
+   the resulting detached profile or its forced terminal ancestry. Every
+   good time slice has bounded weak \(L^3\) but a fixed positive critical
+   Besov blow-down defect; the terminal trace produces
+   \(R_j\ll\rho_j\ll|x_j-x_*|\) with a nonzero velocity pairing. Evolve or
+   sum those ancestors, couple them to the escaped Type-I core, or find a
+   same-trajectory frequency-flux, terminal-regularity compactness, or
+   multiscale rigidity law.
 2. In parallel, prove or refute the exact no-neck estimate
    \[
    \sup_j\frac{|x_j-x_*|}{R_j}<\infty.

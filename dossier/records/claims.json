@@ -353,6 +353,50 @@
       "last_checked": "2026-07-23"
     },
     {
+      "id": "CLM-WEAK-L3-STABILITY-001",
+      "plain": "Weak L3-infinity solutions defined by a heat part plus an energy correction are stable under bounded weak-star convergence of their initial data.",
+      "formal": "If divergence-free initial data a_k converge weak-star to a in L3-infinity and v_k are Barker-Seregin-Sverak weak L3-infinity solutions launched from a_k, then a subsequence converges distributionally to a weak L3-infinity solution launched from a; the energy-correction bounds on each finite interval depend only on the common initial weak-L3 bound and elapsed time.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "Barker_Seregin_Sverak_weak_L3_infinity",
+      "assumptions": [
+        "Divergence-free initial data bounded and weak-star convergent in L3-infinity",
+        "The source heat-plus-energy decomposition",
+        "The source correction and local energy inequalities"
+      ],
+      "conclusion": "A subsequence converges to a weak L3-infinity solution with the limiting initial trace.",
+      "scaling": "critical",
+      "status": "established",
+      "source_ids": ["SRC-BARKER-SEREGIN-SVERAK-2018"],
+      "depends_on": [],
+      "audit": "This stability class is narrower than general local-energy suitability. A finite-energy Leray-Hopf solution restarted at a good time with datum in L3-infinity enters the class after subtracting the heat flow and verifying the correction energy inequality.",
+      "last_checked": "2026-07-23"
+    },
+    {
+      "id": "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+      "plain": "A mild weak-L3-controlled ancient solution whose terminal trace is sufficiently close to the critical-blow-down-vanishing Besov subspace is zero.",
+      "formal": "For every M there is epsilon(M)>0 such that an R3 mild ancient solution with L3-infinity norm at most M along times tending to minus infinity is identically zero if its terminal trace has dot-B-minus-one-infinity-infinity distance at most epsilon(M) from the subspace whose Navier-Stokes critical blow-downs lambda f(lambda dot) vanish distributionally.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "mild_ancient",
+      "assumptions": [
+        "Mild ancient solution on R3",
+        "A backward sequence with uniformly bounded weak L3 norm",
+        "The proof-consistent critical-dilation reading of the source blow-down subspace",
+        "Small terminal distance to that subspace"
+      ],
+      "conclusion": "The ancient solution vanishes identically.",
+      "scaling": "critical_Besov_blow_down",
+      "status": "established",
+      "source_ids": [
+        "SRC-ALBRITTON-BARKER-2019",
+        "SRC-BARKER-SEREGIN-SVERAK-2018"
+      ],
+      "depends_on": ["CLM-WEAK-L3-STABILITY-001"],
+      "audit": "Theorem 4.1 is peer reviewed, but the displayed source definition omits the critical amplitude factor that its own rescaling proof needs. This record uses the proof-consistent reading and exposes that notation repair for independent review. Extending the proof from mildness to an independently supplied coherent weak-L3 restart structure is a repository conditional theorem, not part of this imported claim.",
+      "last_checked": "2026-07-23"
+    },
+    {
       "id": "CLM-ANCIENT-L3-LIOUVILLE-001",
       "plain": "A mild ancient solution whose strong L3 norm stays bounded along one sequence of times tending to minus infinity is zero.",
       "formal": "If u is a mild ancient R3 solution and t_k decreases to minus infinity with supremum over k of ||u(t_k)||_L3 finite, then u is identically zero.",

@@ -116,6 +116,7 @@ From the repository root:
     make singular-clock-centering
     make terminal-satellite-tower
     make terminal-satellite-compactness
+    make terminal-besov-ancestry
     make strain
     make fetch-2607
     make compile-2607

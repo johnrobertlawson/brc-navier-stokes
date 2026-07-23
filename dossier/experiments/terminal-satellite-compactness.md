@@ -4,7 +4,7 @@
 - **Route:** ROUTE-R3B
 - **Status:** complete suitable-compactification reduction
 - **Domain:** \(\mathbb R^3\)
-- **Solution class:** one chosen global suitable finite-energy continuation,
+- **Solution class:** one chosen global suitable Leray--Hopf continuation,
   smooth before a first singular time
 - **Clay status:** unsolved
 - **Input:** [terminal satellite tower](terminal-satellite-tower.md)
@@ -40,7 +40,7 @@ and proves no regularity, blow-up, or Clay alternative A--D.
 
 ## 1. Conditional theorem
 
-Let \((v,p)\) be one global suitable finite-energy continuation on
+Let \((v,p)\) be one global suitable Leray--Hopf continuation on
 
 \[
 \mathbb R^3\times[0,\infty)
@@ -572,7 +572,16 @@ It does not close:
 5. bounded centering or transfer of the tensor detector into the core; or
 6. regularity, blow-up, or any Clay alternative A--D.
 
-The next exact gate is
+The subsequent
+[coherent weak-\(L^3\) ancestry theorem](terminal-besov-ancestry.md)
+closes the mildness-only formulation of this gate. It proves that the
+approximants pass the narrower Barker--Seregin--Šverák weak-\(L^3\)
+restart structure to the detached profile. The proof of the stronger
+Albritton--Barker Theorem 4.1 can then be rerun without first proving
+mildness, forcing a positive terminal Besov blow-down defect and a
+punctured intermediate ancestor scale.
+
+At this checkpoint, the next exact gate was
 
 \[
 \boxed{
