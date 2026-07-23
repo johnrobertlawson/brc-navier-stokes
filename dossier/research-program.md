@@ -180,6 +180,36 @@ trajectories, and scalar-envelope concentration is not matrix-propagator
 failure. One-trajectory cancellation, localisation, compactness, and
 suitability are the remaining gates.
 
+The
+[dynamic shear-adjoint test](experiments/dynamic-shear-adjoint.md) closes the
+first one-trajectory model. Exact planar Navier--Stokes shears have two fixed
+rank-one adjoint modes with signed potentials \(\pm U_y\). A natural Fourier
+stack produces genuine exponential full-norm amplification, so there is no
+operator-wide matrix cancellation; however that stack loses both uniform energy
+and the endpoint weak-\(L^{3/2}\) bound. Its unstable modes are also orthogonal
+to the axial terminal tensor. The identity detects that tensor and has an
+\(O(\eta)\) reaction at polar cutoff \(\eta\), becoming exactly neutral in the
+saturated limit. Full norm control can therefore be stronger than terminal
+detection. Under the endpoint bound, one-dimensional heat smoothing separately
+gives uniform Kato continuity with time power \(2/3\); the same power is exactly
+zero in three dimensions. The next target is the scalar trace carrier, then a
+joint-dynamics occupation gain or a transversely localised endpoint trajectory,
+followed separately by localisation, compactness, and suitability.
+
+The
+[scalar trace-adjoint reduction](experiments/tensor-trace-adjoint.md) then uses
+positivity: a nonzero terminal tensor always has positive trace. For
+\(h=\operatorname{tr}H\), the closed equation has stretching
+\(2h(1-h)\alpha_H\), where \(\alpha_H=(S:H)/h\) and
+\(|\alpha_H|\le|S|\). Its scalar backward adjoint has the amplitude-band
+potential \(2(1-h)\alpha_H\), preserves positivity, and leaves only
+\(\operatorname{tr}\mathcal R\) in duality. The exact cutoff trace remainder is
+\(2\nu(1-h_\eta)(\mathcal J_\eta-3\mathcal L_\eta)\). A new nonnegative trace
+content controls it and the trace gradient, is bounded by three times the
+projective-cross content, and can be strictly smaller. The live propagator gate
+is now scalar and detector-specific; unstable orthogonal matrix modes have been
+removed from terminal detection.
+
 ## Active campaign B — Certified unstable profiles
 
 Reproduce the Hou–Wang–Yang computer-assisted result independently before extending it.

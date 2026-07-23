@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can one-trajectory dynamics force uniform drifted Kato continuity of the effective tensor-adjoint growth, or supply a genuinely matrix-valued cancellation that bypasses that scalar envelope, and then provide localisation and compactness; failing that, can the actual propagator defect, projective-cross atom, and closed tensor-decorated ancient system be rigidly excluded while also producing suitability?",
+      "question": "Can the amplitude-band mixed-alignment potential in the exact scalar trace adjoint be propagated and localised uniformly from joint Navier-Stokes dynamics, or can an endpoint-bounded trajectory realise detector-relevant trace concentration; failing scalar propagation, can its signed trace defect and the remaining decorated ancient system be rigidly excluded with suitability?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "Uniform drifted Kato continuity or a genuine matrix cancellation supplies the adjoint norm, localisation, and compactness needed to carry the terminal tensor; alternatively, an actual propagator defect and the projective-cross atom are rigidly excluded, scale-local energy and pressure prove suitability, and rigidity excludes the closed decorated ancient object.",
-      "kill_criterion": "A Clay-admissible trajectory or nonzero suitable ancient limit whose Kato concentration is realised as failure of every usable backward tensor propagator and whose vacuum tensor with projective-cross defect survives outside every available rigidity class.",
+      "success": "Uniform propagation and localisation for the scalar trace potential carries the positive terminal trace while avoiding unstable orthogonal matrix modes; alternatively, its detector-relevant propagator defect and signed trace of the projective-cross atom are rigidly excluded, scale-local energy and pressure prove suitability, and rigidity excludes the remaining decorated ancient object.",
+      "kill_criterion": "A Clay-admissible trajectory or nonzero suitable ancient limit whose endpoint-bounded amplitude-band mixed alignment defeats the scalar trace carrier and whose nonzero trace defect and vacuum decoration survive outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

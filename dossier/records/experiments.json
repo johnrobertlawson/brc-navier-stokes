@@ -663,6 +663,65 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-SHEAR-ADJOINT-DYNAMICS-001",
+      "title": "Exact Navier-Stokes shear adjoint dynamics",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Exact time-dependent planar Navier-Stokes shears decide whether heat evolution or a fixed matrix mode separates true adjoint propagation from the scalar Kato envelope.",
+      "invariants": [
+        "The shear nonlinearity vanishes and its profile follows the one-dimensional heat equation",
+        "The cutoff-relative vorticity tensor is axial at every cutoff",
+        "Two fixed planar rank-one tensors are exact adjoint reaction modes with signed eigenvalues plus and minus the shear derivative",
+        "The amplified rank-one modes are orthogonal to the axial terminal tensor",
+        "The identity detects the axial tensor and its shear reaction has the sharp cutoff envelope eta over two per off-diagonal coefficient",
+        "The endpoint weak-L(3/2) bound yields a one-dimensional short-time Kato gain of power two thirds",
+        "A natural-scale Fourier stack gives one fixed expected signed reaction per scale and genuine adjoint amplification when the endpoint bound is removed",
+        "The Fourier stack is not a uniformly Clay-admissible family and does not exhibit Navier-Stokes blow-up",
+        "No general three-dimensional propagator or Clay regularity theorem is asserted"
+      ],
+      "method": "Reduce the exact tensor adjoint on a heat-evolving planar shear to invariant scalar modes, separate full operator norm from terminal-tensor detection, estimate the endpoint-constrained Kato mass through the one-dimensional heat semigroup, and compare it with a multiscale Fourier stack using Brownian characteristic functions and Jensen's inequality.",
+      "certificate": "A written exact-shear theorem and sharpness construction, plus Fraction tests for the matrix eigenmodes, tensor pairings, identity-reaction envelope, heat and Brownian decay rates, per-scale occupation, Kato time powers, and endpoint scaling loss.",
+      "success_criterion": "The exact-shear branch distinguishes operator-wide amplification from detector-specific cancellation, proves the strongest endpoint-constrained propagator statement available in that class, and identifies both the trace-detector alternative and the precise dimensional gain unavailable in the general three-dimensional endpoint estimate.",
+      "failure_interpretation": "The planar matrix modes are not invariant, heat evolution does not yield the claimed Kato power, the Fourier stack does not amplify the true adjoint, or the stack accidentally retains the uniform endpoint hypotheses.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/dynamic-shear-adjoint.md",
+        "lab/navier_lab/shear_adjoint.py",
+        "lab/tests/test_shear_adjoint.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-TRACE-ADJOINT-CARRIER-001",
+      "title": "Scalar terminal-trace adjoint carrier",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Positivity of the compact vacuum tensor permits its nonzero terminal witness to be carried by the scalar trace equation, avoiding unstable matrix modes that do not detect the tensor.",
+      "invariants": [
+        "The trace of a nonzero positive-semidefinite terminal tensor is positive",
+        "The exact trace stretching source is twice one minus trace H times S colon H",
+        "Dividing by positive trace defines a mixed aligned strain bounded by strain magnitude",
+        "The scalar trace-adjoint potential is twice one minus trace H times the mixed aligned strain",
+        "The exact trace Hessian remainder is twice viscosity times one minus trace H times projective energy minus three radial-log energy",
+        "The trace remainder is controlled by a strictly narrower nonnegative trace content",
+        "The scalar carrier leaves only the trace of the projective-cross defect in terminal duality",
+        "No uniform scalar propagator, defect exclusion, or Clay regularity theorem is asserted"
+      ],
+      "method": "Take the trace of the closed tensor equation, use positivity to normalise H by its trace, compute the scalar Hessian remainder in extended polar variables, derive the exact backward scalar adjoint and terminal duality, and compare its amplitude-band potential and defect content with the full matrix ledgers.",
+      "certificate": "A written trace equation and duality proof, exact radial-angular remainder decomposition, plus Fraction tests for source closure, mixed alignment, amplitude-band potential, remainder bounds, trace-gradient control, and scaling.",
+      "success_criterion": "The full six-component adjoint is replaced for terminal detection by a rigorously narrower scalar carrier, with its exact potential and retained defect identified without claiming that the remaining critical scalar propagation gate is closed.",
+      "failure_interpretation": "Trace fails to detect the positive terminal tensor, the stretching source does not scalarise, division by trace loses strain control, the Hessian trace formula is wrong, or scalar duality retains an unidentified matrix source.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/tensor-trace-adjoint.md",
+        "lab/navier_lab/trace_adjoint.py",
+        "lab/tests/test_trace_adjoint.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

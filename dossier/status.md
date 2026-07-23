@@ -184,6 +184,48 @@ and breakdown work
   Navier--Stokes trajectories, and the scalar-envelope defect is not a proof of
   matrix-propagator failure. One-trajectory matrix cancellation, localisation,
   and compactness remain open.
+- Exact time-dependent planar shears close the first one-trajectory adjoint test.
+  The fixed tensors
+  \((e_1\pm e_2)\otimes(e_1\pm e_2)\) are true adjoint modes with signed
+  potentials \(\pm U_y\), so there is no universal operator-wide matrix
+  cancellation. A natural Fourier scale stack produces one fixed expected
+  reaction per scale and exponential growth of the full adjoint norm, but its
+  energy and weak-\(L^{3/2}\) strain norm diverge across the family.
+- Those amplified modes are orthogonal to the axial terminal tensor. The
+  identity matrix detects that tensor, and its shear-reaction coefficient is
+  bounded sharply by \(\eta/2\) at cutoff \(\eta\); it is exactly neutral in the
+  saturated limit. Thus full operator-norm Kato control is sufficient but can be
+  stronger than terminal detection. The scalar trace carrier is now a live
+  alternative.
+- With the endpoint weak-\(L^{3/2}\) bound imposed, every exact planar shear has
+  uniform Kato continuity: one-dimensional heat smoothing gives
+  \(\kappa_{\gamma_+}(\delta)\lesssim M(\delta^{2/3}+\delta)\). The positive
+  \(2/3\) power collapses to zero at the
+  three-dimensional \(L^{3/2}\) endpoint. Transverse localisation is therefore
+  the exact unresolved transfer: it restores critical three-dimensional volume
+  but destroys the linear shear equation.
+- Positivity makes the full matrix adjoint unnecessary for terminal detection:
+  every nonzero positive-semidefinite terminal tensor has positive trace. Writing
+  \(h=\operatorname{tr}H\) and
+  \(\alpha_H=(S:H)/h\) gives the exact scalar equation
+  \[
+  (\partial_t+u\cdot\nabla-\nu\Delta)h
+  =
+  2h(1-h)\alpha_H-\operatorname{tr}\mathcal R,
+  \qquad
+  |\alpha_H|\le|S|.
+  \]
+  Its backward scalar adjoint has potential
+  \(2(1-h)\alpha_H\), preserves positivity, and leaves only
+  \(\operatorname{tr}\mathcal R\) in the terminal pairing.
+- At the cutoff level, the exact signed trace remainder is
+  \(2\nu(1-h_\eta)(\mathcal J_\eta-3\mathcal L_\eta)\). The nonnegative trace
+  content
+  \(\mathcal T_\eta=(1-h_\eta)(\mathcal J_\eta+3\mathcal L_\eta)\)
+  controls both that remainder and \(|\nabla h_\eta|^2\), satisfies
+  \(\mathcal T_\eta\le3\mathcal K_\eta\), and can be strictly smaller than the
+  full projective-cross content. It gives scalar trace compactness but not yet a
+  uniform propagator for the remaining critical potential.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -194,12 +236,12 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can one-trajectory dynamics force uniform drifted Kato continuity of the
-> effective tensor-adjoint growth, or provide a matrix cancellation that
-> bypasses the scalar envelope, and then supply localisation and compactness?
-> If not, can the actual propagator defect, projective-cross atom, and resulting
-> closed tensor-decorated ancient system be rigidly excluded while also
-> producing suitability?
+> Can joint Navier--Stokes dynamics uniformly propagate and localise the scalar
+> trace adjoint with amplitude-band potential
+> \(2(1-h)(S:H)/h\), or can an endpoint-bounded trajectory realise
+> detector-relevant trace concentration? If propagation fails, can the signed
+> trace defect and remaining decorated ancient system be rigidly excluded with
+> suitability?
 
 The coequal breakdown question remains:
 
@@ -208,26 +250,33 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive uniform drifted Kato continuity of the effective adjoint growth from
-   one-trajectory dynamics, or construct a matrix cancellation that propagates
-   the terminal detector despite failure of that sufficient scalar criterion.
-2. Prove scale-uniform localisation and compactness once the adjoint norm is
-   controlled; do not conflate this with the completed Khasminskii norm ledger.
-3. Classify ancient solutions of the closed tensor defect equation, including a
-   nonzero vacuum tensor and matrix-valued projective-cross measure.
-4. If the adjoint cannot be controlled, test a summable amplitude-band
+1. Derive uniform Kato continuity or another scalar maximum estimate for
+   \(2(1-h)(S:H)/h\), retaining the amplitude-band factor before using
+   \(|S|\).
+2. Test whether an endpoint-bounded one-trajectory cell can concentrate that
+   mixed aligned potential; axial shear and modes orthogonal to \(H\) are no
+   longer relevant counterexamples.
+3. Prove scale-uniform scalar localisation once its norm is controlled, then
+   decide which orientation information is still needed for rigidity.
+4. Determine whether bounded trace content
+   \(\mathcal T_\eta\), rather than full projective-cross content, can be
+   derived from the available logarithmic magnitude balance or an
+   amplitude-band flux.
+5. Classify ancient solutions of the scalar trace defect equation together with
+   any orientation decoration still required for rigidity.
+6. If the adjoint cannot be controlled, test a summable amplitude-band
    transition flux as the remaining route to bounded projective-cross content.
-5. Upgrade the nonzero ancient distributional bubble to a suitable object using
+7. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.
-6. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+8. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.
-7. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
+9. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
-8. Determine the weakest oscillation modulus whose commutator gain still outruns the
+10. Determine the weakest oscillation modulus whose commutator gain still outruns the
    analytic radius.
-9. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
+11. Fetch and inventory the Hou–Wang–Yang public code and numerical certificates.
 
 ## Interpretation
 

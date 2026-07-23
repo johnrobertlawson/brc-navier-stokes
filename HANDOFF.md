@@ -1,6 +1,6 @@
-# Handoff: test one-trajectory adjoint Kato continuity
+# Handoff: test the scalar terminal-trace carrier
 
-**Updated:** 2026-07-23T10:46:07Z
+**Updated:** 2026-07-23T11:13:38Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -56,16 +56,36 @@ F:\bigl(SF+FS-2(F:H)S\bigr).
 Uniform short-time drifted Kato smallness of \(\gamma_+\) gives the adjoint
 \(L^\infty\) bound by Khasminskii iteration. Endpoint weak-\(L^{3/2}\), positive
 aligned strain, and instantaneous Biot--Savart coupling do not imply that
-sufficient condition: compact coefficient stacks retain a Kato concentration
-defect. They are not Navier--Stokes trajectories, and the scalar defect does not
-prove matrix-propagator failure.
+sufficient condition for arbitrary coefficient families.
 
-The live gate is therefore one-trajectory Kato continuity or a genuinely
-matrix-valued cancellation that bypasses it, followed separately by
-localisation and compactness. Amplitude-band flux, terminal-atom rigidity, and
-closed ancient-system rigidity remain alternatives. Spatial dust, scalar
-entropy, terminal graph support, and an unidentified stretching correlation are
-closed branches. The regularity target remains
+Exact time-dependent planar Navier--Stokes shears decide the first
+one-trajectory test. Two fixed rank-one tensors are true adjoint modes with
+potentials \(\pm U_y\), and a natural Fourier stack genuinely amplifies the
+full matrix-propagator norm. There is no universal operator-wide cancellation.
+Those unstable modes are orthogonal to the axial terminal tensor. The identity
+detects that tensor and has an \(O(\eta)\) shear reaction at polar cutoff
+\(\eta\), becoming exactly neutral in the saturated limit. That stack loses
+uniform energy and endpoint bounds. With the endpoint bound imposed, every exact
+planar shear instead has
+\(\kappa_{\gamma_+}(\delta)\lesssim M(\delta^{2/3}+\delta)\) by
+one-dimensional heat smoothing.
+
+The trace reduction is now exact. With
+\(h=\operatorname{tr}H\) and
+\(\alpha_H=(S:H)/h\), the scalar potential is
+\[
+V_H=2(1-h)\alpha_H,
+\qquad
+|\alpha_H|\le|S|.
+\]
+Its duality retains only \(\operatorname{tr}\mathcal R\). The live gate is
+uniform propagation of this amplitude-band scalar potential, or an
+endpoint-bounded trajectory realising detector-relevant trace concentration.
+Localisation and compactness follow as separate gates.
+Amplitude-band flux, terminal-atom rigidity, and closed ancient-system rigidity
+remain alternatives. Spatial dust, scalar entropy, terminal graph support, and
+an unidentified stretching correlation are closed branches. The regularity
+target remains
 
 \[
 \widehat a_\lambda^+
@@ -79,13 +99,15 @@ closed branches. The regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/adjoint-kato-defect.md`;
-3. sections 3--8 of `dossier/experiments/tensor-adjoint-closure.md`;
-4. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` for the
+2. `dossier/experiments/tensor-trace-adjoint.md`;
+3. `dossier/experiments/dynamic-shear-adjoint.md`;
+4. `dossier/experiments/adjoint-kato-defect.md`;
+5. sections 3--8 of `dossier/experiments/tensor-adjoint-closure.md`;
+6. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` for the
    antecedent projective-cross content;
-5. section 7 of `dossier/experiments/terminal-vacuum-orientation.md` for the
+7. section 7 of `dossier/experiments/terminal-vacuum-orientation.md` for the
    terminal tensor and its antecedent equation; and
-6. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when the
+8. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when the
    existing strong velocity compactness is needed.
 
 Completed static results:
@@ -924,19 +946,142 @@ Navier--Stokes trajectory. Because the maximising matrix direction can rotate,
 their scalar Kato concentration is not a matrix-propagator lower bound.
 Localisation and compactness also remain unproved even if the norm is bounded.
 
+Completed exact dynamic-shear test:
+
+> For
+> \[
+> u(x,t)=U(x_2,t)e_1,
+> \qquad
+> U_t=\nu U_{22},
+> \]
+> the tensors
+> \[
+> E_\pm=(e_1\pm e_2)\otimes(e_1\pm e_2)
+> \]
+> obey
+> \[
+> \mathscr G^*_{S,H_\eta}(E_\pm)=\pm U_2E_\pm
+> \]
+> for every cutoff. Thus \(F=fE_+\) reduces the actual matrix adjoint to
+> \[
+> -f_t-\nu f_{22}=U_2f.
+> \]
+
+For the exact Fourier shear stack
+
+\[
+U_{m,N}(y,t)
+=
+\sum_{j=m}^{m+N-1}
+4^j e^{-\nu16^jt}\sin(4^jy),
+\]
+
+Brownian characteristic decay and heat decay match. On one largest natural
+time, Jensen gives the true propagator lower bound
+
+\[
+\frac{\|F(0)\|_\infty}{\|F(T)\|_\infty}
+\ge
+\exp\left(\frac{N}{1+2\nu}\right).
+\]
+
+The Kato mass has the matching linear lower bound. Hence there is no universal
+operator-norm matrix cancellation. The amplified tensors are orthogonal to
+\(H_\eta\), while
+
+\[
+I:H_\eta=\operatorname{tr}H_\eta,
+\qquad
+\mathscr G^*_{S,H_\eta}(I)=2(1-\operatorname{tr}H_\eta)S.
+\]
+
+In the shear, each off-diagonal reaction coefficient is bounded sharply by
+\(\eta/2\). Thus the identity is a stable detector as the cutoff vanishes and
+is exactly neutral for the saturated tensor. The Fourier stack has unbounded
+energy and endpoint norm and is a globally smooth periodic solution family, not
+a blow-up construction.
+
+Under a uniform weak-\(L^{3/2}\) endpoint bound, exact planar shears instead obey
+
+\[
+\kappa_{\gamma_+}(\delta)
+\lesssim
+M(\delta^{2/3}+\delta).
+\]
+
+The gain comes from the one-dimensional heat estimate
+\(L^{3/2,\infty}\to L^\infty\) with singularity
+\(\tau^{-1/3}\). In dimension three the singularity is \(\tau^{-1}\) and the
+positive time power is exactly zero. A planar inverse-square cell localised only
+in its active coordinate has weak-\(L^{3/2}\) radius power \(-4/3\); a
+three-dimensional ball has the critical power \(0\). Transverse localisation
+restores the endpoint volume but destroys the exact shear equation.
+
+Completed scalar terminal-trace carrier:
+
+> Every nonzero positive-semidefinite terminal tensor has positive trace. For
+> \(h_\eta=\operatorname{tr}H_\eta\),
+> \[
+> (\partial_t+u\cdot\nabla-\nu\Delta)h_\eta
+> =
+> 2h_\eta(1-h_\eta)\alpha-\rho_\eta,
+> \]
+> with
+> \[
+> \rho_\eta
+> =
+> 2\nu(1-h_\eta)
+> (\mathcal J_\eta-3\mathcal L_\eta).
+> \]
+> The backward scalar equation with potential
+> \(2(1-h_\eta)\alpha\) cancels the stretching source and leaves only
+> \(-\int\varphi\,d\rho_\eta\) in terminal duality.
+
+Under strong tensor compactness, define
+
+\[
+\alpha_H
+=
+\frac{S:H}{\operatorname{tr}H}
+\quad\hbox{on }\{\operatorname{tr}H>0\}.
+\]
+
+Then \(|\alpha_H|\le|S|\), and the limiting scalar potential is
+\(2(1-h)\alpha_H\). Scalar positivity replaces the false
+positive-semidefinite matrix maximum principle. The axial shear counterexamples
+have \(S:H=0\) and do not obstruct this carrier.
+
+The nonnegative trace content
+
+\[
+\mathcal T_\eta
+=
+(1-h_\eta)
+(\mathcal J_\eta+3\mathcal L_\eta)
+\]
+
+controls both \(|\rho_\eta|\) and \(|\nabla h_\eta|^2\), satisfies
+\(\mathcal T_\eta\le3\mathcal K_\eta\), and can be arbitrarily smaller than the
+full projective-cross content. Bounded trace content gives strong scalar trace
+compactness. It does not by itself identify the mixed aligned strain without
+the existing strong tensor topology.
+
 Next deliverable:
 
-> Test the scalar-versus-matrix gap on an exact time-dependent Navier--Stokes
-> shear, where the nonlinear term vanishes and the shear follows the heat
-> equation. Compute the matrix propagator, the effective Kato mass, and their
-> scale-stack behaviour before attempting a compact finite-energy transfer.
-> A separation would identify a genuine matrix cancellation; no separation
-> would isolate the dynamic Kato estimate one-trajectory structure must prove.
-> Then address localisation and compactness as a separate theorem. If both
-> routes fail, retain an actual propagator defect or test amplitude-band flux
-> and decorated ancient rigidity. In parallel, establish the
-> pressure/dissipation passage needed for suitability. Do not treat the
-> coefficient Kato defect as propagator failure, and do not return to
+> Propagate the scalar trace detector. Split the amplitude factor into saturated,
+> transition, and low-trace bands before bounding
+> \[
+> [2(1-h)\alpha_H]_+.
+> \]
+> The saturated band has a small coefficient; the low-trace band has little
+> detector mass; the transition band \(|\omega|\asymp\eta\) is the exact
+> obstruction. Determine whether one-trajectory amplitude flux or the
+> logarithmic magnitude balance gives uniform Kato continuity on that band, or
+> construct an endpoint-bounded positive-alignment trajectory that defeats it.
+> Then prove scalar localisation. Do not return to the full matrix norm unless
+> the scalar carrier is genuinely defeated. Do not use unstable modes
+> orthogonal to the terminal tensor as a detector obstruction, do not treat
+> nonuniform shear amplification as a Clay counterexample, and do not return to
 > instantaneous Biot--Savart coercivity, adjoint positivity, an unidentified
 > stretching correlation, a single scalar entropy, full polar Fisher as if
 > sharp, or the raw \(\Delta\omega/|\omega|\) equation.
