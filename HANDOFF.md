@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T21:15:12Z
+**Updated:** 2026-07-23T21:56:36Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -342,6 +342,39 @@ a weak-\(L^3\) backward-uniqueness observable replacing both.
 validated the transform, \(L^q\) signs, scale-direction repair, periodic
 pressure certificate, class boundaries, and higher-integrability packet
 power in exactly this stated scope.
+
+The parabolic-hull lift is now closed conditionally. Dilations with
+rational squared factors pull every rational output clock back to one of
+the outer profile's coherent rational weak-\(L^3\) restarts.
+Barker--Seregin--Šverák stability compactifies that dense skeleton; a
+near-identity scaling argument closes arbitrary factors. The complete
+parabolic dilation orbit is therefore precompact in local spacetime
+\(L^3\), terminal distributions, and local weak pressure. Its closure is a
+compact hull of ancient suitable trajectories with a jointly continuous
+multiplicative scaling action, continuous terminal evaluation, and
+scaling-invariant probability measures.
+
+Nontriviality of those measures is the new exact obstruction. A sparse
+degree-minus-one swirl with smooth log-shells centred at
+\(\{\pm n^2\}\) has both weak critical endpoints, one spatial
+non-locally-bounded point, no scale period, and the same positive
+Albritton--Barker quotient distance at every finite dilation. Midgap
+dilations nevertheless converge to zero in distributions, and only
+\(O(\sqrt T)\) shells cross a compact detector through logarithmic time
+\(T\). The forward empirical probabilities of this orbit converge to
+\(\delta_0\).
+This field is kinematic, not Navier--Stokes. It proves that the currently
+retained terminal defect does not by itself give an invariant probability
+with positive mass off the zero trajectory. The next step must force
+positive log-scale density/tightness from the PDE or retain the escaping
+Besov scale as a same-trajectory decoration before applying the
+pressure-flux balance.
+[Independent adversarial review](dossier/review-response-parabolic-scale-hull-2026-07-23.md)
+found the conditional compactness theorem and kinematic countermodel valid
+in scope after the invariant-probability terminology and empirical-measure
+scope were tightened. It separately checked the rational diagonal,
+near-identity transfer, pressure gauge, group action, quotient separation,
+midpoint escape, and \(O(\sqrt T)\) occupation estimate.
 Bounded-centering tensor/frequency transfer remains the other branch.
 
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent
@@ -2162,19 +2195,21 @@ Completed terminal alignment-excess reduction:
 
 Next deliverable:
 
-> For the active scale-hull branch, first lift the terminal hull to a
-> compact coherent hull of the complete parabolic dilations
-> \(a\,u(a\,\cdot,a^2\,\cdot)\). Control
-> \(a[u(a\,\cdot,-a^2)-u(a\,\cdot,0)]\) where appropriate or keep that
-> increment as part of the dynamical state; do not conflate the
-> \(a\downarrow0\) trace direction with the \(a\uparrow\infty\) remote-past
-> ancestry direction. Then derive a
-> localised critical pressure-work or signed-flux balance whose invariant
-> average is strictly coercive in weak \(L^3\). Do not use the global
+> The unmarked full-parabolic-hull lift is now proved. First determine
+> whether Navier--Stokes dynamics force an invariant probability distinct
+> from \(\delta_0\), or a positive logarithmic density of one fixed local
+> observable. If not,
+> construct a compact marked hull retaining the scale that realises the
+> Albritton--Barker defect together with its complete parabolic graph.
+> The sparse quadratic log-shell model shows that the unmarked quotient
+> distance can remain positive at every finite scale while its displayed
+> forward empirical probabilities collapse to \(\delta_0\). Apply the
+> local pressure-work balance
+> only after this nontrivial-measure gate is closed. Do not use the global
 > \(L^3\) identity: the retained profile is outside strong \(L^3\).
 > Ordinary recurrence, the \(L^2\) similarity balance, instantaneous
 > pressure Poisson algebra, and the known small \(L^{2+\delta}\) gradient
-> gain have now been audited and do not supply this conclusion.
+> gain have already been audited and do not supply this conclusion.
 >
 > First test the synchronized event sequence itself: determine whether
 > one-trajectory clock geometry, a finite-secondary-index estimate, a

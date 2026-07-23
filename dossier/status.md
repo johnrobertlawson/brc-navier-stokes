@@ -880,6 +880,30 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > found the revised audit valid in scope after checking the transform,
 > \(L^q\) signs, opposite scale directions, pressure modes, class
 > boundaries, and packet power;
+> the subsequent
+> [parabolic scale-hull theorem](experiments/parabolic-scale-hull.md)
+> closes the unmarked lift. Rational-square dilations synchronize every
+> rational output clock with the coherent rational restart set.
+> Barker--Seregin--Šverák stability compactifies that dense skeleton, and
+> near-identity dilation closes arbitrary factors. The orbit closure is a
+> compact hull of ancient suitable trajectories with a continuous scaling
+> flow and invariant probability measures. Orbit-generated invariant
+> probabilities need not differ from \(\delta_0\): an exact
+> degree-minus-one swirl with smooth shells at signed
+> quadratic log radii retains both weak endpoints, one spatial
+> non-locally-bounded point, aperiodicity, and fixed positive
+> Albritton--Barker quotient distance along every finite dilation, while
+> midgap dilations tend to zero and the forward empirical probabilities
+> of this orbit tend to \(\delta_0\). This is kinematic, not
+> Navier--Stokes. The next gate is
+> positive log-scale density/tightness for the PDE hull or a compact
+> defect-marked parabolic hull;
+> [independent review](review-response-parabolic-scale-hull-2026-07-23.md)
+> found the conditional theorem and kinematic countermodel valid in scope
+> after tightening the invariant-probability and empirical-measure
+> language. It checked the rational diagonal, arbitrary-scale transfer,
+> pressure normalisation, compact group action, quotient separation,
+> midpoint escape, and \(O(\sqrt T)\) detector occupation;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -893,13 +917,17 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Lift the terminal dilation hull to a compact coherent hull of the
-   complete parabolic dilations \(a\,u(a\,\cdot,a^2\,\cdot)\). Control
-   \(a[u(a\,\cdot,-a^2)-u(a\,\cdot,0)]\) where appropriate or retain it
-   as part of the state. Do not conflate \(a\downarrow0\), where ordinary
-   trace continuity is too weak at the moving scale, with
-   \(a\uparrow\infty\), which samples the remote ancient past.
-2. Derive a localised, same-trajectory, critical pressure-work or signed
+1. Prove that the compact Navier--Stokes parabolic scaling hull carries an
+   invariant probability distinct from \(\delta_0\), or a positive
+   logarithmic density of one fixed local observable. If ordinary local
+   topology cannot retain it,
+   construct a compact marked hull carrying the escaping
+   Albritton--Barker scale together with its complete parabolic graph.
+   The unmarked hull and invariant measures now exist, but the sparse
+   quadratic log-shell model shows that the quotient defect alone can
+   average entirely into \(\delta_0\).
+2. On that nontrivial or marked hull, derive a localised,
+   same-trajectory, critical pressure-work or signed
    flux law whose invariant average strictly absorbs its positive
    dissipation in weak \(L^3\), or replace it by a backward-uniqueness
    observable. The global \(L^3\) identity is unavailable, its formal

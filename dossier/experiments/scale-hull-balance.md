@@ -458,3 +458,12 @@ The surviving dynamical target is now narrower:
 The exact ledgers for (9), (21), (24), and (26) are implemented in
 `lab/navier_lab/scale_hull_balance.py` and checked in
 `lab/tests/test_scale_hull_balance.py`.
+
+The subsequent
+[parabolic scale-hull theorem](parabolic-scale-hull.md) closes the
+unmarked full-trajectory lift. It also shows that invariant-measure
+existence must not be confused with nontriviality: a sparse log-shell
+countermodel retains positive quotient defect at every finite dilation
+while its forward logarithmic empirical probabilities converge to
+\(\delta_0\). Positive off-zero recurrence or a tight defect decoration
+now precedes use of (15).
