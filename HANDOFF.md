@@ -1,6 +1,6 @@
 # Handoff: exploit same-trajectory alignment against terminal trace excess
 
-**Updated:** 2026-07-23T13:22:06Z
+**Updated:** 2026-07-23T13:29:47Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -227,6 +227,29 @@ Moreover,
 Thus nonzero \(\mathfrak A_0\) forces a terminal projective-cross atom whenever
 \(\mathcal K_{\eta_n}\) is tight. The signed alignment excess is genuinely
 new only in the non-tight branch.
+
+Ordinary smooth zero strata are not carriers in that branch. For the
+codimension-\(m\) transverse model
+
+\[
+H_\varepsilon(z)
+=
+\frac{z\otimes z}{|z|^2+\varepsilon^2},
+\]
+
+the full matrix kernel \(\Delta H_\varepsilon\), paired with any constant
+detector and angularly averaged, is the radial derivative of
+
+\[
+\frac{2\operatorname{tr}D_N}{m}
+\frac{\varepsilon^2r^m}{(r^2+\varepsilon^2)^2}.
+\]
+
+This primitive vanishes at zero and infinity for \(m=1,2,3\). Invertible
+anisotropic transverse linearisations have the same zero total signed tensor
+mass by divergence and homogeneity. A nonzero non-tight
+\(\mathfrak A_0\) must therefore use a sequence-dependent or temporally
+degenerate zero profile.
 
 The boundary and scalar-renormalisation audits remain useful scope controls:
 averaged band flux is paid by \(\mathcal J_\eta\), no bounded detector can
@@ -1405,6 +1428,12 @@ Completed terminal alignment-excess reduction:
 > dominated by
 > \(8\nu\|F_n(0)\|_{\mathrm{op}}^2\mathcal K_{\eta_n}\), so nonzero excess
 > forces a terminal projective-cross atom.
+>
+> The full tensor kernel of every smooth transverse linear zero has zero
+> signed mass against every constant detector. Its radial primitive is
+> \(2(\operatorname{tr}D_N/m)\varepsilon^2r^m/(r^2+\varepsilon^2)^2\),
+> whose endpoint powers vanish in codimensions one through three. Only
+> sequence-dependent or temporally degenerate zero profiles remain.
 
 Next deliverable:
 

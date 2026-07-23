@@ -3,6 +3,7 @@ import unittest
 
 from navier_lab.terminal_alignment_excess import (
     alignment_excess_l1_dual_constant,
+    angular_averaged_tensor_zero_density,
     anisotropic_hessian_correction,
     anisotropy_projective_cross_bound,
     contracted_tensor_hessian,
@@ -13,7 +14,13 @@ from navier_lab.terminal_alignment_excess import (
     rayleigh_square_lower_bound,
     squared_detector_projective_cross_constant,
     squared_detector_pairing,
+    tensor_zero_flux_infinity_power,
+    tensor_zero_flux_primitive_derivative,
+    isotropic_tensor_zero_kernel,
     weighted_trace_hessian,
+)
+from navier_lab.terminal_trace_excess import (
+    isotropic_zero_stratum_kernels,
 )
 
 
@@ -349,6 +356,59 @@ class TerminalAlignmentExcessTests(unittest.TestCase):
             envelope,
         )
 
+    def test_tensor_zero_kernel_trace_matches_scalar_remainder(self) -> None:
+        samples = {
+            1: (Fraction(3, 5),),
+            2: (Fraction(3, 5), Fraction(4, 5)),
+            3: (
+                Fraction(1, 3),
+                Fraction(2, 3),
+                Fraction(2, 3),
+            ),
+        }
+        for codimension, coordinates in samples.items():
+            matrix = isotropic_tensor_zero_kernel(
+                codimension,
+                coordinates,
+            )
+            radius_squared = sum(
+                coordinate**2 for coordinate in coordinates
+            )
+            self.assertEqual(
+                sum(matrix[index][index] for index in range(3)),
+                2
+                * isotropic_zero_stratum_kernels(
+                    codimension,
+                    radius_squared,
+                )["normalised_remainder"],
+            )
+
+    def test_tensor_zero_signed_density_is_exact_boundary_flux(
+        self,
+    ) -> None:
+        for codimension in (1, 2, 3):
+            for radius in (
+                Fraction(0),
+                Fraction(2, 5),
+                Fraction(7, 3),
+            ):
+                self.assertEqual(
+                    angular_averaged_tensor_zero_density(
+                        codimension,
+                        radius,
+                        Fraction(11, 4),
+                    ),
+                    tensor_zero_flux_primitive_derivative(
+                        codimension,
+                        radius,
+                        Fraction(11, 4),
+                    ),
+                )
+            self.assertLess(
+                tensor_zero_flux_infinity_power(codimension),
+                0,
+            )
+
     def test_invalid_inputs_are_rejected(self) -> None:
         matrix = (
             (Fraction(1), Fraction(0), Fraction(0)),
@@ -397,6 +457,13 @@ class TerminalAlignmentExcessTests(unittest.TestCase):
                 Fraction(0),
                 Fraction(0),
             )
+        with self.assertRaises(ValueError):
+            isotropic_tensor_zero_kernel(
+                2,
+                (Fraction(1),),
+            )
+        with self.assertRaises(ValueError):
+            tensor_zero_flux_infinity_power(4)
 
 
 if __name__ == "__main__":

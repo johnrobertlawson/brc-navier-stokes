@@ -190,6 +190,98 @@ def squared_detector_projective_cross_constant() -> Fraction:
     )
 
 
+def validate_spatial_codimension(codimension: int) -> None:
+    if codimension not in (1, 2, 3):
+        raise ValueError("codimension must be one, two, or three")
+
+
+def isotropic_tensor_zero_kernel(
+    codimension: int,
+    coordinates: tuple[Fraction, ...],
+) -> Matrix:
+    """Return Delta[z tensor z/(1+|z|^2)] embedded in three dimensions."""
+    validate_spatial_codimension(codimension)
+    if len(coordinates) != codimension:
+        raise ValueError("coordinate count must equal codimension")
+    radius_squared = sum(
+        (coordinate**2 for coordinate in coordinates),
+        Fraction(0),
+    )
+    denominator = 1 + radius_squared
+    padded = coordinates + (Fraction(0),) * (3 - codimension)
+    return tuple(
+        tuple(
+            (
+                Fraction(2) / denominator
+                if row == column and row < codimension
+                else Fraction(0)
+            )
+            - 2
+            * (
+                codimension * radius_squared
+                + codimension
+                + 4
+            )
+            * padded[row]
+            * padded[column]
+            / denominator**3
+            for column in range(3)
+        )
+        for row in range(3)
+    )  # type: ignore[return-value]
+
+
+def angular_averaged_tensor_zero_density(
+    codimension: int,
+    radius: Fraction,
+    detector_normal_trace: Fraction,
+) -> Fraction:
+    """Return the sphere-averaged radial density, without sphere area."""
+    validate_spatial_codimension(codimension)
+    if radius < 0:
+        raise ValueError("radius must be nonnegative")
+    return (
+        2
+        * detector_normal_trace
+        / codimension
+        * radius ** (codimension - 1)
+        * (
+            codimension
+            + (codimension - 4) * radius**2
+        )
+        / (1 + radius**2) ** 3
+    )
+
+
+def tensor_zero_flux_primitive_derivative(
+    codimension: int,
+    radius: Fraction,
+    detector_normal_trace: Fraction,
+) -> Fraction:
+    """Differentiate 2*tr(D_N)/m*r^m/(1+r^2)^2 exactly."""
+    validate_spatial_codimension(codimension)
+    if radius < 0:
+        raise ValueError("radius must be nonnegative")
+    return (
+        2
+        * detector_normal_trace
+        / codimension
+        * (
+            codimension
+            * radius ** (codimension - 1)
+            * (1 + radius**2)
+            - 4 * radius ** (codimension + 1)
+        )
+        / (1 + radius**2) ** 3
+    )
+
+
+def tensor_zero_flux_infinity_power(codimension: int) -> Fraction:
+    """Return m-4 for the far-field flux r^m/(1+r^2)^2."""
+    validate_spatial_codimension(codimension)
+    return Fraction(codimension - 4)
+
+
 def rayleigh_square_lower_bound(
     trace_lower_bound: Fraction,
     alignment_lower_bound: Fraction,
@@ -320,6 +412,8 @@ def report() -> str:
             f"{anisotropy_projective_cross_bound(Fraction(5), Fraction(2, 3), Fraction(4, 7))}",
             f"squared-detector K-envelope constant:  "
             f"{squared_detector_projective_cross_constant()}",
+            f"codim-3 tensor zero-flux infinity power: "
+            f"{tensor_zero_flux_infinity_power(3)}",
             "",
             "The squared finite-band detector is positive semidefinite.",
             "Positive terminal Rayleigh alignment gives at least one half.",

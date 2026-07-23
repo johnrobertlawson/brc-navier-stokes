@@ -380,6 +380,23 @@ and breakdown work
   Hence in the projective-cross-tight branch, nonzero
   \(\mathfrak A_0\) already forces a terminal \(\mu_{\mathcal K}\)-atom; the
   bounded signed alignment excess is new only in the non-tight branch.
+- Ordinary smooth zero geometry does not carry that non-tight excess. For an
+  isotropic transverse codimension-\(m\) zero,
+  \[
+  H_\varepsilon(z)=\frac{z\otimes z}{|z|^2+\varepsilon^2},
+  \]
+  and the angular average of
+  \(D:\Delta H_\varepsilon\), including the radial Jacobian, is the derivative
+  of
+  \[
+  \frac{2\operatorname{tr}D_N}{m}
+  \frac{\varepsilon^2r^m}{(r^2+\varepsilon^2)^2}.
+  \]
+  Its endpoint powers vanish in codimensions one, two, and three, so the total
+  signed tensor mass is zero for every constant detector. The same follows
+  for invertible anisotropic linearisations by divergence and homogeneity.
+  Only sequence-dependent or temporally degenerate zero profiles can carry
+  nonzero \(\mathfrak A_0\).
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -415,6 +432,9 @@ The coequal breakdown question remains:
 3. Determine whether bounded projective-cross content makes the directional
    weight compact enough to reduce the weighted concentration to
    \(\mathfrak E_0\); do not replace either signed remainder by variation.
+4. Classify sequence-dependent or temporally degenerate zero profiles beyond
+   the now-closed smooth transverse-linear class, preserving cancellation
+   between weighted trace and anisotropic projective-cross terms.
 4. Formulate the minimal ancient system decorated by
    \(\mathfrak E_0\). Use
    \(\mu_{\mathcal J,0}\) only in the independently tight branch.
