@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can same-solution Navier-Stokes coupling charge every natural-clock parabolic stress cascade and initial heat-tail defect to critical vorticity or scale-local dissipation, then upgrade the surviving ancient bubble to a rigid suitable object?",
+      "question": "Can the now nonzero natural-band child propagate positive vorticity-strain alignment over one natural time, acquire a suitable local-energy trace, and enter a rigidity class?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "A same-solution stress-vorticity or dissipation estimate eliminates every parabolic cascade and heat-tail defect, propagates the positive commutator witness, and suitability plus rigidity excludes the surviving ancient object.",
-      "kill_criterion": "A Clay-admissible trajectory or measure-decorated ancient suitable limit retaining a self-consistent nonzero parabolic stress-cascade, heat-tail, or commutator-variation defect.",
+      "success": "A finite-natural-band direction estimate propagates positive alignment, a scale-local energy and pressure estimate proves suitability, and rigidity excludes the resulting nonzero ancient object.",
+      "kill_criterion": "A Clay-admissible trajectory or nonzero measure-decorated ancient suitable limit retaining a positive directional diffusion or rotation defect outside every available rigidity class.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

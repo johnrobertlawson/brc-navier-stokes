@@ -866,8 +866,14 @@ stress recombines into one order-zero multiplier, so an unavoidable logarithmic
 loss is false. A smooth local forced-parabolic cascade proves that arbitrary
 critical stress size still gives no terminal modulus. The example is not
 Navier--Stokes and its naive velocity realisation violates the critical vorticity
-bound; same-solution stress--vorticity coupling or scale-local dissipation is now
-the precise unresolved gate.
+bound; this isolates the same-solution stress--vorticity gate. The
+[same-solution granularity theorem](same-solution-granularity.md) supplies that
+spatial gate under the repaired endpoint hypothesis: the curl-controlled stress
+has a \(K^{-1/2}\) shell gain, terminal high-frequency witness content vanishes,
+and the remaining natural band has a finite cover. Thus the abstract Riesz dust
+cannot be realised by the same endpoint-controlled Navier--Stokes velocity. The
+unresolved variation is now the temporal alignment of the selected nonzero child,
+not its spatial granularity.
 
 This is a clock correction, an exact persistence/variation dichotomy, and a
 structure-only counterexample. It is not a regularity theorem and not a Clay

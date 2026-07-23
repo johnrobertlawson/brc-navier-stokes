@@ -105,8 +105,20 @@ and breakdown work
   cascade supported in one natural ball has stress tending to zero in
   \(L^\infty_tL^{3/2}_x\) while its terminal weak-\(L^{3/2}\) response stays
   positive. This is not a Navier--Stokes solution: a naive same-velocity
-  realisation violates the vorticity endpoint by \(J^{1/3}\). The exact frontier
-  is now a same-solution stress--vorticity or scale-local dissipation estimate.
+  realisation violates the vorticity endpoint by \(J^{1/3}\). This isolated the
+  same-solution stress--vorticity gate addressed next.
+- Same-solution coupling supplies that spatial estimate under the repaired
+  endpoint hypothesis. Biot--Savart puts one velocity shell in weak \(L^2\) with
+  a \(K^{-1/2}\) gain, so every stress shell lies in weak \(L^{6/5}\) with the
+  same gain. After one natural time, terminal high-frequency strain witness
+  content decays as \(M^{-3/5}\); the remaining natural band has a
+  scale-invariant finite cover. A positive-stretching witness therefore retains
+  fixed mass in one natural ball before the atomless/atomic split, excluding a
+  purely diffuse or singular-continuous terminal defect as well. Its natural
+  rescaling has a nonzero bounded-frequency
+  terminal trace. Spatial dispersion, arbitrary stress cascade, and a zero ancient
+  distributional limit are closed inside the conditional chain. Temporal
+  alignment and suitability are not.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -117,10 +129,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can same-solution Navier--Stokes coupling charge every natural-clock parabolic
-> stress cascade and initial heat-tail defect to critical vorticity or scale-local
-> dissipation, then upgrade the surviving ancient limit to a suitable object that
-> rigidity can exclude?
+> Can the nonzero finite-natural-band child propagate positive vorticity--strain
+> alignment over one natural time, acquire a suitable local-energy trace, and
+> enter a rigidity class?
 
 The coequal breakdown question remains:
 
@@ -129,17 +140,13 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Frequency-split \(u\otimes u\) and \(\nabla\times u\) jointly on
-   \(B_{C\sigma^{-1/2}}\times[-c/\sigma,0]\). Test whether every fixed-height
-   stress cascade is charged either to the simultaneous critical vorticity or to
-   scale-local dissipation. Keep the initial high-frequency heat tail explicit.
-2. If the parabolic cascade or natural-clock variation cannot be made small,
-   retain it as a spacetime
-   defect measure and test whether the fact that both commutator inputs come from
-   the same vorticity excludes the abstract Riesz dust.
-3. Upgrade any surviving ancient distributional bubble to a suitable object using a uniform
-   scale-local dissipation/pressure estimate, then test backward uniqueness and
-   local-energy rigidity without discarding its defect decoration.
+1. Derive the finite-band evolution of the aligned direction on the selected
+   natural child. Separate material rotation from viscous directional diffusion,
+   and either prove a fixed-time modulus or retain the exact defect.
+2. Upgrade the now nonzero ancient distributional bubble to a suitable object
+   using a uniform scale-local dissipation and pressure estimate.
+3. Test backward uniqueness and local-energy rigidity without discarding the
+   directional or measure decoration.
 4. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.

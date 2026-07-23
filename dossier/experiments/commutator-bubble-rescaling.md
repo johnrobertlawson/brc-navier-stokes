@@ -1067,6 +1067,10 @@ certificate. The \(\rho_n^2\) interval is scale-correct only while
 \(\theta_n=\rho_n^2\sigma_n\) stays bounded. In general the witness clock is
 \(\sigma_n^{-1}\), and persistence must allow a moving centre. That audit also
 proves that bare order-zero commutator structure cannot exclude natural-scale dust.
+The [same-solution granularity theorem](same-solution-granularity.md) subsequently
+uses the joint Navier--Stokes stress and curl identities to exclude that dust under
+the repaired weak-\(L^{3/2}\) vorticity hypothesis. It also forces a nonzero
+bounded-frequency terminal trace in the selected natural child.
 
 ## Remaining frontier
 
@@ -1074,27 +1078,29 @@ The ancient equation and the defect now have separate, exact fates:
 
 1. endpoint bounds produce an ancient **distributional** velocity solution by
    strong subcritical compactness;
-2. a nonzero commutator defect survives as an atomic, absolutely continuous, or
-   singular-continuous trace measure;
-3. atomic mass survives every exact secondary spatial rescaling, while the
-   vorticity cutoff tends to zero;
-4. no present estimate propagates that measure through one fixed secondary
-   parabolic interval; and
-5. no present estimate excludes an infinite natural-scale dust cloud.
+2. same-solution coupling forces every positive failure witness into one
+   fixed-mass natural ball before the atomless/atomic split;
+3. the selected child has a nonzero bounded-frequency terminal strain trace,
+   excluding diffuse loss, infinite dust, and the zero distributional limit;
+4. its normalized vorticity cutoff still tends to zero, and no present estimate
+   propagates positive alignment through one fixed natural interval; and
+5. no present estimate makes the resulting nonzero ancient object suitable.
 
 ROUTE-R3B is therefore reduced to two dynamics-sensitive estimates:
 
-> prove the scale-adapted commutator modulus or an equivalent parabolic
-> persistence/dissipation bound, and prove a no-dust granularity estimate or a
-> rigidity theorem that accepts the resulting measure-decorated ancient
+> propagate positive alignment through directional rotation and viscous diffusion
+> on the finite natural band, and prove a scale-local energy/pressure bound or a
+> rigidity theorem that accepts the resulting nonzero decorated ancient
 > distributional solution.
 
 This is a stronger failure-to-minimal-object reduction, not a regularity theorem and
 not a Clay resolution.
 
-The follow-up audit replaces the fixed atomic-time target in the
+The natural-clock audit replaces the fixed atomic-time target in the
 unbounded-\(\theta_n\) branch by a scale-invariant moving-centre temporal variation
-and supplies an abstract Riesz-commutator dust counterexample.
+and supplies an abstract Riesz-commutator dust counterexample. The same-solution
+granularity theorem then proves that this abstract spatial dust cannot occur in
+the endpoint-controlled Navier--Stokes evolution.
 
 Run the exact compactness, rescaling, and parabolic-clock ledger with:
 

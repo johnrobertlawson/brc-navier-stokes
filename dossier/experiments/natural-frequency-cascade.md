@@ -391,16 +391,24 @@ It gives a necessary baseline:
 - neither defect is controlled without same-solution Navier--Stokes structure or
   a scale-local dissipation/suitability input.
 
-The next falsifiable target is therefore:
+The [same-solution granularity theorem](same-solution-granularity.md) resolves this
+target under the repaired endpoint vorticity hypothesis. Biot--Savart places one
+velocity shell in weak \(L^2\) with a \(K^{-1/2}\) gain, and the full stress shell
+inherits that gain in weak \(L^{6/5}\). After one natural time, high-frequency
+positive-stretching witness content decays as \(M^{-3/5}\); the remaining natural
+band has a scale-invariant finite cover. Thus the arbitrary stress cascade cannot
+be realised by the same endpoint-controlled velocity, and the atomic witness
+produces a nonzero natural child rather than spatial dust.
 
-> Prove a scale-local estimate that charges any fixed-height, natural-clock stress
-> cascade to the simultaneous critical vorticity or local dissipation of the
-> velocity generating that stress; otherwise construct a self-consistent
-> divergence-free cascade that preserves the weak-\(L^{3/2}\) vorticity bound and
-> record its parabolic defect in the ancient suitable limit.
+The next falsifiable target is now:
 
-Either outcome closes a real ROUTE-R3B obligation. Merely summing the high shells
-does not.
+> Propagate the positive vorticity--strain alignment of that finite-band child over
+> one fixed natural interval—or retain its directional diffusion/rotation defect—
+> while proving the scale-local energy and pressure bounds needed for suitability.
+
+The stress trace itself is no longer the unresolved ROUTE-R3B obligation. Merely
+summing the high shells still does not prove the result; the gain comes from the
+same curl-controlled velocity.
 
 Run the exact exponent checks with:
 

@@ -1,6 +1,6 @@
-# Handoff: test same-solution exclusion of parabolic stress cascades
+# Handoff: propagate alignment on the nonzero natural-band child
 
-**Updated:** 2026-07-23T08:21:36Z
+**Updated:** 2026-07-23T08:43:35Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,11 +24,11 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Use the joint Navier--Stokes identities \(S=u\otimes u\) and
-\(\omega=\nabla\times u\) to charge a moving natural-clock parabolic stress cascade
-to simultaneous critical vorticity or scale-local dissipation. Abstract
-commutator structure, heat smoothing, and endpoint stress size alone cannot close
-the gate. The regularity target remains
+Use the finite natural band selected by same-solution coupling to propagate
+positive vorticity--strain alignment over one natural time, while establishing the
+scale-local energy and pressure control needed for suitability. Spatial dust,
+arbitrary stress cascade, and a zero ancient distributional trace are now closed
+inside the repaired conditional chain. The regularity target remains
 
 \[
 \widehat a_\lambda^+
@@ -42,9 +42,9 @@ the gate. The regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/natural-frequency-cascade.md`;
+2. `dossier/experiments/same-solution-granularity.md`;
 3. `dossier/experiments/commutator-dust-clock.md` only when the antecedent
-   natural-clock variation or proxy definition is needed.
+   moving proxy or material-variation definition is needed.
 
 Completed static results:
 
@@ -480,6 +480,82 @@ K_1|Q_1|^{2/3}\asymp J^{1/3}
 
 in the vorticity endpoint. That failed self-consistency is the remaining opening.
 
+Completed same-solution granularity theorem:
+
+> Biot--Savart and Lorentz--Bernstein give
+>
+> \[
+> \|\Delta_Ku\|_{L^{2,\infty}}
+> \lesssim
+> AK^{-1/2},
+> \qquad
+> A=\sup_t\|\omega(t)\|_{L^{3/2,\infty}}.
+> \]
+>
+> Bony decomposition then yields the full stress-shell estimate
+>
+> \[
+> \|\Delta_K(u\otimes u)\|_{L^{6/5,\infty}}
+> \lesssim
+> A^2K^{-1/2}.
+> \]
+
+This controls low--high, high--low, and high--high interactions. A high--high
+input tail beginning at \(L_*\) is \(O(A^2L_*^{-1/2})\), so near-cancelling high
+inputs cannot hide a separate low-output cascade.
+
+For a positive aligned-strain witness of height \(\sigma\), evolve for
+\(h=c_0/\sigma\) and split at \(K_M=M\sigma^{1/2}\). The terminal high-frequency
+strain obeys
+
+\[
+\sigma^{3/2}
+\left|
+\left\{
+|\mathsf D_{>K_M}(0)|>\sigma
+\right\}
+\right|
+\lesssim
+A^{3/2}e^{-cM^2}
++
+A^{12/5}M^{-3/5}.
+\]
+
+After choosing \(M\) from the fixed witness mass, the remaining bandlimited strain
+has gradient \(O(A M^3\sigma^{3/2})\). Its \(\sigma\)-superlevel set is coverable
+by at most
+
+\[
+N\lesssim(1+A)^{9/2}M^9
+\]
+
+balls of radius at most \(\sigma^{-1/2}\). Hence one natural ball retains fixed
+positive witness mass before any atomless/atomic split. In the unbounded-height
+branch this forces an atom in every terminal defect limit; diffuse,
+singular-continuous-only, and dust branches are impossible. In the earlier atomic
+notation,
+
+\[
+\gamma_n\ge q_0(A,q,c_0,\nu)>0;
+\]
+
+the \(\gamma_n\to0\) spatial-dust branch is also impossible.
+
+After natural rescaling, the selected strain has frequency at most \(M\), exceeds
+one on a fixed-volume subset of \(B_1\), and satisfies a time-derivative bound
+
+\[
+\left\|
+\partial_\tau P_{\le M}\widehat\omega_n
+\right\|_\infty
+\lesssim
+(A+A^2)M^4.
+\]
+
+It therefore has a nonzero terminal trace in the ancient distributional limit.
+This closes the zero-limit branch. It does not propagate the aligned direction
+and does not establish suitability.
+
 Next deliverable:
 
 > Work on the natural cylinder
@@ -489,14 +565,14 @@ Next deliverable:
 > \times[-\tau_0/\sigma_n,0].
 > \]
 >
-> Frequency-split \(u\otimes u\) and \(\nabla\times u\) jointly. Prove that every
-> fixed-height stress cascade is charged either to the simultaneous critical
-> vorticity or to a scale-local dissipation/suitability quantity. Success controls
-> \(\mathfrak P_h\), the initial heat tail, and ultimately
-> \(\mathfrak V_n\). Failure must construct a divergence-free, same-solution
-> parabolic cascade or retain its defect measure with exact scaling. Do not return
-> to the weak-\(L^1\) flux, do not sum coherent high shells in \(\ell^1\), and do
-> not promote the forced tensor model to Navier--Stokes.
+> Derive the evolution of positive alignment after projecting the strain to the
+> selected finite natural band. Separate material rotation from the viscous
+> directional term, whose division by \(|\omega|\) remains dangerous as the
+> rescaled vorticity cutoff tends to zero. Either prove a fixed normalized-time
+> modulus for the positive witness or retain a scale-invariant directional defect.
+> In parallel, obtain the local dissipation and pressure tightness needed to pass
+> the local energy inequality. Do not return to spatial dust, generic stress
+> cascades, or a zero distributional limit.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

@@ -1,7 +1,7 @@
 PYTHON ?= python
 PYTHONPATH := lab
 
-.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency strain fetch-2607 compile-2607
+.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity strain fetch-2607 compile-2607
 
 check: records links markup test
 
@@ -61,6 +61,9 @@ commutator-dust:
 
 natural-frequency:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.natural_frequency
+
+same-solution-granularity:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.same_solution_granularity
 
 strain:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.strain

@@ -110,10 +110,17 @@ decay; coherent stress is harmless, while an arbitrary smooth critical stress ca
 time-frequency cascade inside one natural ball and retain an order-one terminal
 trace even as its uniform strong \(L^{3/2}\) norm vanishes. That forced model is
 not Navier--Stokes, and its naive velocity realisation breaks the vorticity
-endpoint. The next bridge must exploit the same-solution identities
-\(S=u\otimes u\) and \(\omega=\nabla\times u\), or retain the resulting parabolic
-cascade, initial heat tail, and commutator variation in a measure-decorated
-suitable ancient rigidity theorem.
+endpoint. The
+[same-solution granularity theorem](experiments/same-solution-granularity.md)
+exploits exactly that missing identity. A curl-controlled velocity shell gains
+\(K^{-1/2}\) in weak \(L^2\), the stress inherits the gain in weak \(L^{6/5}\),
+and terminal high-frequency stretching content decays as \(M^{-3/5}\). The
+remaining natural band has a finite scale-invariant cover, so every failure
+selects one natural ball with fixed mass before any atomless/atomic split and
+produces a nonzero bounded-frequency ancient trace. The next bridge is no longer a stress-cascade estimate: it must propagate
+positive alignment through directional rotation and diffusion, establish
+suitability by scale-local energy and pressure control, or retain those defects in
+a rigidity theorem that accepts the decoration.
 
 ## Active campaign B — Certified unstable profiles
 

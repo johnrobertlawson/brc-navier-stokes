@@ -766,7 +766,10 @@ The [secondary bubble reduction](commutator-bubble-rescaling.md) subsequently cl
 the distributional-equation part of the spacetime gate by subcritical
 Aubin--Lions compactness, performs the exact atomic rescaling, and isolates
 scale-adapted temporal persistence, suitability, and natural-scale dust as the
-remaining obstructions.
+remaining obstructions. The
+[same-solution granularity theorem](same-solution-granularity.md) later excludes
+the spatial dust and zero-terminal-trace branches under the repaired endpoint
+vorticity hypothesis. Temporal alignment and suitability remain open.
 
 Run the exact scaling and witness-measure checks with:
 
