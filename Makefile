@@ -1,7 +1,7 @@
 PYTHON ?= python
 PYTHONPATH := lab
 
-.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity projective-alignment vacuum-orientation polar-tensor polar-entropy tensor-adjoint adjoint-kato shear-adjoint trace-adjoint trace-band-flux trace-boundary-flux trace-projective projective-interface trace-excess trace-temporal alignment-excess carrier-microbubble microbubble-decoration strain-jet forcing-jet moving-band tree-budget band-increment fresh-detector frequency-energy scale-defect two-scale-sync fixed-shell-clock continuation-clock fixed-shell-local singular-clock-centering strain fetch-2607 compile-2607
+.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity projective-alignment vacuum-orientation polar-tensor polar-entropy tensor-adjoint adjoint-kato shear-adjoint trace-adjoint trace-band-flux trace-boundary-flux trace-projective projective-interface trace-excess trace-temporal alignment-excess carrier-microbubble microbubble-decoration strain-jet forcing-jet moving-band tree-budget band-increment fresh-detector frequency-energy scale-defect two-scale-sync fixed-shell-clock continuation-clock fixed-shell-local singular-clock-centering terminal-satellite-tower strain fetch-2607 compile-2607
 
 check: records links markup test
 
@@ -154,6 +154,9 @@ fixed-shell-local:
 
 singular-clock-centering:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.singular_clock_centering
+
+terminal-satellite-tower:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.terminal_satellite_tower
 
 strain:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.strain

@@ -97,6 +97,18 @@ the exact no-neck branch
 This does not retroactively change the review verdict; it records the next
 obligation closed up to its sharp geometric alternative.
 
+The further
+[terminal satellite-tower theorem](experiments/terminal-satellite-tower.md)
+identifies the cost of that alternative. The stronger Barker--Prange
+Type-I theorem gives logarithmically diverging strong \(L^3\) core mass at
+the parent radius, their finite-singular-set corollary isolates the core,
+and a direct shell time-derivative estimate propagates the marked parent
+band to the terminal trace. Centering escape therefore creates a punctured
+frequency-separated satellite tower. Static endpoint, energy, and coarse
+local-energy budgets permit that tower, so the revised live obligation is
+a genuinely dynamical same-trajectory exclusion rather than another
+generic pressure estimate.
+
 ### Disposition verification
 
 The reviewer checked the incorporated corrections. The only remaining

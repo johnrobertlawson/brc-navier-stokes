@@ -1,6 +1,6 @@
-# Handoff: local-restart continuation frontier
+# Handoff: terminal-satellite continuation frontier
 
-**Updated:** 2026-07-23T17:33:40Z
+**Updated:** 2026-07-23T17:54:31Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -125,9 +125,37 @@ bounded \(\Gamma_j\) proves the reviewed local restart inequality in one
 fixed parent dilation. The only remaining failure is
 \(\Gamma_j\to\infty\): the carrier approaches its terminal singular point
 physically while remaining infinitely many parent radii away. Pressure and
-an unspecified far-field maximum are no longer the first obstruction. The
-immediate target is a no-neck estimate excluding this centering escape,
-followed by tensor/frequency transfer into the singular-point packet.
+an unspecified far-field maximum are no longer the first obstruction.
+
+That escape now has an exact terminal cost. Barker--Prange's stronger 2021
+Type-I theorem gives
+\[
+\int_{B_{R_j}(x_*)}|v(t_j)|^3
+\ge
+c(A_u/\nu,\nu)
+\log\frac1{C(A_u/\nu,\nu)\Theta_j}
+\longrightarrow\infty.
+\]
+Their finite-singular-set corollary isolates \(x_*\) from every other
+terminal singular point. Meanwhile
+\(\|\partial_t\mathcal G_j\|_\infty\lesssim R_j^{-4}\), so a zero parent
+clock changes the normalized fixed shell by only \(O(\Theta_j)\). The shell
+survives to the Leray terminal trace. If \(\Gamma_j\to\infty\), sparse
+spatial and Fourier separation therefore produces an infinite critical
+velocity/strain satellite tower in the punctured terminal regular set.
+Those satellites alone force local terminal strong \(L^3\) and
+\(L^{3/2}\) divergence.
+
+The inherited static budgets permit this geometry. One radius-\(R\)
+critical packet costs only \(O(R)\) kinetic energy and lifetime
+dissipation; at outer distance \(d\), its normalized energy and CKN cubic
+costs are \(R/d\) and \((R/d)^2\). A geometric divergence-free endpoint
+tower realizes bounded energy and both weak critical endpoints while these
+outer costs vanish. This is not an NSE construction, but it closes generic
+endpoint, finite-singular-set, and coarse local-energy no-neck arguments.
+The immediate target is now a genuinely dynamical same-trajectory flux,
+ancestry, or multiscale rigidity law for the terminal satellite tower.
+Bounded-centering tensor/frequency transfer remains the parallel branch.
 
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent
 two-scale genealogical diagonal remains a separate prerequisite for any
@@ -594,7 +622,8 @@ closed branches. The original regularity target remains
 
 Start with only:
 
-Immediate no-neck reduction:
+Immediate terminal-satellite reduction:
+`dossier/experiments/terminal-satellite-tower.md` →
 `dossier/experiments/singular-clock-centering.md`.
 
 Latest adversarial disposition:

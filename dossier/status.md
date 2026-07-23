@@ -649,6 +649,33 @@ and breakdown work
   \(|x_j-x_*|/R_j\) is bounded and replaces the unspecified second profile
   by the exact centering-escape branch
   \(|x_j-x_*|/R_j\to\infty\).
+- Centering escape now has an exact terminal cost. Barker--Prange Theorem A
+  upgrades the fixed parabolic packet to
+  \[
+  \int_{B_{R_j}(x_*)}|v(t_j)|^3\,dx
+  \ge
+  c(A_u/\nu,\nu)
+  \log\frac{1}{C(A_u/\nu,\nu)\Theta_j}
+  \longrightarrow\infty.
+  \]
+  Their Corollary 4.3 makes the terminal singular set finite, so \(x_*\)
+  is isolated from every other terminal singular point. Directly from the
+  projected equation,
+  \(\|\partial_t\mathcal G_j\|_\infty\lesssim R_j^{-4}\); hence the
+  normalized shell changes by only \(O(\Theta_j)\) after \(t_j\) and
+  survives to the Leray terminal trace. Sparse centering escape then gives
+  disjoint frequency-separated critical velocity and strain packets in the
+  punctured terminal regular set. Those satellites alone force local
+  terminal strong \(L^3\) and \(L^{3/2}\) divergence.
+- The terminal tower is invisible to the previously available coarse
+  budgets. A radius-\(R\) critical packet has \(O(R)\) kinetic-energy and
+  lifetime-dissipation cost; at outer distance \(d\), its normalized energy
+  and CKN cubic charges are \(R/d\) and \((R/d)^2\). A geometric
+  divergence-free endpoint tower realizes bounded energy, weak-\(L^3\)
+  velocity, and weak-\(L^{3/2}\) vorticity with \(R_j/d_j\to0\). This is a
+  kinematic scope countermodel, not an NSE trajectory. It closes endpoint,
+  finite-singular-set, and coarse local-energy counting as generic
+  no-neck mechanisms.
 - The surviving algebra is now explicitly conditional. For a coherent
   two-edge cell,
   \[
@@ -703,8 +730,15 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > terminal singular point carries a Type-I packet at every carrier time.
 > Bounded carrier centering proves the reviewed local restart inequality;
 > the only remaining spatial loss is centering escape
-> \(|x_j-x_*|/R_j\to\infty\). A no-neck estimate and then tensor/frequency
-> transfer follow that gate.
+> \(|x_j-x_*|/R_j\to\infty\). The
+> [terminal satellite-tower theorem](experiments/terminal-satellite-tower.md)
+> shows that failure produces both a logarithmically divergent parent-radius
+> core and an endpoint-persistent frequency-separated satellite tower in
+> the punctured regular set. Weak endpoints, finite energy, terminal
+> singular-set finiteness, and coarse CKN costs permit that tower. The next
+> gate is a genuinely dynamical same-trajectory flux, ancestry, or
+> multiscale rigidity law; bounded-centering tensor transfer remains the
+> parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
 > genealogy is still required only for the two-edge stationary-process
@@ -717,21 +751,23 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Prove or refute the exact no-neck estimate
+1. Exclude or compactify the endpoint-persistent terminal satellite tower
+   forced by centering escape. The required input must be a same-trajectory
+   frequency-flux, ancestry, or multiscale rigidity law; endpoint, energy,
+   finite-singular-set, and coarse CKN ledgers are now known to permit the
+   tower.
+2. In parallel, prove or refute the exact no-neck estimate
    \[
    \sup_j\frac{|x_j-x_*|}{R_j}<\infty.
    \]
    The fixed-centre upper envelope controls the coarser critical core but
    does not yet compare the selected natural carrier's offset with its
-   smaller parent radius.
-2. In the bounded-centering branch, compare the Barker--Prange packet,
+   smaller parent radius. A proof must use more than the static budgets
+   disposed of by the terminal-tower model.
+3. In the bounded-centering branch, compare the Barker--Prange packet,
    inverse-amplitude scale, and subnatural tensor radius
    \(r_j=\lambda_jR_j\), and transfer or separate the cutoff-tensor
    oscillation and fixed-shell detector.
-3. In the centering-escape branch, test no-neck compactness, local
-   continuation across \(T^*\), finite-singular-point machinery, or a
-   scale-indexed Lorentz cost. The carrier and terminal packet are disjoint
-   in every fixed parent dilation but converge to the same physical point.
 4. Upgrade the fixed-top-shell marked parent candidates to the exact
    suitable or mild class needed for rigidity, then exclude the
    finite-forward-horizon and eternal regimes separately.

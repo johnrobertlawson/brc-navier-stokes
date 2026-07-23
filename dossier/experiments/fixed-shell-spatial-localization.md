@@ -810,11 +810,21 @@ for fixed \(L,c>0\), with pressure and far-field errors controlled. The
 downstream singular clock-centering theorem proves (59) whenever
 \(|x_j-x_*|/R_j\) is bounded. If that ratio diverges, a published
 pressure-aware theorem puts the clock packet outside every fixed parent
-dilation. The open obligation is therefore the exact no-neck estimate
+dilation. The later
+[terminal satellite-tower theorem](terminal-satellite-tower.md)
+then shows that the stronger 2021 Barker--Prange logarithmic core is
+simultaneously present inside \(B_{R_j}(x_*)\), while the marked parent
+shell persists to the terminal trace. Sparse escape yields disjoint
+frequency-separated satellite packets in the punctured regular set.
+
+The open obligation is therefore the exact no-neck estimate
 \[
 \sup_j\frac{|x_j-x_*|}{R_j}<\infty,
 \]
-not an unspecified local pressure bound.
+or a genuinely dynamical exclusion of that endpoint-persistent tower, not
+an unspecified local pressure bound. Weak endpoints, finite energy,
+terminal singular-set finiteness, and coarse CKN costs do not provide such
+an exclusion.
 
 After that gate, the remaining alternatives are:
 
@@ -822,8 +832,8 @@ After that gate, the remaining alternatives are:
 \boxed{
 \begin{gathered}
 \text{a parent-local but tensor-unmarked continuation concentration,}\\
-\text{or a marked carrier approaching its singular point through a}\\
-\text{diverging parent-coordinate neck.}
+\text{or an isolated logarithmic singular core surrounded by a marked}\\
+\text{endpoint-persistent terminal satellite tower.}
 \end{gathered}
 }
 \tag{60}

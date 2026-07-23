@@ -648,6 +648,13 @@ place a Type-I packet at the actual terminal singular point at every
 carrier time. Bounded carrier centering proves the local restart bound;
 the remaining spatial branch is the precise no-neck condition
 \(|x_j-x_*|/R_j\to\infty\).
+The further
+[terminal satellite-tower theorem](terminal-satellite-tower.md)
+shows that this escape branch has a logarithmically diverging Type-I core
+inside \(B_{R_j}(x_*)\) and a fixed parent shell that persists to the
+terminal trace. The resulting punctured satellite tower pays only summable
+energy, so the next bridge must use same-trajectory dynamics rather than
+endpoint or coarse local-energy counting.
 
 Run the exact clock-product, high-pass floor, continuation-scale, and global
 scaling ledgers with:

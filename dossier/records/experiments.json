@@ -1432,6 +1432,47 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-TERMINAL-SATELLITE-TOWER-001",
+      "title": "Type-I core growth and endpoint-persistent carrier satellites",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-TYPE-I-CORE-001",
+        "CLM-TYPE-I-SINGULAR-SET-001",
+        "CLM-LOCAL-CONCENTRATION-001",
+        "CLM-GEOM-001",
+        "CLM-GRUJIC-001"
+      ],
+      "hypothesis": "Centering escape can be excluded from the inherited weak endpoints, finite energy, terminal singular-set geometry, or coarse local-energy budgets without retaining the same-trajectory terminal evolution of the fixed parent shell.",
+      "invariants": [
+        "The theorem is restricted to R three and a global suitable finite-energy continuation that is smooth before a first singular time",
+        "The global weak-L three endpoint is normalized by viscosity before importing the peer-reviewed Type-I results",
+        "Barker-Prange Theorem A supplies a logarithmic strong L three lower bound at every admissible radius between the parabolic packet and a fixed upper radius",
+        "A zero parent clock makes the marked parent radius admissible and turns the source logarithm into log of the inverse parent horizon up to fixed constants",
+        "Barker-Prange Corollary 4.3 makes the carrier cluster point isolated from every other terminal singular point",
+        "The fixed parent strain shell has time derivative bounded by a constant times parent radius to the minus four under the inherited weak velocity endpoint",
+        "Its normalized change over the terminal gap is therefore a constant times the parent horizon and vanishes",
+        "Weak L two continuity identifies the surviving shell with the smooth multiplier applied to the Leray terminal trace",
+        "Spatial Bernstein persistence gives fixed critical velocity and strain charges in terminal packet balls",
+        "Centering escape can be sparsely thinned so those balls occupy pairwise disjoint punctured radial annuli consisting of terminal regular points",
+        "Separated parent Fourier supports and Littlewood-Paley imply local terminal strong L three velocity and strong L three-halves strain divergence from the satellites alone",
+        "A critical packet has only parent-radius kinetic-energy and lifetime-dissipation cost; its outer normalized energy and CKN cubic charges vanish as the carrier-to-core scale ratio vanishes",
+        "A geometric divergence-free endpoint packet tower realizes the weak-norm and energy scaling but is not asserted to be a Navier-Stokes trajectory",
+        "No no-neck theorem, dynamical ancestry law, tensor transfer, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Import the published Type-I logarithmic core and finite-singular-set theorems, restore viscosity, estimate the fixed shell time derivative directly from the projected Navier-Stokes equation and Lorentz-Bernstein, pass the shell to the weak terminal trace, sparsely separate the escaped terminal packets in physical space and frequency, apply localized Littlewood-Paley estimates, and audit the exact outer-scale energy and CKN costs of a critical packet tower.",
+      "certificate": "A written source-scoped core-satellite theorem plus exact Fraction tests for terminal shell margin, published radius and logarithm arguments, critical packet costs, centering-escape tower geometry, weak-critical geometric tails, and radial packet separation.",
+      "success_criterion": "Centering escape is reduced to a simultaneous logarithmically divergent Type-I core and endpoint-persistent satellite tower, and every attempted exclusion based only on the inherited endpoint, energy, finite-singular-set, or coarse CKN budgets receives an exact scaling disposition.",
+      "failure_interpretation": "The published theorem does not apply at the parent radius, the shell can change by order one over a zero parent clock, the Leray terminal trace does not retain the fixed multiplier, sparse physical and Fourier separation does not imply the claimed strong critical divergence, or the outer-scale packet costs do not vanish.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/terminal-satellite-tower.md",
+        "lab/navier_lab/terminal_satellite_tower.py",
+        "lab/tests/test_terminal_satellite_tower.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

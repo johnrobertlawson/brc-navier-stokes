@@ -341,6 +341,19 @@
       "notes": "Published Theorem 2 and equations (14)-(15), matching arXiv:1812.09115v2 pp. 4-5, give every-late-time critical L3 concentration in a parabolic ball centred at each singular point of a first Leray-Hopf blow-up under a scale-critical Morrey Type-I bound."
     },
     {
+      "id": "SRC-BARKER-PRANGE-2021",
+      "title": "Quantitative Regularity for the Navier-Stokes Equations Via Spatial Concentration",
+      "authors": ["Tobias Barker", "Christophe Prange"],
+      "year": 2021,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1007/s00220-021-04122-x",
+      "version": "Commun. Math. Phys. 385, 717-792; matching arXiv:2003.06717",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-23",
+      "notes": "Published Theorem A, equations (9)-(10), gives a logarithmic lower bound for the strong local L3 mass at every radius between the Type-I parabolic scale and a fixed upper radius. Corollary 4.3 gives a finite quantitative bound for the number of terminal singular points under the global weak-L3 Type-I bound."
+    },
+    {
       "id": "SRC-GRUJIC-2026",
       "title": "Logarithmic Depletion of Vortex Stretching and Singularity Evasion in the 3D Navier-Stokes Equations",
       "authors": ["Zoran Grujic"],

@@ -275,6 +275,45 @@
       "last_checked": "2026-07-23"
     },
     {
+      "id": "CLM-TYPE-I-CORE-001",
+      "plain": "A weak-L3 Type-I singularity carries logarithmically growing strong L3 mass between its parabolic scale and every admissible larger radius.",
+      "formal": "For a mild R3 solution with unit viscosity, weak-L3 Type-I bound M, and a singular point (x-star,T-star), Barker-Prange Theorem A gives integral over B_R(x-star) of |u(t)| cubed at least exp(-exp(M^1025)) times log(R squared divided by M^802(T-star-t)) whenever R exceeds 2 sqrt((T-star-t)/S_BP(M)) and lies below the fixed source upper radius.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "mild_smooth_until_T",
+      "assumptions": [
+        "A terminal singular point",
+        "The global weak-L3 Type-I bound",
+        "The source's radius and time range"
+      ],
+      "conclusion": "The local strong L3 mass has a quantitative logarithmic lower bound across the Type-I scale range.",
+      "scaling": "critical_with_logarithmic_depth",
+      "status": "established",
+      "source_ids": ["SRC-BARKER-PRANGE-2021"],
+      "depends_on": ["CLM-WEAK-001"],
+      "audit": "The lower bound is valid at every admissible radius and late time, but by itself it neither localizes one tensor detector nor excludes weak-L3 scale towers.",
+      "last_checked": "2026-07-23"
+    },
+    {
+      "id": "CLM-TYPE-I-SINGULAR-SET-001",
+      "plain": "A suitable finite-energy weak-L3 Type-I solution has only finitely many singular points at a fixed terminal time.",
+      "formal": "Barker-Prange Corollary 4.3 bounds the number of blow-up points at T-star by exp(exp(M^1024)) for a global suitable finite-energy unit-viscosity solution with L-infinity-in-time weak-L3 norm at most M before T-star.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "suitable_finite_energy",
+      "assumptions": [
+        "A global suitable finite-energy continuation",
+        "The global weak-L3 Type-I bound before the terminal time"
+      ],
+      "conclusion": "The terminal singular set is finite with a quantitative source bound.",
+      "scaling": "critical",
+      "status": "established",
+      "source_ids": ["SRC-BARKER-PRANGE-2021"],
+      "depends_on": ["CLM-WEAK-001"],
+      "audit": "Finiteness isolates each terminal singular point from the others, but it gives no uniform lower bound for the regularity radius at nearby regular points.",
+      "last_checked": "2026-07-23"
+    },
+    {
       "id": "CLM-OPEN-001",
       "plain": "It is open whether every smooth three-dimensional unforced initial state remains smooth globally.",
       "formal": "Neither Clay alternative A nor B has an accepted proof.",

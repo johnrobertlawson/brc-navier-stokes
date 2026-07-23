@@ -417,6 +417,26 @@ does not by itself compare the later natural carrier radius with the
 carrier's offset inside that core. That missing scale-to-centre comparison
 is the no-neck obligation.
 
+The subsequent
+[terminal satellite-tower theorem](terminal-satellite-tower.md)
+identifies the PDE cost of failure. Barker--Prange's stronger 2021
+Type-I theorem gives logarithmically diverging strong \(L^3\) mass inside
+\(B_{R_j}(x_*)\) at the original carrier times, while their finite
+singular-set corollary isolates \(x_*\) from every other terminal singular
+point. Direct Lorentz--Bernstein control of
+\(\partial_t\mathcal G_j\) shows that a zero-clock parent shell survives to
+the Leray terminal trace. In the escape branch, sparse spatial and
+frequency separation produces an infinite terminal critical satellite
+tower in the punctured regular set.
+
+That tower is not excluded by the inherited weak endpoints or energy:
+one radius-\(R_j\) critical packet pays only \(O(R_j)\) energy, and its
+outer normalized energy cost is \(R_j/|x_j-x_*|\to0\). Thus bounded
+centering remains open, but a generic endpoint, finite-singular-set, or
+coarse local-energy no-neck proof is now closed. The live gate is a
+same-trajectory flux, ancestry, or multiscale rigidity law for the terminal
+satellite tower.
+
 Run the exact viscosity, packet-radius, clock-floor, containment, and
 separation ledgers with:
 
