@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T20:46:17Z
+**Updated:** 2026-07-23T21:15:12Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -309,6 +309,39 @@ found the theorem valid in that kinematic scope after the Besov test was
 placed in the canonical heat-semigroup realisation, the two-centre lower
 bound was displayed, and the possibility of a stronger future static
 hypothesis was restored.
+
+The first dynamic audit now closes the automatic
+“compact hull plus averaged critical norm” shortcut. In backward
+similarity variables the exact \(L^q\) drift is
+\((q-3)/(2q)\). At \(q=2\), pressure cancels but the drift is
+anti-coercive. At \(q=3\), the drift cancels but weighted dissipation is
+balanced by an unsigned pressure-work term. The coherent outer profile is
+outside strong \(L^3\), so that global critical identity is not finite in
+the target class. An exact three-mode periodic calculation gives leading
+critical pressure work \(-\varepsilon^3/4\), with the sign reversed by
+velocity reversal; this is an instantaneous pressure-algebra certificate,
+not an \(\mathbb R^3\) recurrent solution. The terminal spatial hull also
+does not determine the hull of complete parabolic dilations. Its terminal
+and unit-backward slices differ by the exact critical increment
+\[
+a\,[u(a\,\cdot,-a^2)-u(a\,\cdot,0)],
+\]
+but the two scale directions must be separated. For \(a\downarrow0\),
+ordinary trace continuity does not control this moving-scale increment.
+The Albritton--Barker ancestry uses \(a\uparrow\infty\), where the
+unit-backward slice samples remote ancient time and trace continuity is
+irrelevant. Selected outer-profile diagonals retain the complete parabolic
+dilation, but the entire terminal hull is not yet a compact single-valued
+parabolic scaling flow. Finally, the published weak-\(L^3\) gradient gain
+\(L^{2+\delta}\) charges a critical radius-\(R\) packet by
+\(R^{1-2\delta}\), still a positive power for \(\delta<1/2\).
+Thus the next gate is specifically a coherent lift to the full parabolic
+scale hull plus a localised same-trajectory critical pressure-flux law, or
+a weak-\(L^3\) backward-uniqueness observable replacing both.
+[Independent adversarial review](dossier/review-response-scale-hull-balance-2026-07-23.md)
+validated the transform, \(L^q\) signs, scale-direction repair, periodic
+pressure certificate, class boundaries, and higher-integrability packet
+power in exactly this stated scope.
 Bounded-centering tensor/frequency transfer remains the other branch.
 
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent
@@ -2129,6 +2162,20 @@ Completed terminal alignment-excess reduction:
 
 Next deliverable:
 
+> For the active scale-hull branch, first lift the terminal hull to a
+> compact coherent hull of the complete parabolic dilations
+> \(a\,u(a\,\cdot,a^2\,\cdot)\). Control
+> \(a[u(a\,\cdot,-a^2)-u(a\,\cdot,0)]\) where appropriate or keep that
+> increment as part of the dynamical state; do not conflate the
+> \(a\downarrow0\) trace direction with the \(a\uparrow\infty\) remote-past
+> ancestry direction. Then derive a
+> localised critical pressure-work or signed-flux balance whose invariant
+> average is strictly coercive in weak \(L^3\). Do not use the global
+> \(L^3\) identity: the retained profile is outside strong \(L^3\).
+> Ordinary recurrence, the \(L^2\) similarity balance, instantaneous
+> pressure Poisson algebra, and the known small \(L^{2+\delta}\) gradient
+> gain have now been audited and do not supply this conclusion.
+>
 > First test the synchronized event sequence itself: determine whether
 > one-trajectory clock geometry, a finite-secondary-index estimate, a
 > nonlocal positive law, or the complete signed history-square balance can

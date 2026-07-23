@@ -853,6 +853,33 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > [independent review](review-response-terminal-logscale-survivor-2026-07-23.md)
 > found this kinematic theorem valid in scope after the homogeneous-Besov
 > test and logical boundary were tightened;
+> the subsequent
+> [renormalised scale-hull audit](experiments/scale-hull-balance.md)
+> closes the automatic invariant-measure shortcut. The terminal spatial
+> hull is not yet the hull of complete parabolic dilations: its terminal
+> and unit-backward slices differ by the critical increment
+> \(a[u(a\,\cdot,-a^2)-u(a\,\cdot,0)]\). For smooth decaying fields the
+> exact \(L^q\) similarity drift is \((q-3)/(2q)\). The \(L^2\) balance
+> has anti-damping, while the critical \(L^3\) balance leaves unsigned
+> pressure work. The actual outer profile is outside strong \(L^3\), so
+> that global balance is not finite in the target class. A three-mode
+> periodic calculation gives exact leading pressure work
+> \(-\varepsilon^3/4\), reversed by velocity reversal; this rules out an
+> algebraic sign but is not an \(\mathbb R^3\) recurrent solution. The
+> \(a\downarrow0\) moving-trace direction and the
+> \(a\uparrow\infty\) remote-past ancestry direction are distinct;
+> selected parabolic diagonals do not yet make the whole terminal hull a
+> compact single-valued parabolic scaling flow.
+> Barker's published weak-\(L^3\) gradient gain also costs a critical
+> radius-\(R\) packet only \(R^{1-2\delta}\), which remains summable when
+> \(\delta<1/2\). The remaining target is therefore a localised
+> coherent full-parabolic-hull lift together with a localised
+> same-trajectory critical pressure-flux law, or a weak-\(L^3\)
+> backward-uniqueness observable replacing both;
+> [independent review](review-response-scale-hull-balance-2026-07-23.md)
+> found the revised audit valid in scope after checking the transform,
+> \(L^q\) signs, opposite scale directions, pressure modes, class
+> boundaries, and packet power;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -866,16 +893,19 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Prove or refute a scale-hull Liouville principle: a nonzero coherent
-   ancient suitable weak-\(L^3\) solution cannot have a compact aperiodic
-   critical-dilation hull with a uniform positive Albritton--Barker
-   quotient defect. The exact kinematic survivor shows that the proof
-   needs an input beyond the listed terminal marks; the current target
-   uses the time equation.
-2. Seek a same-trajectory signed flux, Lyapunov quantity, or
-   backward-uniqueness observable that changes along log-scale
-   translation and either bounds the depth of the uniformly
-   finite-branching hierarchy or couples the distance profile to the
+1. Lift the terminal dilation hull to a compact coherent hull of the
+   complete parabolic dilations \(a\,u(a\,\cdot,a^2\,\cdot)\). Control
+   \(a[u(a\,\cdot,-a^2)-u(a\,\cdot,0)]\) where appropriate or retain it
+   as part of the state. Do not conflate \(a\downarrow0\), where ordinary
+   trace continuity is too weak at the moving scale, with
+   \(a\uparrow\infty\), which samples the remote ancient past.
+2. Derive a localised, same-trajectory, critical pressure-work or signed
+   flux law whose invariant average strictly absorbs its positive
+   dissipation in weak \(L^3\), or replace it by a backward-uniqueness
+   observable. The global \(L^3\) identity is unavailable, its formal
+   average leaves pressure work, and the \(L^2\) identity is anti-coercive.
+   Use such a law either to bound the depth of the uniformly
+   finite-branching hierarchy or to couple the distance profile to the
    Besov outer profile at
    \(R_j\ll\rho_j\ll|x_j-x_*|\).
 3. In parallel, prove or refute the exact no-neck estimate

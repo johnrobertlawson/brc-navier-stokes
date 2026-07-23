@@ -354,6 +354,25 @@
       "last_checked": "2026-07-23"
     },
     {
+      "id": "CLM-WEAK-L3-HIGHER-INTEGRABILITY-001",
+      "plain": "A first-blow-up weak-L3 Type-I bound gives a small super-energy integrability gain for the velocity gradient.",
+      "formal": "For a weak Leray-Hopf solution on R3 that first blows up at T-star and obeys a global L-infinity-in-time weak-L3 ceiling M, Barker Corollary 1 gives a positive exponent delta(M), recorded in the published abstract as O(1/M), such that grad u belongs to L(2+delta(M)) on R3 times (T-star/2,T-star).",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "weak_Leray_Hopf_first_blow_up",
+      "assumptions": [
+        "A first blow-up time",
+        "The source's global-in-time weak-L3 Type-I ceiling with sufficiently large M"
+      ],
+      "conclusion": "The velocity gradient has a positive integrability gain above the energy exponent near the terminal time.",
+      "scaling": "subcritical_small_exponent",
+      "status": "established",
+      "source_ids": ["SRC-BARKER-2024-HIGHER-INTEGRABILITY"],
+      "depends_on": ["CLM-WEAK-001"],
+      "audit": "For a critical radius-R packet over its parabolic lifetime, the L(2+delta) gradient cost has exact radius power 1-2delta. The imported theorem does not assert a uniform delta at least one half, and its stated gain tends to zero for large M, so this claim alone cannot count arbitrary scale depth.",
+      "last_checked": "2026-07-23"
+    },
+    {
       "id": "CLM-SINGULARITY-PERSISTENCE-001",
       "plain": "A locally compact sequence of suitable solutions whose local essential suprema blow up at every radius has a singular suitable limit.",
       "formal": "Albritton-Barker Proposition 2.3 states the interior persistence-of-singularities principle for suitable weak solutions: under the proposition's uniform local velocity and pressure bounds and compact convergence, divergence of the approximating local L-infinity norms on every cylinder forces the limit point to be singular.",

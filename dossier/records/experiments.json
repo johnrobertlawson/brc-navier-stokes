@@ -1765,6 +1765,54 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-SCALE-HULL-BALANCE-001",
+      "title": "Renormalised scale-hull balance and critical pressure-work defect",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-HIGHER-INTEGRABILITY-001"
+      ],
+      "hypothesis": "A compact recurrent critical-dilation hull of the terminal trace automatically lifts to a compact single-valued hull of complete parabolic dilations and hence a compact similarity-time orbit, and invariant-measure averaging of a standard energy or critical-norm balance forces that orbit to vanish.",
+      "invariants": [
+        "The backward similarity variables are s=-log(-t), y=x/sqrt(-t), V=sqrt(-t)u, and P=(-t)p",
+        "The exact similarity equation contains one-half V plus one-half y dot grad V",
+        "For smooth decaying fields the Lq similarity-drift coefficient is exactly (q-3)/(2q)",
+        "At q=2 pressure cancels but the drift coefficient is negative one quarter",
+        "At q=3 the drift cancels but the pressure work integral P V dot grad absolute-V remains",
+        "Invariant averaging removes only the total derivative and leaves mean critical dissipation equal to mean pressure work",
+        "The retained distributional hull topology alone supplies neither a continuous nonlinear similarity flow nor integrability of the averaged functionals",
+        "The current coherent outer profile is weak L3 and outside strong L3 on every good slice, so the global critical identity is not finite in the target class",
+        "The detached local-energy profile is not assumed to have finite global L2 either",
+        "The complete parabolic dilation is U_a(y,theta)=a u(ay,a squared theta), and its theta=-1 slice differs from its terminal slice by the exact critical increment a times u(ay,-a squared) minus u(ay,0)",
+        "As a tends to zero ordinary terminal trace continuity does not uniformly control that moving-scale increment",
+        "The Albritton-Barker outer-ancestry direction is a tending to infinity, where the unit-backward slice samples remote ancient time and terminal trace continuity is irrelevant",
+        "Controlling the increment is one sufficient lift where appropriate but is not necessary; the full parabolic dilation and increment may instead be retained as the state",
+        "Selected outer-profile diagonals give parabolic coherence but do not yet make the entire terminal hull a compact single-valued parabolic scaling flow",
+        "The exact periodic streamfunction minus cos x minus cos y minus cos(x+y) generates a smooth divergence-free three-mode field",
+        "Its pressure Poisson source and pressure have exact finite Fourier ledgers",
+        "Perturbing a constant velocity by that field gives normalized critical pressure work minus one-quarter epsilon cubed plus order epsilon to the fourth",
+        "Velocity sign reversal preserves pressure and reverses the pressure work",
+        "The periodic certificate tests only the instantaneous pressure algebra and is not an R3 recurrent similarity solution",
+        "A radius-R critical packet contributes R to the power one minus two delta to the spacetime L(2+delta) gradient integral",
+        "Known large-M weak-L3 higher integrability is not a scale-zero depth charge because its exponent is not uniformly at least one half",
+        "No scale-hull Liouville theorem, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Derive the exact backward similarity equation and its smooth Lq balance, separate the terminal spatial hull from the hull of complete parabolic dilations by their exact terminal-to-unit-backward increment and by the opposite small- and large-dilation directions, average the formal balance under a hypothetical invariant measure, compute a three-mode periodic pressure and its nonzero sign-reversing critical pressure work with exact rational Fourier arithmetic, and compare the published higher-integrability exponent with critical packet scaling.",
+      "certificate": "A written analytic reduction plus exact Fraction tests for the similarity drift, pressure Fourier modes, pressure-work cubic coefficient, and higher-integrability packet radius power.",
+      "success_criterion": "The automatic recurrence-to-Liouville shortcut is either closed or reduced to explicit additional inequalities and topology; every retained obstruction is stated in the exact solution and domain class where it applies.",
+      "failure_interpretation": "The similarity transform or Lq identity has a sign error, the current terminal trace topology already supplies a compact single-valued full parabolic hull, the small- and large-dilation directions are conflated, the pressure-work coefficient vanishes, the periodic sign test is overstated as an R3 dynamical counterexample, or the packet exponent is not one minus two delta.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/scale-hull-balance.md",
+        "dossier/review-letter-scale-hull-balance-2026-07-23.md",
+        "dossier/review-response-scale-hull-balance-2026-07-23.md",
+        "lab/navier_lab/scale_hull_balance.py",
+        "lab/tests/test_scale_hull_balance.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",
