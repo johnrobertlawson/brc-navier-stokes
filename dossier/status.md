@@ -925,6 +925,23 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > found this conditional theorem and reduction valid in scope after
 > making the natural extension explicit and distinguishing infinite mean
 > from an actual \(r=\infty\) edge;
+> the
+> [adjoint-pressure history reduction](experiments/adjoint-pressure-history.md)
+> now gives that bridge charge a genuine PDE payment on the smooth
+> physical genealogy. A compact solenoidal detector launches the reversed
+> Oseen adjoint. Pairing conservation, adjoint \(L^2\) dissipation, Nash
+> decay, and Lorentz interpolation force its running \(L^1\) norm to grow
+> at least like \(\sqrt{\nu T}\) whenever the terminal pairing is nonzero.
+> Vector Kato identifies the adjoint pressure gradient as the only
+> positive \(L^1\) source. A double lower limit over vanishingly
+> preterminal, smooth physical profiles avoids assuming an intrinsic
+> rough endpoint adjoint. The resulting scale-zero genealogical cost pays
+> at least \(c_0/(2C_{\rm adj}M)\) on every event bridge. The histories
+> overlap and their event-index sum is not bounded.
+> [Independent review](review-response-adjoint-pressure-history-2026-07-23.md)
+> found the repaired conditional theorem valid in scope after checking the
+> signs, exponents, physical genealogy, double lower limit, scaling, Kato
+> cutoff, bridge transfer, and Lorentz div--curl interpolation;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -942,15 +959,16 @@ The coequal breakdown question remains:
    mean roof. Its suspension then gives the compact Navier--Stokes
    parabolic hull an invariant probability distinct from \(\delta_0\).
    Do not replace this by bare event count or assume bounded gaps.
-2. In the complementary infinite-mean branch, derive an
-   event-normalised, same-trajectory critical pressure-work,
-   signed-history, Lyapunov, or backward-uniqueness law that pays the
-   fixed positive variation-or-occupation bridge charge by a bounded
-   telescope or finite critical budget. The global \(L^3\) identity is
-   unavailable, its formal average leaves pressure work, and the \(L^2\)
-   identity is anti-coercive. Use such a law either to bound the depth of
-   the uniformly finite-branching hierarchy or to couple the distance
-   profile to the Besov outer profile at
+2. In the complementary infinite-mean branch, prove either a uniform
+   sub-square-root upper law for the lower-relaxed solenoidal-adjoint
+   pressure history or an event-index upper bound summing its bridge
+   costs. Each nonzero terminal pairing already forces square-root growth
+   and each bridge already has a fixed positive cost; the exact missing
+   step is controlling the overlap of histories at different scale
+   points. Adjoint \(L^2\) energy does not control the required
+   \(L^1_x\) pressure gradient or \(L^{3/2,1}_x\) adjoint gradient. Use
+   such a law either to bound the depth of the uniformly finite-branching
+   hierarchy or to couple the distance profile to the Besov outer profile at
    \(R_j\ll\rho_j\ll|x_j-x_*|\).
 3. In parallel, prove or refute the exact no-neck estimate
    \[

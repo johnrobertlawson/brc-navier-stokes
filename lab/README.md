@@ -60,6 +60,7 @@ not convert passing unit tests into mathematical truth.
 | **terminal_distance_profile.py** | Satellite-to-core distance scaling, micro-shell normalization, local/far kernel split, inverse-micro velocity floor, and inward discrete-dilation orbit | Suitable compactness, persistence of both terminal singular points, local weak-\(L^3\) singular-set finiteness, or a Clay resolution |
 | **terminal_logscale_survivor.py** | Critical endpoint powers, positive quasiperiodic envelope, irrational-period obstruction, and Besov pairing/distance ledgers | Navier--Stokes evolution, suitability, or exclusion of a dynamical scale-recurrent ancient profile |
 | **defect_event_suspension.py** | Fixed-test dilation generator, event persistence, inter-event roofs, finite-mean suspension mass, and variation-or-occupation bridge charge | A PDE bound on the event-normalised charge or finite mean of the actual defect-event roof |
+| **adjoint_pressure_history.py** | Test-side scale powers, Nash/interpolation exponent, finite-horizon pressure floor, genealogy charge, and one-bridge cost | An intrinsic rough endpoint adjoint, an event-index summation, or a sub-square-root pressure-history theorem |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -130,6 +131,7 @@ From the repository root:
     make scale-hull-balance
     make parabolic-scale-hull
     make defect-event-suspension
+    make adjoint-pressure-history
     make strain
     make fetch-2607
     make compile-2607

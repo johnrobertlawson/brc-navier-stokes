@@ -130,6 +130,13 @@ No new trajectory, centre, carrier, or genealogy is being selected.
 Every \(X_m:=\Phi_{\theta_m}X_*\) is a complete ancient state in the
 same compact hull.
 
+The subsequent
+[adjoint-pressure history reduction](adjoint-pressure-history.md)
+shows that the fixed witness may be selected in
+\(C^\infty_{c,\sigma}\). Indeed, a nonzero divergence-free weak-\(L^3\)
+blow-down limit is separated by compact solenoidal tests. This refinement
+does not alter any event-process argument below.
+
 ## 2. The event has a uniform logarithmic width
 
 For any terminal trace \(f\), critical dilation gives
@@ -668,3 +675,8 @@ The exact dilation-generator, persistence-width, roof, suspension-mass,
 and bridge-charge ledgers are implemented in
 `lab/navier_lab/defect_event_suspension.py` and checked in
 `lab/tests/test_defect_event_suspension.py`.
+
+The next reduction identifies a lower-relaxed
+[solenoidal-adjoint pressure cost](adjoint-pressure-history.md) that pays
+each bridge on the smooth physical genealogy. Its event-index summation
+remains open.

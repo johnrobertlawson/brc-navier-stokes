@@ -1911,6 +1911,52 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-HISTORY-001",
+      "title": "Genealogical adjoint-pressure cost of Besov regeneration",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-STABILITY-001"
+      ],
+      "hypothesis": "The positive variation-or-occupation charge on each Besov regeneration bridge can be paid by a scale-zero Navier-Stokes quantity: square-root growth of the solenoidal Oseen adjoint's L1 norm, supplied only by its pressure, along the smooth physical genealogy converging to the ancient profile.",
+      "invariants": [
+        "A nonzero divergence-free weak-L3 blow-down limit is separated by one compactly supported smooth divergence-free detector",
+        "The detector and its dilation generator are compactly supported, divergence free, and mean zero",
+        "On every smooth finite physical horizon the reversed velocity and solenoidal Oseen adjoint have an exactly conserved pairing",
+        "The adjoint drift is skew in L2 and the adjoint has an exact dissipative L2 energy identity",
+        "Lorentz duality prevents the adjoint L(3/2,1) norm from decaying when the terminal pairing is nonzero",
+        "Nash decay plus exact L1-L2 real interpolation forces the running adjoint L1 norm to grow at least as the square root of viscosity times horizon",
+        "The vector Kato inequality makes the adjoint pressure gradient the only positive source in the adjoint L1 inequality",
+        "The finite-horizon integral of the adjoint-pressure-gradient L1 norm is bounded below by the terminal pairing times square-root horizon divided by the weak-L3 ceiling, minus the terminal-test L1 norm",
+        "The rough-state passage uses a double lower limit over an admissible smooth physical genealogy and does not assume an unproved critical transposition identity on a rough suitable state",
+        "The physical outer-profile diagonal, recentered a vanishing time before the first singular time, supplies an admissible smooth genealogy on expanding backward horizons",
+        "The test L1, squared L2, and L(3/2,1) scaling powers are respectively one, minus one, and zero",
+        "The integrated adjoint-pressure gradient and square-root parabolic horizon both have scale power one, so their quotient is scale zero",
+        "Every finite point of the actual scaling orbit uses the correspondingly scaled copy of one physical genealogy",
+        "Lower Lebesgue integration avoids assuming measurability or continuity of the genealogy-relaxed cost",
+        "The detector and dilation-generator costs transfer the full variation-or-occupation dichotomy to a fixed positive adjoint-pressure cost on every event bridge",
+        "The value of the relaxed cost is not proved intrinsic to every rough hull state and no intrinsic rough endpoint Oseen adjoint is asserted",
+        "The adjoint histories at different scale points overlap and no event-index summation or bounded telescope is proved",
+        "The adjoint L2 energy controls neither the Kato pressure source nor the missing L(3/2,1) gradient norm",
+        "No sub-square-root pressure-history theorem, ancient-profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Choose a solenoidal Besov detector, derive smooth finite-horizon primal-adjoint pairing conservation and adjoint energy dissipation, combine Lorentz duality with Nash and exact real interpolation, use vector Kato to identify the pressure-gradient L1 cost, pass only through the smooth physical genealogy by a double lower limit, verify exact parabolic covariance, and integrate the resulting pointwise lower bounds across each actual same-orbit event bridge.",
+      "certificate": "A written conditional genealogical theorem, a standalone compilable LaTeX reviewer note, and Fraction tests for test-norm powers, Nash interpolation, scale-zero normalisation, finite-horizon pressure floor, genealogy charge, and both event-bridge alternatives.",
+      "success_criterion": "A genuine PDE-derived quantity on the physical ancestral sequence has a fixed positive lower bound on every Besov regeneration bridge, and the remaining closure problem is isolated as either a sub-square-root adjoint-pressure theorem or an event-index summation of overlapping histories.",
+      "failure_interpretation": "The smooth adjoint signs or pairing are wrong, Nash and Lorentz interpolation do not force square-root L1 growth, vector Kato has another positive source, the physical diagonal does not supply smooth expanding genealogies, scaling is not critical, the bridge dichotomy does not transfer, or the rough-state passage silently assumes an unavailable endpoint transposition theorem.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-history.md",
+        "dossier/adjoint-pressure-cost-reviewer.tex",
+        "dossier/review-letter-adjoint-pressure-history-2026-07-23.md",
+        "dossier/review-response-adjoint-pressure-history-2026-07-23.md",
+        "lab/navier_lab/adjoint_pressure_history.py",
+        "lab/tests/test_adjoint_pressure_history.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T22:25:05Z
+**Updated:** 2026-07-23T23:22:09Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -406,6 +406,32 @@ finite-edge graph, natural-extension suspension, truncated-roof argument,
 bridge charge, telescope, and sparse infinite-roof boundary. Review
 repairs distinguish infinite mean from an actual \(r=\infty\) edge and
 make the canonical experiment target explicit.
+
+The next reduction gives the infinite-roof bridge charge a
+Navier--Stokes history quantity. The fixed detector may be chosen compact
+and solenoidal. On every smooth member of the physical outer-profile
+genealogy, the reversed solenoidal Oseen adjoint conserves its pairing
+with velocity and dissipates \(L^2\). Nash decay and exact Lorentz
+interpolation force its running \(L^1\) norm to grow at least like
+\(\sqrt{\nu T}\) whenever the terminal pairing is nonzero. Vector Kato
+shows that only the adjoint pressure gradient can supply this growth.
+
+The rough-profile passage is deliberately genealogical, not an unproved
+endpoint transposition: move every physical approximant a vanishing time
+before \(T^*\), retain its expanding smooth backward horizon, and take a
+double lower limit. The resulting scale-zero cost is bounded below by the
+terminal pairing and transfers the full variation-or-occupation floor:
+every event bridge pays at least
+\(c_0/(2C_{\rm adj}M)\). This does not yet telescope. Adjacent scale
+points use overlapping remote adjoint histories, and neither a
+sub-square-root upper law nor an event-index sum bound is known.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-history-2026-07-23.md)
+found the repaired conditional theorem valid in scope after checking the
+adjoint signs, Nash and Lorentz exponents, Kato cutoff, physical
+genealogy, double lower limit, scaling covariance, bridge transfer, and
+Hardy-space interpolation. It validates no additive budget or Clay
+conclusion.
+
 Bounded-centering tensor/frequency transfer remains the other branch.
 
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent
@@ -2230,14 +2256,16 @@ Next deliverable:
 > event process on one actual parabolic scaling orbit. First test whether
 > its recursive Navier--Stokes event limits force a finite-mean roof. Such
 > a law suspends to an invariant scaling probability distinct from
-> \(\delta_0\). In the complementary infinite-mean branch, derive an
-> event-normalised same-trajectory pressure-flux, signed-history,
-> Lyapunov, or backward-uniqueness estimate that pays the fixed positive
-> variation-or-occupation bridge charge by a bounded telescope. Do not
-> use the unavailable global \(L^3\) identity or replace event index by
-> physical log density. The \(L^2\) similarity balance, instantaneous
-> pressure Poisson algebra, and known small \(L^{2+\delta}\) gradient gain
-> have already been audited and do not supply this estimate.
+> \(\delta_0\). In the complementary infinite-mean branch, the
+> solenoidal-adjoint construction already forces a fixed positive
+> lower-relaxed pressure-history cost on every bridge. Prove either a
+> uniform sub-square-root upper law for that history or an event-index
+> upper bound summing the overlapping bridge costs. Do not assume an
+> intrinsic endpoint adjoint on the rough hull, use the unavailable global
+> \(L^3\) identity, or replace event index by physical log density.
+> Adjoint \(L^2\) energy, the physical pressure Poisson algebra, and the
+> known small \(L^{2+\delta}\) gradient gain do not control the required
+> \(L^1_x\) adjoint-pressure source.
 >
 > First test the synchronized event sequence itself: determine whether
 > one-trajectory clock geometry, a finite-secondary-index estimate, a
