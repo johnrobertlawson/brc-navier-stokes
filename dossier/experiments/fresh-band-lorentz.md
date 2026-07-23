@@ -598,3 +598,10 @@ that band a fixed strong parabolic \(L^{5/2}\) occupation. The remaining
 gate is to control or exploit the resulting divergent strong critical block
 occupation through a temporal frequency-energy telescope, a nonlocal positive
 flux, or another scale-zero law.
+
+The subsequent
+[fixed-shell and terminal-clock reduction](fixed-shell-clock-compactification.md)
+shows that the annulus can be chosen with one fixed relative shape,
+independent of its predecessor. It also exhausts the possible parent forward
+clocks and shows that pure persistence-time packing does not count the
+events.

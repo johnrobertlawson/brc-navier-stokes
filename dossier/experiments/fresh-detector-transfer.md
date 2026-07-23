@@ -515,3 +515,12 @@ moment does not coerce nonlinear frequency transfer. An exact Beltrami heat
 solution has a nonzero intrinsic detector increment and identically zero
 projected nonlinearity; every ordinary local energy term remains weighted by
 one physical power of the node radius.
+
+The later
+[fixed-shell and terminal-clock reduction](fixed-shell-clock-compactification.md)
+replaces the predecessor-dependent block by the fixed relative top shell
+\((\vartheta M/R_j,M/R_j]\). The detector transfer and strong critical
+occupation persist, but unrenormalised local history on the smaller carrier
+clock loses the shell action by powers of the internal ratio. The live
+history target is therefore a parent-clock, explicitly renormalised, or
+genuinely nonlocal law.

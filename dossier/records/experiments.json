@@ -1285,6 +1285,39 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-FIXED-SHELL-CLOCK-001",
+      "title": "Fixed top-shell transfer and terminal-clock compactification",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "The synchronized fresh-band sequence still requires predecessor-dependent annuli, while its physical event clocks or subnatural carrier dynamics alone may supply an additive scale-zero contradiction.",
+      "invariants": [
+        "A fixed relative cutoff theta splits every full parent detector band into a coarse complement and one fixed-shape top annulus depending only on the current parent radius",
+        "Endpoint Lorentz-Bernstein gives a coarse parent-normalized ceiling proportional to theta squared uniformly over the event sequence",
+        "For fixed sufficiently small theta, the noncommutative squared-detector error is at most half the carrier threshold on the same prelimit carrier sets",
+        "One sparse thinning separates the enlarged smooth supports of the fixed top shells while preserving all carrier inequalities and compactness errors",
+        "Every fixed top shell retains one positive critical L five halves spacetime occupation and the separated block sum diverges",
+        "Each parent rescaling has an ancient backward domain and a compactified forward horizon Theta equal to the terminal gap divided by the squared parent radius",
+        "The exhaustive forward-clock limits are a terminal layer, a finite positive forward horizon, and an eternal horizon",
+        "Current compactness yields only a nonzero fixed-top-shell marked distributional candidate on compact subsets inside the limiting parent domain, not suitability or mildness",
+        "On the subnatural carrier clock, spatial and temporal shell variation scale as lambda and lambda squared, intrinsic strain and detector scale as lambda squared and lambda fourth, and cumulative strain impulse and viscous phase vanish",
+        "The order-one carrier detector remains an externally renormalized parent mark rather than an unrenormalized local carrier-scale dynamical charge",
+        "Sparse persistence intervals have summable physical lengths, and scale and time convergence alone do not select a forward-clock regime",
+        "No parent-clock rigidity, clock-scale law, genealogy, regularity theorem, blow-up theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Apply endpoint Lorentz-Bernstein directly at a fixed fraction of every parent cutoff, transfer the squared detector to the resulting top annulus on the original carrier set, sparsely separate those fixed-shape symbols, compactify the forward event horizon by the ratio of terminal gap to parent radius squared, and audit the exact shell powers on the subnatural carrier clock and the persistence-time packing sum.",
+      "certificate": "A written fixed-shell and clock trichotomy reduction plus exact Fraction tests for top-shell detector transfer, enlarged-support separation, all three gap-power clock regimes, parent-domain endpoints, carrier-clock action powers, and geometric persistence-time summability.",
+      "success_criterion": "The predecessor-dependent annulus is replaced by a fixed-shape marked shell, the possible parent limiting domains are exhausted, and unrenormalized local carrier-shell action and pure clock packing are either made coercive or shown to lose the required scale-zero charge.",
+      "failure_interpretation": "The fixed low-frequency complement lacks the claimed theta-squared endpoint ceiling, detector transfer requires predecessor data, sparse selection cannot separate the fixed smooth shells, the parent domains have another clock topology, or an order-one intrinsic carrier action survives one of the audited scaling powers.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/fixed-shell-clock-compactification.md",
+        "lab/navier_lab/fixed_shell_clock.py",
+        "lab/tests/test_fixed_shell_clock.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

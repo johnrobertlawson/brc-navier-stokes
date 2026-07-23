@@ -1,6 +1,6 @@
-# Handoff: synchronized fresh-band frontier
+# Handoff: fixed-shell terminal-clock frontier
 
-**Updated:** 2026-07-23T16:05:15Z
+**Updated:** 2026-07-23T16:22:18Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -32,10 +32,28 @@ fatal flaw in its stated non-genealogical scope; the fixed smooth-symbol
 overlap condition and persistence citation requested in that second pass are
 now explicit.
 
-The immediate target is therefore a law that controls or exploits this
-actual divergent block occupation. A coherent two-scale genealogical
-diagonal remains a separate prerequisite for any two-edge no-neck or
-stationary-process route.
+The block theorem has now been sharpened again. A fixed small relative
+cutoff transfers the detector to one fixed-shape top annulus at every
+parent event; the block no longer depends on its retained predecessor.
+Sparse thinning separates these smooth shell supports and preserves the
+same divergent critical occupation.
+
+Parent rescaling exposes an exhaustive forward-clock trichotomy. With
+\(\Theta_j=(T^*-t_j)/R_j^2\), subsequences have
+\(\Theta=0\), \(0<\Theta<\infty\), or \(\Theta=\infty\): respectively a
+terminal-layer, finite-forward-horizon, or eternal distributional candidate,
+each carrying a nonzero fixed-top-shell mark. Suitability and mildness are
+not proved. On the smaller carrier clock the shell's intrinsic detector,
+strain impulse, and viscous phase vanish by powers of the internal ratio,
+so an unrenormalised local carrier-history law loses the missing scale-zero
+charge; retaining it requires negative renormalisation or another
+cross-scale input. Sparse persistence intervals also have summable total
+length.
+
+The immediate target is therefore a PDE clock--scale relation or rigidity
+for all three fixed-shell marked parent candidates. A coherent two-scale
+genealogical diagonal remains a separate prerequisite for any two-edge
+no-neck or stationary-process route.
 
 The arXiv:2607.08866v2 proof chain has been independently reconstructed. It survives
 only as a repaired conditional theorem for a projected-mild solution with:
@@ -498,32 +516,33 @@ closed branches. The original regularity target remains
 
 Start with only:
 
-1. `dossier/experiments/two-scale-synchronization.md`;
-2. `dossier/review-response-2026-07-23.md`;
-3. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-4. `dossier/experiments/fresh-detector-transfer.md`;
-5. `dossier/experiments/fresh-band-lorentz.md`;
-6. `dossier/experiments/scale-indexed-defect.md` only for the stronger
+1. `dossier/experiments/fixed-shell-clock-compactification.md`;
+2. `dossier/experiments/two-scale-synchronization.md`;
+3. `dossier/review-response-2026-07-23.md`;
+4. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
+5. `dossier/experiments/fresh-detector-transfer.md`;
+6. `dossier/experiments/fresh-band-lorentz.md`;
+7. `dossier/experiments/scale-indexed-defect.md` only for the stronger
    genealogy/process branch;
-7. `dossier/experiments/frequency-energy-flux.md`;
-8. `dossier/experiments/tree-budget-audit.md`;
-9. `dossier/experiments/moving-band-coupling.md`;
-10. `dossier/experiments/forcing-jet-decoupling.md`;
-11. `dossier/experiments/strain-jet-freezing.md`;
-12. `dossier/experiments/microbubble-decoration-rigidity.md`;
-13. `dossier/experiments/terminal-carrier-microbubble.md`;
-14. `dossier/experiments/terminal-alignment-excess.md`;
-15. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-16. `dossier/experiments/terminal-trace-excess.md`;
-17. `dossier/experiments/projective-zero-interface.md`;
-18. `dossier/experiments/trace-projective-domination.md`;
-19. `dossier/experiments/trace-boundary-renormalisation.md`;
-20. `dossier/experiments/trace-transition-band-flux.md`;
-21. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+8. `dossier/experiments/frequency-energy-flux.md`;
+9. `dossier/experiments/tree-budget-audit.md`;
+10. `dossier/experiments/moving-band-coupling.md`;
+11. `dossier/experiments/forcing-jet-decoupling.md`;
+12. `dossier/experiments/strain-jet-freezing.md`;
+13. `dossier/experiments/microbubble-decoration-rigidity.md`;
+14. `dossier/experiments/terminal-carrier-microbubble.md`;
+15. `dossier/experiments/terminal-alignment-excess.md`;
+16. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+17. `dossier/experiments/terminal-trace-excess.md`;
+18. `dossier/experiments/projective-zero-interface.md`;
+19. `dossier/experiments/trace-projective-domination.md`;
+20. `dossier/experiments/trace-boundary-renormalisation.md`;
+21. `dossier/experiments/trace-transition-band-flux.md`;
+22. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-22. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+23. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-23. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+24. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:

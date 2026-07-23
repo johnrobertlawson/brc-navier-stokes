@@ -602,3 +602,11 @@ genealogical diagonal array has yet been selected. Conditional on such an
 array, the abstract shift law and counting-versus-log-depth conclusions
 survive, but two distinct zero-ratio edges and the signed history source must
 be retained.
+
+The later
+[fixed-shell and terminal-clock reduction](fixed-shell-clock-compactification.md)
+sharpens the same energy mismatch. On the subnatural carrier duration, the
+fixed top shell has \(O(\lambda^2)\) strain impulse and viscous phase and an
+intrinsic squared detector of order \(\lambda^4\). Its order-one carrier
+mark is external, so the unrenormalised local carrier-shell action cannot
+restore the missing scale-zero energy charge.

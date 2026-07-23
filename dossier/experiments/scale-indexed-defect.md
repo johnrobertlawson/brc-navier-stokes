@@ -656,6 +656,12 @@ construct an infinite same-trajectory genealogy, exclude one, establish
 suitability or rigidity, prove regularity or blow-up, or resolve any Clay
 alternative A--D.
 
+For the non-genealogical branch, the later
+[fixed-shell and terminal-clock reduction](fixed-shell-clock-compactification.md)
+attaches one fixed-shape top shell to every same-event carrier and
+compactifies the parent forward horizon into terminal-layer, finite-horizon,
+and eternal candidates. It does not supply the bridge edge audited here.
+
 Run the exact two-scale ratio, detector-scaling, generic cocycle,
 measure-normalisation, shift-boundary, cutoff-covariance, and history-square
 ledgers with:

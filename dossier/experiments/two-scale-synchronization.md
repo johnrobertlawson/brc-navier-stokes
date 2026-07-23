@@ -532,6 +532,26 @@ clock geometry, a genuinely scale-zero non-energy law, or a rigidity theorem
 which accepts the synchronized event sequence without inventing inter-event
 nesting.
 
+The subsequent
+[fixed-shell and terminal-clock reduction](fixed-shell-clock-compactification.md)
+sharpens the predecessor-dependent broad block \(G_j\) to the fixed relative
+top shell
+
+\[
+\left(
+\frac{\vartheta M}{R_j},
+\frac{M}{R_j}
+\right].
+\]
+
+Endpoint Lorentz--Bernstein makes the discarded coarse part
+\(O(\vartheta^2)\), uniformly in \(j\), so one fixed sufficiently small
+\(\vartheta\) preserves the carrier moment. Sparse selection separates the
+resulting fixed-shape smooth symbols. The same reduction compactifies the
+parent forward clock into terminal-layer, finite-horizon, and eternal
+candidates, and proves that unrenormalised carrier-clock shell action and
+pure persistence packing do not control the scale-zero block count.
+
 Run the exact recursive-selection, cutoff-interval, detector-transfer, and
 occupation ledgers with:
 
