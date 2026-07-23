@@ -24,6 +24,10 @@ and breakdown work
   \(\left(\sum_j\log(1/r_j)^{-3/2}\right)^{2/3}\). Overlap multiplicity is removable;
   vanishing content is absorbable, while \(O(1/\log\lambda)\) content retains the
   complete conditional logarithmic chain.
+- Smooth compactly supported divergence-free packet families show that this content
+  need not vanish even when kinetic energy, critical \(L^3\) velocity norm, and
+  high-level perimeter all vanish and strong \(L^{3/2}\) vorticity stays bounded.
+  These are admissible instantaneous data, not one Navier--Stokes evolution.
 - Smooth divergence-free vorticity need not supply a log-weighted BMO direction
   extension across its zero set.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
@@ -36,9 +40,8 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can uniform vanishing logarithmic cover content and log-weighted direction control
-> be derived or refuted using quantities actually controlled by viscous
-> Navier–Stokes dynamics?
+> Can viscous evolution prevent logarithmic-threshold vortex fragmentation across
+> time, and can it generate the required log-weighted direction control?
 
 The coequal breakdown question remains:
 
@@ -47,11 +50,11 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive the logarithmic cover-content decay from a PDE-controlled packing,
-   perimeter, concentration, or analyticity quantity, or construct a PDE-consistent
-   non-vanishing packing.
-2. Lift the scalar localisation counterexamples toward divergence-free,
-   Biot–Savart-consistent vorticity geometry.
+1. Quantify the lifetime and required external strain of a logarithmic-threshold
+   packet packing; prove dynamic dissipation excludes it or isolate a dynamically
+   consistent survivor.
+2. Test whether quantitative spatial analyticity supplies a uniform doubling or
+   component-count bound at the packet radius.
 3. Test whether local energy and viscosity force any terminal-time VMO modulus for
    vorticity direction.
 4. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the

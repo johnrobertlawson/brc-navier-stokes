@@ -379,8 +379,14 @@ upstream question is exact:
 > PDE-consistent sequence retain non-vanishing logarithmic cover content?
 
 Bare weak-\(L^{3/2}\) volume control cannot answer this: a fixed admissible volume may
-be divided among arbitrarily many smaller separated pieces. A PDE-derived packing,
-component-count, diameter, or concentration estimate is still required.
+be divided among arbitrarily many smaller separated pieces. The
+[divergence-free perimeter packing](perimeter-packing.md) strengthens that
+obstruction: even vanishing kinetic energy, critical \(L^3\) velocity norm, and
+high-level perimeter do not force the content to vanish.
+
+The remaining bridge must therefore use genuinely dynamic coupling across times,
+quantitative spatial concentration, or an analytic doubling mechanism rather than
+another instantaneous volume, norm, or upper-perimeter estimate.
 
 Run the exact exponent checks with:
 

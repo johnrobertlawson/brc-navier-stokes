@@ -135,6 +135,33 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-PERIMETER-PACKING-001",
+      "title": "Divergence-free packet obstruction to perimeter-controlled cover entropy",
+      "kind": "analytic_counterexample",
+      "route_ids": ["ROUTE-R3A"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "Kinetic energy, critical L3 velocity and L(3/2) vorticity size, and even vanishing perimeter of a high-vorticity set do not by themselves force its logarithmic cover content to vanish.",
+      "invariants": [
+        "Every velocity field is smooth, compactly supported, and divergence-free",
+        "Vorticity is the exact curl and is Biot-Savart consistent",
+        "The critical L3 velocity norm vanishes",
+        "The strong L(3/2) vorticity norm is uniform",
+        "Kinetic energy and high-level perimeter vanish along the family",
+        "The family is not asserted to be one Navier-Stokes evolution"
+      ],
+      "method": "Scale and widely separate identical compactly supported vortex packets, choose the packet count at the logarithmic threshold, and prove a matching lower bound for every admissible ball cover.",
+      "certificate": "A written construction and exact rational exponent checks for volume, perimeter, kinetic energy, both critical norms, and cover entropy.",
+      "success_criterion": "At levels tending to infinity, the logarithmic cover content stays bounded below while the listed PDE-kinematic quantities remain bounded or vanish.",
+      "failure_interpretation": "The packet field is not divergence-free and Biot-Savart consistent, a claimed scaling exponent is wrong, or a cheaper admissible cover defeats the entropy lower bound.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/perimeter-packing.md",
+        "lab/navier_lab/perimeter_packing.py",
+        "lab/tests/test_perimeter_packing.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

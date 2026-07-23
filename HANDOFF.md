@@ -1,6 +1,6 @@
-# Handoff: derive cover entropy from dynamics; do not re-audit
+# Handoff: test dynamic packet persistence; do not re-audit
 
-**Updated:** 2026-07-23T05:34:21Z
+**Updated:** 2026-07-23T05:47:36Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -23,27 +23,44 @@ result is not Clay A–D.
 
 ## Default next target: ROUTE-R3A
 
-Derive the new logarithmic cover-content condition from a quantity controlled by
-viscous Navier--Stokes dynamics, or isolate an exact PDE-consistent obstruction.
+Determine whether viscous dynamics exclude logarithmic-threshold packet
+fragmentation, rather than seeking another instantaneous geometric bound.
 
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3A")' dossier/records/routes.json`;
-2. `dossier/experiments/covering-entropy.md`;
-3. the single geometric quantity selected for the next experiment.
+2. `dossier/experiments/perimeter-packing.md`;
+3. the vorticity equation and the single dynamic quantity selected for the next
+   experiment.
 
-Completed accounting result:
+Completed static results:
 
 > A cover by balls \(B_{r_j}\) costs exactly
 > \(\left(\sum_j\log(1/r_j)^{-3/2}\right)^{2/3}\). A measurable disjoint
 > refinement removes overlap multiplicity. Vanishing uniform content is absorbable;
 > \(O(1/\log\lambda)\) content retains the full conditional chain.
 
-For comparable polynomially shrinking cores, the count threshold is
-\(N_\lambda=o((\log\lambda)^{3/2})\). Finite moving cores and the recorded anisotropic
-core retain the full gain. The next deliverable must connect this content to an actual
-PDE-controlled packing, perimeter, concentration, or analyticity estimate; do not
-replace that step with another scalar profile.
+The critical obstruction uses
+\(\lambda_m=e^{m^2}\), \(N_m=m^3\), and
+\(r_m=\lambda_m^{-1/2}N_m^{-1/3}\). It consists of smooth compactly supported
+divergence-free velocities with
+
+- uniform strong \(L^{3/2}\) vorticity;
+- vanishing kinetic energy and critical \(L^3\) velocity norm;
+- vanishing high-level perimeter;
+- logarithmic cover content converging to \(2\).
+
+This kills volume, energy, critical instantaneous norms, and upper perimeter as
+static bridges. It is a family of admissible initial data, not one evolution.
+
+Next deliverable:
+
+> At the packet radius \(r_\lambda\), compute the viscous lifetime and the strain
+> needed to maintain level \(\lambda\). Either prove that the repaired hypotheses or
+> another PDE-controlled quantity cannot supply that strain uniformly, or construct
+> a dynamically consistent survivor.
+
+Do not replace the time-coupling step with another snapshot packing.
 
 ## Alternative routes—choose one, do not mix them
 
