@@ -390,7 +390,7 @@
       "primary": true,
       "status": "peer_reviewed",
       "last_checked": "2026-07-23",
-      "notes": "Theorem 1.2 proves that a suitable weak solution with a local-in-space, uniform-in-time weak-L3 bound has only finitely many singular points at the selected terminal time in every compactly contained spatial subdomain. The conclusion is local finiteness and does not require global finite energy."
+      "notes": "Theorem 1.2 proves that a suitable weak solution with a local-in-space, uniform-in-time weak-L3 bound has only finitely many singular points at the selected terminal time in every compactly contained spatial subdomain. Proposition 1.3 supplies epsilon(M,N) from weak-L3 ceiling M and scale-invariant energy-pressure ceiling N; the proof of Theorem 1.2 takes P=floor(M^3 epsilon^-4)+1 disjoint singular balls and derives a contradiction, so the count is uniform when M and N are uniform. The conclusion is local and does not require global finite energy."
     },
     {
       "id": "SRC-ALBRITTON-BARKER-2019",

@@ -1686,6 +1686,46 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-TERMINAL-CLUSTER-PACKING-001",
+      "title": "Inter-satellite finite branching and packet-to-cluster no-neck",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-LOCAL-ENERGY-RESTART-001",
+        "CLM-SINGULARITY-PERSISTENCE-001",
+        "CLM-LOCAL-WEAK-L3-SINGULAR-COUNT-001",
+        "CLM-WEAK-001"
+      ],
+      "hypothesis": "Arbitrarily many mutually separated terminal satellites can remain microscopic at one inter-satellite cluster scale because local weak-L3 theory supplies only solution-by-solution qualitative finiteness.",
+      "invariants": [
+        "The theorem is conditional on one terminal satellite family with a uniform physical normalized shell mark",
+        "The profile scale is an inter-satellite cluster radius rather than a packet radius or satellite-to-core distance",
+        "Every selected centre lies in one normalized unit ball and every pair has a fixed positive normalized separation",
+        "All source indices tend to infinity and all selected packet-to-cluster ratios tend to zero",
+        "Critical weak-L3 scaling gives the same local L2 ceiling for every cluster profile",
+        "Barker-Prange restart tiling gives one uniform local energy and pressure ceiling around every point of a fixed profile ball",
+        "Seregin Proposition 1.3 and the proof of Theorem 1.2 turn that ceiling and the weak-L3 ceiling into one profile-independent terminal singular-count integer",
+        "Every microscopic moving shell forces prelimit local L-infinity divergence through the reviewed local/far kernel split",
+        "Albritton-Barker persistence retains every separated satellite as a distinct terminal singular point of the same suitable limit",
+        "The number of separated microscopic satellites at one cluster scale is bounded by the uniform Seregin count",
+        "A compactness contradiction gives a fixed positive packet-to-cluster ratio in every later cluster whose separated cardinality exceeds that count",
+        "At each fixed relative resolution, every microscopic tangent cloud therefore has uniformly finite branching",
+        "The Type-I core escapes when the cluster diameter is negligible relative to the satellite-to-core distance",
+        "No packet-to-core no-neck estimate, hierarchy-depth bound, inter-level flux, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Rescale a finite separated terminal cluster by its own diameter, use the weak endpoint and Barker-Prange restart for uniform suitable compactness and energy-pressure control, persist each shrinking shell as a singular point, apply the quantitative count extracted from Seregin Proposition 1.3 and the proof of Theorem 1.2, and negate the forbidden arrays to obtain a packet-to-cluster no-neck constant for overcrowded clusters.",
+      "certificate": "A written source-scoped conditional theorem plus exact Fraction tests for inter-satellite normalization, the source cubic/fourth-power singular-count ledger, integer overcrowding threshold, normalized separation, and the finite-branching versus no-neck alternative.",
+      "success_criterion": "Every microscopic terminal tangent cloud has one uniform finite branching bound, while any separated cluster exceeding that bound contains a packet comparable to the cluster diameter.",
+      "failure_interpretation": "The Barker-Prange pressure window is not uniform at arbitrary inter-satellite scales, the quantitative Seregin count cannot be made uniform from those ceilings, moving microscopic shells do not persist at all separated positions, or negating the forbidden compactness arrays does not yield a late uniform packet-to-cluster ratio.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/terminal-cluster-packing.md",
+        "lab/navier_lab/terminal_cluster_packing.py",
+        "lab/tests/test_terminal_cluster_packing.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

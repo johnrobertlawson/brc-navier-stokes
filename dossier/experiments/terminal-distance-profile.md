@@ -448,13 +448,14 @@ In particular, it does not prove:
 5. retention of more than one satellite at a common distance scale; or
 6. any Clay alternative A--D.
 
-The next exact gate is a many-satellite packing/lacunarity dichotomy.
-Seregin's theorem gives a finite terminal singular count on every compact
-distance-profile region. If one common distance normalization can retain
-more separated satellite marks than that count permits, centering escape
-is impossible. Failure must impose quantitative radial or angular
-lacunarity on the physical satellite tower. Either outcome is a stricter
-geometric target than the former unspecified demand for scale recurrence.
+The subsequent
+[satellite-packing theorem](terminal-satellite-packing.md) carries out
+this many-satellite gate. It forces adjacent radial-distance ratio liminf
+zero. The later [cluster-packing theorem](terminal-cluster-packing.md)
+uses Seregin's proof-level quantitative count to bound microscopic
+inter-satellite branching uniformly and forces packet-to-cluster no-neck
+at overcrowded nodes. The remaining gate is an inter-level depth charge,
+not another qualitative singular-cardinality argument.
 
 Run the exact distance, micro-shell, kernel-split, and dilation-orbit
 ledgers with:

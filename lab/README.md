@@ -123,6 +123,7 @@ From the repository root:
     make terminal-outer-profile
     make terminal-distance-profile
     make terminal-satellite-packing
+    make terminal-cluster-packing
     make strain
     make fetch-2607
     make compile-2607

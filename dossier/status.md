@@ -826,9 +826,18 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > radial gaps, possibly separating finite or radially collapsed clusters.
 > [Independent review](review-response-terminal-satellite-packing-2026-07-23.md)
 > found all four links valid in the theorem's stated conditional scope
-> and requested only two wording clarifications.
-> The next gate is an inter-satellite normalization inside those clusters,
-> or a same-trajectory flux joining the distance and Besov outer profiles;
+> and requested only two wording clarifications. The
+> [terminal cluster-packing reduction](experiments/terminal-cluster-packing.md)
+> now rescales separated satellites by their mutual cluster diameter.
+> Barker--Prange gives one profile-uniform local energy/pressure ceiling,
+> and the proof of Seregin's theorem turns it into one uniform terminal
+> singular-count integer \(\mathfrak N_*\). Every microscopic shell
+> persists, so a tangent cloud has at most \(\mathfrak N_*\) separated
+> branches. Any later cluster with more branches forces a fixed
+> packet-to-cluster no-neck ratio. Spatial cardinality is therefore
+> reduced to an infinite-depth, uniformly finite-branching hierarchy.
+> The next gate is a same-trajectory depth charge joining successive
+> levels, or a bridge joining the distance and Besov outer profiles;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -842,15 +851,11 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Exploit the terminal satellite-packing law
-   \[
-   \liminf_{j\to\infty}\frac{|x_{j+1}-x_*|}{|x_j-x_*|}=0.
-   \]
-   Normalize two satellites inside one surviving finite or radially
-   collapsed cluster by their mutual separation. If both packets are
-   smaller than that separation, retain multiple singularities and bound
-   cluster complexity; otherwise extract a quantitative
-   packet-to-separation no-neck relation.
+1. Construct or rule out a same-trajectory depth charge on the uniformly
+   finite-branching terminal cluster hierarchy. It must retain a fixed
+   amount at each nested level and be controlled by a finite physical
+   budget; static energy, weak endpoints, and local singular cardinality
+   have already been exhausted.
 2. Relate the distance profile to the nonzero coherent weak-\(L^3\) Besov
    outer profile realised at
    \(R_j\ll\rho_j\ll|x_j-x_*|\), or prove a same-trajectory flux that

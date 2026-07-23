@@ -394,6 +394,27 @@
       "last_checked": "2026-07-23"
     },
     {
+      "id": "CLM-LOCAL-WEAK-L3-SINGULAR-COUNT-001",
+      "plain": "Uniform local weak-L3 and scale-invariant energy-pressure ceilings give a uniform quantitative terminal singular-point count.",
+      "formal": "In the proof of Seregin Theorem 1.2, Proposition 1.3 supplies epsilon(M,N)>0 from a weak-L3 ceiling M and local energy-pressure ceiling N; disjoint terminal singular balls then imply that the number of terminal singular points is at most floor(M cubed times epsilon(M,N) to the negative fourth power).",
+      "domain": "local_cylinder",
+      "forcing": "zero",
+      "solution_class": "suitable_weak",
+      "assumptions": [
+        "Suitability on the source cylinders",
+        "A uniform local-in-time weak-L3 ceiling M",
+        "A uniform source scale-invariant local energy-pressure ceiling N",
+        "A compactly contained spatial subdomain"
+      ],
+      "conclusion": "The terminal singular-point count is bounded uniformly across every solution family with the same M and N.",
+      "scaling": "critical_local_quantitative",
+      "status": "established",
+      "source_ids": ["SRC-SEREGIN-2021-LOCAL-WEAK-L3"],
+      "depends_on": ["CLM-LOCAL-WEAK-L3-SINGULAR-FINITENESS-001"],
+      "audit": "The displayed theorem states finiteness; the quantitative dependence and floor bound are read from Proposition 1.3 and the disjoint-ball count in the published proof. Uniformity across rescaled profiles additionally requires a common energy-pressure ceiling.",
+      "last_checked": "2026-07-23"
+    },
+    {
       "id": "CLM-TYPE-I-ANCIENT-EQUIVALENCE-001",
       "plain": "Existence of a suitable Type-I singular point is equivalent to existence of a nontrivial mild bounded ancient solution with finite scale-invariant Type-I quantity.",
       "formal": "Albritton-Barker Theorem 1.1 states that there exists a suitable weak solution with a Type-I singular point if and only if there exists a nontrivial mild bounded ancient R3 solution with finite source quantity I.",

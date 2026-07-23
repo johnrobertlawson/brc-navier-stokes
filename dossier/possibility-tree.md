@@ -87,8 +87,12 @@ packing theorem permits only finitely many distinct positive limiting
 satellite radii in one distance profile and forces every radially ordered
 infinite tower to have adjacent-distance ratio liminf zero. The surviving
 cell therefore consists of finite or radially collapsed clusters separated
-by arbitrarily severe gaps. The next closure test is an inter-satellite
-normalization versus packet-to-separation no-neck.
+by arbitrarily severe gaps. Inter-satellite compactification and the
+quantitative local singular count now bound every microscopic tangent
+cloud by one uniform branching number; overcrowding instead forces a
+packet-to-cluster no-neck ratio. The remaining cell is an infinite-depth,
+uniformly finite-branching hierarchy. The next closure test is a
+same-trajectory depth charge or scale ancestry law.
 
 ### Singular-to-smooth construction bridge
 

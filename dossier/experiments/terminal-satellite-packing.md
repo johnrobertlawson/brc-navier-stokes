@@ -460,14 +460,13 @@ It also does not prove:
 6. a fixed-frequency mark in the distance-profile limit; or
 7. incompatibility with the recursive Besov outer profile.
 
-The surviving geometry consists of finite or radially collapsed clusters
-separated by arbitrarily severe gaps. The next exact normalization should
-centre two satellites inside one such cluster and scale by their mutual
-distance. If both packet-to-separation ratios vanish, the same kernel and
-persistence argument retains two satellite singularities while the core
-may escape; iterating that construction could bound cluster complexity.
-If a packet is not smaller than the separation, the failure itself is a
-quantitative no-neck relation at the inter-satellite scale.
+The subsequent
+[cluster-packing theorem](terminal-cluster-packing.md) performs this
+inter-satellite normalization. The proof-level quantitative Seregin count
+gives one uniform finite branching number, while overcrowding forces a
+packet-to-cluster no-neck relation. What remains is not unbounded
+branching but an infinite-depth finite-branching hierarchy. Closing it
+requires a same-trajectory depth charge or scale-ancestry law.
 
 Run the exact radial-level, packet-factorisation, separation, and
 threshold-crossing ledgers with:

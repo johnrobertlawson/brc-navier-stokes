@@ -270,10 +270,16 @@ distinct levels are distinct by their distance from the retained core.
 Local finiteness rules out infinitely many levels. A fixed-threshold
 crossing diagonal then forces
 \(\liminf_j |x_{j+1}-x_*|/|x_j-x_*|=0\) for every radially ordered
-infinite satellite family. The immediate target is now an
-inter-satellite normalization inside the surviving finite or radially
-collapsed clusters. It should either bound cluster complexity or turn
-failure of packet-to-separation smallness into a no-neck relation. A
+infinite satellite family. The subsequent
+[terminal cluster-packing theorem](dossier/experiments/terminal-cluster-packing.md)
+uses Seregin's proof-level quantitative count together with the uniform
+Barker--Prange energy/pressure window. At any inter-satellite scale, a
+microscopic tangent cloud has at most one fixed number
+\(\mathfrak N_*\) of separated branches. Any later cluster exceeding that
+number contains a packet comparable to the cluster diameter. This closes
+unbounded spatial branching but not unbounded depth. The immediate target
+is now a same-trajectory depth charge or ancestry law that pays a fixed
+summable cost at every successive finite-branching level. A
 [Four-link independent adversarial review](dossier/review-response-terminal-satellite-packing-2026-07-23.md)
 found the diagonal, moving-shell persistence, compact packing, and
 threshold-crossing arguments valid in their stated conditional scope. A
