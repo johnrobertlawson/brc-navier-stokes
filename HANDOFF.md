@@ -1,6 +1,6 @@
-# Handoff: charge or retain the nested microbubble tower
+# Handoff: find the logarithmic scale charge
 
-**Updated:** 2026-07-23T14:16:53Z
+**Updated:** 2026-07-23T14:28:09Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -468,23 +468,24 @@ closed branches. The original regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/moving-band-coupling.md`;
-3. `dossier/experiments/forcing-jet-decoupling.md`;
-4. `dossier/experiments/strain-jet-freezing.md`;
-5. `dossier/experiments/microbubble-decoration-rigidity.md`;
-6. `dossier/experiments/terminal-carrier-microbubble.md`;
-7. `dossier/experiments/terminal-alignment-excess.md`;
-8. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-9. `dossier/experiments/terminal-trace-excess.md`;
-10. `dossier/experiments/projective-zero-interface.md`;
-11. `dossier/experiments/trace-projective-domination.md`;
-12. `dossier/experiments/trace-boundary-renormalisation.md`;
-13. `dossier/experiments/trace-transition-band-flux.md`;
-14. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+2. `dossier/experiments/tree-budget-audit.md`;
+3. `dossier/experiments/moving-band-coupling.md`;
+4. `dossier/experiments/forcing-jet-decoupling.md`;
+5. `dossier/experiments/strain-jet-freezing.md`;
+6. `dossier/experiments/microbubble-decoration-rigidity.md`;
+7. `dossier/experiments/terminal-carrier-microbubble.md`;
+8. `dossier/experiments/terminal-alignment-excess.md`;
+9. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+10. `dossier/experiments/terminal-trace-excess.md`;
+11. `dossier/experiments/projective-zero-interface.md`;
+12. `dossier/experiments/trace-projective-domination.md`;
+13. `dossier/experiments/trace-boundary-renormalisation.md`;
+14. `dossier/experiments/trace-transition-band-flux.md`;
+15. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-15. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+16. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-16. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+17. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
@@ -1701,20 +1702,32 @@ Completed terminal alignment-excess reduction:
 > \(\delta_j^{-2}(\delta_jJ_j)^2=J_j^2\), an inverse factor absent from the
 > Navier--Stokes stress equation. Thus both one-cylinder frequency
 > shortcuts are closed.
+>
+> Standard tree budgets also fail on one nested path. Kinetic energy,
+> spacetime dissipation, and local energy flux charge a scale-critical node
+> by \(R\); unweighted tensor mass charges \(R^5\). Both geometric sums
+> converge. Endpoint weak \(L^{3/2}\) is scale-zero but supremal: exact
+> nested shells keep its norm fixed while their strong spatial
+> \(L^{3/2}\) and parabolic \(L^{5/2}\) masses grow linearly with depth.
+> The required object is the additive logarithmic charge
+> \(\sum_vm_v\), where \(m_v\) is the positive parent-detector-projected
+> Young moment. No current estimate bounds it.
 
 Next deliverable:
 
-> Formulate the exact Carleson or tree quantity that an infinite sequence of
-> constant-decorated microbubbles would consume. Track physical energy,
-> enstrophy, local energy flux, endpoint weak-vorticity content, and
-> projected tensor moment across one parent--child edge before summing the
-> tree. Determine whether any scale-invariant budget gives a positive charge
-> per decorated node or whether all known budgets remain summable along a
-> fifth-power tower. Do not continue one-cylinder fixed- or moving-output
-> paraproduct estimates: both local frequency routes now decouple.
+> Test whether the parent low bands at successive decorated nodes admit a
+> scale-to-scale telescoping or Littlewood--Paley martingale decomposition
+> whose square function controls
+> \(\sum_vm_v\). Separate low-pass persistence from genuine band increments,
+> localise the increments to disjoint parabolic shells, and compute the exact
+> Lorentz sequence exponent available from the endpoint weak
+> \(L^{3/2}\) bound. If the endpoint supplies only an \(\ell^\infty\) scale
+> ledger, record the missing \(\ell^1\) or \(\ell^2\) input and retain the
+> log-scale-indexed moment as a defect. Do not return to positive-radius
+> energy, dissipation, flux, volume, or one-cylinder paraproduct estimates.
 > Neither suitability of the undecorated microchild, an arbitrary constant
 > detector, unweighted volume, nor the collapsed intrinsic band can close
-> this. A successful tree or nonlocal estimate excludes the
+> this. A successful telescoping or nonlocal estimate excludes the
 > direction-weighted concentration
 > \((\xi_n\cdot D_n\xi_n)\rho_n\). Determine whether bounded
 > projective-cross content makes this directional weight compact enough to

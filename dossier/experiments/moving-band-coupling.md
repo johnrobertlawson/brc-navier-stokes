@@ -289,3 +289,9 @@ regularity, blow-up, or any Clay alternative A--D.
 Run the exact moving-band powers with:
 
     make moving-band
+
+The subsequent [tree-budget audit](tree-budget-audit.md) proves that standard
+energy, dissipation, endpoint-size, and unweighted-volume packing also permit
+one infinite geometric path. The live quantity is the additive
+logarithmic-depth sum of positive projected moments, which requires
+same-trajectory telescoping, quasi-orthogonality, or a nonlocal law.

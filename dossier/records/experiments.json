@@ -1093,6 +1093,36 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-TREE-BUDGET-001",
+      "title": "Nested microbubble tree-budget audit",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "A standard globally bounded Navier-Stokes quantity gives a positive additive scale-zero charge to every constant-decorated microbubble node and therefore excludes an infinite nested path.",
+      "invariants": [
+        "A scale-critical parent strain has physical amplitude radius to the negative two",
+        "Kinetic energy, spacetime dissipation, and local energy flux have one positive power of the node radius",
+        "Unweighted tensor-carrier spacetime mass has five positive powers of the node radius",
+        "Instantaneous enstrophy has radius power negative one but is not uniformly bounded at the terminal time by the current hypotheses",
+        "Endpoint weak L three halves vorticity is scale invariant but aggregates by a supremum rather than an additive scale sum",
+        "Exact nested shells can keep the endpoint weak norm fixed while their strong spatial L three halves and parabolic L five halves masses grow linearly with depth",
+        "A single geometric path satisfies every positive-radius energy and volume packing budget",
+        "Only a logarithmic depth charge, strong critical occupation, or equivalent tree-indexed positive moment can pay a fixed amount per node",
+        "No such depth bound, tower survivor, regularity theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Compute the exact radius powers of standard physical budgets, evaluate finite and infinite geometric tree sums, construct an exact nested critical-shell distribution with depth-independent weak endpoint norm, and compare it with additive strong critical and projected-moment charges.",
+      "certificate": "A written tree-budget no-go theorem plus exact Fraction tests for radius powers, geometric tree sums, nested-shell weak and strong critical ledgers, energy and dissipation sums, and projected depth charge.",
+      "success_criterion": "Either a currently controlled budget has an additive scale-zero node charge, or exact scaling and a nested-shell model prove that all current budgets permit an infinite path and isolate the missing logarithmic depth measure.",
+      "failure_interpretation": "A standard energy or endpoint quantity has been assigned the wrong radius power, weak endpoint aggregation becomes additive on nested shells, or the parent-band persistence supplies a controlled scale-zero sum not represented in the ledger.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/tree-budget-audit.md",
+        "lab/navier_lab/tree_budget.py",
+        "lab/tests/test_tree_budget.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

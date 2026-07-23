@@ -43,6 +43,7 @@ not convert passing unit tests into mathematical truth.
 | **strain_jet_freezing.py** | First-jet chain rule, spacetime freezing, vanishing leading residual, and restored parent forcing scale | Compactness, sign, or coupling of the next forcing jet to tensor oscillation |
 | **forcing_jet_decoupling.py** | Fixed-output nine-halves cost, high-input half-power gain, quarter-window decay, and forcing-jet freezing | A moving-band or nonlocal cross-scale law that still sees the microbubble |
 | **moving_band_coupling.py** | Galilean parent remainder, moving-band stress powers, and external detector renormalisation | A tree/Carleson charge, nonlocal cross-scale law, or multiscale rigidity theorem |
+| **tree_budget.py** | Node radius powers, geometric tree sums, nested weak-endpoint shells, and logarithmic depth charge | A same-trajectory telescoping or quasi-orthogonality bound for the scale-zero projected moments |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -92,6 +93,7 @@ From the repository root:
     make strain-jet
     make forcing-jet
     make moving-band
+    make tree-budget
     make strain
     make fetch-2607
     make compile-2607
