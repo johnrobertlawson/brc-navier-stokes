@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can Navier-Stokes coupling control the moving natural-clock commutator variation, exclude PDE-coupled dust, and upgrade the ancient distributional bubble to a rigid suitable object?",
+      "question": "Can same-solution Navier-Stokes coupling charge every natural-clock parabolic stress cascade and initial heat-tail defect to critical vorticity or scale-local dissipation, then upgrade the surviving ancient bubble to a rigid suitable object?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "A natural-clock material-variation estimate propagates or eliminates every positive defect, while PDE coupling rules out abstract commutator dust and suitability plus rigidity excludes the surviving ancient object.",
-      "kill_criterion": "A Clay-admissible trajectory or measure-decorated ancient suitable limit retaining a nonzero natural-clock temporal-variation defect or PDE-coupled dust.",
+      "success": "A same-solution stress-vorticity or dissipation estimate eliminates every parabolic cascade and heat-tail defect, propagates the positive commutator witness, and suitability plus rigidity excludes the surviving ancient object.",
+      "kill_criterion": "A Clay-admissible trajectory or measure-decorated ancient suitable limit retaining a self-consistent nonzero parabolic stress-cascade, heat-tail, or commutator-variation defect.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

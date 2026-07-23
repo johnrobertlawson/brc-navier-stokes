@@ -859,12 +859,15 @@ The PDE-specific frontier is narrower:
 > source arise jointly from one Navier--Stokes vorticity, not the abstract CRW
 > estimate.
 
-The next analytic test should frequency-split the exact moving vorticity derivative.
-Viscosity controls the high-frequency part only through a scale-local dissipation
-quantity, while the nonlinear flux sits at the borderline product
-\(L^{3,\infty}\cdot L^{3/2,\infty}\subset L^{1,\infty}\). The expected obstruction
-is logarithmic in the natural time integral; it must be proved or falsified rather
-than hidden in a fixed-time modulus.
+The [natural-frequency audit](natural-frequency-cascade.md) performs that test.
+Using the velocity stress avoids the formal weak-\(L^1\) flux. Viscosity pays
+exactly for the two stress derivatives, leaving no high-shell decay, but coherent
+stress recombines into one order-zero multiplier, so an unavoidable logarithmic
+loss is false. A smooth local forced-parabolic cascade proves that arbitrary
+critical stress size still gives no terminal modulus. The example is not
+Navier--Stokes and its naive velocity realisation violates the critical vorticity
+bound; same-solution stress--vorticity coupling or scale-local dissipation is now
+the precise unresolved gate.
 
 This is a clock correction, an exact persistence/variation dichotomy, and a
 structure-only counterexample. It is not a regularity theorem and not a Clay

@@ -97,6 +97,16 @@ and breakdown work
   \(O(N^{-1})\) mass. Thus abstract commutator structure cannot exclude dust;
   any no-dust theorem must use the joint Navier--Stokes origin of direction and
   vorticity. Suitability and measure-decorated rigidity remain separate gates.
+- Rewriting the vorticity equation with the velocity stress replaces the formal
+  weak-\(L^1\) flux by an order-two heat operator on critical weak
+  \(L^{3/2}\). Viscosity gives summable low shells but no high-shell decay.
+  Time-independent stress still recombines into one order-zero multiplier, so the
+  anticipated automatic logarithmic loss is false. A smooth forced-parabolic
+  cascade supported in one natural ball has stress tending to zero in
+  \(L^\infty_tL^{3/2}_x\) while its terminal weak-\(L^{3/2}\) response stays
+  positive. This is not a Navier--Stokes solution: a naive same-velocity
+  realisation violates the vorticity endpoint by \(J^{1/3}\). The exact frontier
+  is now a same-solution stress--vorticity or scale-local dissipation estimate.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -107,9 +117,10 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can Navier--Stokes coupling control the moving natural-clock commutator variation,
-> exclude PDE-coupled dust, and upgrade its ancient distributional velocity limit to
-> a suitable object that rigidity can exclude?
+> Can same-solution Navier--Stokes coupling charge every natural-clock parabolic
+> stress cascade and initial heat-tail defect to critical vorticity or scale-local
+> dissipation, then upgrade the surviving ancient limit to a suitable object that
+> rigidity can exclude?
 
 The coequal breakdown question remains:
 
@@ -118,12 +129,12 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Frequency-split the exact moving vorticity derivative on
-   \(B_{C\sigma^{-1/2}}\times[-c/\sigma,0]\). Determine whether viscosity controls
-   the high frequencies and whether the endpoint
-   \(L^{3,\infty}\cdot L^{3/2,\infty}\subset L^{1,\infty}\) flux incurs an
-   unavoidable logarithmic time loss.
-2. If the natural-clock variation cannot be made small, retain it as a spacetime
+1. Frequency-split \(u\otimes u\) and \(\nabla\times u\) jointly on
+   \(B_{C\sigma^{-1/2}}\times[-c/\sigma,0]\). Test whether every fixed-height
+   stress cascade is charged either to the simultaneous critical vorticity or to
+   scale-local dissipation. Keep the initial high-frequency heat tail explicit.
+2. If the parabolic cascade or natural-clock variation cannot be made small,
+   retain it as a spacetime
    defect measure and test whether the fact that both commutator inputs come from
    the same vorticity excludes the abstract Riesz dust.
 3. Upgrade any surviving ancient distributional bubble to a suitable object using a uniform

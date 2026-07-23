@@ -411,6 +411,36 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-NATURAL-FREQUENCY-001",
+      "title": "Natural-clock heat ledger and parabolic stress cascade",
+      "kind": "analytic_counterexample",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Writing the vorticity equation with the critical velocity stress avoids the formal weak-L1 flux, but viscosity spends exactly two derivatives on each high shell; time coherence may recover an order-zero multiplier, whereas endpoint spatial size alone may permit a local time-frequency cascade with a nonzero terminal trace.",
+      "invariants": [
+        "Velocity stress and vorticity are both critical in weak L(3/2)",
+        "The order-two stress map and one parabolic shell time have net frequency power zero",
+        "Low shells have a summable dyadic-square weight and high shells have no decay",
+        "A time-independent stress recombines into one uniformly bounded order-zero multiplier",
+        "The forced cascade lies in one normalized natural ball and activates only one shell at each time",
+        "The forced cascade stress tends to zero even in strong L-infinity-time L(3/2)-space",
+        "The terminal weak-L(3/2) response remains bounded below",
+        "The forced tensor is not asserted to be a Navier-Stokes velocity stress",
+        "A naive unit-velocity realisation of the forced carriers violates the vorticity endpoint by J^(1/3)"
+      ],
+      "method": "Rewrite the vorticity Duhamel term as an order-two heat operator applied to u tensor u, integrate each dyadic shell over the natural clock, separate the coherent terminal stress from its temporal oscillation, and pack smooth modulated stress cells with disjoint parabolic time windows inside one fixed ball.",
+      "certificate": "A written dyadic multiplier estimate, coherent-stress cancellation, local smooth forced-parabolic cascade, explicit Navier-Stokes scope boundary, and Fraction tests for critical scaling, heat cancellation, cell packing, sequence aggregation, and the failed naive velocity realisation.",
+      "success_criterion": "The weak-L1 dead end and any automatic high-frequency heat gain are resolved, and either endpoint stress control yields a terminal modulus or an explicit cascade isolates the additional same-solution Navier-Stokes input required.",
+      "failure_interpretation": "The stress representation is not endpoint bounded, the coherent multiplier is not order zero, the cascade time windows overlap, its terminal weak norm vanishes, or the example is mistakenly promoted to a Navier-Stokes evolution.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/natural-frequency-cascade.md",
+        "lab/navier_lab/natural_frequency.py",
+        "lab/tests/test_natural_frequency.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

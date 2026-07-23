@@ -1,6 +1,6 @@
-# Handoff: frequency-split the moving natural-clock variation
+# Handoff: test same-solution exclusion of parabolic stress cascades
 
-**Updated:** 2026-07-23T08:02:44Z
+**Updated:** 2026-07-23T08:21:36Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,9 +24,11 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Use the joint Navier--Stokes origin of vorticity and truncated direction to control
-the moving natural-clock commutator variation. Abstract commutator structure alone
-cannot exclude dust. The regularity target remains
+Use the joint Navier--Stokes identities \(S=u\otimes u\) and
+\(\omega=\nabla\times u\) to charge a moving natural-clock parabolic stress cascade
+to simultaneous critical vorticity or scale-local dissipation. Abstract
+commutator structure, heat smoothing, and endpoint stress size alone cannot close
+the gate. The regularity target remains
 
 \[
 \widehat a_\lambda^+
@@ -40,9 +42,9 @@ cannot exclude dust. The regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/commutator-dust-clock.md`;
-3. its input `dossier/experiments/commutator-bubble-rescaling.md` only when an
-   antecedent definition is needed.
+2. `dossier/experiments/natural-frequency-cascade.md`;
+3. `dossier/experiments/commutator-dust-clock.md` only when the antecedent
+   natural-clock variation or proxy definition is needed.
 
 Completed static results:
 
@@ -410,6 +412,74 @@ is \(N^{2/3}\), and cross interactions are only
 \(O((\log N)/N)\) relative to each self-commutator. Any no-dust theorem must use
 Navier--Stokes coupling, not bounded BMO or even strong critical source control.
 
+Completed natural-frequency audit:
+
+> The vorticity equation has the endpoint-safe stress form
+>
+> \[
+> \partial_t\omega-\nu\Delta\omega
+> =
+> -\nabla\times\nabla\cdot(u\otimes u).
+> \]
+>
+> At frequency \(K\) over a natural interval \(h\asymp\sigma^{-1}\), its
+> integrated shell weight is
+>
+> \[
+> \nu^{-1}\min\{\nu hK^2,1\}.
+> \]
+>
+> Thus low shells are summable and high shells have no decay: heat spends its two
+> derivative powers exactly on curl-div.
+
+Time-independent stress is not a counterexample. Integrating it before summing
+shells produces one uniformly bounded order-zero multiplier
+
+\[
+\mathcal A(D)(\nu\Delta)^{-1}
+\left(e^{\nu h\Delta}-I\right).
+\]
+
+The missing term is the scale-invariant parabolic stress oscillation
+
+\[
+\mathfrak P_h(S)
+=
+\left\|
+\int_0^h
+\mathcal A(D)e^{\nu\tau\Delta}
+\left(S(-\tau)-S(0)\right)\,d\tau
+\right\|_{L^{3/2,\infty}},
+\]
+
+together with the initial heat tail
+
+\[
+\left\|
+\left(I-e^{\nu h\Delta}\right)\omega(-h)
+\right\|_{L^{3/2,\infty}}.
+\]
+
+A smooth forced heat model packs \(J\) cells of radius \(J^{-1/3}\) inside one
+natural ball and activates carriers \(K_j=J2^j\) on disjoint \(K_j^{-2}\) time
+windows. Its stress obeys
+
+\[
+\|F_J\|_{L^\infty_tL^{3/2}_x}
+\lesssim J^{-2/3}\longrightarrow0,
+\]
+
+while the terminal weak-\(L^{3/2}\) response stays bounded below. This closes any
+argument using only heat damping and endpoint stress size. It is not a
+Navier--Stokes solution: a unit-amplitude velocity realisation of its first carrier
+would cost
+
+\[
+K_1|Q_1|^{2/3}\asymp J^{1/3}
+\]
+
+in the vorticity endpoint. That failed self-consistency is the remaining opening.
+
 Next deliverable:
 
 > Work on the natural cylinder
@@ -419,15 +489,14 @@ Next deliverable:
 > \times[-\tau_0/\sigma_n,0].
 > \]
 >
-> Frequency-split the displayed moving vorticity derivative at
-> \(\sigma_n^{1/2}\). Test whether viscosity controls the high frequencies through
-> a scale-local dissipation quantity and whether the nonlinear endpoint flux
-> \(L^{3,\infty}\cdot L^{3/2,\infty}\subset L^{1,\infty}\) produces a logarithmic
-> time loss at low frequencies. Success gives
-> \(\mathfrak V_n=o(q^{2/3})\) and moving natural-time persistence. Failure must
-> retain a nonzero temporal-variation/dissipation measure with its exact scaling.
-> Do not seek a no-dust theorem from abstract CRW bounds, and do not treat the
-> ancient distributional velocity limit as suitable.
+> Frequency-split \(u\otimes u\) and \(\nabla\times u\) jointly. Prove that every
+> fixed-height stress cascade is charged either to the simultaneous critical
+> vorticity or to a scale-local dissipation/suitability quantity. Success controls
+> \(\mathfrak P_h\), the initial heat tail, and ultimately
+> \(\mathfrak V_n\). Failure must construct a divergence-free, same-solution
+> parabolic cascade or retain its defect measure with exact scaling. Do not return
+> to the weak-\(L^1\) flux, do not sum coherent high shells in \(\ell^1\), and do
+> not promote the forced tensor model to Navier--Stokes.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

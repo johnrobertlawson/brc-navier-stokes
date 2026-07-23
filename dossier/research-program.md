@@ -102,9 +102,18 @@ dynamic clock:
 a height-\(\sigma\) witness evolves on \(\sigma^{-1}\), and loss in a moving ball
 creates a scale-invariant material-variation defect. It also constructs bounded-BMO,
 strong-\(L^{3/2}\) Riesz-commutator dust, proving that abstract commutator structure
-cannot yield no-dust granularity. The next bridge must use the joint Navier--Stokes
-vorticity equation to control that natural-clock variation or retain it in a
-measure-decorated suitable ancient rigidity theorem.
+cannot yield no-dust granularity. The
+[natural-frequency audit](experiments/natural-frequency-cascade.md) then rewrites
+the vorticity equation using the critical weak-\(L^{3/2}\) velocity stress.
+Viscosity exactly pays for the two stress derivatives but gives no high-shell
+decay; coherent stress is harmless, while an arbitrary smooth critical stress can
+time-frequency cascade inside one natural ball and retain an order-one terminal
+trace even as its uniform strong \(L^{3/2}\) norm vanishes. That forced model is
+not Navier--Stokes, and its naive velocity realisation breaks the vorticity
+endpoint. The next bridge must exploit the same-solution identities
+\(S=u\otimes u\) and \(\omega=\nabla\times u\), or retain the resulting parabolic
+cascade, initial heat tail, and commutator variation in a measure-decorated
+suitable ancient rigidity theorem.
 
 ## Active campaign B — Certified unstable profiles
 
