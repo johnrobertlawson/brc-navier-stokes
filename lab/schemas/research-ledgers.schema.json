@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/navier-stokes/research-ledgers.schema.json",
+  "title": "Navier-Stokes research ledger record types",
+  "description": "Public interfaces for the dossier control plane. Cross-record references are checked by navier_lab.records.",
+  "$defs": {
+    "nonemptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stringList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nonemptyString"
+      },
+      "uniqueItems": true
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "authors",
+        "year",
+        "kind",
+        "url",
+        "version",
+        "primary",
+        "status",
+        "last_checked",
+        "notes"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/nonemptyString"},
+        "title": {"$ref": "#/$defs/nonemptyString"},
+        "authors": {"$ref": "#/$defs/stringList"},
+        "year": {"type": "integer"},
+        "kind": {"$ref": "#/$defs/nonemptyString"},
+        "url": {"type": "string", "format": "uri"},
+        "version": {"$ref": "#/$defs/nonemptyString"},
+        "primary": {"type": "boolean"},
+        "status": {
+          "enum": ["official", "peer_reviewed", "preprint", "translation"]
+        },
+        "last_checked": {"type": "string", "format": "date"},
+        "notes": {"$ref": "#/$defs/nonemptyString"}
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "plain",
+        "formal",
+        "domain",
+        "forcing",
+        "solution_class",
+        "assumptions",
+        "conclusion",
+        "scaling",
+        "status",
+        "source_ids",
+        "depends_on",
+        "audit",
+        "last_checked"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/nonemptyString"},
+        "plain": {"$ref": "#/$defs/nonemptyString"},
+        "formal": {"$ref": "#/$defs/nonemptyString"},
+        "domain": {"$ref": "#/$defs/nonemptyString"},
+        "forcing": {"$ref": "#/$defs/nonemptyString"},
+        "solution_class": {"$ref": "#/$defs/nonemptyString"},
+        "assumptions": {"$ref": "#/$defs/stringList"},
+        "conclusion": {"$ref": "#/$defs/nonemptyString"},
+        "scaling": {"$ref": "#/$defs/nonemptyString"},
+        "status": {
+          "enum": [
+            "official_status",
+            "definition",
+            "established",
+            "conditional_preprint",
+            "preprint_claim",
+            "open"
+          ]
+        },
+        "source_ids": {"$ref": "#/$defs/stringList"},
+        "depends_on": {"$ref": "#/$defs/stringList"},
+        "audit": {"$ref": "#/$defs/nonemptyString"},
+        "last_checked": {"type": "string", "format": "date"}
+      }
+    },
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "parent",
+        "side",
+        "title",
+        "question",
+        "entry_assumptions",
+        "success",
+        "kill_criterion",
+        "status",
+        "children",
+        "evidence_claim_ids"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/nonemptyString"},
+        "parent": {
+          "oneOf": [
+            {"type": "null"},
+            {"$ref": "#/$defs/nonemptyString"}
+          ]
+        },
+        "side": {"enum": ["both", "regularity", "breakdown"]},
+        "title": {"$ref": "#/$defs/nonemptyString"},
+        "question": {"$ref": "#/$defs/nonemptyString"},
+        "entry_assumptions": {"$ref": "#/$defs/stringList"},
+        "success": {"$ref": "#/$defs/nonemptyString"},
+        "kill_criterion": {"$ref": "#/$defs/nonemptyString"},
+        "status": {"enum": ["program", "open", "partial", "closed"]},
+        "children": {"$ref": "#/$defs/stringList"},
+        "evidence_claim_ids": {"$ref": "#/$defs/stringList"}
+      }
+    },
+    "experiment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "kind",
+        "route_ids",
+        "claim_ids",
+        "hypothesis",
+        "invariants",
+        "method",
+        "certificate",
+        "success_criterion",
+        "failure_interpretation",
+        "status",
+        "artifacts",
+        "last_run"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/nonemptyString"},
+        "title": {"$ref": "#/$defs/nonemptyString"},
+        "kind": {"$ref": "#/$defs/nonemptyString"},
+        "route_ids": {"$ref": "#/$defs/stringList"},
+        "claim_ids": {"$ref": "#/$defs/stringList"},
+        "hypothesis": {"$ref": "#/$defs/nonemptyString"},
+        "invariants": {"$ref": "#/$defs/stringList"},
+        "method": {"$ref": "#/$defs/nonemptyString"},
+        "certificate": {"$ref": "#/$defs/nonemptyString"},
+        "success_criterion": {"$ref": "#/$defs/nonemptyString"},
+        "failure_interpretation": {"$ref": "#/$defs/nonemptyString"},
+        "status": {
+          "enum": ["planned", "implemented", "running", "complete", "failed"]
+        },
+        "artifacts": {"$ref": "#/$defs/stringList"},
+        "last_run": {
+          "oneOf": [
+            {"type": "null"},
+            {"type": "string", "format": "date"}
+          ]
+        }
+      }
+    },
+    "obligation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "stage",
+        "statement",
+        "status",
+        "depends_on",
+        "evidence",
+        "disposition"
+      ],
+      "properties": {
+        "id": {"$ref": "#/$defs/nonemptyString"},
+        "stage": {"$ref": "#/$defs/nonemptyString"},
+        "statement": {"$ref": "#/$defs/nonemptyString"},
+        "status": {
+          "enum": [
+            "open",
+            "partially_mechanized",
+            "verified",
+            "repaired",
+            "unsupported"
+          ]
+        },
+        "depends_on": {"$ref": "#/$defs/stringList"},
+        "evidence": {"$ref": "#/$defs/stringList"},
+        "disposition": {"$ref": "#/$defs/nonemptyString"}
+      }
+    }
+  }
+}
