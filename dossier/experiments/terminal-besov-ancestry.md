@@ -506,6 +506,16 @@ couples to the}\\
 \tag{30}
 \]
 
+The subsequent
+[terminal outer-profile theorem](terminal-outer-profile.md) closes item 3
+in the list above. A full-measure perturbation aligns the terminal
+blow-down factors with every rational good restart, so the complete
+parabolic blow-down compactifies to a nonzero coherent ancient suitable
+solution on \((-\infty,0]\). A physical spacetime diagonal realizes it at
+the same intermediate radii. The remaining survivor is not continuously
+backward self-similar, but it may still be discrete, asymptotically
+recurrent, or scale-aperiodic, with the Type-I core at spatial infinity.
+
 Run the exact critical-dilation and three-scale diagonal ledgers with:
 
     make terminal-besov-ancestry

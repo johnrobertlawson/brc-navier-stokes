@@ -797,9 +797,17 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > theorem. Independent review validated its proof-consistent source repair
 > and found no published erratum. Every good slice has a uniform positive critical blow-down
 > defect, and the terminal trace forces a punctured physical ancestor scale
-> between the satellite and its distance to the core. The next gate is to
-> evolve or sum this ancestry, couple it to the core, or prove another
-> same-trajectory flux, terminal-regularity, or multiscale rigidity law;
+> between the satellite and its distance to the core. The
+> [terminal outer-profile reduction](experiments/terminal-outer-profile.md)
+> now aligns every rational backward restart and evolves the whole
+> parabolic blow-down into a nonzero coherent ancient suitable solution on
+> \((-\infty,0]\). A same-trajectory physical spacetime diagonal realizes
+> it at those intermediate radii. Its terminal trace has the recursive
+> Besov defect; its positive horizon collapses, its Type-I core remains at
+> spatial infinity, and Guevara--Phuc excludes continuous backward
+> self-similarity. The next gate is to force stronger scale recurrence,
+> forbid scale-aperiodic recursive ancestry by a same-trajectory flux, or
+> recover the escaped core;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -813,14 +821,13 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Exclude the independently reviewed coherent weak-\(L^3\) detached
-   profile or its forced terminal ancestry. Every
-   good time slice has bounded weak \(L^3\) but a fixed positive critical
-   Besov blow-down defect; the terminal trace produces
-   \(R_j\ll\rho_j\ll|x_j-x_*|\) with a nonzero velocity pairing. Evolve or
-   sum those ancestors, couple them to the escaped Type-I core, or find a
-   same-trajectory frequency-flux, terminal-regularity compactness, or
-   multiscale rigidity law.
+1. Exclude the nonzero coherent weak-\(L^3\) outer profile. Its terminal
+   trace has a recursive positive critical Besov blow-down defect, and a
+   same-trajectory physical spacetime diagonal realizes it at
+   \(R_j\ll\rho_j\ll|x_j-x_*|\). Continuous backward self-similarity is
+   excluded. Force discrete/asymptotic scale recurrence, prove a
+   same-trajectory flux that forbids scale-aperiodic recursive ancestry, or
+   recover the Type-I core still lost at spatial infinity.
 2. In parallel, prove or refute the exact no-neck estimate
    \[
    \sup_j\frac{|x_j-x_*|}{R_j}<\infty.

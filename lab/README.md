@@ -55,6 +55,8 @@ not convert passing unit tests into mathematical truth.
 | **singular_clock_centering.py** | Weak-\(L^3\) to Type-I Morrey scaling, singular packet radius, local clock floor, and bounded-centering versus escape geometry | A no-neck estimate or tensor transfer into the singular-point packet |
 | **terminal_satellite_tower.py** | Zero-clock terminal shell margin, Type-I logarithmic-core radius, critical packet outer costs, geometric weak tails, and punctured radial separation | A same-trajectory dynamical exclusion of the terminal satellite tower or a Clay resolution |
 | **terminal_satellite_compactness.py** | Unit-viscosity time conversion, weak-\(L^3\) local-\(L^2\) radius power, quantitative local-energy restart, positive rescaled forward horizon, terminal-mark scaling, and escaped-core coordinates | Mildness plus one bounded strong-\(L^3\) backward sequence, a direct rigidity theorem for the detached ancient profile, or a Clay resolution |
+| **terminal_besov_ancestry.py** | Critical terminal dilation, packet--ancestor--core ratios, physical amplitude, and pairing-error transfer | The weak-\(L^3\) stability theorem, proof-level Besov Liouville extension, evolved ancestry, core coupling, or a Clay resolution |
+| **terminal_outer_profile.py** | Parabolic terminal blow-down, rational restart clock, collapsing horizon, physical outer-profile diagonal, and self-similar dissipation weight | Analytic compactness, scale recurrence, core coupling, endpoint rigidity beyond exact self-similarity, or a Clay resolution |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -117,6 +119,7 @@ From the repository root:
     make terminal-satellite-tower
     make terminal-satellite-compactness
     make terminal-besov-ancestry
+    make terminal-outer-profile
     make strain
     make fetch-2607
     make compile-2607

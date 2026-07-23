@@ -107,6 +107,19 @@
       "notes": "Excludes an integrable class of backward self-similar profiles."
     },
     {
+      "id": "SRC-GUEVARA-PHUC-2018",
+      "title": "Leray's Self-Similar Solutions to the Navier-Stokes Equations with Profiles in Marcinkiewicz and Morrey Spaces",
+      "authors": ["Cristi Guevara", "Nguyen Cong Phuc"],
+      "year": 2018,
+      "kind": "journal_article",
+      "url": "https://doi.org/10.1137/16M110099X",
+      "version": "SIAM J. Math. Anal. 50(1), 541-556; matching arXiv:1509.08177",
+      "primary": true,
+      "status": "peer_reviewed",
+      "last_checked": "2026-07-23",
+      "notes": "Theorem 1.3 says a weak Leray profile in W1,2 locally and L(q,infinity), for 12/5 less than q less than 6, is zero. In particular it excludes nonzero continuously backward self-similar profiles in weak L3."
+    },
+    {
       "id": "SRC-PHUC-2015",
       "title": "The Navier-Stokes equations in nonendpoint borderline Lorentz spaces",
       "authors": ["Nguyen Cong Phuc"],

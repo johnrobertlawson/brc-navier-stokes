@@ -163,6 +163,26 @@
       "last_checked": "2026-07-23"
     },
     {
+      "id": "CLM-WEAK-L3-SELFSIM-001",
+      "plain": "A continuously backward self-similar Leray profile in weak L3 is zero.",
+      "formal": "Guevara-Phuc Theorem 1.3 states that a weak solution U of the Leray profile equation in W1,2 locally and L(q,infinity) is identically zero for every q strictly between 12/5 and 6; q equals 3 is included.",
+      "domain": "R3",
+      "forcing": "zero",
+      "solution_class": "weak_Leray_self_similar_profile",
+      "assumptions": [
+        "Continuous backward Leray self-similarity",
+        "Profile in W1,2 locally",
+        "Profile in weak L3"
+      ],
+      "conclusion": "The profile and its continuously backward self-similar flow vanish.",
+      "scaling": "critical",
+      "status": "established",
+      "source_ids": ["SRC-GUEVARA-PHUC-2018"],
+      "depends_on": [],
+      "audit": "The theorem excludes exact continuous backward self-similarity. It does not exclude discrete or asymptotic self-similarity, scale-aperiodic ancient flows, or general L-infinity time weak-L3 endpoint solutions.",
+      "last_checked": "2026-07-23"
+    },
+    {
       "id": "CLM-AVERAGED-001",
       "plain": "Scaling and energy cancellation do not by themselves force regularity.",
       "formal": "An averaged Navier-Stokes bilinear operator preserving key scaling and cancellation properties admits finite-time blow-up.",

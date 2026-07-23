@@ -64,7 +64,10 @@ force the required geometry near every possible singularity?
 Nečas–Růžička–Šverák and subsequent work exclude classical backward self-similar
 profiles under important integrability/local-energy hypotheses. This kills a natural
 scenario but not Type-II, multi-scale, discretely self-similar, or other noncompact
-concentration patterns.
+concentration patterns. Guevara and Phuc cover the critical Marcinkiewicz endpoint:
+a weak Leray profile in \(W^{1,2}_{\rm loc}\cap L^{3,\infty}\) is zero. This is an
+exact self-similar-profile theorem, not general regularity from
+\(L^\infty_tL^{3,\infty}_x\).
 
 ### Energy cancellation alone cannot prove regularity
 

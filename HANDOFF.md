@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T19:14:02Z
+**Updated:** 2026-07-23T19:33:00Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -195,9 +195,24 @@ through the physical terminal traces yields
 R_j\ll\rho_j\ll|x_j-x_*|
 \]
 and a fixed critical velocity pairing at the coarser radius \(\rho_j\),
-still inside the punctured terminal regular region. This is a genuine
-intermediate ancestor, but not a frequency shell, evolved blow-down
-solution, core coupling, or cross-satellite genealogy.
+still inside the punctured terminal regular region.
+
+The subsequent, not-yet-independently-reviewed reduction evolves that
+ancestor. The blow-down factors can be perturbed inside a full-measure set
+so that every negative rational output time comes from a good
+Barker--Seregin--Šverák restart. Compactness on the resulting expanding
+backward intervals produces a nonzero coherent ancient suitable outer
+profile on \((-\infty,0]\). Its terminal trace is the nonzero blow-down
+above and again has a positive critical Besov defect. A second physical
+diagonal gives strong local spacetime \(L^3\) convergence to this profile at
+the same radii
+\[
+R_j\ll\rho_j\ll|x_j-x_*|.
+\]
+The original positive forward horizon collapses as the inverse square of
+the blow-down factor, and the Type-I core remains at spatial infinity.
+Guevara--Phuc's weak-\(L^3\) Leray-profile theorem excludes continuous
+backward self-similarity of the nonzero outer profile.
 
 The principal source caveat remains explicit: the displayed subspace definition
 before Albritton--Barker Theorem 4.1 suppresses the critical amplitude
@@ -207,11 +222,11 @@ reading. Independent review validated the repair, found no published
 erratum, and found no additional use of mildness beyond weak-\(L^3\)
 coherence. The repair is not represented as a verbatim source citation.
 
-The immediate target is now to evolve or sum the forced Besov ancestry,
-couple it to the escaped Type-I core, or find a same-trajectory flux,
-terminal-regularity, or multiscale rigidity theorem for the coherent
-detached profile. Bounded-centering tensor/frequency transfer remains the
-parallel branch.
+The immediate target is now to force scale recurrence into a published
+self-similar or discretely self-similar rigidity class, forbid a
+scale-aperiodic recursive ancestry by a same-trajectory flux, or recover
+the escaped Type-I core. Bounded-centering tensor/frequency transfer
+remains the parallel branch.
 
 Finite-horizon and eternal marked-parent rigidity remain open. A coherent
 two-scale genealogical diagonal remains a separate prerequisite for any
