@@ -633,7 +633,9 @@ whose nonzero vacuum part must be propagated or eliminated using genuine
 one-trajectory dynamics. The
 [polar-tensor compactness theorem](polar-tensor-compactness.md) performs the
 parabolic chain-rule rewrite: it removes the raw second-derivative quotient and
-isolates scale-invariant polar-Fisher content as the exact compactness defect.
+gives a sufficient polar-Fisher compactness condition. The
+[polar-entropy barrier](polar-entropy-barrier.md) sharpens this to the
+projective-cross content and closes the single scalar-entropy route.
 
 Run the exact algebra and scaling checks with:
 

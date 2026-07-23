@@ -555,17 +555,50 @@
         "The limit equation retains both a weak stretching source and a finite matrix-valued diffusion defect",
         "Loss of the nonzero terminal tensor forces a nonzero terminal polar-Fisher atom",
         "Suitability does not control the vorticity-gradient quantity and remains a separate gate",
-        "No polar-Fisher bound is asserted for arbitrary Clay data"
+        "No polar-Fisher bound is asserted for arbitrary Clay data",
+        "Polar-Fisher content is a sufficient condition and is not asserted to be sharp"
       ],
       "method": "Differentiate the smooth quadratic polar tensor by the parabolic chain rule, prove cutoff-uniform stretching cancellation and exact gradient estimates, identify the invariant polar-Fisher content, apply Aubin-Lions-Simon under its boundedness, and integrate the defect equation through the terminal layer.",
       "certificate": "A written chain-rule derivation, derivative estimates, exact radial and angular gradient ratios, scaling identity, conditional compactness proof, terminal trace-versus-atom dichotomy, and Fraction tests for tensor weights, derivatives, coefficient maxima, and powers.",
-      "success_criterion": "The second-derivative projective quotient is eliminated, compact tensor evolution is proved under one explicit invariant scalar content, and every failure is classified as divergent polar-Fisher content, a terminal atom, or a nonzero decorated ancient tensor.",
+      "success_criterion": "The second-derivative projective quotient is eliminated and compact tensor evolution is proved under the explicit sufficient invariant polar-Fisher content, with bounded-content failure classified as a terminal atom or a nonzero decorated ancient tensor.",
       "failure_interpretation": "The tensor map is not zero-set smooth, the chain-rule sign is wrong, stretching loses an inverse cutoff, the Fisher content is not invariant, the compactness topology does not close transport, or a terminal tensor can disappear without a defect atom.",
       "status": "complete",
       "artifacts": [
         "dossier/experiments/polar-tensor-compactness.md",
         "lab/navier_lab/polar_tensor_evolution.py",
         "lab/tests/test_polar_tensor_evolution.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-POLAR-ENTROPY-BARRIER-001",
+      "title": "Scalar entropy barrier and projective-cross tensor content",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Extended polar coordinates separate full polar Fisher information into projective and radial-log energies; the tensor evolution needs only a strictly weaker projective-cross envelope, while no pointwise scalar entropy can control even radial tensor variation with a cutoff-uniform algebraic stretching bound.",
+      "invariants": [
+        "Polar Fisher density is the exact sum of extended-projective and radial-log energies",
+        "The vacuum tensor gradient squared is bounded by twice the extended-projective energy",
+        "The tensor Hessian remainder is bounded by projective energy plus the square root of polar Fisher times projective energy",
+        "The projective-cross content is at most twice full polar Fisher content and is strictly weaker on high-amplitude pure radial variation",
+        "The projective-cross natural-cylinder content is invariant under three-dimensional Navier-Stokes scaling",
+        "Bounded projective-cross content gives the same strong tensor compactness and terminal trace-versus-atom dichotomy",
+        "The logarithmic magnitude identity controls projective energy minus radial-log energy with stretching source bounded by strain",
+        "Endpoint entropy storage can grow logarithmically as the cutoff vanishes",
+        "No C2 pointwise scalar entropy has both a uniformly bounded algebraic stretching source and a Hessian coercive for radial tensor variation",
+        "The no-go theorem does not exclude nonlocal Biot-Savart cancellation, tensorial estimates, adjoint methods, or ancient rigidity",
+        "No projective-cross bound is asserted for arbitrary Clay data"
+      ],
+      "method": "Embed vorticity and the cutoff as a unit vector on the three-sphere, decompose its projective and radial-log energies, differentiate the tensor Hessian in radial-angular coordinates, prove the sharper compactness content, derive the logarithmic entropy balance, and contradict simultaneous scalar coercivity and stretch boundedness along a complete radial line.",
+      "certificate": "A written extended-polar decomposition, exact tensor gradient and Hessian estimates, scale-invariant compactness theorem, localized logarithmic entropy identity, scalar-entropy no-go proof with derivative jump pi over four, and Fraction tests for every coefficient and limiting ratio.",
+      "success_criterion": "Full polar Fisher content is replaced by the strictly narrower projective-cross content, the single scalar-renormalisation route is closed in its exact pointwise scope, and the remaining tensorial or nonlocal alternatives are explicit.",
+      "failure_interpretation": "The extended-polar split is not exact, projective energy does not control the tensor gradient, the square-root envelope misses a Hessian term, the new content is not invariant or strictly weaker, or a scalar entropy evades the derivative-jump contradiction.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/polar-entropy-barrier.md",
+        "lab/navier_lab/polar_entropy_barrier.py",
+        "lab/tests/test_polar_entropy_barrier.py"
       ],
       "last_run": "2026-07-23"
     },

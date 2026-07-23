@@ -1,6 +1,6 @@
-# Handoff: control or rigidify the polar-Fisher defect
+# Handoff: control the projective-cross tensor defect
 
-**Updated:** 2026-07-23T09:41:39Z
+**Updated:** 2026-07-23T10:05:13Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,22 +24,42 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Control the scale-invariant polar-Fisher content
+Control the scale-invariant projective-cross content
 \[
-\mathfrak I_n(C,\tau_0)
+\mathfrak K_n(C,\tau_0)
 =
 \int_{-\tau_0}^0\int_{B_C}
-\frac{|\nabla\widehat\omega_n|^2}
-{|\widehat\omega_n|^2+\eta_n^2}\,dz\,d\tau,
+\left(
+\mathcal J_{\eta_n}
++
+\sqrt{\mathcal I_{\eta_n}\mathcal J_{\eta_n}}
+\right)\,dz\,d\tau,
 \qquad \eta_n=\sigma_n^{-1},
 \]
-from the same putative blow-up trajectory, or rigidly exclude its divergent and
-terminal-atomic branches. The smooth cutoff-relative tensor has a
-divergence-form parabolic equation: bounded \(\mathfrak I_n\) gives strong
-spacetime tensor compactness, while loss of its nonzero terminal trace forces a
-polar-Fisher atom. Spatial dust, arbitrary stress cascade, terminal graph support,
-and a zero ancient distributional trace are closed branches. The regularity target
-remains
+where
+
+\[
+\mathcal I_\eta
+=
+\frac{|\nabla\omega|^2}{|\omega|^2+\eta^2},
+\qquad
+\mathcal J_\eta
+=
+\mathcal I_\eta
+-
+\frac{\sum_k(\omega\cdot\partial_k\omega)^2}
+{(|\omega|^2+\eta^2)^2}.
+\]
+
+The content is strictly weaker than full polar Fisher and is sufficient for the
+compact tensor equation. Loss of the nonzero terminal trace forces a
+projective-cross atom. A general no-go theorem now excludes any proof based on
+one pointwise scalar renormalisation with a cutoff-uniform algebraic stretching
+bound. The live mechanisms are tensorial or nonlocal Biot--Savart estimates,
+adjoint propagation, an amplitude-band scheme with controlled transition flux,
+or ancient rigidity. Spatial dust, arbitrary stress cascade, terminal graph
+support, and a zero ancient distributional trace are closed branches. The
+regularity target remains
 
 \[
 \widehat a_\lambda^+
@@ -53,10 +73,12 @@ remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/polar-tensor-compactness.md`;
-3. sections 7--9 of `dossier/experiments/terminal-vacuum-orientation.md` for the
+2. `dossier/experiments/polar-entropy-barrier.md`;
+3. sections 4--9 of `dossier/experiments/polar-tensor-compactness.md` for the
+   antecedent compactness theorem;
+4. sections 7--9 of `dossier/experiments/terminal-vacuum-orientation.md` for the
    terminal tensor and its antecedent equation; and
-4. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when the
+5. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when the
    existing strong velocity compactness is needed.
 
 Completed static results:
@@ -745,20 +767,82 @@ H^0-H(0^-)=-\mathcal R_0.
 \]
 
 Hence a disappearing terminal tensor forces a nonzero terminal polar-Fisher
-atom. If \(\mathfrak I_n\) is unbounded, its divergence is already a
-scale-invariant obstruction. Suitability remains separate because it controls
-\(\nabla u\), not \(\nabla\omega\).
+atom under this sufficient hypothesis. Full polar-Fisher divergence alone is
+not tensor-relevant.
+
+Completed projective-cross sharpening and scalar-entropy barrier:
+
+> With the extended unit direction
+>
+> \[
+> n_\eta
+> =
+> \frac{(\omega,\eta)}{\sqrt{|\omega|^2+\eta^2}},
+> \]
+>
+> the exact split is
+>
+> \[
+> \mathcal I_\eta
+> =
+> \underbrace{|\nabla n_\eta|^2}_{\mathcal J_\eta}
+> +
+> \underbrace{
+> |\nabla\log\sqrt{|\omega|^2+\eta^2}|^2
+> }_{\mathcal L_\eta}.
+> \]
+
+The tensor estimates sharpen to
+
+\[
+|\nabla H_\eta|^2\le2\mathcal J_\eta,
+\qquad
+|D^2\mathcal H_\eta(\omega)[\nabla\omega,\nabla\omega]|
+\lesssim
+\mathcal J_\eta+\sqrt{\mathcal I_\eta\mathcal J_\eta}.
+\]
+
+Thus bounded \(\mathfrak K_n\), not bounded \(\mathfrak I_n\), is the current
+compactness condition. For pure high-amplitude radial variation,
+\(\mathcal K_\eta/\mathcal I_\eta\to0\).
+
+The logarithmic magnitude identity has bounded stretching source but controls
+only
+
+\[
+\mathcal J_\eta-\mathcal L_\eta.
+\]
+
+More generally, no \(C^2\) pointwise scalar entropy can have both a
+cutoff-uniform algebraic strain source and a Hessian coercive even for radial
+tensor variation. The contradiction is the positive derivative jump
+
+\[
+\int_{\mathbb R}
+\frac{4s^2}{(1+s^2)^4}\,ds
+=
+\frac{\pi}{4}.
+\]
+
+This closes the single renormalised-magnitude route in its exact pointwise
+scope. Suitability remains separate because it controls \(\nabla u\), not these
+vorticity-gradient contents.
 
 Next deliverable:
 
-> Derive a one-trajectory bound for \(\mathfrak I_n(C,\tau_0)\), most likely from
-> a renormalised vorticity-magnitude identity localised to the moving natural
-> cylinder, or prove a rigidity theorem that excludes each of its three outcomes:
-> divergence, a terminal atom, and a compact nonzero vacuum tensor. Track radial
-> log-amplitude and angular energy separately; ordinary local energy does not
-> control either. In parallel, establish the pressure/dissipation passage needed
-> for suitability. Do not return to the raw \(\Delta\omega/|\omega|\) equation,
-> terminal graph support, spatial dust, or generic stress cascades.
+> Derive a tensorial or nonlocal one-trajectory estimate for
+> \(\mathfrak K_n(C,\tau_0)\). First test whether the Biot--Savart relation
+> \(S=\mathcal R(\omega)\) prevents cancellation between
+> \(\mathcal J_\eta\) and \(\mathcal L_\eta\) in the logarithmic balance, or
+> construct an adjoint tensor pairing that bypasses the scalar Hessian no-go.
+> An amplitude-band entropy is admissible only with an independently summable
+> transition-flux estimate. Otherwise prove that a terminal projective-cross atom
+> or the resulting nonzero decorated ancient tensor is rigidly impossible. In
+> parallel, establish the
+> pressure/dissipation passage needed for suitability. Do not return to a single
+> scalar entropy, full polar Fisher as if it were sharp, the raw
+> \(\Delta\omega/|\omega|\) equation, terminal graph support, spatial dust, or
+> generic stress cascades.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

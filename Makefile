@@ -1,7 +1,7 @@
 PYTHON ?= python
 PYTHONPATH := lab
 
-.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity projective-alignment vacuum-orientation polar-tensor strain fetch-2607 compile-2607
+.PHONY: check records links markup test scaling log-chain multicore anisotropic covering-entropy perimeter-packing packet-lifetime mixed-lorentz vanishing-tail critical-localization truncated-direction ancient-compactness commutator-bubbles commutator-dust natural-frequency same-solution-granularity projective-alignment vacuum-orientation polar-tensor polar-entropy strain fetch-2607 compile-2607
 
 check: records links markup test
 
@@ -73,6 +73,9 @@ vacuum-orientation:
 
 polar-tensor:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.polar_tensor_evolution
+
+polar-entropy:
+	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.polar_entropy_barrier
 
 strain:
 	PYTHONPATH=$(PYTHONPATH) $(PYTHON) -m navier_lab.strain

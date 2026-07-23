@@ -597,7 +597,10 @@ with strong critical convergence. The live gate is now to propagate or eliminate
 the zero-safe cutoff-relative orientation tensor using one-trajectory dynamics,
 while retaining its scale-invariant diffusion defect if necessary. The
 [polar-tensor compactness theorem](polar-tensor-compactness.md) reduces that
-evolution to one invariant polar-Fisher content and its possible terminal atom.
+evolution to an invariant compactness content and its possible terminal atom.
+The [polar-entropy barrier](polar-entropy-barrier.md) sharpens the content to the
+projective-cross envelope and proves that a single pointwise scalar
+renormalisation cannot control it.
 
 Run the exact exponent checks with:
 

@@ -143,13 +143,22 @@ and breakdown work
   cutoff-scale diffusion defect must now be handled dynamically.
 - The parabolic chain rule gives that tensor a compact divergence-form PDE with no
   \(\Delta\omega/|\omega|\) quotient. Its stretching source is bounded directly
-  by \(|S|\); the only nonlinear remainder is controlled by the scale-invariant
-  polar-Fisher density
-  \(|\nabla\omega|^2/(|\omega|^2+\eta^2)\). Bounded polar-Fisher content gives
-  strong local spacetime \(L^2\) tensor compactness and a finite matrix-valued
-  defect equation. The nonzero terminal tensor either enters the ancient limit or
-  forces a nonzero terminal polar-Fisher atom. No such content bound is currently
-  derived from Clay data or suitability.
+  by \(|S|\). Full polar Fisher is sufficient but not sharp. Extended polar
+  coordinates split it as
+  \(\mathcal I_\eta=\mathcal J_\eta+\mathcal L_\eta\), where
+  \(\mathcal J_\eta\) is the projective energy and \(\mathcal L_\eta\) the radial
+  log-amplitude energy. The strictly weaker content
+  \(\mathcal K_\eta=\mathcal J_\eta+\sqrt{\mathcal I_\eta\mathcal J_\eta}\)
+  controls both the tensor gradient and
+  Hessian remainder. Bounded \(\mathcal K_\eta\) gives strong spacetime
+  compactness; terminal loss forces a projective-cross atom.
+- The logarithmic magnitude identity has stretching source bounded by \(|S|\)
+  but controls only \(\mathcal J_\eta-\mathcal L_\eta\). A general derivative-jump
+  argument proves that no pointwise scalar entropy can be both coercive for
+  radial tensor variation and cutoff-uniform in its algebraic stretching source.
+  No projective-cross bound is currently derived from Clay data or suitability;
+  tensorial, nonlocal, adjoint, controlled amplitude-band flux, or
+  ancient-rigidity structure is required.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -160,9 +169,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can one-trajectory dynamics bound or rigidly exclude the polar-Fisher content,
-> its terminal atom, and the resulting compact vacuum tensor while also producing
-> suitability?
+> Can one-trajectory tensorial or nonlocal dynamics bound or rigidly exclude the
+> projective-cross content, its terminal atom, and the resulting compact vacuum
+> tensor while also producing suitability?
 
 The coequal breakdown question remains:
 
@@ -171,10 +180,11 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Derive a local bound for the scale-invariant polar-Fisher content from one
-   trajectory, or prove that its divergent/atomic branches are rigidly impossible.
+1. Test whether the Biot--Savart relation prevents cancellation between
+   projective and radial-log energies, or derive an adjoint tensor estimate for
+   the scale-invariant projective-cross content.
 2. Classify ancient solutions of the compact tensor defect equation, including a
-   nonzero vacuum tensor and matrix-valued polar-Fisher measure.
+   nonzero vacuum tensor and matrix-valued projective-cross measure.
 3. Upgrade the nonzero ancient distributional bubble to a suitable object using
    uniform scale-local energy and pressure estimates, then test rigidity without
    discarding either decoration.

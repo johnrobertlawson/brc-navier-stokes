@@ -668,9 +668,11 @@ missing carrier theorem.
 The subsequent
 [polar-tensor compactness theorem](polar-tensor-compactness.md) uses the smooth
 quadratic denominator in (1) to apply the parabolic chain rule. This removes
-\(\Delta\omega/|\omega|\) completely. A bound on the resulting scale-invariant
-polar-Fisher content gives strong spacetime compactness; otherwise its divergence
-or terminal atom is the exact retained defect.
+\(\Delta\omega/|\omega|\) completely. Full polar-Fisher content is a sufficient
+compactness condition. The
+[polar-entropy barrier](polar-entropy-barrier.md) sharpens it to the strictly
+weaker projective-cross content; terminal loss then forces a projective-cross
+atom, while a single pointwise scalar entropy is structurally insufficient.
 
 Run the exact matrix, scaling, and polar-coordinate checks with:
 

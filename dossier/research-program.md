@@ -142,13 +142,18 @@ polar Young measure. The
 [polar-tensor compactness theorem](experiments/polar-tensor-compactness.md)
 applies the parabolic chain rule to this smooth map. It removes
 \(\Delta\omega/|\omega|\), bounds the stretching source directly by the strain,
-and isolates the invariant density
-\(|\nabla\omega|^2/(|\omega|^2+\eta^2)\). A bound on its natural-cylinder content
-gives strong spacetime tensor compactness and a finite defect equation; failure
-of the nonzero terminal tensor to enter the ancient limit forces a terminal
-polar-Fisher atom. The remaining theorem must bound or rigidly exclude that
-content and its atom from one trajectory, while suitable ancient compactness
-remains separate.
+and gives a compactness theorem under full polar-Fisher content. The subsequent
+[polar-entropy barrier](experiments/polar-entropy-barrier.md) sharpens the
+sufficient content to
+\(\mathcal K_\eta=\mathcal J_\eta+\sqrt{\mathcal I_\eta\mathcal J_\eta}\), with
+\(\mathcal J_\eta\) the extended-projective energy. Terminal loss forces a
+projective-cross atom. The logarithmic magnitude controls only the signed
+difference between projective and radial-log energies, and no pointwise scalar
+entropy can repair that sign while retaining a cutoff-uniform algebraic strain
+bound. The remaining theorem must therefore use tensorial or nonlocal
+one-trajectory dynamics, an adjoint propagation, a controlled amplitude-band
+flux, or rigidity of the atom and decorated ancient tensor. Suitable ancient
+compactness remains separate.
 
 ## Active campaign B — Certified unstable profiles
 

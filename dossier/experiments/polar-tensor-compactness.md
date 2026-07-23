@@ -23,6 +23,13 @@ The bound is not derived from the current endpoint or suitability hypotheses.
 This is a conditional compactness theorem and an exact new defect, not a
 regularity theorem or a Clay resolution.
 
+The subsequent
+[polar-entropy barrier](polar-entropy-barrier.md) sharpens the sufficient
+content below. The tensor gradient needs only extended-projective energy, and
+the Hessian remainder is controlled by the strictly weaker projective-cross
+content \(\mathcal K_\eta\le2\mathcal I_\eta\). Full polar Fisher remains a
+valid sufficient hypothesis, but its divergence alone is not tensor-relevant.
+
 ## Verdict
 
 For \(\eta>0\), define the smooth matrix map
@@ -93,8 +100,9 @@ C\nu\mathcal I_\eta[\omega],
 \tag{6}
 \]
 
-The dangerous second derivative of vorticity has disappeared. The exact
-remaining price is the **polar Fisher information** \(\mathcal I_\eta\).
+The dangerous second derivative of vorticity has disappeared. A sufficient
+remaining price is the **polar Fisher information** \(\mathcal I_\eta\); the
+later projective-cross refinement is strictly weaker.
 
 On the height-\(\sigma_n\) natural cylinder, with physical vorticity cutoff one,
 
@@ -139,8 +147,9 @@ the nonzero terminal tensor has the dichotomy
 \tag{8}
 \]
 
-If \(\mathfrak I_n\) is unbounded, its divergence is itself a scale-invariant
-orientation-dissipation obstruction.
+If \(\mathfrak I_n\) is unbounded, this theorem alone gives no conclusion. The
+sharpened projective-cross content may remain bounded when divergence occurs
+only through high-amplitude pure radial variation.
 
 ## 1. Exact parabolic chain rule
 
@@ -657,20 +666,25 @@ Suitability controls
 not the second-derivative quantity in (2). Hence suitability alone does not imply
 (24). The Fisher gate and the local-energy gate remain distinct.
 
-## 9. Exact consequence for ROUTE-R3B
+## 9. Sharpened consequence for ROUTE-R3B
 
-The cutoff tensor has a compact PDE once one scale-invariant scalar content is
-bounded. ROUTE-R3B now has an exact three-way outcome:
+The cutoff tensor has a compact PDE once one scale-invariant sufficient content
+is bounded. The
+[polar-entropy barrier](polar-entropy-barrier.md) proves that the current
+three-way outcome is governed by the strictly narrower projective-cross content
+\(\mathfrak K_n\):
 
-1. \(\mathfrak I_n\to\infty\): a divergent polar-Fisher obstruction;
-2. \(\mathfrak I_n\) is bounded and has a terminal atom: a nonzero
-   scale-invariant diffusion defect; or
-3. \(\mathfrak I_n\) is bounded without a terminal atom: a nonzero compact vacuum
+1. \(\mathfrak K_n\to\infty\): tensor-relevant projective-cross concentration;
+2. \(\mathfrak K_n\) is bounded and has a terminal atom: a nonzero
+   scale-invariant compactness defect; or
+3. \(\mathfrak K_n\) is bounded without a terminal atom: a nonzero compact vacuum
    orientation tensor enters the ancient limit.
 
-The next theorem must derive boundedness or rigidity for the polar-Fisher content
-from one trajectory, or prove rigidity for the decorated equation (32). In
-parallel it must establish suitability of the nonzero ancient velocity. No
+That experiment also proves that no pointwise scalar entropy can control even
+the radial tensor variation while retaining a cutoff-uniform algebraic
+stretching bound. The next theorem must therefore use tensorial or nonlocal
+one-trajectory dynamics, or prove rigidity for the decorated equation (32).
+In parallel it must establish suitability of the nonzero ancient velocity. No
 terminal graph-support or pointwise direction convention is needed.
 
 Run the exact derivative and scaling checks with:

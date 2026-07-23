@@ -883,8 +883,11 @@ orientation to nonzero limiting vorticity. The fixed-cutoff temporal machinery
 must instead propagate the zero-safe relative tensor or retain its variation
 defect. The
 [polar-tensor compactness theorem](polar-tensor-compactness.md) now gives that
-tensor a strong spacetime limit whenever its invariant polar-Fisher content is
-bounded and turns terminal loss into a defect atom.
+tensor a strong spacetime limit under a sufficient invariant content and turns
+terminal loss into a defect atom. The
+[polar-entropy barrier](polar-entropy-barrier.md) sharpens that content to the
+projective-cross envelope and rules out a single pointwise scalar entropy as the
+missing estimate.
 
 This is a clock correction, an exact persistence/variation dichotomy, and a
 structure-only counterexample. It is not a regularity theorem and not a Clay
