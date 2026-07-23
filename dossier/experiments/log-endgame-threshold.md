@@ -533,11 +533,16 @@ rearrangement and sparse-analyticity stages. Hence the non-vanishing-entropy pac
 family is not a survivor once the component geometry and repaired direction
 hypothesis persist through the terminal interval.
 
-The remaining ROUTE-R3A geometry is narrower:
+The final proposed ROUTE-R3A localization step is:
 
 > a high-level component with macroscopic containing radius, or the cutoff errors
 > created by replacing component localisation with a smooth critical-scale
 > partition.
+
+The [critical-scale localization theorem](critical-scale-localization.md) retains
+and absorbs those cutoff errors at \(R\asymp\lambda^{-1/2}\), gives
+\(\gamma=1/2\), and removes component geometry entirely. ROUTE-R3A is closed inside
+the repaired conditional chain.
 
 Run the exact exponent checks with:
 

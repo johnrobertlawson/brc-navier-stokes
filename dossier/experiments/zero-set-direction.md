@@ -93,3 +93,20 @@ The commutator source factor
 choice at zeros. The BMO averages are not necessarily independent when the zero set
 has positive measure, which is why the global extension must be fixed in the
 hypothesis.
+
+The later [critical-scale localization theorem](critical-scale-localization.md)
+shows that this global extension is sufficient but not logically necessary for the
+reduced conditional chain. Its exact input is only
+
+\[
+\sup_{t,x_0}
+\|\alpha(t)\mathbf1_{\{|\omega(t)|>\lambda\}}
+\|_{L^{3/2,\infty}(B_{\kappa\lambda^{-1/2}}(x_0))}
+\longrightarrow0.
+\]
+
+The construction above does not obstruct this high-level condition: it is one
+bounded instantaneous field, so its sufficiently high superlevel sets are empty.
+The live ROUTE-R3B question is whether a zero-set-safe, level-dependent direction or
+the PDE itself forces this critical-ball strain decay along a putative blow-up
+sequence.

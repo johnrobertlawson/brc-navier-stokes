@@ -267,6 +267,34 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-CRITICAL-LOCALIZATION-001",
+      "title": "Critical-scale smooth localization of truncated stretching",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3A"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "A finite-overlap square partition at radius R proportional to lambda^(-1/2), together with vanishing of the high-level local weak-L(3/2) strain norm and the global weak strain distribution, absorbs every quadratic and linear cutoff term without any component geometry; the repaired logarithmic direction hypothesis supplies one quantitative instance.",
+      "invariants": [
+        "The smooth partition satisfies sum eta_k squared equals one exactly",
+        "Partition overlap and scaled gradient constants are independent of level",
+        "The global weak strain distribution is charged only through one square-sum",
+        "Only strain restricted to the high-vorticity superlevel set enters the local norm",
+        "Every IMS term involving R^(-2) times truncated energy is retained",
+        "The radius is selected only after both quadratic and linear ledgers are derived",
+        "The theorem remains conditional on weak-vorticity, high-level local strain decay, and velocity-background hypotheses; the repaired direction extension is sufficient but not necessary"
+      ],
+      "method": "Construct a normalized lattice partition, prove an overlap version of the mixed L(6/5,2) distribution square-sum, use the exact IMS identity for the quadratic term, and use Lorentz-Sobolev plus Cauchy and damping for both pieces of the linear term.",
+      "certificate": "A written partition theorem with every cutoff term displayed and exact Fraction tests for the radius optimization, source power, logarithmic gain, and resulting vorticity tail.",
+      "success_criterion": "At R proportional to lambda^(-1/2), diffusion and support-sensitive damping absorb all partition errors while the residual is O(lambda^(3/2) times the square root of the high-level local strain norm); the repaired logarithmic commutator gives the quantitative log(lambda)^(-1/2) case and eliminates every ROUTE-R3A component or covering hypothesis.",
+      "failure_interpretation": "The overlap distribution sum has a hidden count, the IMS identity leaves an uncontrolled cross term, or one linear cutoff residual is critical with no vanishing gain.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/critical-scale-localization.md",
+        "lab/navier_lab/critical_localization.py",
+        "lab/tests/test_critical_localization.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

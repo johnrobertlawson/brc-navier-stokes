@@ -62,9 +62,22 @@ The full arXiv:2607.08866v2 chain has been
 5. volume-to-sparseness conversion;
 6. analyticity and harmonic-measure contradiction.
 
-The active bridge is now to derive, weaken, localise, or refute the input geometry for
-general putative singularities. Priority targets are a covering replacement for the
-fixed-centre ball and a PDE-derived terminal-time modulus for vorticity direction.
+The fixed-centre geometry has now been removed by the
+[critical-scale localization theorem](experiments/critical-scale-localization.md):
+a finite-overlap square partition closes every cover and component configuration.
+The active bridge is the exact remaining critical-ball condition
+
+\[
+\sup_{t,x_0}
+\|\alpha(t)\mathbf1_{\{|\omega(t)|>\lambda\}}
+\|_{L^{3/2,\infty}(B_{\kappa\lambda^{-1/2}}(x_0))}
+\longrightarrow0,
+\]
+
+together with removal or derivation of the terminal weak-\(L^{3/2}\) vorticity and
+velocity-background hypotheses. A global logarithmic direction extension is one
+sufficient mechanism for the displayed decay, but the zero-set-safe PDE-derived
+condition is the sharper target.
 
 ## Active campaign B — Certified unstable profiles
 

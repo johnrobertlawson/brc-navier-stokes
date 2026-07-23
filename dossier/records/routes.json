@@ -167,7 +167,7 @@
       "entry_assumptions": ["A local critical distribution estimate", "Geometry beyond bare weak-L(3/2) volume control"],
       "success": "A covering theorem whose entropy cost remains absorbable.",
       "kill_criterion": "A packing geometry whose necessary covering loss consumes the entire subcritical gain.",
-      "status": "partial",
+      "status": "closed",
       "children": [],
       "evidence_claim_ids": ["CLM-GRUJIC-001"]
     },
@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can local energy and viscosity generate the required vorticity-direction modulus, including across vorticity zeros?",
+      "question": "Can local energy and viscosity force the high-level local weak strain norm to vanish on critical balls, possibly through a zero-set-safe level-dependent direction?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "A uniform terminal-time modulus derived from the PDE.",
-      "kill_criterion": "A PDE-consistent sequence with uncontrolled direction oscillation at intense cores.",
+      "success": "Uniform critical-ball high-level strain decay derived from the PDE.",
+      "kill_criterion": "A PDE-consistent sequence with nonvanishing critical-ball high-level strain along intense levels.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

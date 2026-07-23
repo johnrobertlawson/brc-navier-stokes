@@ -16,6 +16,7 @@ not convert passing unit tests into mathematical truth.
 | **packet_lifetime.py** | Exact viscous lifetime and strain threshold for isolated packets | The background-driven linear source |
 | **mixed_lorentz.py** | Exact optimisation of global-local component source gains | Smooth-partition cutoff errors |
 | **vanishing_tail.py** | Total-volume and critical little-o exponent chain | Derivation of uniform component-diameter decay |
+| **critical_localization.py** | Exact IMS and linear-source critical-radius optimisation | Derivation of the remaining direction and weak-vorticity hypotheses |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -38,6 +39,7 @@ From the repository root:
     make packet-lifetime
     make mixed-lorentz
     make vanishing-tail
+    make critical-localization
     make strain
     make fetch-2607
     make compile-2607

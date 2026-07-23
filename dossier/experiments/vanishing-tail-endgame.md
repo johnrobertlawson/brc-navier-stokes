@@ -9,8 +9,10 @@
 **Scope warning:** this result retains the repaired weak-vorticity,
 direction-extension, velocity-background, and zero-boundary component hypotheses.
 It assumes that every high-level component fits in a ball whose maximum radius tends
-to zero uniformly. It derives no such diameter control from arbitrary Clay data and
-does not establish a Clay alternative.
+to zero uniformly. The subsequent
+[critical-scale localization](critical-scale-localization.md) removes the component
+and diameter hypotheses entirely. Neither result derives the retained analytic
+hypotheses from arbitrary Clay data or establishes a Clay alternative.
 
 ## Verdict
 
@@ -595,14 +597,17 @@ is regular through the terminal time.
 This is a **conditional theorem proved here**, not a theorem of arXiv:2607.08866v2
 and not a Clay resolution.
 
-The earlier component-residual condition and every comparable-radius restriction are
-removed. The remaining ROUTE-R3A geometric problem is exact:
+For this intermediate theorem, the earlier component-residual condition and every
+comparable-radius restriction are removed. Its remaining geometric problem is:
 
 > derive uniform high-level component diameter decay
 > \(\rho_\lambda\to0\), or rule out a macroscopic-diameter high-vorticity component,
 > from the Navier--Stokes dynamics and the other retained hypotheses.
 
-The coequal ROUTE-R3B problem remains derivation of the global logarithmic direction
+The [critical-scale localization](critical-scale-localization.md) subsequently
+removes this final component-diameter input by retaining and absorbing the smooth
+partition cutoff terms. ROUTE-R3A is therefore closed inside the repaired
+conditional chain. ROUTE-R3B remains derivation of the global logarithmic direction
 extension.
 
 Run the exact exponent checks with:

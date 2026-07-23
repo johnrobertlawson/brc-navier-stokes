@@ -442,9 +442,10 @@ N_\lambda\lesssim(\log\lambda)^\beta
 The [mixed global-local Lorentz estimate](mixed-lorentz-source.md) removes the
 cubic-log endpoint and every other comparable-radius packet count. Its
 [total-volume extension](vanishing-tail-endgame.md) also removes the multiscale
-radius ledger. The surviving ROUTE-R3A question is whether the maximum containing
-radius of a high-level component must vanish, or whether smooth localisation can
-remove that diameter hypothesis.
+radius ledger. The
+[critical-scale smooth localization](critical-scale-localization.md) then removes
+the maximum component-diameter hypothesis and closes ROUTE-R3A inside the repaired
+conditional chain.
 
 Run the exact scaling checks with:
 

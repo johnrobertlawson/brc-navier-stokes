@@ -3,6 +3,7 @@
 __all__ = [
     "anisotropic",
     "covering_entropy",
+    "critical_localization",
     "intervals",
     "links",
     "log_chain",

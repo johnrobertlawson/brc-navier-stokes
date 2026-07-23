@@ -47,6 +47,15 @@ and breakdown work
   \(o(\lambda^{-3/2})\) vorticity and \(o(\beta^{-3})\) velocity tails. Any such
   critical little-o gain places the sparse radius strictly inside the analytic
   radius; no prescribed logarithmic rate is needed.
+- A finite-overlap square partition at \(R\asymp\lambda^{-1/2}\) removes the final
+  component-diameter hypothesis. The exact IMS and linear cutoff terms are all
+  absorbable, and the residual gives
+  \(\lambda^{-3/2}(\log\lambda)^{-1/2}\) vorticity decay. Thus ROUTE-R3A is closed
+  inside the repaired conditional chain: no fixed ball, cover, component,
+  anisotropy, diameter, or fragmentation hypothesis remains. The proof actually
+  needs only vanishing of the high-level local weak strain norm on
+  \(\lambda^{-1/2}\)-balls; the global logarithmic direction hypothesis is one
+  sufficient route to that exact input.
 - Smooth divergence-free vorticity need not supply a log-weighted BMO direction
   extension across its zero set.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
@@ -59,9 +68,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can smooth critical-scale localisation remove the remaining maximum component
-> diameter hypothesis, and can dynamics generate the required log-weighted
-> direction control?
+> Can the critical-ball high-level local strain norm be forced to vanish using a
+> level-dependent direction that is zero-set safe, and ultimately from the
+> vorticity dynamics?
 
 The coequal breakdown question remains:
 
@@ -70,14 +79,14 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Build a finite-overlap square partition at radius
-   \(r_\lambda\asymp\lambda^{-1/2}\), combine the mixed Lorentz square-sum with the
-   IMS identity, and determine whether all cutoff errors fit inside diffusion and
-   support-sensitive damping.
-2. If smooth localisation fails, construct the exact macroscopic-diameter component
-   saturating its cutoff ledger while retaining global weak vorticity.
-3. Test whether local energy and viscosity force any terminal-time VMO modulus for
-   vorticity direction.
+1. Replace the unit direction by
+   \(b_\lambda=\chi(|\omega|/\lambda)\omega/|\omega|\), derive its exact commutator
+   identity on \(\{|\omega|>\lambda\}\), and retain the low-vorticity remainder.
+2. Test whether local energy, viscosity, and the direction equation control those
+   defects or force a terminal-time VMO modulus on intense-vorticity regions.
+3. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
+   obtained from a weaker critical quantity or incorporated into the same
+   projective estimate.
 4. Prove or isolate the weakest mild-solution hypothesis that uniformly controls the
    spatially constant velocity background.
 5. Determine the weakest oscillation modulus whose commutator gain still outruns the

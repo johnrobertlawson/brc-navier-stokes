@@ -440,7 +440,9 @@ count. It is:
 The [total-volume extension](vanishing-tail-endgame.md) subsequently removes the
 variable-radius scale sum and every quantitative component-volume ledger. Its exact
 remaining geometric input is uniform decay of the maximum component containing
-radius.
+radius. The later
+[critical-scale localization](critical-scale-localization.md) removes that input as
+well.
 
 Run the exact exponent checks with:
 
