@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "paper_id": "SRC-GRUJIC-2026",
+  "last_updated": "2026-07-23",
+  "obligations": [
+    {
+      "id": "O2607-01",
+      "stage": "foundation",
+      "statement": "Rewrite the critical-point singularity definition as exact uniform inequalities and separate assumptions from examples and asserted consequences.",
+      "status": "partially_mechanized",
+      "depends_on": [],
+      "evidence": ["EXP-MULTICORE-001"],
+      "disposition": "The two-core construction proves that a bare weak-L(3/2) bound is not enough for single-ball superlevel containment; the remaining task is a full exact rewrite of the source definition."
+    },
+    {
+      "id": "O2607-02",
+      "stage": "foundation",
+      "statement": "Define vorticity direction on the zero-vorticity set and preserve the required weighted-BMO bound.",
+      "status": "open",
+      "depends_on": [],
+      "evidence": [],
+      "disposition": "No extension convention is yet verified."
+    },
+    {
+      "id": "O2607-03",
+      "stage": "foundation",
+      "statement": "Verify uniform-in-time profile, Lorentz, and weighted-BMO constants on the exact terminal interval.",
+      "status": "open",
+      "depends_on": ["O2607-01", "O2607-02"],
+      "evidence": [],
+      "disposition": "Needed before selecting a time-independent truncation level."
+    },
+    {
+      "id": "O2607-04",
+      "stage": "commutator",
+      "statement": "Check the full tensor Biot-Savart formula and exact unidirectional cancellation for the stretching eigenvalue.",
+      "status": "open",
+      "depends_on": ["O2607-02"],
+      "evidence": [],
+      "disposition": "The source currently gives a schematic kernel argument."
+    },
+    {
+      "id": "O2607-05",
+      "stage": "commutator",
+      "statement": "Verify the scale-local Jones extension with global BMO seminorm proportional to phi(R).",
+      "status": "open",
+      "depends_on": ["O2607-03"],
+      "evidence": [],
+      "disposition": "The precise local domain, constants, and treatment of additive means must match CRW."
+    },
+    {
+      "id": "O2607-06",
+      "stage": "commutator",
+      "statement": "Verify vector-valued CRW boundedness on weak Lorentz L(3/2,infinity) by a valid interpolation argument.",
+      "status": "open",
+      "depends_on": ["O2607-04", "O2607-05"],
+      "evidence": [],
+      "disposition": "Endpoint q=infinity must not be inferred from an inapplicable single-space theorem."
+    },
+    {
+      "id": "O2607-07",
+      "stage": "commutator",
+      "statement": "Reproduce the near, middle dyadic, and far tail estimates with exact kernel and norm powers.",
+      "status": "open",
+      "depends_on": ["O2607-03", "O2607-04"],
+      "evidence": [],
+      "disposition": "The target is the localized norm C/|log R| with constants independent of time."
+    },
+    {
+      "id": "O2607-08",
+      "stage": "energy",
+      "statement": "Justify truncated testing of the scalar vorticity-magnitude inequality under the stated regularity and at vorticity zeros.",
+      "status": "open",
+      "depends_on": ["O2607-02"],
+      "evidence": [],
+      "disposition": "A smooth approximation or Kato-type argument should make all integrations legal."
+    },
+    {
+      "id": "O2607-09",
+      "stage": "energy",
+      "statement": "Verify Lorentz real interpolation, Sobolev embedding, Young exponents, and coercive damping.",
+      "status": "partially_mechanized",
+      "depends_on": ["O2607-06", "O2607-07", "O2607-08"],
+      "evidence": ["EXP-LOGCHAIN-001"],
+      "disposition": "Only downstream exponent arithmetic is mechanized; analytic inequalities remain open."
+    },
+    {
+      "id": "O2607-10",
+      "stage": "energy",
+      "statement": "Verify a single truncation threshold and all constants remain uniform on the actual pre-singular interval.",
+      "status": "open",
+      "depends_on": ["O2607-03", "O2607-09"],
+      "evidence": [],
+      "disposition": "The source's switch from a terminal interval to the entire interval must be reconciled."
+    },
+    {
+      "id": "O2607-11",
+      "stage": "rearrangement",
+      "statement": "Invert the logarithmically corrected distribution inequality with explicit cutoffs and one-sided constants.",
+      "status": "partially_mechanized",
+      "depends_on": ["O2607-09", "O2607-10"],
+      "evidence": ["EXP-LOGCHAIN-001"],
+      "disposition": "Formal exponents match; a rigorous slowly-varying inversion lemma is still required."
+    },
+    {
+      "id": "O2607-12",
+      "stage": "rearrangement",
+      "statement": "Verify the exact O'Neil convolution bound, whole-space tail, and transfer of the logarithmic exponent from vorticity to velocity.",
+      "status": "open",
+      "depends_on": ["O2607-11"],
+      "evidence": [],
+      "disposition": "The exponent checker assumes this analytic mapping and does not prove it."
+    },
+    {
+      "id": "O2607-13",
+      "stage": "endgame",
+      "statement": "Prove quantitative 3D-to-1D sparseness at a usable scale for every spatial center.",
+      "status": "open",
+      "depends_on": ["O2607-12"],
+      "evidence": [],
+      "disposition": "Global volume control must yield an explicit chosen radius, not sparseness at every smaller radius."
+    },
+    {
+      "id": "O2607-14",
+      "stage": "endgame",
+      "statement": "Synchronize escape time, evaluation time below T-star, local lifespan, and analytic radius without circular extension.",
+      "status": "open",
+      "depends_on": ["O2607-03", "O2607-13"],
+      "evidence": [],
+      "disposition": "This is a theorem-critical temporal quantifier check."
+    },
+    {
+      "id": "O2607-15",
+      "stage": "endgame",
+      "statement": "Verify slit-domain harmonic measure, boundary hypotheses, complexified velocity bounds, and phase handling.",
+      "status": "open",
+      "depends_on": ["O2607-13", "O2607-14"],
+      "evidence": [],
+      "disposition": "The domain should be stated as the analytic disk with the good real set removed."
+    },
+    {
+      "id": "O2607-16",
+      "stage": "presentation",
+      "statement": "Repair the stray source character and restate the origin-in-void branch as a pointwise bound feeding the final supremum.",
+      "status": "open",
+      "depends_on": ["O2607-15"],
+      "evidence": [],
+      "disposition": "Likely presentational, but must be resolved before a clean proof reconstruction."
+    }
+  ]
+}

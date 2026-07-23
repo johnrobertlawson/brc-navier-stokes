@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-07-23",
+  "experiments": [
+    {
+      "id": "EXP-SCALING-001",
+      "title": "Exact scaling exponent table",
+      "kind": "symbolic",
+      "route_ids": ["ROUTE-R1", "ROUTE-B1B"],
+      "claim_ids": ["CLM-SCALE-001", "CLM-ENERGY-001"],
+      "hypothesis": "The recorded velocity, vorticity, pressure, and force exponents follow from one exact scaling rule.",
+      "invariants": ["Space dimension equals 3", "Parabolic time power equals 2"],
+      "method": "Rational arithmetic in navier_lab.scaling.",
+      "certificate": "Unit-test assertions are the algebraic certificate.",
+      "success_criterion": "All canonical critical and energy exponents equal their exact rational targets.",
+      "failure_interpretation": "The dossier or implementation has a scaling error.",
+      "status": "implemented",
+      "artifacts": ["lab/navier_lab/scaling.py", "lab/tests/test_scaling.py"],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-LOGCHAIN-001",
+      "title": "2607 logarithmic exponent bookkeeping",
+      "kind": "symbolic",
+      "route_ids": ["ROUTE-R1B", "ROUTE-R1D"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "The paper's stated distribution and rearrangement exponents transform algebraically as claimed.",
+      "invariants": ["This checks exponent arithmetic only", "It does not prove O'Neil or energy inequalities"],
+      "method": "Exact Fraction transformations in navier_lab.log_chain.",
+      "certificate": "Unit-test assertions and command-line report.",
+      "success_criterion": "Vorticity tail (3/2,3/2) maps to rearrangement (2/3,1) and velocity tail (3,3).",
+      "failure_interpretation": "At least one claimed exponent conversion is algebraically inconsistent.",
+      "status": "implemented",
+      "artifacts": ["lab/navier_lab/log_chain.py", "lab/tests/test_log_chain.py"],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-SOURCE-2607",
+      "title": "Pinned arXiv 2607.08866v2 source cache",
+      "kind": "provenance",
+      "route_ids": ["ROUTE-R1B", "ROUTE-R3"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "The exact TeX source can be reproducibly fetched, hashed, and safely extracted.",
+      "invariants": ["Version v2", "No tracked copy without redistribution permission", "No unsafe archive paths"],
+      "method": "navier_lab.source_cache fetches the arXiv e-print and writes a manifest.",
+      "certificate": "SHA-256 manifest plus archive member list.",
+      "success_criterion": "The manifest names chaos_sphere.tex and records a nonempty SHA-256 digest.",
+      "failure_interpretation": "The source version is not pinned or the archive layout changed.",
+      "status": "complete",
+      "artifacts": [
+        "lab/navier_lab/source_cache.py",
+        "lab/navier_lab/paper_build.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-MULTICORE-001",
+      "title": "Weak-L(3/2) multi-core localization counterexample",
+      "kind": "analytic_counterexample",
+      "route_ids": ["ROUTE-R3A"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "A uniform weak-L(3/2) bound alone does not confine every high-level set to one ball of radius proportional to lambda^(-1/2).",
+      "invariants": ["Divergence-free realization is not needed for the first measure-theoretic counterexample", "A later PDE-consistent version is separate"],
+      "method": "Construct separated critical spikes with controlled distribution function and unbounded covering diameter.",
+      "certificate": "A written proof and executable distribution/covering check.",
+      "success_criterion": "The example has bounded weak-L(3/2) quasi-norm while violating single-ball containment uniformly.",
+      "failure_interpretation": "The proposed spike weights or geometry do not preserve the critical bound.",
+      "status": "complete",
+      "artifacts": [
+        "lab/navier_lab/multicore.py",
+        "lab/tests/test_multicore.py",
+        "dossier/experiments/multicore-localization.md"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-HWY-REPRO-001",
+      "title": "Independent HWY profile and spectrum reproduction",
+      "kind": "certified_numerics",
+      "route_ids": ["ROUTE-B3A"],
+      "claim_ids": ["CLM-HWY-001"],
+      "hypothesis": "The published residual and unstable-eigenvalue certificates can be regenerated independently.",
+      "invariants": ["Exact divergence-free basis", "Directed rounding", "Pinned source and code revisions", "Independent implementation path"],
+      "method": "Rebuild approximate profile, finite-rank operator, quadrature bounds, and interval spectrum.",
+      "certificate": "Machine-readable interval certificate checked by a small independent verifier.",
+      "success_criterion": "All analytic bootstrap inequalities close using regenerated certified constants.",
+      "failure_interpretation": "Classify the mismatch as implementation, source ambiguity, or theorem-critical gap.",
+      "status": "planned",
+      "artifacts": [],
+      "last_run": null
+    }
+  ]
+}
