@@ -559,6 +559,12 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
+> **Review pause:** the fresh-band tower reduction is frozen at commit
+> `39a6736` for independent adversarial review. The review letter is
+> `dossier/review-letter-2026-07-23.md`. No further branch should be built
+> until the nested-subsequence quantifiers, scale normalisations, \(q=0\)
+> cocycle, and history-source closure have been challenged independently.
+
 > Can the positive fresh-band moments be summed by a genuinely new strong or
 > scale-zero law? If not, can the exact same-trajectory cocycle be closed at
 > its \(q=0\) tangent boundary, the shift-stationary marked scale process and

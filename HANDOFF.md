@@ -1,10 +1,18 @@
-# Handoff: close the zero-ratio tangent cocycle
+# Handoff: external review checkpoint
 
-**Updated:** 2026-07-23T15:08:32Z
+**Updated:** 2026-07-23T15:16:54Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
 ## State in one minute
+
+Before extending the proof tree, send
+`dossier/review-letter-2026-07-23.md` and review target `39a6736` to an
+independent analyst or mathematical AI. The requested audit is adversarial:
+attack the simultaneous sparse-subsequence quantifiers, parent/microchild
+normalisations, Beltrami scope, discrete shift compactification, \(q=0\)
+tangent provenance, and signed history-square balance. Development is
+deliberately paused at this review boundary.
 
 The arXiv:2607.08866v2 proof chain has been independently reconstructed. It survives
 only as a repaired conditional theorem for a projected-mild solution with:
@@ -467,29 +475,30 @@ closed branches. The original regularity target remains
 
 Start with only:
 
-1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/scale-indexed-defect.md`;
-3. `dossier/experiments/frequency-energy-flux.md`;
-4. `dossier/experiments/fresh-detector-transfer.md`;
-5. `dossier/experiments/fresh-band-lorentz.md`;
-6. `dossier/experiments/tree-budget-audit.md`;
-7. `dossier/experiments/moving-band-coupling.md`;
-8. `dossier/experiments/forcing-jet-decoupling.md`;
-9. `dossier/experiments/strain-jet-freezing.md`;
-10. `dossier/experiments/microbubble-decoration-rigidity.md`;
-11. `dossier/experiments/terminal-carrier-microbubble.md`;
-12. `dossier/experiments/terminal-alignment-excess.md`;
-13. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
-14. `dossier/experiments/terminal-trace-excess.md`;
-15. `dossier/experiments/projective-zero-interface.md`;
-16. `dossier/experiments/trace-projective-domination.md`;
-17. `dossier/experiments/trace-boundary-renormalisation.md`;
-18. `dossier/experiments/trace-transition-band-flux.md`;
-19. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
+1. `dossier/review-letter-2026-07-23.md`;
+2. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
+3. `dossier/experiments/scale-indexed-defect.md`;
+4. `dossier/experiments/frequency-energy-flux.md`;
+5. `dossier/experiments/fresh-detector-transfer.md`;
+6. `dossier/experiments/fresh-band-lorentz.md`;
+7. `dossier/experiments/tree-budget-audit.md`;
+8. `dossier/experiments/moving-band-coupling.md`;
+9. `dossier/experiments/forcing-jet-decoupling.md`;
+10. `dossier/experiments/strain-jet-freezing.md`;
+11. `dossier/experiments/microbubble-decoration-rigidity.md`;
+12. `dossier/experiments/terminal-carrier-microbubble.md`;
+13. `dossier/experiments/terminal-alignment-excess.md`;
+14. `dossier/experiments/trace-temporal-modulus-obstruction.md`;
+15. `dossier/experiments/terminal-trace-excess.md`;
+16. `dossier/experiments/projective-zero-interface.md`;
+17. `dossier/experiments/trace-projective-domination.md`;
+18. `dossier/experiments/trace-boundary-renormalisation.md`;
+19. `dossier/experiments/trace-transition-band-flux.md`;
+20. sections 3--7 of `dossier/experiments/tensor-trace-adjoint.md` for the
    antecedent trace equation and content;
-20. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
+21. sections 4--8 of `dossier/experiments/polar-entropy-barrier.md` only when the
    full projective-cross content is needed; and
-21. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
+22. section 1 of `dossier/experiments/commutator-bubble-rescaling.md` only when
    the existing strong velocity compactness is needed.
 
 Completed static results:
