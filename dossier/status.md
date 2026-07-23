@@ -53,7 +53,7 @@ and breakdown work
   \(\lambda^{-3/2}(\log\lambda)^{-1/2}\) vorticity decay. Thus ROUTE-R3A is closed
   inside the repaired conditional chain: no fixed ball, cover, component,
   anisotropy, diameter, or fragmentation hypothesis remains. The proof actually
-  needs only vanishing of the high-level local weak strain norm on
+  needs only vanishing of the high-level local weak positive aligned strain norm on
   \(\lambda^{-1/2}\)-balls; the global logarithmic direction hypothesis is one
   sufficient route to that exact input.
 - Smooth divergence-free vorticity need not supply a log-weighted BMO direction
@@ -65,13 +65,27 @@ and breakdown work
   nonzero normalized commutator with uniform weak-\(L^{3/2}\) vorticity and
   vanishing kinetic energy. Snapshot estimates therefore cannot close ROUTE-R3B;
   one-solution time history is essential.
+- The truncated-enstrophy source has nonnegative weights, so only
+  \(\alpha_+=\max(\alpha,0)\) must vanish locally. Negative aligned strain is
+  favourable. When this sharper target fails, the commutator identity and vanishing
+  low-vorticity remainder select a defect supported on genuinely positive
+  stretching; a purely compressive commutator concentration is not an obstruction.
 - Rescaling a persistent commutator produces backward time domains exhausting
   \((-\infty,0]\), with invariant critical norms and uniformly tight
-  Calderón--Zygmund far tails. However, the endpoint bounds do not certify an
-  ancient commutator profile: the function sequence can converge to zero in every
-  subcritical topology while a nonzero Radon witness measure remains. Strong
-  critical trace compactness and suitable-solution spacetime compactness are
-  separate missing gates.
+  Calderón--Zygmund far tails. The endpoint bounds do not certify an ancient
+  commutator profile: the function sequence can converge to zero in every
+  subcritical topology while a nonzero Radon witness measure remains.
+- Local \(W^{1,q}\) control for \(6/5<q<3/2\), together with a uniform
+  \(W^{-1,q}\) time derivative, does give strong local spacetime \(L^2\) compactness.
+  Thus every failure scale has an ancient distributional Navier--Stokes velocity
+  limit, but not yet a suitable or necessarily nonzero one. The witness measure
+  splits into atomless and atomic parts. Every atom has a canonical fixed-mass
+  secondary rescaling: its defect mass and critical norms persist, its normalized
+  vorticity threshold falls to zero, and it yields either a bounded-density
+  positive commutator profile, a unit-level child bubble, or a dust cloud requiring
+  infinitely many natural-scale cells. The exact remaining dynamic input is a
+  scale-adapted temporal commutator modulus or equivalent parabolic persistence
+  bound, together with suitability or measure-valued rigidity.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
   Rayleigh cancellation along the fixed direction.
 
@@ -82,9 +96,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can one-solution time history eliminate the nonzero commutator concentration
-> measure, or force it into a genuine ancient critical profile that rigidity can
-> exclude?
+> Can one-solution time history propagate or eliminate the nonzero commutator
+> measure, exclude natural-scale bubble dust, and upgrade its ancient distributional
+> velocity limit to a suitable object that rigidity can exclude?
 
 The coequal breakdown question remains:
 
@@ -93,14 +107,14 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Split the normalized witness measure into diffuse and atomic alternatives. Prove
-   a backward persistence estimate on a fixed parabolic interval, or extract the
-   smaller spatial and temporal scale of each atom.
-2. Quantify the exact local dissipation or critical equiintegrability needed to
-   upgrade weak-\(L^{3/2}\) vorticity to a preserved time-zero commutator trace.
-3. Build the resulting bubble-tree or measure-valued ancient object without
-   discarding derivative concentration, then test backward uniqueness and local
-   energy rigidity.
+1. Derive the scale-adapted half-level persistence estimate from the localized
+   vorticity equation, or identify the exact scale-local dissipation term that can
+   destroy it on a \(\rho^2\) interval.
+2. Prove a no-dust lower bound for natural-scale commutator granularity, or retain
+   the dust as a spacetime measure through the secondary parabolic limit.
+3. Upgrade the ancient distributional bubble to a suitable object using a uniform
+   scale-local dissipation/pressure estimate, then test backward uniqueness and
+   local-energy rigidity without discarding its defect decoration.
 4. Determine whether the terminal weak-\(L^{3/2}\) vorticity hypothesis can be
    obtained from a weaker critical quantity or incorporated into the same
    projective estimate.

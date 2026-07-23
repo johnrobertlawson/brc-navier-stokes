@@ -19,6 +19,7 @@ not convert passing unit tests into mathematical truth.
 | **critical_localization.py** | Exact IMS and linear-source critical-radius optimisation | Derivation of the remaining direction and weak-vorticity hypotheses |
 | **truncated_direction.py** | Zero-set-safe remainder and critical commutator scaling certificates | Cross-time control of one putative blow-up |
 | **ancient_compactness.py** | Ancient-domain, far-tail, and commutator defect-measure scaling | Critical spacetime compactness or measure-valued rigidity |
+| **commutator_bubbles.py** | Subcritical compactness, secondary defect scaling, and parabolic persistence exponents | Suitability, temporal persistence, or exclusion of bubble dust |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -44,6 +45,7 @@ From the repository root:
     make critical-localization
     make truncated-direction
     make ancient-compactness
+    make commutator-bubbles
     make strain
     make fetch-2607
     make compile-2607

@@ -176,10 +176,10 @@
       "parent": "ROUTE-R3",
       "side": "regularity",
       "title": "Imposed geometry to derived geometry",
-      "question": "Can one solution's time history eliminate the normalized commutator concentration measure or supply strong critical compactness for a nontrivial ancient profile?",
+      "question": "Can one solution's time history propagate or eliminate the normalized commutator defect, exclude natural-scale dust, and upgrade the ancient distributional bubble to a rigid suitable object?",
       "entry_assumptions": ["Smoothness before a first singular time"],
-      "success": "The commutator defect measure vanishes or is represented by a nontrivial ancient profile that is excluded by rigidity.",
-      "kill_criterion": "A Clay-admissible trajectory or measure-valued ancient limit retaining a nonzero normalized commutator defect.",
+      "success": "A scale-adapted persistence or no-dust estimate turns every defect into a nontrivial suitable ancient object that is excluded by rigidity, or the defect measure vanishes directly.",
+      "kill_criterion": "A Clay-admissible trajectory or measure-decorated ancient suitable limit retaining a nonzero persistent commutator defect.",
       "status": "open",
       "children": [],
       "evidence_claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"]

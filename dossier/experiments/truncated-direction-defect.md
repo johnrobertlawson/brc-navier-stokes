@@ -735,6 +735,15 @@ The zero set and the low-amplitude part of vorticity are no longer the logical
 bottleneck. They can be cut away with a tunably vanishing, fully quantified error.
 The exact survivor is a scale-critical truncated-direction commutator.
 
+The geometry-free truncated-enstrophy argument actually needs only
+\(\alpha_+=\max(\alpha,0)\), since both source weights are nonnegative. Therefore,
+if the exact positive aligned-strain target fails, the weak-small remainder can be
+discarded on a set of vanishing witness mass and the surviving commutator witness
+may be chosen strictly positive. A defect caused only by negative aligned strain is
+favourable and does not obstruct the regularity chain. The
+[secondary bubble reduction](commutator-bubble-rescaling.md) records this sign-safe
+selection quantitatively.
+
 The smooth scaling family proves that no argument depending only on:
 
 - instantaneous smoothness and incompressibility;

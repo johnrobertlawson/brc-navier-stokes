@@ -1,6 +1,6 @@
-# Handoff: propagate or rescale the commutator defect measure; do not re-audit
+# Handoff: prove parabolic persistence or exclude commutator bubble dust
 
-**Updated:** 2026-07-23T07:12:52Z
+**Updated:** 2026-07-23T07:41:38Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -10,8 +10,8 @@ The arXiv:2607.08866v2 proof chain has been independently reconstructed. It surv
 only as a repaired conditional theorem for a projected-mild solution with:
 
 - uniform weak-\(L^{3/2}\) vorticity on one terminal interval;
-- uniform vanishing of the high-level local strain norm on critical balls; the
-  repaired global
+- uniform vanishing of the high-level local positive aligned strain norm on
+  critical balls; the repaired global
   \(\mathrm{bmo}_{1/|\log r|}\) vorticity-direction extension is one sufficient
   condition for this input;
 - a fixed or uniformly bounded spatially constant velocity background.
@@ -24,14 +24,15 @@ hypotheses, not rechecking the completed chain. This result is not Clay A–D.
 
 ## Default next target: ROUTE-R3B
 
-Use one solution's time history to eliminate, propagate, or rescale the normalized
-commutator concentration measure. The regularity target remains
+Use one solution's time history to eliminate or propagate the normalized commutator
+concentration measure through its canonical secondary scale. The regularity target
+remains
 
 \[
-\widehat a_\lambda
+\widehat a_\lambda^+
 :=
 \sup_{t,x_0}
-\|\alpha(t)\mathbf1_{\{|\omega(t)|>\lambda\}}
+\|\alpha_+(t)\mathbf1_{\{|\omega(t)|>\lambda\}}
 \|_{L^{3/2,\infty}(B_{\kappa\lambda^{-1/2}}(x_0))}
 \longrightarrow0.
 \]
@@ -39,9 +40,9 @@ commutator concentration measure. The regularity target remains
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3B")' dossier/records/routes.json`;
-2. `dossier/experiments/ancient-commutator-compactness.md`;
-3. only the scaling family in
-   `dossier/experiments/truncated-direction-defect.md`.
+2. `dossier/experiments/commutator-bubble-rescaling.md`;
+3. its input `dossier/experiments/ancient-commutator-compactness.md` only when an
+   antecedent definition is needed.
 
 Completed static results:
 
@@ -130,8 +131,8 @@ Completed geometry-free localization:
 > \(R=\kappa\lambda^{-1/2}\) satisfies
 >
 > \[
-> \sum_k\|\alpha\eta_k\mathbf1_{A_\lambda}\|_{L^{6/5,2}}^2
-> \lesssim A_0^{3/2}\widehat a_\lambda^{1/2}R
+> \sum_k\|\alpha_+\eta_k\mathbf1_{A_\lambda}\|_{L^{6/5,2}}^2
+> \lesssim A_0^{3/2}(\widehat a_\lambda^+)^{1/2}R
 > \]
 >
 > and the exact IMS identity
@@ -145,12 +146,14 @@ Completed geometry-free localization:
 >
 > \[
 > \mu_\omega(2\lambda)
-> \lesssim\lambda^{-3/2}\widehat a_\lambda^{1/2}.
+> \lesssim\lambda^{-3/2}(\widehat a_\lambda^+)^{1/2}.
 > \]
 
-Thus \(\widehat a_\lambda\to0\) is the exact rate-free input. The repaired global
+Thus \(\widehat a_\lambda^+\to0\) is the exact rate-free input. Negative aligned
+strain is favourable in the truncated-enstrophy inequality and need not be
+controlled. The repaired global
 logarithmic direction hypothesis gives
-\(\widehat a_\lambda\lesssim1/\log\lambda\), hence \(\gamma=1/2\), but the
+\(\widehat a_\lambda^+\lesssim1/\log\lambda\), hence \(\gamma=1/2\), but the
 localization theorem does not require that particular mechanism. ROUTE-R3A is
 closed inside the conditional chain.
 
@@ -236,23 +239,108 @@ an ordinary weak ancient limit can be zero even though the commutator defect
 survives. Weak-\(L^3\) velocity also fails to control the cubic local-energy flux, so
 suitable-solution compactness is a separate gate.
 
+Completed atomic/diffuse and secondary-rescaling reduction:
+
+> The actual failure object is positive: if the \(\alpha_+\) target fails, the exact
+> commutator identity and vanishing low-vorticity remainder select witness sets on
+> which \(\mathcal K_n>\sigma_n\) and \(\alpha_n>0\). A purely compressive defect is
+> not an obstruction.
+>
+> For every \(6/5<q<3/2\), the endpoint bounds give local
+> \(L^\infty_sW^{1,q}_y\) control and a uniform \(W^{-1,q}\) time derivative.
+> Aubin--Lions therefore yields strong local spacetime \(L^2\) convergence and an
+> ancient distributional Navier--Stokes velocity limit. This is not yet a suitable
+> solution and it may be zero.
+
+The defect has the exact decomposition
+
+\[
+\nu=g\,dy+\nu_{\mathrm{sc}}+\sum_jm_j\delta_{a_j}.
+\]
+
+If it is atomless, then
+
+\[
+\lim_{r\downarrow0}\limsup_n\sup_y\nu_n(B_r(y))=0.
+\]
+
+For an atom, choose a fixed mass \(q>0\) and the first concentration radius
+\(\rho_n\downarrow0\). The secondary parabolic rescaling
+
+\[
+\widetilde u_n(z,\tau)
+=
+\rho_n u_n(y_n+\rho_nz,\rho_n^2\tau)
+\]
+
+has backward-ancient domains and invariant critical weak norms. With
+
+\[
+\theta_n=\rho_n^2\sigma_n,
+\]
+
+the exact ledger is
+
+\[
+1\longmapsto\rho_n^2
+\quad\hbox{for the vorticity cutoff},
+\qquad
+\sigma_n\longmapsto\theta_n
+\quad\hbox{for the commutator witness},
+\]
+
+\[
+\widetilde\nu_n(B_1)=q,
+\qquad
+\theta_n\ge(q/|B_1|)^{2/3}.
+\]
+
+Bounded \(\theta_n\) yields a nonzero bounded-density positive commutator profile.
+Unbounded \(\theta_n\) either yields a unit-level child bubble at
+\(\ell_n=\sigma_n^{-1/2}\), or a dust cloud requiring at least
+\(q/\gamma_n\to\infty\) natural-scale cells.
+
+The exact persistence certificate is now explicit. If
+
+\[
+d_n(s)
+=
+\left\|
+\bigl(\mathcal K_n(s)-\mathcal K_n(0)\bigr)
+\mathbf1_{B_{\rho_n}(y_n)}
+\right\|_{L^{3/2,\infty}}
+\]
+
+satisfies
+
+\[
+\sup_{-\tau_0\rho_n^2\le s\le0}
+d_n(s)^{3/2}
+\le
+2^{-5/2}q,
+\]
+
+then a fixed positive half-level defect persists throughout
+\(\tau\in[-\tau_0,0]\). Current endpoint control gives only a negative-Sobolev
+velocity modulus and does not imply this.
+
 Next deliverable:
 
-> Split \(\nu\) into diffuse and atomic alternatives. For a fixed positive mass,
-> either prove backward persistence on \(s\in[-\tau_0,0]\) with \(\tau_0>0\)
-> independent of the sequence, or choose the atomic witness radius \(\rho_n\) and
-> perform the secondary parabolic rescaling
+> Work on the scale-local cylinder
 >
 > \[
-> \widetilde u_n(z,\tau)
-> =
-> \rho_n u_n(y_n+\rho_nz,\rho_n^2\tau).
+> B_{C\rho_n}(y_n)\times[-\tau_0\rho_n^2,0].
 > \]
 >
-> Track the normalized vorticity threshold, time domain, weak norms, and defect
-> measure exactly. Success yields a nontrivial function profile or a certified
-> bubble tree; failure must identify the missing temporal modulus or dissipation
-> bound. Do not discard an atomic \(\nu\) by passing only to the weak velocity limit.
+> Use the localized vorticity/stretching equation and the exact
+> truncated-direction identity to prove either the half-level persistence bound
+> above or a weaker positive spacetime witness-mass bound. Inventory cutoff
+> diffusion, local dissipation, transport, and threshold-crossing terms at the
+> \(\rho_n^2\) clock. In parallel, test whether the singular-integral commutator
+> structure forces a lower bound on the natural-scale granularity \(\gamma_n\).
+> If neither closes, isolate the exact missing scale-local dissipation or temporal
+> equiintegrability norm. Do not merely perform another spatial rescaling, and do
+> not treat the ancient distributional velocity limit as suitable.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
 closed covering, component, or localization optimisations.

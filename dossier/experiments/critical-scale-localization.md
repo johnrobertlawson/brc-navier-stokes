@@ -8,12 +8,13 @@
   [critical little-o endgame](vanishing-tail-endgame.md)
 
 **Scope warning:** the exact theorem retains uniform weak-\(L^{3/2}\) vorticity, a
-bounded velocity background, and uniform vanishing of the high-level local strain
-norm on critical balls. The repaired global logarithmic direction extension is one
-sufficient condition for the last input, but is no longer logically required by the
-localization argument. The result removes the fixed ball, cover-content, component,
-diameter, radius, and fragmentation hypotheses. It does not derive the retained
-inputs from arbitrary Clay data and does not establish a Clay alternative.
+bounded velocity background, and uniform vanishing of the high-level local
+**positive aligned strain** norm on critical balls. The repaired global logarithmic
+direction extension is one sufficient condition for the last input, but is no
+longer logically required by the localization argument. The result removes the
+fixed ball, cover-content, component, diameter, radius, and fragmentation
+hypotheses. It does not derive the retained inputs from arbitrary Clay data and does
+not establish a Clay alternative.
 
 ## Verdict
 
@@ -26,6 +27,27 @@ E_\lambda=\|w_\lambda\|_2^2,
 \qquad
 G_\lambda=\|\nabla w_\lambda\|_2.
 \]
+
+Put
+
+\[
+\alpha_+=\max(\alpha,0).
+\]
+
+The truncated-magnitude inequality has nonnegative weights, so
+
+\[
+\int_{A_\lambda}\alpha w_\lambda^2
++
+\lambda\int_{A_\lambda}\alpha w_\lambda
+\le
+\int_{A_\lambda}\alpha_+
+\left(w_\lambda^2+\lambda w_\lambda\right).
+\]
+
+Negative aligned strain is favourable and never needs to be estimated. Every local
+quantity below may therefore be formed with \(\alpha_+\); this is the exact weakest
+sign choice for the argument.
 
 Choose a smooth finite-overlap partition satisfying
 
@@ -50,23 +72,23 @@ a_R
 More sharply, the proof only uses
 
 \[
-\widehat a_{\lambda,R}
+\widehat a^+_{\lambda,R}
 :=
 \sup_{t,x_0}
-\|\alpha(t)\mathbf1_{A_\lambda(t)}
+\|\alpha_+(t)\mathbf1_{A_\lambda(t)}
 \|_{L^{3/2,\infty}(B_R(x_0))}.
 \]
 
 The commutator estimate supplies
-\(\widehat a_{\lambda,R}\le a_R\), but any mechanism giving
-\(\widehat a_{\lambda,\kappa\lambda^{-1/2}}\to0\) is sufficient.
+\(\widehat a^+_{\lambda,R}\le a_R\), but any mechanism giving
+\(\widehat a^+_{\lambda,\kappa\lambda^{-1/2}}\to0\) is sufficient.
 
 The global weak strain distribution and finite overlap yield the new square-sum
 
 \[
 \boxed{
 \sum_k
-\|\alpha\eta_k\mathbf1_{A_\lambda}\|_{L^{6/5,2}}^2
+\|\alpha_+\eta_k\mathbf1_{A_\lambda}\|_{L^{6/5,2}}^2
 \lesssim
 A_0^{3/2}a_R^{1/2}R,
 }
@@ -89,7 +111,7 @@ G_\lambda^2+C_PR^{-2}E_\lambda.
 These two estimates retain every cutoff cost. The quadratic stretching obeys
 
 \[
-\left|\int\alpha w_\lambda^2\right|
+\int\alpha w_\lambda^2
 \lesssim
 a_R
 \left(
@@ -101,7 +123,7 @@ while the linear stretching obeys
 
 \[
 \begin{aligned}
-\lambda\left|\int\alpha w_\lambda\right|
+\lambda\int\alpha w_\lambda
 &\le
 \frac{\nu}{8}G_\lambda^2
 +
@@ -263,10 +285,10 @@ C_*M_\omega M_\xi\phi(R)
 for almost every terminal-interval time and every \(0<R\le R_*=1/64\).
 
 On \(A_\lambda\), the direction is defined intrinsically and
-\(|\alpha|\le|S|\). Thus the global bound actually needed below is
+\(0\le\alpha_+\le|S|\). Thus the global bound actually needed below is
 
 \[
-\|\alpha(\cdot,t)\mathbf1_{A_\lambda(t)}
+\|\alpha_+(\cdot,t)\mathbf1_{A_\lambda(t)}
 \|_{L^{3/2,\infty}(\mathbb R^3)}
 \le
 A_0
@@ -280,15 +302,16 @@ For the localization proof itself, one may replace \(a_R\) everywhere below by t
 weaker high-level quantity
 
 \[
-\widehat a_{\lambda,R}
+\widehat a^+_{\lambda,R}
 =
 \sup_{t,x_0}
-\|\alpha(t)\mathbf1_{A_\lambda(t)}
+\|\alpha_+(t)\mathbf1_{A_\lambda(t)}
 \|_{L^{3/2,\infty}(B_R(x_0))}.
 \]
 
-Both quadratic integrals and all \(g_k\) are supported in \(A_\lambda\), so no
-estimate of \(\alpha\) on the low-vorticity part of a partition ball is used.
+Both positive stretching integrals and all \(g_k\) are supported in \(A_\lambda\),
+so no estimate of \(\alpha_+\) on the low-vorticity part of a partition ball is
+used.
 
 ## 3. Finite-overlap mixed Lorentz square-sum
 
@@ -299,7 +322,7 @@ A_\lambda=\{|\omega|>\lambda\},
 \qquad
 g_k
 :=
-\alpha\eta_k\mathbf1_{A_\lambda},
+\alpha_+\eta_k\mathbf1_{A_\lambda},
 \qquad
 \mu_k(t)
 :=
@@ -324,9 +347,9 @@ Finite overlap and the global weak strain bound give
 \sum_k\mu_k(t)
 &\le
 \sum_k
-|\operatorname{supp}\eta_k\cap A_\lambda\cap\{|\alpha|>t\}|\\
+|\operatorname{supp}\eta_k\cap A_\lambda\cap\{\alpha_+>t\}|\\
 &\le
-K_P|\{x\in A_\lambda:|\alpha|>t\}|\\
+K_P|\{x\in A_\lambda:\alpha_+>t\}|\\
 &\le
 K_P\left(\frac{A_0}{t}\right)^{3/2}.
 \end{aligned}
@@ -431,23 +454,23 @@ There is no cross term and no overlap loss beyond the fixed partition constant.
 
 ## 5. Quadratic stretching with its cutoff cost
 
-Since \(\sum_k\eta_k^2=1\),
+Since the weights are nonnegative and \(\sum_k\eta_k^2=1\),
 
 \[
 \int_{A_\lambda}\alpha w_\lambda^2
+\le
+\int_{A_\lambda}\alpha_+ w_\lambda^2
 =
 \sum_k
 \int_{A_\lambda}
-\alpha(\eta_kw_\lambda)^2.
+\alpha_+(\eta_kw_\lambda)^2.
 \]
 
 Lorentz Hölder, the local weak strain estimate, and Sobolev--Lorentz give
 
 \[
 \begin{aligned}
-\left|
-\int_{A_\lambda}\alpha w_\lambda^2
-\right|
+\int_{A_\lambda}\alpha_+ w_\lambda^2
 &\le
 C_Ha_R
 \sum_k
@@ -468,22 +491,22 @@ This retains the full IMS penalty. It is not discarded as a boundary term.
 
 ## 6. Linear stretching with both cutoff residuals
 
-Again using the square partition,
+Again using positivity and the square partition,
 
 \[
 \begin{aligned}
 \lambda
-\left|
 \int_{A_\lambda}\alpha w_\lambda
-\right|
+&\le
+\lambda
+\int_{A_\lambda}\alpha_+ w_\lambda\\
 &=
 \lambda
-\left|
 \sum_k
 \int
-(\alpha\eta_k\mathbf1_{A_\lambda})
+(\alpha_+\eta_k\mathbf1_{A_\lambda})
 (\eta_kw_\lambda)
-\right|\\
+\\
 &\le
 C_H\lambda
 \sum_k
@@ -536,9 +559,7 @@ Substitution of the square-sum gives
 \boxed{
 \begin{aligned}
 \lambda
-\left|
 \int_{A_\lambda}\alpha w_\lambda
-\right|
 &\le
 \frac{\nu}{8}G_\lambda^2
 +
@@ -751,9 +772,9 @@ successive ratios.
 In the exact high-level formulation, put
 
 \[
-\widehat a_\lambda
+\widehat a^+_\lambda
 :=
-\widehat a_{\lambda,\kappa\lambda^{-1/2}}.
+\widehat a^+_{\lambda,\kappa\lambda^{-1/2}}.
 \]
 
 Repeating the same ledger without inserting the logarithmic commutator rate gives
@@ -763,7 +784,7 @@ E_\lambda'
 +
 \mu_0\lambda E_\lambda
 \lesssim
-\lambda^{3/2}\widehat a_\lambda^{1/2}
+\lambda^{3/2}(\widehat a^+_\lambda)^{1/2}
 \]
 
 and
@@ -771,13 +792,13 @@ and
 \[
 \mu_\omega(2\lambda)
 \lesssim
-\lambda^{-3/2}\widehat a_\lambda^{1/2}.
+\lambda^{-3/2}(\widehat a^+_\lambda)^{1/2}.
 \]
 
 Thus the exact threshold is simply
 
 \[
-\boxed{\widehat a_\lambda\longrightarrow0.}
+\boxed{\widehat a^+_\lambda\longrightarrow0.}
 \]
 
 The critical little-o endgame then closes with no prescribed rate.
@@ -787,11 +808,12 @@ The critical little-o endgame then closes with no prescribed rate.
 Retain, on one terminal interval:
 
 1. the repaired uniform weak-\(L^{3/2}\) vorticity bound;
-2. at \(R_\lambda=\kappa\lambda^{-1/2}\), the high-level local strain condition
+2. at \(R_\lambda=\kappa\lambda^{-1/2}\), the high-level local positive aligned
+   strain condition
 
    \[
    \sup_{t,x_0}
-   \|\alpha(t)\mathbf1_{\{|\omega(t)|>\lambda\}}
+   \|\alpha_+(t)\mathbf1_{\{|\omega(t)|>\lambda\}}
    \|_{L^{3/2,\infty}(B_{R_\lambda}(x_0))}
    \longrightarrow0;
    \]
@@ -823,8 +845,8 @@ ROUTE-R3A is closed inside the repaired conditional chain: there is no remaining
 single-ball, cover, component, anisotropy, diameter, or fragmentation assumption.
 The principal regularity frontier moves to ROUTE-R3B in its exact reduced form:
 
-> derive critical-ball high-level local strain vanishing, either through a
-> zero-set-safe directional quantity or directly from arbitrary Clay-admissible
+> derive critical-ball high-level positive aligned strain vanishing, either through
+> a zero-set-safe directional quantity or directly from arbitrary Clay-admissible
 > dynamics.
 
 The [zero-set-safe truncated-direction reduction](truncated-direction-defect.md)

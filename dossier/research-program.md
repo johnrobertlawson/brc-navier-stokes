@@ -69,15 +69,16 @@ The active bridge is the exact remaining critical-ball condition
 
 \[
 \sup_{t,x_0}
-\|\alpha(t)\mathbf1_{\{|\omega(t)|>\lambda\}}
+\|\alpha_+(t)\mathbf1_{\{|\omega(t)|>\lambda\}}
 \|_{L^{3/2,\infty}(B_{\kappa\lambda^{-1/2}}(x_0))}
 \longrightarrow0,
 \]
 
 together with removal or derivation of the terminal weak-\(L^{3/2}\) vorticity and
 velocity-background hypotheses. A global logarithmic direction extension is one
-sufficient mechanism for the displayed decay, but the zero-set-safe PDE-derived
-condition is the sharper target.
+sufficient mechanism for the displayed decay. Negative aligned strain is favourable
+in the truncated-enstrophy inequality, so the positive part displayed above is the
+exact zero-set-safe PDE-derived target.
 
 The [truncated-direction reduction](experiments/truncated-direction-defect.md)
 removes the zero set and low-amplitude vorticity with a tunably vanishing error. It
@@ -90,9 +91,16 @@ snapshot inequality.
 The [ancient compactness audit](experiments/ancient-commutator-compactness.md)
 shows why this step needs its own certificate. The rescaled domains are backward
 ancient and singular-integral tails are tight, but endpoint convergence can lose all
-critical commutator mass into a nonzero Radon measure. The next bridge is therefore
-critical trace equiintegrability, backward persistence of that measure, or a
-measure-valued ancient rigidity theorem—not weak compactness alone.
+critical commutator mass into a nonzero Radon measure. The
+[secondary bubble reduction](experiments/commutator-bubble-rescaling.md) sharpens
+this: subcritical Aubin--Lions compactness does produce an ancient distributional
+Navier--Stokes velocity, while every atomic defect has an exact fixed-mass secondary
+rescaling. That rescaling either yields a bounded-density positive commutator
+profile, a unit-level child bubble, or natural-scale dust, but no current estimate
+propagates
+the defect through a fixed secondary parabolic interval. The next bridge is
+therefore scale-adapted temporal persistence, a no-dust estimate, and suitable or
+measure-decorated ancient rigidity—not weak compactness alone.
 
 ## Active campaign B — Certified unstable profiles
 

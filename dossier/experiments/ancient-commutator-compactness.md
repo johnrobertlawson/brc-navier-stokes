@@ -762,6 +762,12 @@ but neither compactness gate. ROUTE-R3B therefore reduces to:
 This is a **reduction and obstruction**, not a regularity theorem and not a Clay
 resolution.
 
+The [secondary bubble reduction](commutator-bubble-rescaling.md) subsequently closes
+the distributional-equation part of the spacetime gate by subcritical
+Aubin--Lions compactness, performs the exact atomic rescaling, and isolates
+scale-adapted temporal persistence, suitability, and natural-scale dust as the
+remaining obstructions.
+
 Run the exact scaling and witness-measure checks with:
 
     make ancient-compactness

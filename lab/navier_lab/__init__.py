@@ -3,6 +3,7 @@
 __all__ = [
     "anisotropic",
     "ancient_compactness",
+    "commutator_bubbles",
     "covering_entropy",
     "critical_localization",
     "intervals",

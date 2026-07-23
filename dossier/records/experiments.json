@@ -272,19 +272,19 @@
       "kind": "analytic_reduction",
       "route_ids": ["ROUTE-R3A"],
       "claim_ids": ["CLM-GRUJIC-001"],
-      "hypothesis": "A finite-overlap square partition at radius R proportional to lambda^(-1/2), together with vanishing of the high-level local weak-L(3/2) strain norm and the global weak strain distribution, absorbs every quadratic and linear cutoff term without any component geometry; the repaired logarithmic direction hypothesis supplies one quantitative instance.",
+      "hypothesis": "A finite-overlap square partition at radius R proportional to lambda^(-1/2), together with vanishing of the high-level local weak-L(3/2) positive aligned strain norm and the global weak strain distribution, absorbs every quadratic and linear cutoff term without any component geometry; the repaired logarithmic direction hypothesis supplies one quantitative instance.",
       "invariants": [
         "The smooth partition satisfies sum eta_k squared equals one exactly",
         "Partition overlap and scaled gradient constants are independent of level",
         "The global weak strain distribution is charged only through one square-sum",
-        "Only strain restricted to the high-vorticity superlevel set enters the local norm",
+        "Only positive aligned strain restricted to the high-vorticity superlevel set enters the local norm; negative aligned strain is favourable",
         "Every IMS term involving R^(-2) times truncated energy is retained",
         "The radius is selected only after both quadratic and linear ledgers are derived",
-        "The theorem remains conditional on weak-vorticity, high-level local strain decay, and velocity-background hypotheses; the repaired direction extension is sufficient but not necessary"
+        "The theorem remains conditional on weak-vorticity, high-level local positive-strain decay, and velocity-background hypotheses; the repaired direction extension is sufficient but not necessary"
       ],
       "method": "Construct a normalized lattice partition, prove an overlap version of the mixed L(6/5,2) distribution square-sum, use the exact IMS identity for the quadratic term, and use Lorentz-Sobolev plus Cauchy and damping for both pieces of the linear term.",
       "certificate": "A written partition theorem with every cutoff term displayed and exact Fraction tests for the radius optimization, source power, logarithmic gain, and resulting vorticity tail.",
-      "success_criterion": "At R proportional to lambda^(-1/2), diffusion and support-sensitive damping absorb all partition errors while the residual is O(lambda^(3/2) times the square root of the high-level local strain norm); the repaired logarithmic commutator gives the quantitative log(lambda)^(-1/2) case and eliminates every ROUTE-R3A component or covering hypothesis.",
+      "success_criterion": "At R proportional to lambda^(-1/2), diffusion and support-sensitive damping absorb all partition errors while the residual is O(lambda^(3/2) times the square root of the high-level local positive-strain norm); the repaired logarithmic commutator gives the quantitative log(lambda)^(-1/2) case and eliminates every ROUTE-R3A component or covering hypothesis.",
       "failure_interpretation": "The overlap distribution sum has a hidden count, the IMS identity leaves an uncontrolled cross term, or one linear cutoff residual is critical with no vanishing gain.",
       "status": "complete",
       "artifacts": [
@@ -304,6 +304,7 @@
       "invariants": [
         "The truncated direction is defined as zero at every vorticity zero",
         "The identity is exact on the high-vorticity superlevel set",
+        "Only the positive aligned-strain part is an obstruction in the truncated-enstrophy inequality",
         "The low-vorticity remainder amplitude is at most a fixed multiple of delta times lambda",
         "Near-field and every far annulus are retained in the remainder estimate",
         "The critical scaling family has uniform weak-L(3/2) vorticity and solves unforced Navier-Stokes locally",
@@ -345,6 +346,36 @@
         "dossier/experiments/ancient-commutator-compactness.md",
         "lab/navier_lab/ancient_compactness.py",
         "lab/tests/test_ancient_compactness.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
+      "id": "EXP-COMMUTATOR-BUBBLES-001",
+      "title": "Atomic commutator defects and secondary ancient rescaling",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": ["CLM-GEOM-001", "CLM-GRUJIC-001"],
+      "hypothesis": "Failure of the exact positive aligned-strain target yields a genuinely positive commutator witness; the endpoint critical bounds then produce an ancient distributional velocity limit at every defect scale, while an atomic witness has a canonical fixed-mass secondary rescaling whose exact amplitude, vorticity threshold, time domain, and measure reveal either a function-density bubble or unresolved natural-scale dust.",
+      "invariants": [
+        "Local W(1,q) velocity compactness uses only 6/5 less than q less than 3/2",
+        "The quadratic Navier-Stokes term passes by strong local spacetime L2 convergence",
+        "No suitable-solution or local-energy conclusion is inferred from distributional compactness",
+        "Witness sets can be pruned so both aligned strain and the truncated commutator are positive",
+        "The secondary parabolic rescaling preserves critical weak norms and defect mass",
+        "The normalized vorticity threshold becomes rho squared and is not silently reset to one",
+        "A fixed atomic mass forces the dimensionless commutator witness level away from zero",
+        "A bounded witness level yields a nonzero positive commutator profile, while an unbounded level retains a measure defect",
+        "Backward persistence is claimed only under an explicit scale-adapted temporal modulus"
+      ],
+      "method": "Apply local Lorentz embeddings and Aubin-Lions compactness to extract an ancient distributional solution, decompose the witness measure into absolutely continuous, singular-continuous, and atomic parts, select an atomic concentration radius, carry out the exact secondary Navier-Stokes scaling, and split the result by dimensionless witness level and natural-scale granularity.",
+      "certificate": "A written compactness and concentration theorem with an exact half-level temporal persistence inequality, plus Fraction tests for the Sobolev interval, secondary thresholds, critical measure Jacobian, subcritical loss, natural scale, and parabolic clock.",
+      "success_criterion": "Every time-zero defect is classified as atomless, a coherent atomic density bubble, a unit-level child bubble, or a certified dust cloud; the ancient distributional equation is passed rigorously and the remaining temporal and suitability hypotheses are explicit.",
+      "failure_interpretation": "The endpoint spaces do not compactly pass the quadratic equation, secondary scaling changes the defect mass, an atomic witness can lose all mass after normalization, or backward persistence is asserted without a scale-uniform temporal estimate.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/commutator-bubble-rescaling.md",
+        "lab/navier_lab/commutator_bubbles.py",
+        "lab/tests/test_commutator_bubbles.py"
       ],
       "last_run": "2026-07-23"
     },
