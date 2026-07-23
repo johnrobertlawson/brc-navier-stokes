@@ -1,6 +1,6 @@
-# Handoff: attack the cubic-log component endpoint; do not re-audit
+# Handoff: attack multiscale component radii; do not re-audit
 
-**Updated:** 2026-07-23T06:07:04Z
+**Updated:** 2026-07-23T06:17:34Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -24,15 +24,15 @@ result is not Clay A–D.
 
 ## Default next target: ROUTE-R3A
 
-Push the componentwise linear-source estimate through the cubic-log endpoint
-\(N_\lambda\asymp(\log\lambda)^3\).
+Extend the mixed global-local linear-source estimate from one comparable component
+radius to a genuinely multiscale radius family.
 
 Start with only:
 
 1. `jq '.routes[] | select(.id=="ROUTE-R3A")' dossier/records/routes.json`;
-2. `dossier/experiments/log-endgame-threshold.md`;
-3. the “remaining linear source” section of
-   `dossier/experiments/packet-lifetime.md`.
+2. `dossier/experiments/mixed-lorentz-source.md`;
+3. only the component ledger in
+   `dossier/experiments/log-endgame-threshold.md`.
 
 Completed static results:
 
@@ -79,24 +79,31 @@ Completed exponent threshold:
 > \(O((\log U)^{-2\gamma/3})\). Every \(\gamma>0\) closes the endgame;
 > \(\gamma=0\) has no asymptotic margin.
 
-For comparable critical components with
-\(N_\lambda\lesssim(\log\lambda)^\beta\), the component residual has
+Completed cubic-log reduction:
 
-\[
-\gamma=2-\frac{2\beta}{3}.
-\]
+> The global weak strain bound and local logarithmic commutator gain imply
+>
+> \[
+> \sum_j\|\alpha\mathbf1_{D_j}\|_{L^{6/5,2}}^2
+> \lesssim A^{3/2}a^{1/2}r.
+> \]
+>
+> Taking the better of this estimate and the local-only estimate retains at least
+> one full logarithm for every count of comparable critical components.
 
-Thus the repaired conditional chain now covers every \(\beta<3\), even though the
-arbitrary-cover entropy ledger stopped at \(\beta<3/2\).
+At \(N_\lambda\asymp(\log\lambda)^3\), the mixed estimate yields
+\(\gamma=3/2\), so the proposed cubic endpoint is closed. The worst comparable count
+is \(N_\lambda\asymp(\log\lambda)^{3/2}\), where \(\gamma=1\).
 
 Next deliverable:
 
-> At \(\beta=3\), use a two-level truncation, component nondegeneracy, or De Giorgi
-> iteration to recover any \(\gamma>0\). Failure must be an exact component geometry
-> saturating the linear-source ledger while remaining dynamically consistent.
+> Group components by dyadic radius, track whether repeated use of the global weak
+> strain bound creates a scale-count loss, and derive the weakest radius-scale sum
+> that still leaves any positive logarithmic gain. Failure must be an exact
+> multiscale packing saturating both the global and every local distribution bound.
 
 Do not reread unrelated proof-map or source sections, and do not return to the
-already-closed global cover aggregation.
+already-closed packet-count optimisation.
 
 ## Alternative routes—choose one, do not mix them
 

@@ -6,6 +6,7 @@ __all__ = [
     "intervals",
     "links",
     "log_chain",
+    "mixed_lorentz",
     "multicore",
     "paper_build",
     "packet_lifetime",

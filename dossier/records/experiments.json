@@ -214,6 +214,32 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-MIXED-LORENTZ-001",
+      "title": "Mixed global-local Lorentz control of the component linear source",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3A"],
+      "claim_ids": ["CLM-GRUJIC-001"],
+      "hypothesis": "Combining the global weak-L(3/2) strain bound with the local logarithmic commutator gain restores a positive linear-source log gain for every count of comparable critical components, including the cubic-log endpoint.",
+      "invariants": [
+        "The global strain bound follows from Calderon-Zygmund control of vorticity",
+        "Component supports are disjoint and have one comparable radius",
+        "Both the global and local distribution bounds are used at every amplitude",
+        "The proof estimates an l2 sum of L(6/5,2) component norms",
+        "No conclusion is claimed for arbitrary variable-radius or connected geometry"
+      ],
+      "method": "Write the L(6/5,2) norm by distribution functions, bound the sum of 5/3 powers by a local maximum times the global distribution, split at the local support crossover, and insert the result into dual Lorentz-Sobolev and Young.",
+      "certificate": "A written mixed-norm lemma with exact exponent optimisation and Fraction tests for the local, mixed, cubic-endpoint, and worst-count regimes.",
+      "success_criterion": "The cubic-log endpoint recovers a positive vorticity-tail exponent, and the better of the local-only and mixed estimates retains at least one logarithm for every comparable critical packet count.",
+      "failure_interpretation": "The distribution square-sum has an untracked count factor, the Lorentz dual exponent is wrong, or optimisation leaves a packet count with zero logarithmic gain.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/mixed-lorentz-source.md",
+        "lab/navier_lab/mixed_lorentz.py",
+        "lab/tests/test_mixed_lorentz.py"
+      ],
+      "last_run": "2026-07-23"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

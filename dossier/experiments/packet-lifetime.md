@@ -439,8 +439,10 @@ N_\lambda\lesssim(\log\lambda)^\beta
 \qquad\hbox{for every }\beta<3.
 \]
 
-The surviving ROUTE-R3A question is the cubic-log endpoint and worse component
-geometry, where the linear ledger has no positive logarithmic gain.
+The [mixed global-local Lorentz estimate](mixed-lorentz-source.md) removes the
+cubic-log endpoint and every other comparable-radius packet count. The surviving
+ROUTE-R3A question is genuinely multiscale, anisotropic, or low-level-connected
+component geometry.
 
 Run the exact scaling checks with:
 

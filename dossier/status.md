@@ -37,6 +37,10 @@ and breakdown work
   the analytic radius; \(\gamma=0\) is constant-sensitive. The resulting component
   criterion excludes comparable packet counts \((\log\lambda)^\beta\) for all
   \(\beta<3\).
+- Combining the global weak strain distribution with the local commutator gain
+  removes that count endpoint. Every number of comparable critical components
+  retains at least one logarithm; the cubic-log count retains \(3/2\) logarithms.
+  The worst count is instead \((\log\lambda)^{3/2}\), where one log survives.
 - Smooth divergence-free vorticity need not supply a log-weighted BMO direction
   extension across its zero set.
 - The unidirectional strain tensor need not vanish; the proof uses only its exact
@@ -49,9 +53,9 @@ regularity theorem.
 
 The 2607 audit and covering reduction have moved the frontier upstream:
 
-> Can viscous dynamics or a sharper two-level component estimate force a positive
-> linear-ledger gain at the cubic-log fragmentation endpoint, and can dynamics
-> generate the required log-weighted direction control?
+> Can the mixed global-local component estimate survive variable radii, anisotropy,
+> and low-vorticity connections, and can dynamics generate the required
+> log-weighted direction control?
 
 The coequal breakdown question remains:
 
@@ -60,9 +64,9 @@ The coequal breakdown question remains:
 
 ## Next proof-lab actions
 
-1. Apply a two-level component or De Giorgi estimate at the cubic-log endpoint
-   \(N_\lambda\asymp(\log\lambda)^3\); recover any positive logarithmic gain or
-   produce an exact saturating survivor.
+1. Dyadically decompose variable component radii and derive the exact scale-sum cost
+   in the mixed global-local \(L^{6/5,2}\) estimate; prove it remains logarithmically
+   absorbable or construct a multiscale saturation.
 2. Test whether quantitative spatial analyticity supplies a uniform doubling or
    component-count bound at the packet radius.
 3. Test whether local energy and viscosity force any terminal-time VMO modulus for

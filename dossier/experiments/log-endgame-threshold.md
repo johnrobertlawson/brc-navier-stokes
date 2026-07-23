@@ -476,6 +476,11 @@ quadratic term. Component alignment doubles the admissible logarithmic
 fragmentation exponent. At \(\beta=3\), \(\gamma=0\) and the endgame loses its
 asymptotic radius margin.
 
+This local-only endpoint is superseded for comparable radii by the
+[mixed global-local Lorentz estimate](mixed-lorentz-source.md). Using the global
+weak strain distribution as well as the local commutator gain retains at least
+\(\gamma=1\) for every component count and gives \(\gamma=3/2\) at \(\beta=3\).
+
 ## Consequence for ROUTE-R3A
 
 For comparable components at the logarithmic packet threshold, the
@@ -494,9 +499,8 @@ hypothesis persist through the terminal interval.
 
 The remaining ROUTE-R3A geometry is narrower:
 
-> high-level components for which \(\mathcal R_\lambda\) has no positive logarithmic
-> gain, including comparable packet counts at or above
-> \((\log\lambda)^3\), or low-vorticity connections that defeat the component
+> variable-radius or anisotropic high-level components for which no single critical
+> scale can be extracted, or low-vorticity connections that defeat the component
 > decomposition.
 
 Run the exact exponent checks with:
