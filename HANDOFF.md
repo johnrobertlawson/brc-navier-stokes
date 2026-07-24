@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-24T03:01:53Z
+**Updated:** 2026-07-24T03:16:53Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -654,6 +654,37 @@ found all twelve partition, shell, convergence, inversion, and scale-map
 links valid in scope. Ordinary polynomial feedback is now
 source-localised; exterior escape is stretched-exponential. Neither
 resulting object is compactified or excluded.
+
+The source-localised branch now has a finer reviewed descendant. Since
+\(\nabla\cdot r=0\), the local feedback pressure is an order-one
+multiplier of \(r\otimes b^{\rm in}\). The zero-data feedback bound and
+the inverse-cubic source volume give
+\[
+\int_0^h\|r\otimes b^{\rm in}\|_1\,d\tau
+\lesssim h^{1/2}.
+\]
+A smooth low pass below frequency \(K\) consequently costs at most
+\(CKh^{1/2}\). Choosing \(K=\kappa h^{-1/2}\) forces a fixed pressure
+fraction into the high-pass complement. On the physical trajectory its
+threshold scale and clock are
+\[
+\mu=\kappa^{-1}\sigma\sqrt h,
+\qquad
+\frac{|I|}{\mu^2}=\kappa^2.
+\]
+Thus ordinary local feedback cannot remain wholly on collapsing clocks:
+it descends below the event scale to a positive-clock pressure packet,
+with
+\[
+\mu\ll\sigma\ll\lambda=\sigma h^{-3}
+\ll\rho=\sigma D_b(h).
+\]
+[Independent adversarial review](dossier/review-response-adjoint-pressure-feedback-frequency-2026-07-24.md)
+found all ten factorisation, primitive-tensor, kernel, high-pass, and
+physical-scale links valid in scope. The packet still has no proved
+spatial centre or finite dyadic band and may disperse as spatial or
+frequency dust. No nonzero suitable profile or Besov-mark retention is
+asserted.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 
@@ -2489,10 +2520,16 @@ Next deliverable:
 > dissipation forces a fixed pressure-source fraction inside the physical
 > interaction scale
 > \(\lambda_j=\sigma_jh_j^{-3}\); exterior payment instead forces
-> \(D_b(h_j)\ge h_j^{-3}\exp(c h_j^{-7/4})\). Construct a two-scale
-> terminal compactness theorem that retains the Besov detector at relative
-> radius \(h_j^3\) inside the source-localised interaction, or prove a
-> further interaction-order gain. Separately exclude the
+> \(D_b(h_j)\ge h_j^{-3}\exp(c h_j^{-7/4})\). On the local branch, exact
+> pressure factorisation now forces a fixed high-pass packet at physical
+> scales no larger than
+> \(\mu_j=\kappa^{-1}\sigma_j\sqrt{h_j}\), with normalised clock at
+> least \(\kappa^2\). Prove spatial tightness and a
+> finite-secondary-index band that yield a nonzero suitable interaction
+> profile with its causal Besov ancestry retained, or prove that its
+> spatial/frequency dust has another summable cost. The source radius is
+> \(\lambda_j/\mu_j=\kappa h_j^{-7/2}\) in descendant coordinates, so
+> tightness cannot be assumed. Separately exclude the
 > stretched-exponential branch using one-trajectory history. The actual
 > dissipation scale \(\rho_j=\sigma_jD_b(h_j)\) lies strictly above
 > \(\lambda_j\), with clock at most \(h_j^{14}\). In parallel, prove a

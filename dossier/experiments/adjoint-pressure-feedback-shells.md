@@ -752,3 +752,6 @@ No compact interaction profile, Besov-mark transfer, exclusion of the
 stretched-exponential branch, event-index summation, rough endpoint
 adjoint, ancient Liouville theorem, regularity theorem, breakdown
 theorem, or Clay alternative A--D is asserted.
+
+The source-localised branch is sharpened by the reviewed
+[non-collapsing frequency descendant](adjoint-pressure-feedback-frequency.md).

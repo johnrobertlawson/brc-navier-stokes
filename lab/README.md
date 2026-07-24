@@ -69,6 +69,7 @@ not convert passing unit tests into mathematical truth.
 | **adjoint_pressure_direct.py** | Weighted direct-response cubes, dipole-tail optimisation, the inverse-\(15/4\) dissipation branch, and the drift-feedback alternative | Iteration or compactification of the zero-data nonlinear Oseen remainder |
 | **adjoint_pressure_feedback.py** | Exterior feedback energy, solenoidal tail truncation, inverse-\(13/2\) feedback dissipation, and the \(h^{14}\) ancestor clock | Compactification or exclusion of the critical feedback interaction at its inverse-cubic radius |
 | **adjoint_pressure_feedback_shells.py** | Dyadic exterior-pressure summation, inverse-cubic source localisation, stretched-exponential escape, and the three-scale clock map | Two-scale retention of the Besov detector inside the source-localised Oseen interaction |
+| **adjoint_pressure_feedback_frequency.py** | Small primitive-tensor factorisation, vanishing subparabolic pressure frequencies, and the \(\sigma\sqrt h\) non-collapsing descendant | Spatial or finite-band compactness of the positive-clock high-pass packet |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -148,6 +149,7 @@ From the repository root:
     make adjoint-pressure-direct
     make adjoint-pressure-feedback
     make adjoint-pressure-feedback-shells
+    make adjoint-pressure-feedback-frequency
     make strain
     make fetch-2607
     make compile-2607

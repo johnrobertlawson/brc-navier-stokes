@@ -1144,12 +1144,47 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > with clocks \(h^7\) and at most \(h^{14}\).
 > [Independent review](review-response-adjoint-pressure-feedback-shells-2026-07-24.md)
 > accepted all twelve shell, convergence, inversion, and scale-map links.
+> On the source-localised branch, the subsequent
+> [frequency-descendant reduction](experiments/adjoint-pressure-feedback-frequency.md)
+> uses
+> \[
+> (G_h)_\ell
+> =
+> \partial_\ell\Delta^{-1}
+> \partial_i\partial_k(r_kb_i^{\rm in})
+> \]
+> and
+> \[
+> \int_0^h\|r\otimes b^{\rm in}\|_1\,d\tau
+> \lesssim h^{1/2}
+> \]
+> to show that pressure below frequency \(K\) is at most
+> \(CKh^{1/2}\). Hence, for one fixed sufficiently small \(\kappa>0\),
+> \[
+> \int_0^h
+> \left\|
+> (I-S_{\kappa h^{-1/2}})G_h
+> \right\|_1\,d\tau
+> \ge p_{\rm hf}>0.
+> \]
+> On the physical trajectory this threshold is
+> \[
+> \mu=\kappa^{-1}\sigma\sqrt h,
+> \qquad
+> \frac{|I|}{\mu^2}=\kappa^2,
+> \]
+> so the local feedback packet descends below the event scale onto a
+> non-collapsing clock. The exact order is
+> \(\mu\ll\sigma\ll\lambda\ll\rho\).
+> [Independent review](review-response-adjoint-pressure-feedback-frequency-2026-07-24.md)
+> accepted all ten factorisation, kernel, high-pass, and scale-map links.
 > The selected-layer alternative is now exactly direct
 > \(h^{-15/4}\) dissipation or feedback \(h^{-13/2}\) dissipation.
 > In the feedback half, ordinary polynomial dissipation is
-> source-localised at the inverse-cubic radius; exterior escape is
-> stretched-exponential. Neither resulting object is compactified or
-> excluded;
+> source-localised and has a positive-clock high-frequency descendant;
+> exterior escape is stretched-exponential. The high-pass packet may
+> still disperse as spatial dust or escape to much higher frequencies, so
+> no centre, finite band, nonzero profile, or retained Besov mark is proved;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -1171,12 +1206,17 @@ The coequal breakdown question remains:
    direct-response versus feedback alternative. Compactify or exclude
    the inverse-\(15/4\) direct ancestor at
    \(\rho_j=\sigma_j/h_j^{15/4}\), whose normalised clock is
-   \(h_j^{17/2}\). In the feedback branch, first treat the reviewed
-   source-localised alternative at physical scale
-   \(\lambda_j=\sigma_jh_j^{-3}\): construct a two-scale terminal
-   compactness theorem retaining the Besov detector at relative radius
-   \(h_j^3\), or prove another interaction-order gain. Separately exclude
-   the exterior alternative
+   \(h_j^{17/2}\). In the feedback branch, the reviewed source-localised
+   alternative already forces a fixed high-pass pressure packet at scales
+   no larger than
+   \(\mu_j=\kappa^{-1}\sigma_j\sqrt{h_j}\), with normalised clock at least
+   \(\kappa^2\). Prove spatial tightness and a finite-secondary-index
+   frequency band that yield a nonzero suitable interaction profile with
+   its causal Besov ancestry retained, or prove that spatial/frequency dust
+   has another summable cost. The source radius
+   \(\lambda_j/\mu_j=\kappa h_j^{-7/2}\) diverges in descendant
+   coordinates, so tightness cannot be assumed. Separately exclude the
+   exterior alternative
    \(D_b(h_j)\ge h_j^{-3}\exp(c h_j^{-7/4})\) by a same-trajectory
    history estimate. The actual dissipation scale
    \(\rho_j=\sigma_jD_b(h_j)\) lies strictly above \(\lambda_j\), with

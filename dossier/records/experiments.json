@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_updated": "2026-07-23",
+  "last_updated": "2026-07-24",
   "experiments": [
     {
       "id": "EXP-SCALING-001",
@@ -2289,6 +2289,47 @@
         "dossier/review-response-adjoint-pressure-feedback-shells-2026-07-24.md",
         "lab/navier_lab/adjoint_pressure_feedback_shells.py",
         "lab/tests/test_adjoint_pressure_feedback_shells.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
+      "id": "EXP-ADJOINT-PRESSURE-FEEDBACK-FREQUENCY-001",
+      "title": "Non-collapsing high-frequency descendant of source-localised feedback",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-STABILITY-001",
+        "CLM-LOCAL-ENERGY-RESTART-001"
+      ],
+      "hypothesis": "On the reviewed source-localised feedback branch, divergence-free pressure factorisation and the inverse-cubic support radius make the undifferentiated pressure tensor small enough to force a fixed pressure fraction above the parabolic frequency h^-1/2.",
+      "invariants": [
+        "The source-localised branch retains a fixed spacetime L1 pressure floor for G_h equal to T(r,b_in), with b_in supported inside the inverse-cubic event ball",
+        "Divergence freedom gives the exact factorisation of G_h as an order-one multiplier applied to r tensor b_in",
+        "The reviewed feedback energy gives L2 norm of r at most C times tau",
+        "Finite-volume weak-L3 embedding gives L2 norm of b_in at most C times the square root of the inverse-cubic radius, without a global kinetic-energy estimate",
+        "The spacetime L1 norm of r tensor b_in is at most C h^2 R^(1/2), hence C h^(1/2) at R=h^-3",
+        "A smooth low-frequency truncation of the order-one pressure multiplier has L1 kernel norm at most C K despite its angular nonsmoothness at frequency zero",
+        "The pressure payment below frequency K is at most C K h^(1/2)",
+        "At K_h equal to kappa h^-1/2, a fixed pressure fraction lies in the smooth high-pass complement",
+        "Every frequency cutoff o(h^-1/2) has vanishing low-frequency pressure payment",
+        "On one common physical trajectory the threshold wavelength is mu equal kappa^-1 sigma sqrt(h), with exact normalised clock kappa squared",
+        "The exact spatial ratios are mu over sigma equal kappa^-1 sqrt(h), mu over lambda equal kappa^-1 h^(7/2), and mu over rho at most C h^7",
+        "The source radius diverges in mu coordinates, so no spatial centre or tightness is automatic",
+        "The high-pass packet may escape to frequencies much higher than K_h; no finite dyadic band, nonzero suitable profile, or Besov-mark retention is asserted",
+        "No exclusion of the stretched-exponential branch, event-index summation, rough endpoint adjoint, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Factor the local feedback pressure through the primitive tensor r tensor b_in, combine zero-data feedback energy with finite-volume weak-L3 control, apply the L1 kernel estimate for a smooth low-pass order-one multiplier, and pull the forced high-frequency threshold back to its physical scale and clock.",
+      "certificate": "An independently reviewed conditional theorem and executable tests for the primitive h^(1/2) bound, low-frequency K h^(1/2) cost, h^-1/2 threshold, positive descendant clock, and all four physical scale ratios.",
+      "success_criterion": "The source-localised feedback branch forces a fixed pressure fraction at physical scales no larger than sigma sqrt(h), where the selected layer has a uniform positive normalised clock.",
+      "failure_interpretation": "The divergence-free factorisation fails, the primitive tensor imports unavailable global energy, the truncated multiplier kernel is not integrable, the low-pass estimate loses its h or K power, or the physical scale and clock map is inconsistent.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-feedback-frequency.md",
+        "dossier/review-letter-adjoint-pressure-feedback-frequency-2026-07-24.md",
+        "dossier/review-response-adjoint-pressure-feedback-frequency-2026-07-24.md",
+        "lab/navier_lab/adjoint_pressure_feedback_frequency.py",
+        "lab/tests/test_adjoint_pressure_feedback_frequency.py"
       ],
       "last_run": "2026-07-24"
     },
