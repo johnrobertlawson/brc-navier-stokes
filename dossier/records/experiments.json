@@ -2207,6 +2207,49 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-FEEDBACK-001",
+      "title": "Inverse-13/2 coefficient dissipation from drift-feedback localisation",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-STABILITY-001",
+        "CLM-LOCAL-ENERGY-RESTART-001"
+      ],
+      "hypothesis": "On the feedback branch of the reviewed direct-response dichotomy, the zero initial data and inherited direct-response tail localise the retained pressure packet strongly enough to force inverse-13/2 coefficient dissipation.",
+      "invariants": [
+        "The feedback remainder solves the exact zero-data projected Oseen equation with source P(b dot grad q)",
+        "Both the direct response q and feedback remainder r have L2 size O(t), with time-integrated gradient energy O(t squared)",
+        "The reviewed direct-response cube bound gives the exterior Lorentz tail ||q(t)|| on |x|>R at most C times (t R to minus seven-halves plus t to the one-quarter R to minus fifteen-halves)",
+        "The nonprojected feedback pressure has a whole-space L2 representative bounded by M times the sum of the q and r gradient norms",
+        "Cutoff energy gives the time-integrated exterior r tail at most C times (h to the seven-halves R inverse plus h to the five-halves R to minus fifteen)",
+        "A scale-invariant Bogovskii correction makes the exterior truncation divergence free without losing the L2 tail",
+        "The inner coefficient pressure costs at most C times (h to the three-halves R to the one-half plus h squared R to minus one-half)",
+        "The exterior coefficient pressure costs at most C times sqrt(D_b) times (h to the seven-quarters R to minus one-half plus h to the five-quarters R to minus fifteen-halves), plus the two cutoff remainders",
+        "No global kinetic-energy bound enters the inner and exterior pressure split",
+        "Optimising at R equal to h to the one-quarter times sqrt(D_b) gives feedback pressure at most C times (h to the thirteen-eighths D_b to the one-quarter plus h to the twenty-one-eighths)",
+        "A fixed feedback pressure fraction forces D_b(h) at least a constant times inverse h to the thirteen-halves",
+        "At the threshold the optimising layer-coordinate interaction radius is inverse h cubed",
+        "The extreme feedback branch gives reversed energy of order inverse h to the thirteen-halves, enstrophy heat-cell count at least inverse h to the seventh, velocity volume at least inverse h to the thirty-nine-halves, and velocity heat-cell count at least inverse h to the twenty-first",
+        "On one common finite-energy trajectory the feedback branch has physical zoom little-o of h to the thirteen-halves and a scale-critical dissipation ancestor on clock h to the fourteenth",
+        "The exhaustive selected-layer alternative is direct-response dissipation inverse h to the fifteen-quarters or feedback dissipation inverse h to the thirteen-halves",
+        "No branch exclusion, event-index summation, rough endpoint adjoint, ancient Liouville theorem, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Use the zero-data feedback equation, the reviewed fourth-power direct-response tail, a nonprojected L2 pressure estimate, exterior cutoff energy, an annular Bogovskii correction, and an inner-exterior Hardy pressure split; optimise the resulting radius-dependent estimate and pull the forced dissipation through one physical trajectory.",
+      "certificate": "An independently reviewed conditional theorem and executable power-ledger tests for the exterior tail, pressure optimisation, inverse-13/2 dissipation floor, inverse-cubic interaction radius, entropy powers, physical depth, and ancestor clock.",
+      "success_criterion": "The feedback half of the causal Oseen dichotomy is no longer a cost-free remainder: a retained pressure packet forces inverse-13/2 coefficient dissipation at an inverse-cubic interaction radius.",
+      "failure_interpretation": "The nonprojected pressure estimate, exterior cutoff energy, Lorentz tail, Bogovskii correction, Hardy pressure split, optimisation, or physical pullback loses one of the stated powers or imports an unavailable global energy bound.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-feedback-tail.md",
+        "dossier/review-letter-adjoint-pressure-feedback-tail-2026-07-24.md",
+        "dossier/review-response-adjoint-pressure-feedback-tail-2026-07-24.md",
+        "lab/navier_lab/adjoint_pressure_feedback.py",
+        "lab/tests/test_adjoint_pressure_feedback.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

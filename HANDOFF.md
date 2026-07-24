@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-24T02:24:37Z
+**Updated:** 2026-07-24T02:45:01Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -591,7 +591,35 @@ clock \(h^{17/2}\).
 [Independent adversarial review](dossier/review-response-adjoint-pressure-direct-response-2026-07-24.md)
 found the heat--Leray cancellation, weighted Hardy cubes, optimisation,
 feedback energy, and all extreme-branch exponents valid in scope. Neither
-branch is excluded.
+branch was excluded at that stage.
+
+The feedback branch now has its own reviewed quantitative cost. The direct
+response tail, a whole-space \(L^2\) representative for the feedback
+pressure, exterior cutoff energy, and a scale-invariant Bogovskii
+correction give
+\[
+\int_0^h\|r(\tau)\|_{L^2(|x|>2R)}^2\,d\tau
+\lesssim
+h^{7/2}R^{-1}+h^{5/2}R^{-15}.
+\]
+An inner/exterior Hardy split then yields
+\[
+P_r(h)
+\lesssim
+h^{13/8}D_b(h)^{1/4}+h^{21/8}.
+\]
+Thus a fixed feedback pressure packet forces
+\[
+D_b(h)\gtrsim h^{-13/2}.
+\]
+At threshold the natural interaction radius is \(h^{-3}\), the strict
+common-trajectory depth is \(\sigma=o(h^{13/2})\), and the ancestor clock
+is \(h^{14}\).
+[Independent adversarial review](dossier/review-response-adjoint-pressure-feedback-tail-2026-07-24.md)
+found all fourteen analytic, cutoff, optimisation, and scaling links valid
+in scope. The exact selected-layer fork is now direct \(h^{-15/4}\) or
+feedback \(h^{-13/2}\) coefficient dissipation. Neither resulting ancestor
+is compactified or excluded.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 
@@ -2420,15 +2448,16 @@ Next deliverable:
 > \(\delta_0\). In the complementary infinite-mean branch, the
 > solenoidal-adjoint construction already forces a fixed positive packet
 > on one finite scale-matched horizon at every event. Its terminal-layer
-> alternative now has a direct-response versus feedback split. If the
-> direct heat response pays a fixed fraction, coefficient dissipation is
-> at least inverse-\(15/4\), the genealogy has strict depth
-> \(\sigma_j=o(h_j^{15/4})\), and the scale-critical physical ancestor
-> has clock \(h_j^{17/2}\). Compactify or exclude that extreme ancestor.
-> Otherwise a fixed packet survives in the zero-data remainder driven by
-> \(\mathbb P(b_j\cdot\nabla q_j)\). Prove an interaction-order gain at
-> the next decomposition, or compactify this nonlinear feedback into a
-> nonzero critical Oseen profile and exclude it. In parallel, prove a
+> alternative now has a reviewed direct-response versus feedback split.
+> The direct branch has coefficient dissipation at least inverse-\(15/4\),
+> strict depth \(\sigma_j=o(h_j^{15/4})\), and ancestor clock
+> \(h_j^{17/2}\). The feedback branch has coefficient dissipation at
+> least inverse-\(13/2\), natural layer-coordinate interaction radius
+> \(h_j^{-3}\), strict depth \(\sigma_j=o(h_j^{13/2})\), and ancestor
+> clock \(h_j^{14}\). Compactify either ancestor on one physical
+> trajectory while retaining the Besov mark and exclude the resulting
+> nonzero critical Oseen profile, or prove that the next feedback
+> interaction forces a further quantitative gain. In parallel, prove a
 > finite-secondary-index/vector-valued estimate for the alternative
 > pairwise disjoint physical adjoint-time annuli. Rademacher bundling has
 > uniformly bounded terminal \(L^2\) but still saturates \(\sqrt T\), so

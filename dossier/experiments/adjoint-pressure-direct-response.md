@@ -658,3 +658,10 @@ The next live question is consequently:
 No exclusion of either branch, rough endpoint adjoint, event-index
 summation, ancient Liouville theorem, regularity theorem, breakdown
 theorem, or Clay alternative A--D is asserted.
+
+The subsequent
+[feedback-localisation reduction](adjoint-pressure-feedback-tail.md)
+uses the zero data and fourth-power direct-response tail to show that a
+fixed pressure packet in \(r\) forces the stronger coefficient floor
+\(D_b(h)\gtrsim h^{-13/2}\), with optimising interaction radius
+\(h^{-3}\).

@@ -1,6 +1,6 @@
 # Current status
 
-**Snapshot:** 2026-07-23
+**Snapshot:** 2026-07-24
 **Clay status:** unsolved
 **Repository phase:** completed source audit of arXiv:2607.08866v2; hypothesis-reduction
 and breakdown work
@@ -1085,8 +1085,35 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > [Independent review](review-response-adjoint-pressure-direct-response-2026-07-24.md)
 > accepted all thirteen analytic and scaling links, including the
 > uniform heat--Leray dipole tail and absence of hidden global-energy
-> dependence. Neither the extreme direct branch nor the feedback packet
-> is excluded;
+> dependence. The
+> [feedback-localisation reduction](experiments/adjoint-pressure-feedback-tail.md)
+> then uses the zero data, the inherited fourth-power tail, a whole-space
+> \(L^2\) feedback pressure, and a Bogovskii-corrected exterior cutoff to
+> prove
+> \[
+> \int_0^h\|r(\tau)\|_{L^2(|x|>2R)}^2\,d\tau
+> \lesssim
+> h^{7/2}R^{-1}+h^{5/2}R^{-15}.
+> \]
+> The resulting inner/exterior Hardy pressure split, optimised at
+> \(R=h^{1/4}\sqrt{D_b(h)}\), gives
+> \[
+> \int_0^h\|\nabla\pi^*_{[r,b]}\|_1\,d\tau
+> \lesssim
+> h^{13/8}D_b(h)^{1/4}+h^{21/8}.
+> \]
+> A fixed feedback packet therefore forces
+> \[
+> D_b(h)\gtrsim h^{-13/2}.
+> \]
+> At threshold the interaction radius is \(h^{-3}\); the common-trajectory
+> ancestor has strict physical depth \(\sigma=o(h^{13/2})\) and clock
+> \(h^{14}\).
+> [Independent review](review-response-adjoint-pressure-feedback-tail-2026-07-24.md)
+> accepted all fourteen analytic, cutoff, optimisation, and scaling links.
+> The selected-layer alternative is now exactly direct
+> \(h^{-15/4}\) dissipation or feedback \(h^{-13/2}\) dissipation.
+> Neither ancestor is compactified or excluded;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -1104,16 +1131,16 @@ The coequal breakdown question remains:
    mean roof. Its suspension then gives the compact Navier--Stokes
    parabolic hull an invariant probability distinct from \(\delta_0\).
    Do not replace this by bare event count or assume bounded gaps.
-2. In the complementary infinite-mean branch, close the direct-response
-   versus feedback dichotomy. If the direct heat response pays a fixed
-   pressure fraction, compactify or exclude the inverse-\(15/4\)
-   coefficient-dissipation ancestor at
+2. In the complementary infinite-mean branch, close the reviewed
+   direct-response versus feedback alternative. Compactify or exclude
+   either the inverse-\(15/4\) direct ancestor at
    \(\rho_j=\sigma_j/h_j^{15/4}\), whose normalised clock is
-   \(h_j^{17/2}\). Otherwise, decompose the fixed pressure packet in the
-   zero-data remainder driven by
-   \(\mathbb P(b_j\cdot\nabla q_j)\): prove an interaction-order gain at
-   every further generation, or compactify a nonzero critical Oseen
-   feedback profile and exclude it. In parallel, prove a
+   \(h_j^{17/2}\), or the inverse-\(13/2\) feedback ancestor at
+   \(\rho_j=\sigma_j/h_j^{13/2}\), whose natural layer-coordinate
+   interaction radius is \(h_j^{-3}\) and whose clock is \(h_j^{14}\).
+   The feedback packet must retain the Besov mark in a nonzero critical
+   Oseen interaction profile, or another interaction-order split must
+   force a further quantitative gain. In parallel, prove a
    finite-secondary-index/vector-valued estimate for the disjoint
    scale-matched annular alternative. Rademacher bundling with uniformly
    bounded terminal \(L^2\) still produces square-root pressure growth, so
