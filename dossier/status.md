@@ -985,6 +985,25 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > quantifier diagonal, Hardy and Lorentz bounds, centre-uniform tail,
 > scaling, exact back-edge energy identity, weak-\(L^3\) layer cake, and
 > sharpness ledger;
+> the
+> [band-limited terminal-layer reduction](experiments/adjoint-pressure-bandlimited-layer.md)
+> strengthens that branch for a preferred detector. One fixed
+> solenoidal band-limited Schwartz approximation retains the Besov event
+> pairing. Its Oseen adjoint has an \(O(h)\) low-frequency increment and,
+> by exact energy, only \(O(h)\) layer dissipation under every uniformly
+> weak-\(L^3\) drift. A fixed pressure payment consequently forces
+> exact-back-edge coefficient norm \(\gtrsim h^{-1}\), quadratic physical
+> genealogy depth \(\sigma=O(h^2)\), and physical layer duration
+> \(O(h^5)\). The adjoint payment escapes beyond every
+> \(R_h=o(h^{-2})\); both its fixed capture sets and the back-edge
+> amplitude-\(O(h^2)\) velocity reservoir have volume
+> \(\gtrsim h^{-6}\) and need \(\gtrsim h^{-15/2}\) fixed heat balls.
+> [Independent review](review-response-adjoint-pressure-bandlimited-layer-2026-07-24.md)
+> found the repaired theorem valid in scope after checking the detector
+> replacement, Schwartz limit, Leray--Lorentz--Bernstein estimate,
+> energy retention, and every power. Separate sharp models realise the
+> energy powers, not the pressure coupling, so this remains a necessary
+> reduction;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -1002,9 +1021,10 @@ The coequal breakdown question remains:
    mean roof. Its suspension then gives the compact Navier--Stokes
    parabolic hull an invariant probability distinct from \(\delta_0\).
    Do not replace this by bare event count or assume bounded gaps.
-2. In the complementary infinite-mean branch, exclude the centre-uniform
-   super-parabolic adjoint-gradient delocalisation now forced by the terminal
-   initial-layer cascade, or prove
+2. In the complementary infinite-mean branch, exclude the inverse-time
+   coefficient coupled to centre-uniform adjoint-gradient escape almost at
+   inverse-square radius, now forced by the band-limited terminal
+   initial-layer cascade at quadratic physical genealogy depth, or prove
    a finite-secondary-index/vector-valued estimate for their disjoint
    scale-matched annular alternative. The remote horizon and raw temporal
    overlap are no longer essential obstructions. Rademacher bundling with

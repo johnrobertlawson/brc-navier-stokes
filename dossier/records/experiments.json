@@ -2039,6 +2039,47 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-BANDLIMIT-001",
+      "title": "Band-limited terminal adjoint-pressure layers",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-STABILITY-001"
+      ],
+      "hypothesis": "The Besov event detector may be chosen as one fixed solenoidal band-limited Schwartz function, whose Oseen adjoint has uniform low-frequency continuity strong enough to sharpen every surviving terminal initial-layer scale.",
+      "invariants": [
+        "A smooth Fourier cutoff approximates the compact event detector in the Lorentz L(3/2,1) predual and preserves one positive event subsequence",
+        "The detector and its dilation generator are solenoidal band-limited Schwartz functions with finite L1, L2, and L(3/2,1) norms",
+        "Uniform weak-L3 control extends terminal genealogy convergence from compact tests to the fixed Schwartz detector",
+        "Lorentz Holder maps coefficient L(3,infinity) times adjoint L2 into tensor L(6/5,2)",
+        "A fixed low-frequency Leray-divergence multiplier maps L(6/5,2) to L2 with two powers of its fixed cutoff",
+        "The selected low-frequency part of the Oseen adjoint changes by at most a constant times layer time",
+        "The exact adjoint energy identity improves total layer dissipation to O(h)",
+        "A fixed adjoint-pressure floor then forces exact-back-edge coefficient L2 norm at least a constant times inverse layer time",
+        "For a uniformly finite-energy physical trajectory the combined physical zoom is O(h squared) and the represented physical duration is O(h to the fifth)",
+        "Every ball with radius R satisfying R times h squared tending to zero captures vanishing adjoint-gradient payment",
+        "Every time-independent spatial set capturing half the payment has volume at least inverse h to the sixth and needs at least inverse h to the fifteen-halves heat balls",
+        "Weak-L3 layer cake gives an exact-back-edge velocity reservoir of amplitude O(h squared), volume at least inverse h to the sixth, and the same fixed-cover heat-cell count",
+        "A kinematic heat-scale cloud with count h to minus fifteen-halves and amplitude h to seven-halves saturates the improved adjoint energy and capture powers",
+        "A smooth coefficient scaling at physical zoom h squared realises the inverse-time L2 and inverse-sixth-volume velocity powers but is not claimed to pay the pressure floor",
+        "No detector transfer from an earlier packet, terminal-layer exclusion, event-index summation, profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Replace the compact event detector by one fixed band-limited Lorentz-predual approximation, project the reversed Oseen equation to that fixed Fourier ball, use critical Lorentz Holder and Bernstein estimates to prove an O(h) low-frequency increment, convert it to O(h) adjoint dissipation by the exact energy identity, and rerun the Hardy, finite-volume, scaling, and weak-endpoint ledgers.",
+      "certificate": "An independently reviewed conditional theorem and exact Fraction tests for the low-frequency increment, energy-deficit conversion, inverse-time coefficient floor, quadratic physical zoom, inverse-square escape, inverse-sixth capture and reservoir volumes, inverse-fifteen-halves heat-cell count, and sharp adjoint-cloud powers.",
+      "success_criterion": "The terminal initial-layer alternative for the preferred band-limited detector is narrowed to an inverse-time coefficient at quadratic physical genealogy depth, coupled to centre-uniform adjoint escape almost at inverse-square radius and matching inverse-sixth-volume adjoint and velocity reservoirs.",
+      "failure_interpretation": "Band-limited approximation loses the event pairing, terminal convergence does not extend to Schwartz tests, the Leray-divergence low-frequency multiplier fails at L(6/5,2), the low-frequency norm does not control the energy deficit, or any improved scaling exponent is incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-bandlimited-layer.md",
+        "dossier/review-letter-adjoint-pressure-bandlimited-layer-2026-07-24.md",
+        "dossier/review-response-adjoint-pressure-bandlimited-layer-2026-07-24.md",
+        "lab/navier_lab/adjoint_pressure_bandlimit.py",
+        "lab/tests/test_adjoint_pressure_bandlimit.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

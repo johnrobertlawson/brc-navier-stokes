@@ -748,3 +748,12 @@ The next exact question is therefore:
 No intrinsic adjoint on the rough hull, finite event-index sum, ancient
 Liouville theorem, regularity theorem, breakdown theorem, or Clay
 alternative A--D is asserted.
+
+The subsequent
+[band-limited detector refinement](adjoint-pressure-bandlimited-layer.md)
+shows that the full packet alternative may be run with one fixed
+band-limited Schwartz detector. Uniform low-frequency continuity then
+improves the surviving layer to inverse-time coefficient growth,
+quadratic physical genealogy depth, almost inverse-square spatial escape,
+inverse-sixth capture volume, and inverse-fifteen-halves heat-cell
+entropy.

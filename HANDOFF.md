@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-24T00:27:03Z
+**Updated:** 2026-07-24T00:52:49Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -485,6 +485,30 @@ quantifier diagonal, Hardy and Lorentz estimates, centre-uniform
 subtraction, physical scaling, exact back-edge energy monotonicity,
 weak-endpoint layer cake, entropy exponents, and the energy-sharp
 kinematic cloud. It validates no terminal-layer exclusion.
+
+The full packet construction can now be run with one fixed solenoidal
+band-limited Schwartz detector. A fixed low-frequency projection of its
+Oseen adjoint changes by only \(O(h)\) during a layer of length \(h\),
+uniformly over the critical weak-\(L^3\) drift family. The exact adjoint
+energy identity therefore gives
+\[
+\int_0^h\|\nabla a\|_2^2\,d\tau=O(h).
+\]
+A fixed pressure payment then requires exact-back-edge coefficient norm
+\(\|b(h)\|_2\gtrsim h^{-1}\). For a uniformly finite-energy physical
+genealogy its combined zoom satisfies \(\sigma=O(h^2)\), and the
+represented physical interval is \(O(h^5)\).
+The centre-uniform adjoint tail now escapes beyond every
+\(R_h=o(h^{-2})\). Every time-independent capture set and the
+low-amplitude back-edge velocity reservoir have volume at least
+\(ch^{-6}\), hence need at least \(ch^{-15/2}\) fixed heat-scale cells.
+Separate sharp models saturate these energy powers but not their required
+pressure-producing coupling.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-bandlimited-layer-2026-07-24.md)
+found this repaired conditional sharpening valid in scope after checking
+the detector replacement, Schwartz genealogy limit, Lorentz--Bernstein
+step through Leray projection, low-frequency energy retention, and every
+improved exponent. It excludes no terminal layer.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 

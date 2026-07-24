@@ -62,6 +62,8 @@ not convert passing unit tests into mathematical truth.
 | **defect_event_suspension.py** | Fixed-test dilation generator, event persistence, inter-event roofs, finite-mean suspension mass, and variation-or-occupation bridge charge | A PDE bound on the event-normalised charge or finite mean of the actual defect-event roof |
 | **adjoint_pressure_history.py** | Test-side scale powers, Nash/interpolation exponent, finite-horizon pressure floor, genealogy charge, and one-bridge cost | An intrinsic rough endpoint adjoint, an event-index summation, or a sub-square-root pressure-history theorem |
 | **adjoint_pressure_packets.py** | Fixed finite-horizon packet floor, parabolic pullback, annulus separation, geometric terminal-energy sum, and square-root randomisation ledger | Exclusion of the terminal initial-layer defect or a finite-secondary-index pressure estimate |
+| **adjoint_pressure_initial_layer.py** | Super-parabolic tail, capture entropy, coefficient-energy depth, physical pullback, diffuse velocity reservoir, and the first sharp packet-cloud powers | A same-trajectory dynamic exclusion of the centre-uniform terminal layer |
+| **adjoint_pressure_bandlimit.py** | Band-limited detector reduction, low-frequency Oseen continuity, quadratic genealogy depth, improved capture entropy, and sharp cloud powers | Exclusion of the remaining inverse-time coefficient and inverse-square spatial layer |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -135,6 +137,7 @@ From the repository root:
     make adjoint-pressure-history
     make adjoint-pressure-packets
     make adjoint-pressure-initial-layer
+    make adjoint-pressure-bandlimit
     make strain
     make fetch-2607
     make compile-2607
