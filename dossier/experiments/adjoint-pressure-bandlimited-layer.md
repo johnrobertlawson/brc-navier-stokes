@@ -744,6 +744,14 @@ ledgers. The next dynamical gate is now:
 > a further renormalised interaction defect survive at physical depth
 > \(O(h^2)\)?
 
+The subsequent
+[coefficient-enstrophy reduction](adjoint-pressure-enstrophy-layer.md)
+answers the first quantitative part of this gate. The dual pressure
+factorisation and a centre-uniform local-energy restart force
+\(D_b(h)\gtrsim h^{-2}\), strict common-trajectory depth
+\(\sigma=o(h^2)\), and a scale-critical dissipation ancestor at
+\(\rho=\sigma/h^2\). They do not exclude that ancestor.
+
 No intrinsic rough adjoint, event-index sum, terminal-layer exclusion,
 ancient Liouville theorem, regularity theorem, breakdown theorem, or Clay
 alternative A--D is asserted.

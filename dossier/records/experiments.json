@@ -2080,6 +2080,48 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-ENSTROPHY-001",
+      "title": "Inverse-square coefficient dissipation in terminal adjoint-pressure layers",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-STABILITY-001",
+        "CLM-LOCAL-ENERGY-RESTART-001"
+      ],
+      "hypothesis": "For the preferred band-limited detector, the dual adjoint-pressure factorisation and one same-trajectory local-energy restart force a fixed terminal pressure packet to spend inverse-square coefficient dissipation and create a scale-critical physical dissipation ancestor.",
+      "invariants": [
+        "The pressure source has the dual divergence form div of (a dot grad)b and obeys an L2-div-curl by L2-gradient Hardy estimate",
+        "Projected O(h) low-frequency continuity and adjoint energy contraction imply full L2 distance O(sqrt h) from the fixed detector",
+        "The exact forward unit-viscosity reversal starts Barker-Prange Proposition A.3 at the back edge of the selected layer",
+        "The Barker-Prange local-energy window bounds integrated coefficient dissipation in every radius-R ball by a constant times R whenever h is at most a constant times R squared",
+        "A zero-mean unit-cube H1 atomic decomposition and Schwartz weights bound the frozen-detector pressure history by O(sqrt h)",
+        "The adjoint error contributes at most O(h sqrt(D_b(h))) to the pressure history",
+        "A fixed pressure floor forces integrated coefficient dissipation at least a constant times inverse h squared",
+        "Reversed energy gives a fresh squared-L2 coefficient gain of the same inverse-square order",
+        "The forced coefficient enstrophy escapes every centre-uniform ball of radius o(h to minus two)",
+        "Every fixed heat-ball cover capturing a fixed portion of the forced enstrophy needs at least a constant times h to minus five halves cells",
+        "On one common finite-energy physical trajectory the physical zoom is little-o of h squared by absolute continuity of dissipation",
+        "The scale rho equal to sigma divided by h squared carries a fixed scale-critical physical dissipation packet on normalised clock h to the fifth",
+        "The common-trajectory hypothesis is essential for the strict little-o depth conclusion",
+        "The static cloud checks only norm, entropy, local-energy, and bilinear-source powers and is not claimed to realise the coupled pressure packet",
+        "No compactification or exclusion of the dissipation ancestor, terminal-layer exclusion, event-index summation, profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Move the derivative in the adjoint pressure source from the adjoint to the coefficient, split the adjoint into its fixed Schwartz detector and an O(sqrt h) L2 error, apply Barker-Prange local energy and an explicit weighted unit-cube H1 decomposition to the frozen term, and pull the resulting inverse-square dissipation floor back through the exact parabolic scaling on one physical trajectory.",
+      "certificate": "An independently reviewed conditional theorem and exact Fraction tests for the master pressure estimate, inverse-square coefficient dissipation, fresh reversed energy gain, enstrophy tail, heat-cell entropy, physical depth ratio, dissipation-ancestor scale and clock, and sharp static-cloud powers.",
+      "success_criterion": "The band-limited terminal initial-layer alternative is narrowed from an inverse-time coefficient at merely quadratic genealogy depth to inverse-square coefficient dissipation, strict superquadratic physical depth, and a nonzero scale-critical dissipation ancestor on one common trajectory.",
+      "failure_interpretation": "The dual pressure identity has the wrong sign or indices, the full L2 adjoint continuity does not follow, Barker-Prange local energy is not uniform in the needed scaling, the weighted H1 decomposition fails, the pressure split loses an h factor, or the common-trajectory pullback and absolute-continuity argument have an incorrect scale.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-enstrophy-layer.md",
+        "dossier/review-letter-adjoint-pressure-enstrophy-layer-2026-07-24.md",
+        "dossier/review-response-adjoint-pressure-enstrophy-layer-2026-07-24.md",
+        "lab/navier_lab/adjoint_pressure_enstrophy.py",
+        "lab/tests/test_adjoint_pressure_enstrophy.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

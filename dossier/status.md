@@ -1004,6 +1004,28 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > energy retention, and every power. Separate sharp models realise the
 > energy powers, not the pressure coupling, so this remains a necessary
 > reduction;
+> the subsequent
+> [coefficient-enstrophy reduction](experiments/adjoint-pressure-enstrophy-layer.md)
+> uses the dual pressure factorisation and the actual coefficient
+> evolution to sharpen that coupling. Full adjoint
+> \(L^2\) continuity and a Barker--Prange local-energy restart give
+> \[
+> P(h)\le C_0\sqrt h+C_1h\sqrt{D_b(h)}.
+> \]
+> A fixed pressure floor therefore forces
+> \(D_b(h)\gtrsim h^{-2}\), a fresh reversed squared-\(L^2\) gain of the
+> same order, centre-uniform coefficient-enstrophy escape beyond every
+> \(R=o(h^{-2})\), and at least \(ch^{-5/2}\) heat cells for any fixed
+> cover of the forced dissipation. On one common finite-energy trajectory,
+> absolute continuity of physical dissipation strengthens
+> \(\sigma=O(h^2)\) to \(\sigma=o(h^2)\). The intermediate scale
+> \(\rho=\sigma/h^2\) carries a fixed scale-critical dissipation packet on
+> normalised clock \(h^5\).
+> [Independent review](review-response-adjoint-pressure-enstrophy-layer-2026-07-24.md)
+> found all twelve analytic and scaling links valid in scope, including
+> the explicit unit-cube Hardy decomposition and the essential
+> common-trajectory hypothesis. This is a necessary reduction; the new
+> dissipation ancestor is not compactified or excluded;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -1021,17 +1043,21 @@ The coequal breakdown question remains:
    mean roof. Its suspension then gives the compact Navier--Stokes
    parabolic hull an invariant probability distinct from \(\delta_0\).
    Do not replace this by bare event count or assume bounded gaps.
-2. In the complementary infinite-mean branch, exclude the inverse-time
-   coefficient coupled to centre-uniform adjoint-gradient escape almost at
-   inverse-square radius, now forced by the band-limited terminal
-   initial-layer cascade at quadratic physical genealogy depth, or prove
-   a finite-secondary-index/vector-valued estimate for their disjoint
-   scale-matched annular alternative. The remote horizon and raw temporal
-   overlap are no longer essential obstructions. Rademacher bundling with
-   uniformly bounded terminal \(L^2\) still produces square-root pressure
-   growth, so adjoint energy alone cannot supply the missing gain. Use
-   the new law either to bound the depth of the uniformly finite-branching
-   hierarchy or to couple the distance profile to the Besov outer profile at
+2. In the complementary infinite-mean branch, compactify or exclude the
+   scale-critical physical dissipation ancestor
+   \(\rho_j=\sigma_j/h_j^2\) now forced by every selected band-limited
+   terminal pressure layer. It carries a fixed normalised dissipation
+   packet on clock \(h_j^5\), while its coefficient enstrophy escapes every
+   radius \(o(h_j^{-2})\) in layer variables. Determine whether suitability
+   and one-trajectory local energy retain a nonzero ancestor profile and
+   the original Besov mark, or force a further spatial, frequency, or
+   genealogy-depth escape. In parallel, prove a
+   finite-secondary-index/vector-valued estimate for the disjoint
+   scale-matched annular alternative. Rademacher bundling with uniformly
+   bounded terminal \(L^2\) still produces square-root pressure growth, so
+   adjoint energy alone cannot supply the missing gain. Use either law to
+   bound the depth of the uniformly finite-branching hierarchy or couple
+   the distance profile to the Besov outer profile at
    \(R_j\ll\rho_j\ll|x_j-x_*|\).
 3. In parallel, prove or refute the exact no-neck estimate
    \[

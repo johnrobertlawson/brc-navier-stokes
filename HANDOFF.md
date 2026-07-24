@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-24T00:52:49Z
+**Updated:** 2026-07-24T01:50:24Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -509,6 +509,32 @@ found this repaired conditional sharpening valid in scope after checking
 the detector replacement, Schwartz genealogy limit, Lorentz--Bernstein
 step through Leray projection, low-frequency energy retention, and every
 improved exponent. It excludes no terminal layer.
+
+The pressure-producing coupling has now been sharpened on the same
+trajectory. The dual pressure factorisation moves the derivative onto the
+coefficient. Full \(L^2\) right continuity of the band-limited adjoint,
+the exact forward reversal, and Barker--Prange local energy yield
+\[
+P(h)
+\le
+C_0\sqrt h+C_1h\sqrt{D_b(h)}.
+\]
+A fixed pressure packet therefore forces
+\[
+D_b(h)\gtrsim h^{-2}.
+\]
+The coefficient enstrophy escapes every centre-uniform radius
+\(o(h^{-2})\), and a fixed heat-ball cover of its forced part needs at
+least \(ch^{-5/2}\) cells. On one common finite-energy physical
+trajectory, absolute continuity of dissipation improves the genealogy
+depth to \(\sigma=o(h^2)\). The intermediate scale
+\(\rho=\sigma/h^2\) carries a fixed scale-critical physical dissipation
+packet on normalised clock \(h^5\).
+[Independent adversarial review](dossier/review-response-adjoint-pressure-enstrophy-layer-2026-07-24.md)
+found all twelve analytic and scaling links valid in scope, including the
+explicit unit-cube Hardy decomposition and the essential
+common-trajectory hypothesis. The theorem does not compactify or exclude
+the resulting dissipation ancestor.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 
@@ -2337,10 +2363,14 @@ Next deliverable:
 > \(\delta_0\). In the complementary infinite-mean branch, the
 > solenoidal-adjoint construction already forces a fixed positive packet
 > on one finite scale-matched horizon at every event. Its terminal-layer
-> alternative now forces centre-uniform super-parabolic
-> \(L^1_tL^{3/2,1}_x\) adjoint-gradient delocalisation and
-> \(\eta^{-1/2}\) scaled kinetic-norm growth. Exclude that combined
-> space--genealogy escape, or prove a
+> alternative now forces inverse-square coefficient dissipation,
+> centre-uniform coefficient-enstrophy escape almost to inverse-square
+> radius, and strict superquadratic physical depth. At
+> \(\rho_j=\sigma_j/h_j^2\), a fixed scale-critical physical dissipation
+> packet survives on normalised clock \(h_j^5\). Compactify that ancestor
+> into a nonzero suitable profile carrying the original Besov mark and
+> exclude it, or prove that one-trajectory local energy forbids its next
+> spatial, frequency, or genealogy-depth escape. In parallel, prove a
 > finite-secondary-index/vector-valued estimate for the alternative
 > pairwise disjoint physical adjoint-time annuli. Rademacher bundling has
 > uniformly bounded terminal \(L^2\) but still saturates \(\sqrt T\), so
