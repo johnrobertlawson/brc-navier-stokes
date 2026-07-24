@@ -1026,6 +1026,31 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > the explicit unit-cube Hardy decomposition and the essential
 > common-trajectory hypothesis. This is a necessary reduction; the new
 > dissipation ancestor is not compactified or excluded;
+> the
+> [direct adjoint-difference reduction](experiments/adjoint-pressure-cubic-layer.md)
+> then uses the zero-data equation for \(w=a-\varphi\). Critical Lorentz
+> Hölder puts its forcing uniformly in \(L^2\), so skew Oseen energy gives
+> \[
+> \|w(\tau)\|_2\le F_\varphi\tau,
+> \qquad
+> \int_0^h\|\nabla w\|_2^2=O(h^2).
+> \]
+> The pressure master estimate improves to
+> \[
+> P(h)\le C_0\sqrt h+C_2h^{3/2}\sqrt{D_b(h)}.
+> \]
+> Consequently \(D_b(h)\gtrsim h^{-3}\), coefficient enstrophy escapes
+> every \(R=o(h^{-3})\), and a fixed cover of its forced part needs at
+> least \(ch^{-7/2}\) heat balls. The exact back edge contains an
+> amplitude-\(O(h^3)\), volume-\(\Omega(h^{-9})\) velocity reservoir,
+> requiring \(\Omega(h^{-21/2})\) heat balls. Physical energy gives
+> \(\sigma=O(h^3)\); common-trajectory absolute continuity strengthens
+> this to \(\sigma=o(h^3)\). The new ancestor
+> \(\rho=\sigma/h^3\) carries fixed critical dissipation on clock \(h^7\).
+> [Independent review](review-response-adjoint-pressure-cubic-layer-2026-07-24.md)
+> found all ten links and every static-cloud exponent valid in scope.
+> Causal formation or compactification of that inverse-cubic Oseen dust
+> remains open;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -1043,15 +1068,17 @@ The coequal breakdown question remains:
    mean roof. Its suspension then gives the compact Navier--Stokes
    parabolic hull an invariant probability distinct from \(\delta_0\).
    Do not replace this by bare event count or assume bounded gaps.
-2. In the complementary infinite-mean branch, compactify or exclude the
-   scale-critical physical dissipation ancestor
-   \(\rho_j=\sigma_j/h_j^2\) now forced by every selected band-limited
-   terminal pressure layer. It carries a fixed normalised dissipation
-   packet on clock \(h_j^5\), while its coefficient enstrophy escapes every
-   radius \(o(h_j^{-2})\) in layer variables. Determine whether suitability
-   and one-trajectory local energy retain a nonzero ancestor profile and
-   the original Besov mark, or force a further spatial, frequency, or
-   genealogy-depth escape. In parallel, prove a
+2. In the complementary infinite-mean branch, test the causal Oseen
+   representation against the inverse-cubic heat-cell dust required by
+   every selected terminal pressure layer. The full difference from the
+   fixed detector is \(O(h_j)\) in \(L^2\), yet its pressure payment forces
+   \(D_b(h_j)\gtrsim h_j^{-3}\), spatial extent almost \(h_j^{-3}\), and
+   physical ancestor
+   \(\rho_j=\sigma_j/h_j^3\) on clock \(h_j^7\). Prove an off-diagonal,
+   interaction-order, or weighted-energy estimate showing that one fixed
+   smooth detector cannot generate that dust, or compactify it into a
+   nonzero ancestor carrying the original Besov mark and exclude the
+   resulting profile. In parallel, prove a
    finite-secondary-index/vector-valued estimate for the disjoint
    scale-matched annular alternative. Rademacher bundling with uniformly
    bounded terminal \(L^2\) still produces square-root pressure growth, so

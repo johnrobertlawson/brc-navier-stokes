@@ -881,6 +881,13 @@ The remaining gate is narrower:
 > must its scale-critical dissipation escape again in space, frequency,
 > or genealogy depth?
 
+The subsequent
+[direct adjoint-difference reduction](adjoint-pressure-cubic-layer.md)
+improves \(\|a-\varphi\|_2=O(\sqrt h)\) to \(O(h)\). It consequently
+forces \(D_b(h)\gtrsim h^{-3}\), strict depth \(\sigma=o(h^3)\), and a
+new dissipation ancestor at \(\rho=\sigma/h^3\) on normalised clock
+\(h^7\). It still does not exclude the ancestor.
+
 No terminal-layer exclusion, intrinsic rough adjoint, event-index
 summation, ancient Liouville theorem, regularity theorem, breakdown
 theorem, or Clay alternative A--D is asserted.

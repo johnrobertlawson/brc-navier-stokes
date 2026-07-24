@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-24T01:50:24Z
+**Updated:** 2026-07-24T02:08:49Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -535,6 +535,36 @@ found all twelve analytic and scaling links valid in scope, including the
 explicit unit-cube Hardy decomposition and the essential
 common-trajectory hypothesis. The theorem does not compactify or exclude
 the resulting dissipation ancestor.
+
+The full adjoint difference is smaller still. For
+\(w=a-\varphi\), critical Lorentz Hölder places
+\(\nu\Delta\varphi+\mathbb P(b\cdot\nabla\varphi)\) uniformly in \(L^2\).
+The zero-data difference energy identity gives
+\[
+\|w(\tau)\|_2\le F_\varphi\tau,
+\qquad
+\int_0^h\|\nabla w\|_2^2\,d\tau=O(h^2).
+\]
+Thus
+\[
+P(h)
+\le
+C_0\sqrt h+C_2h^{3/2}\sqrt{D_b(h)},
+\]
+and a fixed pressure packet forces \(D_b(h)\gtrsim h^{-3}\). The
+coefficient enstrophy escapes every centre-uniform radius \(o(h^{-3})\);
+its forced part needs at least \(ch^{-7/2}\) fixed heat balls. The exact
+back edge contains at least \(ch^{-9}\) volume of velocity at amplitude
+at most \(Ch^3\), requiring \(ch^{-21/2}\) heat balls. Physical energy
+first gives \(\sigma=O(h^3)\), and common-trajectory absolute continuity
+then gives \(\sigma=o(h^3)\). At
+\(\rho=\sigma/h^3\), fixed scale-critical dissipation survives on
+normalised clock \(h^7\).
+[Independent adversarial review](dossier/review-response-adjoint-pressure-cubic-layer-2026-07-24.md)
+found all ten links and every static-cloud exponent valid in scope. The
+remaining gate is causal: exclude generation of that inverse-cubic dust
+from one fixed smooth detector, or compactify the dust with a retained
+Besov mark.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 
@@ -2363,14 +2393,16 @@ Next deliverable:
 > \(\delta_0\). In the complementary infinite-mean branch, the
 > solenoidal-adjoint construction already forces a fixed positive packet
 > on one finite scale-matched horizon at every event. Its terminal-layer
-> alternative now forces inverse-square coefficient dissipation,
-> centre-uniform coefficient-enstrophy escape almost to inverse-square
-> radius, and strict superquadratic physical depth. At
-> \(\rho_j=\sigma_j/h_j^2\), a fixed scale-critical physical dissipation
-> packet survives on normalised clock \(h_j^5\). Compactify that ancestor
-> into a nonzero suitable profile carrying the original Besov mark and
-> exclude it, or prove that one-trajectory local energy forbids its next
-> spatial, frequency, or genealogy-depth escape. In parallel, prove a
+> alternative now forces inverse-cubic coefficient dissipation,
+> centre-uniform coefficient-enstrophy escape almost to inverse-cubic
+> radius, and strict supercubic physical depth. At
+> \(\rho_j=\sigma_j/h_j^3\), a fixed scale-critical physical dissipation
+> packet survives on normalised clock \(h_j^7\). Use the causal Oseen
+> representation or a weighted off-diagonal estimate to show that the
+> \(O(h_j)\) adjoint difference launched from one fixed smooth detector
+> cannot form the required inverse-cubic heat-cell dust. Alternatively,
+> compactify that dust into a nonzero suitable ancestor carrying the
+> original Besov mark and exclude it. In parallel, prove a
 > finite-secondary-index/vector-valued estimate for the alternative
 > pairwise disjoint physical adjoint-time annuli. Rademacher bundling has
 > uniformly bounded terminal \(L^2\) but still saturates \(\sqrt T\), so
