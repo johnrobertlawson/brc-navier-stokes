@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-24T03:16:53Z
+**Updated:** 2026-07-24T03:38:40Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -685,6 +685,43 @@ physical-scale links valid in scope. The packet still has no proved
 spatial centre or finite dyadic band and may disperse as spatial or
 frequency dust. No nonzero suitable profile or Besov-mark retention is
 asserted.
+
+That spatial/frequency defect is now quantitatively closed at the
+single-profile level. The fixed local pressure payment and zero-data
+\(r\)-energy imply
+\[
+\int_0^h\|\nabla b^{\rm in}\|_2^2\,d\tau
+\asymp h^{-3},
+\]
+so the inner coefficient saturates the complete scale-critical
+local-energy allowance of \(B_{8h^{-3}}\). At
+\(\ell=K_h^{-1}=\kappa^{-1}\sqrt h\), actual coefficient dissipation
+already requires at least \(ch^{-7/2}\) descendant cells.
+
+A fixed factor-frequency split then gives two exhaustive branches. Either
+\[
+\int_0^h
+\|\nabla(I-S_{K_h})b^{\rm in}\|_2^2\,d\tau
+\ge d_*h^{-3},
+\]
+or a fixed finite-band pressure fraction \(H_h\) satisfies the
+vector-valued capture law
+\[
+\int_0^h\int_{U_N}|H_h|
+\lesssim h^{7/4}N^{1/6}.
+\]
+The latter payment needs \(N\gtrsim h^{-21/2}\) descendant cubes, exactly
+the full volume power of the inverse-cubic interaction ball.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-feedback-dust-2026-07-24.md)
+found all twelve saturation, Hardy factor-split, Lorentz capture, and
+physical-scale links valid in scope.
+
+Thus the first positive-clock descendant is not a single pressure-marked
+profile. It is either a fixed high-frequency fraction of the inner
+coefficient energy or a maximally delocalised finite-band pressure cloud.
+The next object must be an aggregate same-trajectory law with a retained
+signed causal charge; unsigned pressure mass and cell count alone do not
+supply it.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 
@@ -2521,15 +2558,16 @@ Next deliverable:
 > interaction scale
 > \(\lambda_j=\sigma_jh_j^{-3}\); exterior payment instead forces
 > \(D_b(h_j)\ge h_j^{-3}\exp(c h_j^{-7/4})\). On the local branch, exact
-> pressure factorisation now forces a fixed high-pass packet at physical
-> scales no larger than
-> \(\mu_j=\kappa^{-1}\sigma_j\sqrt{h_j}\), with normalised clock at
-> least \(\kappa^2\). Prove spatial tightness and a
-> finite-secondary-index band that yield a nonzero suitable interaction
-> profile with its causal Besov ancestry retained, or prove that its
-> spatial/frequency dust has another summable cost. The source radius is
-> \(\lambda_j/\mu_j=\kappa h_j^{-7/2}\) in descendant coordinates, so
-> tightness cannot be assumed. Separately exclude the
+> pressure factorisation now forces inner local-energy saturation
+> \(D_{\rm in}(h_j)\asymp h_j^{-3}\) and a positive-clock descendant at
+> \(\mu_j=\kappa^{-1}\sigma_j\sqrt{h_j}\). A single centred profile has
+> been excluded: either a fixed \(h_j^{-3}\) localised-coefficient energy
+> fraction remains above the descendant frequency, or finite-band
+> pressure requires \(h_j^{-21/2}\) descendant cells. Construct an
+> event-normalised one-trajectory aggregate law for these two objects,
+> retain a nonzero signed causal charge, and force a bounded telescoping
+> law, finite critical budget, or rigidity. Unsigned \(L^1\) pressure and
+> cell count alone are insufficient. Separately exclude the
 > stretched-exponential branch using one-trajectory history. The actual
 > dissipation scale \(\rho_j=\sigma_jD_b(h_j)\) lies strictly above
 > \(\lambda_j\), with clock at most \(h_j^{14}\). In parallel, prove a

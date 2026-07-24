@@ -1178,13 +1178,43 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > \(\mu\ll\sigma\ll\lambda\ll\rho\).
 > [Independent review](review-response-adjoint-pressure-feedback-frequency-2026-07-24.md)
 > accepted all ten factorisation, kernel, high-pass, and scale-map links.
+> The subsequent reviewed
+> [frequency-or-maximal-dust reduction](experiments/adjoint-pressure-feedback-dust.md)
+> first shows that the inner coefficient saturates its complete
+> scale-critical local-energy allowance:
+> \[
+> \int_0^h\|\nabla b^{\rm in}\|_2^2\,d\tau
+> \asymp h^{-3}.
+> \]
+> Actual coefficient dissipation in \(B_{8h^{-3}}\) has the same lower
+> power and needs at least \(ch^{-7/2}\) positive-clock descendant cells.
+> Splitting both pressure factors at fixed multiples of
+> \(K_h=\kappa h^{-1/2}\) then gives an exhaustive alternative:
+> \[
+> \int_0^h
+> \|\nabla(I-S_{K_h})b^{\rm in}\|_2^2\,d\tau
+> \ge d_*h^{-3},
+> \]
+> or a fixed finite-factor-frequency pressure packet obeys, on every
+> union of \(N\) descendant cubes,
+> \[
+> \int_0^h\int_{U_N}|H_h|
+> \lesssim h^{7/4}N^{1/6}.
+> \]
+> The latter branch therefore requires
+> \(N\gtrsim h^{-21/2}\), the full interaction-volume power.
+> [Independent review](review-response-adjoint-pressure-feedback-dust-2026-07-24.md)
+> accepted all twelve saturation, Hardy factor-split, Lorentz capture,
+> and physical-scale links.
 > The selected-layer alternative is now exactly direct
 > \(h^{-15/4}\) dissipation or feedback \(h^{-13/2}\) dissipation.
 > In the feedback half, ordinary polynomial dissipation is
-> source-localised and has a positive-clock high-frequency descendant;
-> exterior escape is stretched-exponential. The high-pass packet may
-> still disperse as spatial dust or escape to much higher frequencies, so
-> no centre, finite band, nonzero profile, or retained Besov mark is proved;
+> source-localised and has a positive-clock descendant, but a single
+> pressure-marked compactness profile is now excluded: the local payment
+> is either fixed high-frequency inner energy or a maximally delocalised
+> finite-band pressure cloud. Exterior escape is stretched-exponential.
+> No signed aggregate law, summable event cost, or retained Besov mark is
+> proved;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -1207,15 +1237,18 @@ The coequal breakdown question remains:
    the inverse-\(15/4\) direct ancestor at
    \(\rho_j=\sigma_j/h_j^{15/4}\), whose normalised clock is
    \(h_j^{17/2}\). In the feedback branch, the reviewed source-localised
-   alternative already forces a fixed high-pass pressure packet at scales
-   no larger than
+   alternative already forces the inner local-energy saturation
+   \(D_{\rm in}\asymp h_j^{-3}\) and a fixed high-pass pressure packet at
+   scales no larger than
    \(\mu_j=\kappa^{-1}\sigma_j\sqrt{h_j}\), with normalised clock at least
-   \(\kappa^2\). Prove spatial tightness and a finite-secondary-index
-   frequency band that yield a nonzero suitable interaction profile with
-   its causal Besov ancestry retained, or prove that spatial/frequency dust
-   has another summable cost. The source radius
-   \(\lambda_j/\mu_j=\kappa h_j^{-7/2}\) diverges in descendant
-   coordinates, so tightness cannot be assumed. Separately exclude the
+   \(\kappa^2\). A single centred profile cannot retain it. Construct an
+   event-normalised one-trajectory aggregate law for the remaining
+   exhaustive alternatives: fixed \(h_j^{-3}\) localised-coefficient
+   energy above the descendant frequency, or a finite-band pressure cloud
+   requiring \(h_j^{-21/2}\) descendant cells. Retain a nonzero signed
+   causal charge and force either a bounded telescoping law, a finite
+   critical budget, or rigidity. Do not infer such a law from unsigned
+   \(L^1\) pressure or cell count alone. Separately exclude the
    exterior alternative
    \(D_b(h_j)\ge h_j^{-3}\exp(c h_j^{-7/4})\) by a same-trajectory
    history estimate. The actual dissipation scale

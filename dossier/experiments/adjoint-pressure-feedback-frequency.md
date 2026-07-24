@@ -472,3 +472,6 @@ No spatial centre, fixed dyadic band, compact nonzero profile, Besov-mark
 retention, exclusion of the stretched-exponential branch, event-index
 summation, rough endpoint adjoint, ancient Liouville theorem, regularity
 theorem, breakdown theorem, or Clay alternative A--D is asserted.
+
+The spatial/frequency alternative is sharpened by the reviewed
+[frequency-or-maximal-pressure-dust theorem](adjoint-pressure-feedback-dust.md).
