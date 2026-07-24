@@ -1049,8 +1049,44 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > \(\rho=\sigma/h^3\) carries fixed critical dissipation on clock \(h^7\).
 > [Independent review](review-response-adjoint-pressure-cubic-layer-2026-07-24.md)
 > found all ten links and every static-cloud exponent valid in scope.
-> Causal formation or compactification of that inverse-cubic Oseen dust
-> remains open;
+> The subsequent
+> [direct-response reduction](experiments/adjoint-pressure-direct-response.md)
+> writes \(w=q+r\), with \(q\) the direct heat response to the fixed
+> detector and \(r\) the zero-data drift-feedback remainder. Cancellation
+> in \(b\cdot\nabla\varphi\) gives a fourth-power heat--Leray far field.
+> A weighted Hardy cube split and centre-uniform local energy then give
+> \[
+> \int_0^h\|\nabla\pi^*_{[q,b]}\|_1\,d\tau
+> \le
+> C\left(
+> h^{5/4}D_b(h)^{1/3}+h^{1/6}
+> \right).
+> \]
+> Hence every selected layer has an exhaustive alternative: either
+> \[
+> D_b(h)\gtrsim h^{-15/4},
+> \]
+> or a fixed pressure packet survives in
+> \[
+> \partial_\tau r-\nu\Delta r-\mathbb P(b\cdot\nabla r)
+> =
+> \mathbb P(b\cdot\nabla q),
+> \qquad r(0)=0,
+> \]
+> while
+> \[
+> \sup_{\tau\le h}\|r(\tau)\|_2^2+
+> \nu\int_0^h\|\nabla r\|_2^2=O(h^2).
+> \]
+> In the extreme direct branch, coefficient enstrophy escapes every
+> \(R=o(h^{-15/4})\), any fixed heat-ball cover needs at least
+> \(ch^{-17/4}\) cells, and the common-trajectory ancestor has strict
+> physical depth \(\sigma=o(h^{15/4})\) on clock \(h^{17/2}\).
+> [Independent review](review-response-adjoint-pressure-direct-response-2026-07-24.md)
+> accepted all thirteen analytic and scaling links, including the
+> uniform heat--Leray dipole tail and absence of hidden global-energy
+> dependence. Neither the extreme direct branch nor the feedback packet
+> is excluded;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -1068,17 +1104,16 @@ The coequal breakdown question remains:
    mean roof. Its suspension then gives the compact Navier--Stokes
    parabolic hull an invariant probability distinct from \(\delta_0\).
    Do not replace this by bare event count or assume bounded gaps.
-2. In the complementary infinite-mean branch, test the causal Oseen
-   representation against the inverse-cubic heat-cell dust required by
-   every selected terminal pressure layer. The full difference from the
-   fixed detector is \(O(h_j)\) in \(L^2\), yet its pressure payment forces
-   \(D_b(h_j)\gtrsim h_j^{-3}\), spatial extent almost \(h_j^{-3}\), and
-   physical ancestor
-   \(\rho_j=\sigma_j/h_j^3\) on clock \(h_j^7\). Prove an off-diagonal,
-   interaction-order, or weighted-energy estimate showing that one fixed
-   smooth detector cannot generate that dust, or compactify it into a
-   nonzero ancestor carrying the original Besov mark and exclude the
-   resulting profile. In parallel, prove a
+2. In the complementary infinite-mean branch, close the direct-response
+   versus feedback dichotomy. If the direct heat response pays a fixed
+   pressure fraction, compactify or exclude the inverse-\(15/4\)
+   coefficient-dissipation ancestor at
+   \(\rho_j=\sigma_j/h_j^{15/4}\), whose normalised clock is
+   \(h_j^{17/2}\). Otherwise, decompose the fixed pressure packet in the
+   zero-data remainder driven by
+   \(\mathbb P(b_j\cdot\nabla q_j)\): prove an interaction-order gain at
+   every further generation, or compactify a nonzero critical Oseen
+   feedback profile and exclude it. In parallel, prove a
    finite-secondary-index/vector-valued estimate for the disjoint
    scale-matched annular alternative. Rademacher bundling with uniformly
    bounded terminal \(L^2\) still produces square-root pressure growth, so

@@ -66,6 +66,7 @@ not convert passing unit tests into mathematical truth.
 | **adjoint_pressure_bandlimit.py** | Band-limited detector reduction, low-frequency Oseen continuity, quadratic genealogy depth, improved capture entropy, and sharp cloud powers | Exclusion of the remaining inverse-time coefficient and inverse-square spatial layer |
 | **adjoint_pressure_enstrophy.py** | Dual pressure factorisation, inverse-square coefficient dissipation, enstrophy escape, strict superquadratic genealogy depth, and the dissipation-ancestor clock | Compactification or exclusion of the new scale-critical dissipation ancestor |
 | **adjoint_pressure_cubic.py** | Direct adjoint-difference energy, inverse-cubic coefficient dissipation, supercubic genealogy depth, velocity-reservoir entropy, and the \(h^7\) ancestor clock | A causal Oseen estimate excluding or compactifying the inverse-cubic dust |
+| **adjoint_pressure_direct.py** | Weighted direct-response cubes, dipole-tail optimisation, the inverse-\(15/4\) dissipation branch, and the drift-feedback alternative | Iteration or compactification of the zero-data nonlinear Oseen remainder |
 | **strain.py** | Exact finite-dimensional checks of the Biot-Savart strain contraction | The singular-integral derivation or commutator bounds |
 | **records.py** | Schemas, identifiers, dependencies, and cross-record references | Whether a cited theorem is correctly understood |
 | **links.py** | Local Markdown targets | External URL availability |
@@ -142,6 +143,7 @@ From the repository root:
     make adjoint-pressure-bandlimit
     make adjoint-pressure-enstrophy
     make adjoint-pressure-cubic
+    make adjoint-pressure-direct
     make strain
     make fetch-2607
     make compile-2607

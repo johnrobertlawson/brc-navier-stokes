@@ -2164,6 +2164,49 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-DIRECT-001",
+      "title": "Direct adjoint response versus critical drift feedback",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-STABILITY-001",
+        "CLM-LOCAL-ENERGY-RESTART-001"
+      ],
+      "hypothesis": "Separating the direct heat response to the fixed band-limited detector from the drift-feedback remainder either forces inverse-15/4 coefficient dissipation or isolates a fixed pressure packet generated only through a critical Oseen interaction.",
+      "invariants": [
+        "The full difference w=a-phi splits exactly as q+r, where q is the heat response to nu Delta phi plus P(b dot grad phi) and r has zero data with source P(b dot grad q)",
+        "Weighted Lorentz products make b dot grad phi uniformly localised in L2 with an integrable first moment",
+        "Every component of b dot grad phi has zero mean by coefficient incompressibility",
+        "The heat-Leray kernel, zero mean, and one first moment give ||q(tau)|| on cube Q_k at most C times tau to the one-quarter times <k> to minus N plus tau times <k> to minus four",
+        "The dual pressure source (q dot grad)b has zero-mean components and obeys the reviewed weighted unit-cube H1 molecular estimate",
+        "Inner cubes cost at most C h to the three-quarters R cubed by the centre-uniform local-energy restart",
+        "Outer cubes cost at most C times h to the three-halves R to minus three-halves plus h to the three-quarters R to minus eleven-halves, multiplied by sqrt(D_b(h))",
+        "Optimising at R comparable to (h to the three-quarters sqrt(D_b)) to the two-ninths gives direct pressure at most C times h to the five-quarters D_b to the one-third plus h to the one-sixth",
+        "The independently reviewed inverse-cubic floor makes the rapid-tail term vanish uniformly",
+        "A fixed direct-response pressure fraction forces D_b(h) at least a constant times inverse h to the fifteen-quarters",
+        "If the direct response does not pay that fraction, pressure linearity forces a fixed packet in the zero-data drift-feedback remainder",
+        "The feedback remainder has squared-L2 supremum plus integrated gradient energy O(h squared)",
+        "The inverse-15/4 branch gives matching reversed energy, escape beyond every o(h to minus fifteen-quarters) radius, and at least inverse h to the seventeen-quarters enstrophy heat cells",
+        "Weak-L3 layer cake in the extreme branch gives velocity amplitude O(h to the fifteen-quarters), volume at least inverse h to the forty-five-quarters, and heat-cell count at least inverse h to the fifty-one-quarters",
+        "On one common finite-energy trajectory the extreme branch has physical zoom little-o of h to the fifteen-quarters and a scale-critical dissipation ancestor on clock h to the seventeen-halves",
+        "No branch exclusion, rough endpoint adjoint, event-index summation, ancient Liouville theorem, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Use cancellation and pointwise heat-Leray kernel bounds to localise the direct detector response cube by cube, combine its weighted Hardy pressure factorisation with centre-uniform local energy and global coefficient dissipation, optimise the spatial split, and assign any unpaid pressure to the exact zero-data drift-feedback remainder.",
+      "certificate": "An independently reviewed conditional dichotomy, a written heat-Leray dipole and weighted H1 cube proof, and executable tests for every optimisation, dissipation, entropy, physical-depth, and ancestor-clock exponent.",
+      "success_criterion": "The causal Oseen frontier is narrowed from an unspecified inverse-cubic dust to an exhaustive alternative: inverse-15/4 direct-response dissipation or a fixed pressure packet that has passed through at least one critical drift interaction.",
+      "failure_interpretation": "The detector forcing lacks the asserted cancellation or weighted endpoint bounds, the heat-Leray tail loses a time or spatial power, the H1 cube estimate imports global energy, the spatial optimisation is not uniform, or pressure splitting does not isolate the feedback remainder.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-direct-response.md",
+        "dossier/review-letter-adjoint-pressure-direct-response-2026-07-24.md",
+        "dossier/review-response-adjoint-pressure-direct-response-2026-07-24.md",
+        "lab/navier_lab/adjoint_pressure_direct.py",
+        "lab/tests/test_adjoint_pressure_direct.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

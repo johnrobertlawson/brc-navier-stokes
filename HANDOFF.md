@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-24T02:08:49Z
+**Updated:** 2026-07-24T02:24:37Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -565,6 +565,33 @@ found all ten links and every static-cloud exponent valid in scope. The
 remaining gate is causal: exclude generation of that inverse-cubic dust
 from one fixed smooth detector, or compactify the dust with a retained
 Besov mark.
+
+That causal gate now has an exact first split. Decompose
+\(w=q+r\), where \(q\) is the direct heat response to
+\(\nu\Delta\varphi+\mathbb P(b\cdot\nabla\varphi)\) and \(r\) is the
+zero-data drift-feedback remainder. Componentwise zero mean of
+\(b\cdot\nabla\varphi\) improves the heat--Leray far field to dipole
+decay. The weighted cube estimate gives
+\[
+\int_0^h\|\nabla\pi^*_{[q,b]}\|_1\,d\tau
+\lesssim
+h^{5/4}D_b(h)^{1/3}+h^{1/6}.
+\]
+Therefore either the direct response forces
+\(D_b(h)\gtrsim h^{-15/4}\), or a fixed pressure packet remains in
+\[
+\partial_\tau r-\nu\Delta r-\mathbb P(b\cdot\nabla r)
+=
+\mathbb P(b\cdot\nabla q),
+\qquad r(0)=0,
+\]
+with \(O(h^2)\) squared energy and dissipation. In the extreme direct
+branch, \(\sigma=o(h^{15/4})\) and the physical dissipation ancestor has
+clock \(h^{17/2}\).
+[Independent adversarial review](dossier/review-response-adjoint-pressure-direct-response-2026-07-24.md)
+found the heat--Leray cancellation, weighted Hardy cubes, optimisation,
+feedback energy, and all extreme-branch exponents valid in scope. Neither
+branch is excluded.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 
@@ -2393,16 +2420,15 @@ Next deliverable:
 > \(\delta_0\). In the complementary infinite-mean branch, the
 > solenoidal-adjoint construction already forces a fixed positive packet
 > on one finite scale-matched horizon at every event. Its terminal-layer
-> alternative now forces inverse-cubic coefficient dissipation,
-> centre-uniform coefficient-enstrophy escape almost to inverse-cubic
-> radius, and strict supercubic physical depth. At
-> \(\rho_j=\sigma_j/h_j^3\), a fixed scale-critical physical dissipation
-> packet survives on normalised clock \(h_j^7\). Use the causal Oseen
-> representation or a weighted off-diagonal estimate to show that the
-> \(O(h_j)\) adjoint difference launched from one fixed smooth detector
-> cannot form the required inverse-cubic heat-cell dust. Alternatively,
-> compactify that dust into a nonzero suitable ancestor carrying the
-> original Besov mark and exclude it. In parallel, prove a
+> alternative now has a direct-response versus feedback split. If the
+> direct heat response pays a fixed fraction, coefficient dissipation is
+> at least inverse-\(15/4\), the genealogy has strict depth
+> \(\sigma_j=o(h_j^{15/4})\), and the scale-critical physical ancestor
+> has clock \(h_j^{17/2}\). Compactify or exclude that extreme ancestor.
+> Otherwise a fixed packet survives in the zero-data remainder driven by
+> \(\mathbb P(b_j\cdot\nabla q_j)\). Prove an interaction-order gain at
+> the next decomposition, or compactify this nonlinear feedback into a
+> nonzero critical Oseen profile and exclude it. In parallel, prove a
 > finite-secondary-index/vector-valued estimate for the alternative
 > pairwise disjoint physical adjoint-time annuli. Rademacher bundling has
 > uniformly bounded terminal \(L^2\) but still saturates \(\sqrt T\), so

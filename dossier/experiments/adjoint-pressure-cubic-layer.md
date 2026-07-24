@@ -745,3 +745,10 @@ The new gate is:
 No terminal-layer exclusion, intrinsic rough adjoint, event-index
 summation, ancient Liouville theorem, regularity theorem, breakdown
 theorem, or Clay alternative A--D is asserted.
+
+The subsequent
+[direct-response reduction](adjoint-pressure-direct-response.md)
+separates \(w\) into its direct heat response and drift-feedback
+remainder. The direct part either strengthens the coefficient floor to
+\(D_b(h)\gtrsim h^{-15/4}\), or a fixed pressure packet survives in the
+zero-data nonlinear remainder.
