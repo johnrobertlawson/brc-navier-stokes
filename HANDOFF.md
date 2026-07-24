@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-24T03:38:40Z
+**Updated:** 2026-07-24T04:05:03Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -719,9 +719,35 @@ physical-scale links valid in scope.
 Thus the first positive-clock descendant is not a single pressure-marked
 profile. It is either a fixed high-frequency fraction of the inner
 coefficient energy or a maximally delocalised finite-band pressure cloud.
-The next object must be an aggregate same-trajectory law with a retained
-signed causal charge; unsigned pressure mass and cell count alone do not
-supply it.
+That aggregate is now constructed. The regularised Kato-polar identity
+turns the running adjoint \(L^1\) floor into positive signed stopping-time
+pressure work. A genealogy-aware early--late alternative either produces
+signed terminal layers or retains signed work on stopped subannuli inside
+separable physical adjoint-time annuli. On a terminal layer the same
+norm-one polar functional passes through every reviewed pressure
+decomposition. The final source-localised split is therefore charge
+selective: either the high-coefficient pressure component keeps positive
+polar work and forces \(E_{\rm hi}\gtrsim h^{-3}\), or the finite-band
+\(H_h\) keeps it.
+
+Both charged children have uniformly two-sided spacetime \(L^1\) mass.
+Pressure-mass normalisation gives a marked probability law satisfying
+\[
+\mathbb E[-\alpha\cdot\omega]\ge c>0.
+\]
+For finite-band dust the cell capture estimate becomes
+\(\mu(E)\lesssim |E|^{1/6}\) in source coordinates. Off-diagonal kernel
+decay proves tightness, hence the limiting spatial marginal has a
+weak-\(L^{6/5}\) density. Projecting the polar mark onto the finite pressure
+band preserves the pairing and makes its descendant-rooted spatial
+profiles compact in \(C^\infty_{\rm loc}\).
+[Independent adversarial review](dossier/review-response-adjoint-pressure-signed-aggregate-2026-07-24.md)
+accepted all thirteen links after the recorded repairs.
+
+This is a selection-dependent decorated pressure law, not an invariant
+law or a nonzero PDE profile. The next object is now a temporal or
+same-trajectory coherence theorem turning its positive alignment into a
+bounded telescope, finite critical budget, or limiting Oseen rigidity.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 
@@ -2563,11 +2589,14 @@ Next deliverable:
 > \(\mu_j=\kappa^{-1}\sigma_j\sqrt{h_j}\). A single centred profile has
 > been excluded: either a fixed \(h_j^{-3}\) localised-coefficient energy
 > fraction remains above the descendant frequency, or finite-band
-> pressure requires \(h_j^{-21/2}\) descendant cells. Construct an
-> event-normalised one-trajectory aggregate law for these two objects,
-> retain a nonzero signed causal charge, and force a bounded telescoping
-> law, finite critical budget, or rigidity. Unsigned \(L^1\) pressure and
-> cell count alone are insufficient. Separately exclude the
+> pressure requires \(h_j^{-21/2}\) descendant cells. The Kato-polar
+> stopping identity now gives a signed event-normalised law for both
+> objects. It retains positive causal alignment; in the finite-band branch
+> its source-scale marginal is diffuse weak \(L^{6/5}\), and its effective
+> polar decoration is spatially compact at descendant scale. Prove
+> temporal or same-trajectory coherence strong enough to turn that
+> alignment into a bounded telescope, finite critical budget, or limiting
+> Oseen rigidity. Separately exclude the
 > stretched-exponential branch using one-trajectory history. The actual
 > dissipation scale \(\rho_j=\sigma_jD_b(h_j)\) lies strictly above
 > \(\lambda_j\), with clock at most \(h_j^{14}\). In parallel, prove a

@@ -2377,6 +2377,54 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-SIGNED-AGGREGATE-001",
+      "title": "Kato-polar signed aggregate for positive-clock pressure dust",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-STABILITY-001",
+        "CLM-LOCAL-ENERGY-RESTART-001"
+      ],
+      "hypothesis": "The running-L1 growth forced by the terminal Oseen pairing has an exact positive Kato-polar pressure-work witness which can be carried through every reviewed pressure decomposition, yielding a signed event-normalised aggregate in both surviving positive-clock feedback branches.",
+      "invariants": [
+        "The regularised polar field a divided by sqrt(|a| squared plus epsilon squared) gives an exact signed pressure-work identity with a nonnegative vector-Kato Hessian remainder",
+        "The reviewed Nash-Lorentz running-L1 floor yields a finite stopping time and regularisation with fixed positive signed polar work",
+        "The regularisation depends on event and genealogy member and rescales with the adjoint amplitude; no canonical rough-state polar functional is asserted",
+        "A relaxed early-late alternative either produces signed terminal layers or positive signed work on stopped subannuli inside pairwise separable physical adjoint-time annuli",
+        "In the late branch every finite event family can first be realised on one common sufficiently deep member of the same unscaled smooth genealogy",
+        "The polar functional has norm at most one on spacetime L1 and remains fixed through every algebraic pressure decomposition",
+        "Absolute L1 convergence permits termwise polar lifting through the countable exterior-shell series",
+        "The low-frequency source-localised pressure is uniformly smaller than the retained charge after choosing one fixed sufficiently small kappa",
+        "The final charged factor split is either positive polar work in the high-coefficient pressure component or positive polar work in the finite-factor-frequency component",
+        "A charged high-coefficient component forces localised coefficient energy at least c h^-3 above the descendant frequency",
+        "Both charged pressure components have spacetime L1 mass between fixed positive and finite constants",
+        "Pressure-mass normalisation gives a compact marked probability law with strictly positive expected minus Kato-polar dot pressure-direction alignment",
+        "The law is selection-dependent and is not intrinsic, invariant, additive, a closed PDE law, or a law of nonzero Navier-Stokes profiles",
+        "In the finite-band branch the descendant grid has source-coordinate mesh kappa^-1 h^(7/2)",
+        "The reviewed N^(1/6) capture estimate becomes the scale-free source-coordinate Frostman bound mu(E) at most C |E|^(1/6)",
+        "Off-diagonal low-pass and finite-band kernel decay make the finite-band spatial marginals tight at the inverse-cubic source scale",
+        "Every finite-band limiting spatial marginal has a weak-L(6/5) density",
+        "Projecting the parent polar field onto a neighbourhood of the finite-band pressure support preserves the signed pairing exactly",
+        "The effective polar field has derivative m bounded by C_m K^m, so its descendant-rooted profiles are compact in smooth local topology",
+        "The effective polar mark has no proved temporal compactness and every individual descendant cell may still have vanishing naturally scaled pressure amplitude",
+        "No event-index telescope, finite critical budget, aggregate rigidity, stretched-exponential exclusion, finite-secondary-index estimate, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Regularise the vector modulus, derive its exact Oseen Kato-polar balance, select a signed stopping time from the running-L1 floor, formulate a genealogy-aware signed early-late alternative, carry the fixed polar functional through every exact L1 pressure split, charge-select the high-coefficient versus finite-band children, normalise their pressure mass to a marked Young law, convert the cell capture estimate to a source-scale Frostman bound, prove macro-tightness by off-diagonal kernel decay, and project the polar witness to the finite pressure band to obtain descendant-scale spatial compactness.",
+      "certificate": "An independently reviewed conditional theorem, review request and response covering thirteen links, and executable tests for the regularised Kato Hessian, stopping charge, norm-one branch lift, inverse-cubic high-frequency floor, source-coordinate mesh, Frostman exponent, probability alignment, and scale-zero effective-polar derivatives.",
+      "success_criterion": "The positive-clock feedback frontier has a nonzero signed causal aggregate in both remaining local branches, with a diffuse weak-L(6/5) source-scale marginal and compact effective polar decoration in the finite-band branch; the next missing implication is a same-trajectory telescope, finite budget, or rigidity for that aggregate.",
+      "failure_interpretation": "The Kato sign is wrong, the running-L1 floor cannot be stopped with positive work, the event and genealogy quantifiers do not yield an exhaustive early-late split, a discarded L1 component can erase the fixed polar charge, the charged factor split loses its energy floor, pressure-mass normalisation loses alignment, the macro capture powers or tightness fail, or the effective polar projection changes the pairing.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-signed-aggregate.md",
+        "dossier/review-letter-adjoint-pressure-signed-aggregate-2026-07-24.md",
+        "dossier/review-response-adjoint-pressure-signed-aggregate-2026-07-24.md",
+        "lab/navier_lab/adjoint_pressure_signed_aggregate.py",
+        "lab/tests/test_adjoint_pressure_signed_aggregate.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

@@ -1213,8 +1213,47 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > pressure-marked compactness profile is now excluded: the local payment
 > is either fixed high-frequency inner energy or a maximally delocalised
 > finite-band pressure cloud. Exterior escape is stretched-exponential.
-> No signed aggregate law, summable event cost, or retained Besov mark is
-> proved;
+> The subsequent
+> [Kato-polar aggregate theorem](experiments/adjoint-pressure-signed-aggregate.md)
+> supplies the missing causal orientation. For
+> \(\zeta_\varepsilon=a/\sqrt{|a|^2+\varepsilon^2}\), the exact identity
+> \[
+> -\int_0^s\!\!\int\zeta_\varepsilon\cdot\nabla\pi^*
+> =
+> L_\varepsilon(a(s))-L_\varepsilon(a(0))
+> +\nu\int_0^s\mathcal K_\varepsilon(a)
+> \]
+> has \(\mathcal K_\varepsilon\ge0\). The running-\(L^1\) floor therefore
+> gives a positive signed stopping-time packet. A genealogy-aware
+> alternative makes it either a collapsing signed terminal layer or a
+> signed stopped packet in separable late physical annuli. Since its polar
+> functional has norm one on spacetime \(L^1\), the same witness passes
+> through every reviewed pressure split. The local children are now
+> selected by charge:
+> \[
+> \Lambda_{\zeta_h}(J_h^{\rm hi})\ge p_{\rm pol},
+> \qquad E_{\rm hi}(h)\gtrsim h^{-3},
+> \]
+> or
+> \[
+> \Lambda_{\zeta_h}(H_h)\ge p_{\rm pol}.
+> \]
+> Normalising either charged field by its uniformly two-sided \(L^1\)
+> mass gives a marked probability law with
+> \[
+> \mathbb E[-\alpha\cdot\omega]\ge c>0.
+> \]
+> In the finite-band branch, the cell law becomes
+> \(\mu(E)\lesssim|E|^{1/6}\). Off-diagonal kernel decay makes the
+> source-scale marginals tight, so \(d\mu=f\,dx\) with
+> \(f\in L^{6/5,\infty}\). Projecting the polar field onto the pressure
+> band preserves its pairing and makes descendant-rooted polar profiles
+> compact in \(C^\infty_{\rm loc}\).
+> [Independent review](review-response-adjoint-pressure-signed-aggregate-2026-07-24.md)
+> accepted all thirteen links after genealogy, fixed-\(\kappa\), and
+> semantic repairs. This is a selection-dependent decorated pressure law,
+> not an invariant law or a nonzero PDE profile. No event telescope,
+> finite budget, aggregate rigidity, or retained Besov mark is proved;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -1241,14 +1280,15 @@ The coequal breakdown question remains:
    \(D_{\rm in}\asymp h_j^{-3}\) and a fixed high-pass pressure packet at
    scales no larger than
    \(\mu_j=\kappa^{-1}\sigma_j\sqrt{h_j}\), with normalised clock at least
-   \(\kappa^2\). A single centred profile cannot retain it. Construct an
-   event-normalised one-trajectory aggregate law for the remaining
-   exhaustive alternatives: fixed \(h_j^{-3}\) localised-coefficient
-   energy above the descendant frequency, or a finite-band pressure cloud
-   requiring \(h_j^{-21/2}\) descendant cells. Retain a nonzero signed
-   causal charge and force either a bounded telescoping law, a finite
-   critical budget, or rigidity. Do not infer such a law from unsigned
-   \(L^1\) pressure or cell count alone. Separately exclude the
+   \(\kappa^2\). A single centred profile cannot retain it. The reviewed
+   Kato-polar construction now gives an event-normalised signed law in
+   both remaining local branches. It retains positive causal alignment;
+   the finite-band marginal is diffuse weak \(L^{6/5}\), and its effective
+   polar decoration is spatially compact at descendant scale. Force this
+   law to obey either a bounded event telescope, a finite critical budget,
+   or a limiting Oseen rigidity theorem. The missing input is now temporal
+   or same-trajectory coherence of the polar decoration, not existence of
+   a signed aggregate. Separately exclude the
    exterior alternative
    \(D_b(h_j)\ge h_j^{-3}\exp(c h_j^{-7/4})\) by a same-trajectory
    history estimate. The actual dissipation scale
