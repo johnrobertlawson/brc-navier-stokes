@@ -2250,6 +2250,49 @@
       "last_run": "2026-07-24"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-FEEDBACK-SHELLS-001",
+      "title": "Inverse-cubic feedback-source localisation or stretched-exponential dissipation",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-STABILITY-001",
+        "CLM-LOCAL-ENERGY-RESTART-001"
+      ],
+      "hypothesis": "Resolving the coefficient outside the inverse-cubic feedback radius into dyadic annuli turns the global square-root dissipation cost into a logarithmic shell count, forcing either a source-localised pressure payer or stretched-exponential dissipation.",
+      "invariants": [
+        "The reviewed feedback branch has a fixed pressure floor, inverse-13/2 coefficient dissipation, a fourth-power direct-response tail, and a time-integrated exterior r tail",
+        "A dyadic partition of the exterior coefficient has fixed overlap and retains the inner-cutoff transition",
+        "Each coefficient shell obeys integrated gradient energy at most its local D_k plus h divided by its radius",
+        "Centre-uniform local energy gives D_k at most a constant times the shell radius, while finite overlap gives sum D_k at most a constant times D_b",
+        "A shellwise Bogovskii localisation is divergence free, equals r on the full coefficient-source support, and has L2 norm controlled by the exterior r tail",
+        "The leading exterior pressure sum is h to the seven-quarters times the sum of sqrt(D_k divided by shell radius)",
+        "The simultaneous local and global shell-energy bounds make that sum at most a constant times one plus log-positive of D_b divided by the base radius",
+        "The infinite pressure series converges absolutely in spacetime L1",
+        "At base radius inverse h cubed, exterior pressure is at most C h to the seven-quarters times one plus log-positive of D_b h cubed, plus powers h to the twenty-one-quarters, eighty-nine-quarters, and one-hundred-three-quarters",
+        "If the exterior pressure pays a fixed fraction, D_b is at least inverse h cubed times exp(c inverse h to the seven-quarters)",
+        "Otherwise a fixed pressure fraction has bilinear source supported inside the inverse-cubic event ball; compact support of the Riesz pressure itself is not asserted",
+        "On one common physical trajectory the detector, interaction, and actual dissipation scales are sigma, lambda equal sigma inverse h cubed, and rho equal sigma D_b",
+        "The exact scale ratios are sigma over lambda equal h cubed and lambda over rho at most C h to the seven-halves",
+        "The exact interaction clock is h to the seventh and the dissipation clock is at most h to the fourteenth",
+        "In the stretched-exponential branch, physical genealogy depth and the dissipation clock acquire the matching negative exponential factors",
+        "No compact interaction profile, Besov-mark transfer, exclusion of either branch, event-index summation, rough endpoint adjoint, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Partition the coefficient outside h^-3 into dyadic annuli, combine centre-uniform local energy with shellwise weak-L3 cutoff control, localise the zero-data remainder solenoidally on each shell, sum the CLMS pressure bounds logarithmically, and translate the resulting local-payer versus stretched-exponential alternative to one physical trajectory.",
+      "certificate": "An independently reviewed conditional theorem and executable tests for the logarithmic shell lemma, exterior-pressure powers, stretched-exponential inversion, three physical scales, and both collapsing clocks.",
+      "success_criterion": "Ordinary polynomial-dissipation feedback cannot pay from spatial infinity: its bilinear pressure source is forced inside the inverse-cubic event ball, while exterior escape has an explicit stretched-exponential cost.",
+      "failure_interpretation": "The dyadic partition loses the transition shell, local energy does not control each annulus, the Bogovskii localisation changes the source, the logarithmic shell lemma fails, the infinite pressure series does not converge, or the physical scale map loses one of its exact powers.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-feedback-shells.md",
+        "dossier/review-letter-adjoint-pressure-feedback-shells-2026-07-24.md",
+        "dossier/review-response-adjoint-pressure-feedback-shells-2026-07-24.md",
+        "lab/navier_lab/adjoint_pressure_feedback_shells.py",
+        "lab/tests/test_adjoint_pressure_feedback_shells.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

@@ -1111,9 +1111,45 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > \(h^{14}\).
 > [Independent review](review-response-adjoint-pressure-feedback-tail-2026-07-24.md)
 > accepted all fourteen analytic, cutoff, optimisation, and scaling links.
+> The subsequent
+> [dyadic shell reduction](experiments/adjoint-pressure-feedback-shells.md)
+> applies centre-uniform local energy on every coefficient annulus
+> outside the fixed radius \(R=h^{-3}\). It improves the exterior bound to
+> \[
+> P_{\rm out}(h)
+> \lesssim
+> h^{7/4}
+> \left[
+> 1+\log_+\!\bigl(D_b(h)h^3\bigr)
+> \right]
+> +o(1).
+> \]
+> Hence the feedback branch has a further exhaustive alternative: either
+> a fixed bilinear pressure-source fraction is supported inside
+> \(B_{8h^{-3}}\), or
+> \[
+> D_b(h)
+> \ge
+> h^{-3}\exp(c h^{-7/4}).
+> \]
+> The pressure itself remains nonlocal. On one physical trajectory, the
+> detector, interaction, and actual dissipation scales are
+> \[
+> \sigma
+> \ll
+> \lambda=\sigma h^{-3}
+> \ll
+> \rho=\sigma D_b(h),
+> \]
+> with clocks \(h^7\) and at most \(h^{14}\).
+> [Independent review](review-response-adjoint-pressure-feedback-shells-2026-07-24.md)
+> accepted all twelve shell, convergence, inversion, and scale-map links.
 > The selected-layer alternative is now exactly direct
 > \(h^{-15/4}\) dissipation or feedback \(h^{-13/2}\) dissipation.
-> Neither ancestor is compactified or excluded;
+> In the feedback half, ordinary polynomial dissipation is
+> source-localised at the inverse-cubic radius; exterior escape is
+> stretched-exponential. Neither resulting object is compactified or
+> excluded;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -1133,14 +1169,18 @@ The coequal breakdown question remains:
    Do not replace this by bare event count or assume bounded gaps.
 2. In the complementary infinite-mean branch, close the reviewed
    direct-response versus feedback alternative. Compactify or exclude
-   either the inverse-\(15/4\) direct ancestor at
+   the inverse-\(15/4\) direct ancestor at
    \(\rho_j=\sigma_j/h_j^{15/4}\), whose normalised clock is
-   \(h_j^{17/2}\), or the inverse-\(13/2\) feedback ancestor at
-   \(\rho_j=\sigma_j/h_j^{13/2}\), whose natural layer-coordinate
-   interaction radius is \(h_j^{-3}\) and whose clock is \(h_j^{14}\).
-   The feedback packet must retain the Besov mark in a nonzero critical
-   Oseen interaction profile, or another interaction-order split must
-   force a further quantitative gain. In parallel, prove a
+   \(h_j^{17/2}\). In the feedback branch, first treat the reviewed
+   source-localised alternative at physical scale
+   \(\lambda_j=\sigma_jh_j^{-3}\): construct a two-scale terminal
+   compactness theorem retaining the Besov detector at relative radius
+   \(h_j^3\), or prove another interaction-order gain. Separately exclude
+   the exterior alternative
+   \(D_b(h_j)\ge h_j^{-3}\exp(c h_j^{-7/4})\) by a same-trajectory
+   history estimate. The actual dissipation scale
+   \(\rho_j=\sigma_jD_b(h_j)\) lies strictly above \(\lambda_j\), with
+   normalised clock at most \(h_j^{14}\). In parallel, prove a
    finite-secondary-index/vector-valued estimate for the disjoint
    scale-matched annular alternative. Rademacher bundling with uniformly
    bounded terminal \(L^2\) still produces square-root pressure growth, so

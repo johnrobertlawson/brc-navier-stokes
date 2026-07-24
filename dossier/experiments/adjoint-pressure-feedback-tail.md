@@ -949,3 +949,9 @@ The next live question is:
 No exclusion of either branch, event-index summation, rough endpoint
 adjoint, ancient Liouville theorem, regularity theorem, breakdown theorem,
 or Clay alternative A--D is asserted.
+
+The subsequent
+[dyadic shell reduction](adjoint-pressure-feedback-shells.md)
+shows that the feedback pressure source is localised inside the
+inverse-cubic event radius unless coefficient dissipation is at least
+\(h^{-3}\exp(c h^{-7/4})\).

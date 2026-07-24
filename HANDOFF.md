@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-24T02:45:01Z
+**Updated:** 2026-07-24T03:01:53Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -618,8 +618,42 @@ is \(h^{14}\).
 [Independent adversarial review](dossier/review-response-adjoint-pressure-feedback-tail-2026-07-24.md)
 found all fourteen analytic, cutoff, optimisation, and scaling links valid
 in scope. The exact selected-layer fork is now direct \(h^{-15/4}\) or
-feedback \(h^{-13/2}\) coefficient dissipation. Neither resulting ancestor
-is compactified or excluded.
+feedback \(h^{-13/2}\) coefficient dissipation.
+
+The feedback branch is now spatially sharper. A dyadic coefficient
+partition and centre-uniform local energy improve the pressure outside
+the fixed inverse-cubic radius to
+\[
+P_{\rm out}(h)
+\lesssim
+h^{7/4}
+\left[
+1+\log_+\!\bigl(D_b(h)h^3\bigr)
+\right]
++o(1).
+\]
+Therefore either a fixed feedback-pressure source fraction is supported
+inside \(B_{8h^{-3}}\), or
+\[
+D_b(h)
+\ge
+h^{-3}\exp(c h^{-7/4}).
+\]
+The Riesz pressure itself is not asserted to be compactly supported. On
+one physical trajectory the three scales are
+\[
+\sigma
+\ll
+\lambda=\sigma h^{-3}
+\ll
+\rho=\sigma D_b(h),
+\]
+with interaction clock \(h^7\) and dissipation clock at most \(h^{14}\).
+[Independent adversarial review](dossier/review-response-adjoint-pressure-feedback-shells-2026-07-24.md)
+found all twelve partition, shell, convergence, inversion, and scale-map
+links valid in scope. Ordinary polynomial feedback is now
+source-localised; exterior escape is stretched-exponential. Neither
+resulting object is compactified or excluded.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 
@@ -2451,13 +2485,17 @@ Next deliverable:
 > alternative now has a reviewed direct-response versus feedback split.
 > The direct branch has coefficient dissipation at least inverse-\(15/4\),
 > strict depth \(\sigma_j=o(h_j^{15/4})\), and ancestor clock
-> \(h_j^{17/2}\). The feedback branch has coefficient dissipation at
-> least inverse-\(13/2\), natural layer-coordinate interaction radius
-> \(h_j^{-3}\), strict depth \(\sigma_j=o(h_j^{13/2})\), and ancestor
-> clock \(h_j^{14}\). Compactify either ancestor on one physical
-> trajectory while retaining the Besov mark and exclude the resulting
-> nonzero critical Oseen profile, or prove that the next feedback
-> interaction forces a further quantitative gain. In parallel, prove a
+> \(h_j^{17/2}\). In the feedback branch, ordinary polynomial
+> dissipation forces a fixed pressure-source fraction inside the physical
+> interaction scale
+> \(\lambda_j=\sigma_jh_j^{-3}\); exterior payment instead forces
+> \(D_b(h_j)\ge h_j^{-3}\exp(c h_j^{-7/4})\). Construct a two-scale
+> terminal compactness theorem that retains the Besov detector at relative
+> radius \(h_j^3\) inside the source-localised interaction, or prove a
+> further interaction-order gain. Separately exclude the
+> stretched-exponential branch using one-trajectory history. The actual
+> dissipation scale \(\rho_j=\sigma_jD_b(h_j)\) lies strictly above
+> \(\lambda_j\), with clock at most \(h_j^{14}\). In parallel, prove a
 > finite-secondary-index/vector-valued estimate for the alternative
 > pairwise disjoint physical adjoint-time annuli. Rademacher bundling has
 > uniformly bounded terminal \(L^2\) but still saturates \(\sqrt T\), so
