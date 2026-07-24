@@ -957,6 +957,34 @@ The 2607 audit and covering reduction have moved the frontier upstream:
 > found the repaired conditional reduction valid in scope after checking
 > the constants, covariance, limit quantifiers, annulus thinning,
 > common-genealogy pullback, Khintchine step, and \(L^2/\sqrt T\) ledger;
+> the
+> [terminal initial-layer reduction](experiments/adjoint-pressure-initial-layer.md)
+> sharpens the first surviving alternative. The endpoint Hardy div--curl
+> estimate turns its fixed short-time pressure payment into a fixed
+> \(L^1_tL^{3/2,1}_x\) adjoint-gradient floor. Adjoint energy and
+> finite-volume Lorentz embedding show uniformly in the centre that every
+> ball of radius \(R_\eta=o(\eta^{-1})\) captures only \(o(1)\) of that
+> payment. Thus one diagonal delocalises beyond every such ball whose centre
+> may vary with the layer but is fixed during it, super-parabolically far
+> from the compact terminal test. Any time-independent spatial set
+> capturing half the payment has volume \(\gtrsim h^{-3}\), hence needs
+> \(\gtrsim h^{-9/2}\) heat-scale balls; a kinematic packet cloud shows
+> both exponents are sharp under the two norm bounds furnished by adjoint
+> energy alone. The
+> \(L^2\times L^2\) Hardy estimate simultaneously forces the selected
+> scaled velocity norm to grow at least like \(\eta^{-1/2}\); for an
+> energy-bounded physical trajectory its zoom depth is at most
+> \(O(\eta)\). Reversed energy monotonicity pins the norm to the exact
+> back edge of the layer. Layer cake plus the weak-\(L^3\) ceiling then
+> forces there at least \(ch^{-3}\) volume of velocity with amplitude
+> at most \(Ch\), again requiring \(ch^{-9/2}\) fixed heat-scale cover
+> cells. This is a necessary reduction, not an exclusion of the
+> initial-layer branch;
+> [independent review](review-response-adjoint-pressure-initial-layer-2026-07-24.md)
+> found the repaired reduction valid in scope after checking the
+> quantifier diagonal, Hardy and Lorentz bounds, centre-uniform tail,
+> scaling, exact back-edge energy identity, weak-\(L^3\) layer cake, and
+> sharpness ledger;
 > bounded-centering tensor transfer remains the parallel branch.
 > Finite-horizon and eternal
 > parent rigidity remain separate gates. A full carrier-to-next-parent
@@ -974,8 +1002,9 @@ The coequal breakdown question remains:
    mean roof. Its suspension then gives the compact Navier--Stokes
    parabolic hull an invariant probability distinct from \(\delta_0\).
    Do not replace this by bare event count or assume bounded gaps.
-2. In the complementary infinite-mean branch, exclude the terminal
-   initial-layer cascade for the finite adjoint-pressure packets, or prove
+2. In the complementary infinite-mean branch, exclude the centre-uniform
+   super-parabolic adjoint-gradient delocalisation now forced by the terminal
+   initial-layer cascade, or prove
    a finite-secondary-index/vector-valued estimate for their disjoint
    scale-matched annular alternative. The remote horizon and raw temporal
    overlap are no longer essential obstructions. Rademacher bundling with

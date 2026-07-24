@@ -1997,6 +1997,48 @@
       "last_run": "2026-07-23"
     },
     {
+      "id": "EXP-ADJOINT-PRESSURE-INITIAL-LAYER-001",
+      "title": "Super-parabolic delocalisation of terminal adjoint-pressure layers",
+      "kind": "analytic_reduction",
+      "route_ids": ["ROUTE-R3B"],
+      "claim_ids": [
+        "CLM-ANCIENT-BESOV-LIOUVILLE-001",
+        "CLM-WEAK-L3-STABILITY-001"
+      ],
+      "hypothesis": "If the finite adjoint-pressure packets persist in arbitrarily thin terminal layers, then the Hardy div-curl source and adjoint energy force their Lorentz-gradient payment to delocalise beyond every ball of radius little-o of inverse layer thickness whose centre may depend on the layer but is fixed during it, while the selected smooth genealogy members incur a quantitatively diverging kinetic-energy scale.",
+      "invariants": [
+        "The terminal-layer alternative retains its original for-every-layer and eventually-in-event-index quantifiers",
+        "One diagonal chooses increasing event and smooth-genealogy indices without asserting an endpoint adjoint on the rough profile",
+        "The endpoint Hardy div-curl estimate converts the pressure floor into a fixed L1-time L(3/2,1)-space adjoint-gradient floor",
+        "Finite-measure Lorentz embedding gives a radius-to-the-one-half local factor",
+        "Adjoint L2 energy gives a square-root time factor, uniformly in every spatial centre",
+        "Every ball with radius R_eta satisfying R_eta times eta tending to zero captures vanishing Lorentz-gradient payment",
+        "Power radii eta to minus alpha with zero less than alpha less than one lie super-parabolically far from the terminal test",
+        "Every time-independent spatial set capturing half the Lorentz-gradient floor has volume at least a constant times inverse layer time cubed and requires at least inverse layer time to the nine-halves heat-scale balls",
+        "Critical pullback multiplies the integrated gradient tail and the spatial radius by lambda and the adjoint horizon by lambda squared",
+        "The L2 div-curl estimate forces the selected scaled velocity L2 norm to grow at least as eta to minus one half",
+        "Reversed Navier-Stokes energy is monotone, so the diverging scaled kinetic norm and its diffuse reservoir occur at the exact back edge of each selected layer",
+        "For genealogy members obtained from an energy-bounded trajectory at zoom sigma, the zoom must satisfy sigma bounded by a constant times eta",
+        "Layer cake and the weak-L3 ceiling convert the kinetic-depth floor into a back-edge velocity reservoir of amplitude at most a constant times layer time and volume at least a constant times inverse layer time cubed",
+        "Every fixed heat-ball cover of that time-slice velocity reservoir has at least inverse layer time to the nine-halves cells",
+        "A disjoint heat-scale packet cloud with count h to minus nine halves and amplitude h to three halves keeps both adjoint energy ledgers and the integrated critical gradient size at scale zero while occupying radius h to minus one",
+        "No terminal-layer exclusion, event-index summation, profile exclusion, regularity theorem, breakdown theorem, or Clay A-D resolution is asserted"
+      ],
+      "method": "Diagonalise the terminal initial-layer limsup, apply the endpoint and energy-level Hardy div-curl pressure estimates, combine finite-volume Lorentz embedding with the exact adjoint energy identity, subtract the uniformly vanishing contribution of every moderately expanding ball, and pull the resulting tail and kinetic-energy ledgers back through the exact parabolic scaling.",
+      "certificate": "A written conditional spatial-delocalisation theorem and exact Fraction tests for the local radius-time power, super-parabolic separation, tail subtraction, instantaneous average, L2 coefficient floor, critical zoom depth, weak-L3 high-amplitude energy tail, diffuse velocity volume, physical pullback, and energy-sharp packet-cloud powers.",
+      "success_criterion": "The terminal initial-layer alternative is reduced from an unspecified short-time pressure concentration to a super-parabolic, centre-uniform Lorentz-gradient delocalisation with inverse-cube capture volume, inverse-nine-halves heat-cell entropy in both adjoint payment and low-amplitude velocity reservoir, diverging scaled kinetic energy, and explicit genealogy depth.",
+      "failure_interpretation": "The endpoint Hardy estimate has the wrong Lorentz indices, local L2 energy does not imply the finite-volume L(3/2,1) bound, the event and genealogy limsup cannot be diagonalised, the tail norm does not survive local subtraction, the L2 div-curl estimate fails, or the physical scaling powers are incorrect.",
+      "status": "complete",
+      "artifacts": [
+        "dossier/experiments/adjoint-pressure-initial-layer.md",
+        "dossier/review-letter-adjoint-pressure-initial-layer-2026-07-23.md",
+        "dossier/review-response-adjoint-pressure-initial-layer-2026-07-24.md",
+        "lab/navier_lab/adjoint_pressure_initial_layer.py",
+        "lab/tests/test_adjoint_pressure_initial_layer.py"
+      ],
+      "last_run": "2026-07-24"
+    },
+    {
       "id": "EXP-ZERO-DIRECTION-001",
       "title": "Zero-set obstruction to logarithmic-BMO vorticity direction",
       "kind": "analytic_counterexample",

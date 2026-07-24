@@ -1,6 +1,6 @@
 # Handoff: detached-satellite suitable-profile frontier
 
-**Updated:** 2026-07-23T23:42:39Z
+**Updated:** 2026-07-24T00:27:03Z
 **Clay status:** unsolved
 **Checkpoint:** `6f11282` closes O2607-01 through O2607-16
 
@@ -452,6 +452,39 @@ found the repaired reduction valid in scope after recomputing the
 constants, covariance, early/late limit quantifiers, annulus thinning,
 common-genealogy pullback, Khintchine randomisation, and square-root
 ledger. It validates neither surviving rigidity step.
+
+The terminal initial-layer alternative is now quantitatively
+delocalised. The endpoint Hardy div--curl estimate turns its fixed
+short-time pressure cost into a fixed
+\(L^1_tL^{3/2,1}_x\) adjoint-gradient floor. Adjoint energy and
+finite-volume Lorentz embedding show, uniformly in the ball centre, that
+every radius \(R_\eta=o(\eta^{-1})\) captures only \(o(1)\) of this
+floor. One diagonal therefore leaves a fixed tail beyond every such ball
+whose centre may depend on the layer but remains fixed during it, at a
+distance super-parabolic relative to the collapsing time layer. Any
+time-independent spatial set capturing half the payment has volume at
+least \(ch^{-3}\), or at least \(ch^{-9/2}\) heat-scale cells. A
+kinematic packet cloud saturates both exponents under the two norm bounds
+furnished by the adjoint energy ledger, so improving them requires actual
+Oseen/Navier--Stokes dynamics.
+The \(L^2\times L^2\) Hardy estimate also forces the selected
+scaled velocity norm to grow at least as \(\eta^{-1/2}\). For a
+genealogy obtained from a uniformly energy-bounded physical trajectory,
+the physical zoom must descend at least linearly,
+\(\sigma_\eta=O(\eta)\). Layer cake and the weak-\(L^3\) ceiling further
+force the exact back edge of the reversed layer, where kinetic energy is
+maximal, to contain at least \(ch^{-3}\) volume of velocity with amplitude
+at most \(Ch\), hence at least \(ch^{-9/2}\) fixed heat-scale cover cells.
+This sharpens but does not exclude the branch:
+the remaining object is a centre-uniform non-tight adjoint tail coupled
+to an equally diffuse low-amplitude velocity reservoir and increasing
+genealogy depth.
+[Independent adversarial review](dossier/review-response-adjoint-pressure-initial-layer-2026-07-24.md)
+found the repaired necessary reduction valid in scope after checking the
+quantifier diagonal, Hardy and Lorentz estimates, centre-uniform
+subtraction, physical scaling, exact back-edge energy monotonicity,
+weak-endpoint layer cake, entropy exponents, and the energy-sharp
+kinematic cloud. It validates no terminal-layer exclusion.
 
 Bounded-centering tensor/frequency transfer remains the other branch.
 
@@ -2279,8 +2312,11 @@ Next deliverable:
 > a law suspends to an invariant scaling probability distinct from
 > \(\delta_0\). In the complementary infinite-mean branch, the
 > solenoidal-adjoint construction already forces a fixed positive packet
-> on one finite scale-matched horizon at every event. Exclude its
-> scale-critical terminal initial-layer cascade, or prove a
+> on one finite scale-matched horizon at every event. Its terminal-layer
+> alternative now forces centre-uniform super-parabolic
+> \(L^1_tL^{3/2,1}_x\) adjoint-gradient delocalisation and
+> \(\eta^{-1/2}\) scaled kinetic-norm growth. Exclude that combined
+> space--genealogy escape, or prove a
 > finite-secondary-index/vector-valued estimate for the alternative
 > pairwise disjoint physical adjoint-time annuli. Rademacher bundling has
 > uniformly bounded terminal \(L^2\) but still saturates \(\sqrt T\), so

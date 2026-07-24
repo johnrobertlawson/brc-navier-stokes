@@ -134,6 +134,7 @@ From the repository root:
     make defect-event-suspension
     make adjoint-pressure-history
     make adjoint-pressure-packets
+    make adjoint-pressure-initial-layer
     make strain
     make fetch-2607
     make compile-2607
